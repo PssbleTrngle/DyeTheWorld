@@ -6,6 +6,7 @@ import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
 import com.possible_triangle.dye_the_world.withNamespace
 import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder
+import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe
 import com.tterrag.registrate.providers.DataGenContext
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.util.nullness.NonNullSupplier
@@ -121,7 +122,7 @@ fun RegistrateRecipeProvider.cleaningRecipe(
     }
 
     if (washing) withNamespace(Constants.Mods.CREATE) {
-        ProcessingRecipeBuilder(::SplashingRecipe, id("splashing"))
+        StandardProcessingRecipe.Builder(::SplashingRecipe, id("splashing"))
             .require(dyed)
             .output(clean)
             .build(this)

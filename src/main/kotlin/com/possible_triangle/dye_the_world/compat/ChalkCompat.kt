@@ -2,7 +2,7 @@ package com.possible_triangle.dye_the_world.compat
 
 import com.possible_triangle.dye_the_world.Constants.Mods.CHALK
 import com.possible_triangle.dye_the_world.dyesFor
-import io.github.mortuusars.chalk.render.ChalkColors
+import io.github.mortuusars.chalk.data.ChalkColors
 
 object ChalkCompat  {
 

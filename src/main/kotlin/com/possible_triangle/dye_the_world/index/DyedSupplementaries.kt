@@ -12,8 +12,12 @@ import com.possible_triangle.dye_the_world.translation
 import net.mehvahdjukaar.supplementaries.common.block.blocks.AwningBlock
 import net.mehvahdjukaar.supplementaries.common.block.blocks.SackBlock
 import net.minecraft.resources.ResourceLocation
+import net.minecraft.util.ColorRGBA
+import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
+
+private val DyeColor.rgba get() = ColorRGBA(textColor)
 
 object DyedSupplementaries {
 
@@ -25,7 +29,7 @@ object DyedSupplementaries {
 
     val SACKS = DYES.associateWith { dye ->
         SQUARED_REGISTRATE.`object`("sack_${dye}")
-            .dyedBlock(dye, ::SackBlock)
+            .dyedBlock(dye) { SackBlock(dye.rgba, it) }
             .lang("${dye.translation} Sack")
             .sackBlockstate()
             .loot { t, b -> t.add(b, t.createShulkerBoxDrop(b)) }
@@ -33,6 +37,8 @@ object DyedSupplementaries {
                 sackItemModel()
             }
             .register()
+
+        2
     }
 
     val CEILING_BANNERS = DYES.associateWith { dye ->
@@ -41,7 +47,7 @@ object DyedSupplementaries {
             .lang("${dye.translation} Banner")
             .optionalTag(DyedTags.Blocks.CEILING_BANNERS)
             .blockstate { context, provider ->
-                val model = provider.models().getExistingFile(ResourceLocation("block/banner"))
+                val model = provider.models().getExistingFile(ResourceLocation.withDefaultNamespace("block/banner"))
                 provider.simpleBlock(context.get(), model)
             }
             .register()

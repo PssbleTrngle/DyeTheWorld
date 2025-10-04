@@ -7,6 +7,7 @@ import com.possible_triangle.dye_the_world.itemOf
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.simibubi.create.content.kinetics.millstone.MillingRecipe
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder
+import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.providers.RegistrateRecipeProvider.getItemName
@@ -74,10 +75,10 @@ private fun RegistrateRecipeProvider.milling(
     dye: DyeColor,
     from: ItemLike,
     amount: Int,
-    block: ProcessingRecipeBuilder<MillingRecipe>.() -> Unit = {}
+    block: StandardProcessingRecipe.Builder<MillingRecipe>.() -> Unit = {}
 ) {
     val id = Mods.CREATE.createId(getItemName(from))
-    ProcessingRecipeBuilder(::MillingRecipe, id).apply {
+    StandardProcessingRecipe.Builder(::MillingRecipe, id).apply {
         require(from)
         output(dye.item, amount)
         block()
@@ -88,7 +89,7 @@ private fun RegistrateRecipeProvider.millingAndCutting(
     dye: DyeColor,
     from: ItemLike,
     amount: Int,
-    block: ProcessingRecipeBuilder<MillingRecipe>.() -> Unit = {}
+    block: StandardProcessingRecipe.Builder<MillingRecipe>.() -> Unit = {}
 ) {
     milling(dye, from, amount, block)
     cutting(dye, from, amount)

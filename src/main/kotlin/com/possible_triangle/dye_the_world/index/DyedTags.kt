@@ -54,7 +54,7 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
 
     protected fun create(namespace: String, path: String): TagKey<T> = TagKey.create(registry, namespace.createId(path))
     protected fun loader(path: String): TagKey<T> = create("forge", path)
-    protected fun create(path: String): TagKey<T> = TagKey.create(registry, ResourceLocation(path))
+    protected fun create(path: String): TagKey<T> = TagKey.create(registry, ResourceLocation.withDefaultNamespace(path))
 
 
 }

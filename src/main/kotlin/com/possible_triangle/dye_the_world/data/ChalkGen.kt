@@ -14,7 +14,7 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
-import net.minecraftforge.client.model.generators.ModelFile
+import net.neoforged.neoforge.client.model.generators.ModelFile
 
 fun <T : Block, P> BlockBuilder<T, P>.chalkBlockstate() = blockstate { context, provider ->
     val model = provider.models().getExistingFile(CHALK.createId("block/chalk_mark"))

@@ -35,7 +35,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="dye_depot"
 mandatory=true
-versionRange="[1.2.0-forge,)"
+versionRange="[2.0.0-neoforge,)"
 ordering="AFTER"
 side="BOTH"
 

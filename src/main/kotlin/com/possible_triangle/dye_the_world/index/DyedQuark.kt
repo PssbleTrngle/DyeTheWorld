@@ -17,15 +17,15 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.state.BlockBehaviour
-import net.minecraftforge.client.model.generators.ModelBuilder
-import net.minecraftforge.common.Tags
+import net.neoforged.neoforge.client.model.generators.ModelBuilder
+import net.neoforged.neoforge.common.Tags
 import org.violetmoon.quark.content.building.block.StoolBlock
 import org.violetmoon.zeta.block.ZetaGlassBlock
 import org.violetmoon.zeta.block.ZetaInheritedPaneBlock
 import org.violetmoon.zeta.config.ConfigFlagManager
 import org.violetmoon.zeta.util.zetalist.ZetaList
 
-private val TRANSLUCENT = ResourceLocation("translucent")
+private val TRANSLUCENT = ResourceLocation.withDefaultNamespace("translucent")
 
 private fun ModelBuilder<*>.translucent() = renderType(TRANSLUCENT)
 
@@ -176,7 +176,7 @@ object DyedQuark {
             .optionalTag(BlockTags.IMPERMEABLE)
             .optionalTag(BlockTags.NEEDS_STONE_TOOL)
             .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .optionalTag(Tags.Blocks.GLASS)
+            .optionalTag(Tags.Blocks.GLASS_BLOCKS)
             .blockstate { c, p ->
                 p.simpleBlock(
                     c.get(),
@@ -190,7 +190,7 @@ object DyedQuark {
                 optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
                     flagEnabled("framed_glass")
                 }
-                optionalTag(Tags.Items.GLASS)
+                optionalTag(Tags.Items.GLASS_BLOCKS)
                 model { c, p -> p.blockItem(c).translucent() }
                 framedGlassRecipes()
             }
@@ -201,7 +201,7 @@ object DyedQuark {
         REGISTRATE.`object`("${dye}_framed_glass_pane")
             .dyedBlock(dye, QUARK) {
                 val parent = FRAMED_GLASS[dye]!!.get()
-                ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.copy(parent))
+                ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.ofFullCopy(parent))
             }
             .optionalTag(DyedTags.Blocks.FRAMED_GLASS_PANES)
             .optionalTag(BlockTags.NEEDS_STONE_TOOL)

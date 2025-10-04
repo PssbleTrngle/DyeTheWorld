@@ -17,7 +17,7 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : Item, P> ItemBuilder<T, P>.postboxItemModel() = model { context, provider ->
     provider.withExistingParent(context.name, CREATE.createId("block/package_postbox/item"))

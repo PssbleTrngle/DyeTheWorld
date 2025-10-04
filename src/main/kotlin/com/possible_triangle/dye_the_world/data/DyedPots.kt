@@ -17,7 +17,7 @@ import java.util.concurrent.Callable
 
 fun <T : Block, P> BlockBuilder<T, P>.potLoot() = loot { tables, block ->
     val table = LootTable.lootTable()
-        .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDynamicTrimDropPool())
+        .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDynamicTrimDropPool(block))
         .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDecoratedPotPool(block))
     tables.add(block, table)
 }
@@ -36,10 +36,10 @@ fun createPotItem(block: Block, properties: Item.Properties) = BEWLRBlockItem(bl
 
 fun <T : Block, P> BlockBuilder<T, P>.potBlockstate() = blockstate { context, provider ->
     val model = provider.models().getBuilder(context.name)
-        .texture("particle", ResourceLocation(dye.namespace, "block/${dye}_terracotta"))
+        .texture("particle", ResourceLocation.fromNamespaceAndPath(dye.namespace, "block/${dye}_terracotta"))
     provider.simpleBlock(context.get(), model)
 }
 
 fun <T : Item, P> ItemBuilder<T, P>.potItemModel() = model { context, provider ->
-    provider.withExistingParent(context.name, ResourceLocation("item/decorated_pot"))
+    provider.withExistingParent(context.name, ResourceLocation.withDefaultNamespace("item/decorated_pot"))
 }

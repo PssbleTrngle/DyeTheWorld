@@ -8,7 +8,7 @@ import com.simibubi.create.content.redstone.nixieTube.DoubleFaceAttachedBlock
 import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlock
 import com.tterrag.registrate.builders.BlockBuilder
 import net.minecraft.world.level.block.Block
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 private val DoubleFaceAttachedBlock.DoubleAttachFace.xRot
     get() = when (this) {

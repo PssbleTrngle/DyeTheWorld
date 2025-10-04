@@ -6,6 +6,7 @@ import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.petBedBlockstate
 import com.possible_triangle.dye_the_world.data.petBedRecipe
 import com.possible_triangle.dye_the_world.dyesFor
+import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.translation
 import com.possible_triangle.dye_the_world.extensions.withItem
@@ -19,7 +20,7 @@ import net.minecraft.world.level.material.PushReaction
 object DyedDomestication {
 
     private val TAB =
-        ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation(DOMESTICATION_INNOVATION, DOMESTICATION_INNOVATION))
+        ResourceKey.create(Registries.CREATIVE_MODE_TAB, DOMESTICATION_INNOVATION.createId(DOMESTICATION_INNOVATION))
 
     val PET_BEDS = dyesFor(DOMESTICATION_INNOVATION).associateWith { dye ->
         REGISTRATE.`object`("pet_bed_${dye}")

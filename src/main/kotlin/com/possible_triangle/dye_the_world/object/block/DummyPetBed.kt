@@ -12,4 +12,6 @@ class DummyPetBed(properties: Properties) : HorizontalDirectionalBlock(propertie
         builder.add(FACING)
     }
 
+    override fun codec() = simpleCodec(::DummyChairBlock)
+
 }

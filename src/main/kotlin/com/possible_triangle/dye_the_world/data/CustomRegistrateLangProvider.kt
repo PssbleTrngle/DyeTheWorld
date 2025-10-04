@@ -5,8 +5,8 @@ import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateProvider
 import com.tterrag.registrate.util.nullness.NonNullBiFunction
 import net.minecraft.data.PackOutput
-import net.minecraftforge.common.data.LanguageProvider
-import net.minecraftforge.fml.LogicalSide
+import net.neoforged.fml.LogicalSide
+import net.neoforged.neoforge.common.data.LanguageProvider
 
 class CustomRegistrateLangProvider(
     output: PackOutput,

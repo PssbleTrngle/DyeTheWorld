@@ -20,10 +20,9 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.ButtonBlock
 import net.minecraft.world.level.block.LeverBlock
 import net.minecraft.world.level.block.PressurePlateBlock
-import net.minecraft.world.level.block.PressurePlateBlock.Sensitivity
 import net.minecraft.world.level.block.state.properties.AttachFace
 import net.minecraft.world.level.block.state.properties.BlockSetType
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun DyedRegistrate.createLevers(
     from: Map<DyeColor, NonNullSupplier<Block>>,
@@ -89,7 +88,7 @@ fun DyedRegistrate.createButtons(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<ButtonBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_button")
-        .dyedBlock(dye, name.namespace) { ButtonBlock(it, BlockSetType.STONE, 20, false) }
+        .dyedBlock(dye, name.namespace) { ButtonBlock(BlockSetType.STONE, 20, it) }
         .initialProperties(base)
         .optionalTag(BlockTags.BUTTONS)
         .blockstate { c, p ->
@@ -122,7 +121,7 @@ fun DyedRegistrate.createPressurePlates(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<PressurePlateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_pressure_plate")
-        .dyedBlock(dye, name.namespace) { PressurePlateBlock(Sensitivity.MOBS, it, BlockSetType.STONE) }
+        .dyedBlock(dye, name.namespace) { PressurePlateBlock(BlockSetType.STONE, it) }
         .initialProperties(base)
         .optionalTag(BlockTags.PRESSURE_PLATES)
         .blockstate { c, p ->

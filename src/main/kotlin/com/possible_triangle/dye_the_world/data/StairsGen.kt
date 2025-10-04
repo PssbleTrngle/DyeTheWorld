@@ -23,7 +23,7 @@ fun DyedRegistrate.createStairs(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<StairBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_stairs")
-        .dyedBlock(dye, name.namespace) { StairBlock({ base.get().defaultBlockState() }, it) }
+        .dyedBlock(dye, name.namespace) { StairBlock(base.get().defaultBlockState(), it) }
         .initialProperties(base)
         .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
         .optionalTag(BlockTags.STAIRS)

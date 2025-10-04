@@ -11,6 +11,7 @@ import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.multikulti.datagen.conditions.Condition
 import com.possible_triangle.multikulti.datagen.conditions.ModLoaded
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
+import com.teamabnormals.clayworks.common.item.crafting.BakingRecipe
 import com.teamabnormals.clayworks.core.registry.ClayworksBlocks
 import com.teamabnormals.clayworks.core.registry.ClayworksRecipes.ClayworksRecipeSerializers
 import com.tterrag.registrate.providers.ProviderType
@@ -20,6 +21,10 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.DyeColor
+import net.minecraft.world.item.ItemStack
+import net.minecraft.world.item.crafting.AbstractCookingRecipe
+import net.minecraft.world.item.crafting.CookingBookCategory
+import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DecoratedPotBlock
@@ -210,7 +215,8 @@ object DyedClayworks {
                         0.1F,
                         100,
                         "baking",
-                        ClayworksRecipeSerializers.BAKING_RECIPE.get()
+                        ClayworksRecipeSerializers.BAKING_RECIPE.get(),
+                        ::BakingRecipe
                     )
                 }
             }

@@ -18,7 +18,7 @@ import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Block
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : Item, P> ItemBuilder<T, P>.stoolRecipes() = recipe { context, provider ->
     val wool = dye.blockOf("wool")

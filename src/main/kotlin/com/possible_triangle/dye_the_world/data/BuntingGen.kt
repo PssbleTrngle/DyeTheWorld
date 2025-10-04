@@ -32,7 +32,7 @@ fun <T : Item, P> ItemBuilder<T, P>.buntingItemModel() = model { context, provid
 
 // Needs to be modified manually afterward to add nbt to result
 fun <T : Item, P> ItemBuilder<T, P>.dyedBuntingRecipe() = recipe { _, provider ->
-    val bunting = ModRegistry.BUNTING.get()
+    val bunting = ModRegistry.BUNTING_BLOCKS[DyeColor.WHITE]!!.get()
 
     ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, bunting, 6)
         .pattern("SSS")

@@ -1,6 +1,5 @@
 
 import com.possible_triangle.gradle.features.publishing.DependencyBuilder
-import net.minecraftforge.gradle.common.util.MinecraftExtension
 
 val mod_id: String by extra
 val mc_version: String by extra
@@ -12,7 +11,7 @@ plugins {
 
 withKotlin()
 
-forge {
+neoforge {
     enableMixins()
 
     dataGen {
@@ -35,19 +34,9 @@ forge {
     }
 
     mods.include(libs.registrate)
-    mods.include(libs.multikulti.datagen.fix)
     // TODO do I need this?
     mods.include(libs.multikulti.core)
-    // includesMod("com.possible-triangle:multikulti-registrate-forge:${mc_version}-${multikulti_version}")
-}
-
-// needed because of flywheel accessing the config too early
-configure<MinecraftExtension> {
-    runs {
-        forEach {
-            it.property("production", "true")
-        }
-    }
+    // includesMod(libs.multikulti.registrate)
 }
 
 repositories {
@@ -68,7 +57,7 @@ repositories {
         }
     }
     maven {
-        url = uri("https://maven.tterrag.com/")
+        url = uri("https://mvn.devos.one/snapshots")
         content {
             includeGroup("com.tterrag.registrate")
         }
@@ -79,6 +68,12 @@ repositories {
             includeGroup("com.simibubi.create")
             includeGroup("net.createmod.ponder")
             includeGroup("dev.engine-room.flywheel")
+        }
+    }
+    maven {
+        url = uri("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
+        content {
+            includeGroup("fuzs.forgeconfigapiport")
         }
     }
 }

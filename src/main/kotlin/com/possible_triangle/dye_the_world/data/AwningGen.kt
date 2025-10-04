@@ -12,7 +12,7 @@ import com.tterrag.registrate.builders.ItemBuilder
 import net.mehvahdjukaar.supplementaries.common.block.blocks.AwningBlock
 import net.mehvahdjukaar.supplementaries.reg.ModRegistry
 import net.minecraft.world.item.Item
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : AwningBlock, P> BlockBuilder<T, P>.awningBlockstate() = blockstate { context, provider ->
     fun texture(suffix: String = "") = Constants.MOD_ID.createId("block/$SUPPLEMENTARIES/awnings/awning_${dye}$suffix")

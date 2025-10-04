@@ -13,8 +13,8 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockBehaviour
-import net.minecraftforge.eventbus.api.IEventBus
-import thedarkcolour.kotlinforforge.forge.MOD_BUS
+import net.neoforged.bus.api.IEventBus
+import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 
 class DyedRegistrate private constructor(modid: String) :
     AbstractRegistrate<DyedRegistrate>(modid) {
@@ -29,12 +29,8 @@ class DyedRegistrate private constructor(modid: String) :
 
     fun register() {
         if (isRegistered) return
-        registerEventListeners(modEventBus)
+        registerEventListeners(MOD_BUS)
         isRegistered = true
-    }
-
-    override fun getModEventBus(): IEventBus {
-        return MOD_BUS
     }
 
     @Suppress("UNCHECKED_CAST")

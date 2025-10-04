@@ -16,7 +16,7 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapelessRecipeBuilder
 import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Item
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <P> BlockBuilder<DummyChairBlock, P>.chairBlockstate() = blockstate { context, provider ->
     provider.createVariant(context) { state ->

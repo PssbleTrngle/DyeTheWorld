@@ -10,8 +10,8 @@ import com.possible_triangle.dye_the_world.extensions.ifLoaded
 import com.possible_triangle.dye_the_world.extensions.isLoaded
 import com.possible_triangle.dye_the_world.index.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
-import net.minecraftforge.data.loading.DatagenModLoader
-import net.minecraftforge.fml.common.Mod
+import net.neoforged.fml.common.Mod
+import net.neoforged.neoforge.data.loading.DatagenModLoader
 
 @Mod(Constants.MOD_ID)
 object ForgeEntrypoint {
@@ -25,11 +25,8 @@ object ForgeEntrypoint {
             DyedFurniture.register()
         }
 
-        if (isLoaded(Constants.Mods.QUARK)) {
+        ifLoaded(Constants.Mods.QUARK) {
             DyedQuark.register()
-        } else {
-            stubLootCondition(Constants.Mods.QUARK.createId("flag"))
-            stubRecipeCondition(Constants.Mods.QUARK.createId("flag"))
         }
 
         ifLoaded(Constants.Mods.CLAYWORKS) {
@@ -46,10 +43,6 @@ object ForgeEntrypoint {
 
         ifLoaded(Constants.Mods.DOMESTICATION_INNOVATION) {
             DyedDomestication.register()
-        }
-
-        ifLoaded(Constants.Mods.UPGRADE_AQUATIC) {
-            DyedAquatic.register()
         }
 
         ifLoaded(Constants.Mods.MORE_CONCRETE) {

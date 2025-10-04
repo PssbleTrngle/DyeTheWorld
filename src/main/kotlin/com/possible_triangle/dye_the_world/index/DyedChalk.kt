@@ -11,7 +11,7 @@ import com.possible_triangle.dye_the_world.translation
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import io.github.mortuusars.chalk.Chalk
 import io.github.mortuusars.chalk.block.ChalkMarkBlock
-import io.github.mortuusars.chalk.items.ChalkItem
+import io.github.mortuusars.chalk.item.ChalkItem
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
 

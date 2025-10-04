@@ -6,6 +6,7 @@ import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.yRot
 import com.possible_triangle.dye_the_world.registrate.dye
+import com.simibubi.create.AllDataComponents
 import com.simibubi.create.content.equipment.toolbox.ToolboxBlock
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
@@ -14,11 +15,10 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.storage.loot.LootPool
 import net.minecraft.world.level.storage.loot.LootTable
 import net.minecraft.world.level.storage.loot.entries.LootItem
+import net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction
 import net.minecraft.world.level.storage.loot.functions.CopyNameFunction
-import net.minecraft.world.level.storage.loot.functions.CopyNbtFunction
-import net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : Block, P> BlockBuilder<T, P>.toolboxLoot() = loot { tables, block ->
     val pool = tables.applyExplosionDecay(block, LootPool.lootPool())
@@ -26,12 +26,12 @@ fun <T : Block, P> BlockBuilder<T, P>.toolboxLoot() = loot { tables, block ->
         .setRolls(ConstantValue.exactly(1.0F))
         .apply(CopyNameFunction.copyName(CopyNameFunction.NameSource.BLOCK_ENTITY))
         .apply(
-            CopyNbtFunction.copyData(ContextNbtProvider.BLOCK_ENTITY)
-                .copy("UniqueId", "UniqueId")
+            CopyNameFunction.copyName(CopyNameFunction.NameSource.BLOCK_ENTITY)
         )
         .apply(
-            CopyNbtFunction.copyData(ContextNbtProvider.BLOCK_ENTITY)
-                .copy("Inventory", "Inventory")
+            CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY)
+                .include(AllDataComponents.TOOLBOX_UUID)
+                .include(AllDataComponents.TOOLBOX_INVENTORY)
         )
 
     tables.add(block, LootTable.lootTable().withPool(pool))

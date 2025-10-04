@@ -17,7 +17,7 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Item
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 import org.violetmoon.quark.content.building.block.StoolBlock
 
 fun <T : Item, P> ItemBuilder<T, P>.quarkStoolRecipe() = recipe { context, provider ->

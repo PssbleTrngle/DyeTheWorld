@@ -17,6 +17,8 @@ class DummyChairBlock(properties: Properties) : HorizontalDirectionalBlock(prope
         val FACING = BlockStateProperties.HORIZONTAL_FACING
     }
 
+    override fun codec() = simpleCodec(::DummyChairBlock)
+
     override fun createBlockStateDefinition(builder: StateDefinition.Builder<Block, BlockState>) {
         super.createBlockStateDefinition(builder)
         builder.add(ARMRESTS, FACING, CROPPED_BACK)

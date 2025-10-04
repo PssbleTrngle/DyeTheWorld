@@ -18,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class SimpleCookingRecipeBuilderMixin {
 
     @Unique
-    private static final ResourceLocation BAKING_ID = new ResourceLocation(Constants.Mods.CLAYWORKS, "baking");
+    private static final ResourceLocation BAKING_ID = ResourceLocation.fromNamespaceAndPath(Constants.Mods.CLAYWORKS, "baking");
 
     @Inject(
             method = "determineRecipeCategory(Lnet/minecraft/world/item/crafting/RecipeSerializer;Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/CookingBookCategory;",

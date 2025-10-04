@@ -7,6 +7,7 @@ import com.possible_triangle.dye_the_world.data.canvasSignBlockstate
 import com.possible_triangle.dye_the_world.data.canvasSignItemModel
 import com.possible_triangle.dye_the_world.data.canvasSignRecipes
 import com.possible_triangle.dye_the_world.data.hangingCanvasSignRecipes
+import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.germanLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
@@ -29,7 +30,7 @@ import vectorwing.farmersdelight.common.tag.ModTags
 object DyedDelight {
 
     private val TAB =
-        ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation(FARMERS_DELIGHT, FARMERS_DELIGHT))
+        ResourceKey.create(Registries.CREATIVE_MODE_TAB, FARMERS_DELIGHT.createId(FARMERS_DELIGHT))
 
     val CANVAS_WALL_SIGNS = dyesFor(FARMERS_DELIGHT).associateWith { dye ->
         REGISTRATE.`object`("${dye}_canvas_wall_sign")

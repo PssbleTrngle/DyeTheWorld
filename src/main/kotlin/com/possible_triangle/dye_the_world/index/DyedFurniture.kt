@@ -4,6 +4,7 @@ import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.dyesFor
+import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.translation
 import com.possible_triangle.dye_the_world.extensions.withItem
@@ -18,7 +19,7 @@ import net.minecraft.resources.ResourceLocation
 object DyedFurniture {
 
     private val TAB =
-        ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation(ANOTHER_FURNITURE, ANOTHER_FURNITURE))
+        ResourceKey.create(Registries.CREATIVE_MODE_TAB, ANOTHER_FURNITURE.createId(ANOTHER_FURNITURE))
 
     val SOFAS = dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
         REGISTRATE.`object`("${dye}_sofa")

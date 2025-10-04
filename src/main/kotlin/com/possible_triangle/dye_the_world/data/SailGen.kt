@@ -8,7 +8,7 @@ import com.possible_triangle.dye_the_world.extensions.yRot
 import com.simibubi.create.content.contraptions.bearing.SailBlock
 import com.tterrag.registrate.builders.BlockBuilder
 import net.minecraft.core.Direction
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : SailBlock, P> BlockBuilder<T, P>.sailBlockstate() = blockstate { context, provider ->
     val dye = context.get().color

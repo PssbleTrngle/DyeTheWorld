@@ -26,7 +26,7 @@ import net.minecraft.world.level.storage.loot.LootPool
 import net.minecraft.world.level.storage.loot.LootTable
 import net.minecraft.world.level.storage.loot.entries.LootItem
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : Item, P> ItemBuilder<T, P>.curtainRecipes() = recipe { context, provider ->
     val wool = dye.blockOf("wool")
@@ -76,7 +76,7 @@ fun <T : Block, P> BlockBuilder<T, P>.curtainBlockstate() = blockstate { context
 
         if (isMiddle && vertical == Direction.DOWN) {
             return@model ConfiguredModel.builder()
-                .modelFile(provider.models().getExistingFile(ResourceLocation("block/air")))
+                .modelFile(provider.models().getExistingFile(ResourceLocation.withDefaultNamespace("block/air")))
         }
 
         val suffixV = if (isMiddle) "" else when (vertical) {

@@ -8,6 +8,7 @@ import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.advancements.critereon.StatePropertiesPredicate
 import net.minecraft.core.Direction
 import net.minecraft.core.Registry
+import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.data.recipes.RecipeBuilder
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.data.recipes.ShapelessRecipeBuilder
@@ -22,10 +23,9 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.level.block.state.properties.Property
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition
-import net.minecraftforge.client.model.generators.BlockStateProvider
-import net.minecraftforge.client.model.generators.ConfiguredModel
-import net.minecraftforge.fml.ModList
-import net.minecraftforge.registries.ForgeRegistries
+import net.neoforged.fml.ModList
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun isLoaded(modid: String) = ModList.get().isLoaded(modid)
 
@@ -46,7 +46,7 @@ fun <T : Any> Registry<T>.getOrThrow(id: ResourceLocation): T {
     return getOrThrow(key)
 }
 
-fun String.createId(path: String) = ResourceLocation(this, path)
+fun String.createId(path: String) = ResourceLocation.fromNamespaceAndPath(this, path)
 
 val <R, T : R, P, S : Builder<R, T, P, S>> Builder<R, T, P, S>.namespace
     get(): String {
@@ -75,7 +75,7 @@ fun <K, V> Map<V, K>.inverse() = map { it.value to it.key }.toMap()
 
 @Suppress("UNCHECKED_CAST")
 fun <T : RecipeBuilder> T.unlockedBy(item: ItemLike): T {
-    val id = ForgeRegistries.ITEMS.getKey(item.asItem()) ?: error("unknown item")
+    val id = BuiltInRegistries.ITEM.getKeyOrNull(item.asItem()) ?: error("unknown item")
     return unlockedBy("has_${id.path}", RegistrateRecipeProvider.has(item)) as T
 }
 

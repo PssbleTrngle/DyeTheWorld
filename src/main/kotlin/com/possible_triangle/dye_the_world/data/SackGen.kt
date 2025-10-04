@@ -9,7 +9,7 @@ import com.tterrag.registrate.builders.ItemBuilder
 import net.mehvahdjukaar.supplementaries.common.block.blocks.SackBlock
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : Block, P> BlockBuilder<T, P>.sackBlockstate() =
     blockstate { context, provider ->

@@ -19,7 +19,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.HorizontalDirectionalBlock
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : Block, P> BlockBuilder<T, P>.petBedBlockstate() = blockstate { context, provider ->
     val model = provider.models().withExistingParent(context.name, DOMESTICATION_INNOVATION.createId("block/pet_bed"))

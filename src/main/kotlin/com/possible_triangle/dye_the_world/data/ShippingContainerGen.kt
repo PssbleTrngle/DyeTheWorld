@@ -17,7 +17,7 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Blocks
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : ShippingContainerBlock, P> BlockBuilder<T, P>.shippingContainerBlockstate() =
     blockstate { context, provider ->

@@ -16,16 +16,16 @@ import net.blay09.mods.waystones.tag.ModItemTags
 import net.minecraft.advancements.critereon.EnchantmentPredicate
 import net.minecraft.advancements.critereon.ItemPredicate
 import net.minecraft.advancements.critereon.MinMaxBounds
+import net.minecraft.core.registries.Registries
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.enchantment.Enchantments
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf
 import net.minecraft.world.level.storage.loot.LootPool
 import net.minecraft.world.level.storage.loot.LootTable
 import net.minecraft.world.level.storage.loot.entries.LootItem
-import net.minecraft.world.level.storage.loot.functions.CopyNbtFunction
+import net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction
 import net.minecraft.world.level.storage.loot.predicates.MatchTool
-import net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 object DyedWaystones {
 
@@ -34,7 +34,7 @@ object DyedWaystones {
 
     val SHARESTONES = DYES.associateWith { dye ->
         REGISTRATE.`object`("${dye}_sharestone")
-            .dyedBlock(dye) { SharestoneBlock(it, dye) }
+            .dyedBlock(dye) { SharestoneBlock(dye, it) }
             .lang("${dye.translation} Sharestone")
             .germanLang("${dye.germanTranslation(Genus.M)} Teilstein")
             .addMiscData(ProviderType.LANG) {
@@ -49,15 +49,16 @@ object DyedWaystones {
                     "Teleportiere zu jedem anderen ${dye.germanTranslation(Genus.M)} Teilstein"
                 )
             }
-            .optionalTag(ModBlockTags.DYED_SHARESTONES)
             .optionalTag(ModBlockTags.SHARESTONES)
             .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
             .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
             .loot { tables, block ->
+                val enchantments = tables.registries.lookupOrThrow(Registries.ENCHANTMENT)
+
                 val hasSilktouch = MatchTool.toolMatches(
                     ItemPredicate.Builder.item().hasEnchantment(
                         EnchantmentPredicate(
-                            Enchantments.SILK_TOUCH,
+                            enchantments.getOrThrow(Enchantments.SILK_TOUCH),
                             MinMaxBounds.Ints.atLeast(1)
                         )
                     )
@@ -69,9 +70,8 @@ object DyedWaystones {
                         hasProperty(SharestoneBlock.HALF, DoubleBlockHalf.LOWER)
                     })
                     .apply(
-                        CopyNbtFunction.copyData(ContextNbtProvider.BLOCK_ENTITY)
+                        CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY)
                             .`when`(hasSilktouch)
-                            .copy("UUID", "UUID")
                     )
 
                 tables.add(
@@ -96,7 +96,6 @@ object DyedWaystones {
                 }
             }
             .withItem {
-                optionalTag(ModItemTags.DYED_SHARESTONES)
                 optionalTag(ModItemTags.SHARESTONES)
                 recipe { c, p -> p.dyeingRecipe(dye, ModItemTags.SHARESTONES, c) }
                 model { context, provider ->

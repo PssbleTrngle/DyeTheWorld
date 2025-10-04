@@ -2,6 +2,9 @@ package com.possible_triangle.dye_the_world.mixins;
 
 import com.possible_triangle.dye_the_world.Dyes;
 import com.railwayteam.railways.content.smokestack.particles.chimneypush.ChimneyPushParticleData;
+import com.railwayteam.railways.util.ColorUtils;
+import net.createmod.catnip.theme.Color;
+import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.DyeColor;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -19,8 +22,8 @@ public class ChimneyPushParticleDataMixin {
     )
     private static void overwritePuffColor(boolean small, boolean leadOnly, DyeColor dye, CallbackInfoReturnable<ChimneyPushParticleData<?>> cir) {
         if (Dyes.isVanilla(dye)) return;
-        var color = dye.getTextureDiffuseColors();
-        cir.setReturnValue(ChimneyPushParticleData.create(small, leadOnly, color[0], color[1], color[2]));
+        var color = new Color(dye.getTextureDiffuseColor());
+        cir.setReturnValue(ChimneyPushParticleData.create(small, leadOnly, color.getRed(), color.getGreen(), color.getBlue()));
     }
 
 }

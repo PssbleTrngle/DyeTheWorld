@@ -23,7 +23,7 @@ import net.minecraft.world.level.block.SoundType
 object DyedCaves {
 
     private val TOXIC_TAB =
-        ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation(ALEXS_CAVES, "toxic_caves"))
+        ResourceKey.create(Registries.CREATIVE_MODE_TAB, ALEXS_CAVES.createId("toxic_caves"))
 
     val RADON_LAMPS = dyesFor(ALEXS_CAVES).associateWith { dye ->
         REGISTRATE.`object`("radon_lamp_${dye}")

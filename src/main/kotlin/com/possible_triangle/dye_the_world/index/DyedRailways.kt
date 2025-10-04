@@ -14,7 +14,7 @@ import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe
 import com.simibubi.create.content.kinetics.saw.CuttingRecipe
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipeBuilder
 import net.minecraft.world.item.Item
-import net.minecraftforge.common.Tags
+import net.neoforged.neoforge.common.Tags
 
 object DyedRailways {
 
@@ -50,7 +50,7 @@ object DyedRailways {
                     .require(dye.blockOf("wool"))
                     .addStep(::CuttingRecipe) { it }
                     .addStep(::DeployerApplicationRecipe) { it.require(AllItems.PRECISION_MECHANISM) }
-                    .addStep(::DeployerApplicationRecipe) { it.require(Tags.Items.STRING) }
+                    .addStep(::DeployerApplicationRecipe) { it.require(Tags.Items.STRINGS) }
                     .build(provider)
 
                 provider.dyeingRecipe(dye, DyedTags.Items.CONDUCTOR_CAPS, context)

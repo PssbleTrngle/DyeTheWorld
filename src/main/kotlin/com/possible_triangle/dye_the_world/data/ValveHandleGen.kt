@@ -13,7 +13,7 @@ import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import net.minecraft.core.Direction
 import net.minecraft.world.item.Item
-import net.minecraftforge.client.model.generators.ConfiguredModel
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : ValveHandleBlock, P> BlockBuilder<T, P>.valveBlockstate() = blockstate { context, provider ->
     val model = provider.models().withExistingParent(context.name, CREATE.createId("block/valve_handle"))

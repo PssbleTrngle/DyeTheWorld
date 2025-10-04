@@ -1,22 +1,21 @@
 [versions]
-multikulti = "1.20.1-1.1.3"
-flywheel = "1.0.1"
-gradle-helper = "0.3.0"
+multikulti = "1.21.1-1.2.1"
+flywheel = "1.0.2"
+gradle-helper = "0.0.0-dev"
 
 [libraries]
-registrate = { group = "com.tterrag.registrate", name = "Registrate", version = "MC1.20-1.3.11" }
-multikulti-core = { group = "com.possible-triangle", name = "multikulti-core-forge", version.ref = "multikulti" }
-multikulti-datagen = { group = "com.possible-triangle", name = "multikulti-datagen-forge", version.ref = "multikulti" }
-multikulti-datagen-fix = { group = "com.possible-triangle", name = "multikulti-datagen-forge-fix", version.ref = "multikulti" }
+registrate = { group = "com.tterrag.registrate", name = "Registrate", version = "MC1.21-1.3.0+62" }
+multikulti-core = { group = "com.possible-triangle", name = "multikulti-core-neoforge", version.ref = "multikulti" }
+multikulti-datagen = { group = "com.possible-triangle", name = "multikulti-datagen-neoforge", version.ref = "multikulti" }
 
-create = { group = "com.simibubi.create", name = "create-1.20.1", version = "6.0.6-163" }
-ponder = { group = "net.createmod.ponder", name = "Ponder-Forge-1.20.1", version = "1.0.43" }
-flywheel = { group = "dev.engine-room.flywheel", name = "flywheel-forge-1.20.1", version.ref = "flywheel" }
-flywheel-api = { group = "dev.engine-room.flywheel", name = "flywheel-forge-api-1.20.1", version.ref = "flywheel" }
+create = { group = "com.simibubi.create", name = "create-1.21.1", version = "6.0.6-99" }
+ponder = { group = "net.createmod.ponder", name = "Ponder-NeoForge-1.21.1", version = "1.0.52" }
+flywheel = { group = "dev.engine-room.flywheel", name = "flywheel-neoforge-1.21.1", version.ref = "flywheel" }
+flywheel-api = { group = "dev.engine-room.flywheel", name = "flywheel-neoforge-api-1.21.1", version.ref = "flywheel" }
 
-jei = { group = "mezz.jei", name = "jei-1.20.1-forge", version = "15.20.0.106" }
+jei = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version = "19.21.0.247" }
 
-dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot", version = "1.20.1-1.2.0-forge" }
+dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot", version = "1.21.1-2.0.0-neoforge" }
 
 [plugins]
 gradle-helper = { id = "com.possible-triangle.gradle", version.ref = "gradle-helper" }
