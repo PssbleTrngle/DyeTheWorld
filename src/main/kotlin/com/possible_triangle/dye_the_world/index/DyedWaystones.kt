@@ -6,19 +6,22 @@ import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
-import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.translation
 import com.teamabnormals.upgrade_aquatic.common.block.BedrollBlock
 import com.tterrag.registrate.providers.ProviderType
 import net.blay09.mods.waystones.block.SharestoneBlock
+import net.blay09.mods.waystones.item.ModItems
 import net.blay09.mods.waystones.tag.ModBlockTags
 import net.blay09.mods.waystones.tag.ModItemTags
 import net.minecraft.advancements.critereon.EnchantmentPredicate
 import net.minecraft.advancements.critereon.ItemPredicate
 import net.minecraft.advancements.critereon.MinMaxBounds
 import net.minecraft.core.registries.Registries
+import net.minecraft.data.recipes.RecipeCategory
+import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.enchantment.Enchantments
+import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf
 import net.minecraft.world.level.storage.loot.LootPool
 import net.minecraft.world.level.storage.loot.LootTable
@@ -97,7 +100,17 @@ object DyedWaystones {
             }
             .withItem {
                 optionalTag(ModItemTags.SHARESTONES)
-                recipe { c, p -> p.dyeingRecipe(dye, ModItemTags.SHARESTONES, c) }
+                recipe { c, p ->
+                    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, c.get())
+                        .pattern("SSS")
+                        .pattern("DWD")
+                        .pattern("OOO")
+                        .define('D', dye.tag)
+                        .define('O', Blocks.OBSIDIAN)
+                        .define('S', Blocks.STONE_BRICKS)
+                        .defineUnlocking('W', ModItems.warpStone)
+                        .save(p)
+                }
                 model { context, provider ->
                     provider.withExistingParent(context.name, WAYSTONES.createId("item/sharestone"))
                 }

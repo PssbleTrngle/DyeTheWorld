@@ -34,9 +34,6 @@ neoforge {
     }
 
     mods.include(libs.registrate)
-    // TODO do I need this?
-    mods.include(libs.multikulti.core)
-    // includesMod(libs.multikulti.registrate)
 }
 
 repositories {
@@ -79,7 +76,9 @@ repositories {
 }
 
 dependencies {
+    modImplementation(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
+
     modImplementation(variantOf(libs.create) {
         classifier("slim")
     }) {

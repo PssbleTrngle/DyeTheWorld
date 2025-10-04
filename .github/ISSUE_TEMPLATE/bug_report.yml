@@ -2,6 +2,7 @@ name: Bug Report
 description: File a bug report
 labels: ["bug"]
 assignees: [PssbleTrngle]
+projects: [PssbleTrngle/16]
 
 body:
   - type: textarea
@@ -37,9 +38,8 @@ body:
       label: Minecraft Version
       multiple: false
       options:
+        - "1.21"
         - "1.20"
-        - "1.19"
-        - "1.18"
     validations:
       required: true
 
