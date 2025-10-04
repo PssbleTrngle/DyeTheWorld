@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lamps",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    },
+    "W": {
+      "item": "dye_depot:olive_wool"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WTW",
+    " / "
+  ],
+  "result": {
+    "count": 3,
+    "id": "dye_the_world:olive_lamp"
+  }
+}

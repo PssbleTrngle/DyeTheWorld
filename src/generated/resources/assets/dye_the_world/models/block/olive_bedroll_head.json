@@ -1,7 +1,0 @@
-{
-  "parent": "upgrade_aquatic:block/bedroll/template_bedroll_head",
-  "textures": {
-    "bedroll": "dye_the_world:block/upgrade_aquatic/bedroll/olive",
-    "particle": "dye_the_world:block/upgrade_aquatic/bedroll/olive_particle"
-  }
-}

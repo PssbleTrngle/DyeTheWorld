@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "concrete_button",
+  "ingredients": [
+    {
+      "item": "dye_depot:amber_concrete"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:amber_concrete_button"
+  }
+}

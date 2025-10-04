@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "canvas_sign",
+  "ingredients": [
+    {
+      "tag": "c:dyes/coral"
+    },
+    {
+      "tag": "farmersdelight:canvas_signs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:coral_canvas_sign"
+  }
+}

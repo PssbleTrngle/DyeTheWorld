@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.mixins;
 
 import com.possible_triangle.dye_the_world.Dyes;
-import com.railwayteam.railways.content.smokestack.particles.chimneypush.ChimneyPushParticleData;
 import com.railwayteam.railways.content.smokestack.particles.puffs.PuffSmokeParticleData;
 import net.createmod.catnip.theme.Color;
 import net.minecraft.world.item.DyeColor;

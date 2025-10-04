@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:dried_kelp"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "dye_depot:verdant_dye"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "farmersdelight:tools/knives"
+  }
+}

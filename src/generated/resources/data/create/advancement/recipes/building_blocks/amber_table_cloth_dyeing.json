@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dyed_table_cloths": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#create:dyed_table_cloths"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create:amber_table_cloth_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dyed_table_cloths"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create:amber_table_cloth_dyeing"
+    ]
+  }
+}

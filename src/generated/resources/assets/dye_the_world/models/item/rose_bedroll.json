@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "dye_the_world:item/upgrade_aquatic/bedroll/rose"
-  }
-}

@@ -1,0 +1,156 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:maroon_sofa",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_tall_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_curtain",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_lamp",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_maroon_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_decorated_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_hanging_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "suppsquared:sack_maroon",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_maroon",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_maroon",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_maroon",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_maroon",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_maroon",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_maroon",
+      "required": false
+    },
+    {
+      "id": "create:maroon_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:maroon_seat",
+      "required": false
+    },
+    {
+      "id": "create:maroon_valve_handle",
+      "required": false
+    },
+    {
+      "id": "create:maroon_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:maroon_postbox",
+      "required": false
+    },
+    {
+      "id": "chalk:maroon_chalk",
+      "required": false
+    },
+    {
+      "id": "waystones:maroon_sharestone",
+      "required": false
+    }
+  ]
+}

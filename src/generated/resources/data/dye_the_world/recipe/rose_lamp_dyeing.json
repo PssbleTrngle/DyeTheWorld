@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "lamps",
+  "ingredients": [
+    {
+      "tag": "c:dyes/rose"
+    },
+    {
+      "item": "another_furniture:white_lamp"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:rose_lamp"
+  }
+}

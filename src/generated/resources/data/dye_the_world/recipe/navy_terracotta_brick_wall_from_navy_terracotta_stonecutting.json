@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:navy_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:navy_terracotta_brick_wall"
+  }
+}

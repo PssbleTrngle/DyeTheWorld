@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "comforts:sleeping_bags_dyed",
+  "ingredients": [
+    {
+      "tag": "c:dyes/maroon"
+    },
+    {
+      "tag": "comforts:sleeping_bags"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:sleeping_bag_maroon"
+  }
+}

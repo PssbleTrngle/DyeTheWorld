@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "sofas",
+  "ingredients": [
+    {
+      "tag": "c:dyes/beige"
+    },
+    {
+      "item": "another_furniture:white_sofa"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:beige_sofa"
+  }
+}

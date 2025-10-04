@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "curtains",
+  "ingredients": [
+    {
+      "tag": "c:dyes/ginger"
+    },
+    {
+      "item": "another_furniture:white_curtain"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:ginger_curtain"
+  }
+}

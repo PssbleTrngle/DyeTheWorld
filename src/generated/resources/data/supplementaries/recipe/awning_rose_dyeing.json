@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/rose"
+    },
+    {
+      "item": "supplementaries:awning"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "supplementaries:awning_rose"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:tan_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:tan_concrete_stairs"
+  }
+}

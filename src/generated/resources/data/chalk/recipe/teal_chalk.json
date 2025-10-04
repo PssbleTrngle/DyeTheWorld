@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chalk:chalk",
+  "ingredients": [
+    {
+      "item": "minecraft:calcite"
+    },
+    {
+      "tag": "c:dyes/teal"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chalk:teal_chalk"
+  }
+}

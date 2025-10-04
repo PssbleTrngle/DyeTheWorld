@@ -99,7 +99,7 @@ object DyedWaystones {
                 optionalTag(ModItemTags.SHARESTONES)
                 recipe { c, p -> p.dyeingRecipe(dye, ModItemTags.SHARESTONES, c) }
                 model { context, provider ->
-                    provider.withExistingParent(context.name, WAYSTONES.createId("item/scoped_sharestone"))
+                    provider.withExistingParent(context.name, WAYSTONES.createId("item/sharestone"))
                 }
             }
             .register()

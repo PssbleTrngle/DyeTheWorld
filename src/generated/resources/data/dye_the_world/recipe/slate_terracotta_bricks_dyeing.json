@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "clayworks:terracotta_bricks"
+    },
+    "D": {
+      "tag": "c:dyes/slate"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "dye_the_world:slate_terracotta_bricks"
+  }
+}

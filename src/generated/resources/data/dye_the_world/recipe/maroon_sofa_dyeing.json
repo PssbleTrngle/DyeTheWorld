@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "sofas",
+  "ingredients": [
+    {
+      "tag": "c:dyes/maroon"
+    },
+    {
+      "item": "another_furniture:white_sofa"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:maroon_sofa"
+  }
+}

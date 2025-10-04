@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_postboxes": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#create:postboxes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create:slate_postbox_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_postboxes"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create:slate_postbox_dyeing"
+    ]
+  }
+}

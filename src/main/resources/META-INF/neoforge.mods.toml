@@ -1,0 +1,85 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[5.8.0,)"
+license = "https://github.com/${repository}/blob/1.21.x/LICENSE.txt"
+issueTrackerURL = "https://github.com/${repository}/issues"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_author}"
+description = '''Compatiblity for the Dye Depot mod'''
+updateJSONURL = "https://api.modrinth.com/updates/dye-the-world/forge_updates.json"
+
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.21,1.21.1)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId="kotlinforforge"
+mandatory=true
+versionRange="[5.8.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="dye_depot"
+mandatory=true
+versionRange="[2.0.0-neoforge,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "create"
+mandatory = false
+versionRange = "[6.0.0,6.1.0)"
+ordering="AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "another_furniture"
+mandatory = false
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "supplementaries"
+mandatory = false
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "chalk"
+mandatory = false
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "upgrade_aquatic"
+mandatory = false
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "farmersdelight"
+mandatory = false
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
+[[mixins]]
+config="${mod_id}.mixins.json"

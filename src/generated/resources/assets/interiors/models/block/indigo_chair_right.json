@@ -1,9 +1,0 @@
-{
-  "parent": "interiors:block/chair/right",
-  "textures": {
-    "side": "dye_the_world:block/create/seat/side_indigo",
-    "side_front": "dye_the_world:block/create/seat/side_indigo",
-    "side_top": "dye_the_world:block/interiors/chair/side_top_indigo",
-    "top": "dye_the_world:block/create/seat/top_indigo"
-  }
-}

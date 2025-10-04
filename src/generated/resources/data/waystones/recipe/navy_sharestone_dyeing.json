@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/navy"
+    },
+    {
+      "tag": "waystones:sharestones"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "waystones:navy_sharestone"
+  }
+}

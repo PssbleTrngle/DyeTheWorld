@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:aqua_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:aqua_concrete_stairs"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "bunting",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "item": "supplementaries:bunting_white"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "supplementaries:bunting_white"
+  }
+}

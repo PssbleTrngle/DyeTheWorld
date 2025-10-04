@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "clayworks:terracotta_bricks"
+    },
+    "D": {
+      "tag": "c:dyes/indigo"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "dye_the_world:indigo_terracotta_bricks"
+  }
+}

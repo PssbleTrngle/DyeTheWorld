@@ -1,0 +1,72 @@
+{
+  "values": [
+    {
+      "id": "#create:seats",
+      "required": false
+    },
+    {
+      "id": "create:amber_postbox",
+      "required": false
+    },
+    {
+      "id": "create:aqua_postbox",
+      "required": false
+    },
+    {
+      "id": "create:beige_postbox",
+      "required": false
+    },
+    {
+      "id": "create:coral_postbox",
+      "required": false
+    },
+    {
+      "id": "create:forest_postbox",
+      "required": false
+    },
+    {
+      "id": "create:ginger_postbox",
+      "required": false
+    },
+    {
+      "id": "create:indigo_postbox",
+      "required": false
+    },
+    {
+      "id": "create:maroon_postbox",
+      "required": false
+    },
+    {
+      "id": "create:mint_postbox",
+      "required": false
+    },
+    {
+      "id": "create:navy_postbox",
+      "required": false
+    },
+    {
+      "id": "create:olive_postbox",
+      "required": false
+    },
+    {
+      "id": "create:rose_postbox",
+      "required": false
+    },
+    {
+      "id": "create:slate_postbox",
+      "required": false
+    },
+    {
+      "id": "create:tan_postbox",
+      "required": false
+    },
+    {
+      "id": "create:teal_postbox",
+      "required": false
+    },
+    {
+      "id": "create:verdant_postbox",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "canvas_sign",
+  "ingredients": [
+    {
+      "tag": "c:dyes/teal"
+    },
+    {
+      "tag": "farmersdelight:canvas_signs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:teal_canvas_sign"
+  }
+}

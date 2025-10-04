@@ -4,9 +4,7 @@ import com.github.alexthe666.alexsmobs.entity.EntityElephant;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.possible_triangle.dye_the_world.Dyes;
 import com.possible_triangle.dye_the_world.compat.AlexsMobsCompat;
-
 import javax.annotation.Nullable;
-
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import org.spongepowered.asm.mixin.Mixin;

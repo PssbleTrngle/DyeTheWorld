@@ -1,0 +1,196 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:amber_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_slab",
+      "required": false
+    }
+  ]
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "domesticationinnovation:block/pet_bed",
-  "textures": {
-    "bed": "dye_the_world:block/domesticationinnovation/pet_bed_rose"
-  }
-}

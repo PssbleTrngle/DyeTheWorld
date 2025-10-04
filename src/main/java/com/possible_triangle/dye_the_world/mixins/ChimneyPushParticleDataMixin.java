@@ -2,9 +2,7 @@ package com.possible_triangle.dye_the_world.mixins;
 
 import com.possible_triangle.dye_the_world.Dyes;
 import com.railwayteam.railways.content.smokestack.particles.chimneypush.ChimneyPushParticleData;
-import com.railwayteam.railways.util.ColorUtils;
 import net.createmod.catnip.theme.Color;
-import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.DyeColor;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

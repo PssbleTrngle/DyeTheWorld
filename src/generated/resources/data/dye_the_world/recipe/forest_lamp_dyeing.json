@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "lamps",
+  "ingredients": [
+    {
+      "tag": "c:dyes/forest"
+    },
+    {
+      "item": "another_furniture:white_lamp"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:forest_lamp"
+  }
+}

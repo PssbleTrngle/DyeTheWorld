@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "create:aqua_table_cloth"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:aqua_table_cloth"
+  }
+}

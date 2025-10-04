@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete_fence_gate",
+  "key": {
+    "#": {
+      "tag": "c:rods/wooden"
+    },
+    "W": {
+      "item": "dye_depot:mint_concrete"
+    }
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:mint_concrete_fence_gate"
+  }
+}

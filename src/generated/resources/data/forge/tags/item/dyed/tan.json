@@ -1,0 +1,156 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:tan_sofa",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_tall_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_curtain",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_lamp",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_tan_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_decorated_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_hanging_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "suppsquared:sack_tan",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_tan",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_tan",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_tan",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_tan",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_tan",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_tan",
+      "required": false
+    },
+    {
+      "id": "create:tan_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:tan_seat",
+      "required": false
+    },
+    {
+      "id": "create:tan_valve_handle",
+      "required": false
+    },
+    {
+      "id": "create:tan_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:tan_postbox",
+      "required": false
+    },
+    {
+      "id": "chalk:tan_chalk",
+      "required": false
+    },
+    {
+      "id": "waystones:tan_sharestone",
+      "required": false
+    }
+  ]
+}

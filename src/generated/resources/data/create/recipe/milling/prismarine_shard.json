@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "dye_depot:teal_dye"
+    },
+    {
+      "chance": 0.1,
+      "id": "dye_depot:teal_dye"
+    }
+  ]
+}

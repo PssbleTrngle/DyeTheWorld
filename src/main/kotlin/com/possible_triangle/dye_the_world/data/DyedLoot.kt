@@ -1,19 +1,17 @@
 package com.possible_triangle.dye_the_world.data
 
 import com.possible_triangle.dye_the_world.Constants
-import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.getOrThrow
 import com.possible_triangle.dye_the_world.extensions.hasEnchantment
 import com.possible_triangle.dye_the_world.index.DyedQuark
 import com.possible_triangle.dye_the_world.index.DyedQuark.GLASS_SHARDS
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.tterrag.registrate.AbstractRegistrate
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.BuilderCallback
 import net.minecraft.advancements.critereon.EnchantmentPredicate
-import net.minecraft.advancements.critereon.ItemEnchantmentsPredicate
 import net.minecraft.advancements.critereon.ItemPredicate
-import net.minecraft.advancements.critereon.ItemSubPredicates
 import net.minecraft.advancements.critereon.MinMaxBounds
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
@@ -29,7 +27,6 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount
 import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay
 import net.minecraft.world.level.storage.loot.functions.LimitCount
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition
 import net.minecraft.world.level.storage.loot.predicates.MatchTool
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator
 import org.violetmoon.zeta.config.FlagLootCondition

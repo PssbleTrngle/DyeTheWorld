@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tall_stools",
+  "ingredients": [
+    {
+      "tag": "c:dyes/ginger"
+    },
+    {
+      "item": "another_furniture:white_tall_stool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:ginger_tall_stool"
+  }
+}

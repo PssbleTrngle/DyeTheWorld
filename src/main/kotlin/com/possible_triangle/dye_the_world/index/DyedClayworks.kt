@@ -16,6 +16,7 @@ import com.teamabnormals.clayworks.core.registry.ClayworksBlocks
 import com.teamabnormals.clayworks.core.registry.ClayworksRecipes.ClayworksRecipeSerializers
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
+import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
@@ -28,6 +29,7 @@ import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DecoratedPotBlock
+import java.util.function.Supplier
 
 data class ClayworksConfigCondition(val flag: String) : Condition {
     override fun JsonObject.toFabric() {
@@ -187,9 +189,12 @@ object DyedClayworks {
             .lang("${dye.translation} Decorated Pot")
             .potBlockstate()
             .potLoot()
-            .withItem(::createPotItem) {
+            .withItem {
                 properties { it.stacksTo(1) }
                 potItemModel()
+                clientExtension(NonNullSupplier {
+                    Supplier(::createPotClientExtensions)
+                })
                 tab(CreativeModeTabs.COLORED_BLOCKS)
                 tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
             }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_the_world:navy_sofa_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_sofa": {
+      "conditions": {
+        "items": [
+          {
+            "items": "another_furniture:white_sofa"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_sofa"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_the_world:navy_sofa_dyeing"
+    ]
+  }
+}

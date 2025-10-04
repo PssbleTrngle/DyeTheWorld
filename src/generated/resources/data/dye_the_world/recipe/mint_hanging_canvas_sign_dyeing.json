@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "hanging_canvas_sign",
+  "ingredients": [
+    {
+      "tag": "c:dyes/mint"
+    },
+    {
+      "tag": "farmersdelight:hanging_canvas_signs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:mint_hanging_canvas_sign"
+  }
+}

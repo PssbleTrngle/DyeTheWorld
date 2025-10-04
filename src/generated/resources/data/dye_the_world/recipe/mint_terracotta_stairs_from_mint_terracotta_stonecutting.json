@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:mint_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:mint_terracotta_stairs"
+  }
+}

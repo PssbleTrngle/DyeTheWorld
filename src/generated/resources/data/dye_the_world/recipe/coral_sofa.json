@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "sofas",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "dye_depot:coral_wool"
+    }
+  },
+  "pattern": [
+    "#W ",
+    "#WW",
+    "/ /"
+  ],
+  "result": {
+    "count": 3,
+    "id": "dye_the_world:coral_sofa"
+  }
+}

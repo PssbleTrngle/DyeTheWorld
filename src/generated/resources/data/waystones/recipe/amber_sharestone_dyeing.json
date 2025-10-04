@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/amber"
+    },
+    {
+      "tag": "waystones:sharestones"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "waystones:amber_sharestone"
+  }
+}

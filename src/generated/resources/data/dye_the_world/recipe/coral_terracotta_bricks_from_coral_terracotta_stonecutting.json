@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:coral_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:coral_terracotta_bricks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_awning": {
+      "conditions": {
+        "items": [
+          {
+            "items": "supplementaries:awning"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "supplementaries:awning_ginger_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_awning"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "supplementaries:awning_ginger_dyeing"
+    ]
+  }
+}

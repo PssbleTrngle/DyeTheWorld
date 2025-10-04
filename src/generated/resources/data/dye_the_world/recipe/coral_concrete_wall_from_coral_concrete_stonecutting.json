@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:coral_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:coral_concrete_wall"
+  }
+}

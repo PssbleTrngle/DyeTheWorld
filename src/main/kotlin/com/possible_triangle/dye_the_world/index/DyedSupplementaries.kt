@@ -11,8 +11,10 @@ import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.translation
 import net.mehvahdjukaar.supplementaries.common.block.blocks.AwningBlock
 import net.mehvahdjukaar.supplementaries.common.block.blocks.SackBlock
+import net.mehvahdjukaar.supplementaries.common.items.BuntingItem
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.ColorRGBA
+import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -55,7 +57,7 @@ object DyedSupplementaries {
 
     val BUNTINGS = DYES.associateWith { dye ->
         REGISTRATE.`object`("bunting_$dye")
-            .dyedItem(dye, ::Item)
+            .dyedItem(dye) { BlockItem(null, it) }
             .lang("${dye.translation} Bunting")
             .dyedBuntingItemModel()
             .dyedBuntingRecipe()

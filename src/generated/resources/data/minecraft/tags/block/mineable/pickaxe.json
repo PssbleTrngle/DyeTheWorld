@@ -1,0 +1,1156 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:amber_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_amber_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_aqua_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_beige_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_coral_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_forest_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_ginger_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_indigo_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_maroon_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_mint_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_navy_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_olive_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_rose_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_slate_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_tan_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_teal_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_verdant_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "create:amber_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:aqua_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:beige_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:coral_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:forest_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:ginger_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:indigo_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:maroon_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:mint_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:navy_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:olive_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:rose_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:slate_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:tan_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:teal_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "create:verdant_nixie_tube",
+      "required": false
+    },
+    {
+      "id": "waystones:amber_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:aqua_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:beige_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:coral_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:forest_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:ginger_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:indigo_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:maroon_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:mint_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:navy_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:olive_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:rose_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:slate_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:tan_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:teal_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:verdant_sharestone",
+      "required": false
+    }
+  ]
+}

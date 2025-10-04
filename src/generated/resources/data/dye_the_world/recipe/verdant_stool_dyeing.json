@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stools",
+  "ingredients": [
+    {
+      "tag": "c:dyes/verdant"
+    },
+    {
+      "item": "another_furniture:white_stool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:verdant_stool"
+  }
+}

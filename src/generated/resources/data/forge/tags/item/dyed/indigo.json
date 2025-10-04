@@ -1,0 +1,156 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:indigo_sofa",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_tall_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_curtain",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_lamp",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:chiseled_indigo_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_decorated_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_hanging_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_fence",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_fence_gate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_button",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_lever",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_concrete_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "suppsquared:sack_indigo",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_indigo",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_indigo",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_indigo",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_indigo",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_indigo",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_indigo",
+      "required": false
+    },
+    {
+      "id": "create:indigo_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:indigo_seat",
+      "required": false
+    },
+    {
+      "id": "create:indigo_valve_handle",
+      "required": false
+    },
+    {
+      "id": "create:indigo_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:indigo_postbox",
+      "required": false
+    },
+    {
+      "id": "chalk:indigo_chalk",
+      "required": false
+    },
+    {
+      "id": "waystones:indigo_sharestone",
+      "required": false
+    }
+  ]
+}

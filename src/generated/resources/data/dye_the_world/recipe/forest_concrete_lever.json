@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "concrete_lever",
+  "key": {
+    "#": {
+      "item": "dye_depot:forest_concrete"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "|",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:forest_concrete_lever"
+  }
+}

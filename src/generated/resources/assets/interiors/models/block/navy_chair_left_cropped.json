@@ -1,9 +1,0 @@
-{
-  "parent": "interiors:block/chair/left_cropped",
-  "textures": {
-    "side": "dye_the_world:block/create/seat/side_navy",
-    "side_front": "dye_the_world:block/create/seat/side_navy",
-    "side_top": "dye_the_world:block/interiors/chair/side_top_navy",
-    "top": "dye_the_world:block/create/seat/top_navy"
-  }
-}

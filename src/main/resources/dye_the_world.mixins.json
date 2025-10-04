@@ -6,12 +6,23 @@
   "target": "@env(DEFAULT)",
   "refmap": "${mod_id}.refmap.json",
   "mixins": [
-    "BlockEntityTypeAccessor", "ChalkMixin", "ClayworksBlocksMixin", "ClayworksCompatMixin", "ColorUtilsMixin",
-    "EntityElephantMixin", "LampBlockMixin", "LampConnectorBlockMixin", "QuarkJeiPluginMixin",
+    "BlockEntityTypeAccessor",
+    "ChalkMixin",
+    "ClayworksBlocksMixin",
+    "ClayworksCompatMixin",
+    "ColorUtilsMixin",
+    "EntityElephantMixin",
+    "LampBlockMixin",
+    "LampConnectorBlockMixin",
+    "QuarkJeiPluginMixin",
     "data.SimpleCookingRecipeBuilderMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
-  "client": ["ChimneyPushParticleDataMixin", "LayerElephantOverlaysMixin", "PuffSmokeParticleDataMixin"]
+  "client": [
+    "ChimneyPushParticleDataMixin",
+    "LayerElephantOverlaysMixin",
+    "PuffSmokeParticleDataMixin"
+  ]
 }
