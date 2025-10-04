@@ -117,6 +117,14 @@
       "required": false
     },
     {
+      "id": "supplementaries:bunting_slate",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_slate",
+      "required": false
+    },
+    {
       "id": "supplementaries:awning_slate",
       "required": false
     },

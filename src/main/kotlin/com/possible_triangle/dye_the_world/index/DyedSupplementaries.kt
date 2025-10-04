@@ -10,6 +10,8 @@ import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.translation
 import net.mehvahdjukaar.supplementaries.common.block.blocks.AwningBlock
+import net.mehvahdjukaar.supplementaries.common.block.blocks.BuntingCeilingBlock
+import net.mehvahdjukaar.supplementaries.common.block.blocks.BuntingWallBlock
 import net.mehvahdjukaar.supplementaries.common.block.blocks.SackBlock
 import net.mehvahdjukaar.supplementaries.common.items.BuntingItem
 import net.minecraft.resources.ResourceLocation
@@ -57,17 +59,23 @@ object DyedSupplementaries {
 
     val BUNTINGS = DYES.associateWith { dye ->
         REGISTRATE.`object`("bunting_$dye")
-            .dyedItem(dye) { BlockItem(null, it) }
+            .dyedBlock(dye) { BuntingCeilingBlock(dye, it) }
             .lang("${dye.translation} Bunting")
-            .dyedBuntingItemModel()
-            .dyedBuntingRecipe()
+            .buntingBlockState()
+            .withItem {
+                dyedBuntingItemModel()
+                dyedBuntingRecipe()
+            }
             .register()
     }
 
-    val BUNTING = REGISTRATE.`object`("bunting")
-        .item(::Item)
-        .buntingItemModel()
-        .register()
+    val WALL_BUNTINGS = DYES.associateWith { dye ->
+        REGISTRATE.`object`("bunting_wall_$dye")
+            .dyedBlock(dye) { BuntingWallBlock(dye, it) }
+            .lang("${dye.translation} Bunting")
+            .wallBuntingBlockState()
+            .register()
+    }
 
     val AWNINGS = DYES.associateWith { dye ->
         REGISTRATE.`object`("awning_$dye")

@@ -101,10 +101,6 @@
       "required": false
     },
     {
-      "id": "supplementaries:bunting_maroon",
-      "required": false
-    },
-    {
       "id": "supplementaries:awning_maroon",
       "required": false
     },

@@ -117,6 +117,14 @@
       "required": false
     },
     {
+      "id": "supplementaries:bunting_tan",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_tan",
+      "required": false
+    },
+    {
       "id": "supplementaries:awning_tan",
       "required": false
     },

@@ -117,6 +117,14 @@
       "required": false
     },
     {
+      "id": "supplementaries:bunting_amber",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_amber",
+      "required": false
+    },
+    {
       "id": "supplementaries:awning_amber",
       "required": false
     },

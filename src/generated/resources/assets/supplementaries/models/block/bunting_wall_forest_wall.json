@@ -1,0 +1,7 @@
+{
+  "parent": "supplementaries:block/buntings/white_wall",
+  "textures": {
+    "0": "supplementaries:block/buntings/wall_bunting_forest",
+    "particle": "supplementaries:block/buntings/wall_bunting_forest"
+  }
+}
