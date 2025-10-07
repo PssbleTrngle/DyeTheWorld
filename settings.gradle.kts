@@ -6,6 +6,6 @@ pluginManagement {
 }
 
 plugins {
-    id("com.possible-triangle.helper") version ("1.0.44")
-    id("com.possible-triangle.packwiz") version ("1.0.44")
+    id("com.possible-triangle.helper") version ("1.0.45")
+    id("com.possible-triangle.packwiz") version ("1.0.45")
 }
