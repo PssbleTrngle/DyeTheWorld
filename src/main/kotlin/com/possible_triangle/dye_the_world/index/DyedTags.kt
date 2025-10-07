@@ -50,6 +50,7 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val AWNINGS = create(Mods.SUPPLEMENTARIES, "awnings")
         val MINEABLE_SHEAR = create("mineable/shear")
         val MINEABLE_KNIFE = create(Mods.FARMERS_DELIGHT, "mineable/knife")
+        val BRITTLE = create(Mods.CREATE, "brittle")
     }
 
     protected fun create(namespace: String, path: String): TagKey<T> = TagKey.create(registry, namespace.createId(path))

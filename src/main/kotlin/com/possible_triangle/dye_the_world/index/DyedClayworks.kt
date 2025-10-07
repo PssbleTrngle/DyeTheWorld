@@ -20,6 +20,7 @@ import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
+import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
@@ -200,9 +201,12 @@ object DyedClayworks {
             .lang("${dye.translation} Stained Glass Door")
             .glassDoorBlockstate()
             .glassDoorLoot()
+            .tag(DyedTags.Blocks.BRITTLE)
+            .tag(BlockTags.DOORS)
             .withItem {
                 glassDoorRecipes()
                 glassDoorItemModel()
+                tag(ItemTags.DOORS)
                 tab(CreativeModeTabs.COLORED_BLOCKS)
                 tab(CreativeModeTabs.REDSTONE_BLOCKS)
             }
@@ -215,9 +219,11 @@ object DyedClayworks {
             .lang("${dye.translation} Stained Glass Trapdoor")
             .glassTrapdoorBlockstate()
             .glassTrapdoorLoot()
+            .tag(BlockTags.TRAPDOORS)
             .withItem {
                 glassTrapdoorRecipes()
                 glassTrapdoorItemModel()
+                tag(ItemTags.TRAPDOORS)
                 tab(CreativeModeTabs.COLORED_BLOCKS)
                 tab(CreativeModeTabs.REDSTONE_BLOCKS)
             }
