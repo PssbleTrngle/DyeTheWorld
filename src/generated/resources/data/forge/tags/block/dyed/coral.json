@@ -61,6 +61,14 @@
       "required": false
     },
     {
+      "id": "dye_the_world:coral_stained_glass_door",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_stained_glass_trapdoor",
+      "required": false
+    },
+    {
       "id": "dye_the_world:coral_canvas_wall_sign",
       "required": false
     },

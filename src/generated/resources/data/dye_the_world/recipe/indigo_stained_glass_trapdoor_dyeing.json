@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_glass_trapdoor",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "item": "clayworks:glass_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:indigo_stained_glass_trapdoor"
+  }
+}

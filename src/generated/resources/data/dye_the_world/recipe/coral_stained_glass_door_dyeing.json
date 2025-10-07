@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_glass_door",
+  "ingredients": [
+    {
+      "tag": "c:dyes/coral"
+    },
+    {
+      "item": "clayworks:glass_door"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:coral_stained_glass_door"
+  }
+}

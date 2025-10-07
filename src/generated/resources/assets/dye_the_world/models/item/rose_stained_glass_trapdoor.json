@@ -1,0 +1,4 @@
+{
+  "parent": "dye_the_world:block/rose_stained_glass_trapdoor_bottom",
+  "render_type": "minecraft:translucent"
+}

@@ -9,6 +9,8 @@ import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.multikulti.datagen.conditions.ModLoaded
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
+import com.teamabnormals.clayworks.common.block.GlassDoorBlock
+import com.teamabnormals.clayworks.common.block.GlassTrapDoorBlock
 import com.teamabnormals.clayworks.common.item.crafting.BakingRecipe
 import com.teamabnormals.clayworks.core.registry.ClayworksBlocks
 import com.teamabnormals.clayworks.core.registry.ClayworksRecipes.ClayworksRecipeSerializers
@@ -23,6 +25,7 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DecoratedPotBlock
+import net.minecraft.world.level.block.TrapDoorBlock
 import java.util.function.Supplier
 
 object DyedClayworks {
@@ -190,6 +193,36 @@ object DyedClayworks {
 
     @JvmStatic
     fun dyeOf(block: Block): DyeColor? = DYE_BY_DECORATED_POT.get()[block]
+
+    val STAINED_GLASS_DOORS = DYES.associateWith { dye ->
+        REGISTRATE.`object`("${dye}_stained_glass_door")
+            .dyedBlock(dye, CLAYWORKS) { GlassDoorBlock(dye) }
+            .lang("${dye.translation} Stained Glass Door")
+            .glassDoorBlockstate()
+            .glassDoorLoot()
+            .withItem {
+                glassDoorRecipes()
+                glassDoorItemModel()
+                tab(CreativeModeTabs.COLORED_BLOCKS)
+                tab(CreativeModeTabs.REDSTONE_BLOCKS)
+            }
+            .register()
+    }
+
+    val STAINED_GLASS_TRAPDOORS = DYES.associateWith { dye ->
+        REGISTRATE.`object`("${dye}_stained_glass_trapdoor")
+            .dyedBlock(dye, CLAYWORKS) { GlassTrapDoorBlock(dye) }
+            .lang("${dye.translation} Stained Glass Trapdoor")
+            .glassTrapdoorBlockstate()
+            .glassTrapdoorLoot()
+            .withItem {
+                glassTrapdoorRecipes()
+                glassTrapdoorItemModel()
+                tab(CreativeModeTabs.COLORED_BLOCKS)
+                tab(CreativeModeTabs.REDSTONE_BLOCKS)
+            }
+            .register()
+    }
 
     fun register() {
         REGISTRATE.addDataGenerator(ProviderType.RECIPE) { provider ->

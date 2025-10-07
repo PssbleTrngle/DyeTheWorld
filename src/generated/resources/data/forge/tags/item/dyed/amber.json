@@ -57,6 +57,14 @@
       "required": false
     },
     {
+      "id": "dye_the_world:amber_stained_glass_door",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_stained_glass_trapdoor",
+      "required": false
+    },
+    {
       "id": "dye_the_world:amber_canvas_sign",
       "required": false
     },
@@ -98,6 +106,10 @@
     },
     {
       "id": "suppsquared:sack_amber",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_amber",
       "required": false
     },
     {

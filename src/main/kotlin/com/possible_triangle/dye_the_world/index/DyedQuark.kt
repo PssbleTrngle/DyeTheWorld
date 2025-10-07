@@ -17,17 +17,12 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.state.BlockBehaviour
-import net.neoforged.neoforge.client.model.generators.ModelBuilder
 import net.neoforged.neoforge.common.Tags
 import org.violetmoon.quark.content.building.block.StoolBlock
 import org.violetmoon.zeta.block.ZetaGlassBlock
 import org.violetmoon.zeta.block.ZetaInheritedPaneBlock
 import org.violetmoon.zeta.config.ConfigFlagManager
 import org.violetmoon.zeta.util.zetalist.ZetaList
-
-private val TRANSLUCENT = ResourceLocation.withDefaultNamespace("translucent")
-
-private fun ModelBuilder<*>.translucent() = renderType(TRANSLUCENT)
 
 data class QuarkConfigCondition(val flag: String) : Condition {
     override fun JsonObject.toFabric() {

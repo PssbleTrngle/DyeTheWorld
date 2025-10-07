@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_the_world:verdant_stained_glass_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_stained_glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dye_depot:verdant_stained_glass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdant_stained_glass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_the_world:verdant_stained_glass_trapdoor"
+    ]
+  }
+}
