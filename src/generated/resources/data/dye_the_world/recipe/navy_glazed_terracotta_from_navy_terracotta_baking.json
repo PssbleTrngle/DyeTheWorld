@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
   "type": "clayworks:baking",
   "category": "blocks",
   "cookingtime": 100,

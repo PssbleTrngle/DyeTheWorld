@@ -1,14 +1,12 @@
 package com.possible_triangle.dye_the_world.index
 
 import com.google.common.base.Suppliers.memoize
-import com.google.gson.JsonObject
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.CLAYWORKS
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
-import com.possible_triangle.multikulti.datagen.conditions.Condition
 import com.possible_triangle.multikulti.datagen.conditions.ModLoaded
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
 import com.teamabnormals.clayworks.common.item.crafting.BakingRecipe
@@ -22,25 +20,10 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.DyeColor
-import net.minecraft.world.item.ItemStack
-import net.minecraft.world.item.crafting.AbstractCookingRecipe
-import net.minecraft.world.item.crafting.CookingBookCategory
-import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DecoratedPotBlock
 import java.util.function.Supplier
-
-data class ClayworksConfigCondition(val flag: String) : Condition {
-    override fun JsonObject.toFabric() {
-        error("no fabric support yet")
-    }
-
-    override fun JsonObject.toForge() {
-        addProperty("type", "$CLAYWORKS:config")
-        addProperty("value", flag)
-    }
-}
 
 object DyedClayworks {
 
@@ -210,7 +193,7 @@ object DyedClayworks {
 
     fun register() {
         REGISTRATE.addDataGenerator(ProviderType.RECIPE) { provider ->
-            provider.withConditions(ModLoaded(CLAYWORKS), ClayworksConfigCondition("kiln")) {
+            provider.withConditions(ModLoaded(CLAYWORKS)) {
                 TERRACOTTA.forEach { (dye, terracotta) ->
                     val glazed = GLAZED_TERRACOTTA.getValue(dye)
                     provider.cooking(

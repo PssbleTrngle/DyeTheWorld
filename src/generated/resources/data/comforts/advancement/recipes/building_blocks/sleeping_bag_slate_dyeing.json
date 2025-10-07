@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "comforts"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_sleeping_bags": {

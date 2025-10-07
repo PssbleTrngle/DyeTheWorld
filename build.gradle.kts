@@ -1,19 +1,18 @@
-
-import com.possible_triangle.gradle.features.publishing.DependencyBuilder
-
 val mod_id: String by extra
 val mc_version: String by extra
 
 plugins {
-    alias(libs.plugins.gradle.helper)
+    id("com.possible-triangle.neoforge")
     idea
 }
 
 withKotlin()
 
-neoforge {
-    enableMixins()
+mod {
+    mods.include(libs.registrate)
+}
 
+neoforge {
     dataGen {
         existing("dye_depot")
         existing("another_furniture")
@@ -32,14 +31,9 @@ neoforge {
         existing("moreconcrete")
         existing("interiors")
     }
-
-    mods.include(libs.registrate)
 }
 
 repositories {
-    modrinthMaven()
-    mavenLocal()
-
     nexus {
         content {
             includeGroup("com.possible-triangle")
@@ -126,46 +120,48 @@ tasks.processResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
-enablePublishing {
-    githubPackages()
-    nexus()
-}
-
-fun DependencyBuilder.addDependencies() {
-    required("dye-depot")
-    optional("create")
-    optional("another-furniture")
-    optional("comforts")
-    optional("clayworks")
-    optional("farmers-delight")
-    optional("quark")
-    optional("domestication-innovation")
-    optional("supplementaries")
-    optional("supplementaries-squared")
-    optional("alexs-caves")
-    optional("ars-nouveau")
-    optional("create-deco")
-    optional("create-steam-n-rails")
-    optional("upgrade-aquatic")
-    optional("more-concrete")
-    optional("waystones")
-    optional("interiors")
-}
-
-uploadToCurseforge {
-    dependencies {
-        addDependencies()
-        optional("chalk")
-    }
-}
-
-uploadToModrinth {
-    dependencies {
-        addDependencies()
-        optional("chalk-mod")
+upload {
+    maven {
+        githubPackages()
+        nexus()
     }
 
-    syncBodyFromReadme()
+    curseforge {
+        dependencies {
+            optional("chalk")
+        }
+    }
+
+    modrinth {
+        dependencies {
+            optional("chalk-mod")
+        }
+
+        syncBodyFromReadme()
+    }
+
+    forEach {
+        dependencies {
+            required("dye-depot")
+            optional("create")
+            optional("another-furniture")
+            optional("comforts")
+            optional("clayworks")
+            optional("farmers-delight")
+            // optional("quark")
+            // optional("domestication-innovation")
+            optional("supplementaries")
+            optional("supplementaries-squared")
+            // optional("alexs-caves")
+            optional("ars-nouveau")
+            // optional("create-deco")
+            // optional("create-steam-n-rails")
+            optional("upgrade-aquatic")
+            optional("more-concrete")
+            optional("waystones")
+            // optional("interiors")
+        }
+    }
 }
 
 idea {

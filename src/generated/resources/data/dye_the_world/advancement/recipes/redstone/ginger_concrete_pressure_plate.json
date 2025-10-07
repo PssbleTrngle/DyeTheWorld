@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "moreconcrete"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_ginger_concrete": {

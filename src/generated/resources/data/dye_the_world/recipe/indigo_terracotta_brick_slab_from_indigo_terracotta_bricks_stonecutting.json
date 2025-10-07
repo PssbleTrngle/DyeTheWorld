@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
   "type": "minecraft:stonecutting",
   "ingredient": {
     "item": "dye_the_world:indigo_terracotta_bricks"

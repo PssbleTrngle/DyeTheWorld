@@ -7,8 +7,6 @@ import com.teamabnormals.clayworks.client.DecoratedPotBlockEntityWithoutLevelRen
 import com.teamabnormals.clayworks.core.data.server.ClayworksLootTableProvider
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
-import net.minecraft.client.model.geom.EntityModelSet
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BlockItem

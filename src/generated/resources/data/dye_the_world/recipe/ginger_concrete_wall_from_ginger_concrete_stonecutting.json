@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "moreconcrete"
+    }
+  ],
   "type": "minecraft:stonecutting",
   "ingredient": {
     "item": "dye_depot:ginger_concrete"

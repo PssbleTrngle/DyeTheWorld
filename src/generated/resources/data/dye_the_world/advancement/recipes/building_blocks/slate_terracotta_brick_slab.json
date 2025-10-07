@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_slate_terracotta_bricks": {

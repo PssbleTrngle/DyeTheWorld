@@ -1,7 +1,6 @@
 [versions]
-multikulti = "1.21.1-1.2.1"
+multikulti = "1.21.1-1.2.2"
 flywheel = "1.0.2"
-gradle-helper = "0.0.0-dev"
 
 [libraries]
 registrate = { group = "com.tterrag.registrate", name = "Registrate", version = "MC1.21-1.3.0+62" }
@@ -15,8 +14,4 @@ flywheel-api = { group = "dev.engine-room.flywheel", name = "flywheel-neoforge-a
 
 jei = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version = "19.21.0.247" }
 
-dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot", version = "1.21.1-2.0.0-neoforge" }
-
-[plugins]
-gradle-helper = { id = "com.possible-triangle.gradle", version.ref = "gradle-helper" }
-packwiz = { id = "com.possible-triangle.packwiz", version.ref = "gradle-helper" }
+dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot", version = "1.21.1-2.0.1-neoforge" }

@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "another_furniture"
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "group": "curtains",
