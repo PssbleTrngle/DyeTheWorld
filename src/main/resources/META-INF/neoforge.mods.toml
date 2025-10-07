@@ -13,70 +13,66 @@ updateJSONURL = "https://api.modrinth.com/updates/dye-the-world/forge_updates.js
 
 [[dependencies.${mod_id}]]
 modId = "neoforge"
-mandatory = true
 versionRange = "[1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "minecraft"
-mandatory = true
 versionRange = "[1.21,1.21.1)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId="kotlinforforge"
-mandatory=true
 versionRange="[5.8.0,)"
 ordering="NONE"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId="dye_depot"
-mandatory=true
 versionRange="[2.0.0-neoforge,)"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "create"
-mandatory = false
+type = "optional"
 versionRange = "[6.0.0,6.1.0)"
 ordering="AFTER"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "another_furniture"
-mandatory = false
+type = "optional"
 versionRange = "*"
 ordering="AFTER"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "supplementaries"
-mandatory = false
+type = "optional"
 versionRange = "*"
 ordering="AFTER"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "chalk"
-mandatory = false
+type = "optional"
 versionRange = "*"
 ordering="AFTER"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "upgrade_aquatic"
-mandatory = false
+type = "optional"
 versionRange = "*"
 ordering="AFTER"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "farmersdelight"
-mandatory = false
+type = "optional"
 versionRange = "*"
 ordering="AFTER"
 side = "BOTH"
