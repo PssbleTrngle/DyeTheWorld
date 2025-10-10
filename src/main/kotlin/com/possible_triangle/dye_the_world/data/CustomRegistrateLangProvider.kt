@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world.data
 import com.tterrag.registrate.AbstractRegistrate
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateProvider
-import com.tterrag.registrate.util.nullness.NonNullBiFunction
 import net.minecraft.data.PackOutput
 import net.neoforged.fml.LogicalSide
 import net.neoforged.neoforge.common.data.LanguageProvider
@@ -17,10 +16,8 @@ class CustomRegistrateLangProvider(
 
     companion object {
         fun providerType(locale: String): ProviderType<CustomRegistrateLangProvider> {
-            return ProviderType.register("lang/$locale") { type ->
-                NonNullBiFunction { owner, event ->
-                    CustomRegistrateLangProvider(event.generator.packOutput, owner, type, locale)
-                }
+            return ProviderType.registerProvider("lang/$locale") { context ->
+                CustomRegistrateLangProvider(context.output, context.parent, context.type, locale)
             }
         }
     }

@@ -54,8 +54,8 @@ fun <T : Block, P> BlockBuilder<T, P>.germanLang(translation: String) = setData(
 
 fun <T : Item, P> ItemBuilder<T, P>.optionalTab(vararg keys: ResourceKey<CreativeModeTab>, condition: () -> Boolean) = apply {
     keys.forEach { key ->
-        tab(key) {
-            if (condition()) it.accept(get())
+        tab(key) { item,  it ->
+            if (condition()) it.accept(item)
         }
     }
 }
