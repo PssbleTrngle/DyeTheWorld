@@ -179,6 +179,14 @@
     {
       "id": "waystones:ginger_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_ginger",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_ginger",
+      "required": false
     }
   ]
 }

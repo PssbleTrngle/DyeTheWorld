@@ -1,0 +1,6 @@
+{
+  "parent": "snowyspirit:item/gumdrop",
+  "textures": {
+    "texture": "dye_the_world:block/snowyspirit/gumdrop/mint"
+  }
+}

@@ -159,6 +159,14 @@
     {
       "id": "waystones:mint_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_mint",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_mint",
+      "required": false
     }
   ]
 }

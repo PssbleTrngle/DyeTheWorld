@@ -159,6 +159,14 @@
     {
       "id": "waystones:amber_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_amber",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_amber",
+      "required": false
     }
   ]
 }

@@ -159,6 +159,14 @@
     {
       "id": "waystones:beige_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_beige",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_beige",
+      "required": false
     }
   ]
 }

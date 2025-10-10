@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "snowyspirit"
+    }
+  ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "snowyspirit:blocks/glow_lights_mint"
+}

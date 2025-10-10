@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "snowyspirit"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "glow_lights",
+  "ingredients": [
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "tag": "c:dyes/rose"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "tag": "c:strings"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "snowyspirit:glow_lights_rose"
+  }
+}

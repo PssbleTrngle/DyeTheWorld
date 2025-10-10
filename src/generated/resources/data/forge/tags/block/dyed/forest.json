@@ -179,6 +179,14 @@
     {
       "id": "waystones:forest_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_forest",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_forest",
+      "required": false
     }
   ]
 }

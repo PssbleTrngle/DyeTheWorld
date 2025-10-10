@@ -159,6 +159,14 @@
     {
       "id": "waystones:coral_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_coral",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_coral",
+      "required": false
     }
   ]
 }

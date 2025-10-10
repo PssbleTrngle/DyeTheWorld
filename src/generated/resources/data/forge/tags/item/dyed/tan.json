@@ -159,6 +159,14 @@
     {
       "id": "waystones:tan_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_tan",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_tan",
+      "required": false
     }
   ]
 }

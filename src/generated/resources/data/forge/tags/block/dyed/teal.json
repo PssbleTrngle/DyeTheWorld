@@ -179,6 +179,14 @@
     {
       "id": "waystones:teal_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_teal",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_teal",
+      "required": false
     }
   ]
 }

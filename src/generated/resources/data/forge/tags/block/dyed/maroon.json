@@ -179,6 +179,14 @@
     {
       "id": "waystones:maroon_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_maroon",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_maroon",
+      "required": false
     }
   ]
 }

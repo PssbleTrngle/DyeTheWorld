@@ -179,6 +179,14 @@
     {
       "id": "waystones:indigo_sharestone",
       "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_indigo",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_indigo",
+      "required": false
     }
   ]
 }
