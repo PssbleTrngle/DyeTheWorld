@@ -68,6 +68,7 @@ object ForgeEntrypoint {
             // DyedRailways.register()
             DyedChalk.registerDatagen()
             DyedWaystones.register()
+            DyedSnowySpirit.register()
         }
     }
 

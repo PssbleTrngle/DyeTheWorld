@@ -30,6 +30,8 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val FLOOR_CHAIRS = create(Mods.CREATE_INTERIORS, "floor_chairs")
         val NON_CLEANABLE = create(Mods.SUPPLEMENTARIES, "non_cleanable")
         val AWNINGS = create(Mods.SUPPLEMENTARIES, "awnings")
+        val GLOW_LIGHTS = create(Mods.SNOWY_SPIRIT, "glow_lights")
+        val GUMDROPS = create(Mods.SNOWY_SPIRIT, "gumdrops")
     }
 
     object Blocks : DyedTags<Block>(Registries.BLOCK) {
@@ -51,6 +53,8 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val MINEABLE_SHEAR = create("mineable/shear")
         val MINEABLE_KNIFE = create(Mods.FARMERS_DELIGHT, "mineable/knife")
         val BRITTLE = create(Mods.CREATE, "brittle")
+        val GLOW_LIGHTS = create(Mods.SNOWY_SPIRIT, "glow_lights")
+        val GUMDROPS = create(Mods.SNOWY_SPIRIT, "gumdrops")
     }
 
     protected fun create(namespace: String, path: String): TagKey<T> = TagKey.create(registry, namespace.createId(path))

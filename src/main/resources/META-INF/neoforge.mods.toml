@@ -77,5 +77,12 @@ versionRange = "*"
 ordering="AFTER"
 side = "BOTH"
 
+[[dependencies.${mod_id}]]
+modId = "snowyspirit"
+type = "optional"
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
 [[mixins]]
 config="${mod_id}.mixins.json"

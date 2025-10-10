@@ -29,6 +29,7 @@ object Constants {
         const val MORE_CONCRETE = "moreconcrete"
         const val WAYSTONES = "waystones"
         const val CREATE_INTERIORS = "interiors"
+        const val SNOWY_SPIRIT = "snowyspirit"
     }
 
 }
