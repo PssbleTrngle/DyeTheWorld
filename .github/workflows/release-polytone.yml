@@ -8,8 +8,7 @@ on:
         required: false
         default: false
   push:
-    branches:
-      - 1.20.x
+    branches: [ "[0-9]+.[0-9]+.x" ]
     paths:
       - polytone/*.zip
 
@@ -26,10 +25,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - id: read_property
+        uses: christian-draeger/read-properties@1.1.1
+        with:
+          path: 'gradle.properties'
+          properties: 'mc_version'
+
       - id: cache
         uses: actions/cache@v4
         with:
-          key: polytone-${{ hashFiles('polytone/*.zip') }}
+          key: polytone-${{ steps.read_property.outputs.mc_version }}-${{ hashFiles('polytone/*.zip') }}
           path: modrinth-link.txt
 
       - uses: Kir-Antipov/mc-publish@v3.3
@@ -42,7 +47,7 @@ jobs:
             polytone/*.zip
           version: 1.0.${{ github.run_number }}
           game-versions: |
-            1.20.1
+            ${{ steps.read_property.outputs.mc_version }}
           loaders: |
             minecraft
           dependencies: |

@@ -102,6 +102,18 @@ addColored("oreganized", "crystal_glass");
 addColored("oreganized", "crystal_glass_pane");
 addColored("dye_the_world", "framed_glass", "quark");
 addColored("dye_the_world", "framed_glass_pane", "quark");
+addColored(
+  "connectedglass",
+  "borderless_glass_$color_pane",
+  undefined,
+  replace
+);
+addColored("connectedglass", "scratched_glass_$color_pane", undefined, replace);
+addColored("connectedglass", "clear_glass_$color_pane", undefined, replace);
+addColored("connectedglass", "borderless_glass", undefined, append);
+addColored("connectedglass", "scratched_glass", undefined, append);
+addColored("connectedglass", "clear_glass", undefined, append);
+addColored("connectedglass", "tinted_borderless_glass", undefined, append);
 
 addColored("dye_the_world", "shingles", "quark");
 addColored("dye_the_world", "shingles_slab", "quark");
@@ -172,7 +184,17 @@ addColored("dye_the_world", "pet_bed", "domesticationinnovation", append);
 addColored("dye_the_world", "canvas_sign", "farmersdelight");
 addColored("dye_the_world", "hanging_canvas_sign", "farmersdelight");
 
+addColored("snowyspirit", "glow_lights", undefined, append);
+addColored("snowyspirit", "gumdrop", undefined, append);
+
 addColored("dye_the_world", "radon_lamp", "alexscaves", append);
+
+addColored("elevatorid", "elevator", undefined, append);
+
+for (const type of ["concrete", "terracotta", "glazed_terracotta"]) {
+  addColored("botanypots", `${type}_botany_pot`);
+  addColored("botanypots", `${type}_hopper_botany_pot`);
+}
 
 const name = "dye-depot-tabs.zip";
 const output = resolve(".", name);
