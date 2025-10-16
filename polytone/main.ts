@@ -100,8 +100,8 @@ addColored("dye_depot", "stained_glass");
 addColored("dye_depot", "stained_glass_pane");
 addColored("oreganized", "crystal_glass");
 addColored("oreganized", "crystal_glass_pane");
-addColored("dye_the_world", "framed_glass", "quark");
-addColored("dye_the_world", "framed_glass_pane", "quark");
+// addColored("dye_the_world", "framed_glass", "quark");
+// addColored("dye_the_world", "framed_glass_pane", "quark");
 addColored(
   "connectedglass",
   "borderless_glass_$color_pane",
@@ -114,10 +114,12 @@ addColored("connectedglass", "borderless_glass", undefined, append);
 addColored("connectedglass", "scratched_glass", undefined, append);
 addColored("connectedglass", "clear_glass", undefined, append);
 addColored("connectedglass", "tinted_borderless_glass", undefined, append);
+addColored("dye_the_world", "stained_glass_door", "upgrade_aquatic");
+addColored("dye_the_world", "stained_glass_trapdoor", "upgrade_aquatic");
 
-addColored("dye_the_world", "shingles", "quark");
-addColored("dye_the_world", "shingles_slab", "quark");
-addColored("dye_the_world", "shingles_stairs", "quark");
+// addColored("dye_the_world", "shingles", "quark");
+// addColored("dye_the_world", "shingles_slab", "quark");
+// addColored("dye_the_world", "shingles_stairs", "quark");
 
 addColored("dye_the_world", "terracotta_bricks", "clayworks");
 addColored("dye_the_world", "terracotta_brick_slab", "clayworks");
@@ -155,31 +157,30 @@ addColored("supplementaries", "awning", undefined, append);
 
 addColored("comforts", "sleeping_bag", undefined, append);
 addColored("comforts", "hammock", undefined, append);
-addColored("dye_the_world", "bedroll", "upgrade_aquatic");
 
-addColored("dye_the_world", "quark_stool");
+// addColored("dye_the_world", "quark_stool");
 
 addColored("chalk", "chalk");
 
 addColored("create", "valve_handle");
 addColored("create", "toolbox");
 addColored("create", "postbox");
-addColored("railways", "conductor_cap");
-addColored("createdeco", "shipping_container");
-addColored("createdeco", "placard");
+// addColored("railways", "conductor_cap");
+// addColored("createdeco", "shipping_container");
+// addColored("createdeco", "placard");
 
 addColored("create", "table_cloth");
 addColored("create", "seat");
-addColored("interiors", "floor_chair");
-addColored("interiors", "chair");
-addColored("interiors", "cushion");
+// addColored("interiors", "floor_chair");
+// addColored("interiors", "chair");
+// addColored("interiors", "cushion");
 
 addColored("dye_the_world", "sofa", "another_furniture");
 addColored("dye_the_world", "sofa", "stool");
 addColored("dye_the_world", "sofa", "tall_stool");
 addColored("dye_the_world", "sofa", "curtain");
 addColored("dye_the_world", "sofa", "lamp");
-addColored("dye_the_world", "pet_bed", "domesticationinnovation", append);
+// addColored("dye_the_world", "pet_bed", "domesticationinnovation", append);
 
 addColored("dye_the_world", "canvas_sign", "farmersdelight");
 addColored("dye_the_world", "hanging_canvas_sign", "farmersdelight");
@@ -187,14 +188,18 @@ addColored("dye_the_world", "hanging_canvas_sign", "farmersdelight");
 addColored("snowyspirit", "glow_lights", undefined, append);
 addColored("snowyspirit", "gumdrop", undefined, append);
 
-addColored("dye_the_world", "radon_lamp", "alexscaves", append);
+// addColored("dye_the_world", "radon_lamp", "alexscaves", append);
 
 addColored("elevatorid", "elevator", undefined, append);
 
 for (const type of ["concrete", "terracotta", "glazed_terracotta"]) {
   addColored("botanypots", `${type}_botany_pot`);
   addColored("botanypots", `${type}_hopper_botany_pot`);
+  addColored("botanypots", `${type}_waxed_botany_pot`);
 }
+
+addColored("waystones", "sharestone");
+addColored("waystones", "portstone");
 
 const name = "dye-depot-tabs.zip";
 const output = resolve(".", name);
