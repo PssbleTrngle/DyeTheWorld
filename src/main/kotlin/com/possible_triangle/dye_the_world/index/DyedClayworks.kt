@@ -26,7 +26,6 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DecoratedPotBlock
-import net.minecraft.world.level.block.TrapDoorBlock
 import java.util.function.Supplier
 
 object DyedClayworks {
@@ -201,12 +200,12 @@ object DyedClayworks {
             .lang("${dye.translation} Stained Glass Door")
             .glassDoorBlockstate()
             .glassDoorLoot()
-            .tag(DyedTags.Blocks.BRITTLE)
-            .tag(BlockTags.DOORS)
+            .optionalTag(DyedTags.Blocks.BRITTLE)
+            .optionalTag(BlockTags.DOORS)
             .withItem {
                 glassDoorRecipes()
                 glassDoorItemModel()
-                tag(ItemTags.DOORS)
+                optionalTag(ItemTags.DOORS)
                 tab(CreativeModeTabs.COLORED_BLOCKS)
                 tab(CreativeModeTabs.REDSTONE_BLOCKS)
             }
@@ -219,11 +218,11 @@ object DyedClayworks {
             .lang("${dye.translation} Stained Glass Trapdoor")
             .glassTrapdoorBlockstate()
             .glassTrapdoorLoot()
-            .tag(BlockTags.TRAPDOORS)
+            .optionalTag(BlockTags.TRAPDOORS)
             .withItem {
                 glassTrapdoorRecipes()
                 glassTrapdoorItemModel()
-                tag(ItemTags.TRAPDOORS)
+                optionalTag(ItemTags.TRAPDOORS)
                 tab(CreativeModeTabs.COLORED_BLOCKS)
                 tab(CreativeModeTabs.REDSTONE_BLOCKS)
             }

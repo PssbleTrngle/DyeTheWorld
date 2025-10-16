@@ -30,6 +30,9 @@ object Constants {
         const val WAYSTONES = "waystones"
         const val CREATE_INTERIORS = "interiors"
         const val SNOWY_SPIRIT = "snowyspirit"
+        const val ELEVATORS = "elevatorid"
+        const val CONNECTED_GLASS = "connectedglass"
+        const val BOTANY_POTS = "botanypots"
     }
 
 }

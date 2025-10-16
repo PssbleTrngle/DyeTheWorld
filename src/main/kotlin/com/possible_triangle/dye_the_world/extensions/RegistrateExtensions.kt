@@ -29,7 +29,7 @@ fun <T : Block, P> BlockBuilder<T, P>.optionalTag(tag: TagKey<Block>) = apply {
 
 fun <T : Block, P> BlockBuilder<T, P>.withItem(
     factory: (T, Item.Properties) -> BlockItem = ::BlockItem,
-    block: ItemBuilder<BlockItem, BlockBuilder<T, P>>.() -> Unit,
+    block: ItemBuilder<BlockItem, BlockBuilder<T, P>>.() -> Unit = {},
 ): BlockBuilder<T, P> {
     return item(factory)
         .apply(block)
@@ -52,10 +52,11 @@ fun <T : Block, P> BlockBuilder<T, P>.germanLang(translation: String) = setData(
     provider.add(context.get(), translation)
 }
 
-fun <T : Item, P> ItemBuilder<T, P>.optionalTab(vararg keys: ResourceKey<CreativeModeTab>, condition: () -> Boolean) = apply {
-    keys.forEach { key ->
-        tab(key) { item,  it ->
-            if (condition()) it.accept(item)
+fun <T : Item, P> ItemBuilder<T, P>.optionalTab(vararg keys: ResourceKey<CreativeModeTab>, condition: () -> Boolean) =
+    apply {
+        keys.forEach { key ->
+            tab(key) { item, it ->
+                if (condition()) it.accept(item)
+            }
         }
     }
-}
