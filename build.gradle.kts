@@ -104,6 +104,7 @@ dependencies {
     modApi(libs.dye.depot)
     modApi(pack.modrinth.snowy.spirit)
     modApi(pack.modrinth.fusion.connected.textures)
+    modApi(pack.modrinth.vanillabackport)
 
     //modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
@@ -126,6 +127,7 @@ dependencies {
     modRuntimeOnly(pack.modrinth.prickle)
     modRuntimeOnly(pack.modrinth.bookshelf.lib)
     modRuntimeOnly(pack.modrinth.botany.pots)
+    modRuntimeOnly(pack.modrinth.platform)
 }
 
 tasks.processResources {
