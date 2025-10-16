@@ -1,0 +1,13 @@
+name = "Bookshelf"
+filename = "bookshelf-neoforge-1.21.1-21.1.69.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/uy4Cnpcm/versions/Yt37bqG1/bookshelf-neoforge-1.21.1-21.1.69.jar"
+hash-format = "sha512"
+hash = "72109eb25bb919fa6d762545f9351a70e3b632ed7d2f4632a311b55564ee2bb71052dbb3491dfa0b3006ecfe0d93022228484826359a7a909fc0e33eaee5076a"
+
+[update]
+[update.modrinth]
+mod-id = "uy4Cnpcm"
+version = "Yt37bqG1"

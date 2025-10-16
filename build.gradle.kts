@@ -31,6 +31,8 @@ neoforge {
         existing("moreconcrete")
         existing("interiors")
         existing("snowyspirit")
+        existing("connectedglass")
+        existing("botanypots")
     }
 }
 
@@ -71,38 +73,40 @@ repositories {
 }
 
 dependencies {
-    modImplementation(libs.multikulti.core)
-    modImplementation(libs.multikulti.datagen)
+    modApi(libs.multikulti.core)
+    modApi(libs.multikulti.datagen)
 
-    modImplementation(variantOf(libs.create) {
+    modApi(variantOf(libs.create) {
         classifier("slim")
     }) {
         isTransitive = false
     }
-    modImplementation(libs.ponder)
+    modApi(libs.ponder)
     modCompileOnly(libs.flywheel.api)
-    modImplementation(pack.modrinth.another.furniture)
-    modImplementation(pack.modrinth.comforts)
-    modImplementation(pack.modrinth.moonlight)
-    modImplementation(pack.modrinth.supplementaries)
-    modImplementation(pack.modrinth.supplementaries.squared)
+    modApi(pack.modrinth.another.furniture)
+    modApi(pack.modrinth.comforts)
+    modApi(pack.modrinth.moonlight)
+    modApi(pack.modrinth.supplementaries)
+    modApi(pack.modrinth.supplementaries.squared)
     modCompileOnly(pack.modrinth.quark)
     modCompileOnly(pack.modrinth.zeta)
-    modImplementation(pack.modrinth.farmers.delight)
-    modImplementation(pack.modrinth.clayworks)
-    modImplementation(pack.modrinth.upgrade.aquatic)
-    modImplementation(pack.modrinth.blueprint)
-    modImplementation(pack.modrinth.chalk.mod)
+    modApi(pack.modrinth.farmers.delight)
+    modApi(pack.modrinth.clayworks)
+    modApi(pack.modrinth.upgrade.aquatic)
+    modApi(pack.modrinth.blueprint)
+    modApi(pack.modrinth.chalk.mod)
     modCompileOnly(pack.modrinth.create.deco)
     modCompileOnly(pack.modrinth.domestication.innovation)
     modCompileOnly(pack.modrinth.alexs.caves)
     modCompileOnly(pack.modrinth.alexs.mobs)
-    modImplementation(pack.modrinth.waystones)
+    modApi(pack.modrinth.waystones)
     modCompileOnly(pack.modrinth.create.steam.n.rails)
-    modImplementation(libs.dye.depot)
-    //modImplementation(pack.modrinth.snowy.spirit)
-    modImplementation(libs.snowy.spirit)
+    modApi(libs.dye.depot)
+    //modApi(pack.modrinth.snowy.spirit)
+    modApi(libs.snowy.spirit)
+    modApi(pack.modrinth.fusion.connected.textures)
 
+    //modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
     modRuntimeOnly(pack.modrinth.jade)
@@ -117,6 +121,12 @@ dependencies {
     // modRuntimeOnly(pack.modrinth.polytone)
     modRuntimeOnly(pack.modrinth.amendments)
     modRuntimeOnly(pack.modrinth.registry.dump)
+    modRuntimeOnly(pack.curseforge.openblocks.elevator)
+    modRuntimeOnly(pack.modrinth.connected.glass)
+    modRuntimeOnly(pack.modrinth.supermartijn642s.core.lib)
+    modRuntimeOnly(pack.modrinth.prickle)
+    modRuntimeOnly(pack.modrinth.bookshelf.lib)
+    modRuntimeOnly(pack.modrinth.botany.pots)
 }
 
 tasks.processResources {

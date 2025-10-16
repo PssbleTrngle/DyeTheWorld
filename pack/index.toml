@@ -36,6 +36,16 @@ hash = "f45bde04c8cc141077ebea59194d9dd9327917223206c70346589bd4cd466254"
 metafile = true
 
 [[files]]
+file = "mods/bookshelf-lib.pw.toml"
+hash = "0bcbbcbf939f82f90be11d6d647478f93d43d60d289d6b8ba8484ffb0f8a0f59"
+metafile = true
+
+[[files]]
+file = "mods/botany-pots.pw.toml"
+hash = "9bc52c094edd86818f27e94e80c2d5de79d3e21f9478667c0978c5e2a5c85905"
+metafile = true
+
+[[files]]
 file = "mods/chalk-mod.pw.toml"
 hash = "76b420800e33a55559a680802902edbf11e26a2c8420b3c1cbf63bdf920d8db3"
 metafile = true
@@ -53,6 +63,11 @@ metafile = true
 [[files]]
 file = "mods/comforts.pw.toml"
 hash = "5e0a875282f4abed66a2cccf7929488ebb5e88447d2bb3369e8ddc728fc66fc0"
+metafile = true
+
+[[files]]
+file = "mods/connected-glass.pw.toml"
+hash = "376b22883dd4642dee7bf1e727440cb01d87d72293952a1ddf0c2f1c25fa7863"
 metafile = true
 
 [[files]]
@@ -86,6 +101,11 @@ hash = "44abae510395f12f9ea97b8296b2f72e25f18b9f3f2cc0ee42c0d9afd73fe0b3"
 metafile = true
 
 [[files]]
+file = "mods/fusion-connected-textures.pw.toml"
+hash = "35e72c6577b301ac850a959bce08ca1c8a68e58f7819191a61d20c7af536ee5d"
+metafile = true
+
+[[files]]
 file = "mods/gallery.pw.toml"
 hash = "abab6d2386547e55cc5efce1c0e64d1f18bb3ce106e2dd011693f70508da6751"
 metafile = true
@@ -93,6 +113,11 @@ metafile = true
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "960fb33c17aca9c635f99009c1f16d75c312d043e302a599f6ce8040452079e6"
+metafile = true
+
+[[files]]
+file = "mods/immersiveengineering.pw.toml"
+hash = "91875c996a9958aeea794843fb449915218625f52aaf0234ccd1faffa887e277"
 metafile = true
 
 [[files]]
@@ -116,8 +141,18 @@ hash = "af08c145608a13f68a624394b68611753f7d7d6f439538e2c328eea60be5a8e1"
 metafile = true
 
 [[files]]
+file = "mods/openblocks-elevator.pw.toml"
+hash = "bc3e79ec7c82f0e4b752ba7f41709e1e87e25169cf96b7c38dafefeaf876a80f"
+metafile = true
+
+[[files]]
 file = "mods/polytone.pw.toml"
 hash = "f43dc710d1a35ddad173ef7ac96464c53bf01c1966d607c442e17f4d108e98da"
+metafile = true
+
+[[files]]
+file = "mods/prickle.pw.toml"
+hash = "c99c5bac469e8d6ece5aae80f08635e3bbb8367f0c586b6288573c725faefe69"
 metafile = true
 
 [[files]]
@@ -133,6 +168,11 @@ metafile = true
 [[files]]
 file = "mods/snowy-spirit.pw.toml"
 hash = "d136c0fc2cbeda21effbaecbd5b04abc8cce7b16dbc07a0d932545a40c7af06d"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-core-lib.pw.toml"
+hash = "2c297fb87d09bd4203399e865d48a10aa82016c53b6767b10b43726e111a3566"
 metafile = true
 
 [[files]]

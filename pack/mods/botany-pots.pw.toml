@@ -1,0 +1,13 @@
+name = "Botany Pots"
+filename = "botanypots-neoforge-1.21.1-21.1.40.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/U6BUTZ7K/versions/55GTRo5m/botanypots-neoforge-1.21.1-21.1.40.jar"
+hash-format = "sha512"
+hash = "1d979427962b5c3ddf9b27501aafb5cfa9fc895308a9746361abab761ca87a4d5375be08684a7f7af894d3a7efc7d64d4e4e3ab8e08d54f41cc5949685414d33"
+
+[update]
+[update.modrinth]
+mod-id = "U6BUTZ7K"
+version = "55GTRo5m"
