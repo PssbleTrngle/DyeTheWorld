@@ -177,6 +177,10 @@
       "required": false
     },
     {
+      "id": "waystones:mint_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:mint_sharestone",
       "required": false
     },

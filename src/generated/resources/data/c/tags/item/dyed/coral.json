@@ -157,6 +157,10 @@
       "required": false
     },
     {
+      "id": "waystones:coral_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:coral_sharestone",
       "required": false
     },

@@ -157,6 +157,10 @@
       "required": false
     },
     {
+      "id": "waystones:slate_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:slate_sharestone",
       "required": false
     },

@@ -177,6 +177,10 @@
       "required": false
     },
     {
+      "id": "waystones:maroon_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:maroon_sharestone",
       "required": false
     },

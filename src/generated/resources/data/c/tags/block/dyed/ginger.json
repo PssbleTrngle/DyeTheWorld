@@ -177,6 +177,10 @@
       "required": false
     },
     {
+      "id": "waystones:ginger_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:ginger_sharestone",
       "required": false
     },

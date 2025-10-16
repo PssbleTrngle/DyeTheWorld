@@ -1089,6 +1089,70 @@
       "required": false
     },
     {
+      "id": "waystones:amber_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:aqua_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:beige_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:coral_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:forest_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:ginger_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:indigo_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:maroon_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:mint_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:navy_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:olive_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:rose_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:slate_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:tan_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:teal_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:verdant_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:amber_sharestone",
       "required": false
     },

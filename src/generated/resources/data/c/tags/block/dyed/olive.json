@@ -177,6 +177,10 @@
       "required": false
     },
     {
+      "id": "waystones:olive_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:olive_sharestone",
       "required": false
     },

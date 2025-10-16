@@ -157,6 +157,10 @@
       "required": false
     },
     {
+      "id": "waystones:indigo_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:indigo_sharestone",
       "required": false
     },

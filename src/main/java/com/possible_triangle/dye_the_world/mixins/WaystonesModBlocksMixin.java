@@ -29,7 +29,10 @@ public class WaystonesModBlocksMixin {
                     "<clinit>",
                     "initialize(Lnet/blay09/mods/balm/api/block/BalmBlocks;)V",
             },
-            at = @At(value = "FIELD", opcode = Opcodes.GETSTATIC, target = "Lnet/blay09/mods/waystones/block/ModBlocks;sharestoneColors:[Lnet/minecraft/world/item/DyeColor;"),
+            at = {
+                    @At(value = "FIELD", opcode = Opcodes.GETSTATIC, target = "Lnet/blay09/mods/waystones/block/ModBlocks;sharestoneColors:[Lnet/minecraft/world/item/DyeColor;"),
+                    @At(value = "FIELD", opcode = Opcodes.GETSTATIC, target = "Lnet/blay09/mods/waystones/block/ModBlocks;portstoneColors:[Lnet/minecraft/world/item/DyeColor;"),
+            },
             require = 0
     )
     private static DyeColor[] overwriteSharestoneCount(Operation<DyeColor[]> original) {

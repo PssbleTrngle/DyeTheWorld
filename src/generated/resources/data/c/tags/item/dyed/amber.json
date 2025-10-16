@@ -157,6 +157,10 @@
       "required": false
     },
     {
+      "id": "waystones:amber_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:amber_sharestone",
       "required": false
     },

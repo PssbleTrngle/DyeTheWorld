@@ -177,6 +177,10 @@
       "required": false
     },
     {
+      "id": "waystones:forest_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:forest_sharestone",
       "required": false
     },

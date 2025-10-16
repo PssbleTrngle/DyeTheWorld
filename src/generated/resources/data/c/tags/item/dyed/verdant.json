@@ -157,6 +157,10 @@
       "required": false
     },
     {
+      "id": "waystones:verdant_portstone",
+      "required": false
+    },
+    {
       "id": "waystones:verdant_sharestone",
       "required": false
     },
