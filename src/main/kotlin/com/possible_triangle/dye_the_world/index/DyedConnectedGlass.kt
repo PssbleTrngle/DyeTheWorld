@@ -9,13 +9,13 @@ import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.translation
-import com.simibubi.create.content.decoration.palettes.GlassPaneBlock
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.StainedGlassPaneBlock
 import net.neoforged.neoforge.common.Tags
 
 object DyedConnectedGlass {
@@ -29,7 +29,7 @@ object DyedConnectedGlass {
         block: BlockBuilder<*, *>.() -> Unit
     ) = DYES.associateWith { dye ->
         REGISTRATE.`object`("${type}_glass_${dye}_pane")
-            .dyedBlock(dye, ::GlassPaneBlock)
+            .dyedBlock(dye) { StainedGlassPaneBlock(dye, it) }
             .optionalTag(Tags.Blocks.GLASS_PANES)
             .connectedPaneBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }
