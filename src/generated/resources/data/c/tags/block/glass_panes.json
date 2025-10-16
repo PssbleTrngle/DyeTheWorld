@@ -1,0 +1,196 @@
+{
+  "values": [
+    {
+      "id": "connectedglass:borderless_glass_amber_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_aqua_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_beige_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_coral_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_forest_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_ginger_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_indigo_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_maroon_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_mint_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_navy_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_olive_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_rose_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_slate_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_tan_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_teal_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_verdant_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_amber_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_aqua_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_beige_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_coral_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_forest_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_ginger_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_indigo_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_maroon_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_mint_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_navy_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_olive_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_rose_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_slate_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_tan_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_teal_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_verdant_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_amber_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_aqua_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_beige_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_coral_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_forest_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_ginger_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_indigo_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_maroon_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_mint_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_navy_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_olive_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_rose_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_slate_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_tan_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_teal_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_verdant_pane",
+      "required": false
+    }
+  ]
+}

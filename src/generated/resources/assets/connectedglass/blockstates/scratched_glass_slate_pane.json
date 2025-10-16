@@ -1,0 +1,77 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_post"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_side_north"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_noside"
+      },
+      "when": {
+        "north": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_side_south"
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_noside_alt",
+        "y": 90
+      },
+      "when": {
+        "south": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_side_west",
+        "y": 90
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_noside",
+        "y": 270
+      },
+      "when": {
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_side_east",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "connectedglass:block/scratched_glass_slate_pane_noside_alt"
+      },
+      "when": {
+        "east": "false"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "fusion:connecting",
+  "parent": "connectedglass:block/template_glass_pane_noside",
+  "connections": {
+    "type": "fusion:or",
+    "predicates": [
+      {
+        "type": "fusion:is_same_block"
+      }
+    ]
+  },
+  "loader": "fusion:model",
+  "textures": {
+    "edge": "dye_depot:block/slate_stained_glass_pane_top",
+    "pane": "dye_the_world:block/connectedglass/scratched/slate"
+  }
+}

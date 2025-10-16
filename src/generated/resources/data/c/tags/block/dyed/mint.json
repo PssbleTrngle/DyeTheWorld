@@ -187,6 +187,74 @@
     {
       "id": "snowyspirit:gumdrop_mint",
       "required": false
+    },
+    {
+      "id": "elevatorid:elevator_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_mint_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_mint_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_mint_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_mint",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_terracotta_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_concrete_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_concrete_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_concrete_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_glazed_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_glazed_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:mint_glazed_terracotta_waxed_botany_pot",
+      "required": false
     }
   ]
 }

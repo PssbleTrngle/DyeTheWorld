@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "botanypots:waxed_pot",
+  "ingredients": [
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "botanypots:tan_terracotta_botany_pot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "botanypots:tan_terracotta_waxed_botany_pot"
+  }
+}

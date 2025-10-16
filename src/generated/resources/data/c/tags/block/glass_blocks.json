@@ -1,0 +1,260 @@
+{
+  "values": [
+    {
+      "id": "connectedglass:borderless_glass_amber",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_aqua",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_coral",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_forest",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_ginger",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_indigo",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_navy",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_olive",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_rose",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_slate",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_tan",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_teal",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_verdant",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_amber",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_aqua",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_coral",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_forest",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_ginger",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_indigo",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_navy",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_olive",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_rose",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_slate",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_tan",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_teal",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_verdant",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_amber",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_aqua",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_coral",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_forest",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_ginger",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_indigo",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_navy",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_olive",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_rose",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_slate",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_tan",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_teal",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_verdant",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_amber",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_aqua",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_coral",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_forest",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_ginger",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_indigo",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_mint",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_navy",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_olive",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_rose",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_slate",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_tan",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_teal",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_verdant",
+      "required": false
+    }
+  ]
+}

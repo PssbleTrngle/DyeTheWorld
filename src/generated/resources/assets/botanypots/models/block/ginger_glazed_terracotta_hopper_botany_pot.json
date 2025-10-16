@@ -1,0 +1,8 @@
+{
+  "parent": "botanypots:block/template/hopper_pot",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "material": "dye_depot:block/ginger_glazed_terracotta",
+    "material_top": "dye_the_world:block/botanypots/ginger_glazed_terracotta"
+  }
+}

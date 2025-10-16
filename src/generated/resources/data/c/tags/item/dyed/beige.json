@@ -167,6 +167,74 @@
     {
       "id": "snowyspirit:gumdrop_beige",
       "required": false
+    },
+    {
+      "id": "elevatorid:elevator_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_beige_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_beige_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_beige",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_beige_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_beige",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_terracotta_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_concrete_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_concrete_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_concrete_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_glazed_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_glazed_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:beige_glazed_terracotta_waxed_botany_pot",
+      "required": false
     }
   ]
 }

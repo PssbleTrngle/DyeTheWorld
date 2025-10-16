@@ -1,0 +1,39 @@
+{
+  "type": "fusion:connecting",
+  "parent": "connectedglass:block/template_glass_pane_side",
+  "connections": {
+    "type": "fusion:or",
+    "predicates": [
+      {
+        "type": "fusion:or",
+        "predicates": [
+          {
+            "type": "fusion:match_state",
+            "block": "connectedglass:scratched_glass_mint_pane",
+            "properties": {
+              "east": [
+                "true"
+              ]
+            }
+          },
+          {
+            "type": "fusion:is_direction",
+            "directions": [
+              "bottom_left",
+              "bottom_right",
+              "left",
+              "right",
+              "top_left",
+              "top_right"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "loader": "fusion:model",
+  "textures": {
+    "edge": "dye_depot:block/mint_stained_glass_pane_top",
+    "pane": "dye_the_world:block/connectedglass/scratched/mint"
+  }
+}

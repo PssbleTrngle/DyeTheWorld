@@ -1,0 +1,7 @@
+{
+  "parent": "connectedglass:pane_item_template",
+  "textures": {
+    "all": "dye_the_world:block/connectedglass/clear/navy",
+    "edge": "dye_depot:block/navy_stained_glass_pane_top"
+  }
+}

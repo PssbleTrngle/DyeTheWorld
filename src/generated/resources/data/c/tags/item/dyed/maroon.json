@@ -167,6 +167,74 @@
     {
       "id": "snowyspirit:gumdrop_maroon",
       "required": false
+    },
+    {
+      "id": "elevatorid:elevator_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:borderless_glass_maroon_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:scratched_glass_maroon_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "connectedglass:clear_glass_maroon_pane",
+      "required": false
+    },
+    {
+      "id": "connectedglass:tinted_borderless_glass_maroon",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_terracotta_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_concrete_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_concrete_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_concrete_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_glazed_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_glazed_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:maroon_glazed_terracotta_waxed_botany_pot",
+      "required": false
     }
   ]
 }

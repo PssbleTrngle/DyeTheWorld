@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "connectedglass"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_borderless_glass_maroon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "connectedglass:borderless_glass_maroon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "connectedglass:borderless_glass_maroon_pane"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_borderless_glass_maroon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "connectedglass:borderless_glass_maroon_pane"
+    ]
+  }
+}

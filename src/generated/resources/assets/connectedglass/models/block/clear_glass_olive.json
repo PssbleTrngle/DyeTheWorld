@@ -1,0 +1,8 @@
+{
+  "type": "fusion:connecting",
+  "parent": "minecraft:block/cube_all",
+  "loader": "fusion:model",
+  "textures": {
+    "all": "dye_the_world:block/connectedglass/clear/olive"
+  }
+}

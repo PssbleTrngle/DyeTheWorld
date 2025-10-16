@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elevatorid"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/rose"
+    },
+    {
+      "tag": "elevatorid:elevators"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "elevatorid:elevator_rose"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "connectedglass"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_clear_glass_amber": {
+      "conditions": {
+        "items": [
+          {
+            "items": "connectedglass:clear_glass_amber"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "connectedglass:clear_glass_amber_pane"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_clear_glass_amber"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "connectedglass:clear_glass_amber_pane"
+    ]
+  }
+}
