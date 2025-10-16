@@ -142,6 +142,7 @@ upload {
     curseforge {
         dependencies {
             optional("chalk")
+            optional("openblocks-elevator")
         }
     }
 
@@ -174,6 +175,8 @@ upload {
             optional("waystones")
             // optional("interiors")
             optional("snowy-spirit")
+            optional("botany-pots")
+            optional("connected-glass")
         }
     }
 }
