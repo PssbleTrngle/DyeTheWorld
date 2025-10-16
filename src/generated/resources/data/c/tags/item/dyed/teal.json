@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:teal_harness",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_teal",
       "required": false
     },

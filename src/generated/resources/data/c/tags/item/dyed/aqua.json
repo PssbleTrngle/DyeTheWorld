@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:aqua_harness",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_aqua",
       "required": false
     },

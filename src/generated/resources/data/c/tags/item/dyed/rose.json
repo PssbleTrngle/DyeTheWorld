@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:rose_harness",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_rose",
       "required": false
     },

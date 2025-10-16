@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:coral_harness",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_coral",
       "required": false
     },

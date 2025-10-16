@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:amber_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_harness",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_harness",
+      "required": false
+    }
+  ]
+}

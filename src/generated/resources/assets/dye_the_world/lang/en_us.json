@@ -462,5 +462,21 @@
   "block.dye_the_world.verdant_terracotta_bricks": "Verdant Terracotta Bricks",
   "block.dye_the_world.verdant_terracotta_slab": "Verdant Terracotta Slab",
   "block.dye_the_world.verdant_terracotta_stairs": "Verdant Terracotta Stairs",
-  "block.dye_the_world.verdant_terracotta_wall": "Verdant Terracotta Wall"
+  "block.dye_the_world.verdant_terracotta_wall": "Verdant Terracotta Wall",
+  "item.dye_the_world.amber_harness": "Amber Harness",
+  "item.dye_the_world.aqua_harness": "Aqua Harness",
+  "item.dye_the_world.beige_harness": "Beige Harness",
+  "item.dye_the_world.coral_harness": "Coral Harness",
+  "item.dye_the_world.forest_harness": "Forest Harness",
+  "item.dye_the_world.ginger_harness": "Ginger Harness",
+  "item.dye_the_world.indigo_harness": "Indigo Harness",
+  "item.dye_the_world.maroon_harness": "Maroon Harness",
+  "item.dye_the_world.mint_harness": "Mint Harness",
+  "item.dye_the_world.navy_harness": "Navy Harness",
+  "item.dye_the_world.olive_harness": "Olive Harness",
+  "item.dye_the_world.rose_harness": "Rose Harness",
+  "item.dye_the_world.slate_harness": "Slate Harness",
+  "item.dye_the_world.tan_harness": "Tan Harness",
+  "item.dye_the_world.teal_harness": "Teal Harness",
+  "item.dye_the_world.verdant_harness": "Verdant Harness"
 }

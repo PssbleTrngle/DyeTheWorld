@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "harness",
+  "key": {
+    "#": {
+      "item": "dye_depot:slate_wool"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "G#G"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:slate_harness"
+  }
+}

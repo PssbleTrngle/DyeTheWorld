@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:ginger_harness",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_ginger",
       "required": false
     },
