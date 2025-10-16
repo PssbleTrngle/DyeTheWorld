@@ -102,8 +102,7 @@ dependencies {
     modApi(pack.modrinth.waystones)
     modCompileOnly(pack.modrinth.create.steam.n.rails)
     modApi(libs.dye.depot)
-    //modApi(pack.modrinth.snowy.spirit)
-    modApi(libs.snowy.spirit)
+    modApi(pack.modrinth.snowy.spirit)
     modApi(pack.modrinth.fusion.connected.textures)
 
     //modRuntimeOnly(pack.modrinth.immersiveengineering)
