@@ -73,38 +73,38 @@ repositories {
 }
 
 dependencies {
-    modApi(libs.multikulti.core)
-    modApi(libs.multikulti.datagen)
+    modImplementation(libs.multikulti.core)
+    modImplementation(libs.multikulti.datagen)
 
-    modApi(variantOf(libs.create) {
+    modImplementation(variantOf(libs.create) {
         classifier("slim")
     }) {
         isTransitive = false
     }
-    modApi(libs.ponder)
+    modImplementation(libs.ponder)
     modCompileOnly(libs.flywheel.api)
-    modApi(pack.modrinth.another.furniture)
-    modApi(pack.modrinth.comforts)
-    modApi(pack.modrinth.moonlight)
-    modApi(pack.modrinth.supplementaries)
-    modApi(pack.modrinth.supplementaries.squared)
+    modImplementation(pack.modrinth.another.furniture)
+    modImplementation(pack.modrinth.comforts)
+    modImplementation(pack.modrinth.moonlight)
+    modImplementation(pack.modrinth.supplementaries)
+    modImplementation(pack.modrinth.supplementaries.squared)
     modCompileOnly(pack.modrinth.quark)
     modCompileOnly(pack.modrinth.zeta)
-    modApi(pack.modrinth.farmers.delight)
-    modApi(pack.modrinth.clayworks)
-    modApi(pack.modrinth.upgrade.aquatic)
-    modApi(pack.modrinth.blueprint)
-    modApi(pack.modrinth.chalk.mod)
+    modImplementation(pack.modrinth.farmers.delight)
+    modImplementation(pack.modrinth.clayworks)
+    modImplementation(pack.modrinth.upgrade.aquatic)
+    modImplementation(pack.modrinth.blueprint)
+    modImplementation(pack.modrinth.chalk.mod)
     modCompileOnly(pack.modrinth.create.deco)
     modCompileOnly(pack.modrinth.domestication.innovation)
     modCompileOnly(pack.modrinth.alexs.caves)
     modCompileOnly(pack.modrinth.alexs.mobs)
-    modApi(pack.modrinth.waystones)
+    modImplementation(pack.modrinth.waystones)
     modCompileOnly(pack.modrinth.create.steam.n.rails)
-    modApi(libs.dye.depot)
-    modApi(pack.modrinth.snowy.spirit)
-    modApi(pack.modrinth.fusion.connected.textures)
-    modApi(pack.modrinth.vanillabackport)
+    modImplementation(libs.dye.depot)
+    modImplementation(pack.modrinth.snowy.spirit)
+    modImplementation(pack.modrinth.fusion.connected.textures)
+    modImplementation(pack.modrinth.vanillabackport)
 
     //modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
