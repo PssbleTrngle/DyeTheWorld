@@ -178,6 +178,7 @@ upload {
             optional("snowy-spirit")
             optional("botany-pots")
             optional("connected-glass")
+            optional("vanillabackport")
         }
     }
 }
