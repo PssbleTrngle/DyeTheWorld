@@ -1,7 +1,7 @@
 package com.possible_triangle.dye_the_world.mixins;
 
 import com.possible_triangle.dye_the_world.Dyes;
-import com.possible_triangle.dye_the_world.index.DyedRailways;
+import com.possible_triangle.dye_the_world.compat.RailwaysCompat;
 import com.railwayteam.railways.util.ColorUtils;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -33,7 +33,7 @@ public class ColorUtilsMixin {
     )
     private static void getDyeColorDyeItem(DyeColor dye, CallbackInfoReturnable<Item> cir) {
         if (Dyes.isVanilla(dye)) return;
-        cir.setReturnValue(DyedRailways.DYE_ITEMS.get(dye).get());
+        cir.setReturnValue(RailwaysCompat.DYE_ITEMS.get(dye).get());
     }
 
     @Inject(
@@ -43,7 +43,7 @@ public class ColorUtilsMixin {
             require = 0
     )
     private static void coloredName(String string, CallbackInfoReturnable<String> cir) {
-        var translation = DyedRailways.TRANSLATIONS.get(string);
+        var translation = RailwaysCompat.TRANSLATIONS.get(string);
         if (translation != null) cir.setReturnValue(translation);
     }
 
