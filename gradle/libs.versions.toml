@@ -1,5 +1,5 @@
 [versions]
-multikulti = "1.21.1-1.2.2"
+multikulti = "1.21.1-1.2.3"
 flywheel = "1.0.2"
 
 [libraries]
