@@ -9,7 +9,7 @@ version = "${mod_version}"
 displayName = "${mod_name}"
 authors = "${mod_author}"
 description = '''Compatiblity for the Dye Depot mod'''
-updateJSONURL = "https://api.modrinth.com/updates/dye-the-world/forge_updates.json"
+updateJSONURL = "https://api.modrinth.com/updates/dye-the-world/forge_updates.json?neoforge=only"
 
 [[dependencies.${mod_id}]]
 modId = "neoforge"
