@@ -1,6 +1,7 @@
 {
   "$schema": "https://webhooks.new.macarena.ceo/schema/config.json",
   "type": "minecraft",
+  "assignee": "PssbleTrngle",
   "loaders": [
     "neoforge",
     "fabric",
