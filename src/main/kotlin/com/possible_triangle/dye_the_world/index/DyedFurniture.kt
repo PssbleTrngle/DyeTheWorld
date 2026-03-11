@@ -5,8 +5,8 @@ import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
+import com.possible_triangle.dye_the_world.extensions.noLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
-import com.possible_triangle.dye_the_world.translation
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.starfish_studios.another_furniture.block.*
 import com.starfish_studios.another_furniture.registry.AFBlockTags
@@ -14,7 +14,6 @@ import com.starfish_studios.another_furniture.registry.AFBlocks
 import com.starfish_studios.another_furniture.registry.AFItemTags
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
-import net.minecraft.resources.ResourceLocation
 
 object DyedFurniture {
 
@@ -99,7 +98,7 @@ object DyedFurniture {
     val LAMPS_CONNECTORS = dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
         REGISTRATE.`object`("${dye}_lamp_connector")
             .dyedBlock(dye, ANOTHER_FURNITURE) { LampConnectorBlock(dye, it) }
-            .lang("${dye.translation} Lamp")
+            .noLang()
             .loot { t, b -> t.dropOther(b, LAMPS[dye]!!.get()) }
             .initialProperties { AFBlocks.RED_LAMP_CONNECTOR.get() }
             .lampConnectorBlockstate()

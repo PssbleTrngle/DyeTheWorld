@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stools",
+  "key": {
+    "#": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "W": {
+      "item": "dye_depot:forest_wool"
+    }
+  },
+  "pattern": [
+    "#W#",
+    "WWW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:forest_quark_stool"
+  }
+}

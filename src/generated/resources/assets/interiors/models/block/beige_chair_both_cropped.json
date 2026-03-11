@@ -1,0 +1,9 @@
+{
+  "parent": "interiors:block/chair/both_cropped",
+  "textures": {
+    "side": "dye_the_world:block/create/seat/side_beige",
+    "side_front": "dye_the_world:block/create/seat/side_beige",
+    "side_top": "dye_the_world:block/interiors/chair/side_top_beige",
+    "top": "dye_the_world:block/create/seat/top_beige"
+  }
+}

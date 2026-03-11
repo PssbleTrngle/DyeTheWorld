@@ -21,6 +21,34 @@
       "required": false
     },
     {
+      "id": "dye_the_world:tan_shard",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_quark_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_framed_glass_pane",
+      "required": false
+    },
+    {
       "id": "dye_the_world:tan_terracotta_bricks",
       "required": false
     },
@@ -154,6 +182,26 @@
     },
     {
       "id": "create:tan_postbox",
+      "required": false
+    },
+    {
+      "id": "interiors:tan_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:tan_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:tan_cushion",
+      "required": false
+    },
+    {
+      "id": "createdeco:tan_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:tan_placard",
       "required": false
     },
     {

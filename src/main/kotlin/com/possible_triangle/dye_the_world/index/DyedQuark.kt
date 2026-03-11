@@ -61,7 +61,7 @@ object DyedQuark {
             }
             .optionalTag(DyedTags.Items.GLASS_SHARDS)
             .recipe { context, provider ->
-                val glass = dye.blockOf("stained_glass")
+                val glass = dye.itemOf("stained_glass")
                 provider.withConditions(flagCondition("glass_shard")) {
                     ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, glass)
                         .pattern("XX")

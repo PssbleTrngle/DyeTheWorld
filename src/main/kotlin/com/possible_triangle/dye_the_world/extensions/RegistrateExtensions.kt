@@ -2,6 +2,7 @@ package com.possible_triangle.dye_the_world.extensions
 
 import com.possible_triangle.dye_the_world.ForgeEntrypoint
 import com.possible_triangle.dye_the_world.data.CustomRegistrateLangProvider
+import com.tterrag.registrate.builders.AbstractBuilder
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.BlockEntityBuilder
 import com.tterrag.registrate.builders.ItemBuilder
@@ -60,3 +61,6 @@ fun <T : Item, P> ItemBuilder<T, P>.optionalTab(vararg keys: ResourceKey<Creativ
             }
         }
     }
+
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noLang() =
+    setData(ProviderType.LANG) { _, _ -> }

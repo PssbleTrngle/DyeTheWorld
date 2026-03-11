@@ -1,0 +1,9 @@
+{
+  "parent": "interiors:block/chair/right",
+  "textures": {
+    "side": "dye_the_world:block/create/seat/side_forest",
+    "side_front": "dye_the_world:block/create/seat/side_forest",
+    "side_top": "dye_the_world:block/interiors/chair/side_top_forest",
+    "top": "dye_the_world:block/create/seat/top_forest"
+  }
+}

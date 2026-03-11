@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dye_the_world:block/forest_shingles_slab"
+    },
+    "type=double": {
+      "model": "dye_the_world:block/forest_shingles"
+    },
+    "type=top": {
+      "model": "dye_the_world:block/forest_shingles_slab_top"
+    }
+  }
+}

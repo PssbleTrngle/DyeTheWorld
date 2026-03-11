@@ -25,6 +25,30 @@
       "required": false
     },
     {
+      "id": "dye_the_world:amber_quark_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_framed_glass_pane",
+      "required": false
+    },
+    {
       "id": "dye_the_world:amber_terracotta_bricks",
       "required": false
     },
@@ -170,6 +194,26 @@
     },
     {
       "id": "create:amber_postbox",
+      "required": false
+    },
+    {
+      "id": "interiors:amber_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:amber_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:amber_cushion",
+      "required": false
+    },
+    {
+      "id": "createdeco:amber_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:amber_placard",
       "required": false
     },
     {

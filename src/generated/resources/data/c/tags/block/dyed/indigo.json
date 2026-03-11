@@ -25,6 +25,30 @@
       "required": false
     },
     {
+      "id": "dye_the_world:indigo_quark_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_framed_glass_pane",
+      "required": false
+    },
+    {
       "id": "dye_the_world:indigo_terracotta_bricks",
       "required": false
     },
@@ -170,6 +194,26 @@
     },
     {
       "id": "create:indigo_postbox",
+      "required": false
+    },
+    {
+      "id": "interiors:indigo_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:indigo_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:indigo_cushion",
+      "required": false
+    },
+    {
+      "id": "createdeco:indigo_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:indigo_placard",
       "required": false
     },
     {

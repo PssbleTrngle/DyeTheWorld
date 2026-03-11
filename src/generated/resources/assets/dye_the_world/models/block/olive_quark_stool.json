@@ -1,0 +1,6 @@
+{
+  "parent": "quark:block/stool",
+  "textures": {
+    "main": "dye_the_world:block/quark/olive_stool"
+  }
+}

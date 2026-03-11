@@ -25,6 +25,30 @@
       "required": false
     },
     {
+      "id": "dye_the_world:aqua_quark_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_framed_glass_pane",
+      "required": false
+    },
+    {
       "id": "dye_the_world:aqua_terracotta_bricks",
       "required": false
     },
@@ -170,6 +194,26 @@
     },
     {
       "id": "create:aqua_postbox",
+      "required": false
+    },
+    {
+      "id": "interiors:aqua_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:aqua_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:aqua_cushion",
+      "required": false
+    },
+    {
+      "id": "createdeco:aqua_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:aqua_placard",
       "required": false
     },
     {

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside_alt",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "pane": "dye_the_world:block/quark/aqua_framed_glass"
+  }
+}

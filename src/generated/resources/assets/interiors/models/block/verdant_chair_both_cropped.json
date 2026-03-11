@@ -1,0 +1,9 @@
+{
+  "parent": "interiors:block/chair/both_cropped",
+  "textures": {
+    "side": "dye_the_world:block/create/seat/side_verdant",
+    "side_front": "dye_the_world:block/create/seat/side_verdant",
+    "side_top": "dye_the_world:block/interiors/chair/side_top_verdant",
+    "top": "dye_the_world:block/create/seat/top_verdant"
+  }
+}

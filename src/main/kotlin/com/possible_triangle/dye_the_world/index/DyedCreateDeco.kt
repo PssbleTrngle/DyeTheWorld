@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.github.talrey.createdeco.api.CDTags
+import com.github.talrey.createdeco.api.CreateDecoTags
 import com.github.talrey.createdeco.blocks.ShippingContainerBlock
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_DECO
 import com.possible_triangle.dye_the_world.data.placardBlockstate
@@ -42,7 +42,7 @@ object DyedCreateDeco {
             .optionalTag(AllBlockTags.SAFE_NBT.tag)
             .placardBlockstate()
             .withItem {
-                optionalTag(CDTags.PLACARD)
+                optionalTag(CreateDecoTags.PLACARDS)
                 placardRecipe()
             }
             .register()

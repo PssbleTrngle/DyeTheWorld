@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "big=false,sat_in=false": {
+      "model": "dye_the_world:block/aqua_quark_stool"
+    },
+    "big=false,sat_in=true": {
+      "model": "dye_the_world:block/aqua_quark_stool"
+    },
+    "big=true,sat_in=false": {
+      "model": "dye_the_world:block/big_aqua_quark_stool"
+    },
+    "big=true,sat_in=true": {
+      "model": "dye_the_world:block/big_aqua_quark_stool"
+    }
+  }
+}

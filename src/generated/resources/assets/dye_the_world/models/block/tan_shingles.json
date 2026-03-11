@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "dye_the_world:block/quark/tan_shingles"
+  }
+}

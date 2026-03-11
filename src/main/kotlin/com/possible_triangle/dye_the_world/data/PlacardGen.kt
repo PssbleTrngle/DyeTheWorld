@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.github.talrey.createdeco.api.CDTags
+import com.github.talrey.createdeco.api.CreateDecoTags
 import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_DECO
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -35,5 +35,5 @@ fun <T : Item, P> ItemBuilder<T, P>.placardRecipe() = recipe { context, provider
         .requiresUnlocking(dye.tag)
         .save(provider)
 
-    provider.dyeingRecipe(dye, CDTags.PLACARD, context)
+    provider.dyeingRecipe(dye, CreateDecoTags.PLACARDS, context)
 }

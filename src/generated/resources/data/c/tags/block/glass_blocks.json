@@ -1,6 +1,70 @@
 {
   "values": [
     {
+      "id": "dye_the_world:amber_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_framed_glass",
+      "required": false
+    },
+    {
       "id": "connectedglass:borderless_glass_amber",
       "required": false
     },

@@ -15,7 +15,8 @@
     "LampConnectorBlockMixin",
     "QuarkJeiPluginMixin",
     "WaystonesModBlocksMixin",
-    "data.SimpleCookingRecipeBuilderMixin"
+    "data.SimpleCookingRecipeBuilderMixin",
+    "data.CreateInteriorsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

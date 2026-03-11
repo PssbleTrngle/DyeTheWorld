@@ -17,7 +17,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "snowyspirit:glow_lights_amber"
         }
       ],
       "rolls": 1.0

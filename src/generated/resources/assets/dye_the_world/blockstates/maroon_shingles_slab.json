@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dye_the_world:block/maroon_shingles_slab"
+    },
+    "type=double": {
+      "model": "dye_the_world:block/maroon_shingles"
+    },
+    "type=top": {
+      "model": "dye_the_world:block/maroon_shingles_slab_top"
+    }
+  }
+}

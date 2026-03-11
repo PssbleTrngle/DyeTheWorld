@@ -1,0 +1,60 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdeco"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brass_sheet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "create:brass_sheet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dyes/indigo": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dyes/indigo"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_item_frame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:item_frame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createdeco:indigo_placard"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_item_frame",
+      "has_brass_sheet",
+      "has_dyes/indigo"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createdeco:indigo_placard"
+    ]
+  }
+}

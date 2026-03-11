@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "createdeco:block/maroon_shipping_container",
+      "y": 90
+    },
+    "axis=z": {
+      "model": "createdeco:block/maroon_shipping_container"
+    }
+  }
+}

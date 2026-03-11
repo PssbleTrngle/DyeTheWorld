@@ -8,6 +8,7 @@ import com.possible_triangle.dye_the_world.data.gumdropBlockstate
 import com.possible_triangle.dye_the_world.data.gumdropModel
 import com.possible_triangle.dye_the_world.data.gumdropRecipe
 import com.possible_triangle.dye_the_world.dyesFor
+import com.possible_triangle.dye_the_world.extensions.noLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
@@ -34,7 +35,7 @@ object DyedSnowySpirit {
     val GLOW_LIGHTS_ITEMS = DYES.associateWith { dye ->
         REGISTRATE.`object`("glow_lights_$dye")
             .dyedItem(dye) { GlowLightsItem(GLOW_LIGHTS[dye]!!.get()) }
-            .lang("${dye.translation} Glow Lights")
+            .noLang()
             .tab(CreativeModeTabs.COLORED_BLOCKS)
             .tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
             .glowLightsModel()

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_the_world:ginger_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:ginger_shingles_stairs"
+  }
+}

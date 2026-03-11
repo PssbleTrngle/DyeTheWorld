@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dye_the_world:block/quark/navy_shingles",
+    "side": "dye_the_world:block/quark/navy_shingles",
+    "top": "dye_the_world:block/quark/navy_shingles"
+  }
+}

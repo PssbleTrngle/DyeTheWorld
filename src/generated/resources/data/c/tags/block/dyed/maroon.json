@@ -25,6 +25,30 @@
       "required": false
     },
     {
+      "id": "dye_the_world:maroon_quark_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_framed_glass_pane",
+      "required": false
+    },
+    {
       "id": "dye_the_world:maroon_terracotta_bricks",
       "required": false
     },
@@ -170,6 +194,26 @@
     },
     {
       "id": "create:maroon_postbox",
+      "required": false
+    },
+    {
+      "id": "interiors:maroon_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:maroon_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:maroon_cushion",
+      "required": false
+    },
+    {
+      "id": "createdeco:maroon_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:maroon_placard",
       "required": false
     },
     {

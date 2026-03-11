@@ -2,6 +2,7 @@ package com.possible_triangle.dye_the_world
 
 import com.possible_triangle.dye_the_world.compat.CreateCompat
 import com.possible_triangle.dye_the_world.data.createDyeRecipes
+import com.possible_triangle.dye_the_world.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.data.generatePackMetadata
 import com.possible_triangle.dye_the_world.data.generateTags
 import com.possible_triangle.dye_the_world.extensions.ifLoaded
@@ -58,17 +59,16 @@ object ForgeEntrypoint {
             REGISTRATE.generateTags()
             REGISTRATE.generatePackMetadata()
             REGISTRATE.createDyeRecipes()
-            // TODO when quark updates
-            // generateGlassShardLoot()
+            generateGlassShardLoot()
 
             // These are blocks & Items which are automatically added for all dye colors, included modded ones.
             // Therefore, they only lack assets & data files, which have to be generated, but do not need to be registered.
             DyedSupplementaries.register()
             DyedComforts.register()
             DyedCreate.register()
-            // TODO when create addons update
-            // DyedCreateInterior.register()
-            // DyedCreateDeco.register()
+            DyedCreateInterior.register()
+            DyedCreateDeco.register()
+            // TODO when steam & rails updates
             // DyedRailways.register()
             DyedChalk.registerDatagen()
             DyedWaystones.register()

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "dye_the_world:block/quark/slate_shingles",
+    "side": "dye_the_world:block/quark/slate_shingles",
+    "top": "dye_the_world:block/quark/slate_shingles"
+  }
+}

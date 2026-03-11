@@ -44,8 +44,6 @@ fun generateGlassShardLoot() {
         registrate.`object`("${dye}_stained_glass")
             .entry { name, callback -> SimpleBlockBuilder(registrate, name, callback) }
             .loot { tables, stainedGlass ->
-                val flagConditionType =
-                    BuiltInRegistries.LOOT_CONDITION_TYPE.getOrThrow(Constants.Mods.QUARK.createId("flag"))
                 val enchantments = tables.registries.lookupOrThrow(Registries.ENCHANTMENT)
 
                 val entry = AlternativesEntry.alternatives(
@@ -65,7 +63,7 @@ fun generateGlassShardLoot() {
                         .apply(ApplyBonusCount.addUniformBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE), 1))
                         .apply(LimitCount.limitCount(IntRange.range(1, 4)))
                         .apply(ApplyExplosionDecay.explosionDecay())
-                        .`when` { FlagLootCondition(DyedQuark.FLAG_MANAGER, "glass_shard", flagConditionType) }
+                    //  TODO update  .`when` { FlagLootCondition("glass_shard") }
                 )
 
                 val table = LootTable.lootTable().withPool(LootPool.lootPool().add(entry))

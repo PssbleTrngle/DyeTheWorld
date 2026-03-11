@@ -25,6 +25,30 @@
       "required": false
     },
     {
+      "id": "dye_the_world:rose_quark_stool",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_framed_glass",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_framed_glass_pane",
+      "required": false
+    },
+    {
       "id": "dye_the_world:rose_terracotta_bricks",
       "required": false
     },
@@ -170,6 +194,26 @@
     },
     {
       "id": "create:rose_postbox",
+      "required": false
+    },
+    {
+      "id": "interiors:rose_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:rose_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:rose_cushion",
+      "required": false
+    },
+    {
+      "id": "createdeco:rose_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:rose_placard",
       "required": false
     },
     {

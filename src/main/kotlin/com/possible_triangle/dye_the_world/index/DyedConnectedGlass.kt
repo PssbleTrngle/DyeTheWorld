@@ -15,7 +15,7 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
-import net.minecraft.world.level.block.StainedGlassPaneBlock
+import net.minecraft.world.level.block.IronBarsBlock
 import net.neoforged.neoforge.common.Tags
 
 object DyedConnectedGlass {
@@ -29,7 +29,7 @@ object DyedConnectedGlass {
         block: BlockBuilder<*, *>.() -> Unit
     ) = DYES.associateWith { dye ->
         REGISTRATE.`object`("${type}_glass_${dye}_pane")
-            .dyedBlock(dye) { StainedGlassPaneBlock(dye, it) }
+            .dyedBlock(dye) { IronBarsBlock(it) }
             .optionalTag(Tags.Blocks.GLASS_PANES)
             .connectedPaneBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }

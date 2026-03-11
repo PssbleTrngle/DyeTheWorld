@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "interiors"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#interiors:chairs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "interiors:aqua_chair_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chairs"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "interiors:aqua_chair_dyeing"
+    ]
+  }
+}

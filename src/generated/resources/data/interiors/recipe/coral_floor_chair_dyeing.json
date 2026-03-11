@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "interiors"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/coral"
+    },
+    {
+      "tag": "interiors:floor_chairs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interiors:coral_floor_chair"
+  }
+}
