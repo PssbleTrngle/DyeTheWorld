@@ -1,13 +1,13 @@
 name = "Clayworks"
-filename = "clayworks-1.21.1-4.0.1.jar"
+filename = "clayworks-1.21.1-4.0.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/1iicrEO3/versions/sgBF4A0i/clayworks-1.21.1-4.0.1.jar"
+url = "https://cdn.modrinth.com/data/1iicrEO3/versions/LJJ7DbJJ/clayworks-1.21.1-4.0.2.jar"
 hash-format = "sha512"
-hash = "044ab396a182e22b38dd0f55a03319fc0813f9fbbf46d902c77b78005084bcda46623dcacda031c3876a0bbcd72bc8cf3dc4a65f8ddf8e1cab7d5ab36d188662"
+hash = "6dace5192da35a458c94d04981a9753abd881e773e28fff51ad0b2dcb6b55961ca65b87b06acc53d864502c93fc0be0b18d87a124a08d6817b1e62eb77724f21"
 
 [update]
 [update.modrinth]
 mod-id = "1iicrEO3"
-version = "sgBF4A0i"
+version = "LJJ7DbJJ"

@@ -1,13 +1,13 @@
 name = "Snowy Spirit"
-filename = "snowyspirit-1.21.1-3.0.18-neoforge.jar"
+filename = "snowyspirit-1.21.1-3.1.2-neoforge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/UiFDlI7w/versions/q9H7jqDP/snowyspirit-1.21.1-3.0.18-neoforge.jar"
+url = "https://cdn.modrinth.com/data/UiFDlI7w/versions/1BcR4dDg/snowyspirit-1.21.1-3.1.2-neoforge.jar"
 hash-format = "sha512"
-hash = "bd2e4b63201101bf20e68b2cc44f3a32eb49842ccb5869889ccc992c5cb7a28ed349eaf23cb293dd2e01fbf4fb65fb1b7dc4592b82b6baf8c1332d6988b25190"
+hash = "e4d20232ece70cb22bd159ecf2252abc81b51d2bc84119273746d5fbd4381f256bc66b125a43946df0943a5aac775b3fa79397d786e7c6c8d87804407ca1da61"
 
 [update]
 [update.modrinth]
 mod-id = "UiFDlI7w"
-version = "q9H7jqDP"
+version = "1BcR4dDg"
