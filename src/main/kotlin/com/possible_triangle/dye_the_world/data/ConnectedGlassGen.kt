@@ -86,7 +86,7 @@ fun <T : Block, P> BlockBuilder<T, P>.connectedPaneBlockState(type: String) = ap
         val post = provider.models().connected("${context.name}_post") {
             parent(CONNECTED_GLASS.createId("block/template_glass_pane_post"))
             textures()
-            connection(DefaultConnectionPredicates.isSameBlock())
+            defaultConnections(DefaultConnectionPredicates.isSameBlock())
         }
 
         val notUpOrDown = DefaultConnectionPredicates.isDirection(
@@ -108,20 +108,20 @@ fun <T : Block, P> BlockBuilder<T, P>.connectedPaneBlockState(type: String) = ap
             provider.models().connected("${context.name}_side_$direction") {
                 parent(CONNECTED_GLASS.createId("block/$parent"))
                 textures()
-                connection(matchesState(property, true).or(notUpOrDown))
+                defaultConnections(matchesState(property, true).or(notUpOrDown))
             }
         }
 
         val noSide = provider.models().connected("${context.name}_noside") {
             parent(CONNECTED_GLASS.createId("block/template_glass_pane_noside"))
             textures()
-            connection(DefaultConnectionPredicates.isSameBlock())
+            defaultConnections(DefaultConnectionPredicates.isSameBlock())
         }
 
         val noSideAlt = provider.models().connected("${context.name}_noside_alt") {
             parent(CONNECTED_GLASS.createId("block/template_glass_pane_noside_alt"))
             textures()
-            connection(DefaultConnectionPredicates.isSameBlock())
+            defaultConnections(DefaultConnectionPredicates.isSameBlock())
         }
 
         val builder = provider.getMultipartBuilder(context.get())
