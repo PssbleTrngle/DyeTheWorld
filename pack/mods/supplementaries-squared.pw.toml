@@ -1,13 +1,13 @@
 name = "Supplementaries Squared"
-filename = "suppsquared-1.20-1.1.23.jar"
+filename = "suppsquared-1.20-1.1.29.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/dCCkNFwE/versions/avILgxzS/suppsquared-1.20-1.1.23.jar"
+url = "https://cdn.modrinth.com/data/dCCkNFwE/versions/CSPoHqpr/suppsquared-1.20-1.1.29.jar"
 hash-format = "sha512"
-hash = "5f10aebbca1684e83fd25d8683cc9e7995a0866750a56ae6dd10aa0443fb08d7f210aaa1eba5fcc8f5ee83c07003aeedeb66c280338dcc4a060cff896a0dc9cb"
+hash = "c0a44ec005e83e1064f030f9250aecd1ab947391b9877c6fb122fa30073480760a54f28f7b153dfbf8542fb73453c3a75a1e95982b3f9fa983005d4bc9711129"
 
 [update]
 [update.modrinth]
 mod-id = "dCCkNFwE"
-version = "avILgxzS"
+version = "CSPoHqpr"

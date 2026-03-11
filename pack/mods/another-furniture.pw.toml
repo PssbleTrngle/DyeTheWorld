@@ -1,13 +1,13 @@
 name = "Another Furniture"
-filename = "another_furniture-forge-1.20.1-3.0.2.jar"
+filename = "another_furniture-forge-1.20.1-3.0.4.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/ulloLmqG/versions/aR6kgnDf/another_furniture-forge-1.20.1-3.0.2.jar"
+url = "https://cdn.modrinth.com/data/ulloLmqG/versions/S9tNKT5R/another_furniture-forge-1.20.1-3.0.4.jar"
 hash-format = "sha512"
-hash = "0304aca12c6e2965ea4386eb57fda68ccdc2e3dbd8b928149bf84c8f30a95f019578a52a7f3c3fd4b5cddbfc38df1659e05af88c36c0b01b784a27145201f039"
+hash = "c57011a7e078cdb05ca05123d2ca3d01b1f3baca3555c067150e23d75268bb250b45a780da1488a49c08c46f6ed38e883f6cd47981babffe43b5f501984f1afc"
 
 [update]
 [update.modrinth]
 mod-id = "ulloLmqG"
-version = "aR6kgnDf"
+version = "S9tNKT5R"
