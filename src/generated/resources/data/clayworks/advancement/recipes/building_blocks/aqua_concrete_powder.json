@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_concrete_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": "clayworks:concrete_powder"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "clayworks:aqua_concrete_powder"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_concrete_powder"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "clayworks:aqua_concrete_powder"
+    ]
+  }
+}

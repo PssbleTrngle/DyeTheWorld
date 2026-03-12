@@ -34,6 +34,7 @@ object DyedClayworks {
 
     private val TERRACOTTA = dyedBlockMap(CLAYWORKS, "terracotta")
     private val GLAZED_TERRACOTTA = dyedBlockMap(CLAYWORKS, "glazed_terracotta")
+    private val CONCRETE_POWDER = dyedBlockMap(CLAYWORKS, "concrete_powder")
 
     val TERRACOTTA_BRICKS = DYES.associateWith { dye ->
         REGISTRATE.`object`("${dye}_terracotta_bricks")
@@ -244,6 +245,19 @@ object DyedClayworks {
                         ClayworksRecipeSerializers.BAKING_RECIPE.get(),
                         ::BakingRecipe
                     )
+                }
+            }
+
+            provider.withConditions(ModLoaded(CLAYWORKS)) {
+                CONCRETE_POWDER.forEach { (dye, powder) ->
+                    ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, powder.get(), 8)
+                        .pattern("###")
+                        .pattern("#X#")
+                        .pattern("###")
+                        .define('X', dye.tag)
+                        .defineUnlocking('#', ClayworksBlocks.CONCRETE_POWDER.get())
+                        .group("concrete_powder")
+                        .save(provider, CLAYWORKS.createId(provider.safeName(powder.get())))
                 }
             }
         }
