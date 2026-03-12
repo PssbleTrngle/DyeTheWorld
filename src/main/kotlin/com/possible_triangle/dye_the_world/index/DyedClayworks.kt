@@ -15,6 +15,7 @@ import com.teamabnormals.clayworks.core.registry.ClayworksBlocks
 import com.teamabnormals.clayworks.core.registry.ClayworksRecipes.ClayworksRecipeSerializers
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
+import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
@@ -41,6 +42,7 @@ object DyedClayworks {
 
     private val TERRACOTTA = dyedBlockMap(CLAYWORKS, "terracotta")
     private val GLAZED_TERRACOTTA = dyedBlockMap(CLAYWORKS, "glazed_terracotta")
+    private val CONCRETE_POWDER = dyedBlockMap(CLAYWORKS, "concrete_powder")
 
     val TERRACOTTA_BRICKS = DYES.associateWith { dye ->
         REGISTRATE.`object`("${dye}_terracotta_bricks")
@@ -212,6 +214,19 @@ object DyedClayworks {
                         "baking",
                         ClayworksRecipeSerializers.BAKING_RECIPE.get()
                     )
+                }
+            }
+
+            provider.withConditions(ModLoaded(CLAYWORKS), ClayworksConfigCondition("concrete")) {
+                CONCRETE_POWDER.forEach { (dye, powder) ->
+                    ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, powder.get(), 8)
+                        .pattern("###")
+                        .pattern("#X#")
+                        .pattern("###")
+                        .define('X', dye.tag)
+                        .defineUnlocking('#', ClayworksBlocks.CONCRETE_POWDER.get())
+                        .group("concrete_powder")
+                        .save(provider, CLAYWORKS.createId(provider.safeName(powder.get())))
                 }
             }
         }

@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "clayworks"
+    },
+    {
+      "type": "clayworks:config",
+      "value": "concrete"
+    }
+  ],
+  "criteria": {
+    "has_concrete_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "clayworks:concrete_powder"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "clayworks:beige_concrete_powder"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_concrete_powder",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "clayworks:beige_concrete_powder"
+    ]
+  },
+  "sends_telemetry_event": false
+}

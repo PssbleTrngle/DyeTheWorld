@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "clayworks"
+    },
+    {
+      "type": "clayworks:config",
+      "value": "concrete"
+    }
+  ],
+  "group": "concrete_powder",
+  "key": {
+    "#": {
+      "item": "clayworks:concrete_powder"
+    },
+    "X": {
+      "tag": "forge:dyes/olive"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "dye_depot:olive_concrete_powder"
+  },
+  "show_notification": true
+}
