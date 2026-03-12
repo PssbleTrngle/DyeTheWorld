@@ -30,6 +30,12 @@
             },
             {
               "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "zeta:flag",
+                  "flag": "glass_shard"
+                }
+              ],
               "functions": [
                 {
                   "add": false,

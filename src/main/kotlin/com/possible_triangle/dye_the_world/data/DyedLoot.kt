@@ -63,7 +63,7 @@ fun generateGlassShardLoot() {
                         .apply(ApplyBonusCount.addUniformBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE), 1))
                         .apply(LimitCount.limitCount(IntRange.range(1, 4)))
                         .apply(ApplyExplosionDecay.explosionDecay())
-                    //  TODO update  .`when` { FlagLootCondition("glass_shard") }
+                        .`when` { FlagLootCondition("glass_shard") }
                 )
 
                 val table = LootTable.lootTable().withPool(LootPool.lootPool().add(entry))

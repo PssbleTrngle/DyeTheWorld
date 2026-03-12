@@ -5,6 +5,7 @@ import com.possible_triangle.dye_the_world.data.createDyeRecipes
 import com.possible_triangle.dye_the_world.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.data.generatePackMetadata
 import com.possible_triangle.dye_the_world.data.generateTags
+import com.possible_triangle.dye_the_world.data.registerZetaConditionTypes
 import com.possible_triangle.dye_the_world.extensions.ifLoaded
 import com.possible_triangle.dye_the_world.index.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
@@ -56,6 +57,7 @@ object ForgeEntrypoint {
         }
 
         if (DatagenModLoader.isRunningDataGen()) {
+            registerZetaConditionTypes()
             REGISTRATE.generateTags()
             REGISTRATE.generatePackMetadata()
             REGISTRATE.createDyeRecipes()
