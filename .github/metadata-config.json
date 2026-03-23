@@ -1,16 +1,9 @@
 {
+  "$version": "1.0",
   "$schema": "https://workflows.somethingcatchy.net/schema/config.json",
   "type": "minecraft",
-  "assignee": "PssbleTrngle",
-  "loaders": [
-    "neoforge",
-    "fabric",
-    "forge"
-  ],
-  "upload": {
-    "curseforge": true,
-    "modrinth": true,
-    "nexus": true
-  },
+  "assignee": "@owner",
+  "loaders": ["neoforge", "fabric", "forge"],
+  "upload": { "curseforge": true, "modrinth": true, "nexus": true },
   "sonar": true
 }
