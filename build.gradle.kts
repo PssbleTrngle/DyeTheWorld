@@ -1,16 +1,9 @@
-val mod_id: String by extra
-val mc_version: String by extra
-
 plugins {
     id("com.possible-triangle.forge")
     idea
 }
 
 withKotlin()
-
-mod {
-    mods.include(libs.registrate)
-}
 
 forge {
     enableMixins()
@@ -69,12 +62,16 @@ repositories {
 }
 
 dependencies {
+    modInclude(libs.registrate)
+
     modImplementation(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
 
-    modImplementation(variantOf(libs.create) {
-        classifier("slim")
-    }) {
+    modImplementation(
+        variantOf(libs.create) {
+            classifier("slim")
+        },
+    ) {
         isTransitive = false
     }
     modImplementation(libs.ponder)
@@ -102,7 +99,7 @@ dependencies {
     modImplementation(pack.modrinth.fusion.connected.textures)
     modImplementation(pack.modrinth.vanillabackport)
 
-    //modRuntimeOnly(pack.modrinth.immersiveengineering)
+    // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
     modRuntimeOnly(pack.modrinth.jade)

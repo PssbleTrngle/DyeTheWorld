@@ -54,7 +54,7 @@ class DyedRegistrate private constructor(modid: String) :
 
     fun <T : Any> TagKey<T>.addOptional(tag: TagKey<T>) {
         addDataGenerator(provider()) {
-            it.addTag(this).addOptionalTag(tag)
+            it.addTag(this).addOptionalTag(tag.location)
         }
     }
 
