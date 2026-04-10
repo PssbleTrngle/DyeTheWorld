@@ -1,6 +1,6 @@
 modLoader = "kotlinforforge"
 loaderVersion = "[4.3.0,)"
-license = "https://github.com/${repository}/blob/1.20.x/LICENSE.txt"
+license = "https://github.com/${repository}/blob/main/1.20.x/LICENSE.md"
 issueTrackerURL = "https://github.com/${repository}/issues"
 
 [[mods]]
@@ -8,7 +8,7 @@ modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
 authors = "${mod_author}"
-description = '''Compatiblity for the Dye Depot mod'''
+description = "${mod_description}"
 updateJSONURL = "https://api.modrinth.com/updates/dye-the-world/forge_updates.json"
 
 [[dependencies.${mod_id}]]
@@ -21,7 +21,7 @@ side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,)"
+versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
@@ -85,6 +85,13 @@ side = "BOTH"
 modId = "snowyspirit"
 mandatory = false
 versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "vanillabackport"
+mandatory = false
+versionRange = "[1.1.6,)"
 ordering="AFTER"
 side = "BOTH"
 

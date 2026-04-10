@@ -22,7 +22,6 @@
   },
   "client": [
     "ChimneyPushParticleDataMixin",
-    "GhastHarnessLayerMixin",
     "LayerElephantOverlaysMixin",
     "PuffSmokeParticleDataMixin"
   ]

@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.blackgear.vanillabackport.common.level.items.HarnessItem
 import com.blackgear.vanillabackport.common.registries.ModBlocks
 import com.blackgear.vanillabackport.core.data.tags.ModItemTags
 import com.possible_triangle.dye_the_world.*
@@ -15,7 +14,6 @@ import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Blocks
-import java.util.*
 
 object DyedVanillaBackport {
 
@@ -25,7 +23,7 @@ object DyedVanillaBackport {
 
     val HARNESSES = DYES.associateWith { dye ->
         REGISTRATE.`object`("${dye}_harness")
-            .dyedItem(dye, VANILLA_BACKPORT, ::HarnessItem)
+            .dyedItem(dye, VANILLA_BACKPORT, ::Item)
             .properties { it.stacksTo(1) }
             .lang("${dye.translation} Harness")
             .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
@@ -48,15 +46,6 @@ object DyedVanillaBackport {
             .tab(TAB)
             .register()
     }
-
-    private val TEXTURES by lazy {
-        HARNESSES.inverse()
-            .mapKeys { it.key.get() }
-            .mapValues { Constants.MOD_ID.createId("textures/entity/$VANILLA_BACKPORT/harness/${it.value}.png") }
-    }
-
-    @JvmStatic
-    fun textureOf(item: Item) = Optional.ofNullable(TEXTURES[item])
 
     fun register() {
         REGISTRATE.register()

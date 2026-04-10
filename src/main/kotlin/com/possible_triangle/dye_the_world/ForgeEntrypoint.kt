@@ -1,6 +1,7 @@
 package com.possible_triangle.dye_the_world
 
 import com.possible_triangle.dye_the_world.compat.CreateCompat
+import com.possible_triangle.dye_the_world.compat.VanillaBackportsCompat
 import com.possible_triangle.dye_the_world.data.createDyeRecipes
 import com.possible_triangle.dye_the_world.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.data.generatePackMetadata
@@ -12,6 +13,8 @@ import com.possible_triangle.dye_the_world.index.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import net.minecraftforge.data.loading.DatagenModLoader
 import net.minecraftforge.fml.common.Mod
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
+import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
 @Mod(Constants.MOD_ID)
 object ForgeEntrypoint {
@@ -62,6 +65,7 @@ object ForgeEntrypoint {
 
         ifLoaded(Constants.Mods.VANILLA_BACKPORT) {
             DyedVanillaBackport.register()
+            MOD_BUS.addListener { _: FMLClientSetupEvent -> VanillaBackportsCompat.registerHarnessLayers() }
         }
 
         if (DatagenModLoader.isRunningDataGen()) {
