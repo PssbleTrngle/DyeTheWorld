@@ -8,10 +8,6 @@ plugins {
 
 withKotlin()
 
-mod {
-    mods.include(libs.registrate)
-}
-
 neoforge {
     dataGen {
         existing("dye_depot")
@@ -73,6 +69,8 @@ repositories {
 }
 
 dependencies {
+    modInclude(libs.registrate)
+
     modImplementation(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
 
