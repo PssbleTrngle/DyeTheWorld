@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.blackgear.vanillabackport.client.level.entities.layer.GhastHarnessLayer
 import com.blackgear.vanillabackport.common.level.items.HarnessItem
 import com.blackgear.vanillabackport.common.registries.ModBlocks
 import com.blackgear.vanillabackport.core.data.tags.ModItemTags
@@ -15,9 +14,6 @@ import net.minecraft.resources.ResourceKey
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Blocks
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent
-import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 
 object DyedVanillaBackport {
 
@@ -53,14 +49,6 @@ object DyedVanillaBackport {
 
     fun register() {
         REGISTRATE.register()
-    }
-
-    private fun registerHarnessLayers() {
-        HARNESSES.forEach { (dye, item) ->
-            val stack = item.asStack()
-            val texture = Constants.MOD_ID.createId("textures/entity/$VANILLA_BACKPORT/harness/${dye}.png")
-            GhastHarnessLayer.TEXTURE_BY_ITEM[stack] = texture
-        }
     }
 
 }
