@@ -82,6 +82,8 @@ object ForgeEntrypoint {
             DyedElevators.register()
             DyedConnectedGlass.register()
             DyedBotanyPots.register()
+            DyedSimulated.register()
+            DyedAeronautics.register()
         }
     }
 

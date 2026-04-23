@@ -44,6 +44,9 @@ repositories {
         url = uri("https://maven.blamejared.com/")
         content {
             includeGroup("mezz.jei")
+            includeGroup("foundry.veil")
+            includeGroup("gg.moonflower")
+            includeGroup("io.github.ocelot")
         }
     }
     maven {
@@ -64,6 +67,14 @@ repositories {
         url = uri("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
         content {
             includeGroup("fuzs.forgeconfigapiport")
+        }
+    }
+    maven {
+        url = uri("https://maven.ryanhcode.dev/releases")
+        content {
+            includeGroupAndSubgroups("dev.eriksonn")
+            includeGroupAndSubgroups("dev.ryanhcode")
+            includeGroupAndSubgroups("dev.simulated_team")
         }
     }
 }
@@ -94,6 +105,10 @@ dependencies {
     modImplementation(pack.modrinth.blueprint)
     modImplementation(pack.modrinth.chalk.mod)
     modImplementation(pack.modrinth.create.deco)
+    modImplementation(libs.sable)
+    modImplementation(libs.foundry.veil)
+    modImplementation(libs.create.simulated) { isTransitive = false }
+    modImplementation(libs.create.aeronautics) { isTransitive = false }
     modCompileOnly(pack.modrinth.domestication.innovation)
     modCompileOnly(pack.modrinth.alexs.caves)
     modCompileOnly(pack.modrinth.alexs.mobs)

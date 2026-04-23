@@ -17,6 +17,8 @@ object Constants {
         const val CREATE = "create"
         const val CREATE_DECO = "createdeco"
         const val CREATE_RAILWAYS = "railways"
+        const val CREATE_SIMULATED = "simulated"
+        const val CREATE_AERONAUTICS = "aeronautics"
         const val COMFORTS = "comforts"
         const val QUARK = "quark"
         const val FARMERS_DELIGHT = "farmersdelight"
