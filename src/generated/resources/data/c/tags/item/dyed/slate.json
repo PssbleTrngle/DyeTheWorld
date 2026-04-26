@@ -291,6 +291,10 @@
     {
       "id": "botanypots:slate_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:slate_portable_engine",
+      "required": false
     }
   ]
 }

@@ -303,6 +303,14 @@
     {
       "id": "botanypots:amber_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:amber_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:amber_portable_engine",
+      "required": false
     }
   ]
 }

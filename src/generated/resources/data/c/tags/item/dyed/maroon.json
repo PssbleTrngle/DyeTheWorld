@@ -291,6 +291,10 @@
     {
       "id": "botanypots:maroon_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:maroon_portable_engine",
+      "required": false
     }
   ]
 }

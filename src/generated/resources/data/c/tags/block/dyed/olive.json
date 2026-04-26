@@ -303,6 +303,14 @@
     {
       "id": "botanypots:olive_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:olive_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_portable_engine",
+      "required": false
     }
   ]
 }

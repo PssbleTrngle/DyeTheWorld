@@ -291,6 +291,10 @@
     {
       "id": "botanypots:rose_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:rose_portable_engine",
+      "required": false
     }
   ]
 }

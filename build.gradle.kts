@@ -29,6 +29,8 @@ neoforge {
         existing("snowyspirit")
         existing("connectedglass")
         existing("botanypots")
+        existing("simulated")
+        existing("aeronautics")
     }
 }
 

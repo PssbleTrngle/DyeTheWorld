@@ -291,6 +291,10 @@
     {
       "id": "botanypots:navy_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:navy_portable_engine",
+      "required": false
     }
   ]
 }

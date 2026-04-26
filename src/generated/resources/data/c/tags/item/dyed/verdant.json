@@ -291,6 +291,10 @@
     {
       "id": "botanypots:verdant_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:verdant_portable_engine",
+      "required": false
     }
   ]
 }

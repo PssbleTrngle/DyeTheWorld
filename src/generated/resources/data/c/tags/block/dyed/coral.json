@@ -303,6 +303,14 @@
     {
       "id": "botanypots:coral_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:coral_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_portable_engine",
+      "required": false
     }
   ]
 }

@@ -303,6 +303,14 @@
     {
       "id": "botanypots:mint_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:mint_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_portable_engine",
+      "required": false
     }
   ]
 }

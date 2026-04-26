@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "simulated:block/amber_portable_engine",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "simulated:block/amber_portable_engine"
+    },
+    "facing=south": {
+      "model": "simulated:block/amber_portable_engine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simulated:block/amber_portable_engine",
+      "y": 270
+    }
+  }
+}

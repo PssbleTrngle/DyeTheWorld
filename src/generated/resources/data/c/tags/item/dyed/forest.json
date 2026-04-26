@@ -291,6 +291,10 @@
     {
       "id": "botanypots:forest_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:forest_portable_engine",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "simulated:amber_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:aqua_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:indigo_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:rose_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_symmetric_sail",
+      "required": false
+    }
+  ]
+}
