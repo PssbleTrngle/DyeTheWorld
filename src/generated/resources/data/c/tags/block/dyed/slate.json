@@ -311,6 +311,22 @@
     {
       "id": "simulated:slate_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:slate_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:slate_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:slate_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

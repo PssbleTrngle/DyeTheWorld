@@ -1,0 +1,7 @@
+{
+  "parent": "aeronautics:block/envelope_encased_shaft/block",
+  "textures": {
+    "0": "dye_the_world:block/aeronautics/envelope/maroon",
+    "particle": "dye_the_world:block/aeronautics/envelope/maroon"
+  }
+}

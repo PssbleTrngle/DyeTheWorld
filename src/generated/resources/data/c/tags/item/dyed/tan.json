@@ -295,6 +295,18 @@
     {
       "id": "simulated:tan_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:tan_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:tan_envelope",
+      "required": false
     }
   ]
 }

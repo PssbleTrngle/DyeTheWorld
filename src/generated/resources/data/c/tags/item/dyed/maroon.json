@@ -295,6 +295,18 @@
     {
       "id": "simulated:maroon_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:maroon_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:maroon_envelope",
+      "required": false
     }
   ]
 }

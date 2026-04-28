@@ -295,6 +295,18 @@
     {
       "id": "simulated:navy_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:navy_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:navy_envelope",
+      "required": false
     }
   ]
 }

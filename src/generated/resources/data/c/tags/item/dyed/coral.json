@@ -295,6 +295,18 @@
     {
       "id": "simulated:coral_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:coral_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:coral_envelope",
+      "required": false
     }
   ]
 }

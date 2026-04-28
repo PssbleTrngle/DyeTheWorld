@@ -311,6 +311,22 @@
     {
       "id": "simulated:aqua_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:aqua_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:aqua_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:aqua_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:aqua_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

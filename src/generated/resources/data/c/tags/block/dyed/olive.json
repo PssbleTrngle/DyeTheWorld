@@ -311,6 +311,22 @@
     {
       "id": "simulated:olive_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:olive_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:olive_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:olive_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

@@ -311,6 +311,22 @@
     {
       "id": "simulated:verdant_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:verdant_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:verdant_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:verdant_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

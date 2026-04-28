@@ -311,6 +311,22 @@
     {
       "id": "simulated:rose_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:rose_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:rose_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:rose_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:rose_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

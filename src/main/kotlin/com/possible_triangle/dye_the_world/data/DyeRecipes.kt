@@ -6,7 +6,6 @@ import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.itemOf
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.simibubi.create.content.kinetics.millstone.MillingRecipe
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder
 import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateRecipeProvider

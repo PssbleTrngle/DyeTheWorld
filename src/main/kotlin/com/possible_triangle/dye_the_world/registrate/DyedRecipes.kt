@@ -5,7 +5,6 @@ import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
 import com.possible_triangle.dye_the_world.withNamespace
 import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder
 import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe
 import com.tterrag.registrate.providers.DataGenContext
 import com.tterrag.registrate.providers.RegistrateRecipeProvider

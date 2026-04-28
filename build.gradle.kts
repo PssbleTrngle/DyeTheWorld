@@ -34,6 +34,10 @@ neoforge {
     }
 }
 
+neoForge.runs.named("data") {
+    data()
+}
+
 repositories {
     nexus {
         content {
@@ -84,7 +88,7 @@ repositories {
 dependencies {
     modInclude(libs.registrate)
 
-    modImplementation(libs.multikulti.core)
+    modApi(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
 
     modImplementation(variantOf(libs.create) {
@@ -107,10 +111,9 @@ dependencies {
     modImplementation(pack.modrinth.blueprint)
     modImplementation(pack.modrinth.chalk.mod)
     modImplementation(pack.modrinth.create.deco)
-    modImplementation(libs.sable)
-    modImplementation(libs.foundry.veil)
-    modImplementation(libs.create.simulated) { isTransitive = false }
-    modImplementation(libs.create.aeronautics) { isTransitive = false }
+    // modRuntimeOnly(libs.sable) { isTransitive = false }
+    modCompileOnly(libs.create.simulated) { isTransitive = false }
+    modCompileOnly(libs.create.aeronautics) { isTransitive = false }
     modCompileOnly(pack.modrinth.domestication.innovation)
     modCompileOnly(pack.modrinth.alexs.caves)
     modCompileOnly(pack.modrinth.alexs.mobs)
@@ -205,3 +208,15 @@ idea {
 
 enableSonarQube()
 enableSpotless()
+
+env["MODRINTH_HOME"]?.let { home ->
+    val task = tasks.register<Copy>("copyToLocalPack") {
+        dependsOn(tasks.build)
+        from(tasks.jar)
+        destinationDir = file(home).resolve("profiles/dyes/mods")
+    }
+
+    tasks.publish {
+        finalizedBy(task)
+    }
+}

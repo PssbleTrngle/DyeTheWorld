@@ -1,0 +1,7 @@
+{
+  "parent": "simulated:block/nameplate/block_middle",
+  "textures": {
+    "0": "dye_the_world:block/simulated/nameplate/slate",
+    "particle": "dye_the_world:block/simulated/nameplate/slate"
+  }
+}

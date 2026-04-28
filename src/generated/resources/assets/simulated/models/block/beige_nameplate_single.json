@@ -1,0 +1,7 @@
+{
+  "parent": "simulated:block/nameplate/block_single",
+  "textures": {
+    "0": "dye_the_world:block/simulated/nameplate/beige",
+    "particle": "dye_the_world:block/simulated/nameplate/beige"
+  }
+}

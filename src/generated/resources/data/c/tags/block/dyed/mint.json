@@ -311,6 +311,22 @@
     {
       "id": "simulated:mint_portable_engine",
       "required": false
+    },
+    {
+      "id": "simulated:mint_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:mint_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:mint_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

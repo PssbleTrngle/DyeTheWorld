@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aeronautics"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "dye_depot:indigo_wool"
+    }
+  },
+  "pattern": [
+    "WS",
+    "SW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "aeronautics:indigo_envelope"
+  }
+}

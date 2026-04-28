@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "simulated:amber_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:aqua_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:indigo_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:rose_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_handle",
+      "required": false
+    }
+  ]
+}
