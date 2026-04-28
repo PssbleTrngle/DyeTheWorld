@@ -18,7 +18,6 @@ import com.possible_triangle.dye_the_world.`object`.block.DyedWallHangingCanvasS
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
-import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.SignItem
@@ -51,7 +50,7 @@ object DyedDelight {
             .canvasSignBlockstate()
             .existingBlockEntity { ModBlockEntityTypes.CANVAS_SIGN.get() }
             .withItem(dye.signItem(CANVAS_WALL_SIGNS)) {
-                optionalTag(ModTags.CANVAS_SIGNS)
+                optionalTag(ModTags.Items.CANVAS_SIGNS)
                 canvasSignRecipes()
                 canvasSignItemModel()
                 tab(TAB)
@@ -77,7 +76,7 @@ object DyedDelight {
             .canvasSignBlockstate()
             .existingBlockEntity { ModBlockEntityTypes.HANGING_CANVAS_SIGN.get() }
             .withItem(dye.signItem(HANGING_CANVAS_WALL_SIGNS)) {
-                optionalTag(ModTags.HANGING_CANVAS_SIGNS)
+                optionalTag(ModTags.Items.HANGING_CANVAS_SIGNS)
                 hangingCanvasSignRecipes()
                 canvasSignItemModel()
                 tab(TAB)
