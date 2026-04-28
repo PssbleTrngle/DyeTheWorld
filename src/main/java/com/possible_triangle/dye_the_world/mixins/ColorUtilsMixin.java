@@ -36,15 +36,4 @@ public class ColorUtilsMixin {
         cir.setReturnValue(RailwaysCompat.DYE_ITEMS.get(dye).get());
     }
 
-    @Inject(
-            method = "coloredName(Ljava/lang/String;)Ljava/lang/String;",
-            at = @At("HEAD"),
-            cancellable = true,
-            require = 0
-    )
-    private static void coloredName(String string, CallbackInfoReturnable<String> cir) {
-        var translation = RailwaysCompat.TRANSLATIONS.get(string);
-        if (translation != null) cir.setReturnValue(translation);
-    }
-
 }

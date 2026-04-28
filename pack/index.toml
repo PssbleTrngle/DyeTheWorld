@@ -97,7 +97,7 @@ metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "a02b72ee2511b1b0c34df97c841b4fe1e1c7033d0b411328371a426c97fe5d42"
+hash = "51448f7b51c024ad0664dd0eb1b82d49eb809614254096eb4ebd79556865f740"
 metafile = true
 
 [[files]]
@@ -122,7 +122,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "0b71da608af749f52d127e6fc64aee915df87163b9d13f2b86cf7eaa80ab4c8f"
+hash = "e62ad317cabfbe4a6e62a77f391ae95c6e955df496cef5278fb4ed7760908ab3"
 metafile = true
 
 [[files]]
@@ -142,7 +142,7 @@ metafile = true
 
 [[files]]
 file = "mods/polytone.pw.toml"
-hash = "0bd9339509a96c2251328a10315b6f6fd6624d691e5be4c1fe6ad670dc1589a0"
+hash = "865a179ced64ffe2530724930d5f1a1b56a86a5840b1f12697d5196439b6368a"
 metafile = true
 
 [[files]]

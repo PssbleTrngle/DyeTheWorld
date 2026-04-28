@@ -12,13 +12,13 @@ import net.minecraft.world.level.block.Block
 import vectorwing.farmersdelight.common.tag.ModTags
 
 fun <T : Item, P> ItemBuilder<T, P>.canvasSignRecipes() = recipe { context, provider ->
-    provider.dyeingRecipe(dye, ModTags.CANVAS_SIGNS, context) {
+    provider.dyeingRecipe(dye, ModTags.Items.CANVAS_SIGNS, context) {
         group("canvas_sign")
     }
 }
 
 fun <T : Item, P> ItemBuilder<T, P>.hangingCanvasSignRecipes() = recipe { context, provider ->
-    provider.dyeingRecipe(dye, ModTags.HANGING_CANVAS_SIGNS, context) {
+    provider.dyeingRecipe(dye, ModTags.Items.HANGING_CANVAS_SIGNS, context) {
         group("hanging_canvas_sign")
     }
 }

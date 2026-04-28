@@ -50,7 +50,7 @@ object DyedDelight {
             .canvasSignBlockstate()
             .existingBlockEntity { ModBlockEntityTypes.CANVAS_SIGN.get() }
             .withItem(dye.signItem(CANVAS_WALL_SIGNS)) {
-                optionalTag(ModTags.CANVAS_SIGNS)
+                optionalTag(ModTags.Items.CANVAS_SIGNS)
                 canvasSignRecipes()
                 canvasSignItemModel()
                 tab(TAB)
@@ -76,7 +76,7 @@ object DyedDelight {
             .canvasSignBlockstate()
             .existingBlockEntity { ModBlockEntityTypes.HANGING_CANVAS_SIGN.get() }
             .withItem(dye.signItem(HANGING_CANVAS_WALL_SIGNS)) {
-                optionalTag(ModTags.HANGING_CANVAS_SIGNS)
+                optionalTag(ModTags.Items.HANGING_CANVAS_SIGNS)
                 hangingCanvasSignRecipes()
                 canvasSignItemModel()
                 tab(TAB)

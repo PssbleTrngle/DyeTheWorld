@@ -65,9 +65,9 @@ private fun RegistrateRecipeProvider.cutting(
     block: CuttingBoardRecipeBuilder.() -> Unit = {}
 ) {
     val id = Mods.FARMERS_DELIGHT.createId("cutting/${getItemName(from)}")
-    CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(from), Ingredient.of(ModTags.KNIVES), dye.item, amount)
+    CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(from), Ingredient.of(ModTags.Items.KNIVES), dye.item, amount)
         .apply(block)
-        .build(this, id)
+        .save(this, id)
 }
 
 private fun RegistrateRecipeProvider.milling(
