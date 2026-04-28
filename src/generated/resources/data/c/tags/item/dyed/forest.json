@@ -137,6 +137,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:forest_bundle",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_forest",
       "required": false
     },

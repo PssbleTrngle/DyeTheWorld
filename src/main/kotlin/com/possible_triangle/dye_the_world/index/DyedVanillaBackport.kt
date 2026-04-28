@@ -7,19 +7,23 @@ import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
+import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.resources.ResourceKey
+import net.minecraft.world.item.BundleItem
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Items
+import net.minecraft.world.item.component.BundleContents
 import net.minecraft.world.level.block.Blocks
 
 object DyedVanillaBackport {
 
     private val DYES = dyesFor(VANILLA_BACKPORT)
 
-    private val TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, VANILLA_BACKPORT.createId("chase_the_skies"))
+    private val TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, VANILLA_BACKPORT.createId("vanilla_backport"))
 
     val HARNESSES = DYES.associateWith { dye ->
         REGISTRATE.`object`("${dye}_harness")
@@ -28,8 +32,8 @@ object DyedVanillaBackport {
             .lang("${dye.translation} Harness")
             .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
             .optionalTag(ModItemTags.HARNESSES)
-            .recipe { c, p ->
-                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, c.get())
+            .recipe { context, provider ->
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
                     .pattern("LLL")
                     .pattern("G#G")
                     .define('#', dye.blockOf("wool"))
@@ -37,10 +41,29 @@ object DyedVanillaBackport {
                     .define('L', Items.LEATHER)
                     .unlockedBy(ModBlocks.DRIED_GHAST.get())
                     .group("harness")
-                    .save(p)
+                    .save(provider)
             }
             .model { c, p ->
                 p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/harness/$dye"))
+            }
+            .tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
+            .tab(TAB)
+            .register()
+    }
+
+    val BUNDLES = DYES.associateWith { dye ->
+        REGISTRATE.`object`("${dye}_bundle")
+            .dyedItem(dye, VANILLA_BACKPORT, ::BundleItem)
+            .properties { it.stacksTo(1) }
+            .properties { it.component(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY) }
+            .lang("${dye.translation} Bundle")
+            .germanLang("${dye.germanTranslation(Genus.I)} Bündel")
+            .optionalTag(ModItemTags.BUNDLES)
+            .recipe { context, provider ->
+                provider.dyeingRecipe(dye, Items.BUNDLE, context)
+            }
+            .model { c, p ->
+                p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/bundle/$dye"))
             }
             .tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
             .tab(TAB)

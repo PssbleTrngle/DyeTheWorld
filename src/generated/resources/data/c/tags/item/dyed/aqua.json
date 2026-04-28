@@ -137,6 +137,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:aqua_bundle",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_aqua",
       "required": false
     },

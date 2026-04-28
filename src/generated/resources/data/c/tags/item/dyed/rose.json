@@ -137,6 +137,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:rose_bundle",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_rose",
       "required": false
     },

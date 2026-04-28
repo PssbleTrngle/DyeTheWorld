@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:amber_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_bundle",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_bundle",
+      "required": false
+    }
+  ]
+}
