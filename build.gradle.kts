@@ -196,6 +196,7 @@ upload {
             optional("botany-pots")
             optional("connected-glass")
             optional("vanillabackport")
+            optional("create-aeronautics")
         }
     }
 }

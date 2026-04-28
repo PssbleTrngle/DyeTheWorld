@@ -53,3 +53,4 @@ and [OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for 
 - [Botany Pots](https://modrinth.com/mod/botany-pots)
 - [Connected Glass](https://modrinth.com/mod/connected-glass)
 - [Elevator Mod](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator)
+- [Create Aeronautics](https://modrinth.com/mod/create-aeronautics)
