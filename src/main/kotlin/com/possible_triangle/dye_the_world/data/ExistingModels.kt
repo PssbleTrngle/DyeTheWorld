@@ -20,6 +20,7 @@ private val EXISTING = listOf(
     Constants.Mods.CREATE_SIMULATED.createId("block/nameplate/block_middle"),
     Constants.Mods.CREATE_SIMULATED.createId("block/nameplate/item"),
     Constants.Mods.CREATE_AERONAUTICS.createId("block/envelope_encased_shaft/block"),
+    Constants.Mods.CREATE_AERONAUTICS.createId("block/envelope_encased_shaft/item"),
 )
 
 private val MODEL = ExistingFileHelper.ResourceType(PackType.CLIENT_RESOURCES, ".json", "models");

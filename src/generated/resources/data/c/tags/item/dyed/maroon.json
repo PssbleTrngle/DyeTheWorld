@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:maroon_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:maroon_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

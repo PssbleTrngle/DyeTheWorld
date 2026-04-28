@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:ginger_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:ginger_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

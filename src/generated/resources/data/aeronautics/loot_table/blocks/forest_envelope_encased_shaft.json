@@ -17,7 +17,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "aeronautics:forest_envelope"
         }
       ],
       "rolls": 1.0

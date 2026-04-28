@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:olive_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:olive_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

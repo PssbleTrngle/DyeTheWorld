@@ -17,7 +17,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "aeronautics:aqua_envelope"
         }
       ],
       "rolls": 1.0

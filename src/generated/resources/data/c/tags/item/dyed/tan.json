@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:tan_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:tan_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

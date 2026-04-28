@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:amber_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:amber_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

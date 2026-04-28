@@ -259,6 +259,198 @@
     {
       "id": "interiors:verdant_cushion",
       "required": false
+    },
+    {
+      "id": "simulated:amber_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:aqua_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:indigo_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:rose_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_nameplate",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:amber_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:aqua_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:beige_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:coral_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:forest_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:ginger_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:indigo_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:maroon_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:mint_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:navy_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:olive_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:rose_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:slate_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:tan_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:teal_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:verdant_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:amber_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:aqua_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:beige_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:coral_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:forest_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:ginger_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:indigo_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:maroon_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:mint_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:navy_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:olive_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:rose_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:slate_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:tan_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:teal_envelope_encased_shaft",
+      "required": false
+    },
+    {
+      "id": "aeronautics:verdant_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

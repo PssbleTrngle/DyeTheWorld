@@ -35,6 +35,12 @@ fun <T : Block, P> BlockBuilder<T, P>.envelopeBlockstate() = blockstate { contex
     provider.simpleBlock(context.get(), model)
 }
 
+fun <T : Item, P> ItemBuilder<T, P>.envelopeShaftItemModel() = model { context, provider ->
+    val parent = CREATE_AERONAUTICS.createId("block/envelope_encased_shaft/item")
+    provider.withExistingParent(context.name, parent)
+        .texture("0", texture)
+}
+
 fun <T : Item, P> ItemBuilder<T, P>.envelopeRecipe() = recipe { context, provider ->
     ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 4)
         .pattern("WS")

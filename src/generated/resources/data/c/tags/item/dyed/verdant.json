@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:verdant_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:verdant_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

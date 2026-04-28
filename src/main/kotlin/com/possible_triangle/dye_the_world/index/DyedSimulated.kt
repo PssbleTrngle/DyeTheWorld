@@ -81,6 +81,7 @@ object DyedSimulated {
             .lang("${dye.translation} Nameplate")
             .germanLang("${dye.germanTranslation(Genus.I)} Namensschild")
             .optionalTag(DyedTags.Blocks.NAMEPLATES)
+            .optionalTag(BlockTags.MINEABLE_WITH_AXE)
             .nameplateBlockstate()
             .withItem {
                 nameplateItemModel()

@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:beige_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:beige_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

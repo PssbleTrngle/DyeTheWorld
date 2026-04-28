@@ -311,6 +311,10 @@
     {
       "id": "aeronautics:aqua_envelope",
       "required": false
+    },
+    {
+      "id": "aeronautics:aqua_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

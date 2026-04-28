@@ -36,7 +36,8 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val BOTANY_POTS = create(Mods.BOTANY_POTS, "botany_pots")
         val HANDLES = create(Mods.CREATE_SIMULATED, "handle_variants")
         val NAMEPLATES = create(Mods.CREATE_SIMULATED, "nameplate_items")
-        val ENVELOPES = create(Mods.CREATE_AERONAUTICS, "shaftless_envelope")
+        val ENVELOPES = create(Mods.CREATE_AERONAUTICS, "envelope")
+        val SHAFTLESS_ENVELOPES = create(Mods.CREATE_AERONAUTICS, "shaftless_envelope")
     }
 
     object Blocks : DyedTags<Block>(Registries.BLOCK) {
