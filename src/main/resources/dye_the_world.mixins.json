@@ -1,7 +1,7 @@
 {
   "required": true,
   "package": "com.possible_triangle.dye_the_world.mixins",
-  "compatibilityLevel": "JAVA_17",
+  "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "target": "@env(DEFAULT)",
   "mixins": [

@@ -5,6 +5,7 @@ import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_DECO
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
+import com.possible_triangle.dye_the_world.extensions.textureAndParticle
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.simibubi.create.AllItems
@@ -22,8 +23,7 @@ fun <T : PlacardBlock, P> BlockBuilder<T, P>.placardBlockstate() =
 
         val model = provider.models()
             .withExistingParent(context.name, CREATE_DECO.createId("block/dyed_placard"))
-            .texture("0", texture)
-            .texture("particle", texture)
+            .textureAndParticle("0", texture)
 
         provider.horizontalFaceBlock(context.get(), model)
     }

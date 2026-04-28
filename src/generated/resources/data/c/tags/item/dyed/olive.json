@@ -291,6 +291,22 @@
     {
       "id": "botanypots:olive_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:olive_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:olive_envelope",
+      "required": false
     }
   ]
 }

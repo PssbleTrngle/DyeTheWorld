@@ -5,6 +5,7 @@ import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_DECO
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
+import com.possible_triangle.dye_the_world.extensions.textureAndParticle
 import com.possible_triangle.dye_the_world.index.DyedTags
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -30,8 +31,7 @@ fun <T : ShippingContainerBlock, P> BlockBuilder<T, P>.shippingContainerBlocksta
             .texture("0", texture("bottom"))
             .texture("1", texture("front"))
             .texture("2", texture("side"))
-            .texture("3", texture("top"))
-            .texture("particle", texture("top"))
+            .textureAndParticle("3", texture("top"))
 
         provider.createVariant(context, ShippingContainerBlock.LARGE) { state ->
             val axis = state.getValue(ShippingContainerBlock.HORIZONTAL_AXIS)

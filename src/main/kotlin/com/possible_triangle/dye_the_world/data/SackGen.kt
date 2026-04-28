@@ -3,6 +3,7 @@ package com.possible_triangle.dye_the_world.data
 import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
+import com.possible_triangle.dye_the_world.extensions.textureAndParticle
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
@@ -25,11 +26,10 @@ fun <T : Block, P> BlockBuilder<T, P>.sackBlockstate() =
                     "block/${context.name}_$suffix",
                     Constants.Mods.SUPPLEMENTARIES.createId("block/sack_$suffix")
                 )
-                .texture("1", texture("front"))
+                .textureAndParticle("1", texture("front"))
                 .texture("2", texture("top"))
                 .texture("3", texture("bottom"))
                 .texture("4", texture("closed"))
-                .texture("particle", texture("front"))
 
             ConfiguredModel.builder().modelFile(model)
         }

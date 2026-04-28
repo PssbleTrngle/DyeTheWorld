@@ -303,6 +303,30 @@
     {
       "id": "botanypots:forest_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:forest_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:forest_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:forest_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

@@ -1663,6 +1663,70 @@
     {
       "id": "waystones:verdant_sharestone",
       "required": false
+    },
+    {
+      "id": "simulated:amber_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:aqua_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:indigo_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:olive_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:rose_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_portable_engine",
+      "required": false
     }
   ]
 }

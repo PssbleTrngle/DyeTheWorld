@@ -29,7 +29,13 @@ neoforge {
         existing("snowyspirit")
         existing("connectedglass")
         existing("botanypots")
+        existing("simulated")
+        existing("aeronautics")
     }
+}
+
+neoForge.runs.named("data") {
+    data()
 }
 
 repositories {
@@ -44,6 +50,9 @@ repositories {
         url = uri("https://maven.blamejared.com/")
         content {
             includeGroup("mezz.jei")
+            includeGroup("foundry.veil")
+            includeGroup("gg.moonflower")
+            includeGroup("io.github.ocelot")
         }
     }
     maven {
@@ -66,12 +75,20 @@ repositories {
             includeGroup("fuzs.forgeconfigapiport")
         }
     }
+    maven {
+        url = uri("https://maven.ryanhcode.dev/releases")
+        content {
+            includeGroupAndSubgroups("dev.eriksonn")
+            includeGroupAndSubgroups("dev.ryanhcode")
+            includeGroupAndSubgroups("dev.simulated_team")
+        }
+    }
 }
 
 dependencies {
     modInclude(libs.registrate)
 
-    modImplementation(libs.multikulti.core)
+    modApi(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
 
     modImplementation(variantOf(libs.create) {
@@ -94,6 +111,9 @@ dependencies {
     modImplementation(pack.modrinth.blueprint)
     modImplementation(pack.modrinth.chalk.mod)
     modImplementation(pack.modrinth.create.deco)
+    // modRuntimeOnly(libs.sable) { isTransitive = false }
+    modCompileOnly(libs.create.simulated) { isTransitive = false }
+    modCompileOnly(libs.create.aeronautics) { isTransitive = false }
     modCompileOnly(pack.modrinth.domestication.innovation)
     modCompileOnly(pack.modrinth.alexs.caves)
     modCompileOnly(pack.modrinth.alexs.mobs)
@@ -188,3 +208,15 @@ idea {
 
 enableSonarQube()
 enableSpotless()
+
+env["MODRINTH_HOME"]?.let { home ->
+    val task = tasks.register<Copy>("copyToLocalPack") {
+        dependsOn(tasks.build)
+        from(tasks.jar)
+        destinationDir = file(home).resolve("profiles/dyes/mods")
+    }
+
+    tasks.publish {
+        finalizedBy(task)
+    }
+}

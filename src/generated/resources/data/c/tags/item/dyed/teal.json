@@ -291,6 +291,22 @@
     {
       "id": "botanypots:teal_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:teal_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:teal_envelope",
+      "required": false
     }
   ]
 }

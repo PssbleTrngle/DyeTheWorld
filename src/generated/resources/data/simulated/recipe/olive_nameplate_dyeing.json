@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "simulated"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/olive"
+    },
+    {
+      "tag": "simulated:nameplate_items"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "simulated:olive_nameplate"
+  }
+}

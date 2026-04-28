@@ -303,6 +303,30 @@
     {
       "id": "botanypots:tan_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:tan_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:tan_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:tan_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

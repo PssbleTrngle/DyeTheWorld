@@ -303,6 +303,30 @@
     {
       "id": "botanypots:ginger_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:ginger_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:ginger_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:ginger_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

@@ -6,6 +6,7 @@ import com.possible_triangle.dye_the_world.data.createDyeRecipes
 import com.possible_triangle.dye_the_world.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.data.generatePackMetadata
 import com.possible_triangle.dye_the_world.data.generateTags
+import com.possible_triangle.dye_the_world.data.registerExistingFiles
 import com.possible_triangle.dye_the_world.data.registerZetaConditionTypes
 import com.possible_triangle.dye_the_world.extensions.ifLoaded
 import com.possible_triangle.dye_the_world.index.*
@@ -21,6 +22,7 @@ object ForgeEntrypoint {
     val REGISTRATE = DyedRegistrate.create(Constants.MOD_ID)
 
     init {
+        Constants.LOGGER.debug("setup")
         REGISTRATE.register()
 
         ifLoaded(Constants.Mods.ANOTHER_FURNITURE) {
@@ -61,6 +63,10 @@ object ForgeEntrypoint {
         }
 
         if (DatagenModLoader.isRunningDataGen()) {
+            Constants.LOGGER.debug("registering datagen")
+
+            REGISTRATE.registerExistingFiles()
+
             registerZetaConditionTypes()
             REGISTRATE.generateTags()
             REGISTRATE.generatePackMetadata()
@@ -82,6 +88,8 @@ object ForgeEntrypoint {
             DyedElevators.register()
             DyedConnectedGlass.register()
             DyedBotanyPots.register()
+            DyedSimulated.register()
+            DyedAeronautics.register()
         }
     }
 

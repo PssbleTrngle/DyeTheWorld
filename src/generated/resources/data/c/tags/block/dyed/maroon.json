@@ -303,6 +303,30 @@
     {
       "id": "botanypots:maroon_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:maroon_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:maroon_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:maroon_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:maroon_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

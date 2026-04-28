@@ -6,6 +6,7 @@ import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
+import com.possible_triangle.dye_the_world.extensions.textureAndParticle
 import com.possible_triangle.dye_the_world.extensions.yRot
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -32,8 +33,7 @@ fun <T : Block, P> BlockBuilder<T, P>.buntingBlockState() = blockstate { context
     val texture = SUPPLEMENTARIES.createId("block/buntings/wall_bunting_${dye}")
 
     val model = provider.models().withExistingParent("${context.name}_ceiling", parent)
-        .texture("0", texture)
-        .texture("particle", texture)
+        .textureAndParticle("0", texture)
 
     provider.createVariant(context) { state ->
         val axis = state.getValue(BlockStateProperties.HORIZONTAL_AXIS)
@@ -49,8 +49,7 @@ fun <T : Block, P> BlockBuilder<T, P>.wallBuntingBlockState() = blockstate { con
     val texture = SUPPLEMENTARIES.createId("block/buntings/wall_bunting_${dye}")
 
     val model = provider.models().withExistingParent("${context.name}_wall", parent)
-        .texture("0", texture)
-        .texture("particle", texture)
+        .textureAndParticle("0", texture)
 
     provider.createVariant(context) { state ->
         val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)

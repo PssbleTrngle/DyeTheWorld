@@ -4,6 +4,7 @@ import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.SUPPLEMENTARIES
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
+import com.possible_triangle.dye_the_world.extensions.textureAndParticle
 import com.possible_triangle.dye_the_world.extensions.yRot
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -28,9 +29,8 @@ fun <T : AwningBlock, P> BlockBuilder<T, P>.awningBlockstate() = blockstate { co
 
         val parent = SUPPLEMENTARIES.createId("block/awnings/$type")
         val model = provider.models().withExistingParent("${context.name}_$type", parent)
-            .texture("1", texture())
+            .textureAndParticle("1", texture())
             .texture("up", texture("_side"))
-            .texture("particle", texture())
 
         ConfiguredModel.builder()
             .modelFile(model)

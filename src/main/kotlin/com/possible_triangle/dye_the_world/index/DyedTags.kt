@@ -34,6 +34,9 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val GUMDROPS = create(Mods.SNOWY_SPIRIT, "gumdrops")
         val ELEVATORS = create(Mods.ELEVATORS, "elevators")
         val BOTANY_POTS = create(Mods.BOTANY_POTS, "botany_pots")
+        val HANDLES = create(Mods.CREATE_SIMULATED, "handle_variants")
+        val NAMEPLATES = create(Mods.CREATE_SIMULATED, "nameplate_items")
+        val ENVELOPES = create(Mods.CREATE_AERONAUTICS, "shaftless_envelope")
     }
 
     object Blocks : DyedTags<Block>(Registries.BLOCK) {
@@ -59,6 +62,10 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val GUMDROPS = create(Mods.SNOWY_SPIRIT, "gumdrops")
         val ELEVATORS = create(Mods.ELEVATORS, "elevators")
         val BOTANY_POTS = create(Mods.BOTANY_POTS, "botany_pots")
+        val SYMMETRIC_SAILS = create(Mods.CREATE_SIMULATED, "symmetric_sails")
+        val HANDLES = create(Mods.CREATE_SIMULATED, "handles")
+        val NAMEPLATES = create(Mods.CREATE_SIMULATED, "nameplate_blocks")
+        val ENVELOPES = create(Mods.CREATE_AERONAUTICS, "envelope")
     }
 
     protected fun create(namespace: String, path: String): TagKey<T> = TagKey.create(registry, namespace.createId(path))

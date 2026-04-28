@@ -303,6 +303,30 @@
     {
       "id": "botanypots:navy_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:navy_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:navy_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:navy_envelope_encased_shaft",
+      "required": false
     }
   ]
 }

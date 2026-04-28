@@ -303,6 +303,30 @@
     {
       "id": "botanypots:beige_glazed_terracotta_waxed_botany_pot",
       "required": false
+    },
+    {
+      "id": "simulated:beige_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_nameplate",
+      "required": false
+    },
+    {
+      "id": "aeronautics:beige_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:beige_envelope_encased_shaft",
+      "required": false
     }
   ]
 }
