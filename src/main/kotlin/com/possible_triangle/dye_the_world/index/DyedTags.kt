@@ -67,6 +67,7 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val HANDLES = create(Mods.CREATE_SIMULATED, "handles")
         val NAMEPLATES = create(Mods.CREATE_SIMULATED, "nameplate_blocks")
         val ENVELOPES = create(Mods.CREATE_AERONAUTICS, "envelope")
+        val AIRTIGHT = create(Mods.CREATE_AERONAUTICS, "airtight")
     }
 
     protected fun create(namespace: String, path: String): TagKey<T> = TagKey.create(registry, namespace.createId(path))

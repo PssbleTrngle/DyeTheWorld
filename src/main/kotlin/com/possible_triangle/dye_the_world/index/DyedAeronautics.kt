@@ -29,6 +29,7 @@ object DyedAeronautics {
             .lang("${dye.translation} Hot Air Envelope")
             .germanLang("${dye.germanTranslation(Genus.F)} Heißluftballonhülle")
             .optionalTag(DyedTags.Blocks.ENVELOPES)
+            .optionalTag(DyedTags.Blocks.AIRTIGHT)
             .optionalTag(BlockTags.MINEABLE_WITH_AXE)
             .envelopeBlockstate()
             .withItem {
@@ -46,6 +47,7 @@ object DyedAeronautics {
             .lang("${dye.translation} Envelope Encased Shaft")
             .germanLang("${dye.germanTranslation(Genus.F)} Ballonummantelte Welle")
             .optionalTag(DyedTags.Blocks.ENVELOPES)
+            .optionalTag(DyedTags.Blocks.AIRTIGHT)
             .optionalTag(BlockTags.MINEABLE_WITH_AXE)
             .envelopeShaftBlockstate()
             .loot { tables, block ->
