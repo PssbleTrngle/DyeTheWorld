@@ -1,6 +1,6 @@
 {
   "parent": "simulated:block/nameplate/item",
   "textures": {
-    "0": "simulated:block/teal_nameplate"
+    "0": "simulated:block/nameplate/teal_nameplate"
   }
 }

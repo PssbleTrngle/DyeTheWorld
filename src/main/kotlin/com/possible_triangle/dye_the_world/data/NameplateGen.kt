@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_SIMULATED
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -17,7 +16,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.level.block.state.properties.EnumProperty
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
-
 internal enum class Position : StringRepresentable {
     SINGLE,
     LEFT,
@@ -30,7 +28,7 @@ internal enum class Position : StringRepresentable {
 internal val NAMEPLATE_POSITION: EnumProperty<Position> = EnumProperty.create("position", Position::class.java)
 
 private val AbstractBuilder<*, *, *, *>.texture
-    get() = CREATE_SIMULATED.createId("block/${dye}_nameplate")
+    get() = CREATE_SIMULATED.createId("block/nameplate/${dye}_nameplate")
 
 fun <T : Block, P> BlockBuilder<T, P>.nameplateBlockstate() = blockstate { context, provider ->
     val models = Position.entries.associateWith {

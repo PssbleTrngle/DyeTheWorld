@@ -1,7 +1,7 @@
 {
   "parent": "simulated:block/nameplate/block_left",
   "textures": {
-    "0": "simulated:block/maroon_nameplate",
-    "particle": "simulated:block/maroon_nameplate"
+    "0": "simulated:block/nameplate/maroon_nameplate",
+    "particle": "simulated:block/nameplate/maroon_nameplate"
   }
 }
