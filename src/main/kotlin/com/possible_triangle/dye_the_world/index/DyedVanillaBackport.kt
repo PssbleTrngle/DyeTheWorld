@@ -7,7 +7,6 @@ import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.extensions.*
-import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
@@ -59,9 +58,6 @@ object DyedVanillaBackport {
             .lang("${dye.translation} Bundle")
             .germanLang("${dye.germanTranslation(Genus.I)} Bündel")
             .optionalTag(ModItemTags.BUNDLES)
-            .recipe { context, provider ->
-                provider.dyeingRecipe(dye, Items.BUNDLE, context)
-            }
             .model { c, p ->
                 p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/bundle/$dye"))
             }

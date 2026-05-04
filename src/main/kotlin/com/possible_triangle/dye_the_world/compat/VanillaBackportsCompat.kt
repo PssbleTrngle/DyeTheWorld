@@ -1,6 +1,7 @@
 package com.possible_triangle.dye_the_world.compat
 
 import com.blackgear.vanillabackport.client.level.entities.layer.GhastHarnessHandler
+import com.blackgear.vanillabackport.common.api.bundle.BundleFeatures
 import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
 import com.possible_triangle.dye_the_world.extensions.createId

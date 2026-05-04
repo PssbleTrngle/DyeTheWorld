@@ -1,0 +1,75 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "colors": {
+    "amber": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:amber_bundle"
+    },
+    "aqua": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:aqua_bundle"
+    },
+    "beige": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:beige_bundle"
+    },
+    "coral": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:coral_bundle"
+    },
+    "forest": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:forest_bundle"
+    },
+    "ginger": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:ginger_bundle"
+    },
+    "indigo": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:indigo_bundle"
+    },
+    "maroon": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:maroon_bundle"
+    },
+    "mint": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:mint_bundle"
+    },
+    "navy": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:navy_bundle"
+    },
+    "olive": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:olive_bundle"
+    },
+    "rose": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:rose_bundle"
+    },
+    "slate": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:slate_bundle"
+    },
+    "tan": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:tan_bundle"
+    },
+    "teal": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:teal_bundle"
+    },
+    "verdant": {
+      "block": "minecraft:air",
+      "item": "dye_the_world:verdant_bundle"
+    }
+  },
+  "id": "minecraft:bundle"
+}
