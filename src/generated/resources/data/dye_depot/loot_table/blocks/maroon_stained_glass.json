@@ -26,16 +26,10 @@
                   }
                 }
               ],
-              "name": "minecraft:air"
+              "name": "dye_depot:maroon_stained_glass"
             },
             {
               "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "zeta:flag",
-                  "flag": "glass_shard"
-                }
-              ],
               "functions": [
                 {
                   "add": false,

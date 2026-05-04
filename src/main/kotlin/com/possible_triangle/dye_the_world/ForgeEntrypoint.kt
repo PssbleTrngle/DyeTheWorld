@@ -7,7 +7,6 @@ import com.possible_triangle.dye_the_world.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.data.generatePackMetadata
 import com.possible_triangle.dye_the_world.data.generateTags
 import com.possible_triangle.dye_the_world.data.registerExistingFiles
-import com.possible_triangle.dye_the_world.data.registerZetaConditionTypes
 import com.possible_triangle.dye_the_world.extensions.ifLoaded
 import com.possible_triangle.dye_the_world.index.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
@@ -67,11 +66,10 @@ object ForgeEntrypoint {
 
             REGISTRATE.registerExistingFiles()
 
-            registerZetaConditionTypes()
             REGISTRATE.generateTags()
             REGISTRATE.generatePackMetadata()
             REGISTRATE.createDyeRecipes()
-            generateGlassShardLoot()
+            REGISTRATE.generateGlassShardLoot()
 
             // These are blocks & Items which are automatically added for all dye colors, included modded ones.
             // Therefore, they only lack assets & data files, which have to be generated, but do not need to be registered.
