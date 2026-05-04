@@ -1,7 +1,7 @@
 {
   "parent": "simulated:block/nameplate/block_middle",
   "textures": {
-    "0": "dye_the_world:block/simulated/nameplate/amber",
-    "particle": "dye_the_world:block/simulated/nameplate/amber"
+    "0": "simulated:block/amber_nameplate",
+    "particle": "simulated:block/amber_nameplate"
   }
 }
