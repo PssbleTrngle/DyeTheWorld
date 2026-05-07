@@ -61,7 +61,7 @@ fun AbstractRegistrate<*>.generateColorSetModifications() {
                             dyes
                                 .associateWith { Constants.MOD_ID.createId("${it.serializedName}_${id.path}") }
                                 .mapValues { BuiltInRegistries.ITEM.getOrThrow(it.value) }
-                                .mapValues { BlockAndItem(Blocks.AIR, it.value) }
+                                .mapValues { BlockAndItem(null, it.value) }
                                 .mapKeys { it.key.serializedName },
                             false,
                             id
