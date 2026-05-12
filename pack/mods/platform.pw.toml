@@ -1,13 +1,13 @@
 name = "Platform"
-filename = "Platform-neoforge-1.21.1-1.3.jar"
+filename = "Platform-neoforge-1.21.1-1.3.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/i6fiqm5y/versions/XGtKmpbq/Platform-neoforge-1.21.1-1.3.jar"
+url = "https://cdn.modrinth.com/data/i6fiqm5y/versions/v7P0nBi2/Platform-neoforge-1.21.1-1.3.3.jar"
 hash-format = "sha512"
-hash = "cb1b54f4f5273eec00d7a08d8c4b8a27523812442cae340191c0ea576868962f63af077ac3da955c24722862d6e3e51610dafa6490ba512ead8c79450fcb76b5"
+hash = "1ab1dcf3583237dd30c3443a1fac3ee8271add25aae84af2933fa9eb13def3840d7a8cca53523d1dd3c5a77eb23059099285d218509d02d001034fca42f5f64d"
 
 [update]
 [update.modrinth]
 mod-id = "i6fiqm5y"
-version = "XGtKmpbq"
+version = "v7P0nBi2"

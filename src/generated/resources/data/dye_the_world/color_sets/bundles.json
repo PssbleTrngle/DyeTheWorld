@@ -6,70 +6,22 @@
     }
   ],
   "colors": {
-    "amber": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:amber_bundle"
-    },
-    "aqua": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:aqua_bundle"
-    },
-    "beige": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:beige_bundle"
-    },
-    "coral": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:coral_bundle"
-    },
-    "forest": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:forest_bundle"
-    },
-    "ginger": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:ginger_bundle"
-    },
-    "indigo": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:indigo_bundle"
-    },
-    "maroon": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:maroon_bundle"
-    },
-    "mint": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:mint_bundle"
-    },
-    "navy": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:navy_bundle"
-    },
-    "olive": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:olive_bundle"
-    },
-    "rose": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:rose_bundle"
-    },
-    "slate": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:slate_bundle"
-    },
-    "tan": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:tan_bundle"
-    },
-    "teal": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:teal_bundle"
-    },
-    "verdant": {
-      "block": "minecraft:air",
-      "item": "dye_the_world:verdant_bundle"
-    }
+    "amber": "dye_the_world:amber_bundle",
+    "aqua": "dye_the_world:aqua_bundle",
+    "beige": "dye_the_world:beige_bundle",
+    "coral": "dye_the_world:coral_bundle",
+    "forest": "dye_the_world:forest_bundle",
+    "ginger": "dye_the_world:ginger_bundle",
+    "indigo": "dye_the_world:indigo_bundle",
+    "maroon": "dye_the_world:maroon_bundle",
+    "mint": "dye_the_world:mint_bundle",
+    "navy": "dye_the_world:navy_bundle",
+    "olive": "dye_the_world:olive_bundle",
+    "rose": "dye_the_world:rose_bundle",
+    "slate": "dye_the_world:slate_bundle",
+    "tan": "dye_the_world:tan_bundle",
+    "teal": "dye_the_world:teal_bundle",
+    "verdant": "dye_the_world:verdant_bundle"
   },
   "id": "minecraft:bundle"
 }

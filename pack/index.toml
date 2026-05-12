@@ -132,7 +132,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "3b7f0351a2473f8c3f8211539bc3ca1aa065acf90f3e3b5e8b68a433fc6ed21f"
+hash = "2f14e94f4642986d2a5ac68cd623737e4b62b53517c9c1b164ce7b516ac3c671"
 metafile = true
 
 [[files]]
@@ -147,7 +147,7 @@ metafile = true
 
 [[files]]
 file = "mods/platform.pw.toml"
-hash = "0ca90a25548289e4149c3d8435d50b75ff28bb83f973bf3e2cdc8a0b4b911acc"
+hash = "00887452f4c902a5f98fc42875d522e59948b60c20d887855a183c0f7235c641"
 metafile = true
 
 [[files]]
@@ -197,7 +197,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanillabackport.pw.toml"
-hash = "f016a7d796ee67a3a3cf8bff2f0fff40456a4fca65ab40bcc512521570f1ab45"
+hash = "5f8a2c45cc93e94a1959933d9b87b29b630e0895a40a19b9f0b66121e9e79c53"
 metafile = true
 
 [[files]]
