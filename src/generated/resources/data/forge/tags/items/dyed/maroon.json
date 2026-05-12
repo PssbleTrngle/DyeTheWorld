@@ -141,6 +141,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:maroon_bundle",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_maroon",
       "required": false
     },

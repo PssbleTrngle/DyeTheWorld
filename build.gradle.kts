@@ -104,7 +104,7 @@ dependencies {
     modRuntimeOnly(libs.jei)
     modRuntimeOnly(pack.modrinth.jade)
     modRuntimeOnly(pack.modrinth.citadel)
-    modRuntimeOnly(pack.modrinth.interiors)
+    //modRuntimeOnly(pack.modrinth.interiors)
     modRuntimeOnly(pack.modrinth.curios)
     modRuntimeOnly(pack.modrinth.ars.nouveau)
     modRuntimeOnly(pack.modrinth.gallery)

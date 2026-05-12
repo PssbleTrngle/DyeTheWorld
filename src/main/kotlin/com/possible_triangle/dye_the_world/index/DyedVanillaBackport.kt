@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.Blocks
 object DyedVanillaBackport {
     private val DYES = dyesFor(VANILLA_BACKPORT)
 
-    private val TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, VANILLA_BACKPORT.createId("chase_the_skies"))
+    private val TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, VANILLA_BACKPORT.createId("vanilla_backport"))
 
     val HARNESSES =
         DYES.associateWith { dye ->
@@ -29,9 +29,9 @@ object DyedVanillaBackport {
                 .lang("${dye.translation} Harness")
                 .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
                 .optionalTag(ModItemTags.HARNESSES)
-                .recipe { c, p ->
+                .recipe { context, provider ->
                     ShapedRecipeBuilder
-                        .shaped(RecipeCategory.MISC, c.get())
+                        .shaped(RecipeCategory.MISC, context.get())
                         .pattern("LLL")
                         .pattern("G#G")
                         .define('#', dye.blockOf("wool"))
@@ -39,9 +39,25 @@ object DyedVanillaBackport {
                         .define('L', Items.LEATHER)
                         .unlockedBy(ModBlocks.DRIED_GHAST.get())
                         .group("harness")
-                        .save(p)
+                        .save(provider)
                 }.model { c, p ->
                     p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/harness/$dye"))
+                }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                .tab(TAB)
+                .register()
+        }
+
+    val BUNDLES =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_bundle")
+                .dyedItem(dye, VANILLA_BACKPORT, ::Item)
+                .properties { it.stacksTo(1) }
+                .lang("${dye.translation} Bundle")
+                .germanLang("${dye.germanTranslation(Genus.I)} Bündel")
+                .optionalTag(ModItemTags.BUNDLES)
+                .model { c, p ->
+                    p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/bundle/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .tab(TAB)
                 .register()

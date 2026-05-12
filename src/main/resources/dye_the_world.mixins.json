@@ -15,6 +15,7 @@
     "LampConnectorBlockMixin",
     "QuarkJeiPluginMixin",
     "WaystonesModBlocksMixin",
+    "data.RailswaysImplMixin",
     "data.SimpleCookingRecipeBuilderMixin"
   ],
   "injectors": {

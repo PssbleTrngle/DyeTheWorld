@@ -141,6 +141,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:slate_bundle",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_slate",
       "required": false
     },
