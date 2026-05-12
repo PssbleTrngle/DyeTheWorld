@@ -3,11 +3,15 @@ package com.possible_triangle.dye_the_world.data
 import com.mojang.serialization.JsonOps
 import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.dyesFor
+import com.possible_triangle.dye_the_world.extensions.createId
+import com.possible_triangle.dye_the_world.extensions.getOrThrow
 import com.tterrag.registrate.AbstractRegistrate
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateProvider
+import net.mehvahdjukaar.moonlight.api.misc.BlockAndItem
 import net.mehvahdjukaar.moonlight.core.set.ColorSetModification
 import net.minecraft.core.HolderLookup
+import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.data.PackOutput
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.packs.PackType
@@ -65,20 +69,18 @@ fun AbstractRegistrate<*>.generateColorSetModifications() {
         colorSets.forEach { (id, modId) ->
             val dyes = dyesFor(modId)
 
-            /* TODO waiting for moonlight
             provider.add(
                 Constants.MOD_ID.createId("${id.path}s"),
                 ColorSetModification(
                     dyes
                         .associateWith { Constants.MOD_ID.createId("${it.serializedName}_${id.path}") }
                         .mapValues { BuiltInRegistries.ITEM.getOrThrow(it.value) }
-                        .mapValues { BlockAndItem(Blocks.AIR, it.value) }
+                        .mapValues { BlockAndItem(null, it.value) }
                         .mapKeys { it.key.serializedName },
                     false,
-                    id
-                )
+                    id,
+                ),
             )
-             */
         }
     }
 }

@@ -36,6 +36,7 @@ repositories {
         content {
             includeGroup("com.possible-triangle")
             includeGroup("com.ninni.dye_depot")
+            includeGroup("net.mehvahdjukaar")
         }
     }
 
@@ -63,6 +64,7 @@ repositories {
 
 dependencies {
     modInclude(libs.registrate)
+    modInclude(libs.multikulti.datagen.fix)
 
     modImplementation(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
@@ -78,7 +80,7 @@ dependencies {
     modCompileOnly(libs.flywheel.api)
     modImplementation(pack.modrinth.another.furniture)
     modImplementation(pack.modrinth.comforts)
-    modImplementation(pack.modrinth.moonlight)
+    modImplementation(variantOf(libs.moonlight) { classifier("forge") })
     modImplementation(pack.modrinth.supplementaries)
     modImplementation(pack.modrinth.supplementaries.squared)
     modImplementation(pack.modrinth.quark)
@@ -104,7 +106,7 @@ dependencies {
     modRuntimeOnly(libs.jei)
     modRuntimeOnly(pack.modrinth.jade)
     modRuntimeOnly(pack.modrinth.citadel)
-    //modRuntimeOnly(pack.modrinth.interiors)
+    // modRuntimeOnly(pack.modrinth.interiors)
     modRuntimeOnly(pack.modrinth.curios)
     modRuntimeOnly(pack.modrinth.ars.nouveau)
     modRuntimeOnly(pack.modrinth.gallery)
