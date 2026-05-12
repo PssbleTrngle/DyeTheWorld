@@ -14,22 +14,29 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
-fun <T : Block, P> BlockBuilder<T, P>.portableEngineBlockstate() = blockstate { context, provider ->
-    val parent = CREATE_SIMULATED.createId("block/portable_engine/block")
-    val model = provider.models().withExistingParent(context.name, parent)
-        .textureAndParticle("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/portable_engine/$dye"))
+fun <T : Block, P> BlockBuilder<T, P>.portableEngineBlockstate() =
+    blockstate { context, provider ->
+        val parent = CREATE_SIMULATED.createId("block/portable_engine/block")
+        val model =
+            provider
+                .models()
+                .withExistingParent(context.name, parent)
+                .textureAndParticle("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/portable_engine/$dye"))
 
-    provider.createVariant(context, BlockStateProperties.LIT) { state ->
-        val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
+        provider.createVariant(context, BlockStateProperties.LIT) { state ->
+            val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
 
-        ConfiguredModel.builder()
-            .modelFile(model)
-            .rotationY(facing.yRot)
+            ConfiguredModel
+                .builder()
+                .modelFile(model)
+                .rotationY(facing.yRot)
+        }
     }
-}
 
-fun <T : Item, P> ItemBuilder<T, P>.portableEngineItemModel() = model { context, provider ->
-    val parent = CREATE_SIMULATED.createId("block/portable_engine/item")
-    provider.withExistingParent(context.name, parent)
-        .textureAndParticle("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/portable_engine/$dye"))
-}
+fun <T : Item, P> ItemBuilder<T, P>.portableEngineItemModel() =
+    model { context, provider ->
+        val parent = CREATE_SIMULATED.createId("block/portable_engine/item")
+        provider
+            .withExistingParent(context.name, parent)
+            .textureAndParticle("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/portable_engine/$dye"))
+    }

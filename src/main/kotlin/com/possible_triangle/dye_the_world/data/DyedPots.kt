@@ -16,30 +16,36 @@ import net.minecraft.world.level.block.entity.DecoratedPotBlockEntity
 import net.minecraft.world.level.storage.loot.LootTable
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions
 
-fun <T : Block, P> BlockBuilder<T, P>.potLoot() = loot { tables, block ->
-    val table = LootTable.lootTable()
-        .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDynamicTrimDropPool(block))
-        .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDecoratedPotPool(block))
-    tables.add(block, table)
-}
+fun <T : Block, P> BlockBuilder<T, P>.potLoot() =
+    loot { tables, block ->
+        val table =
+            LootTable
+                .lootTable()
+                .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDynamicTrimDropPool(block))
+                .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDecoratedPotPool(block))
+        tables.add(block, table)
+    }
 
-fun ItemBuilder<out BlockItem,*>.createPotClientExtensions(): IClientItemExtensions {
-    return MemoizedBEWLR.asCustomItemRenderer { dispatcher, entityModelSet ->
+fun ItemBuilder<out BlockItem, *>.createPotClientExtensions(): IClientItemExtensions =
+    MemoizedBEWLR.asCustomItemRenderer { dispatcher, entityModelSet ->
         DecoratedPotBlockEntityWithoutLevelRenderer(
             dispatcher,
             entityModelSet,
-            DecoratedPotBlockEntity(BlockPos.ZERO, entry.block.defaultBlockState())
+            DecoratedPotBlockEntity(BlockPos.ZERO, entry.block.defaultBlockState()),
         )
-    };
+    }
 
-}
+fun <T : Block, P> BlockBuilder<T, P>.potBlockstate() =
+    blockstate { context, provider ->
+        val model =
+            provider
+                .models()
+                .getBuilder(context.name)
+                .texture("particle", ResourceLocation.fromNamespaceAndPath(dye.namespace, "block/${dye}_terracotta"))
+        provider.simpleBlock(context.get(), model)
+    }
 
-fun <T : Block, P> BlockBuilder<T, P>.potBlockstate() = blockstate { context, provider ->
-    val model = provider.models().getBuilder(context.name)
-        .texture("particle", ResourceLocation.fromNamespaceAndPath(dye.namespace, "block/${dye}_terracotta"))
-    provider.simpleBlock(context.get(), model)
-}
-
-fun <T : Item, P> ItemBuilder<T, P>.potItemModel() = model { context, provider ->
-    provider.withExistingParent(context.name, ResourceLocation.withDefaultNamespace("item/decorated_pot"))
-}
+fun <T : Item, P> ItemBuilder<T, P>.potItemModel() =
+    model { context, provider ->
+        provider.withExistingParent(context.name, ResourceLocation.withDefaultNamespace("item/decorated_pot"))
+    }

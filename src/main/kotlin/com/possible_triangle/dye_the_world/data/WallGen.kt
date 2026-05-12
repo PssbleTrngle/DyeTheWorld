@@ -30,8 +30,7 @@ fun DyedRegistrate.createWalls(
         .blockstate { c, p ->
             val texture = dye.namespace.createId("block/${dye}_${name.path}")
             p.wallBlock(c.get(), texture)
-        }
-        .withItem {
+        }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.WALLS)
@@ -41,7 +40,6 @@ fun DyedRegistrate.createWalls(
                 p.wallInventory(c.name, texture)
             }
             modifyItem(dye)
-        }
-        .apply { modifyBlock(dye) }
+        }.apply { modifyBlock(dye) }
         .register()
 }

@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 
 object Constants {
-
     const val MOD_ID = "dye_the_world"
 
     @JvmField
@@ -39,5 +38,4 @@ object Constants {
         const val BOTANY_POTS = "botanypots"
         const val VANILLA_BACKPORT = "vanillabackport"
     }
-
 }

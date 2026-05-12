@@ -12,19 +12,18 @@ class CustomRegistrateLangProvider(
     private val owner: AbstractRegistrate<*>,
     private val type: ProviderType<CustomRegistrateLangProvider>,
     locale: String,
-) : LanguageProvider(output, owner.modid, locale), RegistrateProvider {
-
+) : LanguageProvider(output, owner.modid, locale),
+    RegistrateProvider {
     companion object {
-        fun providerType(locale: String): ProviderType<CustomRegistrateLangProvider> {
-            return ProviderType.registerProvider("lang/$locale") { context ->
+        fun providerType(locale: String): ProviderType<CustomRegistrateLangProvider> =
+            ProviderType.registerProvider("lang/$locale") { context ->
                 CustomRegistrateLangProvider(context.output, context.parent, context.type, locale)
             }
-        }
     }
 
     override fun getSide() = LogicalSide.CLIENT
 
     override fun addTranslations() {
-        owner.genData(type, this);
+        owner.genData(type, this)
     }
 }

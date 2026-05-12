@@ -10,8 +10,11 @@ interface DyedBuilder {
 
 val Builder<*, *, *, *>.dye: DyeColor
     get() {
-        return if (this is DyedBuilder) this.dye
-        else throw ClassCastException("not a DyedBlockBuilder")
+        return if (this is DyedBuilder) {
+            this.dye
+        } else {
+            throw ClassCastException("not a DyedBlockBuilder")
+        }
     }
 
 internal fun String.validateMod() {

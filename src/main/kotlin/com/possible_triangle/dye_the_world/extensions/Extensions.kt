@@ -29,17 +29,21 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun isLoaded(modid: String) = ModList.get().isLoaded(modid)
 
-inline fun ifLoaded(modid: String, block: () -> Unit) {
+inline fun ifLoaded(
+    modid: String,
+    block: () -> Unit,
+) {
     if (isLoaded(modid)) block()
 }
 
 val Direction.yRot: Int
-    get() = when (this) {
-        Direction.EAST -> 90
-        Direction.SOUTH -> 180
-        Direction.WEST -> 270
-        else -> 0
-    }
+    get() =
+        when (this) {
+            Direction.EAST -> 90
+            Direction.SOUTH -> 180
+            Direction.WEST -> 270
+            else -> 0
+        }
 
 fun <T : Any> Registry<T>.getOrThrow(id: ResourceLocation): T {
     val key = ResourceKey.create(key(), id)
@@ -65,7 +69,7 @@ fun BlockStateProvider.createVariant(
     getVariantBuilder(block.get()).forAllStatesExcept(
         { mapper(it).build() },
         BlockStateProperties.WATERLOGGED,
-        *ignored
+        *ignored,
     )
 }
 
@@ -80,16 +84,26 @@ fun <T : RecipeBuilder> T.unlockedBy(item: ItemLike): T {
 }
 
 @Suppress("UNCHECKED_CAST")
-fun <T : RecipeBuilder> T.unlockedBy(tag: TagKey<Item>): T {
-    return unlockedBy("has_${tag.location.path}", RegistrateRecipeProvider.has(tag)) as T
-}
+fun <T : RecipeBuilder> T.unlockedBy(tag: TagKey<Item>): T = unlockedBy("has_${tag.location.path}", RegistrateRecipeProvider.has(tag)) as T
 
-fun ShapedRecipeBuilder.defineUnlocking(key: Char, item: ItemLike) = define(key, item).unlockedBy(item)
-fun ShapedRecipeBuilder.defineUnlocking(key: Char, tag: TagKey<Item>) = define(key, tag).unlockedBy(tag)
+fun ShapedRecipeBuilder.defineUnlocking(
+    key: Char,
+    item: ItemLike,
+) = define(key, item).unlockedBy(item)
+
+fun ShapedRecipeBuilder.defineUnlocking(
+    key: Char,
+    tag: TagKey<Item>,
+) = define(key, tag).unlockedBy(tag)
 
 fun ShapelessRecipeBuilder.requiresUnlocking(item: ItemLike) = requires(item).unlockedBy(item)
+
 fun ShapelessRecipeBuilder.requiresUnlocking(tag: TagKey<Item>) = requires(tag).unlockedBy(tag)
 
-fun matchesState(block: Block, factory: StatePropertiesPredicate.Builder.() -> Unit): LootItemCondition.Builder =
-    LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+fun matchesState(
+    block: Block,
+    factory: StatePropertiesPredicate.Builder.() -> Unit,
+): LootItemCondition.Builder =
+    LootItemBlockStatePropertyCondition
+        .hasBlockStateProperties(block)
         .setProperties(StatePropertiesPredicate.Builder.properties().apply(factory))

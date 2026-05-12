@@ -30,18 +30,14 @@ fun DyedRegistrate.createSlabs(
         .blockstate { c, p ->
             val texture = dye.namespace.createId("block/${dye}_${name.path}")
             p.slabBlock(c.get(), dye.namespace.createId("block/${dye}_${name.path}"), texture)
-        }
-        .loot { c, p ->
+        }.loot { c, p ->
             c.add(p, c.createSlabItemTable(p))
-        }
-        .withItem {
+        }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.SLABS)
             recipe { c, p -> p.slab(base.asIngredient(), BUILDING_BLOCKS, c, null, true) }
             modifyItem(dye)
-        }
-        .apply { modifyBlock(dye) }
+        }.apply { modifyBlock(dye) }
         .register()
 }
-

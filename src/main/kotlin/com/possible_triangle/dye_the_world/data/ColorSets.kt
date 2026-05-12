@@ -14,16 +14,16 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.data.PackOutput
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.packs.PackType
-import net.minecraft.world.level.block.Blocks
 import net.neoforged.fml.LogicalSide
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition
 import net.neoforged.neoforge.common.data.ExistingFileHelper
 import net.neoforged.neoforge.common.data.JsonCodecProvider
 import java.util.concurrent.CompletableFuture
 
-private val PROVIDER_TYPE = ProviderType.registerProvider("color sets") { context ->
-    ColorSetProvider(context.output, context.provider, context.parent, context.type, context.fileHelper)
-}
+private val PROVIDER_TYPE =
+    ProviderType.registerProvider("color sets") { context ->
+        ColorSetProvider(context.output, context.provider, context.parent, context.type, context.fileHelper)
+    }
 
 private class ColorSetProvider(
     output: PackOutput,
@@ -31,12 +31,17 @@ private class ColorSetProvider(
     private val owner: AbstractRegistrate<*>,
     private val type: ProviderType<ColorSetProvider>,
     existingFileHelper: ExistingFileHelper,
-) :
-    JsonCodecProvider<ColorSetModification>(
-        output, PackOutput.Target.DATA_PACK, "color_sets",
-        PackType.SERVER_DATA, ColorSetModification.CODEC, lookupProvider, owner.modid, existingFileHelper,
-    ), RegistrateProvider {
-
+) : JsonCodecProvider<ColorSetModification>(
+        output,
+        PackOutput.Target.DATA_PACK,
+        "color_sets",
+        PackType.SERVER_DATA,
+        ColorSetModification.CODEC,
+        lookupProvider,
+        owner.modid,
+        existingFileHelper,
+    ),
+    RegistrateProvider {
     override fun gather() {
         owner.genData(type, this)
     }
@@ -44,9 +49,10 @@ private class ColorSetProvider(
     override fun getSide() = LogicalSide.SERVER
 }
 
-private val colorSets = mapOf(
-    ResourceLocation.withDefaultNamespace("bundle") to Constants.Mods.VANILLA_BACKPORT
-)
+private val colorSets =
+    mapOf(
+        ResourceLocation.withDefaultNamespace("bundle") to Constants.Mods.VANILLA_BACKPORT,
+    )
 
 fun AbstractRegistrate<*>.generateColorSetModifications() {
     addDataGenerator(PROVIDER_TYPE) { provider ->
@@ -64,8 +70,8 @@ fun AbstractRegistrate<*>.generateColorSetModifications() {
                                 .mapValues { BlockAndItem(null, it.value) }
                                 .mapKeys { it.key.serializedName },
                             false,
-                            id
-                        )
+                            id,
+                        ),
                     )
             }
         }

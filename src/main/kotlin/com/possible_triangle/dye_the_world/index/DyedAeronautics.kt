@@ -18,50 +18,48 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.RotatedPillarBlock
 
 object DyedAeronautics {
-
     private val REGISTRATE = DyedRegistrate.create(CREATE_AERONAUTICS)
 
     private val DYES = dyesFor(CREATE_AERONAUTICS)
 
-    val ENVELOPES = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_envelope")
-            .dyedBlock(dye, ::Block)
-            .lang("${dye.translation} Hot Air Envelope")
-            .germanLang("${dye.germanTranslation(Genus.F)} Heißluftballonhülle")
-            .optionalTag(DyedTags.Blocks.ENVELOPES)
-            .optionalTag(DyedTags.Blocks.AIRTIGHT)
-            .optionalTag(BlockTags.MINEABLE_WITH_AXE)
-            .envelopeBlockstate()
-            .withItem {
-                optionalTag(DyedTags.Items.ENVELOPES)
-                optionalTag(DyedTags.Items.SHAFTLESS_ENVELOPES)
-                envelopeRecipe()
-            }
-            .register()
-    }
+    val ENVELOPES =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_envelope")
+                .dyedBlock(dye, ::Block)
+                .lang("${dye.translation} Hot Air Envelope")
+                .germanLang("${dye.germanTranslation(Genus.F)} Heißluftballonhülle")
+                .optionalTag(DyedTags.Blocks.ENVELOPES)
+                .optionalTag(DyedTags.Blocks.AIRTIGHT)
+                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .envelopeBlockstate()
+                .withItem {
+                    optionalTag(DyedTags.Items.ENVELOPES)
+                    optionalTag(DyedTags.Items.SHAFTLESS_ENVELOPES)
+                    envelopeRecipe()
+                }.register()
+        }
 
-
-    val ENVELOPES_SHAFTS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_envelope_encased_shaft")
-            .dyedBlock(dye, ::RotatedPillarBlock)
-            .lang("${dye.translation} Envelope Encased Shaft")
-            .germanLang("${dye.germanTranslation(Genus.F)} Ballonummantelte Welle")
-            .optionalTag(DyedTags.Blocks.ENVELOPES)
-            .optionalTag(DyedTags.Blocks.AIRTIGHT)
-            .optionalTag(BlockTags.MINEABLE_WITH_AXE)
-            .envelopeShaftBlockstate()
-            .loot { tables, block ->
-                tables.dropOther(block, ENVELOPES[dye]!!.get())
-            }
-            .withItem {
-                optionalTag(DyedTags.Items.ENVELOPES)
-                envelopeShaftItemModel()
-            }
-            .register()
-    }
+    val ENVELOPES_SHAFTS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_envelope_encased_shaft")
+                .dyedBlock(dye, ::RotatedPillarBlock)
+                .lang("${dye.translation} Envelope Encased Shaft")
+                .germanLang("${dye.germanTranslation(Genus.F)} Ballonummantelte Welle")
+                .optionalTag(DyedTags.Blocks.ENVELOPES)
+                .optionalTag(DyedTags.Blocks.AIRTIGHT)
+                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .envelopeShaftBlockstate()
+                .loot { tables, block ->
+                    tables.dropOther(block, ENVELOPES[dye]!!.get())
+                }.withItem {
+                    optionalTag(DyedTags.Items.ENVELOPES)
+                    envelopeShaftItemModel()
+                }.register()
+        }
 
     fun register() {
         REGISTRATE.register()
     }
-
 }

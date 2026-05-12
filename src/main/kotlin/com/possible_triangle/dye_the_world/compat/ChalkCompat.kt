@@ -4,8 +4,7 @@ import com.possible_triangle.dye_the_world.Constants.Mods.CHALK
 import com.possible_triangle.dye_the_world.dyesFor
 import io.github.mortuusars.chalk.data.ChalkColors
 
-object ChalkCompat  {
-
+object ChalkCompat {
     private val DYES = dyesFor(CHALK)
 
     @JvmStatic
@@ -14,5 +13,4 @@ object ChalkCompat  {
             ChalkColors.COLORS[it] = it.fireworkColor
         }
     }
-
 }

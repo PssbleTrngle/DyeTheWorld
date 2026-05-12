@@ -20,7 +20,8 @@ internal enum class Position : StringRepresentable {
     SINGLE,
     LEFT,
     RIGHT,
-    MIDDLE;
+    MIDDLE,
+    ;
 
     override fun getSerializedName() = this.name.lowercase()
 }
@@ -30,27 +31,33 @@ internal val NAMEPLATE_POSITION: EnumProperty<Position> = EnumProperty.create("p
 private val AbstractBuilder<*, *, *, *>.texture
     get() = CREATE_SIMULATED.createId("block/nameplate/${dye}_nameplate")
 
-fun <T : Block, P> BlockBuilder<T, P>.nameplateBlockstate() = blockstate { context, provider ->
-    val models = Position.entries.associateWith {
-        val type = it.serializedName
-        val parent = CREATE_SIMULATED.createId("block/nameplate/block_$type")
-        provider.models()
-            .withExistingParent("${context.name}_${type}", parent)
-            .textureAndParticle("0", texture)
+fun <T : Block, P> BlockBuilder<T, P>.nameplateBlockstate() =
+    blockstate { context, provider ->
+        val models =
+            Position.entries.associateWith {
+                val type = it.serializedName
+                val parent = CREATE_SIMULATED.createId("block/nameplate/block_$type")
+                provider
+                    .models()
+                    .withExistingParent("${context.name}_$type", parent)
+                    .textureAndParticle("0", texture)
+            }
+
+        provider.createVariant(context) { state ->
+            val position = state.getValue(NAMEPLATE_POSITION)
+            val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
+
+            ConfiguredModel
+                .builder()
+                .modelFile(models[position]!!)
+                .rotationY(facing.yRot)
+        }
     }
 
-    provider.createVariant(context) { state ->
-        val position = state.getValue(NAMEPLATE_POSITION)
-        val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
-
-        ConfiguredModel.builder()
-            .modelFile(models[position]!!)
-            .rotationY(facing.yRot)
+fun <T : Item, P> ItemBuilder<T, P>.nameplateItemModel() =
+    model { context, provider ->
+        val parent = CREATE_SIMULATED.createId("block/nameplate/item")
+        provider
+            .withExistingParent(context.name, parent)
+            .texture("0", texture)
     }
-}
-
-fun <T : Item, P> ItemBuilder<T, P>.nameplateItemModel() = model { context, provider ->
-    val parent = CREATE_SIMULATED.createId("block/nameplate/item")
-    provider.withExistingParent(context.name, parent)
-        .texture("0", texture)
-}

@@ -37,11 +37,16 @@ fun DyedRegistrate.createLevers(
             val texture = dye.namespace.createId("block/${dye}_${name.path}")
 
             // on and off being switched here is weird but correctly, it's also how it is for the vanilla lever ¯\_(ツ)_/¯
-            val off = p.models().withExistingParent("${c.name}_on", MORE_CONCRETE.createId("block/lever_model_on"))
-                .texture("base", texture)
-            val on = p.models().withExistingParent(c.name, MORE_CONCRETE.createId("block/lever_model"))
-                .texture("base", texture)
-
+            val off =
+                p
+                    .models()
+                    .withExistingParent("${c.name}_on", MORE_CONCRETE.createId("block/lever_model_on"))
+                    .texture("base", texture)
+            val on =
+                p
+                    .models()
+                    .withExistingParent(c.name, MORE_CONCRETE.createId("block/lever_model"))
+                    .texture("base", texture)
 
             p.createVariant(c) { state ->
                 val facing = state.getValue(LeverBlock.FACING)
@@ -50,23 +55,25 @@ fun DyedRegistrate.createLevers(
 
                 val model = if (powered) on else off
 
-                val rotX = when (face) {
-                    AttachFace.FLOOR -> 0
-                    AttachFace.WALL -> 90
-                    AttachFace.CEILING -> 180
-                }
+                val rotX =
+                    when (face) {
+                        AttachFace.FLOOR -> 0
+                        AttachFace.WALL -> 90
+                        AttachFace.CEILING -> 180
+                    }
 
-                ConfiguredModel.builder()
+                ConfiguredModel
+                    .builder()
                     .modelFile(model)
                     .rotationX(rotX)
                     .rotationY((if (face == AttachFace.CEILING) facing.opposite else facing).yRot)
             }
-        }
-        .withItem {
+        }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             recipe { c, p ->
-                ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, c.get())
+                ShapedRecipeBuilder
+                    .shaped(RecipeCategory.REDSTONE, c.get())
                     .pattern("|")
                     .pattern("#")
                     .define('|', Items.STICK)
@@ -76,8 +83,7 @@ fun DyedRegistrate.createLevers(
             }
             model { c, p -> p.blockItem(c) }
             modifyItem(dye)
-        }
-        .apply { modifyBlock(dye) }
+        }.apply { modifyBlock(dye) }
         .register()
 }
 
@@ -94,13 +100,13 @@ fun DyedRegistrate.createButtons(
         .blockstate { c, p ->
             val texture = dye.namespace.createId("block/${dye}_${name.path}")
             p.buttonBlock(c.get(), texture)
-        }
-        .withItem {
+        }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             optionalTag(ItemTags.BUTTONS)
             recipe { c, p ->
-                p.singleItemUnfinished(base.asIngredient(), RecipeCategory.REDSTONE, c, 1, 1)
+                p
+                    .singleItemUnfinished(base.asIngredient(), RecipeCategory.REDSTONE, c, 1, 1)
                     .group("concrete_button")
                     .save(p)
             }
@@ -109,8 +115,7 @@ fun DyedRegistrate.createButtons(
                 p.buttonInventory(c.name, texture)
             }
             modifyItem(dye)
-        }
-        .apply { modifyBlock(dye) }
+        }.apply { modifyBlock(dye) }
         .register()
 }
 
@@ -127,12 +132,12 @@ fun DyedRegistrate.createPressurePlates(
         .blockstate { c, p ->
             val texture = dye.namespace.createId("block/${dye}_${name.path}")
             p.pressurePlateBlock(c.get(), texture)
-        }
-        .withItem {
+        }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             recipe { c, p ->
-                ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, c.get())
+                ShapedRecipeBuilder
+                    .shaped(RecipeCategory.REDSTONE, c.get())
                     .pattern("##")
                     .defineUnlocking('#', base.get())
                     .group("concrete_pressure_plate")
@@ -143,7 +148,6 @@ fun DyedRegistrate.createPressurePlates(
                 p.pressurePlate(c.name, texture)
             }
             modifyItem(dye)
-        }
-        .apply { modifyBlock(dye) }
+        }.apply { modifyBlock(dye) }
         .register()
 }

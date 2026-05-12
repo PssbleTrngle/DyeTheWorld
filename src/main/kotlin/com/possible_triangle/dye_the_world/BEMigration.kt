@@ -8,7 +8,10 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.entity.BlockEntityType
 
-fun migrateBlockEntity(name: String, namespace: String) {
+fun migrateBlockEntity(
+    name: String,
+    namespace: String,
+) {
     BuiltInRegistries.BLOCK_ENTITY_TYPE.addAlias(Constants.MOD_ID.createId(name), namespace.createId(name))
 }
 
@@ -17,8 +20,9 @@ fun BlockEntityType<*>.allowBlock(vararg blocks: Block) {
     accessor.validBlocks = accessor.validBlocks + blocks
 }
 
-fun <B : Block, P> BlockBuilder<B, P>.existingBlockEntity(type: () -> BlockEntityType<*>) = apply {
-    owner.addRegisterCallback(Registries.BLOCK_ENTITY_TYPE) {
-        type().allowBlock(entry)
+fun <B : Block, P> BlockBuilder<B, P>.existingBlockEntity(type: () -> BlockEntityType<*>) =
+    apply {
+        owner.addRegisterCallback(Registries.BLOCK_ENTITY_TYPE) {
+            type().allowBlock(entry)
+        }
     }
-}

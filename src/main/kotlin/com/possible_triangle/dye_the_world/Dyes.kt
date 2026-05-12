@@ -12,42 +12,46 @@ import net.minecraft.world.level.block.Block
 import java.util.*
 
 @JvmField
-val DEPOT_DYES = listOf(
-    "amber",
-    "aqua",
-    "beige",
-    "coral",
-    "forest",
-    "ginger",
-    "indigo",
-    "maroon",
-    "mint",
-    "navy",
-    "olive",
-    "rose",
-    "slate",
-    "tan",
-    "teal",
-    "verdant"
-)
+val DEPOT_DYES =
+    listOf(
+        "amber",
+        "aqua",
+        "beige",
+        "coral",
+        "forest",
+        "ginger",
+        "indigo",
+        "maroon",
+        "mint",
+        "navy",
+        "olive",
+        "rose",
+        "slate",
+        "tan",
+        "teal",
+        "verdant",
+    )
 
 @JvmField
 val VANILLA_DYES = DyeColor.entries.subList(0, 16)
 
-//private val DYES = mapOf(
+// private val DYES = mapOf(
 //    Constants.Mods.ANOTHER_FURNITURE to DEPOT_DYES,
-//)
+// )
 
 @Suppress("UNUSED_PARAMETER")
 fun dyesFor(modid: String): List<DyeColor> {
     return DEPOT_DYES.mapNotNull { DyeColor.byName(it, null) }
-    //return DYES[modid]?.mapNotNull { DyeColor.byName(it, null) } ?: emptyList()
+    // return DYES[modid]?.mapNotNull { DyeColor.byName(it, null) } ?: emptyList()
 }
 
 val DyeColor.namespace: String
     get() {
-        return if (DEPOT_DYES.contains(serializedName)) "dye_depot"
-        else "minecraft"
+        return if (DEPOT_DYES.contains(serializedName)) {
+            "dye_depot"
+        } else {
+            "minecraft"
+        }
     }
 
 fun DyeColor.itemOf(type: String): Item {
@@ -60,17 +64,26 @@ fun DyeColor.blockOf(type: String): Block {
     return BuiltInRegistries.BLOCK.getOrThrow(id)
 }
 
-fun dyedBlockMap(modid: String, type: String): Map<DyeColor, NonNullSupplier<Block>> {
-    return dyesFor(modid).associateWith { NonNullSupplier.lazy { it.blockOf(type) } }
-}
+fun dyedBlockMap(
+    modid: String,
+    type: String,
+): Map<DyeColor, NonNullSupplier<Block>> =
+    dyesFor(modid).associateWith {
+        NonNullSupplier.lazy { it.blockOf(type) }
+    }
 
-fun dyedItemMap(modid: String, type: String): Map<DyeColor, NonNullSupplier<Item>> {
-    return dyesFor(modid).associateWith { NonNullSupplier.lazy { it.itemOf(type) } }
-}
+fun dyedItemMap(
+    modid: String,
+    type: String,
+): Map<DyeColor, NonNullSupplier<Item>> =
+    dyesFor(modid).associateWith {
+        NonNullSupplier.lazy { it.itemOf(type) }
+    }
 
 val DyeColor.translation
-    get() = serializedName.split("_").joinToString(" ") { part ->
-        part.replaceFirstChar { it.uppercase(Locale.ROOT) }
-    }
+    get() =
+        serializedName.split("_").joinToString(" ") { part ->
+            part.replaceFirstChar { it.uppercase(Locale.ROOT) }
+        }
 
 val DyeColor?.isVanilla get() = this == null || id < 16

@@ -24,22 +24,25 @@ import net.minecraft.world.item.Items
 import net.minecraft.world.level.ItemLike
 import net.minecraft.world.level.block.Block
 
-private fun BlockBuilder<*, *>.basicPotRecipe(material: NonNullSupplier<out ItemLike>) = recipe { context, provider ->
-    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
-        .pattern("M M")
-        .pattern("MPM")
-        .pattern(" M ")
-        .defineUnlocking('M', material.get())
-        .defineUnlocking('P', Items.FLOWER_POT)
-        .group("$BOTANY_POTS:basic_pot")
-        .save(provider)
-}
+private fun BlockBuilder<*, *>.basicPotRecipe(material: NonNullSupplier<out ItemLike>) =
+    recipe { context, provider ->
+        ShapedRecipeBuilder
+            .shaped(RecipeCategory.MISC, context.get())
+            .pattern("M M")
+            .pattern("MPM")
+            .pattern(" M ")
+            .defineUnlocking('M', material.get())
+            .defineUnlocking('P', Items.FLOWER_POT)
+            .group("$BOTANY_POTS:basic_pot")
+            .save(provider)
+    }
 
 private fun BlockBuilder<*, *>.hopperPotRecipe(
     basic: NonNullSupplier<out ItemLike>,
-    material: NonNullSupplier<out ItemLike>
+    material: NonNullSupplier<out ItemLike>,
 ) = recipe { context, provider ->
-    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+    ShapedRecipeBuilder
+        .shaped(RecipeCategory.MISC, context.get())
         .pattern("MHM")
         .pattern("MPM")
         .pattern(" M ")
@@ -49,51 +52,56 @@ private fun BlockBuilder<*, *>.hopperPotRecipe(
         .group("$BOTANY_POTS:quick_hopper_pot")
         .save(provider)
 
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, context.get())
+    ShapelessRecipeBuilder
+        .shapeless(RecipeCategory.MISC, context.get())
         .requiresUnlocking(Items.HOPPER)
         .requiresUnlocking(basic.get())
         .group("$BOTANY_POTS:hopper_pot")
         .save(provider, RegistrateRecipeProvider.getItemName(context.get()) + "_quick")
 }
 
-private fun BlockBuilder<*, *>.waxedPotRecipe(basic: NonNullSupplier<out ItemLike>) = recipe { context, provider ->
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, context.get())
-        .requiresUnlocking(Items.HONEYCOMB)
-        .requiresUnlocking(basic.get())
-        .group("$BOTANY_POTS:waxed_pot")
-        .save(provider)
-}
+private fun BlockBuilder<*, *>.waxedPotRecipe(basic: NonNullSupplier<out ItemLike>) =
+    recipe { context, provider ->
+        ShapelessRecipeBuilder
+            .shapeless(RecipeCategory.MISC, context.get())
+            .requiresUnlocking(Items.HONEYCOMB)
+            .requiresUnlocking(basic.get())
+            .group("$BOTANY_POTS:waxed_pot")
+            .save(provider)
+    }
 
-private fun BlockBuilder<*, *>.potBlockstate(type: String, template: String = "pot") =
-    blockstate { context, provider ->
-        val parent = BOTANY_POTS.createId("block/template/$template")
-        val model = provider.models().withExistingParent(context.name, parent)
+private fun BlockBuilder<*, *>.potBlockstate(
+    type: String,
+    template: String = "pot",
+) = blockstate { context, provider ->
+    val parent = BOTANY_POTS.createId("block/template/$template")
+    val model =
+        provider
+            .models()
+            .withExistingParent(context.name, parent)
             .renderType("cutout")
             .texture("material", dye.namespace.createId("block/${dye}_$type"))
             .texture("material_top", Constants.MOD_ID.createId("block/$BOTANY_POTS/${dye}_$type"))
-        provider.simpleBlock(context.get(), model)
-    }
+    provider.simpleBlock(context.get(), model)
+}
 
 object DyedBotanyPots {
-
     private val REGISTRATE = DyedRegistrate.create(BOTANY_POTS)
     private val DYES = dyesFor(BOTANY_POTS)
 
     private fun createPots(
         type: String,
-        block: BlockBuilder<*, *>.() -> Unit = {}
-    ) =
-        DYES.associateWith { dye ->
-            REGISTRATE
-                .`object`("${dye}_${type}_botany_pot")
-                .dyedBlock(dye, ::Block)
-                .optionalTag(DyedTags.Blocks.BOTANY_POTS)
-                .withItem {
-                    optionalTag(DyedTags.Items.BOTANY_POTS)
-                }
-                .apply(block)
-                .register()
-        }
+        block: BlockBuilder<*, *>.() -> Unit = {},
+    ) = DYES.associateWith { dye ->
+        REGISTRATE
+            .`object`("${dye}_${type}_botany_pot")
+            .dyedBlock(dye, ::Block)
+            .optionalTag(DyedTags.Blocks.BOTANY_POTS)
+            .withItem {
+                optionalTag(DyedTags.Items.BOTANY_POTS)
+            }.apply(block)
+            .register()
+    }
 
     private fun createAllPots(
         type: String,
@@ -102,11 +110,12 @@ object DyedBotanyPots {
     ) {
         val translationPrefix = translation?.let { " $it" } ?: ""
 
-        val basic = createPots(type) {
-            basicPotRecipe(base[dye]!!)
-            potBlockstate(type)
-            lang("${dye.translation}$translationPrefix Botany Pot")
-        }
+        val basic =
+            createPots(type) {
+                basicPotRecipe(base[dye]!!)
+                potBlockstate(type)
+                lang("${dye.translation}$translationPrefix Botany Pot")
+            }
 
         createPots("${type}_hopper") {
             hopperPotRecipe(basic[dye]!!, base[dye]!!)
@@ -130,5 +139,4 @@ object DyedBotanyPots {
     fun register() {
         REGISTRATE.register()
     }
-
 }

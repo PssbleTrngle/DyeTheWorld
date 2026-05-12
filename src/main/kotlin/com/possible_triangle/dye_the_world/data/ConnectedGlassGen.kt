@@ -36,16 +36,17 @@ private class ConnectingLoader(
     model: BlockModelBuilder,
     fileHelper: ExistingFileHelper,
 ) : CustomLoaderBuilder<BlockModelBuilder>(
-    "fusion".createId("model"),
-    model,
-    fileHelper,
-    false
-) {
+        "fusion".createId("model"),
+        model,
+        fileHelper,
+        false,
+    ) {
     private val builder = ConnectingModelData.builder()
 
-    fun with(factory: ConnectingModelDataBuilder.() -> Unit) = apply {
-        builder.factory()
-    }
+    fun with(factory: ConnectingModelDataBuilder.() -> Unit) =
+        apply {
+            builder.factory()
+        }
 
     override fun toJson(json: JsonObject): JsonObject {
         val instance = ModelInstance.of(DefaultModelTypes.CONNECTING, builder.build())
@@ -55,136 +56,148 @@ private class ConnectingLoader(
 
 private fun BlockModelProvider.connected(
     path: String,
-    factory: ConnectingModelDataBuilder.() -> Unit
-): BlockModelBuilder {
-    return getBuilder(path)
+    factory: ConnectingModelDataBuilder.() -> Unit,
+): BlockModelBuilder =
+    getBuilder(path)
         .customLoader(::ConnectingLoader)
         .with(factory)
         .end()
-}
 
-private fun Builder<*, *, *, *>.glassTexture(type: String): ResourceLocation {
-    return Constants.MOD_ID.createId("block/${CONNECTED_GLASS}/${type}/${dye}")
-}
+private fun Builder<*, *, *, *>.glassTexture(type: String): ResourceLocation =
+    Constants.MOD_ID.createId("block/${CONNECTED_GLASS}/$type/$dye")
 
-private fun Builder<*, *, *, *>.edgeTexture(type: String): ResourceLocation {
-    return dye.namespace.createId("block/${dye}_stained_glass_pane_top")
-}
+private fun Builder<*, *, *, *>.edgeTexture(type: String): ResourceLocation = dye.namespace.createId("block/${dye}_stained_glass_pane_top")
 
-fun <T : Block, P> BlockBuilder<T, P>.connectedPaneBlockState(type: String) = apply {
-    fusionModifier { context, provider ->
-        provider.modifier(Constants.MOD_ID.createId("pane_culling_fix"))
-            .paneCullingFix(true)
-            .target(context.get())
-    }
-
-    blockstate { context, provider ->
-        fun ConnectingModelDataBuilder.textures() = apply {
-            texture("pane", glassTexture(type))
-            texture("edge", edgeTexture(type))
+fun <T : Block, P> BlockBuilder<T, P>.connectedPaneBlockState(type: String) =
+    apply {
+        fusionModifier { context, provider ->
+            provider
+                .modifier(Constants.MOD_ID.createId("pane_culling_fix"))
+                .paneCullingFix(true)
+                .target(context.get())
         }
 
-        val post = provider.models().connected("${context.name}_post") {
-            parent(CONNECTED_GLASS.createId("block/template_glass_pane_post"))
-            textures()
-            defaultConnections(DefaultConnectionPredicates.isSameBlock())
-        }
+        blockstate { context, provider ->
+            fun ConnectingModelDataBuilder.textures() =
+                apply {
+                    texture("pane", glassTexture(type))
+                    texture("edge", edgeTexture(type))
+                }
 
-        val notUpOrDown = DefaultConnectionPredicates.isDirection(
-            *ConnectionDirection.entries
-                .filter { it !== ConnectionDirection.TOP && it !== ConnectionDirection.BOTTOM }
-                .toTypedArray()
-        )
+            val post =
+                provider.models().connected("${context.name}_post") {
+                    parent(CONNECTED_GLASS.createId("block/template_glass_pane_post"))
+                    textures()
+                    defaultConnections(DefaultConnectionPredicates.isSameBlock())
+                }
 
-        fun <T : Comparable<T>> matchesState(key: Property<T>, value: T) = DefaultConnectionPredicates.matchState(
-            context.get(), Pair.of(key, value)
-        )
+            val notUpOrDown =
+                DefaultConnectionPredicates.isDirection(
+                    *ConnectionDirection.entries
+                        .filter { it !== ConnectionDirection.TOP && it !== ConnectionDirection.BOTTOM }
+                        .toTypedArray(),
+                )
 
-        val sides = PROPERTY_BY_DIRECTION.filterKeys { it.axis.isHorizontal }.mapValues { (direction, property) ->
-            val parent = when (direction) {
-                Direction.SOUTH, Direction.WEST -> "template_glass_pane_side_alt"
-                else -> "template_glass_pane_side"
-            }
+            fun <T : Comparable<T>> matchesState(
+                key: Property<T>,
+                value: T,
+            ) = DefaultConnectionPredicates.matchState(
+                context.get(),
+                Pair.of(key, value),
+            )
 
-            provider.models().connected("${context.name}_side_$direction") {
-                parent(CONNECTED_GLASS.createId("block/$parent"))
-                textures()
-                defaultConnections(matchesState(property, true).or(notUpOrDown))
-            }
-        }
+            val sides =
+                PROPERTY_BY_DIRECTION.filterKeys { it.axis.isHorizontal }.mapValues { (direction, property) ->
+                    val parent =
+                        when (direction) {
+                            Direction.SOUTH, Direction.WEST -> "template_glass_pane_side_alt"
+                            else -> "template_glass_pane_side"
+                        }
 
-        val noSide = provider.models().connected("${context.name}_noside") {
-            parent(CONNECTED_GLASS.createId("block/template_glass_pane_noside"))
-            textures()
-            defaultConnections(DefaultConnectionPredicates.isSameBlock())
-        }
+                    provider.models().connected("${context.name}_side_$direction") {
+                        parent(CONNECTED_GLASS.createId("block/$parent"))
+                        textures()
+                        defaultConnections(matchesState(property, true).or(notUpOrDown))
+                    }
+                }
 
-        val noSideAlt = provider.models().connected("${context.name}_noside_alt") {
-            parent(CONNECTED_GLASS.createId("block/template_glass_pane_noside_alt"))
-            textures()
-            defaultConnections(DefaultConnectionPredicates.isSameBlock())
-        }
+            val noSide =
+                provider.models().connected("${context.name}_noside") {
+                    parent(CONNECTED_GLASS.createId("block/template_glass_pane_noside"))
+                    textures()
+                    defaultConnections(DefaultConnectionPredicates.isSameBlock())
+                }
 
-        val builder = provider.getMultipartBuilder(context.get())
+            val noSideAlt =
+                provider.models().connected("${context.name}_noside_alt") {
+                    parent(CONNECTED_GLASS.createId("block/template_glass_pane_noside_alt"))
+                    textures()
+                    defaultConnections(DefaultConnectionPredicates.isSameBlock())
+                }
 
-        builder.part()
-            .modelFile(post)
-            .addModel()
-
-        sides.forEach { (direction, model) ->
-            val property = PROPERTY_BY_DIRECTION[direction]!!
-            builder
-                .part()
-                .rotationY(if (direction.axis == Direction.Axis.X) 90 else 0)
-                .modelFile(model)
-                .addModel()
-                .condition(property, true)
+            val builder = provider.getMultipartBuilder(context.get())
 
             builder
                 .part()
-                .rotationY(
-                    when (direction) {
-                        Direction.SOUTH -> 90
-                        Direction.WEST -> 270
-                        else -> 0
-                    }
-                )
-                .modelFile(
-                    when (direction) {
-                        Direction.SOUTH, Direction.EAST -> noSideAlt
-                        else -> noSide
-                    }
-                )
+                .modelFile(post)
                 .addModel()
-                .condition(property, false)
+
+            sides.forEach { (direction, model) ->
+                val property = PROPERTY_BY_DIRECTION[direction]!!
+                builder
+                    .part()
+                    .rotationY(if (direction.axis == Direction.Axis.X) 90 else 0)
+                    .modelFile(model)
+                    .addModel()
+                    .condition(property, true)
+
+                builder
+                    .part()
+                    .rotationY(
+                        when (direction) {
+                            Direction.SOUTH -> 90
+                            Direction.WEST -> 270
+                            else -> 0
+                        },
+                    ).modelFile(
+                        when (direction) {
+                            Direction.SOUTH, Direction.EAST -> noSideAlt
+                            else -> noSide
+                        },
+                    ).addModel()
+                    .condition(property, false)
+            }
         }
     }
-}
 
-fun <T : Block, P> BlockBuilder<T, P>.connectedGlassBlockState(type: String) = apply {
-    fusionMetadata { _, provider ->
-        provider.addTextureMetadata(
-            glassTexture(type),
-            DefaultTextureTypes.CONNECTING,
-            ConnectingTextureData.builder().layout(ConnectingTextureLayout.PIECED).build(),
-        )
-    }
-
-    blockstate { context, provider ->
-        val model = provider.models().connected(context.name) {
-            parent("minecraft".createId("block/cube_all"))
-            texture("all", glassTexture(type))
+fun <T : Block, P> BlockBuilder<T, P>.connectedGlassBlockState(type: String) =
+    apply {
+        fusionMetadata { _, provider ->
+            provider.addTextureMetadata(
+                glassTexture(type),
+                DefaultTextureTypes.CONNECTING,
+                ConnectingTextureData.builder().layout(ConnectingTextureLayout.PIECED).build(),
+            )
         }
 
-        provider.simpleBlock(context.get(), model)
-    }
-}
+        blockstate { context, provider ->
+            val model =
+                provider.models().connected(context.name) {
+                    parent("minecraft".createId("block/cube_all"))
+                    texture("all", glassTexture(type))
+                }
 
-fun <T : Item, P> ItemBuilder<T, P>.connectedPaneItemModel(type: String) = model { context, provider ->
-    val parent = ExistingModelFile(CONNECTED_GLASS.createId("pane_item_template"), provider.existingFileHelper)
-    parent.assertExistence()
-    provider.getBuilder(context.name)
-        .parent(parent)
-        .texture("all", glassTexture(type))
-        .texture("edge", edgeTexture(type))
-}
+            provider.simpleBlock(context.get(), model)
+        }
+    }
+
+fun <T : Item, P> ItemBuilder<T, P>.connectedPaneItemModel(type: String) =
+    model { context, provider ->
+        val parent = ExistingModelFile(CONNECTED_GLASS.createId("pane_item_template"), provider.existingFileHelper)
+        parent.assertExistence()
+        provider
+            .getBuilder(context.name)
+            .parent(parent)
+            .texture("all", glassTexture(type))
+            .texture("edge", edgeTexture(type))
+    }

@@ -21,31 +21,38 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.HorizontalDirectionalBlock
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
-fun <T : Block, P> BlockBuilder<T, P>.petBedBlockstate() = blockstate { context, provider ->
-    val model = provider.models().withExistingParent(context.name, DOMESTICATION_INNOVATION.createId("block/pet_bed"))
-        .texture("bed", Constants.MOD_ID.createId("block/$DOMESTICATION_INNOVATION/${context.name}"))
+fun <T : Block, P> BlockBuilder<T, P>.petBedBlockstate() =
+    blockstate { context, provider ->
+        val model =
+            provider
+                .models()
+                .withExistingParent(context.name, DOMESTICATION_INNOVATION.createId("block/pet_bed"))
+                .texture("bed", Constants.MOD_ID.createId("block/$DOMESTICATION_INNOVATION/${context.name}"))
 
-    provider.createVariant(context) { state ->
-        val facing = state.getValue(HorizontalDirectionalBlock.FACING)
+        provider.createVariant(context) { state ->
+            val facing = state.getValue(HorizontalDirectionalBlock.FACING)
 
-        ConfiguredModel.builder()
-            .modelFile(model)
-            .rotationY(facing.yRot)
+            ConfiguredModel
+                .builder()
+                .modelFile(model)
+                .rotationY(facing.yRot)
+        }
     }
-}
 
-fun <T : Item, P> ItemBuilder<T, P>.petBedRecipe() = recipe { context, provider ->
-    val wool = dye.blockOf("wool")
+fun <T : Item, P> ItemBuilder<T, P>.petBedRecipe() =
+    recipe { context, provider ->
+        val wool = dye.blockOf("wool")
 
-    ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, context.get())
-        .pattern("WWW")
-        .pattern("PBP")
-        .define('W', wool)
-        .define('P', ItemTags.PLANKS)
-        .define('B', Items.BONE)
-        .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
-        .unlockedBy("has_bone", RegistrateRecipeProvider.has(Items.BONE))
-        .save(provider)
+        ShapedRecipeBuilder
+            .shaped(RecipeCategory.DECORATIONS, context.get())
+            .pattern("WWW")
+            .pattern("PBP")
+            .define('W', wool)
+            .define('P', ItemTags.PLANKS)
+            .define('B', Items.BONE)
+            .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
+            .unlockedBy("has_bone", RegistrateRecipeProvider.has(Items.BONE))
+            .save(provider)
 
-    provider.dyeingRecipe(dye, DyedTags.Items.PET_BEDS, context)
-}
+        provider.dyeingRecipe(dye, DyedTags.Items.PET_BEDS, context)
+    }

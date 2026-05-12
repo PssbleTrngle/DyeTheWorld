@@ -15,12 +15,13 @@ import net.neoforged.fml.LogicalSide
 class FusionModifierProvider(
     output: PackOutput,
     private val owner: AbstractRegistrate<*>,
-) : FusionBlockModelModifierProvider(owner.modid, output), RegistrateProvider {
-
+) : FusionBlockModelModifierProvider(owner.modid, output),
+    RegistrateProvider {
     companion object {
-        val TYPE = ProviderType.registerProvider("Fusion Modifiers") { context ->
-            FusionModifierProvider(context.output, context.parent)
-        }
+        val TYPE =
+            ProviderType.registerProvider("Fusion Modifiers") { context ->
+                FusionModifierProvider(context.output, context.parent)
+            }
     }
 
     override fun generate() {
@@ -28,7 +29,6 @@ class FusionModifierProvider(
     }
 
     override fun getSide() = LogicalSide.CLIENT
-
 }
 
 fun <T : Block, P> BlockBuilder<T, P>.fusionModifier(factory: NonNullBiConsumer<DataGenContext<Block, T>, FusionModifierProvider>) =
@@ -37,12 +37,13 @@ fun <T : Block, P> BlockBuilder<T, P>.fusionModifier(factory: NonNullBiConsumer<
 class FusionMetadataProvider(
     output: PackOutput,
     private val owner: AbstractRegistrate<*>,
-) : FusionTextureMetadataProvider(owner.modid, output), RegistrateProvider {
-
+) : FusionTextureMetadataProvider(owner.modid, output),
+    RegistrateProvider {
     companion object {
-        val TYPE = ProviderType.registerProvider("Fusion Metadata") { context ->
-            FusionMetadataProvider(context.output, context.parent)
-        }
+        val TYPE =
+            ProviderType.registerProvider("Fusion Metadata") { context ->
+                FusionMetadataProvider(context.output, context.parent)
+            }
     }
 
     override fun generate() {
@@ -50,7 +51,6 @@ class FusionMetadataProvider(
     }
 
     override fun getSide() = LogicalSide.CLIENT
-
 }
 
 fun <T : Block, P> BlockBuilder<T, P>.fusionMetadata(factory: NonNullBiConsumer<DataGenContext<Block, T>, FusionMetadataProvider>) =

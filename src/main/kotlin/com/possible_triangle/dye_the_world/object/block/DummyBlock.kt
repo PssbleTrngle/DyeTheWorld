@@ -8,9 +8,8 @@ import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.Property
 
 object DummyBlock {
-
-    fun of(vararg properties: Property<*>): NonNullFunction<Properties, Block> {
-        return NonNullFunction {
+    fun of(vararg properties: Property<*>): NonNullFunction<Properties, Block> =
+        NonNullFunction {
             object : Block(it) {
                 override fun createBlockStateDefinition(builder: StateDefinition.Builder<Block, BlockState>) {
                     super.createBlockStateDefinition(builder)
@@ -18,6 +17,4 @@ object DummyBlock {
                 }
             }
         }
-    }
-
 }

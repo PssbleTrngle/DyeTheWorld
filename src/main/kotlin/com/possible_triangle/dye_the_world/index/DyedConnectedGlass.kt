@@ -19,16 +19,16 @@ import net.minecraft.world.level.block.IronBarsBlock
 import net.neoforged.neoforge.common.Tags
 
 object DyedConnectedGlass {
-
     private val REGISTRATE = DyedRegistrate.create(CONNECTED_GLASS)
     private val DYES = dyesFor(CONNECTED_GLASS)
 
     private fun createPanes(
         type: String,
         fullBlocks: Map<DyeColor, NonNullSupplier<out Block>>,
-        block: BlockBuilder<*, *>.() -> Unit
+        block: BlockBuilder<*, *>.() -> Unit,
     ) = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${type}_glass_${dye}_pane")
+        REGISTRATE
+            .`object`("${type}_glass_${dye}_pane")
             .dyedBlock(dye) { IronBarsBlock(it) }
             .optionalTag(Tags.Blocks.GLASS_PANES)
             .connectedPaneBlockState(type)
@@ -37,64 +37,69 @@ object DyedConnectedGlass {
                 optionalTag(Tags.Items.GLASS_PANES)
                 connectedPaneItemModel(type)
                 recipe { context, provider ->
-                    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+                    ShapedRecipeBuilder
+                        .shaped(RecipeCategory.MISC, context.get())
                         .pattern("###")
                         .pattern("###")
                         .defineUnlocking('#', fullBlocks[dye]!!.get())
                         .save(provider)
                 }
-            }
-            .apply(block)
+            }.apply(block)
             .register()
     }
 
-
     private fun createFull(
         type: String,
-        block: BlockBuilder<*, *>.() -> Unit
+        block: BlockBuilder<*, *>.() -> Unit,
     ) = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${type}_glass_$dye")
+        REGISTRATE
+            .`object`("${type}_glass_$dye")
             .dyedBlock(dye, ::Block)
             .optionalTag(Tags.Blocks.GLASS_BLOCKS)
             .connectedGlassBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }
             .withItem {
                 optionalTag(Tags.Items.GLASS_BLOCKS)
-            }
-            .apply(block)
+            }.apply(block)
             .register()
     }
 
-    val BORDERLESS = createFull("borderless") {
-        lang("Connecting ${dye.translation} Stained Glass")
-    }
+    val BORDERLESS =
+        createFull("borderless") {
+            lang("Connecting ${dye.translation} Stained Glass")
+        }
 
-    val BORDERLESS_PANES = createPanes("borderless", BORDERLESS) {
-        lang("Connecting ${dye.translation} Stained Glass Pane")
-    }
+    val BORDERLESS_PANES =
+        createPanes("borderless", BORDERLESS) {
+            lang("Connecting ${dye.translation} Stained Glass Pane")
+        }
 
-    val SCRATCHED = createFull("scratched") {
-        lang("Scratched ${dye.translation} Stained Glass")
-    }
+    val SCRATCHED =
+        createFull("scratched") {
+            lang("Scratched ${dye.translation} Stained Glass")
+        }
 
-    val SCRATCHED_PANES = createPanes("scratched", SCRATCHED) {
-        lang("Scratched ${dye.translation} Stained Glass Pane")
-    }
+    val SCRATCHED_PANES =
+        createPanes("scratched", SCRATCHED) {
+            lang("Scratched ${dye.translation} Stained Glass Pane")
+        }
 
-    val CLEAR = createFull("clear") {
-        lang("Clear ${dye.translation} Stained Glass")
-    }
+    val CLEAR =
+        createFull("clear") {
+            lang("Clear ${dye.translation} Stained Glass")
+        }
 
-    val CLEAR_PANES = createPanes("clear", CLEAR) {
-        lang("Clear ${dye.translation} Stained Glass Pane")
-    }
+    val CLEAR_PANES =
+        createPanes("clear", CLEAR) {
+            lang("Clear ${dye.translation} Stained Glass Pane")
+        }
 
-    val TINTED = createFull("tinted_borderless") {
-        lang("Connecting Tinted ${dye.translation} Stained Glass")
-    }
+    val TINTED =
+        createFull("tinted_borderless") {
+            lang("Connecting Tinted ${dye.translation} Stained Glass")
+        }
 
     fun register() {
         REGISTRATE.register()
     }
-
 }

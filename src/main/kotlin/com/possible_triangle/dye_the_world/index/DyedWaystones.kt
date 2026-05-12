@@ -33,144 +33,153 @@ import net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction
 import net.minecraft.world.level.storage.loot.predicates.MatchTool
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
-private fun <T : Block, P> BlockBuilder<T, P>.waystoneBlockstate(type: String) = blockstate { context, provider ->
-    val upper = provider.models().getExistingFile(WAYSTONES.createId("block/${type}_top"))
-    val bottom = provider.models().getExistingFile(WAYSTONES.createId("block/${type}_bottom"))
+private fun <T : Block, P> BlockBuilder<T, P>.waystoneBlockstate(type: String) =
+    blockstate { context, provider ->
+        val upper = provider.models().getExistingFile(WAYSTONES.createId("block/${type}_top"))
+        val bottom = provider.models().getExistingFile(WAYSTONES.createId("block/${type}_bottom"))
 
-    provider.createVariant(context) { state ->
-        val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
-        val half = state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF)
+        provider.createVariant(context) { state ->
+            val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
+            val half = state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF)
 
-        val model = if (half == DoubleBlockHalf.UPPER) upper else bottom
+            val model = if (half == DoubleBlockHalf.UPPER) upper else bottom
 
-        ConfiguredModel.builder()
-            .modelFile(model)
-            .rotationY(facing.yRot)
+            ConfiguredModel
+                .builder()
+                .modelFile(model)
+                .rotationY(facing.yRot)
+        }
     }
-}
 
-private fun <T : Block, P> BlockBuilder<T, P>.waystoneLoot() = loot { tables, block ->
-    val enchantments = tables.registries.lookupOrThrow(Registries.ENCHANTMENT)
+private fun <T : Block, P> BlockBuilder<T, P>.waystoneLoot() =
+    loot { tables, block ->
+        val enchantments = tables.registries.lookupOrThrow(Registries.ENCHANTMENT)
 
-    val hasSilktouch = MatchTool.toolMatches(
-        ItemPredicate.Builder.item().hasEnchantment(
-            EnchantmentPredicate(
-                enchantments.getOrThrow(Enchantments.SILK_TOUCH),
-                MinMaxBounds.Ints.atLeast(1)
+        val hasSilktouch =
+            MatchTool.toolMatches(
+                ItemPredicate.Builder.item().hasEnchantment(
+                    EnchantmentPredicate(
+                        enchantments.getOrThrow(Enchantments.SILK_TOUCH),
+                        MinMaxBounds.Ints.atLeast(1),
+                    ),
+                ),
             )
-        )
-    )
 
-    val pool = LootPool.lootPool()
-        .add(LootItem.lootTableItem(block))
-        .`when`(matchesState(block) {
-            hasProperty(SharestoneBlock.HALF, DoubleBlockHalf.LOWER)
-        })
-        .apply(
-            CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY)
-                .`when`(hasSilktouch)
-        )
+        val pool =
+            LootPool
+                .lootPool()
+                .add(LootItem.lootTableItem(block))
+                .`when`(
+                    matchesState(block) {
+                        hasProperty(SharestoneBlock.HALF, DoubleBlockHalf.LOWER)
+                    },
+                ).apply(
+                    CopyComponentsFunction
+                        .copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY)
+                        .`when`(hasSilktouch),
+                )
 
-    tables.add(
-        block, LootTable.lootTable().withPool(
-            tables.applyExplosionDecay(block, pool)
+        tables.add(
+            block,
+            LootTable.lootTable().withPool(
+                tables.applyExplosionDecay(block, pool),
+            ),
         )
-    )
-}
+    }
 
 object DyedWaystones {
-
     private val REGISTRATE = DyedRegistrate.create(WAYSTONES)
     private val DYES = dyesFor(WAYSTONES)
 
-    val PORTSTONES = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_portstone")
-            .dyedBlock(dye) { PortstoneBlock(dye, it) }
-            .lang("${dye.translation} Portstone")
-            .germanLang("${dye.germanTranslation(Genus.M)} Portstein")
-            .optionalTag(ModBlockTags.PORTSTONES)
-            .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
-            .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .blockstate { context, provider ->
-                val upper = provider.models().getExistingFile(WAYSTONES.createId("block/portstone_top"))
-                val bottom = provider.models().getExistingFile(WAYSTONES.createId("block/portstone_bottom"))
+    val PORTSTONES =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_portstone")
+                .dyedBlock(dye) { PortstoneBlock(dye, it) }
+                .lang("${dye.translation} Portstone")
+                .germanLang("${dye.germanTranslation(Genus.M)} Portstein")
+                .optionalTag(ModBlockTags.PORTSTONES)
+                .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
+                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .blockstate { context, provider ->
+                    val upper = provider.models().getExistingFile(WAYSTONES.createId("block/portstone_top"))
+                    val bottom = provider.models().getExistingFile(WAYSTONES.createId("block/portstone_bottom"))
 
-                provider.createVariant(context) { state ->
-                    val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
-                    val half = state.getValue(PortstoneBlock.HALF)
+                    provider.createVariant(context) { state ->
+                        val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
+                        val half = state.getValue(PortstoneBlock.HALF)
 
-                    val model = if (half == DoubleBlockHalf.UPPER) upper else bottom
+                        val model = if (half == DoubleBlockHalf.UPPER) upper else bottom
 
-                    ConfiguredModel.builder()
-                        .modelFile(model)
-                        .rotationY(facing.yRot)
-                }
-            }
-            .waystoneBlockstate("portstone")
-            .waystoneLoot()
-            .withItem {
-                recipe { c, p ->
-                    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, c.get())
-                        .pattern("DSD")
-                        .pattern("SWS")
-                        .pattern("BBB")
-                        .define('D', dye.tag)
-                        .define('S', Blocks.STONE_BRICKS)
-                        .define('B', Blocks.POLISHED_ANDESITE)
-                        .defineUnlocking('W', ModItems.warpStone)
-                        .save(p)
-                }
-                model { context, provider ->
-                    provider.withExistingParent(context.name, WAYSTONES.createId("item/portstone"))
-                }
-            }
-            .register()
-    }
+                        ConfiguredModel
+                            .builder()
+                            .modelFile(model)
+                            .rotationY(facing.yRot)
+                    }
+                }.waystoneBlockstate("portstone")
+                .waystoneLoot()
+                .withItem {
+                    recipe { c, p ->
+                        ShapedRecipeBuilder
+                            .shaped(RecipeCategory.MISC, c.get())
+                            .pattern("DSD")
+                            .pattern("SWS")
+                            .pattern("BBB")
+                            .define('D', dye.tag)
+                            .define('S', Blocks.STONE_BRICKS)
+                            .define('B', Blocks.POLISHED_ANDESITE)
+                            .defineUnlocking('W', ModItems.warpStone)
+                            .save(p)
+                    }
+                    model { context, provider ->
+                        provider.withExistingParent(context.name, WAYSTONES.createId("item/portstone"))
+                    }
+                }.register()
+        }
 
-    val SHARESTONES = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_sharestone")
-            .dyedBlock(dye) { SharestoneBlock(dye, it) }
-            .lang("${dye.translation} Sharestone")
-            .germanLang("${dye.germanTranslation(Genus.M)} Teilstein")
-            .addMiscData(ProviderType.LANG) {
-                it.add(
-                    "tooltip.$WAYSTONES.${dye}_sharestone",
-                    "Teleport to any other ${dye.translation} Sharestone"
-                )
-            }
-            .addMiscData(DE_LANG) {
-                it.add(
-                    "tooltip.$WAYSTONES.${dye}_sharestone",
-                    "Teleportiere zu jedem anderen ${dye.germanTranslation(Genus.M)} Teilstein"
-                )
-            }
-            .optionalTag(ModBlockTags.SHARESTONES)
-            .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
-            .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .waystoneLoot()
-            .waystoneBlockstate("sharestone")
-            .withItem {
-                optionalTag(ModItemTags.SHARESTONES)
-                recipe { c, p ->
-                    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, c.get())
-                        .pattern("SSS")
-                        .pattern("DWD")
-                        .pattern("OOO")
-                        .define('D', dye.tag)
-                        .define('O', Blocks.OBSIDIAN)
-                        .define('S', Blocks.STONE_BRICKS)
-                        .defineUnlocking('W', ModItems.warpStone)
-                        .save(p)
-                }
-                model { context, provider ->
-                    provider.withExistingParent(context.name, WAYSTONES.createId("item/sharestone"))
-                }
-            }
-            .register()
-    }
+    val SHARESTONES =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_sharestone")
+                .dyedBlock(dye) { SharestoneBlock(dye, it) }
+                .lang("${dye.translation} Sharestone")
+                .germanLang("${dye.germanTranslation(Genus.M)} Teilstein")
+                .addMiscData(ProviderType.LANG) {
+                    it.add(
+                        "tooltip.$WAYSTONES.${dye}_sharestone",
+                        "Teleport to any other ${dye.translation} Sharestone",
+                    )
+                }.addMiscData(DE_LANG) {
+                    it.add(
+                        "tooltip.$WAYSTONES.${dye}_sharestone",
+                        "Teleportiere zu jedem anderen ${dye.germanTranslation(Genus.M)} Teilstein",
+                    )
+                }.optionalTag(ModBlockTags.SHARESTONES)
+                .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
+                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .waystoneLoot()
+                .waystoneBlockstate("sharestone")
+                .withItem {
+                    optionalTag(ModItemTags.SHARESTONES)
+                    recipe { c, p ->
+                        ShapedRecipeBuilder
+                            .shaped(RecipeCategory.MISC, c.get())
+                            .pattern("SSS")
+                            .pattern("DWD")
+                            .pattern("OOO")
+                            .define('D', dye.tag)
+                            .define('O', Blocks.OBSIDIAN)
+                            .define('S', Blocks.STONE_BRICKS)
+                            .defineUnlocking('W', ModItems.warpStone)
+                            .save(p)
+                    }
+                    model { context, provider ->
+                        provider.withExistingParent(context.name, WAYSTONES.createId("item/sharestone"))
+                    }
+                }.register()
+        }
 
     fun register() {
         REGISTRATE.register()
     }
-
 }

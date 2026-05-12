@@ -5,13 +5,12 @@ import net.minecraft.advancements.critereon.ItemEnchantmentsPredicate
 import net.minecraft.advancements.critereon.ItemPredicate
 import net.minecraft.advancements.critereon.ItemSubPredicates
 
-fun ItemPredicate.Builder.hasEnchantment(predicate: EnchantmentPredicate): ItemPredicate.Builder {
-    return withSubPredicate(
+fun ItemPredicate.Builder.hasEnchantment(predicate: EnchantmentPredicate): ItemPredicate.Builder =
+    withSubPredicate(
         ItemSubPredicates.ENCHANTMENTS,
         ItemEnchantmentsPredicate.enchantments(
             listOf(
-                predicate
-            )
-        )
+                predicate,
+            ),
+        ),
     )
-}

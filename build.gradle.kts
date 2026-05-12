@@ -91,9 +91,11 @@ dependencies {
     modApi(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
 
-    modImplementation(variantOf(libs.create) {
-        classifier("slim")
-    }) {
+    modImplementation(
+        variantOf(libs.create) {
+            classifier("slim")
+        },
+    ) {
         isTransitive = false
     }
     modImplementation(libs.ponder)
@@ -123,7 +125,7 @@ dependencies {
     modImplementation(pack.modrinth.snowy.spirit)
     modImplementation(pack.modrinth.fusion.connected.textures)
     modImplementation(pack.modrinth.vanillabackport)
-    //modRuntimeOnly(pack.modrinth.immersiveengineering)
+    // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
     modRuntimeOnly(pack.modrinth.jade)
@@ -211,11 +213,12 @@ enableSonarQube()
 enableSpotless()
 
 env["MODRINTH_HOME"]?.let { home ->
-    val task = tasks.register<Copy>("copyToLocalPack") {
-        dependsOn(tasks.build)
-        from(tasks.jar)
-        destinationDir = file(home).resolve("profiles/dyes/mods")
-    }
+    val task =
+        tasks.register<Copy>("copyToLocalPack") {
+            dependsOn(tasks.build)
+            from(tasks.jar)
+            destinationDir = file(home).resolve("profiles/dyes/mods")
+        }
 
     tasks.publish {
         finalizedBy(task)

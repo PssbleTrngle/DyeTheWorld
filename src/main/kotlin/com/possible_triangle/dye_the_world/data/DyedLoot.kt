@@ -33,29 +33,31 @@ fun AbstractRegistrate<*>.generateGlassShardLoot() {
                     val enchantments = tables.provider.lookupOrThrow(Registries.ENCHANTMENT)
                     val stainedGlass = dye.blockOf("stained_glass")
 
-                    val entry = AlternativesEntry.alternatives(
-                        LootItem.lootTableItem(stainedGlass).`when`(
-                            MatchTool.toolMatches(
-                                ItemPredicate.Builder.item()
-                                    .hasEnchantment(
-                                        EnchantmentPredicate(
-                                            enchantments.getOrThrow(Enchantments.SILK_TOUCH),
-                                            MinMaxBounds.Ints.atLeast(1)
-                                        )
-                                    )
-                            )
-                        ),
-                        LootItem.lootTableItem(shard.get())
-                            .apply(SetItemCountFunction.setCount(UniformGenerator.between(2F, 4F)))
-                            .apply(
-                                ApplyBonusCount.addUniformBonusCount(
-                                    enchantments.getOrThrow(Enchantments.FORTUNE),
-                                    1
-                                )
-                            )
-                            .apply(LimitCount.limitCount(IntRange.range(1, 4)))
-                            .apply(ApplyExplosionDecay.explosionDecay())
-                    )
+                    val entry =
+                        AlternativesEntry.alternatives(
+                            LootItem.lootTableItem(stainedGlass).`when`(
+                                MatchTool.toolMatches(
+                                    ItemPredicate.Builder
+                                        .item()
+                                        .hasEnchantment(
+                                            EnchantmentPredicate(
+                                                enchantments.getOrThrow(Enchantments.SILK_TOUCH),
+                                                MinMaxBounds.Ints.atLeast(1),
+                                            ),
+                                        ),
+                                ),
+                            ),
+                            LootItem
+                                .lootTableItem(shard.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2F, 4F)))
+                                .apply(
+                                    ApplyBonusCount.addUniformBonusCount(
+                                        enchantments.getOrThrow(Enchantments.FORTUNE),
+                                        1,
+                                    ),
+                                ).apply(LimitCount.limitCount(IntRange.range(1, 4)))
+                                .apply(ApplyExplosionDecay.explosionDecay()),
+                        )
 
                     val table = LootTable.lootTable().withPool(LootPool.lootPool().add(entry))
 

@@ -16,18 +16,20 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.world.item.Item
 
-fun <I : Item, P> ItemBuilder<I, P>.shinglesRecipes() = recipe { context, provider ->
-    provider.withConditions(DyedQuark.flagCondition("shingles")) {
-        val terracotta = dye.blockOf("terracotta")
-        val shingles = BuiltInRegistries.BLOCK.getOrThrow(QUARK.createId("shingles"))
+fun <I : Item, P> ItemBuilder<I, P>.shinglesRecipes() =
+    recipe { context, provider ->
+        provider.withConditions(DyedQuark.flagCondition("shingles")) {
+            val terracotta = dye.blockOf("terracotta")
+            val shingles = BuiltInRegistries.BLOCK.getOrThrow(QUARK.createId("shingles"))
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 2)
-            .pattern("##")
-            .define('#', terracotta)
-            .unlockedBy("has_terracotta", RegistrateRecipeProvider.has(terracotta))
-            .save(provider)
+            ShapedRecipeBuilder
+                .shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 2)
+                .pattern("##")
+                .define('#', terracotta)
+                .unlockedBy("has_terracotta", RegistrateRecipeProvider.has(terracotta))
+                .save(provider)
 
-        provider.shapedDyeingRecipe(dye, shingles, context)
-        provider.stonecutting(DataIngredient.items(terracotta), RecipeCategory.BUILDING_BLOCKS, context)
+            provider.shapedDyeingRecipe(dye, shingles, context)
+            provider.stonecutting(DataIngredient.items(terracotta), RecipeCategory.BUILDING_BLOCKS, context)
+        }
     }
-}

@@ -18,60 +18,69 @@ import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Item
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
-fun <P> BlockBuilder<DummyChairBlock, P>.chairBlockstate() = blockstate { context, provider ->
-    provider.createVariant(context) { state ->
-        val armrests = state.getValue(DummyChairBlock.ARMRESTS)
-        val facing = state.getValue(DummyChairBlock.FACING)
-        val croppedBack = state.getValue(DummyChairBlock.CROPPED_BACK)
+fun <P> BlockBuilder<DummyChairBlock, P>.chairBlockstate() =
+    blockstate { context, provider ->
+        provider.createVariant(context) { state ->
+            val armrests = state.getValue(DummyChairBlock.ARMRESTS)
+            val facing = state.getValue(DummyChairBlock.FACING)
+            val croppedBack = state.getValue(DummyChairBlock.CROPPED_BACK)
 
-        val type = armrests.serializedName + if (croppedBack) "_cropped" else ""
-        val parent = CREATE_INTERIORS.createId("block/${context.name.substring(dye.serializedName.length + 1)}/$type")
+            val type = armrests.serializedName + if (croppedBack) "_cropped" else ""
+            val parent = CREATE_INTERIORS.createId("block/${context.name.substring(dye.serializedName.length + 1)}/$type")
 
-        val model = provider.models()
-            .withExistingParent("${context.name}_${type}", parent)
-            .texture("side", Constants.MOD_ID.createId("block/$CREATE/seat/side_$dye"))
-            .texture("side_front", Constants.MOD_ID.createId("block/$CREATE/seat/side_$dye"))
-            .texture("side_top", Constants.MOD_ID.createId("block/$CREATE_INTERIORS/chair/side_top_$dye"))
-            .texture("top", Constants.MOD_ID.createId("block/$CREATE/seat/top_$dye"))
+            val model =
+                provider
+                    .models()
+                    .withExistingParent("${context.name}_$type", parent)
+                    .texture("side", Constants.MOD_ID.createId("block/$CREATE/seat/side_$dye"))
+                    .texture("side_front", Constants.MOD_ID.createId("block/$CREATE/seat/side_$dye"))
+                    .texture("side_top", Constants.MOD_ID.createId("block/$CREATE_INTERIORS/chair/side_top_$dye"))
+                    .texture("top", Constants.MOD_ID.createId("block/$CREATE/seat/top_$dye"))
 
-        ConfiguredModel.builder()
-            .modelFile(model)
-            .rotationY(facing.yRot)
+            ConfiguredModel
+                .builder()
+                .modelFile(model)
+                .rotationY(facing.yRot)
+        }
     }
-}
 
-fun <T : Item, P> ItemBuilder<T, P>.chairRecipe() = recipe { context, provider ->
-    val floor = context.name.endsWith("_floor_chair")
-    val seat = BuiltInRegistries.BLOCK.getOrThrow(CREATE.createId("${dye}_seat"))
-    val secondaryIngredient = if (floor) ItemTags.WOODEN_SLABS else ItemTags.PLANKS
+fun <T : Item, P> ItemBuilder<T, P>.chairRecipe() =
+    recipe { context, provider ->
+        val floor = context.name.endsWith("_floor_chair")
+        val seat = BuiltInRegistries.BLOCK.getOrThrow(CREATE.createId("${dye}_seat"))
+        val secondaryIngredient = if (floor) ItemTags.WOODEN_SLABS else ItemTags.PLANKS
 
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
-        .requires(secondaryIngredient)
-        .requires(seat)
-        .unlockedBy(dye.blockOf("wool"))
-        .save(provider, provider.safeId(context.get()).withSuffix("_from_seat"))
-
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
-        .requires(ItemTags.WOODEN_SLABS)
-        .requires(secondaryIngredient)
-        .requiresUnlocking(dye.blockOf("wool"))
-        .save(provider)
-
-    if (floor) {
-        provider.dyeingRecipe(dye, DyedTags.Items.FLOOR_CHAIRS, context)
-    } else {
-        val floor = BuiltInRegistries.BLOCK.getOrThrow(context.id.withPath { it.replace("_chair", "_floor_chair") })
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
-            .requires(ItemTags.WOODEN_SLABS)
-            .requires(floor)
+        ShapelessRecipeBuilder
+            .shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
+            .requires(secondaryIngredient)
+            .requires(seat)
             .unlockedBy(dye.blockOf("wool"))
-            .save(provider, provider.safeId(context.get()).withSuffix("_from_floor_chair"))
+            .save(provider, provider.safeId(context.get()).withSuffix("_from_seat"))
 
-        provider.dyeingRecipe(dye, DyedTags.Items.CHAIRS, context)
+        ShapelessRecipeBuilder
+            .shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
+            .requires(ItemTags.WOODEN_SLABS)
+            .requires(secondaryIngredient)
+            .requiresUnlocking(dye.blockOf("wool"))
+            .save(provider)
+
+        if (floor) {
+            provider.dyeingRecipe(dye, DyedTags.Items.FLOOR_CHAIRS, context)
+        } else {
+            val floor = BuiltInRegistries.BLOCK.getOrThrow(context.id.withPath { it.replace("_chair", "_floor_chair") })
+
+            ShapelessRecipeBuilder
+                .shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
+                .requires(ItemTags.WOODEN_SLABS)
+                .requires(floor)
+                .unlockedBy(dye.blockOf("wool"))
+                .save(provider, provider.safeId(context.get()).withSuffix("_from_floor_chair"))
+
+            provider.dyeingRecipe(dye, DyedTags.Items.CHAIRS, context)
+        }
     }
-}
 
-fun <T : Item, P> ItemBuilder<T, P>.chairItemModel() = model { context, provider ->
-    provider.withExistingParent(context.name, CREATE_INTERIORS.createId("block/${context.name}_both"))
-}
+fun <T : Item, P> ItemBuilder<T, P>.chairItemModel() =
+    model { context, provider ->
+        provider.withExistingParent(context.name, CREATE_INTERIORS.createId("block/${context.name}_both"))
+    }

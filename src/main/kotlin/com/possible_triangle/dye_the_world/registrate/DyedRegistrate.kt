@@ -13,12 +13,11 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockBehaviour
-import net.neoforged.bus.api.IEventBus
 import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 
-class DyedRegistrate private constructor(modid: String) :
-    AbstractRegistrate<DyedRegistrate>(modid) {
-
+class DyedRegistrate private constructor(
+    modid: String,
+) : AbstractRegistrate<DyedRegistrate>(modid) {
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 
@@ -34,13 +33,12 @@ class DyedRegistrate private constructor(modid: String) :
     }
 
     @Suppress("UNCHECKED_CAST")
-    private fun <T : Any> TagKey<T>.provider(): ProviderType<out RegistrateTagsProvider<T>> {
-        return when (registry) {
+    private fun <T : Any> TagKey<T>.provider(): ProviderType<out RegistrateTagsProvider<T>> =
+        when (registry) {
             Registries.BLOCK -> ProviderType.BLOCK_TAGS
             Registries.ITEM -> ProviderType.ITEM_TAGS
             else -> throw IllegalArgumentException("no tag provider known for registry ${registry.location()}")
         } as ProviderType<out RegistrateTagsProvider<T>>
-    }
 
     fun <T : Any> TagKey<T>.addOptional(id: ResourceLocation) {
         addDataGenerator(provider()) {
@@ -56,13 +54,13 @@ class DyedRegistrate private constructor(modid: String) :
 
     fun <T : Block> dyedBlock(
         color: DyeColor,
-        factory: NonNullFunction<BlockBehaviour.Properties, T>
+        factory: NonNullFunction<BlockBehaviour.Properties, T>,
     ) = dyedBlock(color, modid, factory)
 
     fun <T : Block> dyedBlock(
         color: DyeColor,
         mod: String,
-        factory: NonNullFunction<BlockBehaviour.Properties, T>
+        factory: NonNullFunction<BlockBehaviour.Properties, T>,
     ): BlockBuilder<T, DyedRegistrate> {
         val name = currentName()
         return entry(name) { callback ->
@@ -87,7 +85,7 @@ class DyedRegistrate private constructor(modid: String) :
     fun <T : Item> dyedItem(
         color: DyeColor,
         mod: String,
-        factory: NonNullFunction<Item.Properties, T>
+        factory: NonNullFunction<Item.Properties, T>,
     ): ItemBuilder<T, DyedRegistrate> {
         val name = currentName()
         return entry(name) { callback ->
@@ -109,7 +107,6 @@ class DyedRegistrate private constructor(modid: String) :
 
     fun <T : Item> dyedItem(
         color: DyeColor,
-        factory: NonNullFunction<Item.Properties, T>
+        factory: NonNullFunction<Item.Properties, T>,
     ) = dyedItem(color, modid, factory)
-
 }

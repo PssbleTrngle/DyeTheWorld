@@ -16,67 +16,68 @@ import net.minecraft.tags.ItemTags
 import net.minecraft.world.level.block.Block
 
 object DyedCreateInterior {
-
     private val DYES = dyesFor(CREATE_INTERIORS)
 
     private val REGISTRATE = DyedRegistrate.create(CREATE_INTERIORS)
 
-    val CHAIRS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_chair")
-            .dyedBlock(dye, ::DummyChairBlock)
-            .lang("${dye.translation} Chair")
-            .germanLang("${dye.germanTranslation(Genus.M)} Stuhl")
-            .optionalTag(DyedTags.Blocks.CHAIRS)
-            .optionalTag(BlockTags.MINEABLE_WITH_AXE)
-            .chairBlockstate()
-            .withItem {
-                optionalTag(DyedTags.Items.CHAIRS)
-                chairItemModel()
-                chairRecipe()
-            }
-            .register()
-    }
+    val CHAIRS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_chair")
+                .dyedBlock(dye, ::DummyChairBlock)
+                .lang("${dye.translation} Chair")
+                .germanLang("${dye.germanTranslation(Genus.M)} Stuhl")
+                .optionalTag(DyedTags.Blocks.CHAIRS)
+                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .chairBlockstate()
+                .withItem {
+                    optionalTag(DyedTags.Items.CHAIRS)
+                    chairItemModel()
+                    chairRecipe()
+                }.register()
+        }
 
-    val FLOOR_CHAIRS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_floor_chair")
-            .dyedBlock(dye, ::DummyChairBlock)
-            .lang("${dye.translation} Floor Chair")
-            .optionalTag(DyedTags.Blocks.FLOOR_CHAIRS)
-            .optionalTag(BlockTags.MINEABLE_WITH_AXE)
-            .chairBlockstate()
-            .withItem {
-                optionalTag(DyedTags.Items.FLOOR_CHAIRS)
-                chairItemModel()
-                chairRecipe()
-            }
-            .register()
-    }
+    val FLOOR_CHAIRS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_floor_chair")
+                .dyedBlock(dye, ::DummyChairBlock)
+                .lang("${dye.translation} Floor Chair")
+                .optionalTag(DyedTags.Blocks.FLOOR_CHAIRS)
+                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .chairBlockstate()
+                .withItem {
+                    optionalTag(DyedTags.Items.FLOOR_CHAIRS)
+                    chairItemModel()
+                    chairRecipe()
+                }.register()
+        }
 
-    val CUSHIONS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_cushion")
-            .dyedBlock(dye, ::Block)
-            .lang("${dye.translation} Cushion")
-            .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
-            .optionalTag(BlockTags.WOOL)
-            .optionalTag(BlockTags.MINEABLE_WITH_AXE)
-            .optionalTag(DyedTags.Blocks.MINEABLE_KNIFE)
-            .blockstate { c, p ->
-                val texture = Constants.MOD_ID.createId("block/$CREATE/seat/top_$dye")
-                p.simpleBlock(c.get(), p.models().cubeAll(c.name, texture))
-            }
-            .withItem {
-                recipe { c, p ->
-                    ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, c.get(), 2)
-                        .requiresUnlocking(dye.blockOf("wool"))
-                        .requires(ItemTags.PLANKS)
-                        .save(p)
-                }
-            }
-            .register()
-    }
+    val CUSHIONS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_cushion")
+                .dyedBlock(dye, ::Block)
+                .lang("${dye.translation} Cushion")
+                .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
+                .optionalTag(BlockTags.WOOL)
+                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .optionalTag(DyedTags.Blocks.MINEABLE_KNIFE)
+                .blockstate { c, p ->
+                    val texture = Constants.MOD_ID.createId("block/$CREATE/seat/top_$dye")
+                    p.simpleBlock(c.get(), p.models().cubeAll(c.name, texture))
+                }.withItem {
+                    recipe { c, p ->
+                        ShapelessRecipeBuilder
+                            .shapeless(RecipeCategory.BUILDING_BLOCKS, c.get(), 2)
+                            .requiresUnlocking(dye.blockOf("wool"))
+                            .requires(ItemTags.PLANKS)
+                            .save(p)
+                    }
+                }.register()
+        }
 
     fun register() {
         REGISTRATE.register()
     }
-
 }

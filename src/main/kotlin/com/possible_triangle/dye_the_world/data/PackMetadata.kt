@@ -14,10 +14,11 @@ fun DyedRegistrate.generatePackMetadata() {
         provider.add {
             PackMetadataGenerator(it.output)
                 .add(
-                    PackMetadataSection.TYPE, PackMetadataSection(
+                    PackMetadataSection.TYPE,
+                    PackMetadataSection(
                         literal("${Constants.MOD_ID} resources"),
-                        DetectedVersion.BUILT_IN.getPackVersion(PackType.CLIENT_RESOURCES)
-                    )
+                        DetectedVersion.BUILT_IN.getPackVersion(PackType.CLIENT_RESOURCES),
+                    ),
                 )
         }
     }
