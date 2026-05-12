@@ -1,13 +1,13 @@
 name = "Platform"
-filename = "Platform-forge-1.20.1-1.3.2.jar"
+filename = "Platform-forge-1.20.1-1.3.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/i6fiqm5y/versions/gOYE22Qa/Platform-forge-1.20.1-1.3.2.jar"
+url = "https://cdn.modrinth.com/data/i6fiqm5y/versions/UCHF4Kb8/Platform-forge-1.20.1-1.3.3.jar"
 hash-format = "sha512"
-hash = "f0eea75f411fc1850645b6bdb7a15255cc1dcfe012d8007102983811028634468ebe54f8d6f09d46ae80a52b1af617ea1530a241d244eb721754e69c985f2393"
+hash = "aa7c52a163adad4ca86e02fdd4531b8416d09bba871e5400644e2e03e9ef73f0991352fa0b5bfca2b77b9c957cce644eb7432dba0f0c1ce905d52a26dc13854a"
 
 [update]
 [update.modrinth]
 mod-id = "i6fiqm5y"
-version = "gOYE22Qa"
+version = "UCHF4Kb8"

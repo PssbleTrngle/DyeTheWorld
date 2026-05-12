@@ -32,7 +32,7 @@ metafile = true
 
 [[files]]
 file = "mods/blueprint.pw.toml"
-hash = "90fc66d49d29c1b1a5b14c5d571d628c6853f7f0519b04e74e14399c75cd08c6"
+hash = "8497840a336f7d98a140959ab6c5102ab377c19e25b7f467ef5658aea1d680db"
 metafile = true
 
 [[files]]
@@ -97,7 +97,7 @@ metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "51448f7b51c024ad0664dd0eb1b82d49eb809614254096eb4ebd79556865f740"
+hash = "d0073f09430bce838a76b61349eef53640fe8f8f2ce89cacd4e5cf55b96caf6c"
 metafile = true
 
 [[files]]
@@ -122,7 +122,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "e62ad317cabfbe4a6e62a77f391ae95c6e955df496cef5278fb4ed7760908ab3"
+hash = "69e705c40401aeeda2983a47be0b08ab8fbbe559ec03c17d7a565bae8ac526bb"
 metafile = true
 
 [[files]]
@@ -137,12 +137,12 @@ metafile = true
 
 [[files]]
 file = "mods/platform.pw.toml"
-hash = "01f2f4ee6833d98d82dca9e7505bda3ad0e087af6132b47130c1a09801c2d484"
+hash = "2f061cf021ff724aaeadd4fcf4db7d32acba6729324bd5525dcae4693db33cf8"
 metafile = true
 
 [[files]]
 file = "mods/polytone.pw.toml"
-hash = "865a179ced64ffe2530724930d5f1a1b56a86a5840b1f12697d5196439b6368a"
+hash = "3056ab603e010010f9d1517519bdf64cfa003808980eead662d714ea39e4aba8"
 metafile = true
 
 [[files]]
@@ -182,7 +182,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanillabackport.pw.toml"
-hash = "6468312e608cf7eaec4f7a82d41463f792cfad1cacb04f9cdb077aedf19b7281"
+hash = "b377ebf0a854ac56c7d9bd3d4aaeb543d624ff9310ed86e6373045fecc3215dc"
 metafile = true
 
 [[files]]
