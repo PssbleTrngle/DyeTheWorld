@@ -1,11 +1,11 @@
 package com.possible_triangle.dye_the_world.data
 
 import com.possible_triangle.dye_the_world.Constants
-import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.getOrThrow
 import com.possible_triangle.dye_the_world.index.DyedQuark
 import com.possible_triangle.dye_the_world.index.DyedQuark.GLASS_SHARDS
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.tterrag.registrate.AbstractRegistrate
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.BuilderCallback
@@ -29,41 +29,45 @@ import net.minecraft.world.level.storage.loot.predicates.MatchTool
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator
 import org.violetmoon.zeta.config.FlagLootCondition
 
-private val HAS_SILK_TOUCH = MatchTool.toolMatches(
-    ItemPredicate.Builder.item()
-        .hasEnchantment(EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.atLeast(1)))
-)
+private val HAS_SILK_TOUCH =
+    MatchTool.toolMatches(
+        ItemPredicate.Builder
+            .item()
+            .hasEnchantment(EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.atLeast(1))),
+    )
 
 private class SimpleBlockBuilder<P : AbstractRegistrate<*>>(
-    owner: P, name: String,
+    owner: P,
+    name: String,
     callback: BuilderCallback,
-) :
-    BlockBuilder<Block, P>(owner, owner, name, callback, ::Block, BlockBehaviour.Properties::of)
+) : BlockBuilder<Block, P>(owner, owner, name, callback, ::Block, BlockBehaviour.Properties::of)
 
 fun generateGlassShardLoot() {
     val registrate = DyedRegistrate.create(Constants.Mods.DYE_DEPOT)
 
     GLASS_SHARDS.forEach { (dye, shard) ->
-        registrate.`object`("${dye}_stained_glass")
+        registrate
+            .`object`("${dye}_stained_glass")
             .entry { name, callback -> SimpleBlockBuilder(registrate, name, callback) }
             .loot { tables, stainedGlass ->
                 val flagConditionType = BuiltInRegistries.LOOT_CONDITION_TYPE.getOrThrow(Constants.Mods.QUARK.createId("flag"))
 
-                val entry = AlternativesEntry.alternatives(
-                    LootItem.lootTableItem(stainedGlass).`when`(HAS_SILK_TOUCH),
-                    LootItem.lootTableItem(shard)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2F, 4F)))
-                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1))
-                        .apply(LimitCount.limitCount(IntRange.range(1, 4)))
-                        .apply(ApplyExplosionDecay.explosionDecay())
-                        .`when` { FlagLootCondition(DyedQuark.FLAG_MANAGER, "glass_shard", flagConditionType) }
-                )
+                val entry =
+                    AlternativesEntry.alternatives(
+                        LootItem.lootTableItem(stainedGlass).`when`(HAS_SILK_TOUCH),
+                        LootItem
+                            .lootTableItem(shard)
+                            .apply(SetItemCountFunction.setCount(UniformGenerator.between(2F, 4F)))
+                            .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE, 1))
+                            .apply(LimitCount.limitCount(IntRange.range(1, 4)))
+                            .apply(ApplyExplosionDecay.explosionDecay())
+                            .`when` { FlagLootCondition(DyedQuark.FLAG_MANAGER, "glass_shard", flagConditionType) },
+                    )
 
                 val table = LootTable.lootTable().withPool(LootPool.lootPool().add(entry))
 
                 tables.add(stainedGlass, table)
-            }
-            .register()
+            }.register()
     }
 
     registrate.register()

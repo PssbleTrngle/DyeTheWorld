@@ -9,7 +9,6 @@ import com.tterrag.registrate.providers.DataGenContext
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.util.nullness.NonNullBiConsumer
 import com.tterrag.registrate.util.nullness.NonNullFunction
-import net.minecraft.tags.TagEntry
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Item.Properties
@@ -22,22 +21,22 @@ class DyedItemBuilder<T : Item, P : Any> internal constructor(
     name: String,
     callback: BuilderCallback,
     factory: NonNullFunction<Properties, T>,
-) : ItemBuilder<T, P>(owner, parent, name, callback, factory), DyedBuilder {
-
+) : ItemBuilder<T, P>(owner, parent, name, callback, factory),
+    DyedBuilder {
     init {
         mod.validateMod()
     }
 
-    override fun recipe(cons: NonNullBiConsumer<DataGenContext<Item, T>, RegistrateRecipeProvider>) = apply {
-        super.recipe { context, provider ->
-            provider.withNamespace(mod) {
-                cons.accept(context, provider)
+    override fun recipe(cons: NonNullBiConsumer<DataGenContext<Item, T>, RegistrateRecipeProvider>) =
+        apply {
+            super.recipe { context, provider ->
+                provider.withNamespace(mod) {
+                    cons.accept(context, provider)
+                }
             }
         }
-    }
 
     fun tagDyed() {
         optionalTag(DyedTags.Items.DYED[dye]!!)
     }
-
 }

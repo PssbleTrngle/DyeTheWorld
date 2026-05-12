@@ -34,8 +34,7 @@ fun DyedRegistrate.createFences(
         .blockstate { c, p ->
             val texture = dye.namespace.createId("block/${dye}_${name.path}")
             p.fenceBlock(c.get(), texture)
-        }
-        .withItem {
+        }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.FENCES)
@@ -44,7 +43,7 @@ fun DyedRegistrate.createFences(
                     base.asIngredient(),
                     RecipeCategory.BUILDING_BLOCKS,
                     c,
-                    "concrete_fence"
+                    "concrete_fence",
                 )
             }
             model { c, p ->
@@ -52,8 +51,7 @@ fun DyedRegistrate.createFences(
                 p.fenceInventory(c.name, texture)
             }
             modifyItem(dye)
-        }
-        .apply { modifyBlock(dye) }
+        }.apply { modifyBlock(dye) }
         .register()
 }
 
@@ -70,8 +68,7 @@ fun DyedRegistrate.createFenceGates(
         .blockstate { c, p ->
             val texture = dye.namespace.createId("block/${dye}_${name.path}")
             p.fenceGateBlock(c.get(), texture)
-        }
-        .withItem {
+        }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.FENCE_GATES)
@@ -80,7 +77,7 @@ fun DyedRegistrate.createFenceGates(
                     base.asIngredient(),
                     RecipeCategory.BUILDING_BLOCKS,
                     c,
-                    "concrete_fence_gate"
+                    "concrete_fence_gate",
                 )
             }
             model { c, p ->
@@ -88,7 +85,6 @@ fun DyedRegistrate.createFenceGates(
                 p.fenceGate(c.name, texture)
             }
             modifyItem(dye)
-        }
-        .apply { modifyBlock(dye) }
+        }.apply { modifyBlock(dye) }
         .register()
 }

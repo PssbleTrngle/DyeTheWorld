@@ -8,8 +8,8 @@ object Genus {
     const val I = "es"
 }
 
-fun DyeColor.germanTranslation(suffix: String) : String {
-    return when(serializedName) {
+fun DyeColor.germanTranslation(suffix: String): String =
+    when (serializedName) {
         "white" -> "Weiß$suffix"
         "orange" -> "Orang$suffix"
         "magenta" -> "Magenta"
@@ -44,4 +44,3 @@ fun DyeColor.germanTranslation(suffix: String) : String {
         "verdant" -> "Dunkelgrün$suffix"
         else -> throw IllegalArgumentException("No known german translations for '$serializedName'")
     }
-}

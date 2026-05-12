@@ -20,7 +20,6 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.level.ItemLike
 
-
 fun RegistrateRecipeProvider.dyeingRecipe(
     dye: DyeColor,
     from: Ingredient,
@@ -28,7 +27,8 @@ fun RegistrateRecipeProvider.dyeingRecipe(
     id: ResourceLocation? = null,
     build: ShapelessRecipeBuilder.() -> Unit = { },
 ) {
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, to.get())
+    ShapelessRecipeBuilder
+        .shapeless(RecipeCategory.BUILDING_BLOCKS, to.get())
         .apply(build)
         .requires(dye.tag)
         .requires(from)
@@ -44,7 +44,7 @@ fun RegistrateRecipeProvider.dyeingRecipe(
 ) {
     val name = safeId(from).path
     dyeingRecipe(dye, Ingredient.of(from), to, id) {
-        unlockedBy("has_${name}", RegistrateRecipeProvider.has(from))
+        unlockedBy("has_$name", RegistrateRecipeProvider.has(from))
         build()
     }
 }
@@ -68,7 +68,8 @@ fun RegistrateRecipeProvider.shapedDyeingRecipe(
     to: DataGenContext<*, out ItemLike>,
     build: ShapedRecipeBuilder.() -> Unit = { },
 ) {
-    ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, to.get(), 8)
+    ShapedRecipeBuilder
+        .shaped(RecipeCategory.BUILDING_BLOCKS, to.get(), 8)
         .pattern("###")
         .pattern("#D#")
         .pattern("###")
@@ -87,7 +88,7 @@ fun RegistrateRecipeProvider.shapedDyeingRecipe(
 ) {
     val name = safeId(from).path
     shapedDyeingRecipe(dye, Ingredient.of(from), to) {
-        unlockedBy("has_${name}", RegistrateRecipeProvider.has(from))
+        unlockedBy("has_$name", RegistrateRecipeProvider.has(from))
         build()
     }
 }
@@ -108,22 +109,26 @@ fun RegistrateRecipeProvider.cleaningRecipe(
     clean: ItemLike,
     dyed: TagKey<Item>,
     washing: Boolean = true,
-    soap: Boolean = true
+    soap: Boolean = true,
 ) {
-    fun id(type: String) =
-        Constants.MOD_ID.createId("cleaning/$type/${dyed.location.namespace}/${dyed.location.path}")
+    fun id(type: String) = Constants.MOD_ID.createId("cleaning/$type/${dyed.location.namespace}/${dyed.location.path}")
 
-    if (soap) withNamespace(Constants.Mods.SUPPLEMENTARIES) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, clean)
-            .requiresUnlocking(dyed)
-            .requires(ModRegistry.SOAP.get())
-            .save(this, id("soap"))
+    if (soap) {
+        withNamespace(Constants.Mods.SUPPLEMENTARIES) {
+            ShapelessRecipeBuilder
+                .shapeless(RecipeCategory.MISC, clean)
+                .requiresUnlocking(dyed)
+                .requires(ModRegistry.SOAP.get())
+                .save(this, id("soap"))
+        }
     }
 
-    if (washing) withNamespace(Constants.Mods.CREATE) {
-        ProcessingRecipeBuilder(::SplashingRecipe, id("splashing"))
-            .require(dyed)
-            .output(clean)
-            .build(this)
+    if (washing) {
+        withNamespace(Constants.Mods.CREATE) {
+            ProcessingRecipeBuilder(::SplashingRecipe, id("splashing"))
+                .require(dyed)
+                .output(clean)
+                .build(this)
+        }
     }
 }

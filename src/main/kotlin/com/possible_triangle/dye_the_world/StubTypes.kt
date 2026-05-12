@@ -22,28 +22,20 @@ fun stubLootCondition(key: ResourceLocation) {
 }
 
 private class StubLootCondition : LootItemCondition {
+    override fun getType(): LootItemConditionType = throw IllegalStateException("Serialization not supported")
 
-    override fun getType(): LootItemConditionType {
-        throw IllegalStateException("Serialization not supported")
-    }
-
-    override fun test(context: LootContext?): Boolean {
-        return false;
-    }
+    override fun test(context: LootContext?): Boolean = false
 
     companion object : Serializer<StubLootCondition> {
-
         override fun serialize(
             json: JsonObject,
             condition: StubLootCondition,
-            context: JsonSerializationContext
-        ) {
-            throw IllegalStateException("Serialization not supported")
-        }
+            context: JsonSerializationContext,
+        ): Unit = throw IllegalStateException("Serialization not supported")
 
         override fun deserialize(
             json: JsonObject,
-            context: JsonDeserializationContext
+            context: JsonDeserializationContext,
         ) = StubLootCondition()
     }
 }
@@ -53,22 +45,17 @@ fun stubRecipeCondition(key: ResourceLocation) {
 }
 
 private class StubRecipeCondition : ICondition {
+    override fun getID(): ResourceLocation = throw IllegalStateException("Serialization not supported")
 
-    override fun getID(): ResourceLocation {
-        throw IllegalStateException("Serialization not supported")
-    }
+    override fun test(context: ICondition.IContext?): Boolean = false
 
-    override fun test(context: ICondition.IContext?): Boolean {
-        return false
-    }
-
-    class Serializer(private val id: ResourceLocation) : IConditionSerializer<StubRecipeCondition> {
+    class Serializer(
+        private val id: ResourceLocation,
+    ) : IConditionSerializer<StubRecipeCondition> {
         override fun write(
             json: JsonObject,
-            condition: StubRecipeCondition
-        ) {
-            throw IllegalStateException("Serialization not supported")
-        }
+            condition: StubRecipeCondition,
+        ): Unit = throw IllegalStateException("Serialization not supported")
 
         override fun read(json: JsonObject) = StubRecipeCondition()
 

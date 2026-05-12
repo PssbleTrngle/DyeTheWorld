@@ -28,87 +28,89 @@ import net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider
 import net.minecraftforge.client.model.generators.ConfiguredModel
 
 object DyedWaystones {
-
     private val REGISTRATE = DyedRegistrate.create(WAYSTONES)
     private val DYES = dyesFor(WAYSTONES)
 
-    val SHARESTONES = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_sharestone")
-            .dyedBlock(dye) { SharestoneBlock(it, dye) }
-            .lang("${dye.translation} Sharestone")
-            .germanLang("${dye.germanTranslation(Genus.M)} Teilstein")
-            .addMiscData(ProviderType.LANG) {
-                it.add(
-                    "tooltip.$WAYSTONES.${dye}_sharestone",
-                    "Teleport to any other ${dye.translation} Sharestone"
-                )
-            }
-            .addMiscData(DE_LANG) {
-                it.add(
-                    "tooltip.$WAYSTONES.${dye}_sharestone",
-                    "Teleportiere zu jedem anderen ${dye.germanTranslation(Genus.M)} Teilstein"
-                )
-            }
-            .optionalTag(ModBlockTags.DYED_SHARESTONES)
-            .optionalTag(ModBlockTags.SHARESTONES)
-            .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
-            .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .loot { tables, block ->
-                val hasSilktouch = MatchTool.toolMatches(
-                    ItemPredicate.Builder.item().hasEnchantment(
-                        EnchantmentPredicate(
-                            Enchantments.SILK_TOUCH,
-                            MinMaxBounds.Ints.atLeast(1)
+    val SHARESTONES =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_sharestone")
+                .dyedBlock(dye) { SharestoneBlock(it, dye) }
+                .lang("${dye.translation} Sharestone")
+                .germanLang("${dye.germanTranslation(Genus.M)} Teilstein")
+                .addMiscData(ProviderType.LANG) {
+                    it.add(
+                        "tooltip.$WAYSTONES.${dye}_sharestone",
+                        "Teleport to any other ${dye.translation} Sharestone",
+                    )
+                }.addMiscData(DE_LANG) {
+                    it.add(
+                        "tooltip.$WAYSTONES.${dye}_sharestone",
+                        "Teleportiere zu jedem anderen ${dye.germanTranslation(Genus.M)} Teilstein",
+                    )
+                }.optionalTag(ModBlockTags.DYED_SHARESTONES)
+                .optionalTag(ModBlockTags.SHARESTONES)
+                .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
+                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .loot { tables, block ->
+                    val hasSilktouch =
+                        MatchTool.toolMatches(
+                            ItemPredicate.Builder.item().hasEnchantment(
+                                EnchantmentPredicate(
+                                    Enchantments.SILK_TOUCH,
+                                    MinMaxBounds.Ints.atLeast(1),
+                                ),
+                            ),
                         )
+
+                    val pool =
+                        LootPool
+                            .lootPool()
+                            .add(LootItem.lootTableItem(block))
+                            .`when`(
+                                matchesState(block) {
+                                    hasProperty(SharestoneBlock.HALF, DoubleBlockHalf.LOWER)
+                                },
+                            ).apply(
+                                CopyNbtFunction
+                                    .copyData(ContextNbtProvider.BLOCK_ENTITY)
+                                    .`when`(hasSilktouch)
+                                    .copy("UUID", "UUID"),
+                            )
+
+                    tables.add(
+                        block,
+                        LootTable.lootTable().withPool(
+                            tables.applyExplosionDecay(block, pool),
+                        ),
                     )
-                )
+                }.blockstate { context, provider ->
+                    val upper = provider.models().getExistingFile(WAYSTONES.createId("block/sharestone_top"))
+                    val bottom = provider.models().getExistingFile(WAYSTONES.createId("block/sharestone_bottom"))
 
-                val pool = LootPool.lootPool()
-                    .add(LootItem.lootTableItem(block))
-                    .`when`(matchesState(block) {
-                        hasProperty(SharestoneBlock.HALF, DoubleBlockHalf.LOWER)
-                    })
-                    .apply(
-                        CopyNbtFunction.copyData(ContextNbtProvider.BLOCK_ENTITY)
-                            .`when`(hasSilktouch)
-                            .copy("UUID", "UUID")
-                    )
+                    provider.createVariant(context) { state ->
+                        val facing = state.getValue(BedrollBlock.FACING)
+                        val half = state.getValue(SharestoneBlock.HALF)
 
-                tables.add(
-                    block, LootTable.lootTable().withPool(
-                        tables.applyExplosionDecay(block, pool)
-                    )
-                )
-            }
-            .blockstate { context, provider ->
-                val upper = provider.models().getExistingFile(WAYSTONES.createId("block/sharestone_top"))
-                val bottom = provider.models().getExistingFile(WAYSTONES.createId("block/sharestone_bottom"))
+                        val model = if (half == DoubleBlockHalf.UPPER) upper else bottom
 
-                provider.createVariant(context) { state ->
-                    val facing = state.getValue(BedrollBlock.FACING)
-                    val half = state.getValue(SharestoneBlock.HALF)
-
-                    val model = if (half == DoubleBlockHalf.UPPER) upper else bottom
-
-                    ConfiguredModel.builder()
-                        .modelFile(model)
-                        .rotationY(facing.yRot)
-                }
-            }
-            .withItem {
-                optionalTag(ModItemTags.DYED_SHARESTONES)
-                optionalTag(ModItemTags.SHARESTONES)
-                optionalTag(DyedTags.Items.SHARESTONE)
-                recipe { c, p -> p.dyeingRecipe(dye, ModItemTags.SHARESTONES, c) }
-                model { context, provider ->
-                    provider.withExistingParent(context.name, WAYSTONES.createId("item/scoped_sharestone"))
-                }
-            }
-            .register()
-    }
+                        ConfiguredModel
+                            .builder()
+                            .modelFile(model)
+                            .rotationY(facing.yRot)
+                    }
+                }.withItem {
+                    optionalTag(ModItemTags.DYED_SHARESTONES)
+                    optionalTag(ModItemTags.SHARESTONES)
+                    optionalTag(DyedTags.Items.SHARESTONE)
+                    recipe { c, p -> p.dyeingRecipe(dye, ModItemTags.SHARESTONES, c) }
+                    model { context, provider ->
+                        provider.withExistingParent(context.name, WAYSTONES.createId("item/scoped_sharestone"))
+                    }
+                }.register()
+        }
 
     fun register() {
         REGISTRATE.register()
     }
-
 }

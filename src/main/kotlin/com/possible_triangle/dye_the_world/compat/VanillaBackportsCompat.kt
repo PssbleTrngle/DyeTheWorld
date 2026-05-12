@@ -9,13 +9,11 @@ import kotlin.collections.component1
 import kotlin.collections.component2
 
 object VanillaBackportsCompat {
-
     fun registerHarnessLayers() {
         HARNESSES.forEach { (dye, item) ->
             val stack = item.asStack()
-            val texture = Constants.MOD_ID.createId("textures/entity/$VANILLA_BACKPORT/harness/${dye}.png")
+            val texture = Constants.MOD_ID.createId("textures/entity/$VANILLA_BACKPORT/harness/$dye.png")
             GhastHarnessHandler.register(stack, texture)
         }
     }
-
 }

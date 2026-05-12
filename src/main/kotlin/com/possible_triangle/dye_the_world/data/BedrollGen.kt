@@ -20,52 +20,66 @@ import net.minecraft.world.level.storage.loot.LootTable
 import net.minecraft.world.level.storage.loot.entries.LootItem
 import net.minecraftforge.client.model.generators.ConfiguredModel
 
-fun <T : Block, P> BlockBuilder<T, P>.bedrollBlockstate() = blockstate { context, provider ->
-    val texture = Constants.MOD_ID.createId("block/$UPGRADE_AQUATIC/bedroll/${dye}")
-    val particle = texture.withSuffix("_particle")
+fun <T : Block, P> BlockBuilder<T, P>.bedrollBlockstate() =
+    blockstate { context, provider ->
+        val texture = Constants.MOD_ID.createId("block/$UPGRADE_AQUATIC/bedroll/$dye")
+        val particle = texture.withSuffix("_particle")
 
-    val foot = provider.models()
-        .withExistingParent(context.name + "_foot", UPGRADE_AQUATIC.createId("block/bedroll/template_bedroll_foot"))
-        .texture("bedroll", texture)
-        .texture("particle", particle)
+        val foot =
+            provider
+                .models()
+                .withExistingParent(context.name + "_foot", UPGRADE_AQUATIC.createId("block/bedroll/template_bedroll_foot"))
+                .texture("bedroll", texture)
+                .texture("particle", particle)
 
-    val head = provider.models()
-        .withExistingParent(context.name + "_head", UPGRADE_AQUATIC.createId("block/bedroll/template_bedroll_head"))
-        .texture("bedroll", texture)
-        .texture("particle", particle)
+        val head =
+            provider
+                .models()
+                .withExistingParent(context.name + "_head", UPGRADE_AQUATIC.createId("block/bedroll/template_bedroll_head"))
+                .texture("bedroll", texture)
+                .texture("particle", particle)
 
-    provider.createVariant(context, BedrollBlock.OCCUPIED) { state ->
-        val facing = state.getValue(BedrollBlock.FACING)
-        val part = state.getValue(BedrollBlock.PART)
+        provider.createVariant(context, BedrollBlock.OCCUPIED) { state ->
+            val facing = state.getValue(BedrollBlock.FACING)
+            val part = state.getValue(BedrollBlock.PART)
 
-        val model = if (part == BedPart.FOOT) foot else head
+            val model = if (part == BedPart.FOOT) foot else head
 
-        ConfiguredModel.builder()
-            .modelFile(model)
-            .rotationY(facing.opposite.yRot)
+            ConfiguredModel
+                .builder()
+                .modelFile(model)
+                .rotationY(facing.opposite.yRot)
+        }
     }
-}
 
-fun <T : Item, P> ItemBuilder<T, P>.bedrollRecipe() = recipe { context, provider ->
-    provider.dyeingRecipe(dye, UAItemTags.BEDROLLS, context) {
-        group("bedroll")
+fun <T : Item, P> ItemBuilder<T, P>.bedrollRecipe() =
+    recipe { context, provider ->
+        provider.dyeingRecipe(dye, UAItemTags.BEDROLLS, context) {
+            group("bedroll")
+        }
     }
-}
 
-fun <T : Item, P> ItemBuilder<T, P>.bedrollItemModel() = model { context, provider ->
-    provider.generated(context, Constants.MOD_ID.createId("item/$UPGRADE_AQUATIC/bedroll/${dye}"))
-}
+fun <T : Item, P> ItemBuilder<T, P>.bedrollItemModel() =
+    model { context, provider ->
+        provider.generated(context, Constants.MOD_ID.createId("item/$UPGRADE_AQUATIC/bedroll/$dye"))
+    }
 
-fun <T : Block, P> BlockBuilder<T, P>.bedrollLoot() = loot { tables, block ->
-    tables.add(
-        block, LootTable.lootTable().withPool(
-            tables.applyExplosionDecay(
-                block, LootPool.lootPool()
-                    .add(LootItem.lootTableItem(block))
-                    .`when`(matchesState(block) {
-                        hasProperty(BedrollBlock.PART, BedPart.HEAD)
-                    })
-            )
+fun <T : Block, P> BlockBuilder<T, P>.bedrollLoot() =
+    loot { tables, block ->
+        tables.add(
+            block,
+            LootTable.lootTable().withPool(
+                tables.applyExplosionDecay(
+                    block,
+                    LootPool
+                        .lootPool()
+                        .add(LootItem.lootTableItem(block))
+                        .`when`(
+                            matchesState(block) {
+                                hasProperty(BedrollBlock.PART, BedPart.HEAD)
+                            },
+                        ),
+                ),
+            ),
         )
-    )
-}
+    }

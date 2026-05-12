@@ -27,68 +27,72 @@ import vectorwing.farmersdelight.common.registry.ModBlocks
 import vectorwing.farmersdelight.common.tag.ModTags
 
 object DyedDelight {
-
     private val TAB =
         ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation(FARMERS_DELIGHT, FARMERS_DELIGHT))
 
-    val CANVAS_WALL_SIGNS = dyesFor(FARMERS_DELIGHT).associateWith { dye ->
-        REGISTRATE.`object`("${dye}_canvas_wall_sign")
-            .dyedBlock(dye, FARMERS_DELIGHT) { DyedWallCanvasSignBlock(it, dye) }
-            .initialProperties { ModBlocks.RED_CANVAS_WALL_SIGN.get() }
-            .lang { it.descriptionId + ".wall" }
-            .canvasSignBlockstate()
-            .existingBlockEntity { ModBlockEntityTypes.CANVAS_SIGN.get() }
-            .register()
-    }
+    val CANVAS_WALL_SIGNS =
+        dyesFor(FARMERS_DELIGHT).associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_canvas_wall_sign")
+                .dyedBlock(dye, FARMERS_DELIGHT) { DyedWallCanvasSignBlock(it, dye) }
+                .initialProperties { ModBlocks.RED_CANVAS_WALL_SIGN.get() }
+                .lang { it.descriptionId + ".wall" }
+                .canvasSignBlockstate()
+                .existingBlockEntity { ModBlockEntityTypes.CANVAS_SIGN.get() }
+                .register()
+        }
 
-    val CANVAS_SIGNS = dyesFor(FARMERS_DELIGHT).associateWith { dye ->
-        REGISTRATE.`object`("${dye}_canvas_sign")
-            .dyedBlock(dye, FARMERS_DELIGHT) { DyedStandingCanvasSignBlock(dye) }
-            .initialProperties { ModBlocks.RED_CANVAS_SIGN.get() }
-            .lang("${dye.translation} Canvas Sign")
-            .germanLang("${dye.germanTranslation(Genus.I)} Canvas Schild")
-            .canvasSignBlockstate()
-            .existingBlockEntity { ModBlockEntityTypes.CANVAS_SIGN.get() }
-            .withItem(dye.signItem(CANVAS_WALL_SIGNS)) {
-                optionalTag(ModTags.Items.CANVAS_SIGNS)
-                canvasSignRecipes()
-                canvasSignItemModel()
-                tab(TAB)
-            }
-            .register()
-    }
+    val CANVAS_SIGNS =
+        dyesFor(FARMERS_DELIGHT).associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_canvas_sign")
+                .dyedBlock(dye, FARMERS_DELIGHT) { DyedStandingCanvasSignBlock(dye) }
+                .initialProperties { ModBlocks.RED_CANVAS_SIGN.get() }
+                .lang("${dye.translation} Canvas Sign")
+                .germanLang("${dye.germanTranslation(Genus.I)} Canvas Schild")
+                .canvasSignBlockstate()
+                .existingBlockEntity { ModBlockEntityTypes.CANVAS_SIGN.get() }
+                .withItem(dye.signItem(CANVAS_WALL_SIGNS)) {
+                    optionalTag(ModTags.Items.CANVAS_SIGNS)
+                    canvasSignRecipes()
+                    canvasSignItemModel()
+                    tab(TAB)
+                }.register()
+        }
 
-    val HANGING_CANVAS_WALL_SIGNS = dyesFor(FARMERS_DELIGHT).associateWith { dye ->
-        REGISTRATE.`object`("${dye}_wall_hanging_canvas_sign")
-            .dyedBlock(dye, FARMERS_DELIGHT) { DyedWallHangingCanvasSignBlock(it, dye) }
-            .initialProperties { ModBlocks.RED_HANGING_CANVAS_WALL_SIGN.get() }
-            .lang { it.descriptionId + ".wall" }
-            .canvasSignBlockstate()
-            .existingBlockEntity { ModBlockEntityTypes.HANGING_CANVAS_SIGN.get() }
-            .register()
-    }
+    val HANGING_CANVAS_WALL_SIGNS =
+        dyesFor(FARMERS_DELIGHT).associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_wall_hanging_canvas_sign")
+                .dyedBlock(dye, FARMERS_DELIGHT) { DyedWallHangingCanvasSignBlock(it, dye) }
+                .initialProperties { ModBlocks.RED_HANGING_CANVAS_WALL_SIGN.get() }
+                .lang { it.descriptionId + ".wall" }
+                .canvasSignBlockstate()
+                .existingBlockEntity { ModBlockEntityTypes.HANGING_CANVAS_SIGN.get() }
+                .register()
+        }
 
-    val HANGING_CANVAS_SIGNS = dyesFor(FARMERS_DELIGHT).associateWith { dye ->
-        REGISTRATE.`object`("${dye}_hanging_canvas_sign")
-            .dyedBlock(dye, FARMERS_DELIGHT) { DyedCeilingHangingCanvasSignBlock(dye) }
-            .initialProperties { ModBlocks.RED_HANGING_CANVAS_SIGN.get() }
-            .lang("${dye.translation} Hanging Canvas Sign")
-            .canvasSignBlockstate()
-            .existingBlockEntity { ModBlockEntityTypes.HANGING_CANVAS_SIGN.get() }
-            .withItem(dye.signItem(HANGING_CANVAS_WALL_SIGNS)) {
-                optionalTag(ModTags.Items.HANGING_CANVAS_SIGNS)
-                hangingCanvasSignRecipes()
-                canvasSignItemModel()
-                tab(TAB)
-            }
-            .register()
-    }
+    val HANGING_CANVAS_SIGNS =
+        dyesFor(FARMERS_DELIGHT).associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_hanging_canvas_sign")
+                .dyedBlock(dye, FARMERS_DELIGHT) { DyedCeilingHangingCanvasSignBlock(dye) }
+                .initialProperties { ModBlocks.RED_HANGING_CANVAS_SIGN.get() }
+                .lang("${dye.translation} Hanging Canvas Sign")
+                .canvasSignBlockstate()
+                .existingBlockEntity { ModBlockEntityTypes.HANGING_CANVAS_SIGN.get() }
+                .withItem(dye.signItem(HANGING_CANVAS_WALL_SIGNS)) {
+                    optionalTag(ModTags.Items.HANGING_CANVAS_SIGNS)
+                    hangingCanvasSignRecipes()
+                    canvasSignItemModel()
+                    tab(TAB)
+                }.register()
+        }
 
     fun register() {
         migrateBlockEntity("canvas_sign", FARMERS_DELIGHT)
         migrateBlockEntity("hanging_canvas_sign", FARMERS_DELIGHT)
     }
-
 }
 
 private fun <T : Block> DyeColor.signItem(wallSigns: Map<DyeColor, NonNullSupplier<out Block>>) =
@@ -96,7 +100,7 @@ private fun <T : Block> DyeColor.signItem(wallSigns: Map<DyeColor, NonNullSuppli
         SignItem(
             properties,
             block,
-            wallSigns[this]!!.get()
+            wallSigns[this]!!.get(),
         )
     }
 

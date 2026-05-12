@@ -18,7 +18,6 @@ import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
 @Mod(Constants.MOD_ID)
 object ForgeEntrypoint {
-
     val REGISTRATE = DyedRegistrate.create(Constants.MOD_ID)
 
     init {
@@ -90,5 +89,4 @@ object ForgeEntrypoint {
             DyedBotanyPots.register()
         }
     }
-
 }

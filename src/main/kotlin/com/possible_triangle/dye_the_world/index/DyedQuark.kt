@@ -29,7 +29,9 @@ private val TRANSLUCENT = ResourceLocation("translucent")
 
 private fun ModelBuilder<*>.translucent() = renderType(TRANSLUCENT)
 
-data class QuarkConfigCondition(val flag: String) : Condition {
+data class QuarkConfigCondition(
+    val flag: String,
+) : Condition {
     override fun JsonObject.toFabric() {
         error("no fabric support yet")
     }
@@ -41,197 +43,198 @@ data class QuarkConfigCondition(val flag: String) : Condition {
 }
 
 object DyedQuark {
-
     private val DYES = dyesFor(QUARK)
 
     private val TERRACOTTA = dyedBlockMap(QUARK, "terracotta")
 
     val FLAG_MANAGER: ConfigFlagManager by lazy {
-        val quark = ZetaList.INSTANCE.zetas.find { it.modid == QUARK }
-            ?: throw NullPointerException("Could not find Quark Instance")
+        val quark =
+            ZetaList.INSTANCE.zetas.find { it.modid == QUARK }
+                ?: throw NullPointerException("Could not find Quark Instance")
         quark.configManager.configFlagManager
     }
 
     private fun flagEnabled(flag: String) = FLAG_MANAGER.getFlag(flag)
 
-    fun flagCondition(flag: String): QuarkConfigCondition {
-        return QuarkConfigCondition(flag)
-    }
+    fun flagCondition(flag: String): QuarkConfigCondition = QuarkConfigCondition(flag)
 
-    val GLASS_SHARDS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_shard")
-            .dyedItem(dye, QUARK, ::Item)
-            .optionalTab(CreativeModeTabs.INGREDIENTS) {
-                flagEnabled("glass_shard")
-            }
-            .optionalTag(DyedTags.Items.GLASS_SHARDS)
-            .recipe { context, provider ->
-                val glass = dye.blockOf("stained_glass")
-                provider.withConditions(flagCondition("glass_shard")) {
-                    ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, glass)
-                        .pattern("XX")
-                        .pattern("XX")
-                        .defineUnlocking('X', context.get())
-                        .save(provider, Constants.MOD_ID.createId("stained_${dye}_glass_from_shards"))
+    val GLASS_SHARDS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_shard")
+                .dyedItem(dye, QUARK, ::Item)
+                .optionalTab(CreativeModeTabs.INGREDIENTS) {
+                    flagEnabled("glass_shard")
+                }.optionalTag(DyedTags.Items.GLASS_SHARDS)
+                .recipe { context, provider ->
+                    val glass = dye.blockOf("stained_glass")
+                    provider.withConditions(flagCondition("glass_shard")) {
+                        ShapedRecipeBuilder
+                            .shaped(BUILDING_BLOCKS, glass)
+                            .pattern("XX")
+                            .pattern("XX")
+                            .defineUnlocking('X', context.get())
+                            .save(provider, Constants.MOD_ID.createId("stained_${dye}_glass_from_shards"))
+                    }
+                }.model { context, provider ->
+                    provider.generated(context, Constants.MOD_ID.createId("item/$QUARK/${context.name}"))
+                }.lang("${dye.translation} Glass Shard")
+                .germanLang("${dye.germanTranslation(Genus.F)} Glasscherbe")
+                .register()
+        }
+
+    val STOOLS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_quark_stool")
+                .dyedBlock(dye, QUARK) { StoolBlock(null, dye) }
+                .optionalTag(DyedTags.Blocks.QUARK_STOOLS)
+                .quarkStoolBlockstate()
+                .lang("${dye.translation} Stool")
+                .withItem {
+                    quarkStoolRecipe()
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                        flagEnabled("stools")
+                    }
+                }.register()
+        }
+
+    val SHINGLES =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_shingles")
+                .dyedBlock(dye, QUARK, ::Block)
+                .initialProperties { dye.blockOf("terracotta") }
+                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .blockstate { c, p ->
+                    p.simpleBlock(
+                        c.get(),
+                        p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/quark/${c.name}")),
+                    )
+                }.lang("${dye.translation} Terracotta Shingles")
+                .germanLang("${dye.germanTranslation(Genus.F)} Schindeln")
+                .withItem {
+                    shinglesRecipes()
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                        flagEnabled("shingles")
+                    }
+                }.register()
+        }
+
+    val SHINGLES_SLABS =
+        REGISTRATE.createSlabs(
+            SHINGLES,
+            QUARK.createId("shingles"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Schindelstufe")
+                blockstate { c, p ->
+                    val texture = Constants.MOD_ID.createId("block/$QUARK/${dye}_shingles")
+                    val double = Constants.MOD_ID.createId("block/${dye}_shingles")
+                    p.slabBlock(c.get(), double, texture)
                 }
-            }
-            .model { context, provider ->
-                provider.generated(context, Constants.MOD_ID.createId("item/$QUARK/${context.name}"))
-            }
-            .lang("${dye.translation} Glass Shard")
-            .germanLang("${dye.germanTranslation(Genus.F)} Glasscherbe")
-            .register()
-    }
-
-    val STOOLS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_quark_stool")
-            .dyedBlock(dye, QUARK) { StoolBlock(null, dye) }
-            .optionalTag(DyedTags.Blocks.QUARK_STOOLS)
-            .quarkStoolBlockstate()
-            .lang("${dye.translation} Stool")
-            .withItem {
-                quarkStoolRecipe()
-                optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
-                    flagEnabled("stools")
+            },
+            modifyItem = { dye ->
+                recipe { context, provider ->
+                    provider.withConditions(flagCondition("shingles")) {
+                        provider.slab(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
+                        provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context, 2)
+                    }
                 }
-            }
-            .register()
-    }
-
-    val SHINGLES = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_shingles")
-            .dyedBlock(dye, QUARK, ::Block)
-            .initialProperties { dye.blockOf("terracotta") }
-            .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .blockstate { c, p ->
-                p.simpleBlock(
-                    c.get(),
-                    p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/quark/${c.name}"))
-                )
-            }
-            .lang("${dye.translation} Terracotta Shingles")
-            .germanLang("${dye.germanTranslation(Genus.F)} Schindeln")
-            .withItem {
-                shinglesRecipes()
                 optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
                     flagEnabled("shingles")
                 }
-            }
-            .register()
-    }
+            },
+        )
 
-    val SHINGLES_SLABS = REGISTRATE.createSlabs(
-        SHINGLES,
-        QUARK.createId("shingles"),
-        modifyBlock = { dye ->
-            germanLang("${dye.germanTranslation(Genus.F)} Schindelstufe")
-            blockstate { c, p ->
-                val texture = Constants.MOD_ID.createId("block/$QUARK/${dye}_shingles")
-                val double = Constants.MOD_ID.createId("block/${dye}_shingles")
-                p.slabBlock(c.get(), double, texture)
-            }
-        },
-        modifyItem = { dye ->
-            recipe { context, provider ->
-                provider.withConditions(flagCondition("shingles")) {
-                    provider.slab(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context, 2)
+    val SHINGLES_STAIRS =
+        REGISTRATE.createStairs(
+            SHINGLES,
+            QUARK.createId("shingles"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Schindeltreppe")
+                blockstate { c, p ->
+                    val texture = Constants.MOD_ID.createId("block/$QUARK/${dye}_shingles")
+                    p.stairsBlock(c.get(), texture)
                 }
-            }
-            optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
-                flagEnabled("shingles")
-            }
-        },
-    )
-
-    val SHINGLES_STAIRS = REGISTRATE.createStairs(
-        SHINGLES,
-        QUARK.createId("shingles"),
-        modifyBlock = { dye ->
-            germanLang("${dye.germanTranslation(Genus.F)} Schindeltreppe")
-            blockstate { c, p ->
-                val texture = Constants.MOD_ID.createId("block/$QUARK/${dye}_shingles")
-                p.stairsBlock(c.get(), texture)
-            }
-        },
-        modifyItem = { dye ->
-            recipe { context, provider ->
-                provider.withConditions(flagCondition("shingles")) {
-                    provider.stairs(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
+            },
+            modifyItem = { dye ->
+                recipe { context, provider ->
+                    provider.withConditions(flagCondition("shingles")) {
+                        provider.stairs(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
+                        provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
+                    }
                 }
-            }
-            optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
-                flagEnabled("shingles")
-            }
-        },
-    )
-
-    val FRAMED_GLASS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_framed_glass")
-            .dyedBlock(dye, QUARK) { ZetaGlassBlock(null, null, true, it) }
-            .initialProperties { Blocks.GLASS }
-            .properties { it.strength(3F, 10F) }
-            .optionalTag(DyedTags.Blocks.FRAMED_GLASSES)
-            .optionalTag(BlockTags.IMPERMEABLE)
-            .optionalTag(BlockTags.NEEDS_STONE_TOOL)
-            .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .optionalTag(Tags.Blocks.GLASS)
-            .blockstate { c, p ->
-                p.simpleBlock(
-                    c.get(),
-                    p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"))
-                        .translucent()
-                )
-            }
-            .lang("${dye.translation} Framed Glass")
-            .germanLang("${dye.germanTranslation(Genus.I)} gerahmtes Glas")
-            .withItem {
                 optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
-                    flagEnabled("framed_glass")
+                    flagEnabled("shingles")
                 }
-                optionalTag(Tags.Items.GLASS)
-                model { c, p -> p.blockItem(c).translucent() }
-                framedGlassRecipes()
-            }
-            .register()
-    }
+            },
+        )
 
-    val FRAMED_GLASS_PANES = DYES.associateWith { dye ->
-        REGISTRATE.`object`("${dye}_framed_glass_pane")
-            .dyedBlock(dye, QUARK) {
-                val parent = FRAMED_GLASS[dye]!!.get()
-                ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.copy(parent))
-            }
-            .optionalTag(DyedTags.Blocks.FRAMED_GLASS_PANES)
-            .optionalTag(BlockTags.NEEDS_STONE_TOOL)
-            .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .optionalTag(Tags.Blocks.GLASS_PANES)
-            .blockstate { c, p ->
-                p.paneBlockWithRenderType(
-                    c.get(),
-                    Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"),
-                    QUARK.createId("block/framed_glass_pane_top"),
-                    TRANSLUCENT,
-                )
-            }
-            .lang("${dye.translation} Framed Glass Pane")
-            .germanLang("${dye.germanTranslation(Genus.F)} gerahmte Glasscheibe")
-            .withItem {
-                model { c, p ->
-                    p.generated(c, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass")).translucent()
-                }
-                optionalTag(Tags.Items.GLASS_PANES)
-                optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
-                    flagEnabled("framed_glass")
-                }
-                framedGlassPaneRecipes()
-            }
-            .register()
-    }
+    val FRAMED_GLASS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_framed_glass")
+                .dyedBlock(dye, QUARK) { ZetaGlassBlock(null, null, true, it) }
+                .initialProperties { Blocks.GLASS }
+                .properties { it.strength(3F, 10F) }
+                .optionalTag(DyedTags.Blocks.FRAMED_GLASSES)
+                .optionalTag(BlockTags.IMPERMEABLE)
+                .optionalTag(BlockTags.NEEDS_STONE_TOOL)
+                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .optionalTag(Tags.Blocks.GLASS)
+                .blockstate { c, p ->
+                    p.simpleBlock(
+                        c.get(),
+                        p
+                            .models()
+                            .cubeAll(c.name, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"))
+                            .translucent(),
+                    )
+                }.lang("${dye.translation} Framed Glass")
+                .germanLang("${dye.germanTranslation(Genus.I)} gerahmtes Glas")
+                .withItem {
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                        flagEnabled("framed_glass")
+                    }
+                    optionalTag(Tags.Items.GLASS)
+                    model { c, p -> p.blockItem(c).translucent() }
+                    framedGlassRecipes()
+                }.register()
+        }
+
+    val FRAMED_GLASS_PANES =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_framed_glass_pane")
+                .dyedBlock(dye, QUARK) {
+                    val parent = FRAMED_GLASS[dye]!!.get()
+                    ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.copy(parent))
+                }.optionalTag(DyedTags.Blocks.FRAMED_GLASS_PANES)
+                .optionalTag(BlockTags.NEEDS_STONE_TOOL)
+                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .optionalTag(Tags.Blocks.GLASS_PANES)
+                .blockstate { c, p ->
+                    p.paneBlockWithRenderType(
+                        c.get(),
+                        Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"),
+                        QUARK.createId("block/framed_glass_pane_top"),
+                        TRANSLUCENT,
+                    )
+                }.lang("${dye.translation} Framed Glass Pane")
+                .germanLang("${dye.germanTranslation(Genus.F)} gerahmte Glasscheibe")
+                .withItem {
+                    model { c, p ->
+                        p.generated(c, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass")).translucent()
+                    }
+                    optionalTag(Tags.Items.GLASS_PANES)
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                        flagEnabled("framed_glass")
+                    }
+                    framedGlassPaneRecipes()
+                }.register()
+        }
 
     fun register() {
         // Loads this class
     }
-
 }

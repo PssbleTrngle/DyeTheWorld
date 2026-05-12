@@ -4,9 +4,9 @@ import com.possible_triangle.dye_the_world.index.isDarkBackground
 import net.minecraft.world.item.DyeColor
 import vectorwing.farmersdelight.common.block.WallHangingCanvasSignBlock
 
-class DyedWallHangingCanvasSignBlock(properties: Properties, dye: DyeColor) :
-    WallHangingCanvasSignBlock(properties, dye) {
-
+class DyedWallHangingCanvasSignBlock(
+    properties: Properties,
+    dye: DyeColor,
+) : WallHangingCanvasSignBlock(properties, dye) {
     override fun isDarkBackground() = backgroundColor!!.isDarkBackground
-
 }

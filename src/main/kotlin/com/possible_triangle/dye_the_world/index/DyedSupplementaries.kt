@@ -16,71 +16,76 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 
 object DyedSupplementaries {
-
     private val DYES = dyesFor(SUPPLEMENTARIES)
 
     private val REGISTRATE = DyedRegistrate.create(SUPPLEMENTARIES)
     private val REGISTRATE_AMENDMENTS = DyedRegistrate.create(AMENDMENTS)
     private val SQUARED_REGISTRATE = DyedRegistrate.create(SUPPLEMENTARIES_SQUARED)
 
-    val SACKS = DYES.associateWith { dye ->
-        SQUARED_REGISTRATE.`object`("sack_${dye}")
-            .dyedBlock(dye, ::SackBlock)
-            .lang("${dye.translation} Sack")
-            .sackBlockstate()
-            .loot { t, b -> t.add(b, t.createShulkerBoxDrop(b)) }
-            .withItem {
-                sackItemModel()
-            }
-            .register()
-    }
+    val SACKS =
+        DYES.associateWith { dye ->
+            SQUARED_REGISTRATE
+                .`object`("sack_$dye")
+                .dyedBlock(dye, ::SackBlock)
+                .lang("${dye.translation} Sack")
+                .sackBlockstate()
+                .loot { t, b -> t.add(b, t.createShulkerBoxDrop(b)) }
+                .withItem {
+                    sackItemModel()
+                }.register()
+        }
 
-    val CEILING_BANNERS = DYES.associateWith { dye ->
-        REGISTRATE_AMENDMENTS.`object`("ceiling_banner_${dye}")
-            .dyedBlock(dye, ::Block)
-            .lang("${dye.translation} Banner")
-            .optionalTag(DyedTags.Blocks.CEILING_BANNERS)
-            .blockstate { context, provider ->
-                val model = provider.models().getExistingFile(ResourceLocation("block/banner"))
-                provider.simpleBlock(context.get(), model)
-            }
-            .register()
-    }
+    val CEILING_BANNERS =
+        DYES.associateWith { dye ->
+            REGISTRATE_AMENDMENTS
+                .`object`("ceiling_banner_$dye")
+                .dyedBlock(dye, ::Block)
+                .lang("${dye.translation} Banner")
+                .optionalTag(DyedTags.Blocks.CEILING_BANNERS)
+                .blockstate { context, provider ->
+                    val model = provider.models().getExistingFile(ResourceLocation("block/banner"))
+                    provider.simpleBlock(context.get(), model)
+                }.register()
+        }
 
-    val BUNTINGS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("bunting_$dye")
-            .dyedItem(dye, ::Item)
-            .lang("${dye.translation} Bunting")
-            .dyedBuntingItemModel()
-            .dyedBuntingRecipe()
-            .register()
-    }
+    val BUNTINGS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("bunting_$dye")
+                .dyedItem(dye, ::Item)
+                .lang("${dye.translation} Bunting")
+                .dyedBuntingItemModel()
+                .dyedBuntingRecipe()
+                .register()
+        }
 
-    val BUNTING = REGISTRATE.`object`("bunting")
-        .item(::Item)
-        .buntingItemModel()
-        .register()
-
-    val AWNINGS = DYES.associateWith { dye ->
-        REGISTRATE.`object`("awning_$dye")
-            .dyedBlock(dye) { AwningBlock(dye, it) }
-            .lang("${dye.translation} Awning")
-            .optionalTag(DyedTags.Blocks.MINEABLE_SHEAR)
-            .optionalTag(DyedTags.Blocks.BOUNCY_BLOCKS)
-            .optionalTag(DyedTags.Blocks.AWNINGS)
-            .awningBlockstate()
-            .withItem {
-                optionalTag(DyedTags.Items.AWNINGS)
-                awningItemModel()
-                awningRecipe()
-            }
+    val BUNTING =
+        REGISTRATE
+            .`object`("bunting")
+            .item(::Item)
+            .buntingItemModel()
             .register()
-    }
+
+    val AWNINGS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("awning_$dye")
+                .dyedBlock(dye) { AwningBlock(dye, it) }
+                .lang("${dye.translation} Awning")
+                .optionalTag(DyedTags.Blocks.MINEABLE_SHEAR)
+                .optionalTag(DyedTags.Blocks.BOUNCY_BLOCKS)
+                .optionalTag(DyedTags.Blocks.AWNINGS)
+                .awningBlockstate()
+                .withItem {
+                    optionalTag(DyedTags.Items.AWNINGS)
+                    awningItemModel()
+                    awningRecipe()
+                }.register()
+        }
 
     fun register() {
         REGISTRATE.register()
         SQUARED_REGISTRATE.register()
         REGISTRATE_AMENDMENTS.register()
     }
-
 }

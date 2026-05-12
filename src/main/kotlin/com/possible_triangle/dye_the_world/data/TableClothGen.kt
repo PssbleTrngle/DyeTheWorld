@@ -17,28 +17,37 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapelessRecipeBuilder
 import net.minecraft.world.item.Item
 
-fun <T : Item, P> ItemBuilder<T, P>.tableClothItemModel() = model { context, provider ->
-    provider.withExistingParent(context.name, CREATE.createId("block/table_cloth/item"))
-        .texture("0", Constants.MOD_ID.createId("block/$CREATE/table_cloth/$dye"))
-}
+fun <T : Item, P> ItemBuilder<T, P>.tableClothItemModel() =
+    model { context, provider ->
+        provider
+            .withExistingParent(context.name, CREATE.createId("block/table_cloth/item"))
+            .texture("0", Constants.MOD_ID.createId("block/$CREATE/table_cloth/$dye"))
+    }
 
-fun <T : TableClothBlock, P> BlockBuilder<T, P>.tableClothBlockstate() = blockstate { context, provider ->
-    val model = provider.models().withExistingParent(context.name, CREATE.createId("block/table_cloth/block"))
-        .texture("0", Constants.MOD_ID.createId("block/$CREATE/table_cloth/$dye"))
+fun <T : TableClothBlock, P> BlockBuilder<T, P>.tableClothBlockstate() =
+    blockstate { context, provider ->
+        val model =
+            provider
+                .models()
+                .withExistingParent(context.name, CREATE.createId("block/table_cloth/block"))
+                .texture("0", Constants.MOD_ID.createId("block/$CREATE/table_cloth/$dye"))
 
-    provider.simpleBlock(context.get(), model)
-}
+        provider.simpleBlock(context.get(), model)
+    }
 
-fun <T : Item, P> ItemBuilder<T, P>.tableClothRecipe() = recipe { context, provider ->
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, context.get(), 2)
-        .requiresUnlocking(AllItems.ANDESITE_ALLOY.get())
-        .requires(dye.blockOf("wool"))
-        .save(provider)
+fun <T : Item, P> ItemBuilder<T, P>.tableClothRecipe() =
+    recipe { context, provider ->
+        ShapelessRecipeBuilder
+            .shapeless(RecipeCategory.BUILDING_BLOCKS, context.get(), 2)
+            .requiresUnlocking(AllItems.ANDESITE_ALLOY.get())
+            .requires(dye.blockOf("wool"))
+            .save(provider)
 
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
-        .requires(context.get())
-        .unlockedBy(AllItems.ANDESITE_ALLOY.get())
-        .save(provider, provider.safeId(context.get()).withSuffix("_clear"))
+        ShapelessRecipeBuilder
+            .shapeless(RecipeCategory.BUILDING_BLOCKS, context.get())
+            .requires(context.get())
+            .unlockedBy(AllItems.ANDESITE_ALLOY.get())
+            .save(provider, provider.safeId(context.get()).withSuffix("_clear"))
 
-    provider.dyeingRecipe(dye, AllTags.AllItemTags.DYED_TABLE_CLOTHS.tag, context)
-}
+        provider.dyeingRecipe(dye, AllTags.AllItemTags.DYED_TABLE_CLOTHS.tag, context)
+    }

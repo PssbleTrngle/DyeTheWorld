@@ -13,31 +13,32 @@ import net.minecraftforge.client.model.generators.ConfiguredModel
 
 fun <T : Block, P> BlockBuilder<T, P>.sackBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String) =
-            Constants.MOD_ID.createId("block/${Constants.Mods.SUPPLEMENTARIES_SQUARED}/sack_${dye}_$suffix")
+        fun texture(suffix: String) = Constants.MOD_ID.createId("block/${Constants.Mods.SUPPLEMENTARIES_SQUARED}/sack_${dye}_$suffix")
 
         provider.createVariant(context) { state ->
             val open = state.getValue(SackBlock.OPEN)
 
             val suffix = if (open) "open" else "closed"
-            val model = provider.models()
-                .withExistingParent(
-                    "block/${context.name}_$suffix",
-                    Constants.Mods.SUPPLEMENTARIES.createId("block/sack_$suffix")
-                )
-                .texture("1", texture("front"))
-                .texture("2", texture("top"))
-                .texture("3", texture("bottom"))
-                .texture("4", texture("closed"))
-                .texture("particle", texture("front"))
+            val model =
+                provider
+                    .models()
+                    .withExistingParent(
+                        "block/${context.name}_$suffix",
+                        Constants.Mods.SUPPLEMENTARIES.createId("block/sack_$suffix"),
+                    ).texture("1", texture("front"))
+                    .texture("2", texture("top"))
+                    .texture("3", texture("bottom"))
+                    .texture("4", texture("closed"))
+                    .texture("particle", texture("front"))
 
             ConfiguredModel.builder().modelFile(model)
         }
     }
 
-fun <T : Item, P> ItemBuilder<T, P>.sackItemModel() = model { context, provider ->
-    provider.withExistingParent(
-        "item/${context.name}",
-        Constants.Mods.SUPPLEMENTARIES_SQUARED.createId("block/${context.name}_closed")
-    )
-}
+fun <T : Item, P> ItemBuilder<T, P>.sackItemModel() =
+    model { context, provider ->
+        provider.withExistingParent(
+            "item/${context.name}",
+            Constants.Mods.SUPPLEMENTARIES_SQUARED.createId("block/${context.name}_closed"),
+        )
+    }

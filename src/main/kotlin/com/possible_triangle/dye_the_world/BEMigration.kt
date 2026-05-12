@@ -10,7 +10,10 @@ import net.minecraftforge.registries.ForgeRegistries
 import net.minecraftforge.registries.ForgeRegistry
 
 @Suppress("UnstableApiUsage")
-fun migrateBlockEntity(name: String, namespace: String) {
+fun migrateBlockEntity(
+    name: String,
+    namespace: String,
+) {
     val registry = ForgeRegistries.BLOCK_ENTITY_TYPES as ForgeRegistry<BlockEntityType<*>>
     registry.addAlias(Constants.MOD_ID.createId(name), namespace.createId(name))
 }
@@ -20,8 +23,9 @@ fun BlockEntityType<*>.allowBlock(vararg blocks: Block) {
     accessor.validBlocks = accessor.validBlocks + blocks
 }
 
-fun <B : Block, P> BlockBuilder<B, P>.existingBlockEntity(type: () -> BlockEntityType<*>) = apply {
-    owner.addRegisterCallback(Registries.BLOCK_ENTITY_TYPE) {
-        type().allowBlock(entry)
+fun <B : Block, P> BlockBuilder<B, P>.existingBlockEntity(type: () -> BlockEntityType<*>) =
+    apply {
+        owner.addRegisterCallback(Registries.BLOCK_ENTITY_TYPE) {
+            type().allowBlock(entry)
+        }
     }
-}

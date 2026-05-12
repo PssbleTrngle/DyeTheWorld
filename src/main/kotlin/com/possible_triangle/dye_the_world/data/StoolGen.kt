@@ -20,64 +20,77 @@ import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Block
 import net.minecraftforge.client.model.generators.ConfiguredModel
 
-fun <T : Item, P> ItemBuilder<T, P>.stoolRecipes() = recipe { context, provider ->
-    val wool = dye.blockOf("wool")
-    ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 3)
-        .group("stools")
-        .pattern("#W#")
-        .pattern("/ /")
-        .define('#', ItemTags.PLANKS)
-        .define('W', wool)
-        .define('/', Items.STICK)
-        .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
-        .save(provider)
+fun <T : Item, P> ItemBuilder<T, P>.stoolRecipes() =
+    recipe { context, provider ->
+        val wool = dye.blockOf("wool")
+        ShapedRecipeBuilder
+            .shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 3)
+            .group("stools")
+            .pattern("#W#")
+            .pattern("/ /")
+            .define('#', ItemTags.PLANKS)
+            .define('W', wool)
+            .define('/', Items.STICK)
+            .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
+            .save(provider)
 
-    provider.dyeingRecipe(dye, AFBlocks.WHITE_STOOL.get(), context) {
-        group("stools")
+        provider.dyeingRecipe(dye, AFBlocks.WHITE_STOOL.get(), context) {
+            group("stools")
+        }
     }
-}
 
-fun <T : Block, P> BlockBuilder<T, P>.stoolBlockstate() = blockstate { context, provider ->
-    fun texture(suffix: String) = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/stool/${dye}_$suffix")
+fun <T : Block, P> BlockBuilder<T, P>.stoolBlockstate() =
+    blockstate { context, provider ->
+        fun texture(suffix: String) = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/stool/${dye}_$suffix")
 
-    provider.createVariant(context) { state ->
-        val low = state.getValue(StoolBlock.LOW)
+        provider.createVariant(context) { state ->
+            val low = state.getValue(StoolBlock.LOW)
 
-        val suffix = if (low) "_low" else ""
-        val parent = ANOTHER_FURNITURE.createId("block/template/stool$suffix")
-        val model = provider.models().withExistingParent(context.name + suffix, parent)
-            .texture("side", texture("side"))
-            .texture("top", texture("top"))
+            val suffix = if (low) "_low" else ""
+            val parent = ANOTHER_FURNITURE.createId("block/template/stool$suffix")
+            val model =
+                provider
+                    .models()
+                    .withExistingParent(context.name + suffix, parent)
+                    .texture("side", texture("side"))
+                    .texture("top", texture("top"))
 
-        ConfiguredModel.builder()
-            .modelFile(model)
+            ConfiguredModel
+                .builder()
+                .modelFile(model)
+        }
     }
-}
 
-fun <T : Item, P> ItemBuilder<T, P>.tallStoolRecipes() = recipe { context, provider ->
-    val wool = dye.blockOf("wool")
-    ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 3)
-        .group("tall_stools")
-        .pattern("#W#")
-        .pattern("/ /")
-        .pattern("/ /")
-        .define('#', ItemTags.PLANKS)
-        .define('W', wool)
-        .define('/', Items.STICK)
-        .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
-        .save(provider)
+fun <T : Item, P> ItemBuilder<T, P>.tallStoolRecipes() =
+    recipe { context, provider ->
+        val wool = dye.blockOf("wool")
+        ShapedRecipeBuilder
+            .shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 3)
+            .group("tall_stools")
+            .pattern("#W#")
+            .pattern("/ /")
+            .pattern("/ /")
+            .define('#', ItemTags.PLANKS)
+            .define('W', wool)
+            .define('/', Items.STICK)
+            .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
+            .save(provider)
 
-    provider.dyeingRecipe(dye, AFBlocks.WHITE_TALL_STOOL.get(), context) {
-        group("tall_stools")
+        provider.dyeingRecipe(dye, AFBlocks.WHITE_TALL_STOOL.get(), context) {
+            group("tall_stools")
+        }
     }
-}
 
-fun <T : Block, P> BlockBuilder<T, P>.tallStoolBlockstate() = blockstate { context, provider ->
-    fun texture(suffix: String) = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/tall_stool/${dye}_$suffix")
+fun <T : Block, P> BlockBuilder<T, P>.tallStoolBlockstate() =
+    blockstate { context, provider ->
+        fun texture(suffix: String) = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/tall_stool/${dye}_$suffix")
 
-    val parent = ANOTHER_FURNITURE.createId("block/template/tall_stool")
-    val model = provider.models().withExistingParent(context.name, parent)
-        .texture("top", texture("top"))
+        val parent = ANOTHER_FURNITURE.createId("block/template/tall_stool")
+        val model =
+            provider
+                .models()
+                .withExistingParent(context.name, parent)
+                .texture("top", texture("top"))
 
-    provider.simpleBlock(context.get(), model)
-}
+        provider.simpleBlock(context.get(), model)
+    }

@@ -15,31 +15,45 @@ import net.minecraft.world.level.block.entity.DecoratedPotBlockEntity
 import net.minecraft.world.level.storage.loot.LootTable
 import java.util.concurrent.Callable
 
-fun <T : Block, P> BlockBuilder<T, P>.potLoot() = loot { tables, block ->
-    val table = LootTable.lootTable()
-        .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDynamicTrimDropPool())
-        .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDecoratedPotPool(block))
-    tables.add(block, table)
-}
+fun <T : Block, P> BlockBuilder<T, P>.potLoot() =
+    loot { tables, block ->
+        val table =
+            LootTable
+                .lootTable()
+                .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDynamicTrimDropPool())
+                .withPool(ClayworksLootTableProvider.ClayworksBlockLoot.createDecoratedPotPool(block))
+        tables.add(block, table)
+    }
 
-fun createPotItem(block: Block, properties: Item.Properties) = BEWLRBlockItem(block, properties) {
+fun createPotItem(
+    block: Block,
+    properties: Item.Properties,
+) = BEWLRBlockItem(block, properties) {
     Callable {
         BEWLRBlockItem.LazyBEWLR { dispatcher, models ->
             DecoratedPotBlockEntityWithoutLevelRenderer(
-                dispatcher, models, DecoratedPotBlockEntity(
-                    BlockPos.ZERO, block.defaultBlockState()
-                )
+                dispatcher,
+                models,
+                DecoratedPotBlockEntity(
+                    BlockPos.ZERO,
+                    block.defaultBlockState(),
+                ),
             )
         }
     }
 }
 
-fun <T : Block, P> BlockBuilder<T, P>.potBlockstate() = blockstate { context, provider ->
-    val model = provider.models().getBuilder(context.name)
-        .texture("particle", ResourceLocation(dye.namespace, "block/${dye}_terracotta"))
-    provider.simpleBlock(context.get(), model)
-}
+fun <T : Block, P> BlockBuilder<T, P>.potBlockstate() =
+    blockstate { context, provider ->
+        val model =
+            provider
+                .models()
+                .getBuilder(context.name)
+                .texture("particle", ResourceLocation(dye.namespace, "block/${dye}_terracotta"))
+        provider.simpleBlock(context.get(), model)
+    }
 
-fun <T : Item, P> ItemBuilder<T, P>.potItemModel() = model { context, provider ->
-    provider.withExistingParent(context.name, ResourceLocation("item/decorated_pot"))
-}
+fun <T : Item, P> ItemBuilder<T, P>.potItemModel() =
+    model { context, provider ->
+        provider.withExistingParent(context.name, ResourceLocation("item/decorated_pot"))
+    }

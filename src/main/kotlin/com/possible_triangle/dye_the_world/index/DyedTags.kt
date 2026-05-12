@@ -12,12 +12,14 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 
-sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
-
+sealed class DyedTags<T>(
+    private val registry: ResourceKey<Registry<T>>,
+) {
     object Items : DyedTags<Item>(Registries.ITEM) {
-        val DYED = DyeColor.entries.associateWith {
-            loader("dyed/$it")
-        }
+        val DYED =
+            DyeColor.entries.associateWith {
+                loader("dyed/$it")
+            }
 
         val HAMMOCKS = create(Mods.COMFORTS, "hammocks")
         val SLEEPING_BAGS = create(Mods.COMFORTS, "sleeping_bags")
@@ -38,9 +40,10 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
     }
 
     object Blocks : DyedTags<Block>(Registries.BLOCK) {
-        val DYED = DyeColor.entries.associateWith {
-            loader("dyed/$it")
-        }
+        val DYED =
+            DyeColor.entries.associateWith {
+                loader("dyed/$it")
+            }
 
         val FLAGS = create(Mods.SUPPLEMENTARIES, "flags")
         val QUARK_STOOLS = create(Mods.QUARK, "stools")
@@ -62,9 +65,12 @@ sealed class DyedTags<T>(private val registry: ResourceKey<Registry<T>>) {
         val BOTANY_POTS = create(Mods.BOTANY_POTS, "botany_pots")
     }
 
-    protected fun create(namespace: String, path: String): TagKey<T> = TagKey.create(registry, namespace.createId(path))
+    protected fun create(
+        namespace: String,
+        path: String,
+    ): TagKey<T> = TagKey.create(registry, namespace.createId(path))
+
     protected fun loader(path: String): TagKey<T> = create("forge", path)
+
     protected fun create(path: String): TagKey<T> = TagKey.create(registry, ResourceLocation(path))
-
-
 }

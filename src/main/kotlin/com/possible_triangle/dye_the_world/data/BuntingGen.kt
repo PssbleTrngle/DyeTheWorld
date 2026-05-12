@@ -15,34 +15,39 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 
-fun <T : Item, P> ItemBuilder<T, P>.dyedBuntingItemModel() = model { context, provider ->
-    provider.generated(context, Constants.MOD_ID.createId("item/$SUPPLEMENTARIES/buntings/${dye}"))
-}
-
-fun <T : Item, P> ItemBuilder<T, P>.buntingItemModel() = model { context, provider ->
-    val model = provider.generated(context, SUPPLEMENTARIES.createId("item/buntings/bunting_white"))
-
-    DyeColor.entries.filter { it != DyeColor.WHITE }.forEach { dye ->
-        model.override()
-            .model(provider.getExistingFile(SUPPLEMENTARIES.createId("item/bunting_$dye")))
-            .predicate(SUPPLEMENTARIES.createId("dye"), 0.01F * dye.id)
-            .end()
+fun <T : Item, P> ItemBuilder<T, P>.dyedBuntingItemModel() =
+    model { context, provider ->
+        provider.generated(context, Constants.MOD_ID.createId("item/$SUPPLEMENTARIES/buntings/$dye"))
     }
-}
+
+fun <T : Item, P> ItemBuilder<T, P>.buntingItemModel() =
+    model { context, provider ->
+        val model = provider.generated(context, SUPPLEMENTARIES.createId("item/buntings/bunting_white"))
+
+        DyeColor.entries.filter { it != DyeColor.WHITE }.forEach { dye ->
+            model
+                .override()
+                .model(provider.getExistingFile(SUPPLEMENTARIES.createId("item/bunting_$dye")))
+                .predicate(SUPPLEMENTARIES.createId("dye"), 0.01F * dye.id)
+                .end()
+        }
+    }
 
 // Needs to be modified manually afterward to add nbt to result
-fun <T : Item, P> ItemBuilder<T, P>.dyedBuntingRecipe() = recipe { _, provider ->
-    val bunting = ModRegistry.BUNTING.get()
+fun <T : Item, P> ItemBuilder<T, P>.dyedBuntingRecipe() =
+    recipe { _, provider ->
+        val bunting = ModRegistry.BUNTING.get()
 
-    ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, bunting, 6)
-        .pattern("SSS")
-        .pattern("WWW")
-        .pattern(" W ")
-        .defineUnlocking('W', dye.blockOf("wool"))
-        .defineUnlocking('S', Items.STRING)
-        .save(provider, Constants.MOD_ID.createId("bunting_${dye}"))
+        ShapedRecipeBuilder
+            .shaped(RecipeCategory.DECORATIONS, bunting, 6)
+            .pattern("SSS")
+            .pattern("WWW")
+            .pattern(" W ")
+            .defineUnlocking('W', dye.blockOf("wool"))
+            .defineUnlocking('S', Items.STRING)
+            .save(provider, Constants.MOD_ID.createId("bunting_$dye"))
 
-    provider.dyeingRecipe(dye, bunting, { bunting }, id = Constants.MOD_ID.createId("bunting_${dye}_dyeing")) {
-        group("bunting")
+        provider.dyeingRecipe(dye, bunting, { bunting }, id = Constants.MOD_ID.createId("bunting_${dye}_dyeing")) {
+            group("bunting")
+        }
     }
-}

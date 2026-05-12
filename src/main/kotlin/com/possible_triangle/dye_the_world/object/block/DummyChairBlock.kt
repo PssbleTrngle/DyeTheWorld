@@ -9,8 +9,9 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.level.block.state.properties.BooleanProperty
 import net.minecraft.world.level.block.state.properties.EnumProperty
 
-class DummyChairBlock(properties: Properties) : HorizontalDirectionalBlock(properties) {
-
+class DummyChairBlock(
+    properties: Properties,
+) : HorizontalDirectionalBlock(properties) {
     companion object {
         val ARMRESTS = EnumProperty.create("armrests", ArmrestConfiguration::class.java)
         val CROPPED_BACK = BooleanProperty.create("cropped_back")
@@ -23,9 +24,12 @@ class DummyChairBlock(properties: Properties) : HorizontalDirectionalBlock(prope
     }
 
     enum class ArmrestConfiguration : StringRepresentable {
-        BOTH, NONE, LEFT, RIGHT;
+        BOTH,
+        NONE,
+        LEFT,
+        RIGHT,
+        ;
 
         override fun getSerializedName() = name.lowercase()
     }
-
 }

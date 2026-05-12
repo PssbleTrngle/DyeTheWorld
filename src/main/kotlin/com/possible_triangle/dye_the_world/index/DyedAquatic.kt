@@ -22,32 +22,32 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.world.item.CreativeModeTabs
 
 object DyedAquatic {
-
-    val BEDROLLS = dyesFor(UPGRADE_AQUATIC).associateWith { dye ->
-        REGISTRATE.`object`("${dye}_bedroll")
-            .dyedBlock(dye, UPGRADE_AQUATIC) { BedrollBlock(dye, it) }
-            .initialProperties { UABlocks.BEDROLL.get() }
-            .properties { it.mapColor(dye) }
-            .lang("${dye.translation} Bedroll")
-            .bedrollBlockstate()
-            .bedrollLoot()
-            .optionalTag(UABlockTags.BEDROLLS)
-            .withItem {
-                tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
-                tab(CreativeModeTabs.COLORED_BLOCKS)
-                optionalTag(UAItemTags.BEDROLLS)
-                bedrollRecipe()
-                bedrollItemModel()
-            }
-            .register()
-    }
+    val BEDROLLS =
+        dyesFor(UPGRADE_AQUATIC).associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_bedroll")
+                .dyedBlock(dye, UPGRADE_AQUATIC) { BedrollBlock(dye, it) }
+                .initialProperties { UABlocks.BEDROLL.get() }
+                .properties { it.mapColor(dye) }
+                .lang("${dye.translation} Bedroll")
+                .bedrollBlockstate()
+                .bedrollLoot()
+                .optionalTag(UABlockTags.BEDROLLS)
+                .withItem {
+                    tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
+                    tab(CreativeModeTabs.COLORED_BLOCKS)
+                    optionalTag(UAItemTags.BEDROLLS)
+                    bedrollRecipe()
+                    bedrollItemModel()
+                }.register()
+        }
 
     init {
         REGISTRATE.addDataGenerator(ProviderType.RECIPE) { provider ->
             provider.withNamespace(UPGRADE_AQUATIC) {
                 provider.cleaningRecipe(
                     BuiltInRegistries.ITEM.getOrThrow(UPGRADE_AQUATIC.createId("bedroll")),
-                    UAItemTags.BEDROLLS
+                    UAItemTags.BEDROLLS,
                 )
 
                 VANILLA_DYES.forEach { dye ->
@@ -61,9 +61,7 @@ object DyedAquatic {
         }
     }
 
-
     fun register() {
         // Loads this class
     }
-
 }
