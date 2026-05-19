@@ -10,6 +10,7 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.resources.ResourceKey
+import net.minecraft.world.item.BundleItem
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
@@ -51,7 +52,7 @@ object DyedVanillaBackport {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_bundle")
-                .dyedItem(dye, VANILLA_BACKPORT, ::Item)
+                .dyedItem(dye, VANILLA_BACKPORT, ::BundleItem)
                 .properties { it.stacksTo(1) }
                 .lang("${dye.translation} Bundle")
                 .germanLang("${dye.germanTranslation(Genus.I)} Bündel")
