@@ -122,6 +122,7 @@ dependencies {
     modImplementation(pack.modrinth.waystones)
     modCompileOnly(pack.modrinth.create.steam.n.rails)
     modImplementation(libs.dye.depot)
+    accessTransformers(libs.dye.depot)
     modImplementation(pack.modrinth.snowy.spirit)
     modImplementation(pack.modrinth.fusion.connected.textures)
     modImplementation(pack.modrinth.vanillabackport)
