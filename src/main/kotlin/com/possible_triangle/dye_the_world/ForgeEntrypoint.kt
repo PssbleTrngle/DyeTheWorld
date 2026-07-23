@@ -69,6 +69,10 @@ object ForgeEntrypoint {
             MOD_BUS.addListener { _: FMLClientSetupEvent -> VanillaBackportsCompat.registerHarnessLayers() }
         }
 
+        ifLoaded(Constants.Mods.SPELUNKERY) {
+            DyedSpelunkery.register()
+        }
+
         if (DatagenModLoader.isRunningDataGen()) {
             Constants.LOGGER.debug("registering datagen")
 

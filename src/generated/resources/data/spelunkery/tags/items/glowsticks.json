@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:amber_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_glowstick",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_glowstick",
+      "required": false
+    }
+  ]
+}

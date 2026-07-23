@@ -28,8 +28,9 @@ This mod integrates several colored blocks added by different mods with the 16 n
 This includes textures, models, recipes, loot tables and block/item tags.
 
 Huge thanks to [Yapetto](https://modrinth.com/user/Yapetto) for providing most of the textures 
-as well as [Lev](https://modrinth.com/user/lev) for allowing me to merge their *Create Compat for Dye Depot* resourcepack into this
-and [OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for letting me use their textures for valve handles, buntings and awnings.
+as well as [Lev](https://modrinth.com/user/lev) for allowing me to merge their *Create Compat for Dye Depot* resourcepack into this, 
+[OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for letting me use their textures for valve handles, buntings and awnings
+and nonbatnary for their textures for spelunkery.
 
 ---
 
@@ -40,7 +41,7 @@ and [OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for 
 - [Create](https://modrinth.com/mod/create) (Seats, Toolboxes, Sails, Valve Handles)
 - [Quark](https://modrinth.com/mod/quark) (Stools, Glass Shards)
 - [Clayworks](https://modrinth.com/mod/clayworks) (Terracotta Bricks, Colored Decorated Pots, Glass Doors)
-- [Domestication Innovation](https://modrinth.com/mod/domestication-innovation) (Pet Beds)
+- [Redomesticate](https://modrinth.com/mod/redomesticate) (Pet Beds)
 - [Alex's Caves](https://modrinth.com/mod/alexs-caves) (Radon Lamps)
 - [Ars Nouveau](https://modrinth.com/mod/ars-nouveau) (Starbuncles)
 - [Chalk](https://modrinth.com/mod/chalk-mod)
@@ -53,3 +54,5 @@ and [OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for 
 - [Botany Pots](https://modrinth.com/mod/botany-pots)
 - [Connected Glass](https://modrinth.com/mod/connected-glass)
 - [Elevator Mod](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator)
+- [Create Aeronautics](https://modrinth.com/mod/create-aeronautics)
+- [Spelunkery](https://modrinth.com/mod/spelunkery/versions) (Glow Sticks)

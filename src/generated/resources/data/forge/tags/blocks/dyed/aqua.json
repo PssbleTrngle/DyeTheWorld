@@ -145,6 +145,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:aqua_glowstick",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_aqua",
       "required": false
     },

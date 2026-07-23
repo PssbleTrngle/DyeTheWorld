@@ -28,6 +28,9 @@ forge {
         existing("snowyspirit")
         existing("connectedglass")
         existing("botanypots")
+        existing("simulated")
+        existing("aeronautics")
+        existing("spelunkery")
     }
 }
 
@@ -100,7 +103,7 @@ dependencies {
     modImplementation(pack.modrinth.snowy.spirit)
     modImplementation(pack.modrinth.fusion.connected.textures)
     modImplementation(pack.modrinth.vanillabackport)
-
+    modImplementation(pack.modrinth.spelunkery)
     // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
@@ -172,6 +175,8 @@ upload {
             optional("botany-pots")
             optional("connected-glass")
             optional("vanillabackport")
+            optional("create-aeronautics")
+            optional("spelunkery")
         }
     }
 }

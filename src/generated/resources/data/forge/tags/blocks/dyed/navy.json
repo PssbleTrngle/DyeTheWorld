@@ -145,6 +145,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:navy_glowstick",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_navy",
       "required": false
     },
