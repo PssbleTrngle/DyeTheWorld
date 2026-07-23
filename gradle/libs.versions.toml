@@ -19,4 +19,4 @@ create-aeronautics = { group = "dev.eriksonn.aeronautics", name = "aeronautics-n
 
 jei = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version = "19.21.0.247" }
 
-dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot-neoforge", version = "1.21.1-2.1.0" }
+dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot-neoforge", version = "1.21.1-2.1.1" }
