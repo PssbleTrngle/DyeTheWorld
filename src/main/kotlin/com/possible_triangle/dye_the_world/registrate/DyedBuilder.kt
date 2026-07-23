@@ -6,12 +6,22 @@ import net.minecraft.world.item.DyeColor
 
 interface DyedBuilder {
     val dye: DyeColor
+    val mod: String
 }
 
 val Builder<*, *, *, *>.dye: DyeColor
     get() {
         return if (this is DyedBuilder) {
             this.dye
+        } else {
+            throw ClassCastException("not a DyedBlockBuilder")
+        }
+    }
+
+val Builder<*, *, *, *>.mod: String
+    get() {
+        return if (this is DyedBuilder) {
+            this.mod
         } else {
             throw ClassCastException("not a DyedBlockBuilder")
         }

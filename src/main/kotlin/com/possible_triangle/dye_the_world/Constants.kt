@@ -38,5 +38,6 @@ object Constants {
         const val BOTANY_POTS = "botanypots"
         const val VANILLA_BACKPORT = "vanillabackport"
         const val SPELUNKERY = "spelunkery"
+        const val TWIGS = "twigs"
     }
 }

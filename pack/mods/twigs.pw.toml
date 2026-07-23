@@ -1,0 +1,13 @@
+name = "Twigs"
+filename = "Twigs-1.21.1-3.1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/RG50cUrX/versions/r1egimV5/Twigs-1.21.1-3.1.2.jar"
+hash-format = "sha512"
+hash = "8edc6ce6baa785800b72b0ffad6cffef3217573cc091600b63e616ef91f3c2ee3598bb64c17deb228b6e79d54b32769348e5f524381e4f7af4b2215c10d1ab88"
+
+[update]
+[update.modrinth]
+mod-id = "RG50cUrX"
+version = "r1egimV5"

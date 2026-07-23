@@ -145,6 +145,30 @@
       "required": false
     },
     {
+      "id": "dye_the_world:amber_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_pot",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_amber",
       "required": false
     },

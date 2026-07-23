@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab_top",
   "textures": {
-    "bottom": "dye_the_world:block/clayworks/forest_terracotta_bricks",
-    "side": "dye_the_world:block/clayworks/forest_terracotta_bricks",
-    "top": "dye_the_world:block/clayworks/forest_terracotta_bricks"
+    "bottom": "dye_the_world:block/clayworks/terracotta_brick/forest",
+    "side": "dye_the_world:block/clayworks/terracotta_brick/forest",
+    "top": "dye_the_world:block/clayworks/terracotta_brick/forest"
   }
 }

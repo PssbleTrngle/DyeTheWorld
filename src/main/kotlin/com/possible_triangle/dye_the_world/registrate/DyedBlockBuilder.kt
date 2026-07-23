@@ -23,7 +23,7 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     private val owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,
-    private val mod: String,
+    override val mod: String,
     name: String,
     callback: BuilderCallback,
     factory: NonNullFunction<Properties, T>,

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_post",
   "textures": {
-    "wall": "dye_the_world:block/clayworks/teal_terracotta_bricks"
+    "wall": "dye_the_world:block/clayworks/terracotta_brick/teal"
   }
 }

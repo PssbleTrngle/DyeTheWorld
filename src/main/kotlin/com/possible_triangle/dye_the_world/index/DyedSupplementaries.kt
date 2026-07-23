@@ -16,7 +16,6 @@ import net.mehvahdjukaar.supplementaries.common.block.blocks.SackBlock
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.ColorRGBA
 import net.minecraft.world.item.DyeColor
-import net.minecraft.world.level.block.Block
 
 private val DyeColor.rgba get() = ColorRGBA(textColor)
 
@@ -44,7 +43,7 @@ object DyedSupplementaries {
         DYES.associateWith { dye ->
             REGISTRATE_AMENDMENTS
                 .`object`("ceiling_banner_$dye")
-                .dyedBlock(dye, ::Block)
+                .dyedBlock(dye)
                 .lang("${dye.translation} Banner")
                 .optionalTag(DyedTags.Blocks.CEILING_BANNERS)
                 .blockstate { context, provider ->

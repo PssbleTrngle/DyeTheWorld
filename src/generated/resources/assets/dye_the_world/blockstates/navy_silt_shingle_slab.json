@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dye_the_world:block/navy_silt_shingle_slab"
+    },
+    "type=double": {
+      "model": "dye_the_world:block/navy_silt_shingles"
+    },
+    "type=top": {
+      "model": "dye_the_world:block/navy_silt_shingle_slab_top"
+    }
+  }
+}

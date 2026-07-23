@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:amber_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_silt_pot",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_silt_pot",
+      "required": false
+    }
+  ]
+}

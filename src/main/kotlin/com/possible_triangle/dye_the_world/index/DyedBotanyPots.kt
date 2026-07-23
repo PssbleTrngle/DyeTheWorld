@@ -22,7 +22,6 @@ import net.minecraft.data.recipes.ShapelessRecipeBuilder
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.ItemLike
-import net.minecraft.world.level.block.Block
 
 private fun BlockBuilder<*, *>.basicPotRecipe(material: NonNullSupplier<out ItemLike>) =
     recipe { context, provider ->
@@ -95,7 +94,7 @@ object DyedBotanyPots {
     ) = DYES.associateWith { dye ->
         REGISTRATE
             .`object`("${dye}_${type}_botany_pot")
-            .dyedBlock(dye, ::Block)
+            .dyedBlock(dye)
             .optionalTag(DyedTags.Blocks.BOTANY_POTS)
             .withItem {
                 optionalTag(DyedTags.Items.BOTANY_POTS)

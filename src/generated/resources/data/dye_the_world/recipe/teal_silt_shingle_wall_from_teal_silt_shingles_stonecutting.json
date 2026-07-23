@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_the_world:teal_silt_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:teal_silt_shingle_wall"
+  }
+}

@@ -14,7 +14,6 @@ import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.translation
 import net.minecraft.tags.BlockTags
-import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.RotatedPillarBlock
 
 object DyedAeronautics {
@@ -26,7 +25,7 @@ object DyedAeronautics {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_envelope")
-                .dyedBlock(dye, ::Block)
+                .dyedBlock(dye)
                 .lang("${dye.translation} Hot Air Envelope")
                 .germanLang("${dye.germanTranslation(Genus.F)} Heißluftballonhülle")
                 .optionalTag(DyedTags.Blocks.ENVELOPES)

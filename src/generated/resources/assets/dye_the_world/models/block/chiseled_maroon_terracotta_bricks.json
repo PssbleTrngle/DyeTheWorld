@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "dye_the_world:block/clayworks/chiseled_maroon_terracotta_bricks"
+    "all": "dye_the_world:block/clayworks/chiseled_terracotta_bricks/maroon"
   }
 }

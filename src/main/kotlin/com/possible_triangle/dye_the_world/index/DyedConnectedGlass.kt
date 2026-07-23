@@ -54,7 +54,7 @@ object DyedConnectedGlass {
     ) = DYES.associateWith { dye ->
         REGISTRATE
             .`object`("${type}_glass_$dye")
-            .dyedBlock(dye, ::Block)
+            .dyedBlock(dye)
             .optionalTag(Tags.Blocks.GLASS_BLOCKS)
             .connectedGlassBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }

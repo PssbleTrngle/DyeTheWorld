@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/stairs",
   "textures": {
-    "bottom": "dye_the_world:block/clayworks/verdant_terracotta_bricks",
-    "side": "dye_the_world:block/clayworks/verdant_terracotta_bricks",
-    "top": "dye_the_world:block/clayworks/verdant_terracotta_bricks"
+    "bottom": "dye_the_world:block/clayworks/terracotta_brick/verdant",
+    "side": "dye_the_world:block/clayworks/terracotta_brick/verdant",
+    "top": "dye_the_world:block/clayworks/terracotta_brick/verdant"
   }
 }

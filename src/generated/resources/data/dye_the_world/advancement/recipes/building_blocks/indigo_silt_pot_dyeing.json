@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_silt_pot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "twigs:silt_pot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_the_world:indigo_silt_pot_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_silt_pot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_the_world:indigo_silt_pot_dyeing"
+    ]
+  }
+}
