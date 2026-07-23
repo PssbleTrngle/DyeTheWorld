@@ -1,0 +1,13 @@
+name = "Spelunkery"
+filename = "spelunkery-1.21.1-0.4.3-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/krskFMfA/versions/oLqPJYV9/spelunkery-1.21.1-0.4.3-neoforge.jar"
+hash-format = "sha512"
+hash = "17a8d992362d8aad07a065e8798e5d0a348e1e5d8143790fc580375c6968cde3faf7ab8490404dd2b326d075993b6ccb0f09ac39eeab723ae58df51657db7c23"
+
+[update]
+[update.modrinth]
+mod-id = "krskFMfA"
+version = "oLqPJYV9"

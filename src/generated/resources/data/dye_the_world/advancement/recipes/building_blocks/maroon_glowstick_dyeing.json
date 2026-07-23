@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "spelunkery"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dyes/maroon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_glowsticks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#spelunkery:glowsticks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_the_world:maroon_glowstick_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dye",
+      "has_glowsticks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_the_world:maroon_glowstick_dyeing"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "dye_the_world:item/spelunkery/glowstick/verdant"
+  }
+}

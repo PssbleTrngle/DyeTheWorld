@@ -31,6 +31,7 @@ neoforge {
         existing("botanypots")
         existing("simulated")
         existing("aeronautics")
+        existing("spelunkery")
     }
 }
 
@@ -126,6 +127,7 @@ dependencies {
     modImplementation(pack.modrinth.snowy.spirit)
     modImplementation(pack.modrinth.fusion.connected.textures)
     modImplementation(pack.modrinth.vanillabackport)
+    modImplementation(pack.modrinth.spelunkery)
     // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
@@ -200,6 +202,7 @@ upload {
             optional("connected-glass")
             optional("vanillabackport")
             optional("create-aeronautics")
+            optional("spelunkery")
         }
     }
 }
@@ -212,16 +215,3 @@ idea {
 
 enableSonarQube()
 enableSpotless()
-
-env["MODRINTH_HOME"]?.let { home ->
-    val task =
-        tasks.register<Copy>("copyToLocalPack") {
-            dependsOn(tasks.build)
-            from(tasks.jar)
-            destinationDir = file(home).resolve("profiles/dyes/mods")
-        }
-
-    tasks.publish {
-        finalizedBy(task)
-    }
-}

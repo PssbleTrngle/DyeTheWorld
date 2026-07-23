@@ -28,8 +28,9 @@ This mod integrates several colored blocks added by different mods with the 16 n
 This includes textures, models, recipes, loot tables and block/item tags.
 
 Huge thanks to [Yapetto](https://modrinth.com/user/Yapetto) for providing most of the textures 
-as well as [Lev](https://modrinth.com/user/lev) for allowing me to merge their *Create Compat for Dye Depot* resourcepack into this
-and [OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for letting me use their textures for valve handles, buntings and awnings.
+as well as [Lev](https://modrinth.com/user/lev) for allowing me to merge their *Create Compat for Dye Depot* resourcepack into this, 
+[OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for letting me use their textures for valve handles, buntings and awnings
+and nonbatnary for their textures for spelunkery.
 
 ---
 
@@ -54,3 +55,4 @@ and [OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for 
 - [Connected Glass](https://modrinth.com/mod/connected-glass)
 - [Elevator Mod](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator)
 - [Create Aeronautics](https://modrinth.com/mod/create-aeronautics)
+- [Spelunkery](https://modrinth.com/mod/spelunkery/versions) (Glow Sticks)

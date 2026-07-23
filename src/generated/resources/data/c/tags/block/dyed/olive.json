@@ -141,6 +141,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:olive_glowstick",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_olive",
       "required": false
     },

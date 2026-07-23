@@ -141,6 +141,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:tan_glowstick",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_tan",
       "required": false
     },

@@ -176,6 +176,11 @@ hash = "69a9514aa7aa7ed4233d82ba6a5149809994860eeb126551f9dd941508a836e9"
 metafile = true
 
 [[files]]
+file = "mods/spelunkery.pw.toml"
+hash = "1fc642b3e1bf9af0a30b55054d606d993e9354439fa284c39d0ea854104b992a"
+metafile = true
+
+[[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "3c08d6331ca871abdfa7a185011d2a6349a1125cc6b2cf87f9c89ca4043dbe70"
 metafile = true
