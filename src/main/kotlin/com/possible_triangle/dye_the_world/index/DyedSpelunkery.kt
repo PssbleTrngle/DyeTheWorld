@@ -22,7 +22,7 @@ object DyedSpelunkery {
         dyesFor(SPELUNKERY).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_glowstick")
-                .dyedBlock(dye, SPELUNKERY) { GlowstickBlock(it) }
+                .dyedBlock(dye, SPELUNKERY, ::GlowstickBlock)
                 .initialProperties(NonNullSupplier(ModBlocks.GLOWSTICK::get))
                 .lang("${dye.translation} Glowstick")
                 .glowstickBlockState()

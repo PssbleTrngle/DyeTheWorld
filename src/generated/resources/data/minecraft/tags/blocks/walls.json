@@ -191,6 +191,70 @@
     {
       "id": "dye_the_world:verdant_concrete_wall",
       "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_silt_shingle_wall",
+      "required": false
     }
   ]
 }

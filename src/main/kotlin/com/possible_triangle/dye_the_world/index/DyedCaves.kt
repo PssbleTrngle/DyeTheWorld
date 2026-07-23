@@ -16,7 +16,6 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
-import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.SoundType
 
@@ -28,7 +27,7 @@ object DyedCaves {
         dyesFor(ALEXS_CAVES).associateWith { dye ->
             REGISTRATE
                 .`object`("radon_lamp_$dye")
-                .dyedBlock(dye, ALEXS_CAVES, ::Block)
+                .dyedBlock(dye, ALEXS_CAVES)
                 .properties { it.strength(2.0f, 11.0f) }
                 .properties { it.requiresCorrectToolForDrops() }
                 .properties { it.lightLevel { 15 } }

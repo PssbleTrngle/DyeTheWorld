@@ -61,7 +61,8 @@ private class ColorSetProvider(
 
 private val colorSets =
     mapOf(
-        ResourceLocation("bundle") to Constants.Mods.VANILLA_BACKPORT,
+        ResourceLocation.withDefaultNamespace("bundle") to Constants.Mods.VANILLA_BACKPORT,
+        Constants.Mods.TWIGS.createId("silt_pot") to Constants.Mods.TWIGS,
     )
 
 fun AbstractRegistrate<*>.generateColorSetModifications() {

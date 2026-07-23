@@ -31,6 +31,7 @@ forge {
         existing("simulated")
         existing("aeronautics")
         existing("spelunkery")
+        existing("twigs")
     }
 }
 
@@ -104,6 +105,7 @@ dependencies {
     modImplementation(pack.modrinth.fusion.connected.textures)
     modImplementation(pack.modrinth.vanillabackport)
     modImplementation(pack.modrinth.spelunkery)
+    modImplementation(pack.modrinth.twigs)
     // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
@@ -177,6 +179,7 @@ upload {
             optional("vanillabackport")
             optional("create-aeronautics")
             optional("spelunkery")
+            optional("twigs")
         }
     }
 }

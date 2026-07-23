@@ -13,7 +13,6 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapelessRecipeBuilder
 import net.minecraft.tags.BlockTags
 import net.minecraft.tags.ItemTags
-import net.minecraft.world.level.block.Block
 
 object DyedCreateInterior {
     private val DYES = dyesFor(CREATE_INTERIORS)
@@ -57,7 +56,7 @@ object DyedCreateInterior {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_cushion")
-                .dyedBlock(dye, ::Block)
+                .dyedBlock(dye)
                 .lang("${dye.translation} Cushion")
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
                 .optionalTag(BlockTags.WOOL)

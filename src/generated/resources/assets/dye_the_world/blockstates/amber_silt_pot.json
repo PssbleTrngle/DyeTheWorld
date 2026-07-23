@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "filled=false": {
+      "model": "dye_the_world:block/amber_silt_pot"
+    },
+    "filled=true": {
+      "model": "dye_the_world:block/amber_silt_pot"
+    }
+  }
+}

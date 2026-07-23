@@ -1,0 +1,21 @@
+{
+  "colors": {
+    "amber": "dye_the_world:amber_silt_pot",
+    "aqua": "dye_the_world:aqua_silt_pot",
+    "beige": "dye_the_world:beige_silt_pot",
+    "coral": "dye_the_world:coral_silt_pot",
+    "forest": "dye_the_world:forest_silt_pot",
+    "ginger": "dye_the_world:ginger_silt_pot",
+    "indigo": "dye_the_world:indigo_silt_pot",
+    "maroon": "dye_the_world:maroon_silt_pot",
+    "mint": "dye_the_world:mint_silt_pot",
+    "navy": "dye_the_world:navy_silt_pot",
+    "olive": "dye_the_world:olive_silt_pot",
+    "rose": "dye_the_world:rose_silt_pot",
+    "slate": "dye_the_world:slate_silt_pot",
+    "tan": "dye_the_world:tan_silt_pot",
+    "teal": "dye_the_world:teal_silt_pot",
+    "verdant": "dye_the_world:verdant_silt_pot"
+  },
+  "id": "twigs:silt_pot"
+}

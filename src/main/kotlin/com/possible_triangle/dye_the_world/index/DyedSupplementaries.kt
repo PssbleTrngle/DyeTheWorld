@@ -13,7 +13,6 @@ import net.mehvahdjukaar.supplementaries.common.block.blocks.AwningBlock
 import net.mehvahdjukaar.supplementaries.common.block.blocks.SackBlock
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.Item
-import net.minecraft.world.level.block.Block
 
 object DyedSupplementaries {
     private val DYES = dyesFor(SUPPLEMENTARIES)
@@ -39,7 +38,7 @@ object DyedSupplementaries {
         DYES.associateWith { dye ->
             REGISTRATE_AMENDMENTS
                 .`object`("ceiling_banner_$dye")
-                .dyedBlock(dye, ::Block)
+                .dyedBlock(dye)
                 .lang("${dye.translation} Banner")
                 .optionalTag(DyedTags.Blocks.CEILING_BANNERS)
                 .blockstate { context, provider ->

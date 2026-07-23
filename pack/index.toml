@@ -181,6 +181,11 @@ hash = "168b3ee3fa2fe18f712c593d9d90e8b3a8a6a10564376af98bcc6f9719506641"
 metafile = true
 
 [[files]]
+file = "mods/twigs.pw.toml"
+hash = "08a5b69474ddf223809a4e624f123dd3886362011663989c1bbacd6b5167baf0"
+metafile = true
+
+[[files]]
 file = "mods/upgrade-aquatic.pw.toml"
 hash = "634bea00e2dfd1b46ccb68f868661fadaf50d39ca56257f79f6ec985a2aa6f1d"
 metafile = true

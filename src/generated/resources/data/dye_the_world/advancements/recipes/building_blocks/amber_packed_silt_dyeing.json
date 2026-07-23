@@ -1,0 +1,52 @@
+{
+  "parent": "minecraft:recipes/root",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "criteria": {
+    "has_dye": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dyes/amber"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_packed_silt": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twigs:packed_silt"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_the_world:amber_packed_silt_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dye",
+      "has_packed_silt",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_the_world:amber_packed_silt_dyeing"
+    ]
+  },
+  "sends_telemetry_event": false
+}

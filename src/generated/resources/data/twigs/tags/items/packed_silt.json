@@ -1,0 +1,324 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:amber_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_silt_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_silt_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_silt_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_silt_shingle_wall",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_packed_silt",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_packed_silt",
+      "required": false
+    }
+  ]
+}

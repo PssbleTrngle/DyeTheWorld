@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "dye_the_world:block/twigs/silt_shingle/slate"
+  }
+}

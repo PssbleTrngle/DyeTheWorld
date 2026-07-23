@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "dye_the_world:block/twigs/silt_shingle/mint"
+  }
+}

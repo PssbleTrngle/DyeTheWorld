@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side",
   "textures": {
-    "wall": "dye_the_world:block/clayworks/olive_terracotta_bricks"
+    "wall": "dye_the_world:block/clayworks/terracotta_brick/olive"
   }
 }

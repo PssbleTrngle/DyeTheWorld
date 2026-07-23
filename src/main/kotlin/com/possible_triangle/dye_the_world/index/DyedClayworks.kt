@@ -48,15 +48,11 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_terracotta_bricks")
-                .dyedBlock(dye, CLAYWORKS, ::Block)
+                .dyedBlock(dye, CLAYWORKS)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .blockstate { c, p ->
-                    p.simpleBlock(
-                        c.get(),
-                        p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/$CLAYWORKS/${c.name}")),
-                    )
-                }.lang("${dye.translation} Terracotta Bricks")
+                .cubeBlockstate("terracotta_brick")
+                .lang("${dye.translation} Terracotta Bricks")
                 .germanLang("${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
                     tab(CreativeModeTabs.COLORED_BLOCKS)
@@ -81,11 +77,6 @@ object DyedClayworks {
             CLAYWORKS.createId("terracotta_brick"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelstufe")
-                blockstate { c, p ->
-                    val texture = Constants.MOD_ID.createId("block/$CLAYWORKS/${dye}_terracotta_bricks")
-                    val double = Constants.MOD_ID.createId("block/${dye}_terracotta_bricks")
-                    p.slabBlock(c.get(), double, texture)
-                }
             },
             modifyItem = { dye ->
                 recipe { context, provider ->
@@ -101,10 +92,6 @@ object DyedClayworks {
             CLAYWORKS.createId("terracotta_brick"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegeltreppe")
-                blockstate { c, p ->
-                    val texture = Constants.MOD_ID.createId("block/$CLAYWORKS/${dye}_terracotta_bricks")
-                    p.stairsBlock(c.get(), texture)
-                }
             },
             modifyItem = { dye ->
                 recipe { context, provider ->
@@ -120,19 +107,11 @@ object DyedClayworks {
             CLAYWORKS.createId("terracotta_brick"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelmauer")
-                blockstate { c, p ->
-                    val texture = Constants.MOD_ID.createId("block/$CLAYWORKS/${dye}_terracotta_bricks")
-                    p.wallBlock(c.get(), texture)
-                }
             },
             modifyItem = { dye ->
                 recipe { context, provider ->
                     provider.wall(TERRACOTTA_BRICKS[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
                     provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
-                }
-                model { c, p ->
-                    val texture = Constants.MOD_ID.createId("block/$CLAYWORKS/${dye}_terracotta_bricks")
-                    p.wallInventory(c.name, texture)
                 }
             },
         )
@@ -141,15 +120,11 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("chiseled_${dye}_terracotta_bricks")
-                .dyedBlock(dye, CLAYWORKS, ::Block)
+                .dyedBlock(dye, CLAYWORKS)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .blockstate { c, p ->
-                    p.simpleBlock(
-                        c.get(),
-                        p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/$CLAYWORKS/${c.name}")),
-                    )
-                }.lang("Chiseled ${dye.translation} Terracotta Bricks")
+                .cubeBlockstate("chiseled_terracotta_bricks")
+                .lang("Chiseled ${dye.translation} Terracotta Bricks")
                 .germanLang("Gemeißelte ${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
                     tab(CreativeModeTabs.COLORED_BLOCKS)
@@ -173,17 +148,17 @@ object DyedClayworks {
     val TERRACOTTA_SLABS =
         REGISTRATE.createSlabs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramikstufe")
-        })
+        }, existingTexture = true)
 
     val TERRACOTTA_STAIRS =
         REGISTRATE.createStairs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramiktreppe")
-        })
+        }, existingTexture = true)
 
     val TERRACOTTA_WALLS =
         REGISTRATE.createWalls(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramikmauer")
-        })
+        }, existingTexture = true)
 
     @JvmField
     val DECORATED_POTS =

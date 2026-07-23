@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "dye_the_world:block/twigs/silt_shingle/ginger",
+    "side": "dye_the_world:block/twigs/silt_shingle/ginger",
+    "top": "dye_the_world:block/twigs/silt_shingle/ginger"
+  }
+}

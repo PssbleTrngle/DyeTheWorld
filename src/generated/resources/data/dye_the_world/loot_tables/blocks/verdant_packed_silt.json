@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:block",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_the_world:verdant_packed_silt"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "dye_the_world:blocks/verdant_packed_silt"
+}

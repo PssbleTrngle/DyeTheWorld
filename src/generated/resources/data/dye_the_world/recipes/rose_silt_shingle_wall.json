@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "key": {
+    "X": {
+      "item": "dye_the_world:rose_silt_shingles"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "dye_the_world:rose_silt_shingle_wall"
+  },
+  "show_notification": true
+}

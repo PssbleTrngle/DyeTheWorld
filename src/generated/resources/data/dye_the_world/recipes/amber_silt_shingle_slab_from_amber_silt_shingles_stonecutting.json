@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "count": 2,
+  "ingredient": {
+    "item": "dye_the_world:amber_silt_shingles"
+  },
+  "result": "dye_the_world:amber_silt_shingle_slab"
+}

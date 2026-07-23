@@ -3,17 +3,14 @@ package com.possible_triangle.dye_the_world.extensions
 import com.possible_triangle.dye_the_world.ForgeEntrypoint
 import com.possible_triangle.dye_the_world.data.CustomRegistrateLangProvider
 import com.tterrag.registrate.builders.BlockBuilder
-import com.tterrag.registrate.builders.BlockEntityBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.ProviderType
-import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.resources.ResourceKey
 import net.minecraft.tags.TagKey
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
-import net.minecraft.world.level.block.entity.BlockEntity
 
 fun <T : Item, P> ItemBuilder<T, P>.optionalTag(tag: TagKey<Item>) =
     apply {
@@ -36,9 +33,6 @@ fun <T : Block, P> BlockBuilder<T, P>.withItem(
     item(factory)
         .apply(block)
         .build()
-
-fun <T : BlockEntity, P> BlockEntityBuilder<T, P>.validBlocks(values: Collection<NonNullSupplier<out Block>>): BlockEntityBuilder<T, P> =
-    validBlocks(*values.toTypedArray())
 
 val DE_LANG = CustomRegistrateLangProvider.providerType("de_de")
 

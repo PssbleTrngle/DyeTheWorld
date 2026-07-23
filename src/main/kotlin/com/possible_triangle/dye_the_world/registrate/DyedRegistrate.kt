@@ -55,10 +55,17 @@ class DyedRegistrate private constructor(
         }
     }
 
+    fun dyedBlock(color: DyeColor) = dyedBlock(color, modid, ::Block)
+
     fun <T : Block> dyedBlock(
         color: DyeColor,
         factory: NonNullFunction<BlockBehaviour.Properties, T>,
     ) = dyedBlock(color, modid, factory)
+
+    fun dyedBlock(
+        color: DyeColor,
+        mod: String,
+    ) = dyedBlock(color, mod, ::Block)
 
     fun <T : Block> dyedBlock(
         color: DyeColor,

@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:recipes/root",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "criteria": {
+    "has_aqua_silt_shingles": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dye_the_world:aqua_silt_shingles"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_the_world:aqua_silt_shingle_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_aqua_silt_shingles",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_the_world:aqua_silt_shingle_stairs"
+    ]
+  },
+  "sends_telemetry_event": false
+}

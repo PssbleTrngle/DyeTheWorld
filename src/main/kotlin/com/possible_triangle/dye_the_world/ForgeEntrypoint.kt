@@ -73,6 +73,10 @@ object ForgeEntrypoint {
             DyedSpelunkery.register()
         }
 
+        ifLoaded(Constants.Mods.TWIGS) {
+            DyedTwigs.register()
+        }
+
         if (DatagenModLoader.isRunningDataGen()) {
             Constants.LOGGER.debug("registering datagen")
 

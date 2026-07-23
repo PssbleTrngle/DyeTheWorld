@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:dyes/amber"
+    },
+    {
+      "item": "twigs:silt_pot"
+    }
+  ],
+  "result": {
+    "item": "dye_the_world:amber_silt_pot"
+  }
+}

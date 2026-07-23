@@ -106,12 +106,8 @@ object DyedQuark {
                 .dyedBlock(dye, QUARK, ::Block)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .blockstate { c, p ->
-                    p.simpleBlock(
-                        c.get(),
-                        p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/quark/${c.name}")),
-                    )
-                }.lang("${dye.translation} Terracotta Shingles")
+                .cubeBlockstate("shingles")
+                .lang("${dye.translation} Terracotta Shingles")
                 .germanLang("${dye.germanTranslation(Genus.F)} Schindeln")
                 .withItem {
                     shinglesRecipes()
@@ -127,11 +123,6 @@ object DyedQuark {
             QUARK.createId("shingles"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Schindelstufe")
-                blockstate { c, p ->
-                    val texture = Constants.MOD_ID.createId("block/$QUARK/${dye}_shingles")
-                    val double = Constants.MOD_ID.createId("block/${dye}_shingles")
-                    p.slabBlock(c.get(), double, texture)
-                }
             },
             modifyItem = { dye ->
                 recipe { context, provider ->
@@ -152,10 +143,6 @@ object DyedQuark {
             QUARK.createId("shingles"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Schindeltreppe")
-                blockstate { c, p ->
-                    val texture = Constants.MOD_ID.createId("block/$QUARK/${dye}_shingles")
-                    p.stairsBlock(c.get(), texture)
-                }
             },
             modifyItem = { dye ->
                 recipe { context, provider ->

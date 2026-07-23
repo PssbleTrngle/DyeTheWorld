@@ -17,7 +17,7 @@ class DyedItemBuilder<T : Item, P : Any> internal constructor(
     owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,
-    private val mod: String,
+    override val mod: String,
     name: String,
     callback: BuilderCallback,
     factory: NonNullFunction<Properties, T>,

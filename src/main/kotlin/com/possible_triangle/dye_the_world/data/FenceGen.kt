@@ -26,13 +26,19 @@ fun DyedRegistrate.createFences(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<FenceBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<FenceBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
+    existingTexture: Boolean = false,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_fence")
         .dyedBlock(dye, name.namespace, ::FenceBlock)
         .initialProperties(base)
         .optionalTag(BlockTags.FENCES)
         .blockstate { c, p ->
-            val texture = dye.namespace.createId("block/${dye}_${name.path}")
+            val texture =
+                if (existingTexture) {
+                    dye.vanillaTexture(name)
+                } else {
+                    dye.texture(name)
+                }
             p.fenceBlock(c.get(), texture)
         }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
@@ -60,13 +66,19 @@ fun DyedRegistrate.createFenceGates(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<FenceGateBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<FenceGateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
+    existingTexture: Boolean = false,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_fence_gate")
         .dyedBlock(dye, name.namespace) { FenceGateBlock(it, SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) }
         .initialProperties(base)
         .optionalTag(BlockTags.FENCE_GATES)
         .blockstate { c, p ->
-            val texture = dye.namespace.createId("block/${dye}_${name.path}")
+            val texture =
+                if (existingTexture) {
+                    dye.vanillaTexture(name)
+                } else {
+                    dye.texture(name)
+                }
             p.fenceGateBlock(c.get(), texture)
         }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
