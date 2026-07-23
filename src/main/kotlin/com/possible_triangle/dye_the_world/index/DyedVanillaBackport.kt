@@ -5,12 +5,14 @@ import com.blackgear.vanillabackport.core.data.tags.ModItemTags
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
+import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.extensions.*
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.resources.ResourceKey
+import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BundleItem
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
@@ -68,6 +70,8 @@ object DyedVanillaBackport {
         }
 
     fun register() {
+        REGISTRATE.colorSet(ResourceLocation.withDefaultNamespace("bundle"), VANILLA_BACKPORT)
+
         REGISTRATE.register()
     }
 }

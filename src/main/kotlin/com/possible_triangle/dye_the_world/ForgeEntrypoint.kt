@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world
 import com.possible_triangle.dye_the_world.compat.CreateCompat
 import com.possible_triangle.dye_the_world.compat.VanillaBackportsCompat
 import com.possible_triangle.dye_the_world.data.createDyeRecipes
-import com.possible_triangle.dye_the_world.data.generateColorSetModifications
 import com.possible_triangle.dye_the_world.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.data.generatePackMetadata
 import com.possible_triangle.dye_the_world.data.generateTags
@@ -78,7 +77,6 @@ object ForgeEntrypoint {
             REGISTRATE.generatePackMetadata()
             REGISTRATE.createDyeRecipes()
             REGISTRATE.generateGlassShardLoot()
-            REGISTRATE.generateColorSetModifications()
 
             // These are blocks & Items which are automatically added for all dye colors, included modded ones.
             // Therefore, they only lack assets & data files, which have to be generated, but do not need to be registered.

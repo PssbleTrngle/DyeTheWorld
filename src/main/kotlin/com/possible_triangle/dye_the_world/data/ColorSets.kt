@@ -49,32 +49,27 @@ private class ColorSetProvider(
     override fun getSide() = LogicalSide.SERVER
 }
 
-private val colorSets =
-    mapOf(
-        ResourceLocation.withDefaultNamespace("bundle") to Constants.Mods.VANILLA_BACKPORT,
-        Constants.Mods.TWIGS.createId("silt_pot") to Constants.Mods.TWIGS,
-    )
-
-fun AbstractRegistrate<*>.generateColorSetModifications() {
+fun AbstractRegistrate<*>.colorSet(
+    id: ResourceLocation,
+    modId: String = id.namespace,
+) {
     addDataGenerator(PROVIDER_TYPE) { provider ->
-        colorSets.forEach { (id, modId) ->
-            val dyes = dyesFor(modId)
+        val dyes = dyesFor(modId)
 
-            provider.conditionally(Constants.MOD_ID.createId("${id.path}s")) { builder ->
-                builder
-                    .addCondition(ModLoadedCondition(modId))
-                    .withCarrier(
-                        ColorSetModification(
-                            dyes
-                                .associateWith { Constants.MOD_ID.createId("${it.serializedName}_${id.path}") }
-                                .mapValues { BuiltInRegistries.ITEM.getOrThrow(it.value) }
-                                .mapValues { BlockAndItem(null, it.value) }
-                                .mapKeys { it.key.serializedName },
-                            false,
-                            id,
-                        ),
-                    )
-            }
+        provider.conditionally(Constants.MOD_ID.createId("${id.path}s")) { builder ->
+            builder
+                .addCondition(ModLoadedCondition(modId))
+                .withCarrier(
+                    ColorSetModification(
+                        dyes
+                            .associateWith { Constants.MOD_ID.createId("${it.serializedName}_${id.path}") }
+                            .mapValues { BuiltInRegistries.ITEM.getOrThrow(it.value) }
+                            .mapValues { BlockAndItem(null, it.value) }
+                            .mapKeys { it.key.serializedName },
+                        false,
+                        id,
+                    ),
+                )
         }
     }
 }
