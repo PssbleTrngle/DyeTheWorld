@@ -7,6 +7,7 @@ import com.ninni.twigs.registry.TwigsBlocks
 import com.ninni.twigs.registry.TwigsItems
 import com.possible_triangle.dye_the_world.Constants.Mods.TWIGS
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
+import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.data.createWalls
@@ -109,6 +110,6 @@ object DyedTwigs {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.colorSet(TWIGS.createId("silt_pot"))
     }
 }
