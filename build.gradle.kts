@@ -116,7 +116,7 @@ dependencies {
     // modRuntimeOnly(libs.sable) { isTransitive = false }
     modCompileOnly(libs.create.simulated) { isTransitive = false }
     modCompileOnly(libs.create.aeronautics) { isTransitive = false }
-    modCompileOnly(pack.modrinth.domestication.innovation)
+    modImplementation(pack.modrinth.redomesticate)
     modCompileOnly(pack.modrinth.alexs.caves)
     modCompileOnly(pack.modrinth.alexs.mobs)
     modImplementation(pack.modrinth.waystones)
@@ -184,7 +184,7 @@ upload {
             optional("clayworks")
             optional("farmers-delight")
             optional("quark")
-            // optional("domestication-innovation")
+            optional("redomesticate")
             optional("supplementaries")
             optional("supplementaries-squared")
             // optional("alexs-caves")

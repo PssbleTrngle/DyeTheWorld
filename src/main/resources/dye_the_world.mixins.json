@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "target": "@env(DEFAULT)",
+  "plugin": "com.possible_triangle.dye_the_world.mixins.DyedMixinPlugin",
   "mixins": [
     "BlockEntityTypeAccessor",
     "ChalkMixin",
@@ -16,7 +17,8 @@
     "QuarkJeiPluginMixin",
     "WaystonesModBlocksMixin",
     "data.SimpleCookingRecipeBuilderMixin",
-    "data.CreateInteriorsMixin"
+    "data.CreateInteriorsMixin",
+    "data.MappedRegistryMixin"
   ],
   "injectors": {
     "defaultRequire": 1

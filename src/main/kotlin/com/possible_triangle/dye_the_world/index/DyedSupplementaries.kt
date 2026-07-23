@@ -38,8 +38,6 @@ object DyedSupplementaries {
                 .withItem {
                     sackItemModel()
                 }.register()
-
-            2
         }
 
     val CEILING_BANNERS =

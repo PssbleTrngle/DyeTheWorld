@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.github.alexthe668.domesticationinnovation.server.block.PetBedBlock
+import com.evandev.redomesticate.content.block.PetBedBlock
 import com.possible_triangle.dye_the_world.Constants.Mods.DOMESTICATION_INNOVATION
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.petBedBlockstate
