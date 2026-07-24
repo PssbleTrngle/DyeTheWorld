@@ -11,6 +11,7 @@
     "ClayworksCompatMixin",
     "ColorUtilsMixin",
     "EntityElephantMixin",
+    "GingyEntityMixin",
     "LampBlockMixin",
     "LampConnectorBlockMixin",
     "QuarkJeiPluginMixin",
