@@ -44,6 +44,11 @@
          "description": "nixie tube colors",
          "github": true,
          "modrinth": true
+      },
+      {
+         "name": "eepyGuy",
+         "description": "skull candle textures",
+         "modrinth": true
       }
    ]
 }
