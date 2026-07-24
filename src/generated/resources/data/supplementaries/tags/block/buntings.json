@@ -1,0 +1,132 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_amber",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_aqua",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_beige",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_coral",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_forest",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_ginger",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_indigo",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_maroon",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_mint",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_navy",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_olive",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_rose",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_slate",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_tan",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_teal",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_verdant",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_amber",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_aqua",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_beige",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_coral",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_forest",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_ginger",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_indigo",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_maroon",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_mint",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_navy",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_olive",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_rose",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_slate",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_tan",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_teal",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_verdant",
+      "required": false
+    }
+  ]
+}

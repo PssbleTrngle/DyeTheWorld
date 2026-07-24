@@ -59,7 +59,9 @@ object DyedSupplementaries {
                 .dyedBlock(dye) { BuntingCeilingBlock(dye, it) }
                 .lang("${dye.translation} Bunting")
                 .buntingBlockState()
+                .optionalTag(DyedTags.Blocks.BUNTINGS)
                 .withItem {
+                    optionalTag(DyedTags.Items.BUNTINGS)
                     dyedBuntingItemModel()
                     dyedBuntingRecipe()
                 }.register()
@@ -72,6 +74,7 @@ object DyedSupplementaries {
                 .dyedBlock(dye) { BuntingWallBlock(dye, it) }
                 .lang("${dye.translation} Bunting")
                 .wallBuntingBlockState()
+                .optionalTag(DyedTags.Blocks.BUNTINGS)
                 .register()
         }
 
