@@ -65,10 +65,10 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 <table>
   <tbody>
     <tr>
-      <td align="center">
+      <td align="center" valign="top" width="100">
         <img
           src="https://avatars.githubusercontent.com/u/12880806?v=4"
-          width="100;"
+          width="100"
           alt="possible_triangle"
         />
         <br />
@@ -101,10 +101,10 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><small>Mod Author</small></sub>
       </td>
-      <td align="center">
+      <td align="center" valign="top" width="100">
         <img
           src="https://cdn.modrinth.com/user/GpDoi6XZ/1b8c6ab8985dbbf6986a5e36d80913136276afa5.jpeg"
-          width="100;"
+          width="100"
           alt="Yapetto"
         />
         <br />
@@ -129,8 +129,8 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><small>Artist of Dye Depot</small></sub>
       </td>
-      <td align="center">
-        <img src="" width="100;" alt="Lev" />
+      <td align="center" valign="top" width="100">
+        <img src="https://placehold.net/avatar-4.svg" width="100" alt="Lev" />
         <br />
         <a href="https://modrinth.com/user/Lev">
           <img
@@ -145,10 +145,10 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><small>Author of Create Compat for Dye Depot</small></sub>
       </td>
-      <td align="center">
+      <td align="center" valign="top" width="100">
         <img
           src="https://avatars.githubusercontent.com/u/46290459?v=4"
-          width="100;"
+          width="100"
           alt="OutrightWings"
         />
         <br />
@@ -177,8 +177,12 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
           ></sub
         >
       </td>
-      <td align="center">
-        <img src="" width="100;" alt="nonbatnary" />
+      <td align="center" valign="top" width="100">
+        <img
+          src="https://placehold.net/avatar-4.svg"
+          width="100"
+          alt="nonbatnary"
+        />
         <br />
         <br />
         <sub><b>nonbatnary</b></sub>
