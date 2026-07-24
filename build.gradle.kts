@@ -1,6 +1,3 @@
-val mod_id: String by extra
-val mc_version: String by extra
-
 plugins {
     id("com.possible-triangle.neoforge")
     idea
@@ -34,10 +31,6 @@ neoforge {
         existing("spelunkery")
         existing("twigs")
     }
-}
-
-neoForge.runs.named("data") {
-    data()
 }
 
 repositories {
