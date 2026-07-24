@@ -65,7 +65,7 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="100">
+      <td align="center" valign="top" width="200">
         <img
           src="https://avatars.githubusercontent.com/u/12880806?v=4"
           width="100"
@@ -99,9 +99,9 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><b>possible_triangle</b></sub>
         <br />
-        <sub><small>Mod Author</small></sub>
+        <sub><small>mod author</small></sub>
       </td>
-      <td align="center" valign="top" width="100">
+      <td align="center" valign="top" width="200">
         <img
           src="https://cdn.modrinth.com/user/GpDoi6XZ/1b8c6ab8985dbbf6986a5e36d80913136276afa5.jpeg"
           width="100"
@@ -127,9 +127,9 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><b>Yapetto</b></sub>
         <br />
-        <sub><small>Artist of Dye Depot</small></sub>
+        <sub><small>artist of dye depot</small></sub>
       </td>
-      <td align="center" valign="top" width="100">
+      <td align="center" valign="top" width="200">
         <img src="https://placehold.net/avatar-4.svg" width="100" alt="Lev" />
         <br />
         <a href="https://modrinth.com/user/Lev">
@@ -143,9 +143,9 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><b>Lev</b></sub>
         <br />
-        <sub><small>Author of Create Compat for Dye Depot</small></sub>
+        <sub><small>original create seats textures</small></sub>
       </td>
-      <td align="center" valign="top" width="100">
+      <td align="center" valign="top" width="200">
         <img
           src="https://avatars.githubusercontent.com/u/46290459?v=4"
           width="100"
@@ -171,13 +171,9 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><b>OutrightWings</b></sub>
         <br />
-        <sub
-          ><small
-            >Created textures for valve handles, buntings and awnings</small
-          ></sub
-        >
+        <sub><small>valve handles, buntings &amp; awnings textures</small></sub>
       </td>
-      <td align="center" valign="top" width="100">
+      <td align="center" valign="top" width="200">
         <img
           src="https://placehold.net/avatar-4.svg"
           width="100"
@@ -187,7 +183,77 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><b>nonbatnary</b></sub>
         <br />
-        <sub><small>Created textures spelunkery &amp; twigs compat</small></sub>
+        <sub><small>spelunkery &amp; twigs compat textures</small></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/75269826?v=4"
+          width="100"
+          alt="Catandcomparator"
+        />
+        <br />
+        <a href="https://github.com/Catandcomparator">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>Catandcomparator</b></sub>
+        <br />
+        <sub><small>create seats textures</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/94828194?v=4"
+          width="100"
+          alt="ChuijkYahus"
+        />
+        <br />
+        <a href="https://github.com/ChuijkYahus">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>ChuijkYahus</b></sub>
+        <br />
+        <sub><small>chinese translations</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/6061273?v=4"
+          width="100"
+          alt="Elenterius"
+        />
+        <br />
+        <a href="https://modrinth.com/user/Elenterius">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <a href="https://github.com/Elenterius">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>Elenterius</b></sub>
+        <br />
+        <sub><small>nixie tube colors</small></sub>
       </td>
     </tr>
   </tbody>
