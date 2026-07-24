@@ -42,7 +42,8 @@
       {
          "name": "Elenterius",
          "description": "nixie tube colors",
-         "github": true
+         "github": true,
+         "modrinth": true
       }
    ]
 }
