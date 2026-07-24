@@ -319,6 +319,14 @@
     {
       "id": "botanypots:coral_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:coral_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:coral_id_card",
+      "required": false
     }
   ]
 }

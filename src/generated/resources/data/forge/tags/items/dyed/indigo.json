@@ -319,6 +319,14 @@
     {
       "id": "botanypots:indigo_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:indigo_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:indigo_id_card",
+      "required": false
     }
   ]
 }

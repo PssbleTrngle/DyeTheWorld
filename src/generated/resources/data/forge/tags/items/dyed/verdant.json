@@ -319,6 +319,14 @@
     {
       "id": "botanypots:verdant_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:verdant_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:verdant_id_card",
+      "required": false
     }
   ]
 }

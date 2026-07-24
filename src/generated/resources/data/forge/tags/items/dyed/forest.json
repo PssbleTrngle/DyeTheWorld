@@ -319,6 +319,14 @@
     {
       "id": "botanypots:forest_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:forest_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:forest_id_card",
+      "required": false
     }
   ]
 }

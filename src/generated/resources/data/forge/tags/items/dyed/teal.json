@@ -319,6 +319,14 @@
     {
       "id": "botanypots:teal_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:teal_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:teal_id_card",
+      "required": false
     }
   ]
 }

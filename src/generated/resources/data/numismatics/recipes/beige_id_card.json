@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "numismatics"
+    }
+  ],
+  "key": {
+    "B": {
+      "tag": "forge:nuggets/brass"
+    },
+    "D": {
+      "tag": "forge:dyes/beige"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "tag": "forge:plates/iron"
+    }
+  },
+  "pattern": [
+    " D ",
+    "SPB"
+  ],
+  "result": {
+    "item": "numismatics:beige_id_card"
+  },
+  "show_notification": true
+}

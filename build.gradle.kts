@@ -100,6 +100,7 @@ dependencies {
     modImplementation(pack.modrinth.alexs.mobs)
     modImplementation(pack.modrinth.waystones)
     modImplementation(pack.modrinth.create.steam.n.rails)
+    modImplementation(pack.modrinth.numismatics)
     modImplementation(libs.dye.depot)
     modImplementation(pack.modrinth.snowy.spirit)
     modImplementation(pack.modrinth.fusion.connected.textures)

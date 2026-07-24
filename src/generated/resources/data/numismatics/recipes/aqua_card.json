@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "numismatics"
+    }
+  ],
+  "key": {
+    "D": {
+      "tag": "forge:dyes/aqua"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "tag": "forge:plates/iron"
+    }
+  },
+  "pattern": [
+    "PSD"
+  ],
+  "result": {
+    "item": "numismatics:aqua_card"
+  },
+  "show_notification": true
+}

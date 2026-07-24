@@ -35,5 +35,6 @@ object Constants {
         const val VANILLA_BACKPORT = "vanillabackport"
         const val SPELUNKERY = "spelunkery"
         const val TWIGS = "twigs"
+        const val NUMISMATICS = "numismatics"
     }
 }

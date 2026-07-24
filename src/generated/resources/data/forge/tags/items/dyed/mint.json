@@ -319,6 +319,14 @@
     {
       "id": "botanypots:mint_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:mint_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:mint_id_card",
+      "required": false
     }
   ]
 }

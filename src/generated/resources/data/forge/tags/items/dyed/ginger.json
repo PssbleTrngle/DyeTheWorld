@@ -319,6 +319,14 @@
     {
       "id": "botanypots:ginger_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:ginger_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:ginger_id_card",
+      "required": false
     }
   ]
 }

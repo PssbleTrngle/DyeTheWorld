@@ -319,6 +319,14 @@
     {
       "id": "botanypots:beige_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:beige_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:beige_id_card",
+      "required": false
     }
   ]
 }

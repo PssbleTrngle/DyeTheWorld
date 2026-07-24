@@ -20,9 +20,9 @@ fun <T : Block, P> BlockBuilder<T, P>.siltPotBlockstate() =
                 provider
                     .models()
                     .withExistingParent(context.name, parent)
-                    .texture("side", dye.texture(TWIGS.createId("silt_pot")))
-                    .texture("bottom", dye.texture(TWIGS.createId("silt_pot"), "bottom"))
-                    .texture("top", dye.texture(TWIGS.createId("silt_pot"), topTexture))
+                    .texture("side", dye.texture("block", TWIGS.createId("silt_pot")))
+                    .texture("bottom", dye.texture("block", TWIGS.createId("silt_pot"), "bottom"))
+                    .texture("top", dye.texture("block", TWIGS.createId("silt_pot"), topTexture))
 
             ConfiguredModel
                 .builder()

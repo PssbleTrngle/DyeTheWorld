@@ -131,6 +131,11 @@ hash = "de054455077c4762e76652ecd2ee2be6dd8307acff70c9281fd2f591d11ca86f"
 metafile = true
 
 [[files]]
+file = "mods/numismatics.pw.toml"
+hash = "63504f8d1db513fa1a78c214d824be5a9ddba732850a461cae0bb1029b8462b7"
+metafile = true
+
+[[files]]
 file = "mods/openblocks-elevator.pw.toml"
 hash = "226a07dbbecc54c26a9a46ed95d6b7c2a4265f38dc991cb847279457744c3196"
 metafile = true

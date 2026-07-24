@@ -319,6 +319,14 @@
     {
       "id": "botanypots:tan_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "numismatics:tan_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:tan_id_card",
+      "required": false
     }
   ]
 }

@@ -37,7 +37,7 @@ fun DyedRegistrate.createFences(
                 if (existingTexture) {
                     dye.vanillaTexture(name)
                 } else {
-                    dye.texture(name)
+                    dye.texture("block", name)
                 }
             p.fenceBlock(c.get(), texture)
         }.withItem {
@@ -77,7 +77,7 @@ fun DyedRegistrate.createFenceGates(
                 if (existingTexture) {
                     dye.vanillaTexture(name)
                 } else {
-                    dye.texture(name)
+                    dye.texture("block", name)
                 }
             p.fenceGateBlock(c.get(), texture)
         }.withItem {

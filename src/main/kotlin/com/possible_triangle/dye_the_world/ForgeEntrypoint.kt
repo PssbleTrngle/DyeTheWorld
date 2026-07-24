@@ -100,6 +100,7 @@ object ForgeEntrypoint {
             DyedElevators.register()
             DyedConnectedGlass.register()
             DyedBotanyPots.register()
+            DyedNumismatics.register()
         }
     }
 }
