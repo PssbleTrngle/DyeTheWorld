@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:forest_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:forest_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:forest_chalk",
       "required": false
     },

@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:slate_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:slate_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:slate_chalk",
       "required": false
     },

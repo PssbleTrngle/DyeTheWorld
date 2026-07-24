@@ -1,0 +1,67 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railways"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "dye_depot:tan_wool"
+  },
+  "results": [
+    {
+      "id": "railways:tan_conductor_cap"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "railways:tan_incomplete_conductor_cap"
+        }
+      ],
+      "results": [
+        {
+          "id": "railways:tan_incomplete_conductor_cap"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "railways:tan_incomplete_conductor_cap"
+        },
+        {
+          "item": "create:precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "railways:tan_incomplete_conductor_cap"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "railways:tan_incomplete_conductor_cap"
+        },
+        {
+          "tag": "c:strings"
+        }
+      ],
+      "results": [
+        {
+          "id": "railways:tan_incomplete_conductor_cap"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "railways:tan_incomplete_conductor_cap"
+  }
+}

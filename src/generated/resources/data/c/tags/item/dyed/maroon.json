@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:maroon_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:maroon_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:maroon_chalk",
       "required": false
     },

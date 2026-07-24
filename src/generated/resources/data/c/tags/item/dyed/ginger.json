@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:ginger_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:ginger_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:ginger_chalk",
       "required": false
     },

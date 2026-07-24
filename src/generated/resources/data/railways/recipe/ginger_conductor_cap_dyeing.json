@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railways"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/ginger"
+    },
+    {
+      "tag": "railways:conductor_caps"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "railways:ginger_conductor_cap"
+  }
+}

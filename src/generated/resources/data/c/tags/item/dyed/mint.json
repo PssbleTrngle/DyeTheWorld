@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:mint_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:mint_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:mint_chalk",
       "required": false
     },

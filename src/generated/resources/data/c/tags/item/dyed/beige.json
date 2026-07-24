@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:beige_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:beige_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:beige_chalk",
       "required": false
     },

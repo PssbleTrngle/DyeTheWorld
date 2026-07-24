@@ -122,7 +122,10 @@ dependencies {
     modCompileOnly(pack.modrinth.alexs.caves)
     modCompileOnly(pack.modrinth.alexs.mobs)
     modImplementation(pack.modrinth.waystones)
-    modCompileOnly(pack.modrinth.create.steam.n.rails)
+    modImplementation(
+        pack.modrinth.create.steam.n.rails
+            .get1(),
+    )
     modImplementation(libs.dye.depot)
     accessTransformers(libs.dye.depot)
     modImplementation(pack.modrinth.snowy.spirit)
@@ -194,7 +197,7 @@ upload {
             // optional("alexs-caves")
             optional("ars-nouveau")
             optional("create-deco")
-            // optional("create-steam-n-rails")
+            optional("create-steam-n-rails")
             optional("upgrade-aquatic")
             optional("more-concrete")
             optional("waystones")

@@ -85,8 +85,7 @@ object ForgeEntrypoint {
             DyedCreate.register()
             DyedCreateInterior.register()
             DyedCreateDeco.register()
-            // TODO when steam & rails updates
-            // DyedRailways.register()
+            DyedRailways.register()
             DyedChalk.registerDatagen()
             DyedWaystones.register()
             DyedSnowySpirit.register()

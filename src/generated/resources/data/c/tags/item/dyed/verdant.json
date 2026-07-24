@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:verdant_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:verdant_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:verdant_chalk",
       "required": false
     },

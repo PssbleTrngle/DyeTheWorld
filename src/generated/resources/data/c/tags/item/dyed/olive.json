@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:olive_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:olive_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:olive_chalk",
       "required": false
     },

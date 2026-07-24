@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:amber_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:amber_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:amber_chalk",
       "required": false
     },

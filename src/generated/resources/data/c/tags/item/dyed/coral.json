@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:coral_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:coral_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:coral_chalk",
       "required": false
     },

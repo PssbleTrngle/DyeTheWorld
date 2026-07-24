@@ -237,6 +237,14 @@
       "required": false
     },
     {
+      "id": "railways:tan_incomplete_conductor_cap",
+      "required": false
+    },
+    {
+      "id": "railways:tan_conductor_cap",
+      "required": false
+    },
+    {
       "id": "chalk:tan_chalk",
       "required": false
     },
