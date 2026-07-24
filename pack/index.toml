@@ -27,7 +27,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "fec49033058ced91f7668d4e305e599f5527501ef37c1f30f96d8927d6202d32"
+hash = "ed4ccdb13c738b7f70df056df84a1b977fb256a53c2921610c565069c15912c7"
 metafile = true
 
 [[files]]
@@ -97,12 +97,12 @@ metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "d0073f09430bce838a76b61349eef53640fe8f8f2ce89cacd4e5cf55b96caf6c"
+hash = "d478b8c5149f9c37bc0072d0608e2fbc6ff38cd3d15420f99c8a7ed2a55c8f0e"
 metafile = true
 
 [[files]]
 file = "mods/fusion-connected-textures.pw.toml"
-hash = "e4bf02e4f4d64894c96ef07b68762f90c138bb202665bc6b377e000c715f2efd"
+hash = "61d1a1e1cadd6296a95c526e0cb5cc7ffbe08e64c860611fc8f0e491e2256466"
 metafile = true
 
 [[files]]
@@ -117,12 +117,12 @@ metafile = true
 
 [[files]]
 file = "mods/jade.pw.toml"
-hash = "0fbcc8cf03336e6bed425e2115fc4ff1a3a05be5c655228b305e70380eb08b57"
+hash = "5d03d20b037a8b7a4765ded0e25146fc970964be46401dff5f9b1059875084e8"
 metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "a55da407afd55d84a18db1ed031ac1242b3becc74cea2c379e0d91e0cfd55052"
+hash = "1f862d7186e52e9bc96c4ec19ab62d2af9fffdd5dc056176f4be7ae4015345c0"
 metafile = true
 
 [[files]]
@@ -137,7 +137,7 @@ metafile = true
 
 [[files]]
 file = "mods/platform.pw.toml"
-hash = "2f061cf021ff724aaeadd4fcf4db7d32acba6729324bd5525dcae4693db33cf8"
+hash = "c1c2388e4321bd322cb3dec7a5b33fa11747b4c6ce50a96f5921c3248c028639"
 metafile = true
 
 [[files]]
@@ -182,7 +182,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanillabackport.pw.toml"
-hash = "b377ebf0a854ac56c7d9bd3d4aaeb543d624ff9310ed86e6373045fecc3215dc"
+hash = "648e68394771919ab89eefd47c73bf02082ab9e4aa7744a105d262956dda8e26"
 metafile = true
 
 [[files]]
