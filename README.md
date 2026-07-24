@@ -27,10 +27,7 @@
 This mod integrates several colored blocks added by different mods with the 16 new dyes added by [Dye Depot][DYE_DEPOT].
 This includes textures, models, recipes, loot tables and block/item tags.
 
-Huge thanks to [Yapetto](https://modrinth.com/user/Yapetto) for providing most of the textures 
-as well as [Lev](https://modrinth.com/user/lev) for allowing me to merge their *Create Compat for Dye Depot* resourcepack into this, 
-[OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for letting me use their textures for valve handles, buntings and awnings
-and nonbatnary for their textures for spelunkery & twigs.
+Huge thanks to all the [people that have contributed](#contributors) to this mod.
 
 ---
 
@@ -57,3 +54,10 @@ and nonbatnary for their textures for spelunkery & twigs.
 - [Create Aeronautics](https://modrinth.com/mod/create-aeronautics)
 - [Spelunkery](https://modrinth.com/mod/spelunkery) (Glow Sticks)
 - [Twigs](https://modrinth.com/mod/twigs) (Glow Sticks)
+
+### Contributors
+
+<!-- modrinth_exclude.start -->
+<!-- contributors.start -->
+<!-- contributors.end -->
+<!-- modrinth_exclude.end -->
