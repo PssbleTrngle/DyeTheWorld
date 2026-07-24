@@ -8,15 +8,14 @@ import com.possible_triangle.dye_the_world.namespace
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.supermartijn642.fusion.api.model.DefaultModelTypes
 import com.supermartijn642.fusion.api.model.ModelInstance
-import com.supermartijn642.fusion.api.model.data.ConnectingModelData
-import com.supermartijn642.fusion.api.model.data.ConnectingModelDataBuilder
-import com.supermartijn642.fusion.api.predicate.ConnectionDirection
-import com.supermartijn642.fusion.api.predicate.DefaultConnectionPredicates
+import com.supermartijn642.fusion.api.model.types.connecting.ConnectingModelData
 import com.supermartijn642.fusion.api.texture.DefaultTextureTypes
-import com.supermartijn642.fusion.api.texture.data.ConnectingTextureData
-import com.supermartijn642.fusion.api.texture.data.ConnectingTextureLayout
+import com.supermartijn642.fusion.api.texture.types.connecting.ConnectingTextureData
+import com.supermartijn642.fusion.api.texture.types.connecting.predicates.ConnectionDirection
+import com.supermartijn642.fusion.api.texture.types.connecting.predicates.DefaultConnectionPredicates
 import com.supermartijn642.fusion.api.util.Pair
 import com.supermartijn642.fusion.model.ModelTypeRegistryImpl
+import com.supermartijn642.fusion.model.types.connecting.ConnectingModelDataBuilderImpl
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.Builder
 import com.tterrag.registrate.builders.ItemBuilder
@@ -40,9 +39,9 @@ private class ConnectingLoader(
         model,
         fileHelper,
     ) {
-    private val builder = ConnectingModelData.builder()
+    private val builder = ConnectingModelData.builder() as ConnectingModelDataBuilderImpl
 
-    fun with(factory: ConnectingModelDataBuilder.() -> Unit) =
+    fun with(factory: ConnectingModelDataBuilderImpl.() -> Unit) =
         apply {
             builder.factory()
         }
@@ -55,7 +54,7 @@ private class ConnectingLoader(
 
 private fun BlockModelProvider.connected(
     path: String,
-    factory: ConnectingModelDataBuilder.() -> Unit,
+    factory: ConnectingModelDataBuilderImpl.() -> Unit,
 ): BlockModelBuilder =
     getBuilder(path)
         .customLoader(::ConnectingLoader)
@@ -77,10 +76,10 @@ fun <T : Block, P> BlockBuilder<T, P>.connectedPaneBlockState(type: String) =
         }
 
         blockstate { context, provider ->
-            fun ConnectingModelDataBuilder.textures() =
+            fun ConnectingModelDataBuilderImpl.textures() =
                 apply {
-                    texture("pane", glassTexture(type))
-                    texture("edge", edgeTexture(type))
+                    material("pane", glassTexture(type))
+                    material("edge", edgeTexture(type))
                 }
 
             val post =
@@ -101,7 +100,7 @@ fun <T : Block, P> BlockBuilder<T, P>.connectedPaneBlockState(type: String) =
                 key: Property<T>,
                 value: T,
             ) = DefaultConnectionPredicates.matchState(
-                context.get(),
+                listOf(context.get()),
                 Pair.of(key, value),
             )
 
@@ -175,7 +174,7 @@ fun <T : Block, P> BlockBuilder<T, P>.connectedGlassBlockState(type: String) =
             provider.addTextureMetadata(
                 glassTexture(type),
                 DefaultTextureTypes.CONNECTING,
-                ConnectingTextureData.builder().layout(ConnectingTextureLayout.PIECED).build(),
+                ConnectingTextureData.builder().layout(ConnectingTextureData.Layout.PIECED).build(),
             )
         }
 
@@ -183,7 +182,7 @@ fun <T : Block, P> BlockBuilder<T, P>.connectedGlassBlockState(type: String) =
             val model =
                 provider.models().connected(context.name) {
                     parent("minecraft".createId("block/cube_all"))
-                    texture("all", glassTexture(type))
+                    material("all", glassTexture(type))
                 }
 
             provider.simpleBlock(context.get(), model)
