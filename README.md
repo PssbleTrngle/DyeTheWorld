@@ -59,5 +59,243 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 
 <!-- modrinth_exclude.start -->
 <!-- contributors.start -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/12880806?v=4"
+          width="100"
+          alt="possible_triangle"
+        />
+        <br />
+        <a href="https://modrinth.com/user/possible_triangle">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <a href="https://github.com/PssbleTrngle">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <a href="https://www.curseforge.com/members/possible_triangle">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/curseforge_vector.svg"
+            width="20"
+            alt="CurseForge"
+            title="CurseForge"
+          />
+        </a>
+        <br />
+        <sub><b>possible_triangle</b></sub>
+        <br />
+        <sub><small>mod author</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://cdn.modrinth.com/user/GpDoi6XZ/1b8c6ab8985dbbf6986a5e36d80913136276afa5.jpeg"
+          width="100"
+          alt="Yapetto"
+        />
+        <br />
+        <a href="https://modrinth.com/user/Yapetto">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <a href="https://www.curseforge.com/members/Yapetto">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/curseforge_vector.svg"
+            width="20"
+            alt="CurseForge"
+            title="CurseForge"
+          />
+        </a>
+        <br />
+        <sub><b>Yapetto</b></sub>
+        <br />
+        <sub><small>artist of dye depot</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img src="https://placehold.net/avatar-4.svg" width="100" alt="Lev" />
+        <br />
+        <a href="https://modrinth.com/user/Lev">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <br />
+        <sub><b>Lev</b></sub>
+        <br />
+        <sub><small>original create seats textures</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/46290459?v=4"
+          width="100"
+          alt="OutrightWings"
+        />
+        <br />
+        <a href="https://modrinth.com/user/OutrightWings">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <a href="https://github.com/OutrightWings">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>OutrightWings</b></sub>
+        <br />
+        <sub><small>valve handles, buntings &amp; awnings textures</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://placehold.net/avatar-4.svg"
+          width="100"
+          alt="nonbatnary"
+        />
+        <br />
+        <br />
+        <sub><b>nonbatnary</b></sub>
+        <br />
+        <sub><small>spelunkery &amp; twigs compat textures</small></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/75269826?v=4"
+          width="100"
+          alt="Catandcomparator"
+        />
+        <br />
+        <a href="https://github.com/Catandcomparator">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>Catandcomparator</b></sub>
+        <br />
+        <sub><small>create seats textures</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/94828194?v=4"
+          width="100"
+          alt="ChuijkYahus"
+        />
+        <br />
+        <a href="https://github.com/ChuijkYahus">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>ChuijkYahus</b></sub>
+        <br />
+        <sub><small>chinese translations</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/6061273?v=4"
+          width="100"
+          alt="Elenterius"
+        />
+        <br />
+        <a href="https://modrinth.com/user/Elenterius">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <a href="https://github.com/Elenterius">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>Elenterius</b></sub>
+        <br />
+        <sub><small>nixie tube colors</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://cdn.modrinth.com/data/gfjhlfBt/9acf97b3087550e80c6ca0fabe7fa501ed706839_96.webp"
+          width="100"
+          alt="eepyGuy"
+        />
+        <br />
+        <a href="https://modrinth.com/user/eepyGuy">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <br />
+        <sub><b>eepyGuy</b></sub>
+        <br />
+        <sub><small>skull candle textures</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/16908555?v=4"
+          width="100"
+          alt="palmmc"
+        />
+        <br />
+        <a href="https://github.com/palmmc">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>palmmc</b></sub>
+        <br />
+        <sub><small>numismatics card textures</small></sub>
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody></tbody>
+</table>
 <!-- contributors.end -->
 <!-- modrinth_exclude.end -->
