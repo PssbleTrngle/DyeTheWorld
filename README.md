@@ -275,6 +275,26 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><small>skull candle textures</small></sub>
       </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/16908555?v=4"
+          width="100"
+          alt="palmmc"
+        />
+        <br />
+        <a href="https://github.com/palmmc">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>palmmc</b></sub>
+        <br />
+        <sub><small>numismatics card textures</small></sub>
+      </td>
     </tr>
   </tbody>
 
