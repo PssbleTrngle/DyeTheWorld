@@ -5,6 +5,7 @@ import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
+import com.possible_triangle.dye_the_world.namespace
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.translation
@@ -12,6 +13,7 @@ import com.simibubi.create.AllItems
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe
 import com.simibubi.create.content.kinetics.saw.CuttingRecipe
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipeBuilder
+import com.tterrag.registrate.providers.ProviderType
 import net.minecraft.world.item.Item
 import net.minecraftforge.common.Tags
 
@@ -61,5 +63,16 @@ object DyedRailways {
 
     fun register() {
         REGISTRATE.register()
+
+        REGISTRATE.addDataGenerator(ProviderType.BLOCKSTATE) { provider ->
+            DYES.forEach { dye ->
+                provider
+                    .models()
+                    .withExistingParent(
+                        "block/conductor_whistle/flag_$dye",
+                        CREATE_RAILWAYS.createId("block/conductor_whistle/flag"),
+                    ).texture("flag", dye.namespace.createId("block/${dye}_wool"))
+            }
+        }
     }
 }
