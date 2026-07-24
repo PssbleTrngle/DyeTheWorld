@@ -255,6 +255,26 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><small>nixie tube colors</small></sub>
       </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://cdn.modrinth.com/data/gfjhlfBt/9acf97b3087550e80c6ca0fabe7fa501ed706839_96.webp"
+          width="100"
+          alt="eepyGuy"
+        />
+        <br />
+        <a href="https://modrinth.com/user/eepyGuy">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <br />
+        <sub><b>eepyGuy</b></sub>
+        <br />
+        <sub><small>skull candle textures</small></sub>
+      </td>
     </tr>
   </tbody>
 
