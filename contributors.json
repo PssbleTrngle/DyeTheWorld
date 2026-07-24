@@ -3,31 +3,46 @@
    "contributors": [
       {
          "name": "possible_triangle",
-         "description": "Mod Author",
+         "description": "mod author",
          "github": "PssbleTrngle",
          "modrinth": true,
          "curseforge": true
       },
       {
          "name": "Yapetto",
-         "description": "Artist of Dye Depot",
+         "description": "artist of dye depot",
          "modrinth": true,
          "curseforge": true
       },
       {
          "name": "Lev",
-         "description": "Author of Create Compat for Dye Depot",
+         "description": "original create seats textures",
          "modrinth": true
       },
       {
          "name": "OutrightWings",
-         "description": "Created textures for valve handles, buntings and awnings",
+         "description": "valve handles, buntings & awnings textures",
          "modrinth": true,
          "github": true
       },
       {
          "name": "nonbatnary",
-         "description": "Created textures spelunkery & twigs compat"
+         "description": "spelunkery & twigs compat textures"
+      },
+      {
+         "name": "Catandcomparator",
+         "description": "create seats textures",
+         "github": true
+      },
+      {
+         "name": "ChuijkYahus",
+         "description": "chinese translations",
+         "github": true
+      },
+      {
+         "name": "Elenterius",
+         "description": "nixie tube colors",
+         "github": true
       }
    ]
 }
