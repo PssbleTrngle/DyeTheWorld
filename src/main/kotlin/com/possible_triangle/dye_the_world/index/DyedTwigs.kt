@@ -14,6 +14,7 @@ import com.possible_triangle.dye_the_world.data.createWalls
 import com.possible_triangle.dye_the_world.data.cubeBlockstate
 import com.possible_triangle.dye_the_world.data.siltPotBlockstate
 import com.possible_triangle.dye_the_world.dyesFor
+import com.possible_triangle.dye_the_world.existingBlockEntity
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
@@ -22,8 +23,6 @@ import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.dye_the_world.translation
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.world.item.CreativeModeTabs
-import net.neoforged.bus.api.IEventBus
-import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent
 
 object DyedTwigs {
     private val DYES = dyesFor(TWIGS)
@@ -100,6 +99,7 @@ object DyedTwigs {
                 .lang("${dye.translation} Silt Pot")
                 .siltPotBlockstate()
                 .optionalTag(TwigsTags.SILT_POTS_BLOCK)
+                .existingBlockEntity { TwigsBlockEntityType.SILT_POT.get() }
                 .withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
                     optionalTag(TwigsTags.SILT_POTS_ITEM)
@@ -109,14 +109,7 @@ object DyedTwigs {
                 }.register()
         }
 
-    private fun extendBlockEntityTypes(event: BlockEntityTypeAddBlocksEvent) {
-        val pots = SILT_POTS.values.map { it.get() }.toTypedArray()
-        event.modify(TwigsBlockEntityType.SILT_POT.get(), *pots)
-    }
-
-    fun register(modBus: IEventBus) {
+    fun register() {
         REGISTRATE.colorSet(TWIGS.createId("silt_pot"))
-
-        modBus.addListener(this::extendBlockEntityTypes)
     }
 }

@@ -65,7 +65,7 @@ object ForgeEntrypoint {
         }
 
         ifLoaded(Constants.Mods.TWIGS) {
-            DyedTwigs.register(MOD_BUS)
+            DyedTwigs.register()
         }
 
         if (DatagenModLoader.isRunningDataGen()) {
