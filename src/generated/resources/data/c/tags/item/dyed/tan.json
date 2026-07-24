@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:tan_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:tan_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:tan_id_card",
+      "required": false
     }
   ]
 }

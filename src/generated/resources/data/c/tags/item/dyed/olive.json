@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:olive_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:olive_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:olive_id_card",
+      "required": false
     }
   ]
 }

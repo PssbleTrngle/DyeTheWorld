@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:beige_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:beige_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:beige_id_card",
+      "required": false
     }
   ]
 }

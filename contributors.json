@@ -49,6 +49,11 @@
          "name": "eepyGuy",
          "description": "skull candle textures",
          "modrinth": true
+      },
+      {
+         "name": "palmmc",
+         "description": "numismatics card textures",
+         "github": true
       }
    ]
 }

@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:navy_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:navy_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:navy_id_card",
+      "required": false
     }
   ]
 }

@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.data
 
 import com.possible_triangle.dye_the_world.extensions.*
-import com.possible_triangle.dye_the_world.namespace
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
@@ -33,7 +32,7 @@ fun DyedRegistrate.createStairs(
                 if (existingTexture) {
                     dye.vanillaTexture(name)
                 } else {
-                    dye.texture(name)
+                    dye.texture("block", name)
                 }
             p.stairsBlock(c.get(), texture)
         }.withItem {

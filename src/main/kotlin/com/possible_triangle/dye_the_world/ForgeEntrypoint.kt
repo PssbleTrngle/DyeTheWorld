@@ -94,6 +94,7 @@ object ForgeEntrypoint {
             DyedBotanyPots.register()
             DyedSimulated.register()
             DyedAeronautics.register()
+            DyedNumismatics.register()
         }
     }
 }

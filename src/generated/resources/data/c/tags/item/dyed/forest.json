@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:forest_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:forest_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:forest_id_card",
+      "required": false
     }
   ]
 }

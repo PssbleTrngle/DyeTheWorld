@@ -27,6 +27,7 @@ sealed class DyedTags<T>(
         val PET_BEDS = create(Mods.DOMESTICATION_INNOVATION, "pet_beds")
         val RADON_LAMPS = create(Mods.ALEXS_CAVES, "radon_lamps")
         val IRON_PLATES = loader("plates/iron")
+        val BRASS_NUGGETS = loader("nuggets/brass")
         val CONDUCTOR_CAPS = create(CREATE_RAILWAYS, "conductor_caps")
         val CHAIRS = create(Mods.CREATE_INTERIORS, "chairs")
         val FLOOR_CHAIRS = create(Mods.CREATE_INTERIORS, "floor_chairs")

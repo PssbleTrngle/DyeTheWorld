@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:rose_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:rose_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:rose_id_card",
+      "required": false
     }
   ]
 }

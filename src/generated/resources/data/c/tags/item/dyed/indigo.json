@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:indigo_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:indigo_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:indigo_id_card",
+      "required": false
     }
   ]
 }

@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:mint_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:mint_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:mint_id_card",
+      "required": false
     }
   ]
 }

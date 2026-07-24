@@ -126,6 +126,7 @@ dependencies {
         pack.modrinth.create.steam.n.rails
             .get1(),
     )
+    modImplementation(pack.modrinth.numismatics)
     modImplementation(libs.dye.depot)
     accessTransformers(libs.dye.depot)
     modImplementation(pack.modrinth.snowy.spirit)

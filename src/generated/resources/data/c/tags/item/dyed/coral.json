@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:coral_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:coral_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:coral_id_card",
+      "required": false
     }
   ]
 }

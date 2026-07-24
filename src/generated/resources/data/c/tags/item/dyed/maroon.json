@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:maroon_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:maroon_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:maroon_id_card",
+      "required": false
     }
   ]
 }

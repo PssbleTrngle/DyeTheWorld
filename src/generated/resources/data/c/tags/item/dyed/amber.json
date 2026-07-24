@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:amber_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:amber_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:amber_id_card",
+      "required": false
     }
   ]
 }

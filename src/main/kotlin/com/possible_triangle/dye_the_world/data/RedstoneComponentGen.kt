@@ -39,7 +39,7 @@ fun DyedRegistrate.createLevers(
                 if (existingTexture) {
                     dye.vanillaTexture(name)
                 } else {
-                    dye.texture(name)
+                    dye.texture("block", name)
                 }
 
             // on and off being switched here is weird but correctly, it's also how it is for the vanilla lever ¯\_(ツ)_/¯
@@ -109,7 +109,7 @@ fun DyedRegistrate.createButtons(
                 if (existingTexture) {
                     dye.vanillaTexture(name)
                 } else {
-                    dye.texture(name)
+                    dye.texture("block", name)
                 }
             p.buttonBlock(c.get(), texture)
         }.withItem {
@@ -147,7 +147,7 @@ fun DyedRegistrate.createPressurePlates(
                 if (existingTexture) {
                     dye.vanillaTexture(name)
                 } else {
-                    dye.texture(name)
+                    dye.texture("block", name)
                 }
             p.pressurePlateBlock(c.get(), texture)
         }.withItem {

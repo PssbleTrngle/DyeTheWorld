@@ -351,6 +351,14 @@
     {
       "id": "aeronautics:verdant_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "numismatics:verdant_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:verdant_id_card",
+      "required": false
     }
   ]
 }
