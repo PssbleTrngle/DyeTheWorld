@@ -1,0 +1,33 @@
+{
+   "$schema": "https://workflows.somethingcatchy.net/schema/contributors.json",
+   "contributors": [
+      {
+         "name": "possible_triangle",
+         "description": "Mod Author",
+         "github": "PssbleTrngle",
+         "modrinth": true,
+         "curseforge": true
+      },
+      {
+         "name": "Yapetto",
+         "description": "Artist of Dye Depot",
+         "modrinth": true,
+         "curseforge": true
+      },
+      {
+         "name": "Lev",
+         "description": "Author of Create Compat for Dye Depot",
+         "modrinth": true
+      },
+      {
+         "name": "OutrightWings",
+         "description": "Created textures for valve handles, buntings and awnings",
+         "modrinth": true,
+         "github": true
+      },
+      {
+         "name": "nonbatnary",
+         "description": "Created textures spelunkery & twigs compat"
+      }
+   ]
+}

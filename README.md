@@ -6,6 +6,7 @@
 [MODRINTH]: https://modrinth.com/mod/dye-the-world
 
 <!-- modrinth_exclude.start -->
+
 # Dye The World! <img src="src/main/resources/assets/dye_the_world/icon_transparent.png" align="right" height="128" />
 
 ---
@@ -15,6 +16,7 @@
 [![Issues](https://img.shields.io/github/issues/PssbleTrngle/DyeTheWorld?label=Issues)][ISSUES]
 [![Modrinth](https://img.shields.io/modrinth/dt/naUMeOvG?color=green&logo=modrinth&logoColor=green)][MODRINTH]
 [![Curseforge](https://img.shields.io/curseforge/dt/1135725?logo=curseforge&color=red&logoColor=orange)][CURSEFORGE]
+
 <!-- modrinth_exclude.end -->
 
 ![](src/main/resources/assets/dye_the_world/logo.png)
@@ -27,14 +29,12 @@
 This mod integrates several colored blocks added by different mods with the 16 new dyes added by [Dye Depot][DYE_DEPOT].
 This includes textures, models, recipes, loot tables and block/item tags.
 
-Huge thanks to [Yapetto](https://modrinth.com/user/Yapetto) for providing most of the textures 
-as well as [Lev](https://modrinth.com/user/lev) for allowing me to merge their *Create Compat for Dye Depot* resourcepack into this, 
-[OutrightWings](https://modrinth.com/user/outrightwings)(outrightwings) for letting me use their textures for valve handles, buntings and awnings
-and nonbatnary for their textures for spelunkery & twigs.
+Huge thanks to all the [people that have contributed](#contributors) to this mod.
 
 ---
 
 ### Currently supported mods:
+
 - [Another Furniture Mod](https://modrinth.com/mod/another-furniture) (Sofas, Stools, Curtains, ...)
 - [Supplementaries](https://modrinth.com/mod/supplementaries) (Sacks, Flags, Candle Holders, Awnings, Buntings)
 - [Farmer's Delight](https://modrinth.com/mod/farmers-delight) (Canvas Signs)
@@ -57,3 +57,10 @@ and nonbatnary for their textures for spelunkery & twigs.
 - [Create Aeronautics](https://modrinth.com/mod/create-aeronautics)
 - [Spelunkery](https://modrinth.com/mod/spelunkery) (Glow Sticks)
 - [Twigs](https://modrinth.com/mod/twigs) (Glow Sticks)
+
+### Contributors
+
+<!-- modrinth_exclude.start -->
+<!-- contributors.start -->
+<!-- contributors.end -->
+<!-- modrinth_exclude.end -->
