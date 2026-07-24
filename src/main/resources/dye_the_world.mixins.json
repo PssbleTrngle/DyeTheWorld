@@ -12,13 +12,14 @@
     "ClayworksCompatMixin",
     "ColorUtilsMixin",
     "EntityElephantMixin",
+    "GingyEntityMixin",
     "LampBlockMixin",
     "LampConnectorBlockMixin",
     "QuarkJeiPluginMixin",
     "WaystonesModBlocksMixin",
-    "data.SimpleCookingRecipeBuilderMixin",
     "data.CreateInteriorsMixin",
-    "data.MappedRegistryMixin"
+    "data.MappedRegistryMixin",
+    "data.SimpleCookingRecipeBuilderMixin"
   ],
   "injectors": {
     "defaultRequire": 1
