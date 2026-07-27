@@ -5,6 +5,7 @@ import com.possible_triangle.dye_the_world.Constants.Mods.SUPPLEMENTARIES
 import com.possible_triangle.dye_the_world.Constants.Mods.SUPPLEMENTARIES_SQUARED
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.dyesFor
+import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
@@ -86,5 +87,7 @@ object DyedSupplementaries {
         REGISTRATE.register()
         SQUARED_REGISTRATE.register()
         REGISTRATE_AMENDMENTS.register()
+
+        REGISTRATE.translateBannerPattern(DYES, SUPPLEMENTARIES.createId("dragon"), "Dragon Charge")
     }
 }

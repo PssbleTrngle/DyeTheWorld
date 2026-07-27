@@ -4,9 +4,11 @@ import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.SLEEP_TIGHT
 import com.possible_triangle.dye_the_world.data.flat
 import com.possible_triangle.dye_the_world.data.particleOnly
+import com.possible_triangle.dye_the_world.data.translateBannerPattern
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
+import com.tterrag.registrate.providers.ProviderType
 import net.mehvahdjukaar.sleep_tight.SleepTight
 import net.mehvahdjukaar.sleep_tight.common.HammockPart
 import net.mehvahdjukaar.sleep_tight.common.blocks.HammockBlock
@@ -81,6 +83,17 @@ object DyedSleepTight {
 
     fun register() {
         REGISTRATE.register()
+
+        REGISTRATE.addDataGenerator(ProviderType.BLOCKSTATE) { provider ->
+            DYES.forEach { dye ->
+                provider
+                    .models()
+                    .getBuilder("block/${dye}_bed")
+                    .texture("particle", dye.namespace.createId("block/${dye}_wool"))
+            }
+        }
+
+        REGISTRATE.translateBannerPattern(DYES, SLEEP_TIGHT.createId("moon"), "Moon")
     }
 }
 
