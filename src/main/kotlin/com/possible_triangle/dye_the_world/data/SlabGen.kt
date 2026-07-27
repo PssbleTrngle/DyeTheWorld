@@ -23,11 +23,12 @@ fun DyedRegistrate.createSlabs(
     modifyBlock: BlockBuilder<SlabBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<SlabBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
     existingTexture: Boolean = false,
+    stone: Boolean = true,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_slab")
         .dyedBlock(dye, name.namespace, ::SlabBlock)
         .initialProperties(base)
-        .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+        .also { if (stone) it.optionalTag(BlockTags.MINEABLE_WITH_PICKAXE) }
         .optionalTag(BlockTags.SLABS)
         .blockstate { c, p ->
             val texture =
@@ -44,7 +45,7 @@ fun DyedRegistrate.createSlabs(
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.SLABS)
-            recipe { c, p -> p.slab(base.asIngredient(), BUILDING_BLOCKS, c, null, true) }
+            recipe { c, p -> p.slab(base.asIngredient(), BUILDING_BLOCKS, c, null, stone) }
             modifyItem(dye)
         }.apply { modifyBlock(dye) }
         .register()

@@ -69,6 +69,10 @@ object ForgeEntrypoint {
             SleepThighCompat.init()
         }
 
+        ifLoaded(Constants.Mods.WINDSWEPT) {
+            DyedWindswept.register()
+        }
+
         if (DatagenModLoader.isRunningDataGen()) {
             Constants.LOGGER.debug("registering datagen")
 

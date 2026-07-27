@@ -31,6 +31,7 @@ neoforge {
         existing("spelunkery")
         existing("twigs")
         existing("sleep_tight")
+        existing("windswept")
     }
 }
 
@@ -39,6 +40,7 @@ repositories {
         content {
             includeGroup("com.possible-triangle")
             includeGroup("com.ninni.dye_depot")
+            includeGroup("com.rosemods")
         }
     }
 
@@ -129,6 +131,7 @@ dependencies {
     modImplementation(pack.modrinth.spelunkery)
     modImplementation(pack.modrinth.twigs)
     modImplementation(pack.modrinth.sleep.tight)
+    modImplementation(libs.windswept) { isTransitive = false }
     // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
@@ -167,12 +170,14 @@ upload {
         dependencies {
             optional("chalk")
             optional("openblocks-elevator")
+            optional("windsweptmod")
         }
     }
 
     modrinth {
         dependencies {
             optional("chalk-mod")
+            optional("windswept")
         }
 
         syncBodyFromReadme()

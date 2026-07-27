@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "dye_the_world:block/windswept/pinecone_shingle/verdant",
+    "side": "dye_the_world:block/windswept/pinecone_shingle/verdant",
+    "top": "dye_the_world:block/windswept/pinecone_shingle/verdant"
+  }
+}

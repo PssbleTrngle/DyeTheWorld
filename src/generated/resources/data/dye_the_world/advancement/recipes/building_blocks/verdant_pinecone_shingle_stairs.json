@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "windswept"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_the_world:verdant_pinecone_shingle_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_pinecone_shingles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dye_the_world:verdant_pinecone_shingles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdant_pinecone_shingles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_the_world:verdant_pinecone_shingle_stairs"
+    ]
+  }
+}
