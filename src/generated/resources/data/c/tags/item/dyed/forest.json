@@ -359,6 +359,10 @@
     {
       "id": "numismatics:forest_id_card",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_forest",
+      "required": false
     }
   ]
 }

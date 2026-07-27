@@ -355,6 +355,10 @@
     {
       "id": "aeronautics:indigo_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_indigo",
+      "required": false
     }
   ]
 }

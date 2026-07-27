@@ -176,6 +176,11 @@ hash = "caaf8a85231bdac86358b9c2853d9fccf46691a9dd1dbfc328d3276f8ad10776"
 metafile = true
 
 [[files]]
+file = "mods/sleep-tight.pw.toml"
+hash = "0a7221f34ac9ad5612bccc31bc89e2b5b75c308476efd79c3afed8b774f972e0"
+metafile = true
+
+[[files]]
 file = "mods/snowy-spirit.pw.toml"
 hash = "69a9514aa7aa7ed4233d82ba6a5149809994860eeb126551f9dd941508a836e9"
 metafile = true

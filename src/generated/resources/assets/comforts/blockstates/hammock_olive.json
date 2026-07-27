@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "comforts:block/olive_cloth"
+      "model": "comforts:block/hammock_olive"
     }
   }
 }

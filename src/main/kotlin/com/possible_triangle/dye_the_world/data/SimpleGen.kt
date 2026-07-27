@@ -41,6 +41,18 @@ fun <T : Block, P> BlockBuilder<T, P>.cubeBlockstate(path: String) =
         provider.simpleBlock(context.get(), provider.models().dyedCube(context, mod.createId(path), dye))
     }
 
+fun BlockModelProvider.particleOnly(
+    context: DataGenContext<Block, out Block>,
+    texture: ResourceLocation,
+) = getBuilder(context.name).texture("particle", texture)
+
+fun <T : Block, P> BlockBuilder<T, P>.particleOnly(texture: ResourceLocation) =
+    blockstate { context, provider ->
+        provider.simpleBlock(context.get(), provider.models().particleOnly(context, texture))
+    }
+
+fun <T : Block, P> BlockBuilder<T, P>.particleOnly(path: String) = particleOnly(dye.texture("block", mod.createId(path)))
+
 fun RegistrateItemModelProvider.dyedFlat(
     context: DataGenContext<Item, out Item>,
     type: ResourceLocation,

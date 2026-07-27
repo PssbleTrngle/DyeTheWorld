@@ -355,6 +355,10 @@
     {
       "id": "aeronautics:aqua_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_aqua",
+      "required": false
     }
   ]
 }

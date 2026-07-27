@@ -1,0 +1,54 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sleep_tight"
+    }
+  ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "sleep_tight:hammock_maroon",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "part": "middle"
+                  }
+                }
+              ],
+              "name": "sleep_tight:hammock_maroon"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "sleep_tight:hammock_maroon",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "part": "head"
+                  }
+                }
+              ],
+              "name": "sleep_tight:hammock_maroon"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "sleep_tight:blocks/hammock_maroon"
+}

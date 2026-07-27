@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "comforts:block/tan_cloth"
+      "model": "comforts:block/hammock_tan"
     }
   }
 }

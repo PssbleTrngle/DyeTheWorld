@@ -355,6 +355,10 @@
     {
       "id": "aeronautics:olive_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_olive",
+      "required": false
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "comforts:block/aqua_cloth"
+      "model": "comforts:block/hammock_aqua"
     }
   }
 }

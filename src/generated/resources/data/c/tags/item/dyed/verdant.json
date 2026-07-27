@@ -359,6 +359,10 @@
     {
       "id": "numismatics:verdant_id_card",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_verdant",
+      "required": false
     }
   ]
 }

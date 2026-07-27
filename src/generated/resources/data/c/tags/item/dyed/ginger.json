@@ -359,6 +359,10 @@
     {
       "id": "numismatics:ginger_id_card",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_ginger",
+      "required": false
     }
   ]
 }

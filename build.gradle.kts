@@ -30,6 +30,7 @@ neoforge {
         existing("aeronautics")
         existing("spelunkery")
         existing("twigs")
+        existing("sleep_tight")
     }
 }
 
@@ -127,6 +128,7 @@ dependencies {
     modImplementation(pack.modrinth.vanillabackport)
     modImplementation(pack.modrinth.spelunkery)
     modImplementation(pack.modrinth.twigs)
+    modImplementation(pack.modrinth.sleep.tight)
     // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
@@ -203,6 +205,8 @@ upload {
             optional("create-aeronautics")
             optional("spelunkery")
             optional("twigs")
+            optional("numismatics")
+            optional("sleep-tight")
         }
     }
 }

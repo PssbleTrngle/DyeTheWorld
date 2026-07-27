@@ -5,6 +5,7 @@ import com.illusivesoulworks.comforts.common.block.HammockBlock
 import com.illusivesoulworks.comforts.common.block.SleepingBagBlock
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.COMFORTS
+import com.possible_triangle.dye_the_world.data.particleOnly
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dye
@@ -59,7 +60,7 @@ object DyedComforts {
 
 private fun <T : BaseComfortsBlock, P> BlockBuilder<T, P>.clothTransforms() =
     apply {
-        clothBlockState()
+        particleOnly(Constants.Mods.DYE_DEPOT.createId("block/${dye}_wool"))
         loot { t, b ->
             val isHead =
                 matchesState(b) {
@@ -81,18 +82,6 @@ private fun <T : BaseComfortsBlock, P> BlockBuilder<T, P>.clothTransforms() =
             .register()
     }
 
-private fun <T : BaseComfortsBlock, P> BlockBuilder<T, P>.clothBlockState() =
-    blockstate { context, provider ->
-        val dye = context.get().color
-        val model =
-            provider
-                .models()
-                .getBuilder("block/${dye}_cloth")
-                .texture("particle", Constants.Mods.DYE_DEPOT.createId("block/${dye}_wool"))
-
-        provider.simpleBlock(context.get(), model)
-    }
-
 private fun <T : Item, P> ItemBuilder<T, P>.hammockRecipe() =
     recipe { context, provider ->
         val wool = dye.blockOf("wool")
@@ -108,7 +97,7 @@ private fun <T : Item, P> ItemBuilder<T, P>.hammockRecipe() =
             .group("comforts:sleeping_bags")
             .save(provider)
 
-        provider.dyeingRecipe(dye, DyedTags.Items.HAMMOCKS, context) {
+        provider.dyeingRecipe(dye, DyedTags.Items.COMFORTS_HAMMOCKS, context) {
             group("comforts:hammock_dyed")
         }
     }

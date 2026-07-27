@@ -355,6 +355,10 @@
     {
       "id": "aeronautics:slate_envelope_encased_shaft",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_slate",
+      "required": false
     }
   ]
 }

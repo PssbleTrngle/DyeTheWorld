@@ -359,6 +359,10 @@
     {
       "id": "numismatics:coral_id_card",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_coral",
+      "required": false
     }
   ]
 }
