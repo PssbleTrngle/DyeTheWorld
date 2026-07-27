@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dye_the_world:block/windswept/pinecone_shingle/teal",
+    "side": "dye_the_world:block/windswept/pinecone_shingle/teal",
+    "top": "dye_the_world:block/windswept/pinecone_shingle/teal"
+  }
+}

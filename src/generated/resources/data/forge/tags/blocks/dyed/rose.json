@@ -173,6 +173,18 @@
       "required": false
     },
     {
+      "id": "dye_the_world:rose_pinecone_shingles",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_pinecone_shingle_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_pinecone_shingle_slab",
+      "required": false
+    },
+    {
       "id": "suppsquared:sack_rose",
       "required": false
     },

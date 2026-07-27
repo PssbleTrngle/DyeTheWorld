@@ -76,6 +76,10 @@ object ForgeEntrypoint {
             DyedTwigs.register()
         }
 
+        ifLoaded(Constants.Mods.WINDSWEPT) {
+            DyedWindswept.register()
+        }
+
         if (DatagenModLoader.isRunningDataGen()) {
             Constants.LOGGER.debug("registering datagen")
 

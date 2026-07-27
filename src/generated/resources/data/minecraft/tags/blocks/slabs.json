@@ -319,6 +319,70 @@
     {
       "id": "dye_the_world:verdant_silt_shingle_slab",
       "required": false
+    },
+    {
+      "id": "dye_the_world:amber_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_pinecone_shingle_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_pinecone_shingle_slab",
+      "required": false
     }
   ]
 }

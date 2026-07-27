@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "windswept"
+    }
+  ],
+  "key": {
+    "X": {
+      "item": "dye_the_world:coral_pinecone_shingles"
+    }
+  },
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "dye_the_world:coral_pinecone_shingle_slab"
+  },
+  "show_notification": true
+}

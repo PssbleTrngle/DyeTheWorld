@@ -211,6 +211,11 @@ hash = "37ef884557dbf2f1227f4a72985c48d573c423ca266045e0d00738eb46bcf1bd"
 metafile = true
 
 [[files]]
+file = "mods/windswept.pw.toml"
+hash = "e107c652e905a8f7acec8c275b35deb7385a2807272cb002ce558107b9655b47"
+metafile = true
+
+[[files]]
 file = "mods/zeta.pw.toml"
 hash = "db20b75277a1b4560b5c3d4a5127e9510a7c08d79fc950ff9f241b3fa35d2e52"
 metafile = true

@@ -1,0 +1,13 @@
+name = "Windswept"
+filename = "windswept-1.20.1-3.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/l0h5MtkA/versions/EpQ7XVgX/windswept-1.20.1-3.0.4.jar"
+hash-format = "sha512"
+hash = "cff8fe87e2c92a364caa365853256a31c20ad15f75bca41c1c8381c34222355829272253ca98734a29e56d39628ef6caec93364b4c5a82b31380fc084ce02a86"
+
+[update]
+[update.modrinth]
+mod-id = "l0h5MtkA"
+version = "EpQ7XVgX"

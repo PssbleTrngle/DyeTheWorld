@@ -33,6 +33,7 @@ forge {
         existing("spelunkery")
         existing("twigs")
         existing("sleep_tight")
+        existing("windswept")
     }
 }
 
@@ -109,6 +110,7 @@ dependencies {
     modImplementation(pack.modrinth.spelunkery)
     modImplementation(pack.modrinth.twigs)
     modImplementation(pack.modrinth.sleep.tight)
+    modImplementation(pack.modrinth.windswept)
     // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
@@ -145,12 +147,14 @@ upload {
         dependencies {
             optional("chalk")
             optional("openblocks-elevator")
+            optional("windsweptmod")
         }
     }
 
     modrinth {
         dependencies {
             optional("chalk-mod")
+            optional("windswept")
         }
 
         syncBodyFromReadme()
