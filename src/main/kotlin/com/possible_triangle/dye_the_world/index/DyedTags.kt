@@ -21,7 +21,8 @@ sealed class DyedTags<T>(
                 loader("dyed/$it")
             }
 
-        val HAMMOCKS = create(Mods.COMFORTS, "hammocks")
+        val COMFORTS_HAMMOCKS = create(Mods.COMFORTS, "hammocks")
+        val SLEEP_TIGHT_HAMMOCKS = create(Mods.SLEEP_TIGHT, "hammocks")
         val SLEEPING_BAGS = create(Mods.COMFORTS, "sleeping_bags")
         val GLASS_SHARDS = create(Mods.QUARK, "shards")
         val PET_BEDS = create(Mods.DOMESTICATION_INNOVATION, "pet_beds")
@@ -64,6 +65,7 @@ sealed class DyedTags<T>(
         val GUMDROPS = create(Mods.SNOWY_SPIRIT, "gumdrops")
         val ELEVATORS = create(Mods.ELEVATORS, "elevators")
         val BOTANY_POTS = create(Mods.BOTANY_POTS, "botany_pots")
+        val SLEEP_TIGHT_HAMMOCKS = create(Mods.SLEEP_TIGHT, "hammocks")
     }
 
     protected fun create(

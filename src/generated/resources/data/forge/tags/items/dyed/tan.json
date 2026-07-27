@@ -327,6 +327,10 @@
     {
       "id": "numismatics:tan_id_card",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_tan",
+      "required": false
     }
   ]
 }

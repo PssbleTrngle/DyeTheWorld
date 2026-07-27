@@ -327,6 +327,10 @@
     {
       "id": "numismatics:indigo_id_card",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_indigo",
+      "required": false
     }
   ]
 }

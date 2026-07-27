@@ -311,6 +311,10 @@
     {
       "id": "botanypots:olive_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_olive",
+      "required": false
     }
   ]
 }

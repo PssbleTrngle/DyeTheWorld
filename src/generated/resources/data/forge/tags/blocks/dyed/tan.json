@@ -311,6 +311,10 @@
     {
       "id": "botanypots:tan_glazed_terracotta_hopper_botany_pot",
       "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_tan",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "sleep_tight"
+    }
+  ],
+  "key": {
+    "C": {
+      "item": "dye_depot:mint_carpet"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "SSS"
+  ],
+  "result": {
+    "item": "sleep_tight:hammock_mint"
+  },
+  "show_notification": true
+}

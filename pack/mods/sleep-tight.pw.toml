@@ -1,0 +1,13 @@
+name = "Sleep Tight"
+filename = "sleep_tight-1.20-1.5.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tNai0h2Y/versions/sdWilibi/sleep_tight-1.20-1.5.6.jar"
+hash-format = "sha512"
+hash = "bc7cb29cff192a9dc7a3d90d655b3a65815b7486c983759916181d7091098b9463b06d57c58ffcf99435ba15581865cfeeda1bff41e588ce343653f1ac3550d4"
+
+[update]
+[update.modrinth]
+mod-id = "tNai0h2Y"
+version = "sdWilibi"

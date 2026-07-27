@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "sleep_tight"
+    }
+  ],
+  "criteria": {
+    "has_maroon_carpet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dye_depot:maroon_carpet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_string": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:string"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sleep_tight:hammock_maroon"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_string",
+      "has_maroon_carpet",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sleep_tight:hammock_maroon"
+    ]
+  },
+  "sends_telemetry_event": false
+}

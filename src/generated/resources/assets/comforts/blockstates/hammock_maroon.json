@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "comforts:block/maroon_cloth"
+      "model": "comforts:block/hammock_maroon"
     }
   }
 }

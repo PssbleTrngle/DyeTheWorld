@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "comforts:block/ginger_cloth"
+      "model": "comforts:block/sleeping_bag_ginger"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "sleep_tight"
+    }
+  ],
+  "group": "hammock",
+  "ingredients": [
+    {
+      "tag": "forge:dyes/coral"
+    },
+    {
+      "item": "sleep_tight:hammock_white"
+    }
+  ],
+  "result": {
+    "item": "sleep_tight:hammock_coral"
+  }
+}

@@ -36,5 +36,6 @@ object Constants {
         const val SPELUNKERY = "spelunkery"
         const val TWIGS = "twigs"
         const val NUMISMATICS = "numismatics"
+        const val SLEEP_TIGHT = "sleep_tight"
     }
 }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "sleep_tight"
+    }
+  ],
+  "key": {
+    "C": {
+      "item": "dye_depot:coral_carpet"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "SSS"
+  ],
+  "result": {
+    "item": "sleep_tight:hammock_coral"
+  },
+  "show_notification": true
+}
