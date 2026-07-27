@@ -1,12 +1,9 @@
 package com.possible_triangle.dye_the_world
 
 import com.possible_triangle.dye_the_world.compat.CreateCompat
+import com.possible_triangle.dye_the_world.compat.SleepThighCompat
 import com.possible_triangle.dye_the_world.compat.VanillaBackportsCompat
-import com.possible_triangle.dye_the_world.data.createDyeRecipes
-import com.possible_triangle.dye_the_world.data.generateGlassShardLoot
-import com.possible_triangle.dye_the_world.data.generatePackMetadata
-import com.possible_triangle.dye_the_world.data.generateTags
-import com.possible_triangle.dye_the_world.data.registerExistingFiles
+import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.ifLoaded
 import com.possible_triangle.dye_the_world.index.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
@@ -66,6 +63,10 @@ object ForgeEntrypoint {
 
         ifLoaded(Constants.Mods.TWIGS) {
             DyedTwigs.register()
+        }
+
+        ifLoaded(Constants.Mods.SLEEP_TIGHT) {
+            SleepThighCompat.init()
         }
 
         if (DatagenModLoader.isRunningDataGen()) {
