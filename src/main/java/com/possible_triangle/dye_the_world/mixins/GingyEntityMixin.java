@@ -8,7 +8,7 @@ import net.minecraft.world.item.DyeColor;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
-@Mixin(value = GingyEntity.class, remap = false)
+@Mixin(value = GingyEntity.class)
 public class GingyEntityMixin {
 
     @WrapOperation(
