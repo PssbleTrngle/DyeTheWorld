@@ -42,9 +42,12 @@ object DyedQuark {
     private val TERRACOTTA = dyedBlockMap(QUARK, "terracotta")
 
     val FLAG_MANAGER: ConfigFlagManager by lazy {
-        val quark =
-            ZetaList.INSTANCE.zetas.find { it.modid == QUARK }
-                ?: throw NullPointerException("Could not find Quark Instance")
+        val instances = ZetaList.INSTANCE.zetas
+        val quark = instances.find { it.modid == QUARK }
+        if (quark == null) {
+            Constants.LOGGER.error("Could not find quark instance, active zeta instances are (${instances.joinToString { it.modid }})")
+            throw NullPointerException("Could not find Quark Instance")
+        }
         quark.configManager.configFlagManager
     }
 
