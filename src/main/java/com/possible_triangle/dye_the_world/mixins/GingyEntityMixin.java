@@ -13,7 +13,8 @@ public class GingyEntityMixin {
 
     @WrapOperation(
             method = "finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData;",
-            at = @At(value = "INVOKE", target = "Lnet/mehvahdjukaar/snowyspirit/common/entity/GingyEntity;setColor(Lnet/minecraft/world/item/DyeColor;)V")
+            at = @At(value = "INVOKE", target = "Lnet/mehvahdjukaar/snowyspirit/common/entity/GingyEntity;setColor(Lnet/minecraft/world/item/DyeColor;)V"),
+            require = 0
     )
     private void disableDepotColors(GingyEntity instance, DyeColor collarColor, Operation<Void> original) {
         if (DDDyes.isModDye(collarColor)) {
