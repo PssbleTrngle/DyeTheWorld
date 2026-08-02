@@ -379,6 +379,10 @@
     {
       "id": "sleep_tight:hammock_rose",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:rose_chair",
+      "required": false
     }
   ]
 }

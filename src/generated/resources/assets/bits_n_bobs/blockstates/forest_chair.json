@@ -1,0 +1,1886 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "true",
+        "facing": "south",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "true",
+        "facing": "south",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "true",
+        "facing": "south",
+        "inverted_corner": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "true",
+        "facing": "south",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "true",
+        "facing": "south",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/left_armrest_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "false",
+        "facing": "south",
+        "inverted_corner": "false",
+        "left_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/right_armrest_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "false",
+        "facing": "south",
+        "inverted_corner": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "south",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "true",
+        "facing": "west",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "true",
+        "facing": "west",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "true",
+        "facing": "west",
+        "inverted_corner": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "true",
+        "facing": "west",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest",
+        "y": 180
+      },
+      "when": {
+        "corner": "true",
+        "facing": "west",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/left_armrest_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "false",
+        "facing": "west",
+        "inverted_corner": "false",
+        "left_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/right_armrest_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "false",
+        "facing": "west",
+        "inverted_corner": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "west",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest"
+      },
+      "when": {
+        "corner": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest"
+      },
+      "when": {
+        "corner": "true",
+        "facing": "north",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest"
+      },
+      "when": {
+        "corner": "true",
+        "facing": "north",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest"
+      },
+      "when": {
+        "corner": "true",
+        "facing": "north",
+        "inverted_corner": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest"
+      },
+      "when": {
+        "corner": "true",
+        "facing": "north",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest",
+        "y": 270
+      },
+      "when": {
+        "corner": "true",
+        "facing": "north",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/left_armrest_forest"
+      },
+      "when": {
+        "corner": "false",
+        "facing": "north",
+        "inverted_corner": "false",
+        "left_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/right_armrest_forest"
+      },
+      "when": {
+        "corner": "false",
+        "facing": "north",
+        "inverted_corner": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 270
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "north",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "true",
+        "facing": "east",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "true",
+        "facing": "east",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_single_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "true",
+        "facing": "east",
+        "inverted_corner": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "true",
+        "facing": "east",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/block_corner_forest"
+      },
+      "when": {
+        "corner": "true",
+        "facing": "east",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/left_armrest_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "false",
+        "facing": "east",
+        "inverted_corner": "false",
+        "left_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/right_armrest_forest",
+        "y": 90
+      },
+      "when": {
+        "corner": "false",
+        "facing": "east",
+        "inverted_corner": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest"
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "false",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "false",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "false",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 180
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest"
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "false",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_right_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "false",
+        "right_arm": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bits_n_bobs:block/chair/chair_back_flat_trimmed_left_forest",
+        "y": 90
+      },
+      "when": {
+        "back_flat": "true",
+        "corner": "true",
+        "facing": "east",
+        "forced_back_flat": "true",
+        "inverted_corner": "false",
+        "left_arm": "true",
+        "right_arm": "false"
+      }
+    }
+  ]
+}

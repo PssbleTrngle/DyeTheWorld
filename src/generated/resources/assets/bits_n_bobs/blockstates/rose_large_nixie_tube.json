@@ -1,0 +1,112 @@
+{
+  "variants": {
+    "facing=down,orientation=down": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=down,orientation=east": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=down,orientation=north": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=down,orientation=south": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=down,orientation=up": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=down,orientation=west": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=east,orientation=down": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=east,orientation=east": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=east,orientation=north": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=east,orientation=south": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=east,orientation=up": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=east,orientation=west": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=north,orientation=down": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=north,orientation=east": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=north,orientation=north": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=north,orientation=south": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=north,orientation=up": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=north,orientation=west": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=south,orientation=down": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=south,orientation=east": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=south,orientation=north": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=south,orientation=south": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=south,orientation=up": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=south,orientation=west": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=up,orientation=down": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=up,orientation=east": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=up,orientation=north": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=up,orientation=south": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=up,orientation=up": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=up,orientation=west": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=west,orientation=down": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=west,orientation=east": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=west,orientation=north": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=west,orientation=south": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=west,orientation=up": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    },
+    "facing=west,orientation=west": {
+      "model": "bits_n_bobs:block/large_nixie_tube/large_nixie_tube"
+    }
+  }
+}

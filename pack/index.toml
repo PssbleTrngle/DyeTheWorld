@@ -26,6 +26,11 @@ hash = "78fcc6d6cae18101c352aa3eb9f7b3aae578b20a37fdd6d057c06137a1863829"
 metafile = true
 
 [[files]]
+file = "mods/azimuth-api.pw.toml"
+hash = "6030e42f662fedd16c4dea51a8b0c29913733ad88c2c422220b1db7c13589bdb"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "f4ed8dbabc400434daa13b37041055261f3a74af387e4aea8ba8ca12ef142b4c"
 metafile = true
@@ -68,6 +73,11 @@ metafile = true
 [[files]]
 file = "mods/connected-glass.pw.toml"
 hash = "ef3b58371834917a08965702df9779058b5e3e4ee075de6d76844871405b0f8c"
+metafile = true
+
+[[files]]
+file = "mods/create-bits-n-bobs.pw.toml"
+hash = "b4259c4791ae275da76a9de81c91567bad2e11bf0a958212351b4998b05f47fb"
 metafile = true
 
 [[files]]
@@ -188,6 +198,11 @@ metafile = true
 [[files]]
 file = "mods/spelunkery.pw.toml"
 hash = "32605b0c2818f9852d51ce300ce6294377abda5adeaf12489275558a53a198b7"
+metafile = true
+
+[[files]]
+file = "mods/strut-your-stuff.pw.toml"
+hash = "d9cd1c203e2aa78965d456ded1527099583d1c233bfc88fb0c8005e0967b06de"
 metafile = true
 
 [[files]]

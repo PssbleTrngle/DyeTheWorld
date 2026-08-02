@@ -375,6 +375,18 @@
     {
       "id": "sleep_tight:hammock_ginger",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:ginger_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:ginger_nixie_board",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:ginger_large_nixie_tube",
+      "required": false
     }
   ]
 }

@@ -379,6 +379,10 @@
     {
       "id": "sleep_tight:hammock_navy",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:navy_chair",
+      "required": false
     }
   ]
 }

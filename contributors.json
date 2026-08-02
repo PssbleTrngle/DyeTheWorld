@@ -1,59 +1,65 @@
 {
-   "$schema": "https://workflows.somethingcatchy.net/schema/contributors.json",
-   "contributors": [
-      {
-         "name": "possible_triangle",
-         "description": "mod author",
-         "github": "PssbleTrngle",
-         "modrinth": true,
-         "curseforge": true
-      },
-      {
-         "name": "Yapetto",
-         "description": "artist of dye depot",
-         "modrinth": true,
-         "curseforge": true
-      },
-      {
-         "name": "Lev",
-         "description": "original create seats textures",
-         "modrinth": true
-      },
-      {
-         "name": "OutrightWings",
-         "description": "valve handles, buntings & awnings textures",
-         "modrinth": true,
-         "github": true
-      },
-      {
-         "name": "nonbatnary",
-         "description": "spelunkery & twigs compat textures"
-      },
-      {
-         "name": "Catandcomparator",
-         "description": "create seats textures",
-         "github": true
-      },
-      {
-         "name": "ChuijkYahus",
-         "description": "chinese translations",
-         "github": true
-      },
-      {
-         "name": "Elenterius",
-         "description": "nixie tube colors",
-         "github": true,
-         "modrinth": true
-      },
-      {
-         "name": "eepyGuy",
-         "description": "skull candle textures",
-         "modrinth": true
-      },
-      {
-         "name": "palmmc",
-         "description": "numismatics card textures",
-         "github": true
-      }
-   ]
+  "$schema": "https://workflows.somethingcatchy.net/schema/contributors.json",
+  "contributors": [
+    {
+      "name": "possible_triangle",
+      "description": "mod author",
+      "github": "PssbleTrngle",
+      "modrinth": true,
+      "curseforge": true
+    },
+    {
+      "name": "Yapetto",
+      "description": "artist of dye depot",
+      "modrinth": true,
+      "curseforge": true
+    },
+    {
+      "name": "Lev",
+      "description": "original create seats textures",
+      "modrinth": true
+    },
+    {
+      "name": "OutrightWings",
+      "description": "valve handles, buntings & awnings textures",
+      "modrinth": true,
+      "github": true
+    },
+    {
+      "name": "nonbatnary",
+      "description": "spelunkery & twigs compat textures"
+    },
+    {
+      "name": "Catandcomparator",
+      "description": "create seats textures",
+      "github": true
+    },
+    {
+      "name": "ChuijkYahus",
+      "description": "chinese translations",
+      "github": true
+    },
+    {
+      "name": "Elenterius",
+      "description": "nixie tube colors",
+      "github": true,
+      "modrinth": true
+    },
+    {
+      "name": "eepyGuy",
+      "description": "skull candle textures",
+      "modrinth": true
+    },
+    {
+      "name": "palmmc",
+      "description": "numismatics card textures",
+      "github": true
+    },
+    {
+      "name": "NeonNxiaa",
+      "description": "bits n' bobs chair textures",
+      "github": true,
+      "modrinth": "NeoNyxia"
+    }
+  ]
 }

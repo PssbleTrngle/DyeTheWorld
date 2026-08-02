@@ -1,0 +1,7 @@
+{
+  "parent": "bits_n_bobs:block/chair/right_armrest",
+  "ambientocclusion": false,
+  "textures": {
+    "2": "bits_n_bobs:block/chair/chair_navy"
+  }
+}

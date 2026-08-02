@@ -379,6 +379,10 @@
     {
       "id": "sleep_tight:hammock_forest",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:forest_chair",
+      "required": false
     }
   ]
 }

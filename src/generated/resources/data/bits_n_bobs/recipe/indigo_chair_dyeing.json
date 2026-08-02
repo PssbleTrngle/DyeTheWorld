@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "bits_n_bobs"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "tag": "bits_n_bobs:chairs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bits_n_bobs:indigo_chair"
+  }
+}

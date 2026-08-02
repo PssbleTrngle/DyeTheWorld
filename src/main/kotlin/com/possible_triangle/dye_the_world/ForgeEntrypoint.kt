@@ -101,6 +101,7 @@ object ForgeEntrypoint {
             DyedAeronautics.register()
             DyedNumismatics.register()
             DyedSleepTight.register()
+            DyedBits.register()
         }
     }
 }

@@ -375,6 +375,18 @@
     {
       "id": "sleep_tight:hammock_coral",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:coral_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:coral_nixie_board",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:coral_large_nixie_tube",
+      "required": false
     }
   ]
 }

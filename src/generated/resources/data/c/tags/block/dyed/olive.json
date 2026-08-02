@@ -375,6 +375,18 @@
     {
       "id": "sleep_tight:hammock_olive",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:olive_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:olive_nixie_board",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:olive_large_nixie_tube",
+      "required": false
     }
   ]
 }

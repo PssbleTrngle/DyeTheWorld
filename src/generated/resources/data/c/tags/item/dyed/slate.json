@@ -379,6 +379,10 @@
     {
       "id": "sleep_tight:hammock_slate",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:slate_chair",
+      "required": false
     }
   ]
 }

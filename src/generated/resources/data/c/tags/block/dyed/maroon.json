@@ -375,6 +375,18 @@
     {
       "id": "sleep_tight:hammock_maroon",
       "required": false
+    },
+    {
+      "id": "bits_n_bobs:maroon_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:maroon_nixie_board",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:maroon_large_nixie_tube",
+      "required": false
     }
   ]
 }

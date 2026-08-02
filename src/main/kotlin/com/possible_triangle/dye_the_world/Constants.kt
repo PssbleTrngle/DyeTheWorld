@@ -42,5 +42,6 @@ object Constants {
         const val NUMISMATICS = "numismatics"
         const val SLEEP_TIGHT = "sleep_tight"
         const val WINDSWEPT = "windswept"
+        const val BITS_N_BOBS = "bits_n_bobs"
     }
 }

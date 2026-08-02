@@ -1,0 +1,1732 @@
+{
+  "variants": {
+    "bottom=false,facing=down,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=down,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=down,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=down,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=down,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=down,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=down,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=down,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=down,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=down,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=down,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=down,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=down,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=down,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=down,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=down,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=down,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=down,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=down,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=down,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=down,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=down,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=down,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=down,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=down,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=down,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=down,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=east,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=east,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=east,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=east,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=east,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=east,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=east,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=east,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=east,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=east,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=east,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=east,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=east,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=east,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=east,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=east,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=east,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=east,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=east,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=east,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=east,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=east,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=east,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=east,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=east,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=east,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=north,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=north,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=north,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=north,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=north,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=north,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=north,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=north,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=north,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=north,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=north,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=north,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=north,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=north,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=north,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=north,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=north,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=north,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=north,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=north,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=north,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=north,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=north,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=north,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=north,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=north,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=south,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=south,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=south,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=south,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=south,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=south,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=south,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=south,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=south,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=south,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=south,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=south,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=south,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=south,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=south,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=south,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=south,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=south,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=south,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=south,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=south,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=south,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=south,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=south,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=south,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=south,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=up,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=up,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=up,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=up,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=up,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=up,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=up,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=up,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=up,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=up,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=up,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=up,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=up,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=up,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=up,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=up,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=up,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=up,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=up,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=up,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=up,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=up,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=up,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=up,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=up,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=up,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=west,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=west,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=west,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=west,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=west,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=west,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=west,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=west,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=west,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=west,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single"
+    },
+    "bottom=false,facing=west,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_bottom"
+    },
+    "bottom=false,facing=west,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left"
+    },
+    "bottom=false,facing=west,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=west,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=west,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=west,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=west,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=west,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=west,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=west,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=west,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=west,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=west,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right"
+    },
+    "bottom=false,facing=west,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_bottom"
+    },
+    "bottom=false,facing=west,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle"
+    },
+    "bottom=false,facing=west,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_bottom"
+    },
+    "bottom=true,facing=down,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=down,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=down,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=down,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=down,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=east,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=east,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=east,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=east,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=north,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=north,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=north,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=north,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=south,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=south,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=south,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=south,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=up,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=up,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=up,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=up,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_single_middle"
+    },
+    "bottom=true,facing=west,left=false,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_top"
+    },
+    "bottom=true,facing=west,left=false,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_left_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=down,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=down,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=down,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=down,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=east,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=east,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=east,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=east,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=north,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=north,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=north,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=north,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=south,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=south,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=south,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=south,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=up,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=up,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=up,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=up,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=west,right=false,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=west,right=false,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_right_middle"
+    },
+    "bottom=true,facing=west,left=true,orientation=west,right=true,top=false": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_top"
+    },
+    "bottom=true,facing=west,left=true,orientation=west,right=true,top=true": {
+      "model": "bits_n_bobs:block/nixie_board/nixie_board_middle_middle"
+    }
+  }
+}

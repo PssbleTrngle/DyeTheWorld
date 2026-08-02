@@ -32,6 +32,7 @@ neoforge {
         existing("twigs")
         existing("sleep_tight")
         existing("windswept")
+        existing("bits_n_bobs")
     }
 }
 
@@ -138,6 +139,7 @@ dependencies {
     modRuntimeOnly(pack.modrinth.jade)
     modRuntimeOnly(pack.modrinth.citadel)
     modImplementation(pack.modrinth.interiors)
+    modImplementation(pack.modrinth.create.bits.n.bobs)
     modRuntimeOnly(pack.modrinth.curios)
     modRuntimeOnly(pack.modrinth.geckolib)
     modRuntimeOnly(pack.modrinth.ars.nouveau)
@@ -154,6 +156,8 @@ dependencies {
     modRuntimeOnly(pack.modrinth.bookshelf.lib)
     modRuntimeOnly(pack.modrinth.botany.pots)
     modRuntimeOnly(pack.modrinth.platform)
+    modRuntimeOnly(pack.modrinth.azimuth.api)
+    modRuntimeOnly(pack.modrinth.strut.your.stuff)
 }
 
 tasks.processResources {
@@ -213,6 +217,7 @@ upload {
             optional("twigs")
             optional("numismatics")
             optional("sleep-tight")
+            optional("create-bits-n-bobs")
         }
     }
 }
