@@ -109,6 +109,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_indigo",
+      "required": false
+    },
+    {
       "id": "dye_the_world:indigo_concrete_slab",
       "required": false
     },

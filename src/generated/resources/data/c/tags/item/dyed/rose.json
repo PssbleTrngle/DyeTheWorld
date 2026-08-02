@@ -101,6 +101,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_rose",
+      "required": false
+    },
+    {
       "id": "dye_the_world:rose_concrete_slab",
       "required": false
     },

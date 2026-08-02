@@ -101,6 +101,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_olive",
+      "required": false
+    },
+    {
       "id": "dye_the_world:olive_concrete_slab",
       "required": false
     },

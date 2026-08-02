@@ -101,6 +101,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_maroon",
+      "required": false
+    },
+    {
       "id": "dye_the_world:maroon_concrete_slab",
       "required": false
     },

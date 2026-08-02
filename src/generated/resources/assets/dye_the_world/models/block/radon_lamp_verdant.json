@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "dye_the_world:block/alexscaves/radon_lamp_verdant"
+  }
+}

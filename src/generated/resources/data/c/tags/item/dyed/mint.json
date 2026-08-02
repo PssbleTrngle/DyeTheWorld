@@ -101,6 +101,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_mint",
+      "required": false
+    },
+    {
       "id": "dye_the_world:mint_concrete_slab",
       "required": false
     },

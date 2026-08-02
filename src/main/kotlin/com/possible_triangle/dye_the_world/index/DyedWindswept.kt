@@ -13,7 +13,6 @@ import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.rosemods.windswept.core.other.tags.WindsweptBlockTags
 import com.rosemods.windswept.core.registry.WindsweptBlocks
-import net.minecraft.resources.ResourceLocation.withDefaultNamespace
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.CreativeModeTabs
 
@@ -47,8 +46,8 @@ object DyedWindswept {
         }, stone = false)
 
     fun register() {
-        REGISTRATE.translateBannerPattern(DYES, withDefaultNamespace("$WINDSWEPT.snow_charge"), "Snow Charge")
-        REGISTRATE.translateBannerPattern(DYES, withDefaultNamespace("$WINDSWEPT.snow_golem"), "Snow Golem")
-        REGISTRATE.translateBannerPattern(DYES, withDefaultNamespace("$WINDSWEPT.rose_flower"), "Rose Flower")
+        REGISTRATE.translateBannerPattern(DYES, WINDSWEPT.createId("snow_charge"), "Snow Charge")
+        REGISTRATE.translateBannerPattern(DYES, WINDSWEPT.createId("snow_golem"), "Snow Golem")
+        REGISTRATE.translateBannerPattern(DYES, WINDSWEPT.createId("rose_flower"), "Rose Flower")
     }
 }

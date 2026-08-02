@@ -14,6 +14,7 @@ fun AbstractRegistrate<*>.translateBannerPattern(
     addDataGenerator(ProviderType.LANG) { provider ->
         dyes.forEach { dye ->
             provider.add("block.${pattern.namespace}.banner.${pattern.path}.$dye", "${dye.translation} $translation")
+            provider.add("block.minecraft.banner.${pattern.namespace}.${pattern.path}.$dye", "${dye.translation} $translation")
         }
     }
 }

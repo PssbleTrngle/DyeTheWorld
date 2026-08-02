@@ -115,7 +115,7 @@ dependencies {
     modCompileOnly(libs.create.simulated) { isTransitive = false }
     modCompileOnly(libs.create.aeronautics) { isTransitive = false }
     modImplementation(pack.modrinth.redomesticate)
-    modCompileOnly(pack.modrinth.alexs.caves)
+    modImplementation(pack.modrinth.alexs.caves.unofficial.port)
     modCompileOnly(pack.modrinth.alexs.mobs)
     modImplementation(pack.modrinth.waystones)
     modImplementation(
@@ -136,7 +136,7 @@ dependencies {
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
     modRuntimeOnly(pack.modrinth.jade)
-    // modRuntimeOnly(pack.modrinth.citadel)
+    modRuntimeOnly(pack.modrinth.citadel)
     modImplementation(pack.modrinth.interiors)
     modRuntimeOnly(pack.modrinth.curios)
     modRuntimeOnly(pack.modrinth.geckolib)
@@ -171,6 +171,7 @@ upload {
             optional("chalk")
             optional("openblocks-elevator")
             optional("windsweptmod")
+            optional("alexs-caves-unofficial-port")
         }
     }
 
@@ -178,6 +179,7 @@ upload {
         dependencies {
             optional("chalk-mod")
             optional("windswept")
+            optional("alexs-caves-(unofficial-port)")
         }
 
         syncBodyFromReadme()
@@ -195,7 +197,6 @@ upload {
             optional("redomesticate")
             optional("supplementaries")
             optional("supplementaries-squared")
-            // optional("alexs-caves")
             optional("ars-nouveau")
             optional("create-deco")
             optional("create-steam-n-rails")

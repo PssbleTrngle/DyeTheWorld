@@ -101,6 +101,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_verdant",
+      "required": false
+    },
+    {
       "id": "dye_the_world:verdant_concrete_slab",
       "required": false
     },

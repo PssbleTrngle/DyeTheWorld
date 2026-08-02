@@ -109,6 +109,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_tan",
+      "required": false
+    },
+    {
       "id": "dye_the_world:tan_concrete_slab",
       "required": false
     },

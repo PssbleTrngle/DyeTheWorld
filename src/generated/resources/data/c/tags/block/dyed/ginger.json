@@ -109,6 +109,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:radon_lamp_ginger",
+      "required": false
+    },
+    {
       "id": "dye_the_world:ginger_concrete_slab",
       "required": false
     },
