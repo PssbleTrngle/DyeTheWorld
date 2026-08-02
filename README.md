@@ -296,6 +296,36 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <sub><small>numismatics card textures</small></sub>
       </td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://cdn.modrinth.com/data/EB62oeYV/3e28e20673c2e170f2422e4a67140a915790f6dc_96.webp"
+          width="100"
+          alt="NeonNxiaa"
+        />
+        <br />
+        <a href="https://modrinth.com/user/NeoNyxia">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/modrinth_vector.svg"
+            width="20"
+            alt="Modrinth"
+            title="Modrinth"
+          />
+        </a>
+        <a href="https://github.com/NeonNxiaa">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>NeonNxiaa</b></sub>
+        <br />
+        <sub><small>bits n&#x27; bobs chair textures</small></sub>
+      </td>
+    </tr>
   </tbody>
 
   <tbody></tbody>
