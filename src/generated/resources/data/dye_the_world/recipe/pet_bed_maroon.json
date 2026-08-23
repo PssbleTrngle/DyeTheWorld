@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "redomesticate"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "W": {
+      "item": "dye_depot:maroon_wool"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "PBP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dye_the_world:pet_bed_maroon"
+  }
+}

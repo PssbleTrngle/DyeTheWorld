@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_verdant",
+      "required": false
+    },
+    {
       "id": "dye_the_world:verdant_concrete_slab",
       "required": false
     },
