@@ -15,7 +15,7 @@ neoforge {
         existing("quark")
         existing("suppsquared")
         existing("farmersdelight")
-        existing("domesticationinnovation")
+        existing("redomes")
         existing("createdeco")
         existing("railways")
         existing("chalk")

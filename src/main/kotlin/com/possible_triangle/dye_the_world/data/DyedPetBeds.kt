@@ -1,7 +1,7 @@
 package com.possible_triangle.dye_the_world.data
 
 import com.possible_triangle.dye_the_world.Constants
-import com.possible_triangle.dye_the_world.Constants.Mods.DOMESTICATION_INNOVATION
+import com.possible_triangle.dye_the_world.Constants.Mods.REDOMESTICATE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -26,8 +26,8 @@ fun <T : Block, P> BlockBuilder<T, P>.petBedBlockstate() =
         val model =
             provider
                 .models()
-                .withExistingParent(context.name, DOMESTICATION_INNOVATION.createId("block/pet_bed"))
-                .texture("bed", Constants.MOD_ID.createId("block/$DOMESTICATION_INNOVATION/${context.name}"))
+                .withExistingParent(context.name, REDOMESTICATE.createId("block/pet_bed"))
+                .texture("bed", Constants.MOD_ID.createId("block/$REDOMESTICATE/${context.name}"))
 
         provider.createVariant(context) { state ->
             val facing = state.getValue(HorizontalDirectionalBlock.FACING)

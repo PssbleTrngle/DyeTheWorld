@@ -40,7 +40,7 @@ object ForgeEntrypoint {
             DyedCaves.register()
         }
 
-        ifLoaded(Constants.Mods.DOMESTICATION_INNOVATION) {
+        ifLoaded(Constants.Mods.REDOMESTICATE) {
             DyedDomestication.register()
         }
 
