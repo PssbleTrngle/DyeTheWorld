@@ -5,22 +5,18 @@
       "modid": "redomesticate"
     }
   ],
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "B": {
-      "item": "minecraft:bone"
-    },
-    "P": {
+  "ingredients": [
+    {
       "tag": "minecraft:planks"
     },
-    "W": {
+    {
+      "item": "minecraft:bone"
+    },
+    {
       "item": "dye_depot:verdant_wool"
     }
-  },
-  "pattern": [
-    "WWW",
-    "PBP"
   ],
   "result": {
     "count": 1,

@@ -13,7 +13,7 @@ import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import net.minecraft.data.recipes.RecipeCategory
-import net.minecraft.data.recipes.ShapedRecipeBuilder
+import net.minecraft.data.recipes.ShapelessRecipeBuilder
 import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
@@ -43,13 +43,11 @@ fun <T : Item, P> ItemBuilder<T, P>.petBedRecipe() =
     recipe { context, provider ->
         val wool = dye.blockOf("wool")
 
-        ShapedRecipeBuilder
-            .shaped(RecipeCategory.DECORATIONS, context.get())
-            .pattern("WWW")
-            .pattern("PBP")
-            .define('W', wool)
-            .define('P', ItemTags.PLANKS)
-            .define('B', Items.BONE)
+        ShapelessRecipeBuilder
+            .shapeless(RecipeCategory.DECORATIONS, context.get())
+            .requires(ItemTags.PLANKS)
+            .requires(Items.BONE)
+            .requires(wool)
             .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
             .unlockedBy("has_bone", RegistrateRecipeProvider.has(Items.BONE))
             .save(provider)
