@@ -91,5 +91,19 @@ versionRange = "[1.1.7,)"
 ordering="AFTER"
 side = "BOTH"
 
+[[dependencies.${mod_id}]]
+modId = "spelunkery"
+type = "optional"
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "twigs"
+type = "optional"
+versionRange = "*"
+ordering="AFTER"
+side = "BOTH"
+
 [[mixins]]
 config="${mod_id}.mixins.json"
