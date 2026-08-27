@@ -1,13 +1,13 @@
 name = "Supplementaries"
-filename = "supplementaries-neoforge-1.21.1-3.8.5.jar"
+filename = "supplementaries-1.21.1-3.9.3-neoforge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/fFEIiSDQ/versions/UPJIp6At/supplementaries-neoforge-1.21.1-3.8.5.jar"
+url = "https://cdn.modrinth.com/data/fFEIiSDQ/versions/ZeuZfae2/supplementaries-1.21.1-3.9.3-neoforge.jar"
 hash-format = "sha512"
-hash = "66663d8acca417c1001c6c49546f89ef3384b6647b9c829a999ed296548314660e9d3f87dafa807429ba790ed2b02bf573068c843140fa23c4d4ce64ad37e130"
+hash = "00bcb50e8b48c80bc982fd62e6deab705a8f76f48ca2a2b72bab439c141b3ff6ed52c0e62983bd5201e1b38202e612691f7dc9ccf7c7690e3af49f6bdef008a9"
 
 [update]
 [update.modrinth]
 mod-id = "fFEIiSDQ"
-version = "UPJIp6At"
+version = "ZeuZfae2"
