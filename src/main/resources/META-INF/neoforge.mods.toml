@@ -59,7 +59,7 @@ side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "chalk"
 type = "optional"
-versionRange = "*"
+versionRange = "[2.0.0,)"
 ordering="AFTER"
 side = "BOTH"
 
