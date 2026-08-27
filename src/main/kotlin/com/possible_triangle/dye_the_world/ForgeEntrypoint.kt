@@ -75,7 +75,7 @@ object ForgeEntrypoint {
         }
 
         ifLoaded(Constants.Mods.CHALK) {
-            ChalkCompat.registerColors()
+            MOD_BUS.addListener(ChalkCompat::addCreativeTabEntries)
         }
 
         if (DatagenModLoader.isRunningDataGen()) {
@@ -106,6 +106,7 @@ object ForgeEntrypoint {
             DyedNumismatics.register()
             DyedSleepTight.register()
             DyedBits.register()
+            DyedChalk.register()
         }
     }
 }

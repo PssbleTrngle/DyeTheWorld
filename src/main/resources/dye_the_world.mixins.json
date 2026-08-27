@@ -7,6 +7,7 @@
   "plugin": "com.possible_triangle.dye_the_world.mixins.DyedMixinPlugin",
   "mixins": [
     "BlockEntityTypeAccessor",
+    "ChalkConfigMixin",
     "ClayworksBlocksMixin",
     "ClayworksCompatMixin",
     "ColorUtilsMixin",

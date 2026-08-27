@@ -58,4 +58,8 @@ fun <T : Item, P> ItemBuilder<T, P>.optionalTab(
     }
 }
 
-fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noLang() = setData(ProviderType.LANG) { _, _ -> }
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.no(type: ProviderType<*>) = setData(type) { _, _ -> }
+
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noLang() = no(ProviderType.LANG)
+
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noModel() = no(ProviderType.ITEM_MODEL)
