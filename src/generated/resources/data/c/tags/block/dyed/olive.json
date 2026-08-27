@@ -261,10 +261,6 @@
       "required": false
     },
     {
-      "id": "chalk:olive_chalk_mark",
-      "required": false
-    },
-    {
       "id": "waystones:olive_portstone",
       "required": false
     },

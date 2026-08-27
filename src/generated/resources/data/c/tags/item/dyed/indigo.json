@@ -261,10 +261,6 @@
       "required": false
     },
     {
-      "id": "chalk:indigo_chalk",
-      "required": false
-    },
-    {
       "id": "waystones:indigo_portstone",
       "required": false
     },

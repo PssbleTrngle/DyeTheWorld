@@ -261,10 +261,6 @@
       "required": false
     },
     {
-      "id": "chalk:verdant_chalk",
-      "required": false
-    },
-    {
       "id": "waystones:verdant_portstone",
       "required": false
     },

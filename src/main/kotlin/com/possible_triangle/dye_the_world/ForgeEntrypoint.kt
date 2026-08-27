@@ -1,5 +1,6 @@
 package com.possible_triangle.dye_the_world
 
+import com.possible_triangle.dye_the_world.compat.ChalkCompat
 import com.possible_triangle.dye_the_world.compat.CreateCompat
 import com.possible_triangle.dye_the_world.compat.SleepThighCompat
 import com.possible_triangle.dye_the_world.compat.VanillaBackportsCompat
@@ -73,6 +74,10 @@ object ForgeEntrypoint {
             DyedWindswept.register()
         }
 
+        ifLoaded(Constants.Mods.CHALK) {
+            ChalkCompat.registerColors()
+        }
+
         if (DatagenModLoader.isRunningDataGen()) {
             Constants.LOGGER.debug("registering datagen")
 
@@ -91,7 +96,6 @@ object ForgeEntrypoint {
             DyedCreateInterior.register()
             DyedCreateDeco.register()
             DyedRailways.register()
-            DyedChalk.registerDatagen()
             DyedWaystones.register()
             DyedSnowySpirit.register()
             DyedElevators.register()

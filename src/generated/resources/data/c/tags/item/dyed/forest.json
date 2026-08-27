@@ -261,10 +261,6 @@
       "required": false
     },
     {
-      "id": "chalk:forest_chalk",
-      "required": false
-    },
-    {
       "id": "waystones:forest_portstone",
       "required": false
     },

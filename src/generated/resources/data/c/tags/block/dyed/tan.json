@@ -261,10 +261,6 @@
       "required": false
     },
     {
-      "id": "chalk:tan_chalk_mark",
-      "required": false
-    },
-    {
       "id": "waystones:tan_portstone",
       "required": false
     },

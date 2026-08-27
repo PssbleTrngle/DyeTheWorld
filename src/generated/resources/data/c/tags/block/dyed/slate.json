@@ -261,10 +261,6 @@
       "required": false
     },
     {
-      "id": "chalk:slate_chalk_mark",
-      "required": false
-    },
-    {
       "id": "waystones:slate_portstone",
       "required": false
     },

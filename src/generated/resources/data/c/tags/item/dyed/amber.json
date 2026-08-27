@@ -261,10 +261,6 @@
       "required": false
     },
     {
-      "id": "chalk:amber_chalk",
-      "required": false
-    },
-    {
       "id": "waystones:amber_portstone",
       "required": false
     },
