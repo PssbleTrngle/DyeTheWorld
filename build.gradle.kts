@@ -87,7 +87,6 @@ repositories {
 dependencies {
     modInclude(libs.registrate)
 
-    modApi(libs.multikulti.core)
     modImplementation(libs.multikulti.datagen)
 
     modImplementation(
@@ -112,14 +111,14 @@ dependencies {
     modImplementation(pack.modrinth.blueprint)
     modImplementation(pack.modrinth.chalk.mod)
     modImplementation(pack.modrinth.create.deco)
-    // modRuntimeOnly(libs.sable) { isTransitive = false }
-    modCompileOnly(libs.create.simulated) { isTransitive = false }
-    modCompileOnly(libs.create.aeronautics) { isTransitive = false }
+    modRuntimeOnly(libs.sable) { isTransitive = false }
+    modImplementation(libs.create.simulated) { isTransitive = false }
+    modImplementation(libs.create.aeronautics) { isTransitive = false }
     modImplementation(pack.modrinth.redomesticate)
     modImplementation(pack.modrinth.alexs.caves.unofficial.port)
     modCompileOnly(pack.modrinth.alexs.mobs)
     modImplementation(pack.modrinth.waystones)
-    modImplementation(
+    modCompileOnly(
         pack.modrinth.create.steam.n.rails
             .get1(),
     )

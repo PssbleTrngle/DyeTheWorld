@@ -7,11 +7,11 @@
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_handle_variants": {
+    "has_iron_handle": {
       "conditions": {
         "items": [
           {
-            "items": "#simulated:handle_variants"
+            "items": "simulated:iron_handle"
           }
         ]
       },
@@ -27,7 +27,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_handle_variants"
+      "has_iron_handle"
     ]
   ],
   "rewards": {
