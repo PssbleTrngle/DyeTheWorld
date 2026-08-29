@@ -18,10 +18,10 @@ import net.minecraft.world.item.Item
 
 fun <I : Item, P> ItemBuilder<I, P>.shinglesRecipes() =
     recipe { context, provider ->
-        provider.withConditions(DyedQuark.flagCondition("shingles")) {
-            val terracotta = dye.blockOf("terracotta")
-            val shingles = BuiltInRegistries.BLOCK.getOrThrow(QUARK.createId("shingles"))
+        val terracotta = dye.blockOf("terracotta")
+        val shingles = BuiltInRegistries.BLOCK.getOrThrow(QUARK.createId("shingles"))
 
+        provider.withConditions(DyedQuark.flagCondition("shingles")) {
             ShapedRecipeBuilder
                 .shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 2)
                 .pattern("##")

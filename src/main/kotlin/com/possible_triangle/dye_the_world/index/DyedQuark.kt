@@ -31,7 +31,7 @@ data class QuarkConfigCondition(
     }
 
     override fun JsonObject.toForge() {
-        addProperty("type", "$QUARK:flag")
+        addProperty("type", "zeta:flag")
         addProperty("flag", flag)
     }
 }
