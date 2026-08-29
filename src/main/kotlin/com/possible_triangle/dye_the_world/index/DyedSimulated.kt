@@ -21,9 +21,7 @@ import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.translation
 import com.simibubi.create.AllTags
-import dev.eriksonn.aeronautics.index.AeroItems
 import dev.simulated_team.simulated.index.SimBlocks
-import dev.simulated_team.simulated.index.SimItems
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.level.block.RotatedPillarBlock
 import net.minecraft.world.level.block.state.properties.BlockStateProperties

@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_RAILWAYS
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.tterrag.registrate.AbstractRegistrate
