@@ -22,7 +22,7 @@ object ChalkCompat {
     }
 
     fun addCreativeTabEntries(event: BuildCreativeModeTabContentsEvent) {
-        if (event.tabKey == CreativeModeTabs.TOOLS_AND_UTILITIES) return
+        if (event.tabKey != CreativeModeTabs.TOOLS_AND_UTILITIES) return
 
         if (Config.Server.ADD_DYED_CHALKS_TO_TAB.get()) {
             DYES.forEach {
