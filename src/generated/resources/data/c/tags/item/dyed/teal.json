@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_teal",
+      "required": false
+    },
+    {
       "id": "dye_the_world:teal_concrete_slab",
       "required": false
     },
