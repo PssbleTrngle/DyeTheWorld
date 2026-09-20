@@ -19,7 +19,8 @@
     "WaystonesModBlocksMixin",
     "data.CreateInteriorsMixin",
     "data.MappedRegistryMixin",
-    "data.SimpleCookingRecipeBuilderMixin"
+    "data.SimpleCookingRecipeBuilderMixin",
+    "data.ProviderTypeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

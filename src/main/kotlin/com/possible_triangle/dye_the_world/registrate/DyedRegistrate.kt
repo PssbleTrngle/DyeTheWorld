@@ -16,12 +16,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour
 import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 
 class DyedRegistrate private constructor(
-    modid: String,
-) : AbstractRegistrate<DyedRegistrate>(modid) {
+    modId: String,
+) : AbstractRegistrate<DyedRegistrate>(modId) {
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 
-        fun create(modid: String) = REGISTRATES.getOrPut(modid) { DyedRegistrate(modid) }
+        fun create(modId: String) = REGISTRATES.getOrPut(modId) { DyedRegistrate(modId) }
+
+        fun createOverlays(): Map<String, String> = REGISTRATES.mapValues { it.key }
     }
 
     private var isRegistered = false
