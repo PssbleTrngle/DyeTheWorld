@@ -1,0 +1,18 @@
+export const DYE_DEPOT_COLORS = [
+    "amber",
+    "aqua",
+    "beige",
+    "coral",
+    "forest",
+    "ginger",
+    "indigo",
+    "maroon",
+    "mint",
+    "navy",
+    "olive",
+    "rose",
+    "slate",
+    "tan",
+    "teal",
+    "verdant",
+];

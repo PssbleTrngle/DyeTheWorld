@@ -1,0 +1,14 @@
+{
+  "name": "scripts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "arg": "^5.0.2"
+  }
+}

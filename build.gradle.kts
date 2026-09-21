@@ -159,8 +159,8 @@ dependencies {
     modRuntimeOnly(pack.modrinth.strut.your.stuff)
 }
 
-tasks.processResources {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+sourceSets.main {
+    resources.srcDir(file("src/dyed/resources"))
 }
 
 upload {
@@ -224,6 +224,7 @@ upload {
 idea {
     module {
         excludeDirs.add(file("polytone"))
+        excludeDirs.add(file("scripts"))
     }
 }
 
