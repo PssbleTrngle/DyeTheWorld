@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:aqua_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_aqua",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_aqua",
+      "required": false
     }
   ]
 }

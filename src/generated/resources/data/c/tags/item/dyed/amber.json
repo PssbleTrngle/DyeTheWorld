@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:amber_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_amber",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_amber",
+      "required": false
     }
   ]
 }

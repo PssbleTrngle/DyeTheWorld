@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:forest_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_forest",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_forest",
+      "required": false
     }
   ]
 }

@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:rose_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_rose",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_rose",
+      "required": false
     }
   ]
 }

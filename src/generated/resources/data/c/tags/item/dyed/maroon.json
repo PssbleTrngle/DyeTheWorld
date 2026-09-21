@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:maroon_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_maroon",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_maroon",
+      "required": false
     }
   ]
 }

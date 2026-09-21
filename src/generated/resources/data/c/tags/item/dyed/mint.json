@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:mint_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_mint",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_mint",
+      "required": false
     }
   ]
 }

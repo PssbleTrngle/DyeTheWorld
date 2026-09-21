@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:coral_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_coral",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_coral",
+      "required": false
     }
   ]
 }

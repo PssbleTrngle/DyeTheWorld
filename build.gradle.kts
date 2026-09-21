@@ -157,6 +157,7 @@ dependencies {
     modRuntimeOnly(pack.modrinth.platform)
     modRuntimeOnly(pack.modrinth.azimuth.api)
     modRuntimeOnly(pack.modrinth.strut.your.stuff)
+    modImplementation(pack.modrinth.naturalist)
 }
 
 sourceSets.main {
@@ -217,6 +218,7 @@ upload {
             optional("numismatics")
             optional("sleep-tight")
             optional("create-bits-n-bobs")
+            optional("naturalist")
         }
     }
 }

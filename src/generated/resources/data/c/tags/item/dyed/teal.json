@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:teal_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_teal",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_teal",
+      "required": false
     }
   ]
 }

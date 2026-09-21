@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:ginger_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_ginger",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_ginger",
+      "required": false
     }
   ]
 }

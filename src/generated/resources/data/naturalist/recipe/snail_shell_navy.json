@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "naturalist"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "naturalist:snail_shell"
+    },
+    {
+      "tag": "c:dyes/navy"
+    }
+  ],
+  "result": {
+    "components": {
+      "minecraft:custom_data": {
+        "Color": 20
+      }
+    },
+    "count": 1,
+    "id": "naturalist:snail_shell"
+  }
+}

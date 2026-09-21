@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:olive_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_olive",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_olive",
+      "required": false
     }
   ]
 }

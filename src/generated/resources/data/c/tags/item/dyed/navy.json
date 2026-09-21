@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:navy_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_navy",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_navy",
+      "required": false
     }
   ]
 }

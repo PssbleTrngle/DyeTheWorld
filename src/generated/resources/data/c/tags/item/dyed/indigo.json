@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:indigo_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_indigo",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_indigo",
+      "required": false
     }
   ]
 }

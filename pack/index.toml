@@ -141,6 +141,11 @@ hash = "50cb2831cf0add2566fd0729bc0a9aca7f98506cffb118239509e655e403cb28"
 metafile = true
 
 [[files]]
+file = "mods/naturalist.pw.toml"
+hash = "6ea358a18fbb72631cca70b6c906cc3541bbfaadef02408ae426a07a9d09c856"
+metafile = true
+
+[[files]]
 file = "mods/numismatics.pw.toml"
 hash = "6abed33806e1fb6beb41b77413cb8a2b056e3a45e6567bd84ea525ed55bef8e3"
 metafile = true

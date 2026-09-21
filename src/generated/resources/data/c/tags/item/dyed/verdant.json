@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:verdant_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_verdant",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_verdant",
+      "required": false
     }
   ]
 }

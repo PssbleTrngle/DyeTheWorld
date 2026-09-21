@@ -379,6 +379,14 @@
     {
       "id": "bits_n_bobs:slate_chair",
       "required": false
+    },
+    {
+      "id": "naturalist:snail_shell_slate",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_slate",
+      "required": false
     }
   ]
 }
