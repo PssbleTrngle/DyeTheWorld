@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dye_the_world:block/pet_bed_indigo",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dye_the_world:block/pet_bed_indigo"
+    },
+    "facing=south": {
+      "model": "dye_the_world:block/pet_bed_indigo",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dye_the_world:block/pet_bed_indigo",
+      "y": 270
+    }
+  }
+}

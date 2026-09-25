@@ -113,6 +113,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_navy",
+      "required": false
+    },
+    {
       "id": "dye_the_world:navy_concrete_slab",
       "required": false
     },

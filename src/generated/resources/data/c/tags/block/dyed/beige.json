@@ -113,6 +113,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_beige",
+      "required": false
+    },
+    {
       "id": "dye_the_world:beige_concrete_slab",
       "required": false
     },

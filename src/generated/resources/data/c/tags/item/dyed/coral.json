@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_coral",
+      "required": false
+    },
+    {
       "id": "dye_the_world:coral_concrete_slab",
       "required": false
     },

@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "dye_the_world:pet_bed_amber",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_aqua",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_beige",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_coral",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_forest",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_ginger",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_indigo",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_maroon",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_mint",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_navy",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_olive",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_rose",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_slate",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_tan",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_teal",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:pet_bed_verdant",
+      "required": false
+    }
+  ]
+}
