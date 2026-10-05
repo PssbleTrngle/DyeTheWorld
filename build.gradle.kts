@@ -158,6 +158,7 @@ dependencies {
     modRuntimeOnly(pack.modrinth.azimuth.api)
     modRuntimeOnly(pack.modrinth.strut.your.stuff)
     modImplementation(pack.modrinth.naturalist)
+    modImplementation(pack.modrinth.labels)
 }
 
 sourceSets.main {
@@ -219,6 +220,7 @@ upload {
             optional("sleep-tight")
             optional("create-bits-n-bobs")
             optional("naturalist")
+            optional("labels")
         }
     }
 }
