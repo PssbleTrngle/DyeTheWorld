@@ -113,6 +113,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_indigo",
+      "required": false
+    },
+    {
       "id": "dye_the_world:indigo_concrete_slab",
       "required": false
     },

@@ -1,7 +1,7 @@
 package com.possible_triangle.dye_the_world.index
 
 import com.evandev.redomesticate.content.block.PetBedBlock
-import com.possible_triangle.dye_the_world.Constants.Mods.DOMESTICATION_INNOVATION
+import com.possible_triangle.dye_the_world.Constants.Mods.REDOMESTICATE
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.petBedBlockstate
 import com.possible_triangle.dye_the_world.data.petBedRecipe
@@ -18,13 +18,13 @@ import net.minecraft.world.level.material.PushReaction
 
 object DyedDomestication {
     private val TAB =
-        ResourceKey.create(Registries.CREATIVE_MODE_TAB, DOMESTICATION_INNOVATION.createId(DOMESTICATION_INNOVATION))
+        ResourceKey.create(Registries.CREATIVE_MODE_TAB, REDOMESTICATE.createId(REDOMESTICATE))
 
     val PET_BEDS =
-        dyesFor(DOMESTICATION_INNOVATION).associateWith { dye ->
+        dyesFor(REDOMESTICATE).associateWith { dye ->
             REGISTRATE
                 .`object`("pet_bed_$dye")
-                .dyedBlock(dye, DOMESTICATION_INNOVATION) { PetBedBlock(dye.serializedName, dye) }
+                .dyedBlock(dye, REDOMESTICATE) { PetBedBlock(dye.serializedName, dye) }
                 .properties { it.strength(0.8F) }
                 .properties { it.pushReaction(PushReaction.BLOCK) }
                 .properties { it.noOcclusion() }

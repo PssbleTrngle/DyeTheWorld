@@ -1,7 +1,7 @@
 package com.possible_triangle.dye_the_world.data
 
 import com.possible_triangle.dye_the_world.Constants
-import com.possible_triangle.dye_the_world.Constants.Mods.DOMESTICATION_INNOVATION
+import com.possible_triangle.dye_the_world.Constants.Mods.REDOMESTICATE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -13,7 +13,7 @@ import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import net.minecraft.data.recipes.RecipeCategory
-import net.minecraft.data.recipes.ShapedRecipeBuilder
+import net.minecraft.data.recipes.ShapelessRecipeBuilder
 import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
@@ -26,8 +26,8 @@ fun <T : Block, P> BlockBuilder<T, P>.petBedBlockstate() =
         val model =
             provider
                 .models()
-                .withExistingParent(context.name, DOMESTICATION_INNOVATION.createId("block/pet_bed"))
-                .texture("bed", Constants.MOD_ID.createId("block/$DOMESTICATION_INNOVATION/${context.name}"))
+                .withExistingParent(context.name, REDOMESTICATE.createId("block/pet_bed"))
+                .texture("bed", Constants.MOD_ID.createId("block/$REDOMESTICATE/${context.name}"))
 
         provider.createVariant(context) { state ->
             val facing = state.getValue(HorizontalDirectionalBlock.FACING)
@@ -43,13 +43,11 @@ fun <T : Item, P> ItemBuilder<T, P>.petBedRecipe() =
     recipe { context, provider ->
         val wool = dye.blockOf("wool")
 
-        ShapedRecipeBuilder
-            .shaped(RecipeCategory.DECORATIONS, context.get())
-            .pattern("WWW")
-            .pattern("PBP")
-            .define('W', wool)
-            .define('P', ItemTags.PLANKS)
-            .define('B', Items.BONE)
+        ShapelessRecipeBuilder
+            .shapeless(RecipeCategory.DECORATIONS, context.get())
+            .requires(ItemTags.PLANKS)
+            .requires(Items.BONE)
+            .requires(wool)
             .unlockedBy("has_wool", RegistrateRecipeProvider.has(wool))
             .unlockedBy("has_bone", RegistrateRecipeProvider.has(Items.BONE))
             .save(provider)

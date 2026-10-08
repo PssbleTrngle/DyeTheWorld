@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_aqua",
+      "required": false
+    },
+    {
       "id": "dye_the_world:aqua_concrete_slab",
       "required": false
     },

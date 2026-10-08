@@ -105,6 +105,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_mint",
+      "required": false
+    },
+    {
       "id": "dye_the_world:mint_concrete_slab",
       "required": false
     },
