@@ -1,0 +1,20 @@
+name: Request Compatibility
+description: I want dye depot to be compatible with a specific mod, or a specific feature from a mod
+labels: [enhancement, compat]
+assignees: [PssbleTrngle]
+projects: [PssbleTrngle/16]
+
+body:
+  - type: textarea
+    id: mod
+    attributes:
+      label: What mod and features from that mod do you want to have compatibility for?
+      placeholder: Only one mod per issue, so it can be represented on the board correctly
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link to Mod
+      description: Modrinth, curseforge or any other link to a page about the mod
