@@ -113,6 +113,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_amber",
+      "required": false
+    },
+    {
       "id": "dye_the_world:amber_concrete_slab",
       "required": false
     },

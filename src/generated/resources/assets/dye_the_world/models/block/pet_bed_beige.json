@@ -1,0 +1,6 @@
+{
+  "parent": "redomesticate:block/pet_bed",
+  "textures": {
+    "bed": "dye_the_world:block/redomesticate/pet_bed_beige"
+  }
+}

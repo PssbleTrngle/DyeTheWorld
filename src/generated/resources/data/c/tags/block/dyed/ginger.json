@@ -113,6 +113,10 @@
       "required": false
     },
     {
+      "id": "dye_the_world:pet_bed_ginger",
+      "required": false
+    },
+    {
       "id": "dye_the_world:ginger_concrete_slab",
       "required": false
     },
