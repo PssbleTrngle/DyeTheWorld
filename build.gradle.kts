@@ -219,7 +219,6 @@ upload {
             optional("numismatics")
             optional("sleep-tight")
             optional("create-bits-n-bobs")
-            optional("naturalist")
             optional("labels")
         }
     }
