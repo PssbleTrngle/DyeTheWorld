@@ -1,11 +1,15 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.blackgear.vanillabackport.common.registries.ModBlocks
+import com.blackgear.vanillabackport.common.level.items.CushionItem
+import com.blackgear.vanillabackport.common.registries.blocks.ModBlocks
+import com.blackgear.vanillabackport.core.data.tags.ModBlockTags
 import com.blackgear.vanillabackport.core.data.tags.ModItemTags
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
 import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.colorSet
+import com.possible_triangle.dye_the_world.data.createSlabs
+import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.extensions.*
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
@@ -64,6 +68,56 @@ object DyedVanillaBackport {
                 .optionalTag(ModItemTags.BUNDLES)
                 .model { c, p ->
                     p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/bundle/$dye"))
+                }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                .tab(TAB)
+                .register()
+        }
+
+    private val WOOL = dyedBlockMap(VANILLA_BACKPORT, "wool")
+
+    val WOOL_STAIRS =
+        REGISTRATE.createStairs(
+            WOOL,
+            VANILLA_BACKPORT.createId("wool"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Wolltreppe")
+                optionalTag(ModBlockTags.WOOL_STAIRS)
+            },
+            modifyItem = {
+                tab(TAB)
+                optionalTag(ModItemTags.WOOL_STAIRS)
+            },
+            existingTexture = true,
+            stone = false,
+        )
+
+    val WOOL_SLABS =
+        REGISTRATE.createSlabs(
+            WOOL,
+            VANILLA_BACKPORT.createId("wool"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Wollestufe")
+                optionalTag(ModBlockTags.WOOL_SLABS)
+            },
+            modifyItem = {
+                tab(TAB)
+                optionalTag(ModItemTags.WOOL_SLABS)
+            },
+            existingTexture = true,
+            stone = false,
+        )
+
+    val CUSHIONS =
+        DYES.associateWith { dye ->
+            REGISTRATE
+                .`object`("${dye}_cushion")
+                .dyedItem(dye, VANILLA_BACKPORT) { CushionItem(it, dye) }
+                .properties { it.stacksTo(16) }
+                .lang("${dye.translation} Cushion")
+                .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
+                .optionalTag(ModItemTags.CUSHIONS)
+                .model { c, p ->
+                    p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/cushion/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .tab(TAB)
                 .register()

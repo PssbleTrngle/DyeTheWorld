@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dye_the_world:block/ginger_wool_slab"
+    },
+    "type=double": {
+      "model": "dye_depot:block/ginger_wool"
+    },
+    "type=top": {
+      "model": "dye_the_world:block/ginger_wool_slab_top"
+    }
+  }
+}

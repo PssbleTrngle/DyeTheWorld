@@ -145,6 +145,18 @@
       "required": false
     },
     {
+      "id": "dye_the_world:verdant_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_wool_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_cushion",
+      "required": false
+    },
+    {
       "id": "dye_the_world:verdant_glowstick",
       "required": false
     },

@@ -1,13 +1,13 @@
 name = "Vanilla Backport: Chase the Skies, The Garden Awakens"
-filename = "VanillaBackport-neoforge-1.21.1-1.1.7.10.jar"
+filename = "VanillaBackport-neoforge-1.21.1-1.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/6xwxDTgf/versions/rUSWdBok/VanillaBackport-neoforge-1.21.1-1.1.7.10.jar"
+url = "https://cdn.modrinth.com/data/6xwxDTgf/versions/65ke2Krk/VanillaBackport-neoforge-1.21.1-1.2.jar"
 hash-format = "sha512"
-hash = "be0622afd2f7d216e4d83aed9190dec6f6f6a2919cffcebe8f334989b91f148638efa1b3e1d4bb8aa6c83ffa5f775951d6b3bc75c0d45b70b5b389b4f3476b4f"
+hash = "4a14a58f82409940b5975d99abad38de36ec4f7f46dc70c13e194b93275060afb617893885986af39418ea5838996caaa0704d577d13f965742c1b6e4aa0340a"
 
 [update]
 [update.modrinth]
 mod-id = "6xwxDTgf"
-version = "rUSWdBok"
+version = "65ke2Krk"

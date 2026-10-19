@@ -145,6 +145,18 @@
       "required": false
     },
     {
+      "id": "dye_the_world:amber_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_wool_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:amber_cushion",
+      "required": false
+    },
+    {
       "id": "dye_the_world:amber_glowstick",
       "required": false
     },

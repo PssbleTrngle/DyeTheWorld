@@ -145,6 +145,18 @@
       "required": false
     },
     {
+      "id": "dye_the_world:olive_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_wool_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_cushion",
+      "required": false
+    },
+    {
       "id": "dye_the_world:olive_glowstick",
       "required": false
     },

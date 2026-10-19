@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dye_the_world:block/forest_wool_slab"
+    },
+    "type=double": {
+      "model": "dye_depot:block/forest_wool"
+    },
+    "type=top": {
+      "model": "dye_the_world:block/forest_wool_slab_top"
+    }
+  }
+}

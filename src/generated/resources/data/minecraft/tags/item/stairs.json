@@ -257,6 +257,70 @@
       "required": false
     },
     {
+      "id": "dye_the_world:amber_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:aqua_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:beige_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:forest_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:ginger_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:maroon_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:navy_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:olive_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:rose_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:slate_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:tan_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:teal_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:verdant_wool_stairs",
+      "required": false
+    },
+    {
       "id": "dye_the_world:amber_silt_shingle_stairs",
       "required": false
     },

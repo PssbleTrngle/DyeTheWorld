@@ -145,6 +145,14 @@
       "required": false
     },
     {
+      "id": "dye_the_world:coral_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:coral_wool_slab",
+      "required": false
+    },
+    {
       "id": "dye_the_world:coral_glowstick",
       "required": false
     },

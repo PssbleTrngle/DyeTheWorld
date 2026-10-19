@@ -145,6 +145,14 @@
       "required": false
     },
     {
+      "id": "dye_the_world:indigo_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:indigo_wool_slab",
+      "required": false
+    },
+    {
       "id": "dye_the_world:indigo_glowstick",
       "required": false
     },

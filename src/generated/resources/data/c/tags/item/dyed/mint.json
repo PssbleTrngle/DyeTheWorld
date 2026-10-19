@@ -145,6 +145,18 @@
       "required": false
     },
     {
+      "id": "dye_the_world:mint_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_wool_slab",
+      "required": false
+    },
+    {
+      "id": "dye_the_world:mint_cushion",
+      "required": false
+    },
+    {
       "id": "dye_the_world:mint_glowstick",
       "required": false
     },
