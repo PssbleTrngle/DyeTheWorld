@@ -325,6 +325,26 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <br />
         <sub><small>bits n&#x27; bobs chair textures</small></sub>
       </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/83239039?v=4"
+          width="100"
+          alt="bllryy"
+        />
+        <br />
+        <a href="https://github.com/bllryy">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>bllryy</b></sub>
+        <br />
+        <sub><small>storage labels compatibility</small></sub>
+      </td>
     </tr>
   </tbody>
 
