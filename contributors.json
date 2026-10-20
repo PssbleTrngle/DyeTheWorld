@@ -60,6 +60,11 @@
       "description": "bits n' bobs chair textures",
       "github": true,
       "modrinth": "NeoNyxia"
+    },
+    {
+      "name": "bllryy",
+      "description": "storage labels compatibility",
+      "github": true
     }
   ]
 }

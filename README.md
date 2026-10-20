@@ -50,7 +50,7 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic) (Bedrolls)
 - [Waystones](https://modrinth.com/mod/waystones) (Sharestones, Portstones)
 - [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) (Glowlights, Gumdrops)
-- [Vanilla Backport](https://modrinth.com/mod/vanillabackport) (Happy Ghast Harnesses, Dyed Bundles)
+- [Vanilla Backport](https://modrinth.com/mod/vanillabackport) (Happy Ghast Harnesses, Dyed Bundles, ...)
 - [Botany Pots](https://modrinth.com/mod/botany-pots)
 - [Connected Glass](https://modrinth.com/mod/connected-glass)
 - [Elevator Mod](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator)
@@ -58,9 +58,9 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Spelunkery](https://modrinth.com/mod/spelunkery) (Glow Sticks)
 - [Twigs](https://modrinth.com/mod/twigs) (Glow Sticks)
 
+<!-- modrinth_exclude.start -->
 ### Contributors
 
-<!-- modrinth_exclude.start -->
 <!-- contributors.start -->
 <table>
   <tbody>
