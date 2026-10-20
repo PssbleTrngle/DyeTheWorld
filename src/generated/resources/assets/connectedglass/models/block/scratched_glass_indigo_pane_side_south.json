@@ -29,6 +29,6 @@
   "loader": "fusion:model",
   "textures": {
     "edge": "dye_depot:block/indigo_stained_glass_pane_top",
-    "pane": "dye_the_world:block/connectedglass/scratched/indigo"
+    "pane": "connectedglass:block/scratched/indigo"
   }
 }

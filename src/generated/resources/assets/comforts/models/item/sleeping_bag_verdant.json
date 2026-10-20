@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/comforts/sleeping_bag_verdant"
+    "layer0": "comforts:item/sleeping_bag_verdant"
   }
 }

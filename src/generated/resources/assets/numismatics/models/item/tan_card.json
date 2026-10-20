@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/numismatics/card/tan"
+    "layer0": "numismatics:item/tan_card"
   }
 }

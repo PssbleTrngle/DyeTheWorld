@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/vanillabackport/cushion/ginger"
+    "layer0": "vanillabackport:item/cushion/ginger"
   }
 }

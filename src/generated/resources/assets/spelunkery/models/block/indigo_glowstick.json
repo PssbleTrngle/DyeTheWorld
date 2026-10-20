@@ -1,7 +1,7 @@
 {
   "parent": "spelunkery:block/glowstick",
   "textures": {
-    "1": "dye_the_world:block/spelunkery/glowstick/indigo",
-    "particle": "dye_the_world:block/spelunkery/glowstick/indigo"
+    "1": "spelunkery:block/indigo_glowstick",
+    "particle": "spelunkery:block/indigo_glowstick"
   }
 }

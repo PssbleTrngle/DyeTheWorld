@@ -1,9 +1,9 @@
 {
   "parent": "interiors:block/chair/right",
   "textures": {
-    "side": "dye_the_world:block/create/seat/side_aqua",
-    "side_front": "dye_the_world:block/create/seat/side_aqua",
-    "side_top": "dye_the_world:block/interiors/chair/side_top_aqua",
-    "top": "dye_the_world:block/create/seat/top_aqua"
+    "side": "create:block/seat/side_aqua",
+    "side_front": "create:block/seat/side_aqua",
+    "side_top": "interiors:block/chair/side_top_aqua",
+    "top": "create:block/seat/top_aqua"
   }
 }

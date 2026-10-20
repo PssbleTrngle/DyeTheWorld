@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "dye_the_world:item/spelunkery/glowstick/aqua"
+    "layer0": "spelunkery:item/aqua_glowstick"
   }
 }

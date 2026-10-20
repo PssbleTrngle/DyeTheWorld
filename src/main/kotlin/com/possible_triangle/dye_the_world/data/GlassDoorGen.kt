@@ -1,11 +1,11 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants.MOD_ID
 import com.possible_triangle.dye_the_world.Constants.Mods
 import com.possible_triangle.dye_the_world.Constants.Mods.CLAYWORKS
 import com.possible_triangle.dye_the_world.extensions.TRANSLUCENT
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.getOrThrow
+import com.possible_triangle.dye_the_world.extensions.texture
 import com.possible_triangle.dye_the_world.extensions.translucent
 import com.possible_triangle.dye_the_world.itemOf
 import com.possible_triangle.dye_the_world.registrate.dye
@@ -37,8 +37,12 @@ fun <T : Item, P> ItemBuilder<T, P>.glassDoorRecipes() =
 
 fun <T : DoorBlock, P> BlockBuilder<T, P>.glassDoorBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String) = MOD_ID.createId("block/$CLAYWORKS/${dye}_stained_glass_door_$suffix")
-        provider.doorBlockWithRenderType(context.get(), texture("bottom"), texture("top"), TRANSLUCENT)
+        provider.doorBlockWithRenderType(
+            context.get(),
+            context.texture.withSuffix("_bottom"),
+            context.texture.withSuffix("_top"),
+            TRANSLUCENT,
+        )
     }
 
 fun <T : Block, P> BlockBuilder<T, P>.glassDoorLoot() =
@@ -48,7 +52,7 @@ fun <T : Block, P> BlockBuilder<T, P>.glassDoorLoot() =
 
 fun <T : Item, P> ItemBuilder<T, P>.glassDoorItemModel() =
     model { context, provider ->
-        val texture = MOD_ID.createId("item/$CLAYWORKS/${dye}_stained_glass_door")
+        val texture = CLAYWORKS.createId("item/${dye}_stained_glass_door")
         provider.generated(context, texture).translucent()
     }
 

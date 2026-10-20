@@ -76,7 +76,7 @@ object DyedQuark {
                             .save(provider, Constants.MOD_ID.createId("stained_${dye}_glass_from_shards"))
                     }
                 }.model { context, provider ->
-                    provider.generated(context, Constants.MOD_ID.createId("item/$QUARK/${context.name}"))
+                    provider.generated(context, QUARK.createId("item/${context.name}"))
                 }.lang("${dye.translation} Glass Shard")
                 .germanLang("${dye.germanTranslation(Genus.F)} Glasscherbe")
                 .register()
@@ -106,7 +106,6 @@ object DyedQuark {
                 .dyedBlock(dye, QUARK, ::Block)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .cubeBlockstate("shingles")
                 .lang("${dye.translation} Terracotta Shingles")
                 .germanLang("${dye.germanTranslation(Genus.F)} Schindeln")
                 .withItem {
@@ -174,7 +173,7 @@ object DyedQuark {
                         c.get(),
                         p
                             .models()
-                            .cubeAll(c.name, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"))
+                            .cubeAll(c.name, c.texture)
                             .translucent(),
                     )
                 }.lang("${dye.translation} Framed Glass")
@@ -201,9 +200,10 @@ object DyedQuark {
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .optionalTag(Tags.Blocks.GLASS_PANES)
                 .blockstate { c, p ->
+                    val full = FRAMED_GLASS[dye]!!.get()
                     p.paneBlockWithRenderType(
                         c.get(),
-                        Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"),
+                        full.texture,
                         QUARK.createId("block/framed_glass_pane_top"),
                         TRANSLUCENT,
                     )
@@ -211,7 +211,8 @@ object DyedQuark {
                 .germanLang("${dye.germanTranslation(Genus.F)} gerahmte Glasscheibe")
                 .withItem {
                     model { c, p ->
-                        p.generated(c, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass")).translucent()
+                        val full = FRAMED_GLASS[dye]!!.get()
+                        p.generated(c, full.texture).translucent()
                     }
                     optionalTag(Tags.Items.GLASS_PANES)
                     optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {

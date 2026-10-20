@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_SIMULATED
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -24,7 +23,7 @@ fun <T : Block, P> BlockBuilder<T, P>.handleBlockstate() =
             return provider
                 .models()
                 .withExistingParent("${context.name}_$type", parent)
-                .texture("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/handle/$dye"))
+                .texture("0", CREATE_SIMULATED.createId("block/handle/$dye"))
         }
 
         val vertical = model("vertical")
@@ -64,5 +63,5 @@ fun <T : Item, P> ItemBuilder<T, P>.handleItemModel() =
         val parent = CREATE_SIMULATED.createId("block/handle/item")
         provider
             .withExistingParent(context.name, parent)
-            .texture("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/handle/$dye"))
+            .texture("0", CREATE_SIMULATED.createId("block/handle/$dye"))
     }

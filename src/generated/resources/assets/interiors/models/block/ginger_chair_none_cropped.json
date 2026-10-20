@@ -1,9 +1,9 @@
 {
   "parent": "interiors:block/chair/none_cropped",
   "textures": {
-    "side": "dye_the_world:block/create/seat/side_ginger",
-    "side_front": "dye_the_world:block/create/seat/side_ginger",
-    "side_top": "dye_the_world:block/interiors/chair/side_top_ginger",
-    "top": "dye_the_world:block/create/seat/top_ginger"
+    "side": "create:block/seat/side_ginger",
+    "side_front": "create:block/seat/side_ginger",
+    "side_top": "interiors:block/chair/side_top_ginger",
+    "top": "create:block/seat/top_ginger"
   }
 }

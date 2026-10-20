@@ -62,8 +62,7 @@ private fun BlockModelProvider.connected(
         .with(factory)
         .end()
 
-private fun Builder<*, *, *, *>.glassTexture(type: String): ResourceLocation =
-    Constants.MOD_ID.createId("block/${CONNECTED_GLASS}/$type/$dye")
+private fun Builder<*, *, *, *>.glassTexture(type: String): ResourceLocation = CONNECTED_GLASS.createId("block/$type/$dye")
 
 private fun Builder<*, *, *, *>.edgeTexture(type: String): ResourceLocation = dye.namespace.createId("block/${dye}_stained_glass_pane_top")
 

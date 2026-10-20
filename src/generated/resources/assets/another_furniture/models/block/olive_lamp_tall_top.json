@@ -1,7 +1,7 @@
 {
   "parent": "another_furniture:block/template/lamp_tall_top",
   "textures": {
-    "side": "dye_the_world:block/another_furniture/lamp/olive_side",
-    "top": "dye_the_world:block/another_furniture/lamp/olive_top"
+    "side": "another_furniture:block/lamp/olive_side",
+    "top": "another_furniture:block/lamp/olive_top"
   }
 }

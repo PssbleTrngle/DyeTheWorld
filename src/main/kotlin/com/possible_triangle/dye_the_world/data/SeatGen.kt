@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -23,8 +22,8 @@ fun <T : Block, P> BlockBuilder<T, P>.seatBlockstate() =
             provider
                 .models()
                 .withExistingParent(context.name, parent)
-                .texture("1", Constants.MOD_ID.createId("block/$CREATE/seat/top_$dye"))
-                .texture("2", Constants.MOD_ID.createId("block/$CREATE/seat/side_$dye"))
+                .texture("1", CREATE.createId("block/seat/top_$dye"))
+                .texture("2", CREATE.createId("block/seat/side_$dye"))
 
         provider.simpleBlock(context.get(), model)
     }

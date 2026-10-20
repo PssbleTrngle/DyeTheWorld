@@ -29,18 +29,12 @@ fun DyedRegistrate.createLevers(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<LeverBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<LeverBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-    existingTexture: Boolean = false,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_lever")
         .dyedBlock(dye, name.namespace, ::LeverBlock)
         .initialProperties(base)
         .blockstate { c, p ->
-            val texture =
-                if (existingTexture) {
-                    dye.vanillaTexture(name)
-                } else {
-                    dye.texture("block", name)
-                }
+            val texture = from[dye]!!.get().texture
 
             // on and off being switched here is weird but correctly, it's also how it is for the vanilla lever ¯\_(ツ)_/¯
             val off =
@@ -98,19 +92,13 @@ fun DyedRegistrate.createButtons(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<ButtonBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<ButtonBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-    existingTexture: Boolean = false,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_button")
         .dyedBlock(dye, name.namespace) { ButtonBlock(BlockSetType.STONE, 20, it) }
         .initialProperties(base)
         .optionalTag(BlockTags.BUTTONS)
         .blockstate { c, p ->
-            val texture =
-                if (existingTexture) {
-                    dye.vanillaTexture(name)
-                } else {
-                    dye.texture("block", name)
-                }
+            val texture = from[dye]!!.get().texture
             p.buttonBlock(c.get(), texture)
         }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
@@ -136,19 +124,13 @@ fun DyedRegistrate.createPressurePlates(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<PressurePlateBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<PressurePlateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-    existingTexture: Boolean = false,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_pressure_plate")
         .dyedBlock(dye, name.namespace) { PressurePlateBlock(BlockSetType.STONE, it) }
         .initialProperties(base)
         .optionalTag(BlockTags.PRESSURE_PLATES)
         .blockstate { c, p ->
-            val texture =
-                if (existingTexture) {
-                    dye.vanillaTexture(name)
-                } else {
-                    dye.texture("block", name)
-                }
+            val texture = from[dye]!!.get().texture
             p.pressurePlateBlock(c.get(), texture)
         }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)

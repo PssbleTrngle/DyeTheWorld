@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -21,7 +20,7 @@ fun <T : ValveHandleBlock, P> BlockBuilder<T, P>.valveBlockstate() =
             provider
                 .models()
                 .withExistingParent(context.name, CREATE.createId("block/valve_handle"))
-                .texture("3", Constants.MOD_ID.createId("block/$CREATE/valve_handle/$dye"))
+                .texture("3", CREATE.createId("block/valve_handle/$dye"))
 
         provider.createVariant(context) { state ->
             val facing = state.getValue(ValveHandleBlock.FACING)

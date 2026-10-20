@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "dye_the_world:block/aeronautics/envelope/navy"
+    "all": "aeronautics:block/navy_envelope"
   }
 }

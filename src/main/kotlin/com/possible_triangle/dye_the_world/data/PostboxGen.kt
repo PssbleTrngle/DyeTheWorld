@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -23,8 +22,8 @@ fun <T : Item, P> ItemBuilder<T, P>.postboxItemModel() =
     model { context, provider ->
         provider
             .withExistingParent(context.name, CREATE.createId("block/package_postbox/item"))
-            .texture("0", Constants.MOD_ID.createId("block/$CREATE/postbox/$dye"))
-            .texture("1", Constants.MOD_ID.createId("block/$CREATE/postbox/${dye}_closed"))
+            .texture("0", CREATE.createId("block/postbox/$dye"))
+            .texture("1", CREATE.createId("block/postbox/${dye}_closed"))
     }
 
 fun <T : PostboxBlock, P> BlockBuilder<T, P>.postboxBlockstate() =
@@ -34,8 +33,8 @@ fun <T : PostboxBlock, P> BlockBuilder<T, P>.postboxBlockstate() =
                 provider
                     .models()
                     .withExistingParent("${context.name}_$suffix", CREATE.createId("block/package_postbox/block_$suffix"))
-                    .texture("0", Constants.MOD_ID.createId("block/$CREATE/postbox/$dye"))
-                    .texture("1", Constants.MOD_ID.createId("block/$CREATE/postbox/${dye}_$suffix"))
+                    .texture("0", CREATE.createId("block/postbox/$dye"))
+                    .texture("1", CREATE.createId("block/postbox/${dye}_$suffix"))
             }
 
         provider.createVariant(context) { state ->

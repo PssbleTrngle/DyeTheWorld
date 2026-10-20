@@ -1,15 +1,8 @@
 package com.possible_triangle.dye_the_world.registrate
 
-import com.possible_triangle.dye_the_world.Constants
-import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
-import com.possible_triangle.dye_the_world.withNamespace
-import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe
-import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe
 import com.tterrag.registrate.providers.DataGenContext
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.util.nullness.NonNullSupplier
-import net.mehvahdjukaar.supplementaries.reg.ModRegistry
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.data.recipes.ShapelessRecipeBuilder
@@ -102,34 +95,5 @@ fun RegistrateRecipeProvider.shapedDyeingRecipe(
     shapedDyeingRecipe(dye, Ingredient.of(from), to) {
         unlockedBy("has_${from.location.path}", RegistrateRecipeProvider.has(from))
         build()
-    }
-}
-
-fun RegistrateRecipeProvider.cleaningRecipe(
-    clean: ItemLike,
-    dyed: TagKey<Item>,
-    washing: Boolean = true,
-    soap: Boolean = true,
-) {
-    fun id(type: String) = Constants.MOD_ID.createId("cleaning/$type/${dyed.location.namespace}/${dyed.location.path}")
-
-    if (soap) {
-        withNamespace(Constants.Mods.SUPPLEMENTARIES) {
-            ShapelessRecipeBuilder
-                .shapeless(RecipeCategory.MISC, clean)
-                .requiresUnlocking(dyed)
-                .requires(ModRegistry.SOAP.get())
-                .save(this, id("soap"))
-        }
-    }
-
-    if (washing) {
-        withNamespace(Constants.Mods.CREATE) {
-            StandardProcessingRecipe
-                .Builder(::SplashingRecipe, id("splashing"))
-                .require(dyed)
-                .output(clean)
-                .build(this)
-        }
     }
 }

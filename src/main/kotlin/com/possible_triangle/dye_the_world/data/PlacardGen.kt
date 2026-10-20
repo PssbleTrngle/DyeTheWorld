@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.data
 
 import com.github.talrey.createdeco.api.CreateDecoTags
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_DECO
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
@@ -19,7 +18,7 @@ import net.minecraft.world.item.Items
 
 fun <T : PlacardBlock, P> BlockBuilder<T, P>.placardBlockstate() =
     blockstate { context, provider ->
-        val texture = Constants.MOD_ID.createId("block/$CREATE_DECO/placard/$dye")
+        val texture = CREATE_DECO.createId("block/placard/$dye")
 
         val model =
             provider

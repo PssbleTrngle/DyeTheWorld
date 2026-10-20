@@ -1,10 +1,11 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.SNOWY_SPIRIT
+import com.possible_triangle.dye_the_world.extensions.blockTexture
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
+import com.possible_triangle.dye_the_world.extensions.texture
 import com.possible_triangle.dye_the_world.extensions.yRot
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.tterrag.registrate.builders.BlockBuilder
@@ -27,7 +28,7 @@ fun <T : Block, P> BlockBuilder<T, P>.gumdropBlockstate() =
                     .models()
                     .getBuilder(context.name + suffix)
                     .parent(provider.models().getExistingFile(SNOWY_SPIRIT.createId("block/gumdrop$suffix")))
-                    .texture("particle", Constants.MOD_ID.createId("block/$SNOWY_SPIRIT/gumdrop/$dye"))
+                    .texture("particle", context.texture)
             }
 
         provider.createVariant(context) { state ->
@@ -54,7 +55,7 @@ fun <T : Item, P> ItemBuilder<T, P>.gumdropModel() =
     model { context, provider ->
         provider
             .withExistingParent(context.name, SNOWY_SPIRIT.createId("item/gumdrop"))
-            .texture("texture", Constants.MOD_ID.createId("block/$SNOWY_SPIRIT/gumdrop/$dye"))
+            .texture("texture", context.blockTexture)
     }
 
 fun <T : Item, P> ItemBuilder<T, P>.gumdropRecipe() =

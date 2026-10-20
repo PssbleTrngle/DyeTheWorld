@@ -2,7 +2,7 @@
   "parent": "minecraft:block/door_top_left",
   "render_type": "minecraft:translucent",
   "textures": {
-    "bottom": "dye_the_world:block/clayworks/tan_stained_glass_door_bottom",
-    "top": "dye_the_world:block/clayworks/tan_stained_glass_door_top"
+    "bottom": "clayworks:block/tan_stained_glass_door_bottom",
+    "top": "clayworks:block/tan_stained_glass_door_top"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "another_furniture:block/template/curtain_right_bottom",
   "textures": {
-    "curtain": "dye_the_world:block/another_furniture/curtain2/forest_open_bottom"
+    "curtain": "another_furniture:block/curtain2/forest_open_bottom"
   }
 }

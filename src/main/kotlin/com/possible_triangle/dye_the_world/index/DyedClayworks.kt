@@ -44,7 +44,6 @@ object DyedClayworks {
                 .dyedBlock(dye, CLAYWORKS)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .cubeBlockstate("terracotta_brick")
                 .lang("${dye.translation} Terracotta Bricks")
                 .germanLang("${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
@@ -116,7 +115,6 @@ object DyedClayworks {
                 .dyedBlock(dye, CLAYWORKS)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .cubeBlockstate("chiseled_terracotta_bricks")
                 .lang("Chiseled ${dye.translation} Terracotta Bricks")
                 .germanLang("Gemeißelte ${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
@@ -141,17 +139,17 @@ object DyedClayworks {
     val TERRACOTTA_SLABS =
         REGISTRATE.createSlabs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramikstufe")
-        }, existingTexture = true)
+        })
 
     val TERRACOTTA_STAIRS =
         REGISTRATE.createStairs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramiktreppe")
-        }, existingTexture = true)
+        })
 
     val TERRACOTTA_WALLS =
         REGISTRATE.createWalls(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramikmauer")
-        }, existingTexture = true)
+        })
 
     @JvmField
     val DECORATED_POTS =

@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_SIMULATED
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -21,7 +20,7 @@ fun <T : Block, P> BlockBuilder<T, P>.portableEngineBlockstate() =
             provider
                 .models()
                 .withExistingParent(context.name, parent)
-                .textureAndParticle("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/portable_engine/$dye"))
+                .textureAndParticle("0", CREATE_SIMULATED.createId("block/portable_engine/$dye"))
 
         provider.createVariant(context, BlockStateProperties.LIT) { state ->
             val facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING)
@@ -38,5 +37,5 @@ fun <T : Item, P> ItemBuilder<T, P>.portableEngineItemModel() =
         val parent = CREATE_SIMULATED.createId("block/portable_engine/item")
         provider
             .withExistingParent(context.name, parent)
-            .textureAndParticle("0", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/portable_engine/$dye"))
+            .textureAndParticle("0", CREATE_SIMULATED.createId("block/portable_engine/$dye"))
     }

@@ -1,7 +1,7 @@
 {
   "parent": "create:block/seat",
   "textures": {
-    "1": "dye_the_world:block/create/seat/top_forest",
-    "2": "dye_the_world:block/create/seat/side_forest"
+    "1": "create:block/seat/top_forest",
+    "2": "create:block/seat/side_forest"
   }
 }

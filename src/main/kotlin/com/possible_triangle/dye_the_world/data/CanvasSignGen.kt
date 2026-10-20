@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.FARMERS_DELIGHT
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.registrate.dye
@@ -27,7 +26,7 @@ fun <T : Item, P> ItemBuilder<T, P>.hangingCanvasSignRecipes() =
 
 fun <T : Item, P> ItemBuilder<T, P>.canvasSignItemModel() =
     model { context, provider ->
-        provider.generated(context, Constants.MOD_ID.createId("item/$FARMERS_DELIGHT/${context.name}"))
+        provider.generated(context, FARMERS_DELIGHT.createId("item/${context.name}"))
     }
 
 fun <T : Block, P> BlockBuilder<T, P>.canvasSignBlockstate() =

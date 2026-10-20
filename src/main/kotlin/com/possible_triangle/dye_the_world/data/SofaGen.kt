@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -47,7 +46,7 @@ fun <T : Item, P> ItemBuilder<T, P>.sofaRecipes() =
 
 fun <T : Block, P> BlockBuilder<T, P>.sofaBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String) = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/sofa/${dye}_$suffix")
+        fun texture(suffix: String) = ANOTHER_FURNITURE.createId("block/sofa/${dye}_$suffix")
 
         fun sofaModel(suffix: String? = null): BlockModelBuilder {
             val realSuffix = suffix?.let { "_$it" } ?: ""

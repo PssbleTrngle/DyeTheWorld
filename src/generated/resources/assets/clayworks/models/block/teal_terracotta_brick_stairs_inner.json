@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/inner_stairs",
   "textures": {
-    "bottom": "dye_the_world:block/clayworks/terracotta_brick/teal",
-    "side": "dye_the_world:block/clayworks/terracotta_brick/teal",
-    "top": "dye_the_world:block/clayworks/terracotta_brick/teal"
+    "bottom": "clayworks:block/teal_terracotta_bricks",
+    "side": "clayworks:block/teal_terracotta_bricks",
+    "top": "clayworks:block/teal_terracotta_bricks"
   }
 }

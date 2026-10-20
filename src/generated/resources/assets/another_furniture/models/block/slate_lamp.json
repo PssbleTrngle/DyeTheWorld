@@ -1,7 +1,7 @@
 {
   "parent": "another_furniture:block/template/lamp",
   "textures": {
-    "side": "dye_the_world:block/another_furniture/lamp/slate_side",
-    "top": "dye_the_world:block/another_furniture/lamp/slate_top"
+    "side": "another_furniture:block/lamp/slate_side",
+    "top": "another_furniture:block/lamp/slate_top"
   }
 }

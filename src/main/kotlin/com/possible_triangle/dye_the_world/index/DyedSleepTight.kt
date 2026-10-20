@@ -2,10 +2,9 @@ package com.possible_triangle.dye_the_world.index
 
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.SLEEP_TIGHT
-import com.possible_triangle.dye_the_world.data.flat
-import com.possible_triangle.dye_the_world.data.particleOnly
 import com.possible_triangle.dye_the_world.data.translateBannerPattern
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.extensions.particleOnly
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.tterrag.registrate.providers.ProviderType
@@ -36,7 +35,7 @@ object DyedSleepTight {
                 .dyedBlock(dye) { HammockBlock(dye) }
                 .lang("${dye.translation} Hammock")
                 .germanLang("${dye.germanTranslation(Genus.F)} Hängematte")
-                .particleOnly("hammock")
+                .particleOnly()
                 .optionalTag(DyedTags.Blocks.SLEEP_TIGHT_HAMMOCKS)
                 .loot { provider, block ->
                     val table =
@@ -59,7 +58,6 @@ object DyedSleepTight {
                 }.withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
                     optionalTag(DyedTags.Items.SLEEP_TIGHT_HAMMOCKS)
-                    flat("hammock")
                     recipe { c, p ->
                         p.dyeingRecipe(
                             dye,

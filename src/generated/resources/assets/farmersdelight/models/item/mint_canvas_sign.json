@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/farmersdelight/mint_canvas_sign"
+    "layer0": "farmersdelight:item/mint_canvas_sign"
   }
 }

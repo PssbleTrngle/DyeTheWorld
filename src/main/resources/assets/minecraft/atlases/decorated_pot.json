@@ -11,22 +11,22 @@
       ],
       "palette_key": "clayworks:entity/decorated_pot_color_palettes/decorated_pot_palette",
       "permutations": {
-        "amber": "dye_the_world:entity/decorated_pot_color_palettes/amber",
-        "aqua": "dye_the_world:entity/decorated_pot_color_palettes/aqua",
-        "beige": "dye_the_world:entity/decorated_pot_color_palettes/beige",
-        "coral": "dye_the_world:entity/decorated_pot_color_palettes/coral",
-        "forest": "dye_the_world:entity/decorated_pot_color_palettes/forest",
-        "ginger": "dye_the_world:entity/decorated_pot_color_palettes/ginger",
-        "indigo": "dye_the_world:entity/decorated_pot_color_palettes/indigo",
-        "maroon": "dye_the_world:entity/decorated_pot_color_palettes/maroon",
-        "mint": "dye_the_world:entity/decorated_pot_color_palettes/mint",
-        "navy": "dye_the_world:entity/decorated_pot_color_palettes/navy",
-        "olive": "dye_the_world:entity/decorated_pot_color_palettes/olive",
-        "rose": "dye_the_world:entity/decorated_pot_color_palettes/rose",
-        "slate": "dye_the_world:entity/decorated_pot_color_palettes/slate",
-        "tan": "dye_the_world:entity/decorated_pot_color_palettes/tan",
-        "teal": "dye_the_world:entity/decorated_pot_color_palettes/teal",
-        "verdant": "dye_the_world:entity/decorated_pot_color_palettes/verdant"
+        "amber": "clayworks:entity/decorated_pot_color_palettes/amber",
+        "aqua": "clayworks:entity/decorated_pot_color_palettes/aqua",
+        "beige": "clayworks:entity/decorated_pot_color_palettes/beige",
+        "coral": "clayworks:entity/decorated_pot_color_palettes/coral",
+        "forest": "clayworks:entity/decorated_pot_color_palettes/forest",
+        "ginger": "clayworks:entity/decorated_pot_color_palettes/ginger",
+        "indigo": "clayworks:entity/decorated_pot_color_palettes/indigo",
+        "maroon": "clayworks:entity/decorated_pot_color_palettes/maroon",
+        "mint": "clayworks:entity/decorated_pot_color_palettes/mint",
+        "navy": "clayworks:entity/decorated_pot_color_palettes/navy",
+        "olive": "clayworks:entity/decorated_pot_color_palettes/olive",
+        "rose": "clayworks:entity/decorated_pot_color_palettes/rose",
+        "slate": "clayworks:entity/decorated_pot_color_palettes/slate",
+        "tan": "clayworks:entity/decorated_pot_color_palettes/tan",
+        "teal": "clayworks:entity/decorated_pot_color_palettes/teal",
+        "verdant": "clayworks:entity/decorated_pot_color_palettes/verdant"
       }
     }
   ]

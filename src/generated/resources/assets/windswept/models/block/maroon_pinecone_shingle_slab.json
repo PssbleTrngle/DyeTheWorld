@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "dye_the_world:block/windswept/pinecone_shingle/maroon",
-    "side": "dye_the_world:block/windswept/pinecone_shingle/maroon",
-    "top": "dye_the_world:block/windswept/pinecone_shingle/maroon"
+    "bottom": "windswept:block/maroon_pinecone_shingles",
+    "side": "windswept:block/maroon_pinecone_shingles",
+    "top": "windswept:block/maroon_pinecone_shingles"
   }
 }

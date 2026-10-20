@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/supplementaries/buntings/verdant"
+    "layer0": "supplementaries:item/buntings/buntings_verdant"
   }
 }

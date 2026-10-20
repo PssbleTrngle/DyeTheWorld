@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.index
 
 import com.possible_triangle.dye_the_world.Constants.Mods.SNOWY_SPIRIT
 import com.possible_triangle.dye_the_world.data.glowLightsBlockstate
-import com.possible_triangle.dye_the_world.data.glowLightsModel
 import com.possible_triangle.dye_the_world.data.glowLightsRecipe
 import com.possible_triangle.dye_the_world.data.gumdropBlockstate
 import com.possible_triangle.dye_the_world.data.gumdropModel
@@ -41,7 +40,6 @@ object DyedSnowySpirit {
                 .noLang()
                 .tab(CreativeModeTabs.COLORED_BLOCKS)
                 .tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
-                .glowLightsModel()
                 .glowLightsRecipe()
                 .optionalTag(DyedTags.Items.GLOW_LIGHTS)
                 .register()

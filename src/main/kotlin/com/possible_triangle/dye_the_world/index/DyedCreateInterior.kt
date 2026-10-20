@@ -63,7 +63,7 @@ object DyedCreateInterior {
                 .optionalTag(BlockTags.MINEABLE_WITH_AXE)
                 .optionalTag(DyedTags.Blocks.MINEABLE_KNIFE)
                 .blockstate { c, p ->
-                    val texture = Constants.MOD_ID.createId("block/$CREATE/seat/top_$dye")
+                    val texture = CREATE.createId("block/seat/top_$dye")
                     p.simpleBlock(c.get(), p.models().cubeAll(c.name, texture))
                 }.withItem {
                     recipe { c, p ->

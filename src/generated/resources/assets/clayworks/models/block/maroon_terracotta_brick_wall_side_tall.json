@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side_tall",
   "textures": {
-    "wall": "dye_the_world:block/clayworks/terracotta_brick/maroon"
+    "wall": "clayworks:block/maroon_terracotta_bricks"
   }
 }

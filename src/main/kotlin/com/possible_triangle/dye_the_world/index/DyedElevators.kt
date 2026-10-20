@@ -1,11 +1,9 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ELEVATORS
 import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.dyesFor
-import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
 import com.possible_triangle.dye_the_world.extensions.germanLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
@@ -28,11 +26,7 @@ object DyedElevators {
             REGISTRATE
                 .`object`("elevator_$dye")
                 .dyedBlock(dye) { GlowLightsBlock(dye) }
-                .blockstate { context, provider ->
-                    val texture = Constants.MOD_ID.createId("block/$ELEVATORS/$dye")
-                    val model = provider.models().cubeAll(context.name, texture)
-                    provider.simpleBlock(context.get(), model)
-                }.optionalTag(DyedTags.Blocks.ELEVATORS)
+                .optionalTag(DyedTags.Blocks.ELEVATORS)
                 .lang("${dye.translation} Elevator")
                 .germanLang("${dye.germanTranslation(Genus.M)} Aufzug")
                 .withItem {

@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world.index
 import com.possible_triangle.dye_the_world.Constants.Mods.WINDSWEPT
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
-import com.possible_triangle.dye_the_world.data.cubeBlockstate
 import com.possible_triangle.dye_the_world.data.translateBannerPattern
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -26,7 +25,6 @@ object DyedWindswept {
             REGISTRATE
                 .`object`("${dye}_pinecone_shingles")
                 .dyedBlock(dye, WINDSWEPT)
-                .cubeBlockstate("pinecone_shingle")
                 .optionalTag(BlockTags.MINEABLE_WITH_AXE)
                 .optionalTag(WindsweptBlockTags.PINECONE_NOTE_BLOCKS)
                 .withItem {

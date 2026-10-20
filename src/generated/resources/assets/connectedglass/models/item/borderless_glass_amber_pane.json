@@ -1,7 +1,7 @@
 {
   "parent": "connectedglass:pane_item_template",
   "textures": {
-    "all": "dye_the_world:block/connectedglass/borderless/amber",
+    "all": "connectedglass:block/borderless/amber",
     "edge": "dye_depot:block/amber_stained_glass_pane_top"
   }
 }

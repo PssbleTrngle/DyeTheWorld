@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/numismatics/id_card/olive"
+    "layer0": "numismatics:item/olive_id_card"
   }
 }

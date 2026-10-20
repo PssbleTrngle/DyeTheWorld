@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/comforts/hammock_aqua"
+    "layer0": "comforts:item/hammock_aqua"
   }
 }

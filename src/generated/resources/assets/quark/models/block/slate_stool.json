@@ -1,6 +1,6 @@
 {
   "parent": "quark:block/stool",
   "textures": {
-    "main": "dye_the_world:block/quark/slate_stool"
+    "main": "quark:block/slate_stool"
   }
 }

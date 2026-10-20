@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
@@ -45,13 +44,13 @@ fun <T : Block, P> BlockBuilder<T, P>.toolboxBlockstate() =
         provider
             .models()
             .withExistingParent("block/toolbox/lid/$dye", CREATE.createId("block/toolbox/lid/brown"))
-            .texture("0", Constants.MOD_ID.createId("block/$CREATE/toolbox/$dye"))
+            .texture("0", CREATE.createId("block/toolbox/$dye"))
 
         val model =
             provider
                 .models()
                 .withExistingParent(context.name, CREATE.createId("block/toolbox/block"))
-                .texture("0", Constants.MOD_ID.createId("block/$CREATE/toolbox/$dye"))
+                .texture("0", CREATE.createId("block/toolbox/$dye"))
 
         provider.createVariant(context) { state ->
             val facing = state.getValue(ToolboxBlock.FACING)
@@ -68,5 +67,5 @@ fun <T : Item, P> ItemBuilder<T, P>.toolboxItemModel() =
         val parent = CREATE.createId("block/toolbox/item")
         provider
             .withExistingParent(context.name, parent)
-            .texture("0", Constants.MOD_ID.createId("block/$CREATE/toolbox/$dye"))
+            .texture("0", CREATE.createId("block/toolbox/$dye"))
     }

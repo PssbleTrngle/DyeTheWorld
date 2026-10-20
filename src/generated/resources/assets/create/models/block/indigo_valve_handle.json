@@ -1,6 +1,6 @@
 {
   "parent": "create:block/valve_handle",
   "textures": {
-    "3": "dye_the_world:block/create/valve_handle/indigo"
+    "3": "create:block/valve_handle/indigo"
   }
 }

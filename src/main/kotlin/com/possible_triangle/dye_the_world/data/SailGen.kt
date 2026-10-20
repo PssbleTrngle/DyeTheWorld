@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_SIMULATED
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -22,7 +21,7 @@ fun <T : SailBlock, P> BlockBuilder<T, P>.sailBlockstate() =
             provider
                 .models()
                 .withExistingParent(context.name, parent)
-                .texture("0", Constants.MOD_ID.createId("block/$CREATE/sail/$dye"))
+                .texture("0", CREATE.createId("block/sail/$dye"))
 
         provider.createVariant(context) { state ->
             val facing = state.getValue(BlockStateProperties.FACING)
@@ -49,8 +48,8 @@ fun <T : RotatedPillarBlock, P> BlockBuilder<T, P>.symmetricSailBlockstate() =
             provider
                 .models()
                 .withExistingParent(context.name, parent)
-                .textureAndParticle("0", Constants.MOD_ID.createId("block/$CREATE/sail/$dye"))
-                .texture("1", Constants.MOD_ID.createId("block/$CREATE_SIMULATED/symmetric_sail/side_$dye"))
+                .textureAndParticle("0", CREATE.createId("block/sail/$dye"))
+                .texture("1", CREATE_SIMULATED.createId("block/symmetric_sail/side_$dye"))
 
         provider.createVariant(context) { state ->
             val axis = state.getValue(BlockStateProperties.AXIS)

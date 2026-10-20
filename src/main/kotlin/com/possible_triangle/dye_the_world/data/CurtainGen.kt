@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -49,7 +48,7 @@ fun <T : Item, P> ItemBuilder<T, P>.curtainRecipes() =
 
 fun <T : Block, P> BlockBuilder<T, P>.curtainBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String): ResourceLocation = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/curtain2/${dye}$suffix")
+        fun texture(suffix: String): ResourceLocation = ANOTHER_FURNITURE.createId("block/curtain2/${dye}$suffix")
 
         provider.createVariant(context) model@{ state ->
             val facing = state.getValue(CurtainBlock.FACING)
@@ -124,7 +123,7 @@ fun <T : Item, P> ItemBuilder<T, P>.curtainItemModel() =
     model { context, provider ->
         provider
             .withExistingParent(context.name, ANOTHER_FURNITURE.createId("item/template/curtain"))
-            .texture("all", Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/curtain/$dye"))
+            .texture("all", ANOTHER_FURNITURE.createId("block/curtain/$dye"))
     }
 
 fun <T : Block, P> BlockBuilder<T, P>.curtainLoot() =

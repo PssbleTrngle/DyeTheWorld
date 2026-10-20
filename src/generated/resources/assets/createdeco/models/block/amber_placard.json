@@ -1,7 +1,7 @@
 {
   "parent": "createdeco:block/dyed_placard",
   "textures": {
-    "0": "dye_the_world:block/createdeco/placard/amber",
-    "particle": "dye_the_world:block/createdeco/placard/amber"
+    "0": "createdeco:block/placard/amber",
+    "particle": "createdeco:block/placard/amber"
   }
 }

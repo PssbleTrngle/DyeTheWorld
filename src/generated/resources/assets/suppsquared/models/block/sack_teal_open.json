@@ -1,10 +1,10 @@
 {
   "parent": "supplementaries:block/sack_open",
   "textures": {
-    "1": "dye_the_world:block/suppsquared/sack_teal_front",
-    "2": "dye_the_world:block/suppsquared/sack_teal_top",
-    "3": "dye_the_world:block/suppsquared/sack_teal_bottom",
-    "4": "dye_the_world:block/suppsquared/sack_teal_closed",
-    "particle": "dye_the_world:block/suppsquared/sack_teal_front"
+    "1": "suppsquared:block/sack_teal_front",
+    "2": "suppsquared:block/sack_teal_top",
+    "3": "suppsquared:block/sack_teal_bottom",
+    "4": "suppsquared:block/sack_teal_closed",
+    "particle": "suppsquared:block/sack_teal_front"
   }
 }

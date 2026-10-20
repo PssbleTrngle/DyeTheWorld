@@ -1,7 +1,7 @@
 {
   "parent": "simulated:block/portable_engine/item",
   "textures": {
-    "0": "dye_the_world:block/simulated/portable_engine/mint",
-    "particle": "dye_the_world:block/simulated/portable_engine/mint"
+    "0": "simulated:block/portable_engine/mint",
+    "particle": "simulated:block/portable_engine/mint"
   }
 }

@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "dye_the_world:block/sleep_tight/hammock/aqua"
+    "particle": "sleep_tight:block/hammock_aqua"
   }
 }

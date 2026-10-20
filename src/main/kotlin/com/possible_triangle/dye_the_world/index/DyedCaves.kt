@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ALEXS_CAVES
 import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.dyesFor
@@ -36,10 +35,7 @@ object DyedCaves {
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Radon Lamp")
                 .germanLang("${dye.germanTranslation(Genus.F)} Radonlampe")
-                .blockstate { c, p ->
-                    val model = p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/$ALEXS_CAVES/${c.name}"))
-                    p.simpleBlock(c.get(), model)
-                }.withItem {
+                .withItem {
                     tab(TOXIC_TAB)
                     optionalTag(DyedTags.Items.RADON_LAMPS)
                     recipe { context, provider ->

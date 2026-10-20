@@ -52,7 +52,7 @@ object DyedVanillaBackport {
                         .group("harness")
                         .save(provider)
                 }.model { c, p ->
-                    p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/harness/$dye"))
+                    p.generated(c, VANILLA_BACKPORT.createId("item/harness/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .tab(TAB)
                 .register()
@@ -69,7 +69,7 @@ object DyedVanillaBackport {
                 .germanLang("${dye.germanTranslation(Genus.I)} Bündel")
                 .optionalTag(ModItemTags.BUNDLES)
                 .model { c, p ->
-                    p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/bundle/$dye"))
+                    p.generated(c, VANILLA_BACKPORT.createId("item/bundle/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .tab(TAB)
                 .register()
@@ -89,7 +89,6 @@ object DyedVanillaBackport {
                 tab(TAB)
                 optionalTag(ModItemTags.WOOL_STAIRS)
             },
-            existingTexture = true,
             stone = false,
         )
 
@@ -105,7 +104,6 @@ object DyedVanillaBackport {
                 tab(TAB)
                 optionalTag(ModItemTags.WOOL_SLABS)
             },
-            existingTexture = true,
             stone = false,
         )
 
@@ -119,7 +117,7 @@ object DyedVanillaBackport {
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
                 .optionalTag(ModItemTags.CUSHIONS)
                 .model { c, p ->
-                    p.generated(c, Constants.MOD_ID.createId("item/$VANILLA_BACKPORT/cushion/$dye"))
+                    p.generated(c, VANILLA_BACKPORT.createId("item/cushion/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .tab(TAB)
                 .register()

@@ -1,9 +1,9 @@
 {
   "parent": "another_furniture:block/template/sofa_inner",
   "textures": {
-    "back": "dye_the_world:block/another_furniture/sofa/maroon_back",
-    "seat_back_2": "dye_the_world:block/another_furniture/sofa/maroon_seat_back_2",
-    "seat_front": "dye_the_world:block/another_furniture/sofa/maroon_seat_front",
-    "seat_top": "dye_the_world:block/another_furniture/sofa/maroon_seat_inner"
+    "back": "another_furniture:block/sofa/maroon_back",
+    "seat_back_2": "another_furniture:block/sofa/maroon_seat_back_2",
+    "seat_front": "another_furniture:block/sofa/maroon_seat_front",
+    "seat_top": "another_furniture:block/sofa/maroon_seat_inner"
   }
 }

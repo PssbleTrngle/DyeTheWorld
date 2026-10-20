@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -21,7 +20,7 @@ fun <T : Item, P> ItemBuilder<T, P>.tableClothItemModel() =
     model { context, provider ->
         provider
             .withExistingParent(context.name, CREATE.createId("block/table_cloth/item"))
-            .texture("0", Constants.MOD_ID.createId("block/$CREATE/table_cloth/$dye"))
+            .texture("0", CREATE.createId("block/table_cloth/$dye"))
     }
 
 fun <T : TableClothBlock, P> BlockBuilder<T, P>.tableClothBlockstate() =
@@ -30,7 +29,7 @@ fun <T : TableClothBlock, P> BlockBuilder<T, P>.tableClothBlockstate() =
             provider
                 .models()
                 .withExistingParent(context.name, CREATE.createId("block/table_cloth/block"))
-                .texture("0", Constants.MOD_ID.createId("block/$CREATE/table_cloth/$dye"))
+                .texture("0", CREATE.createId("block/table_cloth/$dye"))
 
         provider.simpleBlock(context.get(), model)
     }

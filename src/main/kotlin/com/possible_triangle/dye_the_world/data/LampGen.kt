@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -43,7 +42,7 @@ fun <T : Item, P> ItemBuilder<T, P>.lampRecipes() =
 
 fun <T : Block, P> BlockBuilder<T, P>.lampBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String): ResourceLocation = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/lamp/${dye}_$suffix")
+        fun texture(suffix: String): ResourceLocation = ANOTHER_FURNITURE.createId("block/lamp/${dye}_$suffix")
 
         provider.createVariant(context) { state ->
             val facing = state.getValue(LampBlock.FACING)
@@ -75,7 +74,7 @@ fun <T : Block, P> BlockBuilder<T, P>.lampBlockstate() =
 
 fun <T : Block, P> BlockBuilder<T, P>.lampConnectorBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String): ResourceLocation = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/lamp/${dye}_$suffix")
+        fun texture(suffix: String): ResourceLocation = ANOTHER_FURNITURE.createId("block/lamp/${dye}_$suffix")
 
         provider.createVariant(context) { state ->
             val base = state.getValue(LampBlock.BASE)

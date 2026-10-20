@@ -10,7 +10,6 @@ import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.data.createWalls
-import com.possible_triangle.dye_the_world.data.cubeBlockstate
 import com.possible_triangle.dye_the_world.data.siltPotBlockstate
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.existingBlockEntity
@@ -37,7 +36,6 @@ object DyedTwigs {
                 .initialProperties(NonNullSupplier(TwigsBlocks.SILT_SHINGLES::get))
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Silt Shingles")
-                .cubeBlockstate("silt_shingle")
                 .optionalTag(TwigsTags.PACKED_SILT_BLOCK)
                 .withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
@@ -80,7 +78,6 @@ object DyedTwigs {
                 .initialProperties(NonNullSupplier(TwigsBlocks.PACKED_SILT::get))
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Packed Silt")
-                .cubeBlockstate("packed_silt")
                 .optionalTag(TwigsTags.PACKED_SILT_BLOCK)
                 .withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
