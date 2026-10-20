@@ -1,5 +1,6 @@
 package com.possible_triangle.dye_the_world.registrate
 
+import com.possible_triangle.dye_the_world.extensions.doMigration
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.index.DyedTags
 import com.possible_triangle.dye_the_world.withNamespace
@@ -9,6 +10,7 @@ import com.tterrag.registrate.providers.DataGenContext
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.util.nullness.NonNullBiConsumer
 import com.tterrag.registrate.util.nullness.NonNullFunction
+import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Item.Properties
@@ -17,14 +19,15 @@ class DyedItemBuilder<T : Item, P : Any> internal constructor(
     owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,
-    override val mod: String,
     name: String,
     callback: BuilderCallback,
     factory: NonNullFunction<Properties, T>,
 ) : ItemBuilder<T, P>(owner, parent, name, callback, factory),
     DyedBuilder {
+    override var migrateFrom: ResourceLocation? = null
+
     init {
-        mod.validateMod()
+        doMigration()
     }
 
     override fun recipe(cons: NonNullBiConsumer<DataGenContext<Item, T>, RegistrateRecipeProvider>) =

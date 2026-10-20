@@ -1,7 +1,7 @@
 {
   "parent": "create:block/package_postbox/block_closed",
   "textures": {
-    "0": "dye_the_world:block/create/postbox/rose",
-    "1": "dye_the_world:block/create/postbox/rose_closed"
+    "0": "create:block/postbox/rose",
+    "1": "create:block/postbox/rose_closed"
   }
 }

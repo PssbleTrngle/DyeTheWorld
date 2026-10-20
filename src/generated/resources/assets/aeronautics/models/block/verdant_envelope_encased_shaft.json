@@ -1,7 +1,7 @@
 {
   "parent": "aeronautics:block/envelope_encased_shaft/block",
   "textures": {
-    "0": "dye_the_world:block/aeronautics/envelope/verdant",
-    "particle": "dye_the_world:block/aeronautics/envelope/verdant"
+    "0": "aeronautics:block/verdant_envelope",
+    "particle": "aeronautics:block/verdant_envelope"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "clayworks:block/navy_terracotta_bricks",
+    "side": "clayworks:block/navy_terracotta_bricks",
+    "top": "clayworks:block/navy_terracotta_bricks"
+  }
+}

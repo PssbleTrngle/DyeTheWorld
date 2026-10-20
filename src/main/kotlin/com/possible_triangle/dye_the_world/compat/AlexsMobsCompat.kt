@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.compat
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ALEXS_MOBS
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.dyesFor
@@ -13,7 +12,7 @@ object AlexsMobsCompat {
 
     private val DECORS =
         dyesFor(ALEXS_MOBS).associateWith {
-            Constants.MOD_ID.createId("textures/entity/$ALEXS_MOBS/elephant_decor/$it.png")
+            ALEXS_MOBS.createId("textures/entity/elephant_decor/$it.png")
         }
 
     @JvmStatic

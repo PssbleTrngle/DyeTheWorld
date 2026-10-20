@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_AERONAUTICS
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -21,7 +20,7 @@ import net.minecraft.world.level.block.Block
 
 private val AbstractBuilder<*, *, *, *>.texture
     get() =
-        Constants.MOD_ID.createId("block/$CREATE_AERONAUTICS/envelope/$dye")
+        CREATE_AERONAUTICS.createId("block/${dye}_envelope")
 
 fun <T : Block, P> BlockBuilder<T, P>.envelopeShaftBlockstate() =
     blockstate { context, provider ->

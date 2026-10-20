@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "minecraft:amber_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:beige_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:forest_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:indigo_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:olive_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:tan_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_cushion",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_cushion",
+      "required": false
+    }
+  ]
+}

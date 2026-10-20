@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "dye_the_world:item/sleep_tight/hammock/rose"
-  }
+  "parent": "sleep_tight:block/hammock_rose"
 }

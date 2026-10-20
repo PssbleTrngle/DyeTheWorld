@@ -1,10 +1,10 @@
 package com.possible_triangle.dye_the_world.data
 
 import com.google.gson.JsonObject
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.SNOWY_SPIRIT
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
+import com.possible_triangle.dye_the_world.extensions.texture
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
@@ -76,14 +76,9 @@ fun <T : Block, P> BlockBuilder<T, P>.glowLightsBlockstate() =
                 .getBuilder(context.name)
                 .customLoader(::GlowLightsLoaderBuilder)
                 .parent(provider.models().getExistingFile(SNOWY_SPIRIT.createId("block/template_glow_lights")))
-                .texture("all", Constants.MOD_ID.createId("block/$SNOWY_SPIRIT/glow_lights/$dye"))
+                .texture("all", context.texture)
                 .end()
         provider.simpleBlock(context.get(), model)
-    }
-
-fun <T : Item, P> ItemBuilder<T, P>.glowLightsModel() =
-    model { context, provider ->
-        provider.generated(context, Constants.MOD_ID.createId("item/$SNOWY_SPIRIT/glow_lights/$dye"))
     }
 
 fun <T : Item, P> ItemBuilder<T, P>.glowLightsRecipe() =

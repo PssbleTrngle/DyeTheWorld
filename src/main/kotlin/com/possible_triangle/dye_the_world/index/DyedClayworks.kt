@@ -3,9 +3,9 @@ package com.possible_triangle.dye_the_world.index
 import com.google.common.base.Suppliers.memoize
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.CLAYWORKS
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.multikulti.datagen.conditions.ModLoaded
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
@@ -29,6 +29,8 @@ import net.minecraft.world.level.block.DecoratedPotBlock
 import java.util.function.Supplier
 
 object DyedClayworks {
+    private val REGISTRATE = DyedRegistrate.create(CLAYWORKS, migrate = true)
+
     private val DYES = dyesFor(CLAYWORKS)
 
     private val TERRACOTTA = dyedBlockMap(CLAYWORKS, "terracotta")
@@ -39,10 +41,9 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_terracotta_bricks")
-                .dyedBlock(dye, CLAYWORKS)
+                .dyedBlock(dye)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .cubeBlockstate("terracotta_brick")
                 .lang("${dye.translation} Terracotta Bricks")
                 .germanLang("${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
@@ -111,10 +112,9 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("chiseled_${dye}_terracotta_bricks")
-                .dyedBlock(dye, CLAYWORKS)
+                .dyedBlock(dye)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .cubeBlockstate("chiseled_terracotta_bricks")
                 .lang("Chiseled ${dye.translation} Terracotta Bricks")
                 .germanLang("Gemeißelte ${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
@@ -139,24 +139,24 @@ object DyedClayworks {
     val TERRACOTTA_SLABS =
         REGISTRATE.createSlabs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramikstufe")
-        }, existingTexture = true)
+        })
 
     val TERRACOTTA_STAIRS =
         REGISTRATE.createStairs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramiktreppe")
-        }, existingTexture = true)
+        })
 
     val TERRACOTTA_WALLS =
         REGISTRATE.createWalls(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
             germanLang("${dye.germanTranslation(Genus.F)} Keramikmauer")
-        }, existingTexture = true)
+        })
 
     @JvmField
     val DECORATED_POTS =
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_decorated_pot")
-                .dyedBlock(dye, CLAYWORKS, ::DecoratedPotBlock)
+                .dyedBlock(dye, ::DecoratedPotBlock)
                 .initialProperties { Blocks.DECORATED_POT }
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Decorated Pot")
@@ -187,7 +187,7 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_stained_glass_door")
-                .dyedBlock(dye, CLAYWORKS) { GlassDoorBlock(dye) }
+                .dyedBlock(dye) { GlassDoorBlock(dye) }
                 .lang("${dye.translation} Stained Glass Door")
                 .glassDoorBlockstate()
                 .glassDoorLoot()
@@ -206,7 +206,7 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_stained_glass_trapdoor")
-                .dyedBlock(dye, CLAYWORKS) { GlassTrapDoorBlock(dye) }
+                .dyedBlock(dye) { GlassTrapDoorBlock(dye) }
                 .lang("${dye.translation} Stained Glass Trapdoor")
                 .glassTrapdoorBlockstate()
                 .glassTrapdoorLoot()
@@ -221,6 +221,8 @@ object DyedClayworks {
         }
 
     fun register() {
+        REGISTRATE.register()
+
         REGISTRATE.addDataGenerator(ProviderType.RECIPE) { provider ->
             provider.withConditions(ModLoaded(CLAYWORKS)) {
                 TERRACOTTA.forEach { (dye, terracotta) ->

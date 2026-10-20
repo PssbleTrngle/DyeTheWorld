@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.index
 
 import com.possible_triangle.dye_the_world.Constants.Mods.NUMISMATICS
 import com.possible_triangle.dye_the_world.Genus
-import com.possible_triangle.dye_the_world.data.flat
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
@@ -36,7 +35,6 @@ object DyedNumismatics {
                 .lang("${dye.translation} Card")
                 .germanLang("${dye.germanTranslation(Genus.F)} Karte")
                 .tab(TAB)
-                .flat("card")
                 .recipe { context, provider ->
                     ShapedRecipeBuilder
                         .shaped(RecipeCategory.MISC, context.get())
@@ -57,7 +55,6 @@ object DyedNumismatics {
                 .lang("${dye.translation} ID Card")
                 .germanLang("${dye.germanTranslation(Genus.M)} Ausweis")
                 .tab(TAB)
-                .flat("id_card")
                 .recipe { context, provider ->
                     ShapedRecipeBuilder
                         .shaped(RecipeCategory.MISC, context.get())

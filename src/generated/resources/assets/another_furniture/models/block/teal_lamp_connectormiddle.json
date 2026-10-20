@@ -1,0 +1,7 @@
+{
+  "parent": "another_furniture:block/template/lamp_tall_middle",
+  "textures": {
+    "side": "another_furniture:block/lamp/teal_side",
+    "top": "another_furniture:block/lamp/teal_top"
+  }
+}

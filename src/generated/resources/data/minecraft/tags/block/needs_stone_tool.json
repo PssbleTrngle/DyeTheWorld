@@ -1,131 +1,131 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_framed_glass",
+      "id": "quark:amber_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_framed_glass",
+      "id": "quark:aqua_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_framed_glass",
+      "id": "quark:beige_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_framed_glass",
+      "id": "quark:coral_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_framed_glass",
+      "id": "quark:forest_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_framed_glass",
+      "id": "quark:ginger_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_framed_glass",
+      "id": "quark:indigo_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_framed_glass",
+      "id": "quark:maroon_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_framed_glass",
+      "id": "quark:mint_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_framed_glass",
+      "id": "quark:navy_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_framed_glass",
+      "id": "quark:olive_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_framed_glass",
+      "id": "quark:rose_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_framed_glass",
+      "id": "quark:slate_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_framed_glass",
+      "id": "quark:tan_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_framed_glass",
+      "id": "quark:teal_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_framed_glass",
+      "id": "quark:verdant_framed_glass",
       "required": false
     },
     {
-      "id": "dye_the_world:amber_framed_glass_pane",
+      "id": "quark:amber_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_framed_glass_pane",
+      "id": "quark:aqua_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_framed_glass_pane",
+      "id": "quark:beige_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_framed_glass_pane",
+      "id": "quark:coral_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_framed_glass_pane",
+      "id": "quark:forest_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_framed_glass_pane",
+      "id": "quark:ginger_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_framed_glass_pane",
+      "id": "quark:indigo_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_framed_glass_pane",
+      "id": "quark:maroon_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_framed_glass_pane",
+      "id": "quark:mint_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_framed_glass_pane",
+      "id": "quark:navy_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_framed_glass_pane",
+      "id": "quark:olive_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_framed_glass_pane",
+      "id": "quark:rose_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_framed_glass_pane",
+      "id": "quark:slate_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_framed_glass_pane",
+      "id": "quark:tan_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_framed_glass_pane",
+      "id": "quark:teal_framed_glass_pane",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_framed_glass_pane",
+      "id": "quark:verdant_framed_glass_pane",
       "required": false
     }
   ]

@@ -7,6 +7,6 @@
   "loader": "fusion:model",
   "textures": {
     "edge": "dye_depot:block/tan_stained_glass_pane_top",
-    "pane": "dye_the_world:block/connectedglass/scratched/tan"
+    "pane": "connectedglass:block/scratched/tan"
   }
 }

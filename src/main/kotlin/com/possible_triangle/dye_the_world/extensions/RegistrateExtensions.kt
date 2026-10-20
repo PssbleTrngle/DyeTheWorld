@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.extensions
 
-import com.possible_triangle.dye_the_world.ForgeEntrypoint
 import com.possible_triangle.dye_the_world.data.CustomRegistrateLangProvider
 import com.tterrag.registrate.builders.AbstractBuilder
 import com.tterrag.registrate.builders.BlockBuilder
@@ -15,14 +14,14 @@ import net.minecraft.world.level.block.Block
 
 fun <T : Item, P> ItemBuilder<T, P>.optionalTag(tag: TagKey<Item>) =
     apply {
-        ForgeEntrypoint.REGISTRATE.addDataGenerator(ProviderType.ITEM_TAGS) {
+        owner.addDataGenerator(ProviderType.ITEM_TAGS) {
             it.addTag(tag).addOptional(owner.modid.createId(name))
         }
     }
 
 fun <T : Block, P> BlockBuilder<T, P>.optionalTag(tag: TagKey<Block>) =
     apply {
-        ForgeEntrypoint.REGISTRATE.addDataGenerator(ProviderType.BLOCK_TAGS) {
+        owner.addDataGenerator(ProviderType.BLOCK_TAGS) {
             it.addTag(tag).addOptional(owner.modid.createId(name))
         }
     }

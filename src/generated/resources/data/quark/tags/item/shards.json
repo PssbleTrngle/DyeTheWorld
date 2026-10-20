@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_shard",
+      "id": "quark:amber_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_shard",
+      "id": "quark:aqua_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_shard",
+      "id": "quark:beige_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_shard",
+      "id": "quark:coral_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_shard",
+      "id": "quark:forest_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_shard",
+      "id": "quark:ginger_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_shard",
+      "id": "quark:indigo_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_shard",
+      "id": "quark:maroon_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_shard",
+      "id": "quark:mint_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_shard",
+      "id": "quark:navy_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_shard",
+      "id": "quark:olive_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_shard",
+      "id": "quark:rose_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_shard",
+      "id": "quark:slate_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_shard",
+      "id": "quark:tan_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_shard",
+      "id": "quark:teal_shard",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_shard",
+      "id": "quark:verdant_shard",
       "required": false
     }
   ]

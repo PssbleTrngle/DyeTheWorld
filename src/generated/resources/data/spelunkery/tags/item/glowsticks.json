@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_glowstick",
+      "id": "spelunkery:amber_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_glowstick",
+      "id": "spelunkery:aqua_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_glowstick",
+      "id": "spelunkery:beige_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_glowstick",
+      "id": "spelunkery:coral_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_glowstick",
+      "id": "spelunkery:forest_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_glowstick",
+      "id": "spelunkery:ginger_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_glowstick",
+      "id": "spelunkery:indigo_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_glowstick",
+      "id": "spelunkery:maroon_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_glowstick",
+      "id": "spelunkery:mint_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_glowstick",
+      "id": "spelunkery:navy_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_glowstick",
+      "id": "spelunkery:olive_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_glowstick",
+      "id": "spelunkery:rose_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_glowstick",
+      "id": "spelunkery:slate_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_glowstick",
+      "id": "spelunkery:tan_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_glowstick",
+      "id": "spelunkery:teal_glowstick",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_glowstick",
+      "id": "spelunkery:verdant_glowstick",
       "required": false
     }
   ]

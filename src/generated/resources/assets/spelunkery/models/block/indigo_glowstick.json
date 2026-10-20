@@ -1,0 +1,7 @@
+{
+  "parent": "spelunkery:block/glowstick",
+  "textures": {
+    "1": "spelunkery:block/indigo_glowstick",
+    "particle": "spelunkery:block/indigo_glowstick"
+  }
+}

@@ -2,13 +2,13 @@ package com.possible_triangle.dye_the_world.index
 
 import com.evandev.redomesticate.content.block.PetBedBlock
 import com.possible_triangle.dye_the_world.Constants.Mods.DOMESTICATION_INNOVATION
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.petBedBlockstate
 import com.possible_triangle.dye_the_world.data.petBedRecipe
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.translation
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
@@ -17,6 +17,8 @@ import net.minecraft.world.level.block.SoundType
 import net.minecraft.world.level.material.PushReaction
 
 object DyedDomestication {
+    private val REGISTRATE = DyedRegistrate.create(DOMESTICATION_INNOVATION, migrate = true)
+
     private val TAB =
         ResourceKey.create(Registries.CREATIVE_MODE_TAB, DOMESTICATION_INNOVATION.createId(DOMESTICATION_INNOVATION))
 
@@ -24,7 +26,7 @@ object DyedDomestication {
         dyesFor(DOMESTICATION_INNOVATION).associateWith { dye ->
             REGISTRATE
                 .`object`("pet_bed_$dye")
-                .dyedBlock(dye, DOMESTICATION_INNOVATION) { PetBedBlock(dye.serializedName, dye) }
+                .dyedBlock(dye) { PetBedBlock(dye.serializedName, dye) }
                 .properties { it.strength(0.8F) }
                 .properties { it.pushReaction(PushReaction.BLOCK) }
                 .properties { it.noOcclusion() }
@@ -41,6 +43,6 @@ object DyedDomestication {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

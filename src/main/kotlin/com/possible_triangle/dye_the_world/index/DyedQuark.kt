@@ -3,9 +3,9 @@ package com.possible_triangle.dye_the_world.index
 import com.google.gson.JsonObject
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.QUARK
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.multikulti.datagen.conditions.Condition
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
@@ -37,6 +37,8 @@ data class QuarkConfigCondition(
 }
 
 object DyedQuark {
+    private val REGISTRATE = DyedRegistrate.create(QUARK, migrate = true)
+
     private val DYES = dyesFor(QUARK)
 
     private val TERRACOTTA = dyedBlockMap(QUARK, "terracotta")
@@ -59,7 +61,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_shard")
-                .dyedItem(dye, QUARK, ::Item)
+                .dyedItem(dye, ::Item)
                 .optionalTab(CreativeModeTabs.INGREDIENTS) {
                     flagEnabled("glass_shard")
                 }.optionalTag(DyedTags.Items.GLASS_SHARDS)
@@ -74,7 +76,7 @@ object DyedQuark {
                             .save(provider, Constants.MOD_ID.createId("stained_${dye}_glass_from_shards"))
                     }
                 }.model { context, provider ->
-                    provider.generated(context, Constants.MOD_ID.createId("item/$QUARK/${context.name}"))
+                    provider.generated(context, QUARK.createId("item/${context.name}"))
                 }.lang("${dye.translation} Glass Shard")
                 .germanLang("${dye.germanTranslation(Genus.F)} Glasscherbe")
                 .register()
@@ -83,8 +85,9 @@ object DyedQuark {
     val STOOLS =
         DYES.associateWith { dye ->
             REGISTRATE
-                .`object`("${dye}_quark_stool")
-                .dyedBlock(dye, QUARK) { StoolBlock(null, dye) }
+                .`object`("${dye}_stool")
+                .dyedBlock(dye) { StoolBlock(null, dye) }
+                .migrate(name = "${dye}_quark_stool")
                 .optionalTag(DyedTags.Blocks.QUARK_STOOLS)
                 .quarkStoolBlockstate()
                 .lang("${dye.translation} Stool")
@@ -100,10 +103,9 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_shingles")
-                .dyedBlock(dye, QUARK, ::Block)
+                .dyedBlock(dye, ::Block)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .cubeBlockstate("shingles")
                 .lang("${dye.translation} Terracotta Shingles")
                 .germanLang("${dye.germanTranslation(Genus.F)} Schindeln")
                 .withItem {
@@ -158,7 +160,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_framed_glass")
-                .dyedBlock(dye, QUARK) { ZetaGlassBlock(null, null, true, it) }
+                .dyedBlock(dye) { ZetaGlassBlock(null, null, true, it) }
                 .initialProperties { Blocks.GLASS }
                 .properties { it.strength(3F, 10F) }
                 .optionalTag(DyedTags.Blocks.FRAMED_GLASSES)
@@ -171,7 +173,7 @@ object DyedQuark {
                         c.get(),
                         p
                             .models()
-                            .cubeAll(c.name, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"))
+                            .cubeAll(c.name, c.texture)
                             .translucent(),
                     )
                 }.lang("${dye.translation} Framed Glass")
@@ -190,7 +192,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_framed_glass_pane")
-                .dyedBlock(dye, QUARK) {
+                .dyedBlock(dye) {
                     val parent = FRAMED_GLASS[dye]!!.get()
                     ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.ofFullCopy(parent))
                 }.optionalTag(DyedTags.Blocks.FRAMED_GLASS_PANES)
@@ -198,9 +200,10 @@ object DyedQuark {
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .optionalTag(Tags.Blocks.GLASS_PANES)
                 .blockstate { c, p ->
+                    val full = FRAMED_GLASS[dye]!!.get()
                     p.paneBlockWithRenderType(
                         c.get(),
-                        Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass"),
+                        full.texture,
                         QUARK.createId("block/framed_glass_pane_top"),
                         TRANSLUCENT,
                     )
@@ -208,7 +211,8 @@ object DyedQuark {
                 .germanLang("${dye.germanTranslation(Genus.F)} gerahmte Glasscheibe")
                 .withItem {
                     model { c, p ->
-                        p.generated(c, Constants.MOD_ID.createId("block/$QUARK/${dye}_framed_glass")).translucent()
+                        val full = FRAMED_GLASS[dye]!!.get()
+                        p.generated(c, full.texture).translucent()
                     }
                     optionalTag(Tags.Items.GLASS_PANES)
                     optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
@@ -219,6 +223,6 @@ object DyedQuark {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_INTERIORS
 import com.possible_triangle.dye_the_world.blockOf
@@ -32,10 +31,10 @@ fun <P> BlockBuilder<DummyChairBlock, P>.chairBlockstate() =
                 provider
                     .models()
                     .withExistingParent("${context.name}_$type", parent)
-                    .texture("side", Constants.MOD_ID.createId("block/$CREATE/seat/side_$dye"))
-                    .texture("side_front", Constants.MOD_ID.createId("block/$CREATE/seat/side_$dye"))
-                    .texture("side_top", Constants.MOD_ID.createId("block/$CREATE_INTERIORS/chair/side_top_$dye"))
-                    .texture("top", Constants.MOD_ID.createId("block/$CREATE/seat/top_$dye"))
+                    .texture("side", CREATE.createId("block/seat/side_$dye"))
+                    .texture("side_front", CREATE.createId("block/seat/side_$dye"))
+                    .texture("side_top", CREATE_INTERIORS.createId("block/chair/side_top_$dye"))
+                    .texture("top", CREATE.createId("block/seat/top_$dye"))
 
             ConfiguredModel
                 .builder()

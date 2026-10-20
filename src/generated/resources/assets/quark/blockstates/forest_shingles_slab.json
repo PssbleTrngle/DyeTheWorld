@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "quark:block/forest_shingles_slab"
+    },
+    "type=double": {
+      "model": "quark:block/forest_shingles"
+    },
+    "type=top": {
+      "model": "quark:block/forest_shingles_slab_top"
+    }
+  }
+}

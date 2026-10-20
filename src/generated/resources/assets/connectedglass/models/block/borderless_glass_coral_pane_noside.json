@@ -7,6 +7,6 @@
   "loader": "fusion:model",
   "textures": {
     "edge": "dye_depot:block/coral_stained_glass_pane_top",
-    "pane": "dye_the_world:block/connectedglass/borderless/coral"
+    "pane": "connectedglass:block/borderless/coral"
   }
 }

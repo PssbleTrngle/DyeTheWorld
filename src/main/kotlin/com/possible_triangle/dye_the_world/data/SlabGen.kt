@@ -22,21 +22,15 @@ fun DyedRegistrate.createSlabs(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<SlabBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<SlabBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-    existingTexture: Boolean = false,
     stone: Boolean = true,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_slab")
-        .dyedBlock(dye, name.namespace, ::SlabBlock)
+        .dyedBlock(dye, ::SlabBlock)
         .initialProperties(base)
         .also { if (stone) it.optionalTag(BlockTags.MINEABLE_WITH_PICKAXE) }
         .optionalTag(BlockTags.SLABS)
         .blockstate { c, p ->
-            val texture =
-                if (existingTexture) {
-                    dye.vanillaTexture(name)
-                } else {
-                    dye.texture("block", name)
-                }
+            val texture = from[dye]!!.get().texture
             val doubleModel = BuiltInRegistries.BLOCK.getKey(base.get()).withPrefix("block/")
             p.slabBlock(c.get(), doubleModel, texture)
         }.loot { c, p ->

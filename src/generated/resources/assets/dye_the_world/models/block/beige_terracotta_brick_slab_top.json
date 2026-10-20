@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "dye_the_world:block/clayworks/terracotta_brick/beige",
-    "side": "dye_the_world:block/clayworks/terracotta_brick/beige",
-    "top": "dye_the_world:block/clayworks/terracotta_brick/beige"
-  }
-}

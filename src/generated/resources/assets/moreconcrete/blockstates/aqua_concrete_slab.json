@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreconcrete:block/aqua_concrete_slab"
+    },
+    "type=double": {
+      "model": "dye_depot:block/aqua_concrete"
+    },
+    "type=top": {
+      "model": "moreconcrete:block/aqua_concrete_slab_top"
+    }
+  }
+}

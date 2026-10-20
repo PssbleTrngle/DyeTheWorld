@@ -1,0 +1,4 @@
+{
+  "parent": "quark:block/slate_framed_glass",
+  "render_type": "minecraft:translucent"
+}

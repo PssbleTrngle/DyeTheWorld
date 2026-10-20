@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "low=false": {
+      "model": "another_furniture:block/rose_stool"
+    },
+    "low=true": {
+      "model": "another_furniture:block/rose_stool_low"
+    }
+  }
+}

@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_canvas_sign",
+      "id": "farmersdelight:amber_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_canvas_sign",
+      "id": "farmersdelight:aqua_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_canvas_sign",
+      "id": "farmersdelight:beige_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_canvas_sign",
+      "id": "farmersdelight:coral_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_canvas_sign",
+      "id": "farmersdelight:forest_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_canvas_sign",
+      "id": "farmersdelight:ginger_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_canvas_sign",
+      "id": "farmersdelight:indigo_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_canvas_sign",
+      "id": "farmersdelight:maroon_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_canvas_sign",
+      "id": "farmersdelight:mint_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_canvas_sign",
+      "id": "farmersdelight:navy_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_canvas_sign",
+      "id": "farmersdelight:olive_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_canvas_sign",
+      "id": "farmersdelight:rose_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_canvas_sign",
+      "id": "farmersdelight:slate_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_canvas_sign",
+      "id": "farmersdelight:tan_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_canvas_sign",
+      "id": "farmersdelight:teal_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_canvas_sign",
+      "id": "farmersdelight:verdant_canvas_sign",
       "required": false
     }
   ]

@@ -1,12 +1,11 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ALEXS_CAVES
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.germanTranslation
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.dye_the_world.translation
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
@@ -19,6 +18,8 @@ import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.SoundType
 
 object DyedCaves {
+    private val REGISTRATE = DyedRegistrate.create(ALEXS_CAVES, migrate = true)
+
     private val TOXIC_TAB =
         ResourceKey.create(Registries.CREATIVE_MODE_TAB, ALEXS_CAVES.createId("toxic_caves"))
 
@@ -26,7 +27,7 @@ object DyedCaves {
         dyesFor(ALEXS_CAVES).associateWith { dye ->
             REGISTRATE
                 .`object`("radon_lamp_$dye")
-                .dyedBlock(dye, ALEXS_CAVES)
+                .dyedBlock(dye)
                 .properties { it.strength(2.0f, 11.0f) }
                 .properties { it.requiresCorrectToolForDrops() }
                 .properties { it.lightLevel { 15 } }
@@ -34,10 +35,7 @@ object DyedCaves {
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Radon Lamp")
                 .germanLang("${dye.germanTranslation(Genus.F)} Radonlampe")
-                .blockstate { c, p ->
-                    val model = p.models().cubeAll(c.name, Constants.MOD_ID.createId("block/$ALEXS_CAVES/${c.name}"))
-                    p.simpleBlock(c.get(), model)
-                }.withItem {
+                .withItem {
                     tab(TOXIC_TAB)
                     optionalTag(DyedTags.Items.RADON_LAMPS)
                     recipe { context, provider ->
@@ -61,6 +59,6 @@ object DyedCaves {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

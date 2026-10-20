@@ -3,6 +3,6 @@
   "render_type": "minecraft:cutout",
   "textures": {
     "material": "dye_depot:block/slate_concrete",
-    "material_top": "dye_the_world:block/botanypots/slate_concrete"
+    "material_top": "botanypots:block/slate_concrete_pot_top"
   }
 }

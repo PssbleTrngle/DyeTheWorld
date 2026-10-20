@@ -1,9 +1,9 @@
 {
   "parent": "interiors:block/chair/right_cropped",
   "textures": {
-    "side": "dye_the_world:block/create/seat/side_maroon",
-    "side_front": "dye_the_world:block/create/seat/side_maroon",
-    "side_top": "dye_the_world:block/interiors/chair/side_top_maroon",
-    "top": "dye_the_world:block/create/seat/top_maroon"
+    "side": "create:block/seat/side_maroon",
+    "side_front": "create:block/seat/side_maroon",
+    "side_top": "interiors:block/chair/side_top_maroon",
+    "top": "create:block/seat/top_maroon"
   }
 }

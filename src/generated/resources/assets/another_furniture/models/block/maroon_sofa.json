@@ -1,0 +1,9 @@
+{
+  "parent": "another_furniture:block/template/sofa",
+  "textures": {
+    "back": "another_furniture:block/sofa/maroon_back",
+    "seat_back_1": "another_furniture:block/sofa/maroon_seat_back_1",
+    "seat_front": "another_furniture:block/sofa/maroon_seat_front",
+    "seat_top": "another_furniture:block/sofa/maroon_seat_single"
+  }
+}

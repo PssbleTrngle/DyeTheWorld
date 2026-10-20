@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "clayworks:block/aqua_terracotta_bricks",
+    "side": "clayworks:block/aqua_terracotta_bricks",
+    "top": "clayworks:block/aqua_terracotta_bricks"
+  }
+}

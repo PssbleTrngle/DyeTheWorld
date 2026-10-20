@@ -1,7 +1,0 @@
-{
-  "parent": "another_furniture:block/template/lamp_wall_off",
-  "textures": {
-    "side": "dye_the_world:block/another_furniture/lamp/teal_side",
-    "top": "dye_the_world:block/another_furniture/lamp/teal_top"
-  }
-}

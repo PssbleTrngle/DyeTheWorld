@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "twigs:block/maroon_silt_shingles",
+    "side": "twigs:block/maroon_silt_shingles",
+    "top": "twigs:block/maroon_silt_shingles"
+  }
+}

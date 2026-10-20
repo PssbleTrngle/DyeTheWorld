@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_harness",
+      "id": "minecraft:amber_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_harness",
+      "id": "minecraft:aqua_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_harness",
+      "id": "minecraft:beige_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_harness",
+      "id": "minecraft:coral_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_harness",
+      "id": "minecraft:forest_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_harness",
+      "id": "minecraft:ginger_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_harness",
+      "id": "minecraft:indigo_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_harness",
+      "id": "minecraft:maroon_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_harness",
+      "id": "minecraft:mint_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_harness",
+      "id": "minecraft:navy_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_harness",
+      "id": "minecraft:olive_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_harness",
+      "id": "minecraft:rose_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_harness",
+      "id": "minecraft:slate_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_harness",
+      "id": "minecraft:tan_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_harness",
+      "id": "minecraft:teal_harness",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_harness",
+      "id": "minecraft:verdant_harness",
       "required": false
     }
   ]

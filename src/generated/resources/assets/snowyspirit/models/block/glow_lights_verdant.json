@@ -3,7 +3,7 @@
   "overlay": {
     "parent": "snowyspirit:block/template_glow_lights",
     "textures": {
-      "all": "dye_the_world:block/snowyspirit/glow_lights/verdant"
+      "all": "snowyspirit:block/glow_lights_verdant"
     }
   }
 }

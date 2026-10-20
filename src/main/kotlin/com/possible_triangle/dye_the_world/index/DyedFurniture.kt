@@ -1,13 +1,13 @@
 package com.possible_triangle.dye_the_world.index
 
 import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.noLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.starfish_studios.another_furniture.block.*
 import com.starfish_studios.another_furniture.registry.AFBlockTags
 import com.starfish_studios.another_furniture.registry.AFBlocks
@@ -16,6 +16,8 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 
 object DyedFurniture {
+    private val REGISTRATE = DyedRegistrate.create(ANOTHER_FURNITURE, migrate = true)
+
     private val TAB =
         ResourceKey.create(Registries.CREATIVE_MODE_TAB, ANOTHER_FURNITURE.createId(ANOTHER_FURNITURE))
 
@@ -23,7 +25,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_sofa")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::SofaBlock)
+                .dyedBlock(dye, ::SofaBlock)
                 .initialProperties { AFBlocks.RED_SOFA.get() }
                 .optionalTag(AFBlockTags.SOFAS)
                 .sofaBlockstate()
@@ -38,7 +40,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_stool")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::StoolBlock)
+                .dyedBlock(dye, ::StoolBlock)
                 .initialProperties { AFBlocks.RED_STOOL.get() }
                 .optionalTag(AFBlockTags.STOOLS)
                 .stoolBlockstate()
@@ -53,7 +55,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_tall_stool")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::TallStoolBlock)
+                .dyedBlock(dye, ::TallStoolBlock)
                 .initialProperties { AFBlocks.RED_TALL_STOOL.get() }
                 .optionalTag(AFBlockTags.TALL_STOOLS)
                 .tallStoolBlockstate()
@@ -68,7 +70,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_curtain")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::CurtainBlock)
+                .dyedBlock(dye, ::CurtainBlock)
                 .initialProperties { AFBlocks.RED_CURTAIN.get() }
                 .optionalTag(AFBlockTags.CURTAINS)
                 .curtainBlockstate()
@@ -86,13 +88,12 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_lamp")
-                .dyedBlock(dye, ANOTHER_FURNITURE) { LampBlock(dye, it) }
+                .dyedBlock(dye) { LampBlock(dye, it) }
                 .initialProperties { AFBlocks.RED_LAMP.get() }
                 .optionalTag(AFBlockTags.LAMPS)
                 .lampBlockstate()
                 .withItem {
                     lampRecipes()
-                    lampItemModel()
                     optionalTag(AFItemTags.LAMPS)
                     tab(TAB)
                 }.register()
@@ -103,7 +104,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_lamp_connector")
-                .dyedBlock(dye, ANOTHER_FURNITURE) { LampConnectorBlock(dye, it) }
+                .dyedBlock(dye) { LampConnectorBlock(dye, it) }
                 .noLang()
                 .loot { t, b -> t.dropOther(b, LAMPS[dye]!!.get()) }
                 .initialProperties { AFBlocks.RED_LAMP_CONNECTOR.get() }
@@ -112,6 +113,6 @@ object DyedFurniture {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

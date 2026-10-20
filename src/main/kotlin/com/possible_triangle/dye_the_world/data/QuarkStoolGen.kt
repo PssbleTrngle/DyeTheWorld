@@ -1,10 +1,10 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.QUARK
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
+import com.possible_triangle.dye_the_world.extensions.texture
 import com.possible_triangle.dye_the_world.index.DyedQuark
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -51,7 +51,7 @@ fun <T : StoolBlock, P> BlockBuilder<T, P>.quarkStoolBlockstate() =
                 provider
                     .models()
                     .withExistingParent("block/$prefix${context.name}", parent)
-                    .texture("main", Constants.MOD_ID.createId("block/$QUARK/${dye}_stool"))
+                    .texture("main", context.texture)
 
             ConfiguredModel
                 .builder()

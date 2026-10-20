@@ -1,6 +1,6 @@
 {
   "parent": "create:block/white_sail",
   "textures": {
-    "0": "dye_the_world:block/create/sail/amber"
+    "0": "create:block/sail/amber"
   }
 }

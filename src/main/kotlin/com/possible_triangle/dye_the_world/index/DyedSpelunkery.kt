@@ -6,23 +6,25 @@ import com.ordana.spelunkery.items.GlowstickItem
 import com.ordana.spelunkery.reg.ModBlocks
 import com.ordana.spelunkery.reg.ModTags
 import com.possible_triangle.dye_the_world.Constants.Mods.SPELUNKERY
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.glowstickBlockState
 import com.possible_triangle.dye_the_world.data.glowstickItemModel
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.dye_the_world.translation
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.world.item.CreativeModeTabs
 
 object DyedSpelunkery {
+    private val REGISTRATE = DyedRegistrate.create(SPELUNKERY, migrate = true)
+
     val GLOW_STICKS =
         dyesFor(SPELUNKERY).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_glowstick")
-                .dyedBlock(dye, SPELUNKERY, ::GlowstickBlock)
+                .dyedBlock(dye, ::GlowstickBlock)
                 .initialProperties(NonNullSupplier(ModBlocks.GLOWSTICK::get))
                 .lang("${dye.translation} Glowstick")
                 .glowstickBlockState()
@@ -41,6 +43,6 @@ object DyedSpelunkery {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

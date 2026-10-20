@@ -20,35 +20,22 @@ fun DyedRegistrate.createWalls(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<WallBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<WallBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-    existingTexture: Boolean = false,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_wall")
-        .dyedBlock(dye, name.namespace, ::WallBlock)
+        .dyedBlock(dye, ::WallBlock)
         .initialProperties(base)
         .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
         .optionalTag(BlockTags.WALLS)
         .blockstate { c, p ->
-            val texture =
-                if (existingTexture) {
-                    dye.vanillaTexture(name)
-                } else {
-                    dye.texture("block", name)
-                }
+            val texture = from[dye]!!.get().texture
             p.wallBlock(c.get(), texture)
+            p.itemModels().wallInventory(c.name, texture)
         }.withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.WALLS)
             recipe { c, p -> p.wall(base.asIngredient(), RecipeCategory.BUILDING_BLOCKS, c) }
-            model { c, p ->
-                val texture =
-                    if (existingTexture) {
-                        dye.vanillaTexture(name)
-                    } else {
-                        dye.texture("block", name)
-                    }
-                p.wallInventory(c.name, texture)
-            }
+            noModel()
             modifyItem(dye)
         }.apply { modifyBlock(dye) }
         .register()

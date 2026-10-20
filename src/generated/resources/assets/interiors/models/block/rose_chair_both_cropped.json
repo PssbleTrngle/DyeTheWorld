@@ -1,9 +1,9 @@
 {
   "parent": "interiors:block/chair/both_cropped",
   "textures": {
-    "side": "dye_the_world:block/create/seat/side_rose",
-    "side_front": "dye_the_world:block/create/seat/side_rose",
-    "side_top": "dye_the_world:block/interiors/chair/side_top_rose",
-    "top": "dye_the_world:block/create/seat/top_rose"
+    "side": "create:block/seat/side_rose",
+    "side_front": "create:block/seat/side_rose",
+    "side_top": "interiors:block/chair/side_top_rose",
+    "top": "create:block/seat/top_rose"
   }
 }

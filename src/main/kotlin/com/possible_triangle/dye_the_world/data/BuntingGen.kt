@@ -25,7 +25,7 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
 fun <T : Item, P> ItemBuilder<T, P>.dyedBuntingItemModel() =
     model { context, provider ->
-        provider.generated(context, Constants.MOD_ID.createId("item/$SUPPLEMENTARIES/buntings/$dye"))
+        provider.generated(context, SUPPLEMENTARIES.createId("item/buntings/buntings_$dye"))
     }
 
 fun <T : Block, P> BlockBuilder<T, P>.buntingBlockState() =

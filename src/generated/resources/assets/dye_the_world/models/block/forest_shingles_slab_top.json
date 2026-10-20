@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "dye_the_world:block/quark/shingles/forest",
-    "side": "dye_the_world:block/quark/shingles/forest",
-    "top": "dye_the_world:block/quark/shingles/forest"
-  }
-}

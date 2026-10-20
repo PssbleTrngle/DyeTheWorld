@@ -1,0 +1,10 @@
+{
+  "parent": "another_furniture:block/template/sofa_left",
+  "textures": {
+    "back": "another_furniture:block/sofa/coral_back",
+    "seat_back_1": "another_furniture:block/sofa/coral_seat_back_1",
+    "seat_front": "another_furniture:block/sofa/coral_seat_front",
+    "seat_side": "another_furniture:block/sofa/coral_seat_side",
+    "seat_top": "another_furniture:block/sofa/coral_seat_edge"
+  }
+}

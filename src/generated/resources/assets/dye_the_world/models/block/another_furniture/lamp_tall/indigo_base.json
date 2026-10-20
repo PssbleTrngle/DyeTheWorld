@@ -1,7 +1,0 @@
-{
-  "parent": "another_furniture:block/template/lamp_tall_base",
-  "textures": {
-    "side": "dye_the_world:block/another_furniture/lamp/indigo_side",
-    "top": "dye_the_world:block/another_furniture/lamp/indigo_top"
-  }
-}

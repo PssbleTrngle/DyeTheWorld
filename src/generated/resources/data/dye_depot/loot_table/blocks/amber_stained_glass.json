@@ -59,7 +59,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dye_the_world:amber_shard"
+              "name": "quark:amber_shard"
             }
           ]
         }

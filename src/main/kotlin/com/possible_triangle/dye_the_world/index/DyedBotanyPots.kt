@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.index
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.BOTANY_POTS
 import com.possible_triangle.dye_the_world.dyedBlockMap
 import com.possible_triangle.dye_the_world.dyesFor
@@ -80,7 +79,7 @@ private fun BlockBuilder<*, *>.potBlockstate(
             .withExistingParent(context.name, parent)
             .renderType("cutout")
             .texture("material", dye.namespace.createId("block/${dye}_$type"))
-            .texture("material_top", Constants.MOD_ID.createId("block/$BOTANY_POTS/${dye}_$type"))
+            .texture("material_top", BOTANY_POTS.createId("block/${dye}_${type}_pot_top"))
     provider.simpleBlock(context.get(), model)
 }
 

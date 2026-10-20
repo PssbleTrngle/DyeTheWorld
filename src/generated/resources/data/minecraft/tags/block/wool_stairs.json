@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "minecraft:amber_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:beige_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:forest_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:indigo_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:olive_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:tan_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_wool_stairs",
+      "required": false
+    }
+  ]
+}

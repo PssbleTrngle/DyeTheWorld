@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "quark:block/maroon_shingles",
+    "side": "quark:block/maroon_shingles",
+    "top": "quark:block/maroon_shingles"
+  }
+}

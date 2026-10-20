@@ -1,7 +1,7 @@
 {
   "parent": "simulated:block/portable_engine/item",
   "textures": {
-    "0": "dye_the_world:block/simulated/portable_engine/maroon",
-    "particle": "dye_the_world:block/simulated/portable_engine/maroon"
+    "0": "simulated:block/portable_engine/maroon",
+    "particle": "simulated:block/portable_engine/maroon"
   }
 }

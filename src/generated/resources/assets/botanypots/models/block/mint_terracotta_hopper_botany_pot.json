@@ -3,6 +3,6 @@
   "render_type": "minecraft:cutout",
   "textures": {
     "material": "dye_depot:block/mint_terracotta",
-    "material_top": "dye_the_world:block/botanypots/mint_terracotta"
+    "material_top": "botanypots:block/mint_terracotta_pot_top"
   }
 }

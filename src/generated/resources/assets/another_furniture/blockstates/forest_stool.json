@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "low=false": {
+      "model": "another_furniture:block/forest_stool"
+    },
+    "low=true": {
+      "model": "another_furniture:block/forest_stool_low"
+    }
+  }
+}

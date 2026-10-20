@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_curtain",
+      "id": "another_furniture:amber_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_curtain",
+      "id": "another_furniture:aqua_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_curtain",
+      "id": "another_furniture:beige_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_curtain",
+      "id": "another_furniture:coral_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_curtain",
+      "id": "another_furniture:forest_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_curtain",
+      "id": "another_furniture:ginger_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_curtain",
+      "id": "another_furniture:indigo_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_curtain",
+      "id": "another_furniture:maroon_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_curtain",
+      "id": "another_furniture:mint_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_curtain",
+      "id": "another_furniture:navy_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_curtain",
+      "id": "another_furniture:olive_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_curtain",
+      "id": "another_furniture:rose_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_curtain",
+      "id": "another_furniture:slate_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_curtain",
+      "id": "another_furniture:tan_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_curtain",
+      "id": "another_furniture:teal_curtain",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_curtain",
+      "id": "another_furniture:verdant_curtain",
       "required": false
     }
   ]

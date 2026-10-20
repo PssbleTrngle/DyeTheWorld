@@ -1,6 +1,6 @@
 {
   "parent": "create:block/toolbox/lid/brown",
   "textures": {
-    "0": "dye_the_world:block/create/toolbox/beige"
+    "0": "create:block/toolbox/beige"
   }
 }

@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_tall_stool",
+      "id": "another_furniture:amber_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_tall_stool",
+      "id": "another_furniture:aqua_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_tall_stool",
+      "id": "another_furniture:beige_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_tall_stool",
+      "id": "another_furniture:coral_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_tall_stool",
+      "id": "another_furniture:forest_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_tall_stool",
+      "id": "another_furniture:ginger_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_tall_stool",
+      "id": "another_furniture:indigo_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_tall_stool",
+      "id": "another_furniture:maroon_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_tall_stool",
+      "id": "another_furniture:mint_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_tall_stool",
+      "id": "another_furniture:navy_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_tall_stool",
+      "id": "another_furniture:olive_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_tall_stool",
+      "id": "another_furniture:rose_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_tall_stool",
+      "id": "another_furniture:slate_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_tall_stool",
+      "id": "another_furniture:tan_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_tall_stool",
+      "id": "another_furniture:teal_tall_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_tall_stool",
+      "id": "another_furniture:verdant_tall_stool",
       "required": false
     }
   ]

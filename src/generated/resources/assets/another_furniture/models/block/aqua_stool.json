@@ -1,0 +1,7 @@
+{
+  "parent": "another_furniture:block/template/stool",
+  "textures": {
+    "side": "another_furniture:block/stool/aqua_side",
+    "top": "another_furniture:block/stool/aqua_top"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "quark:block/mint_shingles_slab"
+    },
+    "type=double": {
+      "model": "quark:block/mint_shingles"
+    },
+    "type=top": {
+      "model": "quark:block/mint_shingles_slab_top"
+    }
+  }
+}

@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data
 
-import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -41,7 +40,7 @@ fun <T : Item, P> ItemBuilder<T, P>.stoolRecipes() =
 
 fun <T : Block, P> BlockBuilder<T, P>.stoolBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String) = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/stool/${dye}_$suffix")
+        fun texture(suffix: String) = ANOTHER_FURNITURE.createId("block/stool/${dye}_$suffix")
 
         provider.createVariant(context) { state ->
             val low = state.getValue(StoolBlock.LOW)
@@ -83,7 +82,7 @@ fun <T : Item, P> ItemBuilder<T, P>.tallStoolRecipes() =
 
 fun <T : Block, P> BlockBuilder<T, P>.tallStoolBlockstate() =
     blockstate { context, provider ->
-        fun texture(suffix: String) = Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/tall_stool/${dye}_$suffix")
+        fun texture(suffix: String) = ANOTHER_FURNITURE.createId("block/tall_stool/${dye}_$suffix")
 
         val parent = ANOTHER_FURNITURE.createId("block/template/tall_stool")
         val model =

@@ -1,5 +1,6 @@
 package com.possible_triangle.dye_the_world.registrate
 
+import com.possible_triangle.dye_the_world.extensions.doMigration
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.index.DyedTags
 import com.possible_triangle.dye_the_world.withNamespace
@@ -14,6 +15,7 @@ import com.tterrag.registrate.util.nullness.NonNullBiConsumer
 import com.tterrag.registrate.util.nullness.NonNullBiFunction
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import com.tterrag.registrate.util.nullness.NonNullSupplier
+import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -23,15 +25,16 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     private val owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,
-    override val mod: String,
     name: String,
     callback: BuilderCallback,
     factory: NonNullFunction<Properties, T>,
     initialProperties: NonNullSupplier<Properties>,
 ) : BlockBuilder<T, P>(owner, parent, name, callback, factory, initialProperties),
     DyedBuilder {
+    override var migrateFrom: ResourceLocation? = null
+
     init {
-        mod.validateMod()
+        doMigration()
     }
 
     override fun recipe(cons: NonNullBiConsumer<DataGenContext<Block, T>, RegistrateRecipeProvider>) =
@@ -54,7 +57,7 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
 
     override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> =
         owner.entry(name) { callback ->
-            DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, mod, name, callback) { properties ->
+            DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, name, callback) { properties ->
                 factory.apply(entry, properties)
             }.apply {
                 setData(ProviderType.LANG, NonNullBiConsumer.noop())
@@ -62,6 +65,9 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
                     provider.blockItem(asSupplier())
                 }
                 tagDyed()
+                this@DyedBlockBuilder.migrateFrom?.let {
+                    this.migrateFrom = it
+                }
             }
         }
 

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dye_the_world:item/snowyspirit/glow_lights/navy"
+    "layer0": "snowyspirit:item/glow_lights_navy"
   }
 }

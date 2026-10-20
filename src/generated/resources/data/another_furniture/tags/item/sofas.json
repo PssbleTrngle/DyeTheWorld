@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_sofa",
+      "id": "another_furniture:amber_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_sofa",
+      "id": "another_furniture:aqua_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_sofa",
+      "id": "another_furniture:beige_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_sofa",
+      "id": "another_furniture:coral_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_sofa",
+      "id": "another_furniture:forest_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_sofa",
+      "id": "another_furniture:ginger_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_sofa",
+      "id": "another_furniture:indigo_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_sofa",
+      "id": "another_furniture:maroon_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_sofa",
+      "id": "another_furniture:mint_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_sofa",
+      "id": "another_furniture:navy_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_sofa",
+      "id": "another_furniture:olive_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_sofa",
+      "id": "another_furniture:rose_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_sofa",
+      "id": "another_furniture:slate_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_sofa",
+      "id": "another_furniture:tan_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_sofa",
+      "id": "another_furniture:teal_sofa",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_sofa",
+      "id": "another_furniture:verdant_sofa",
       "required": false
     }
   ]

@@ -5,8 +5,8 @@ import com.illusivesoulworks.comforts.common.block.HammockBlock
 import com.illusivesoulworks.comforts.common.block.SleepingBagBlock
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.COMFORTS
-import com.possible_triangle.dye_the_world.data.particleOnly
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.extensions.particleOnly
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -60,7 +60,7 @@ object DyedComforts {
 
 private fun <T : BaseComfortsBlock, P> BlockBuilder<T, P>.clothTransforms() =
     apply {
-        particleOnly(Constants.Mods.DYE_DEPOT.createId("block/${dye}_wool"))
+        particleOnly(dye.namespace.createId("block/${dye}_wool"))
         loot { t, b ->
             val isHead =
                 matchesState(b) {
@@ -77,9 +77,9 @@ private fun <T : BaseComfortsBlock, P> BlockBuilder<T, P>.clothTransforms() =
             t.add(b, LootTable.lootTable().withPool(pool))
         }
 
-        item()
-            .model { c, p -> p.generated(c, Constants.MOD_ID.createId("item/comforts/${c.name}")) }
-            .register()
+        withItem {
+            defaultModel()
+        }
     }
 
 private fun <T : Item, P> ItemBuilder<T, P>.hammockRecipe() =

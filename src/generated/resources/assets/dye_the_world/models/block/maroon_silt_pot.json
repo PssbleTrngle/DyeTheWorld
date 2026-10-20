@@ -1,8 +1,0 @@
-{
-  "parent": "twigs:block/template_silt_pot",
-  "textures": {
-    "bottom": "dye_the_world:block/twigs/silt_pot/maroon_bottom",
-    "side": "dye_the_world:block/twigs/silt_pot/maroon",
-    "top": "dye_the_world:block/twigs/silt_pot/maroon_top"
-  }
-}

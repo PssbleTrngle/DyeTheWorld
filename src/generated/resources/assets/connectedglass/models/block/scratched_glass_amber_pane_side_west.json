@@ -29,6 +29,6 @@
   "loader": "fusion:model",
   "textures": {
     "edge": "dye_depot:block/amber_stained_glass_pane_top",
-    "pane": "dye_the_world:block/connectedglass/scratched/amber"
+    "pane": "connectedglass:block/scratched/amber"
   }
 }

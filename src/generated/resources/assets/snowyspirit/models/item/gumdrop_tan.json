@@ -1,6 +1,6 @@
 {
   "parent": "snowyspirit:item/gumdrop",
   "textures": {
-    "texture": "dye_the_world:block/snowyspirit/gumdrop/tan"
+    "texture": "snowyspirit:block/gumdrop_tan"
   }
 }

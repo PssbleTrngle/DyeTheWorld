@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "zeta:flag",
+      "flag": "shingles"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_forest_shingles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "quark:forest_shingles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "quark:forest_shingles_slab_from_forest_shingles_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_forest_shingles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "quark:forest_shingles_slab_from_forest_shingles_stonecutting"
+    ]
+  }
+}

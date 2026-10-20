@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "clayworks:block/chiseled_olive_terracotta_bricks"
+  }
+}

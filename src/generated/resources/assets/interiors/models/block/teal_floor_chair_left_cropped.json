@@ -1,9 +1,9 @@
 {
   "parent": "interiors:block/floor_chair/left_cropped",
   "textures": {
-    "side": "dye_the_world:block/create/seat/side_teal",
-    "side_front": "dye_the_world:block/create/seat/side_teal",
-    "side_top": "dye_the_world:block/interiors/chair/side_top_teal",
-    "top": "dye_the_world:block/create/seat/top_teal"
+    "side": "create:block/seat/side_teal",
+    "side_front": "create:block/seat/side_teal",
+    "side_top": "interiors:block/chair/side_top_teal",
+    "top": "create:block/seat/top_teal"
   }
 }
