@@ -20,21 +20,30 @@ object DyedConcrete {
         REGISTRATE.createSlabs(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye -> germanLang("${dye.germanTranslation(Genus.F)} Betonstufe") },
+            modifyBlock = { dye ->
+                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
+            },
         )
 
     val CONCRETE_STAIRS =
         REGISTRATE.createStairs(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye -> germanLang("${dye.germanTranslation(Genus.F)} Betontreppe") },
+            modifyBlock = { dye ->
+                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
+            },
         )
 
     val CONCRETE_WALLS =
         REGISTRATE.createWalls(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye -> germanLang("${dye.germanTranslation(Genus.F)} Betonmaur") },
+            modifyBlock = { dye ->
+                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                germanLang("${dye.germanTranslation(Genus.F)} Betonmauer")
+            },
         )
 
     val CONCRETE_FENCES =

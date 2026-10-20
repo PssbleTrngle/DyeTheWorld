@@ -12,7 +12,9 @@ import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
+import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
+import com.tterrag.registrate.providers.ProviderType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
@@ -48,6 +50,10 @@ object DyedVanillaBackport {
                 .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
                 .optionalTag(ModItemTags.HARNESSES)
                 .recipe { context, provider ->
+                    provider.dyeingRecipe(dye, ModItemTags.HARNESSES, context) {
+                        group("harness_dye")
+                    }
+
                     shaped(RecipeCategory.MISC, context.get())
                         .pattern("LLL")
                         .pattern("G#G")
@@ -94,6 +100,11 @@ object DyedVanillaBackport {
             modifyItem = {
                 tab(TAB)
                 optionalTag(ModItemTags.WOOL_STAIRS)
+                addMiscData(ProviderType.RECIPE) { provider ->
+                    provider.dyeingRecipe(dye, ModItemTags.WOOL_STAIRS, ::getEntry) {
+                        group("wool_stairs")
+                    }
+                }
             },
             stone = false,
         )
@@ -109,6 +120,11 @@ object DyedVanillaBackport {
             modifyItem = {
                 tab(TAB)
                 optionalTag(ModItemTags.WOOL_SLABS)
+                addMiscData(ProviderType.RECIPE) { provider ->
+                    provider.dyeingRecipe(dye, ModItemTags.WOOL_SLABS, ::getEntry) {
+                        group("wool_slabs")
+                    }
+                }
             },
             stone = false,
         )
@@ -121,7 +137,12 @@ object DyedVanillaBackport {
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
+                optionalTag(DyedTags.Blocks.CONCRETE_SLABS)
                 noMigrate()
+            },
+            modifyItem = {
+                optionalTag(DyedTags.Items.CONCRETE_SLABS)
+                tab(TAB)
             },
         )
 
@@ -131,7 +152,12 @@ object DyedVanillaBackport {
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
+                optionalTag(DyedTags.Blocks.CONCRETE_STAIRS)
                 noMigrate()
+            },
+            modifyItem = {
+                optionalTag(DyedTags.Items.CONCRETE_STAIRS)
+                tab(TAB)
             },
         )
 
@@ -144,19 +170,19 @@ object DyedVanillaBackport {
                 .lang("${dye.translation} Cushion")
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
                 .optionalTag(ModItemTags.CUSHIONS)
-                .model { c, p ->
-                    p.generated(c, VANILLA_BACKPORT.createId("item/cushion/$dye"))
+                .model { context, provider ->
+                    provider.generated(context, VANILLA_BACKPORT.createId("item/cushion/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
-                .recipe { c, p ->
-                    p.dyeingRecipe(dye, ModItemTags.CUSHIONS, c) {
+                .recipe { context, provider ->
+                    provider.dyeingRecipe(dye, ModItemTags.CUSHIONS, context) {
                         group("cushion_dye")
                     }
 
-                    shaped(RecipeCategory.BUILDING_BLOCKS, c.get())
+                    shaped(RecipeCategory.BUILDING_BLOCKS, context.get())
                         .pattern("###")
                         .defineUnlocking('#', WOOL_SLABS[dye]!!)
                         .group("cushion")
-                        .save(p)
+                        .save(provider)
                 }.tab(TAB)
                 .register()
         }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool_stairs",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "tag": "minecraft:wool_stairs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:indigo_wool_stairs"
+  }
+}

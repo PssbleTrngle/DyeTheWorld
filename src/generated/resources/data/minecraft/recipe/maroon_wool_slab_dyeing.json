@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool_slabs",
+  "ingredients": [
+    {
+      "tag": "c:dyes/maroon"
+    },
+    {
+      "tag": "minecraft:wool_slabs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:maroon_wool_slab"
+  }
+}
