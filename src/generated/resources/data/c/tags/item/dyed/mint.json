@@ -1,11 +1,31 @@
 {
   "values": [
     {
-      "id": "naturalist:snail_shell_mint",
+      "id": "minecraft:mint_harness",
       "required": false
     },
     {
-      "id": "naturalist:snail_mint",
+      "id": "minecraft:mint_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_cushion",
       "required": false
     }
   ]

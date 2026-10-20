@@ -1,11 +1,31 @@
 {
   "values": [
     {
-      "id": "naturalist:snail_shell_teal",
+      "id": "minecraft:teal_harness",
       "required": false
     },
     {
-      "id": "naturalist:snail_teal",
+      "id": "minecraft:teal_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_cushion",
       "required": false
     }
   ]

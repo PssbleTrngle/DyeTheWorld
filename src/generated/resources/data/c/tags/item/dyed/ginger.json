@@ -1,11 +1,31 @@
 {
   "values": [
     {
-      "id": "naturalist:snail_shell_ginger",
+      "id": "minecraft:ginger_harness",
       "required": false
     },
     {
-      "id": "naturalist:snail_ginger",
+      "id": "minecraft:ginger_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_cushion",
       "required": false
     }
   ]

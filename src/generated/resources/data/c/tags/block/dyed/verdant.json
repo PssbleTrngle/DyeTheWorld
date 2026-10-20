@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:verdant_chair",
+      "id": "minecraft:verdant_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:verdant_nixie_board",
+      "id": "minecraft:verdant_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:verdant_large_nixie_tube",
+      "id": "minecraft:verdant_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_concrete_stairs",
       "required": false
     }
   ]

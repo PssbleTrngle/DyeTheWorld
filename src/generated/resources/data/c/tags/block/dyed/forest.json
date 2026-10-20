@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:forest_chair",
+      "id": "minecraft:forest_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:forest_nixie_board",
+      "id": "minecraft:forest_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:forest_large_nixie_tube",
+      "id": "minecraft:forest_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:forest_concrete_stairs",
       "required": false
     }
   ]

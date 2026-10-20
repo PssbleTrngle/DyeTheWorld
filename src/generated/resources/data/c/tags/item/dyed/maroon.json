@@ -1,11 +1,31 @@
 {
   "values": [
     {
-      "id": "naturalist:snail_shell_maroon",
+      "id": "minecraft:maroon_harness",
       "required": false
     },
     {
-      "id": "naturalist:snail_maroon",
+      "id": "minecraft:maroon_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_cushion",
       "required": false
     }
   ]

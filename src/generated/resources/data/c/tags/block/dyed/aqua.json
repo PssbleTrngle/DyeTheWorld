@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:aqua_chair",
+      "id": "minecraft:aqua_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:aqua_nixie_board",
+      "id": "minecraft:aqua_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:aqua_large_nixie_tube",
+      "id": "minecraft:aqua_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_concrete_stairs",
       "required": false
     }
   ]

@@ -30,13 +30,13 @@ fun DyedRegistrate.createWalls(
             val texture = from[dye]!!.get().texture
             p.wallBlock(c.get(), texture)
             p.itemModels().wallInventory(c.name, texture)
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.WALLS)
             recipe { c, p -> p.wall(base.asIngredient(), RecipeCategory.BUILDING_BLOCKS, c) }
             noModel()
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }

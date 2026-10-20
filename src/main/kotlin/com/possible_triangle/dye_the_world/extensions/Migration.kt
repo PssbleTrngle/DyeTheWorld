@@ -8,6 +8,12 @@ import com.tterrag.registrate.builders.Builder
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.ResourceLocation
 
+/**
+ * after a recent refactor, lots of blocks have changed their namespace or only there ID
+ * mainly changing the namespace from "dye_the_world" -> the respective mods namespace
+ * this method marks the old ID and tells neoforge to register an alias for it, so worlds using the old IDs don't lose
+ * these blocks & items
+ */
 fun <T : Builder<*, *, *, *>> T.migrate(id: ResourceLocation) =
     apply {
         if (this is DyedBuilder) {
@@ -29,3 +35,15 @@ internal fun <T> T.doMigration() where T : Builder<*, *, *, *>, T : DyedBuilder 
         LOGGER.debug("migrating {} {} to {}", registryKey.location().path, oldId, newId)
     }
 }
+
+/**
+ * For blocks/items that have been added after the refactor.
+ * Sometimes the auto-migration would have conflicts (ex: moreconcrete & vanillabackports)
+ * This method can be used to mark the block as needing no registry alias
+ */
+fun <T : Builder<*, *, *, *>> T.noMigrate() =
+    apply {
+        if (this is DyedBuilder) {
+            migrateFrom = null
+        }
+    }

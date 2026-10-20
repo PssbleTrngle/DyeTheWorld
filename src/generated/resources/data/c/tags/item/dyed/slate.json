@@ -1,11 +1,31 @@
 {
   "values": [
     {
-      "id": "naturalist:snail_shell_slate",
+      "id": "minecraft:slate_harness",
       "required": false
     },
     {
-      "id": "naturalist:snail_slate",
+      "id": "minecraft:slate_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_cushion",
       "required": false
     }
   ]

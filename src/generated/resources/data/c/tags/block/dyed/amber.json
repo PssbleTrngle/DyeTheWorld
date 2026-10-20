@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:amber_chair",
+      "id": "minecraft:amber_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:amber_nixie_board",
+      "id": "minecraft:amber_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:amber_large_nixie_tube",
+      "id": "minecraft:amber_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:amber_concrete_stairs",
       "required": false
     }
   ]

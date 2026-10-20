@@ -5,16 +5,20 @@ import com.blackgear.vanillabackport.common.registries.blocks.ModBlocks
 import com.blackgear.vanillabackport.core.data.tags.ModBlockTags
 import com.blackgear.vanillabackport.core.data.tags.ModItemTags
 import com.possible_triangle.dye_the_world.*
+import com.possible_triangle.dye_the_world.Constants.Mods.MORE_CONCRETE
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
 import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
+import com.possible_triangle.dye_the_world.registrate.dye
+import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
+import com.tterrag.registrate.providers.ProviderType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
-import net.minecraft.data.recipes.ShapedRecipeBuilder
+import net.minecraft.data.recipes.ShapedRecipeBuilder.shaped
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BundleItem
@@ -46,8 +50,11 @@ object DyedVanillaBackport {
                 .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
                 .optionalTag(ModItemTags.HARNESSES)
                 .recipe { context, provider ->
-                    ShapedRecipeBuilder
-                        .shaped(RecipeCategory.MISC, context.get())
+                    provider.dyeingRecipe(dye, ModItemTags.HARNESSES, context) {
+                        group("harness_dye")
+                    }
+
+                    shaped(RecipeCategory.MISC, context.get())
                         .pattern("LLL")
                         .pattern("G#G")
                         .define('#', dye.blockOf("wool"))
@@ -93,6 +100,11 @@ object DyedVanillaBackport {
             modifyItem = {
                 tab(TAB)
                 optionalTag(ModItemTags.WOOL_STAIRS)
+                addMiscData(ProviderType.RECIPE) { provider ->
+                    provider.dyeingRecipe(dye, ModItemTags.WOOL_STAIRS, ::getEntry) {
+                        group("wool_stairs")
+                    }
+                }
             },
             stone = false,
         )
@@ -108,8 +120,45 @@ object DyedVanillaBackport {
             modifyItem = {
                 tab(TAB)
                 optionalTag(ModItemTags.WOOL_SLABS)
+                addMiscData(ProviderType.RECIPE) { provider ->
+                    provider.dyeingRecipe(dye, ModItemTags.WOOL_SLABS, ::getEntry) {
+                        group("wool_slabs")
+                    }
+                }
             },
             stone = false,
+        )
+
+    private val CONCRETE = dyedBlockMap(MORE_CONCRETE, "concrete")
+
+    val CONCRETE_SLABS =
+        REGISTRATE.createSlabs(
+            CONCRETE,
+            MORE_CONCRETE.createId("concrete"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
+                optionalTag(DyedTags.Blocks.CONCRETE_SLABS)
+                noMigrate()
+            },
+            modifyItem = {
+                optionalTag(DyedTags.Items.CONCRETE_SLABS)
+                tab(TAB)
+            },
+        )
+
+    val CONCRETE_STAIRS =
+        REGISTRATE.createStairs(
+            CONCRETE,
+            MORE_CONCRETE.createId("concrete"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
+                optionalTag(DyedTags.Blocks.CONCRETE_STAIRS)
+                noMigrate()
+            },
+            modifyItem = {
+                optionalTag(DyedTags.Items.CONCRETE_STAIRS)
+                tab(TAB)
+            },
         )
 
     val CUSHIONS =
@@ -121,10 +170,20 @@ object DyedVanillaBackport {
                 .lang("${dye.translation} Cushion")
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
                 .optionalTag(ModItemTags.CUSHIONS)
-                .model { c, p ->
-                    p.generated(c, VANILLA_BACKPORT.createId("item/cushion/$dye"))
+                .model { context, provider ->
+                    provider.generated(context, VANILLA_BACKPORT.createId("item/cushion/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
-                .tab(TAB)
+                .recipe { context, provider ->
+                    provider.dyeingRecipe(dye, ModItemTags.CUSHIONS, context) {
+                        group("cushion_dye")
+                    }
+
+                    shaped(RecipeCategory.BUILDING_BLOCKS, context.get())
+                        .pattern("###")
+                        .defineUnlocking('#', WOOL_SLABS[dye]!!)
+                        .group("cushion")
+                        .save(provider)
+                }.tab(TAB)
                 .register()
         }
 

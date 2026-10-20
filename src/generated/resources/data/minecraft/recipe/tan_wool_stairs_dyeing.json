@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool_stairs",
+  "ingredients": [
+    {
+      "tag": "c:dyes/tan"
+    },
+    {
+      "tag": "minecraft:wool_stairs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:tan_wool_stairs"
+  }
+}

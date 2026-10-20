@@ -30,12 +30,12 @@ fun DyedRegistrate.createStairs(
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.stairsBlock(c.get(), texture)
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.STAIRS)
             recipe { c, p -> p.stairs(base.asIngredient(), RecipeCategory.BUILDING_BLOCKS, c, null, stone) }
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }

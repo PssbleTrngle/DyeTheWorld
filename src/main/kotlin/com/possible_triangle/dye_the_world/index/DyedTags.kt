@@ -43,6 +43,8 @@ sealed class DyedTags<T>(
         val NAMEPLATES = create(Mods.CREATE_SIMULATED, "nameplate_items")
         val ENVELOPES = create(Mods.CREATE_AERONAUTICS, "envelope")
         val SHAFTLESS_ENVELOPES = create(Mods.CREATE_AERONAUTICS, "shaftless_envelope")
+        val CONCRETE_STAIRS = create(ResourceLocation.DEFAULT_NAMESPACE, "concrete_stairs")
+        val CONCRETE_SLABS = create(ResourceLocation.DEFAULT_NAMESPACE, "concrete_slabs")
     }
 
     object Blocks : DyedTags<Block>(Registries.BLOCK) {
@@ -75,6 +77,8 @@ sealed class DyedTags<T>(
         val ENVELOPES = create(Mods.CREATE_AERONAUTICS, "envelope")
         val AIRTIGHT = create(Mods.CREATE_AERONAUTICS, "airtight")
         val SLEEP_TIGHT_HAMMOCKS = create(Mods.SLEEP_TIGHT, "hammocks")
+        val CONCRETE_STAIRS = create(ResourceLocation.DEFAULT_NAMESPACE, "concrete_stairs")
+        val CONCRETE_SLABS = create(ResourceLocation.DEFAULT_NAMESPACE, "concrete_slabs")
     }
 
     protected fun create(

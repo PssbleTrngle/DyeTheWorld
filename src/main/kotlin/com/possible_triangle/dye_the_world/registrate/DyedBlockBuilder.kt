@@ -65,9 +65,7 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
                     provider.blockItem(asSupplier())
                 }
                 tagDyed()
-                this@DyedBlockBuilder.migrateFrom?.let {
-                    this.migrateFrom = it
-                }
+                this.migrateFrom = this@DyedBlockBuilder.migrateFrom
             }
         }
 

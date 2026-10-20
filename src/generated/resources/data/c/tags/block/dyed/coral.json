@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:coral_chair",
+      "id": "minecraft:coral_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:coral_nixie_board",
+      "id": "minecraft:coral_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:coral_large_nixie_tube",
+      "id": "minecraft:coral_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_concrete_stairs",
       "required": false
     }
   ]
