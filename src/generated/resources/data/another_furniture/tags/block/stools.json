@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_stool",
+      "id": "another_furniture:amber_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_stool",
+      "id": "another_furniture:aqua_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_stool",
+      "id": "another_furniture:beige_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_stool",
+      "id": "another_furniture:coral_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_stool",
+      "id": "another_furniture:forest_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_stool",
+      "id": "another_furniture:ginger_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_stool",
+      "id": "another_furniture:indigo_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_stool",
+      "id": "another_furniture:maroon_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_stool",
+      "id": "another_furniture:mint_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_stool",
+      "id": "another_furniture:navy_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_stool",
+      "id": "another_furniture:olive_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_stool",
+      "id": "another_furniture:rose_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_stool",
+      "id": "another_furniture:slate_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_stool",
+      "id": "another_furniture:tan_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_stool",
+      "id": "another_furniture:teal_stool",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_stool",
+      "id": "another_furniture:verdant_stool",
       "required": false
     }
   ]

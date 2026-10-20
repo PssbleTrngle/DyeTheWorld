@@ -6,7 +6,6 @@ import com.ninni.twigs.registry.TwigsBlockEntityType
 import com.ninni.twigs.registry.TwigsBlocks
 import com.ninni.twigs.registry.TwigsItems
 import com.possible_triangle.dye_the_world.Constants.Mods.TWIGS
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
@@ -18,6 +17,7 @@ import com.possible_triangle.dye_the_world.existingBlockEntity
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.dye_the_world.translation
@@ -25,6 +25,8 @@ import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.world.item.CreativeModeTabs
 
 object DyedTwigs {
+    private val REGISTRATE = DyedRegistrate.create(TWIGS, migrate = true)
+
     private val DYES = dyesFor(TWIGS)
 
     val SILT_SHINGLES =
@@ -110,6 +112,8 @@ object DyedTwigs {
         }
 
     fun register() {
+        REGISTRATE.register()
+
         REGISTRATE.colorSet(TWIGS.createId("silt_pot"))
     }
 }

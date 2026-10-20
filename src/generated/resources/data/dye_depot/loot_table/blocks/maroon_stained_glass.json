@@ -59,7 +59,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dye_the_world:maroon_shard"
+              "name": "quark:maroon_shard"
             }
           ]
         }

@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.index
 
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.FARMERS_DELIGHT
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.canvasSignBlockstate
 import com.possible_triangle.dye_the_world.data.canvasSignItemModel
 import com.possible_triangle.dye_the_world.data.canvasSignRecipes
@@ -15,6 +14,7 @@ import com.possible_triangle.dye_the_world.`object`.block.DyedCeilingHangingCanv
 import com.possible_triangle.dye_the_world.`object`.block.DyedStandingCanvasSignBlock
 import com.possible_triangle.dye_the_world.`object`.block.DyedWallCanvasSignBlock
 import com.possible_triangle.dye_the_world.`object`.block.DyedWallHangingCanvasSignBlock
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
@@ -27,6 +27,8 @@ import vectorwing.farmersdelight.common.registry.ModBlocks
 import vectorwing.farmersdelight.common.tag.ModTags
 
 object DyedDelight {
+    private val REGISTRATE = DyedRegistrate.create(FARMERS_DELIGHT, migrate = true)
+
     private val TAB =
         ResourceKey.create(Registries.CREATIVE_MODE_TAB, FARMERS_DELIGHT.createId(FARMERS_DELIGHT))
 
@@ -90,6 +92,8 @@ object DyedDelight {
         }
 
     fun register() {
+        REGISTRATE.register()
+
         migrateBlockEntity("canvas_sign", FARMERS_DELIGHT)
         migrateBlockEntity("hanging_canvas_sign", FARMERS_DELIGHT)
     }

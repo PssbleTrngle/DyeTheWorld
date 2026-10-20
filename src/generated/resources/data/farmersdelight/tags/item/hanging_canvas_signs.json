@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_hanging_canvas_sign",
+      "id": "farmersdelight:amber_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_hanging_canvas_sign",
+      "id": "farmersdelight:aqua_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_hanging_canvas_sign",
+      "id": "farmersdelight:beige_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_hanging_canvas_sign",
+      "id": "farmersdelight:coral_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_hanging_canvas_sign",
+      "id": "farmersdelight:forest_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_hanging_canvas_sign",
+      "id": "farmersdelight:ginger_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_hanging_canvas_sign",
+      "id": "farmersdelight:indigo_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_hanging_canvas_sign",
+      "id": "farmersdelight:maroon_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_hanging_canvas_sign",
+      "id": "farmersdelight:mint_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_hanging_canvas_sign",
+      "id": "farmersdelight:navy_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_hanging_canvas_sign",
+      "id": "farmersdelight:olive_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_hanging_canvas_sign",
+      "id": "farmersdelight:rose_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_hanging_canvas_sign",
+      "id": "farmersdelight:slate_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_hanging_canvas_sign",
+      "id": "farmersdelight:tan_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_hanging_canvas_sign",
+      "id": "farmersdelight:teal_hanging_canvas_sign",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_hanging_canvas_sign",
+      "id": "farmersdelight:verdant_hanging_canvas_sign",
       "required": false
     }
   ]

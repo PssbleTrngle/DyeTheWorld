@@ -62,7 +62,7 @@ fun <T : Block, P> BlockBuilder<T, P>.lampBlockstate() =
             val model =
                 provider
                     .models()
-                    .withExistingParent("block/$ANOTHER_FURNITURE/lamp/${dye}$suffix", parent)
+                    .withExistingParent(context.name + suffix, parent)
                     .texture("top", texture("top"))
                     .texture("side", texture("side"))
 
@@ -87,15 +87,10 @@ fun <T : Block, P> BlockBuilder<T, P>.lampConnectorBlockstate() =
             val model =
                 provider
                     .models()
-                    .withExistingParent("block/$ANOTHER_FURNITURE/lamp_tall/${dye}_$suffix", parent)
+                    .withExistingParent(context.name + suffix, parent)
                     .texture("top", texture("top"))
                     .texture("side", texture("side"))
 
             ConfiguredModel.builder().modelFile(model)
         }
-    }
-
-fun <T : Item, P> ItemBuilder<T, P>.lampItemModel() =
-    model { context, provider ->
-        provider.withExistingParent(context.name, Constants.MOD_ID.createId("block/$ANOTHER_FURNITURE/lamp/$dye"))
     }

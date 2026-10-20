@@ -1,5 +1,6 @@
 package com.possible_triangle.dye_the_world.registrate
 
+import com.possible_triangle.dye_the_world.extensions.migrate
 import com.tterrag.registrate.AbstractRegistrate
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
@@ -16,12 +17,16 @@ import net.minecraft.world.level.block.state.BlockBehaviour
 import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 
 class DyedRegistrate private constructor(
-    modid: String,
-) : AbstractRegistrate<DyedRegistrate>(modid) {
+    modId: String,
+    private val autoMigrate: Boolean,
+) : AbstractRegistrate<DyedRegistrate>(modId) {
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 
-        fun create(modid: String) = REGISTRATES.getOrPut(modid) { DyedRegistrate(modid) }
+        fun create(
+            modId: String,
+            migrate: Boolean = false,
+        ) = REGISTRATES.getOrPut(modId) { DyedRegistrate(modId, migrate) }
     }
 
     private var isRegistered = false
@@ -86,6 +91,8 @@ class DyedRegistrate private constructor(
                 defaultLang()
                 tagDyed()
             }
+        }.also {
+            if (autoMigrate) it.migrate()
         }
     }
 
@@ -109,6 +116,8 @@ class DyedRegistrate private constructor(
                 defaultLang()
                 tagDyed()
             }
+        }.also {
+            if (autoMigrate) it.migrate()
         }
     }
 

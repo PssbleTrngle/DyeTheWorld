@@ -6,11 +6,11 @@ import com.blackgear.vanillabackport.core.data.tags.ModBlockTags
 import com.blackgear.vanillabackport.core.data.tags.ModItemTags
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
@@ -25,6 +25,8 @@ import net.minecraft.world.item.component.BundleContents
 import net.minecraft.world.level.block.Blocks
 
 object DyedVanillaBackport {
+    private val REGISTRATE = DyedRegistrate.create(ResourceLocation.DEFAULT_NAMESPACE, migrate = true)
+
     private val DYES = dyesFor(VANILLA_BACKPORT)
 
     private val TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, VANILLA_BACKPORT.createId("vanilla_backport"))
@@ -124,8 +126,8 @@ object DyedVanillaBackport {
         }
 
     fun register() {
-        REGISTRATE.colorSet(ResourceLocation.withDefaultNamespace("bundle"), VANILLA_BACKPORT)
-
         REGISTRATE.register()
+
+        REGISTRATE.colorSet(ResourceLocation.withDefaultNamespace("bundle"), VANILLA_BACKPORT)
     }
 }

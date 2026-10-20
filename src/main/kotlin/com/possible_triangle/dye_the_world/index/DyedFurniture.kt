@@ -1,13 +1,13 @@
 package com.possible_triangle.dye_the_world.index
 
 import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.noLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.starfish_studios.another_furniture.block.*
 import com.starfish_studios.another_furniture.registry.AFBlockTags
 import com.starfish_studios.another_furniture.registry.AFBlocks
@@ -16,6 +16,8 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 
 object DyedFurniture {
+    private val REGISTRATE = DyedRegistrate.create(ANOTHER_FURNITURE, migrate = true)
+
     private val TAB =
         ResourceKey.create(Registries.CREATIVE_MODE_TAB, ANOTHER_FURNITURE.createId(ANOTHER_FURNITURE))
 
@@ -92,7 +94,6 @@ object DyedFurniture {
                 .lampBlockstate()
                 .withItem {
                     lampRecipes()
-                    lampItemModel()
                     optionalTag(AFItemTags.LAMPS)
                     tab(TAB)
                 }.register()
@@ -112,6 +113,6 @@ object DyedFurniture {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

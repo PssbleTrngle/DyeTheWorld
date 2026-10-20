@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_cushion",
+      "id": "minecraft:amber_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_cushion",
+      "id": "minecraft:aqua_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_cushion",
+      "id": "minecraft:beige_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_cushion",
+      "id": "minecraft:coral_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_cushion",
+      "id": "minecraft:forest_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_cushion",
+      "id": "minecraft:ginger_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_cushion",
+      "id": "minecraft:indigo_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_cushion",
+      "id": "minecraft:maroon_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_cushion",
+      "id": "minecraft:mint_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_cushion",
+      "id": "minecraft:navy_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_cushion",
+      "id": "minecraft:olive_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_cushion",
+      "id": "minecraft:rose_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_cushion",
+      "id": "minecraft:slate_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_cushion",
+      "id": "minecraft:tan_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_cushion",
+      "id": "minecraft:teal_cushion",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_cushion",
+      "id": "minecraft:verdant_cushion",
       "required": false
     }
   ]

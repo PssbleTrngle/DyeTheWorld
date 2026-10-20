@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_lamp",
+      "id": "another_furniture:amber_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_lamp",
+      "id": "another_furniture:aqua_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_lamp",
+      "id": "another_furniture:beige_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_lamp",
+      "id": "another_furniture:coral_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_lamp",
+      "id": "another_furniture:forest_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_lamp",
+      "id": "another_furniture:ginger_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_lamp",
+      "id": "another_furniture:indigo_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_lamp",
+      "id": "another_furniture:maroon_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_lamp",
+      "id": "another_furniture:mint_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_lamp",
+      "id": "another_furniture:navy_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_lamp",
+      "id": "another_furniture:olive_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_lamp",
+      "id": "another_furniture:rose_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_lamp",
+      "id": "another_furniture:slate_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_lamp",
+      "id": "another_furniture:tan_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_lamp",
+      "id": "another_furniture:teal_lamp",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_lamp",
+      "id": "another_furniture:verdant_lamp",
       "required": false
     }
   ]

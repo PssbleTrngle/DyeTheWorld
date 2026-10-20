@@ -1,259 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_terracotta_brick_wall",
+      "id": "twigs:amber_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_terracotta_brick_wall",
+      "id": "twigs:aqua_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_terracotta_brick_wall",
+      "id": "twigs:beige_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_terracotta_brick_wall",
+      "id": "twigs:coral_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_terracotta_brick_wall",
+      "id": "twigs:forest_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_terracotta_brick_wall",
+      "id": "twigs:ginger_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_terracotta_brick_wall",
+      "id": "twigs:indigo_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_terracotta_brick_wall",
+      "id": "twigs:maroon_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_terracotta_brick_wall",
+      "id": "twigs:mint_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_terracotta_brick_wall",
+      "id": "twigs:navy_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_terracotta_brick_wall",
+      "id": "twigs:olive_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_terracotta_brick_wall",
+      "id": "twigs:rose_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_terracotta_brick_wall",
+      "id": "twigs:slate_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_terracotta_brick_wall",
+      "id": "twigs:tan_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_terracotta_brick_wall",
+      "id": "twigs:teal_silt_shingle_wall",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_terracotta_brick_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:amber_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:aqua_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:beige_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:coral_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:forest_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:ginger_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:indigo_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:maroon_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:mint_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:navy_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:olive_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:rose_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:slate_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:tan_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:teal_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:verdant_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:amber_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:aqua_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:beige_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:coral_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:forest_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:ginger_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:indigo_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:maroon_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:mint_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:navy_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:olive_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:rose_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:slate_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:tan_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:teal_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:verdant_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:amber_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:aqua_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:beige_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:coral_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:forest_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:ginger_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:indigo_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:maroon_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:mint_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:navy_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:olive_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:rose_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:slate_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:tan_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:teal_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "dye_the_world:verdant_silt_shingle_wall",
+      "id": "twigs:verdant_silt_shingle_wall",
       "required": false
     }
   ]

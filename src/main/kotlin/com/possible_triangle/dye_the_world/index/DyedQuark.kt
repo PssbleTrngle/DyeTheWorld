@@ -3,9 +3,9 @@ package com.possible_triangle.dye_the_world.index
 import com.google.gson.JsonObject
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.QUARK
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.multikulti.datagen.conditions.Condition
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
@@ -37,6 +37,8 @@ data class QuarkConfigCondition(
 }
 
 object DyedQuark {
+    private val REGISTRATE = DyedRegistrate.create(QUARK, migrate = true)
+
     private val DYES = dyesFor(QUARK)
 
     private val TERRACOTTA = dyedBlockMap(QUARK, "terracotta")
@@ -83,8 +85,9 @@ object DyedQuark {
     val STOOLS =
         DYES.associateWith { dye ->
             REGISTRATE
-                .`object`("${dye}_quark_stool")
+                .`object`("${dye}_stool")
                 .dyedBlock(dye, QUARK) { StoolBlock(null, dye) }
+                .migrate(name = "${dye}_quark_stool")
                 .optionalTag(DyedTags.Blocks.QUARK_STOOLS)
                 .quarkStoolBlockstate()
                 .lang("${dye.translation} Stool")
@@ -219,6 +222,6 @@ object DyedQuark {
         }
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

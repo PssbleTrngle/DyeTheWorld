@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_stained_glass_trapdoor",
+      "id": "clayworks:amber_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_stained_glass_trapdoor",
+      "id": "clayworks:aqua_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_stained_glass_trapdoor",
+      "id": "clayworks:beige_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_stained_glass_trapdoor",
+      "id": "clayworks:coral_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_stained_glass_trapdoor",
+      "id": "clayworks:forest_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_stained_glass_trapdoor",
+      "id": "clayworks:ginger_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_stained_glass_trapdoor",
+      "id": "clayworks:indigo_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_stained_glass_trapdoor",
+      "id": "clayworks:maroon_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_stained_glass_trapdoor",
+      "id": "clayworks:mint_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_stained_glass_trapdoor",
+      "id": "clayworks:navy_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_stained_glass_trapdoor",
+      "id": "clayworks:olive_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_stained_glass_trapdoor",
+      "id": "clayworks:rose_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_stained_glass_trapdoor",
+      "id": "clayworks:slate_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_stained_glass_trapdoor",
+      "id": "clayworks:tan_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_stained_glass_trapdoor",
+      "id": "clayworks:teal_stained_glass_trapdoor",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_stained_glass_trapdoor",
+      "id": "clayworks:verdant_stained_glass_trapdoor",
       "required": false
     }
   ]

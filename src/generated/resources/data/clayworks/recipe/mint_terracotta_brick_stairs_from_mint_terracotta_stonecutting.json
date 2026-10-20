@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:mint_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "clayworks:mint_terracotta_brick_stairs"
+  }
+}

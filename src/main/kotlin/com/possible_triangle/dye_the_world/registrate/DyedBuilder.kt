@@ -2,11 +2,15 @@ package com.possible_triangle.dye_the_world.registrate
 
 import com.possible_triangle.dye_the_world.Constants
 import com.tterrag.registrate.builders.Builder
+import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.DyeColor
 
 interface DyedBuilder {
     val dye: DyeColor
+
+    // TODO no longer needed soon
     val mod: String
+    var migrateFrom: ResourceLocation?
 }
 
 val Builder<*, *, *, *>.dye: DyeColor

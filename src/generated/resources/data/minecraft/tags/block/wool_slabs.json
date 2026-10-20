@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_wool_slab",
+      "id": "minecraft:amber_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_wool_slab",
+      "id": "minecraft:aqua_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_wool_slab",
+      "id": "minecraft:beige_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_wool_slab",
+      "id": "minecraft:coral_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_wool_slab",
+      "id": "minecraft:forest_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_wool_slab",
+      "id": "minecraft:ginger_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_wool_slab",
+      "id": "minecraft:indigo_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_wool_slab",
+      "id": "minecraft:maroon_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_wool_slab",
+      "id": "minecraft:mint_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_wool_slab",
+      "id": "minecraft:navy_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_wool_slab",
+      "id": "minecraft:olive_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_wool_slab",
+      "id": "minecraft:rose_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_wool_slab",
+      "id": "minecraft:slate_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_wool_slab",
+      "id": "minecraft:tan_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_wool_slab",
+      "id": "minecraft:teal_wool_slab",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_wool_slab",
+      "id": "minecraft:verdant_wool_slab",
       "required": false
     }
   ]

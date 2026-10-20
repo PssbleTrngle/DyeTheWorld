@@ -59,7 +59,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dye_the_world:teal_shard"
+              "name": "quark:teal_shard"
             }
           ]
         }

@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "dye_the_world:amber_silt_pot",
+      "id": "twigs:amber_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:aqua_silt_pot",
+      "id": "twigs:aqua_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:beige_silt_pot",
+      "id": "twigs:beige_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:coral_silt_pot",
+      "id": "twigs:coral_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:forest_silt_pot",
+      "id": "twigs:forest_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:ginger_silt_pot",
+      "id": "twigs:ginger_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:indigo_silt_pot",
+      "id": "twigs:indigo_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:maroon_silt_pot",
+      "id": "twigs:maroon_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:mint_silt_pot",
+      "id": "twigs:mint_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:navy_silt_pot",
+      "id": "twigs:navy_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:olive_silt_pot",
+      "id": "twigs:olive_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:rose_silt_pot",
+      "id": "twigs:rose_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:slate_silt_pot",
+      "id": "twigs:slate_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:tan_silt_pot",
+      "id": "twigs:tan_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:teal_silt_pot",
+      "id": "twigs:teal_silt_pot",
       "required": false
     },
     {
-      "id": "dye_the_world:verdant_silt_pot",
+      "id": "twigs:verdant_silt_pot",
       "required": false
     }
   ]

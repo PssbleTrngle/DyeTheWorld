@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft:block/aqua_wool_slab"
+    },
+    "type=double": {
+      "model": "dye_depot:block/aqua_wool"
+    },
+    "type=top": {
+      "model": "minecraft:block/aqua_wool_slab_top"
+    }
+  }
+}

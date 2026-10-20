@@ -3,9 +3,9 @@ package com.possible_triangle.dye_the_world.index
 import com.google.common.base.Suppliers.memoize
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.Constants.Mods.CLAYWORKS
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.multikulti.datagen.conditions.ModLoaded
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
@@ -29,6 +29,8 @@ import net.minecraft.world.level.block.DecoratedPotBlock
 import java.util.function.Supplier
 
 object DyedClayworks {
+    private val REGISTRATE = DyedRegistrate.create(CLAYWORKS, migrate = true)
+
     private val DYES = dyesFor(CLAYWORKS)
 
     private val TERRACOTTA = dyedBlockMap(CLAYWORKS, "terracotta")
@@ -221,6 +223,8 @@ object DyedClayworks {
         }
 
     fun register() {
+        REGISTRATE.register()
+
         REGISTRATE.addDataGenerator(ProviderType.RECIPE) { provider ->
             provider.withConditions(ModLoaded(CLAYWORKS)) {
                 TERRACOTTA.forEach { (dye, terracotta) ->

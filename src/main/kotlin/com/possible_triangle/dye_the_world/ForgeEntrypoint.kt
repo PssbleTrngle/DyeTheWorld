@@ -15,7 +15,8 @@ import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 
 @Mod(Constants.MOD_ID)
 object ForgeEntrypoint {
-    val REGISTRATE = DyedRegistrate.create(Constants.MOD_ID)
+    @Deprecated("always register to supported mod's namespace")
+    private val REGISTRATE = DyedRegistrate.create(Constants.MOD_ID)
 
     init {
         Constants.LOGGER.debug("setup")

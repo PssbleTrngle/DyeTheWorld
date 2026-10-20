@@ -59,7 +59,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dye_the_world:rose_shard"
+              "name": "quark:rose_shard"
             }
           ]
         }

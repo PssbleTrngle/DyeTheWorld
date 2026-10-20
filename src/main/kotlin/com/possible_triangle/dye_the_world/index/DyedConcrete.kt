@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.index
 
 import com.possible_triangle.dye_the_world.Constants.Mods.MORE_CONCRETE
-import com.possible_triangle.dye_the_world.ForgeEntrypoint.REGISTRATE
 import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.dyedBlockMap
@@ -9,9 +8,12 @@ import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.germanLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.germanTranslation
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import net.minecraft.tags.BlockTags
 
 object DyedConcrete {
+    private val REGISTRATE = DyedRegistrate.create(MORE_CONCRETE, migrate = true)
+
     private val CONCRETE = dyedBlockMap(MORE_CONCRETE, "concrete")
 
     val CONCRETE_SLABS =
@@ -60,6 +62,6 @@ object DyedConcrete {
         }, existingTexture = true)
 
     fun register() {
-        // Loads this class
+        REGISTRATE.register()
     }
 }

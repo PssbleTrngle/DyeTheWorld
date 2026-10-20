@@ -59,7 +59,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dye_the_world:coral_shard"
+              "name": "quark:coral_shard"
             }
           ]
         }
