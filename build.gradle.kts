@@ -33,6 +33,7 @@ neoforge {
         existing("sleep_tight")
         existing("windswept")
         existing("bits_n_bobs")
+        existing("arts_and_crafts")
     }
 }
 
@@ -132,7 +133,6 @@ dependencies {
     modImplementation(pack.modrinth.twigs)
     modImplementation(pack.modrinth.sleep.tight)
     modImplementation(libs.windswept) { isTransitive = false }
-    // modRuntimeOnly(pack.modrinth.immersiveengineering)
     modRuntimeOnly(libs.flywheel)
     modRuntimeOnly(libs.jei)
     modRuntimeOnly(pack.modrinth.jade)
@@ -145,7 +145,6 @@ dependencies {
     modRuntimeOnly(pack.modrinth.gallery)
     modRuntimeOnly(pack.modrinth.more.concrete)
     modRuntimeOnly(pack.modrinth.balm)
-    // modRuntimeOnly(pack.modrinth.polytone)
     modRuntimeOnly(pack.modrinth.amendments)
     modRuntimeOnly(pack.modrinth.registry.dump)
     modRuntimeOnly(pack.curseforge.openblocks.elevator)
@@ -159,6 +158,8 @@ dependencies {
     modRuntimeOnly(pack.modrinth.strut.your.stuff)
     modImplementation(pack.modrinth.naturalist)
     modImplementation(pack.modrinth.labels)
+    modImplementation(pack.modrinth.artsandcrafts)
+    modRuntimeOnly(pack.modrinth.jinxedlib)
 }
 
 sourceSets.main {
@@ -219,7 +220,9 @@ upload {
             optional("numismatics")
             optional("sleep-tight")
             optional("create-bits-n-bobs")
+            optional("naturalist")
             optional("labels")
+            optional("artsandcrafts")
         }
     }
 }

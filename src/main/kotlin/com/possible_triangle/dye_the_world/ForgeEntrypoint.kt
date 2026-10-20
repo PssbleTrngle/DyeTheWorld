@@ -78,6 +78,10 @@ object ForgeEntrypoint {
             MOD_BUS.addListener(ChalkCompat::addCreativeTabEntries)
         }
 
+        ifLoaded(Constants.Mods.ARTS_AND_CRAFTS) {
+            DyedArtsAndCrafts.register()
+        }
+
         if (DatagenModLoader.isRunningDataGen()) {
             Constants.LOGGER.debug("registering datagen")
 
@@ -88,8 +92,6 @@ object ForgeEntrypoint {
             REGISTRATE.createDyeRecipes()
             REGISTRATE.generateGlassShardLoot()
 
-            // These are blocks & Items which are automatically added for all dye colors, included modded ones.
-            // Therefore, they only lack assets & data files, which have to be generated, but do not need to be registered.
             DyedSupplementaries.register()
             DyedComforts.register()
             DyedCreate.register()
