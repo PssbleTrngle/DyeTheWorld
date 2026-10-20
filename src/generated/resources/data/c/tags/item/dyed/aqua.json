@@ -1,11 +1,31 @@
 {
   "values": [
     {
-      "id": "naturalist:snail_shell_aqua",
+      "id": "minecraft:aqua_harness",
       "required": false
     },
     {
-      "id": "naturalist:snail_aqua",
+      "id": "minecraft:aqua_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_cushion",
       "required": false
     }
   ]

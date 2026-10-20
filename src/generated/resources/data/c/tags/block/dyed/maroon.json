@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:maroon_chair",
+      "id": "minecraft:maroon_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:maroon_nixie_board",
+      "id": "minecraft:maroon_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:maroon_large_nixie_tube",
+      "id": "minecraft:maroon_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_concrete_stairs",
       "required": false
     }
   ]

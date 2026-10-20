@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:olive_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:olive_concrete_stairs"
+  }
+}

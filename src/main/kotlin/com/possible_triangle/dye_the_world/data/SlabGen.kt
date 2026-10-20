@@ -35,12 +35,12 @@ fun DyedRegistrate.createSlabs(
             p.slabBlock(c.get(), doubleModel, texture)
         }.loot { c, p ->
             c.add(p, c.createSlabItemTable(p))
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.SLABS)
             recipe { c, p -> p.slab(base.asIngredient(), BUILDING_BLOCKS, c, null, stone) }
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }

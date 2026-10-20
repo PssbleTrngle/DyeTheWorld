@@ -1,11 +1,31 @@
 {
   "values": [
     {
-      "id": "naturalist:snail_shell_rose",
+      "id": "minecraft:rose_harness",
       "required": false
     },
     {
-      "id": "naturalist:snail_rose",
+      "id": "minecraft:rose_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_cushion",
       "required": false
     }
   ]

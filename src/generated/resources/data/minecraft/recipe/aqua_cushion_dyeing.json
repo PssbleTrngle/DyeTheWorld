@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cushion_dye",
+  "ingredients": [
+    {
+      "tag": "c:dyes/aqua"
+    },
+    {
+      "tag": "minecraft:cushions"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:aqua_cushion"
+  }
+}

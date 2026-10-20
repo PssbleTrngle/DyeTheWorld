@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:navy_chair",
+      "id": "minecraft:navy_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:navy_nixie_board",
+      "id": "minecraft:navy_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:navy_large_nixie_tube",
+      "id": "minecraft:navy_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_concrete_stairs",
       "required": false
     }
   ]

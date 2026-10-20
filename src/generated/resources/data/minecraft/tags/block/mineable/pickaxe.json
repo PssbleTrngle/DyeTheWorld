@@ -1,131 +1,131 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:amber_nixie_board",
+      "id": "minecraft:amber_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:aqua_nixie_board",
+      "id": "minecraft:aqua_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:beige_nixie_board",
+      "id": "minecraft:beige_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:coral_nixie_board",
+      "id": "minecraft:coral_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:forest_nixie_board",
+      "id": "minecraft:forest_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:ginger_nixie_board",
+      "id": "minecraft:ginger_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:indigo_nixie_board",
+      "id": "minecraft:indigo_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:maroon_nixie_board",
+      "id": "minecraft:maroon_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:mint_nixie_board",
+      "id": "minecraft:mint_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:navy_nixie_board",
+      "id": "minecraft:navy_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:olive_nixie_board",
+      "id": "minecraft:olive_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:rose_nixie_board",
+      "id": "minecraft:rose_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:slate_nixie_board",
+      "id": "minecraft:slate_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:tan_nixie_board",
+      "id": "minecraft:tan_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:teal_nixie_board",
+      "id": "minecraft:teal_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:verdant_nixie_board",
+      "id": "minecraft:verdant_concrete_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:amber_large_nixie_tube",
+      "id": "minecraft:amber_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:aqua_large_nixie_tube",
+      "id": "minecraft:aqua_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:beige_large_nixie_tube",
+      "id": "minecraft:beige_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:coral_large_nixie_tube",
+      "id": "minecraft:coral_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:forest_large_nixie_tube",
+      "id": "minecraft:forest_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:ginger_large_nixie_tube",
+      "id": "minecraft:ginger_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:indigo_large_nixie_tube",
+      "id": "minecraft:indigo_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:maroon_large_nixie_tube",
+      "id": "minecraft:maroon_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:mint_large_nixie_tube",
+      "id": "minecraft:mint_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:navy_large_nixie_tube",
+      "id": "minecraft:navy_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:olive_large_nixie_tube",
+      "id": "minecraft:olive_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:rose_large_nixie_tube",
+      "id": "minecraft:rose_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:slate_large_nixie_tube",
+      "id": "minecraft:slate_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:tan_large_nixie_tube",
+      "id": "minecraft:tan_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:teal_large_nixie_tube",
+      "id": "minecraft:teal_concrete_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:verdant_large_nixie_tube",
+      "id": "minecraft:verdant_concrete_stairs",
       "required": false
     }
   ]

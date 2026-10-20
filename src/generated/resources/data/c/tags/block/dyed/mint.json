@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:mint_chair",
+      "id": "minecraft:mint_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:mint_nixie_board",
+      "id": "minecraft:mint_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:mint_large_nixie_tube",
+      "id": "minecraft:mint_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_concrete_stairs",
       "required": false
     }
   ]

@@ -1,67 +1,131 @@
 {
   "values": [
     {
-      "id": "windswept:amber_pinecone_shingle_slab",
+      "id": "minecraft:amber_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:aqua_pinecone_shingle_slab",
+      "id": "minecraft:aqua_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:beige_pinecone_shingle_slab",
+      "id": "minecraft:beige_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:coral_pinecone_shingle_slab",
+      "id": "minecraft:coral_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:forest_pinecone_shingle_slab",
+      "id": "minecraft:forest_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:ginger_pinecone_shingle_slab",
+      "id": "minecraft:ginger_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:indigo_pinecone_shingle_slab",
+      "id": "minecraft:indigo_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:maroon_pinecone_shingle_slab",
+      "id": "minecraft:maroon_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:mint_pinecone_shingle_slab",
+      "id": "minecraft:mint_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:navy_pinecone_shingle_slab",
+      "id": "minecraft:navy_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:olive_pinecone_shingle_slab",
+      "id": "minecraft:olive_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:rose_pinecone_shingle_slab",
+      "id": "minecraft:rose_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:slate_pinecone_shingle_slab",
+      "id": "minecraft:slate_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:tan_pinecone_shingle_slab",
+      "id": "minecraft:tan_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:teal_pinecone_shingle_slab",
+      "id": "minecraft:teal_wool_slab",
       "required": false
     },
     {
-      "id": "windswept:verdant_pinecone_shingle_slab",
+      "id": "minecraft:verdant_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:amber_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:beige_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:forest_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:indigo_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:olive_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:tan_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_concrete_slab",
       "required": false
     }
   ]

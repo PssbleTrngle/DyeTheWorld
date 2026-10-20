@@ -1,15 +1,19 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:ginger_chair",
+      "id": "minecraft:ginger_wool_stairs",
       "required": false
     },
     {
-      "id": "bits_n_bobs:ginger_nixie_board",
+      "id": "minecraft:ginger_wool_slab",
       "required": false
     },
     {
-      "id": "bits_n_bobs:ginger_large_nixie_tube",
+      "id": "minecraft:ginger_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_concrete_stairs",
       "required": false
     }
   ]

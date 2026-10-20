@@ -68,7 +68,8 @@ fun DyedRegistrate.createLevers(
                     .rotationX(rotX)
                     .rotationY((if (face == AttachFace.CEILING) facing.opposite else facing).yRot)
             }
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             recipe { c, p ->
@@ -83,8 +84,7 @@ fun DyedRegistrate.createLevers(
             }
             model { c, p -> p.blockItem(c) }
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }
 
 fun DyedRegistrate.createButtons(
@@ -100,7 +100,8 @@ fun DyedRegistrate.createButtons(
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.buttonBlock(c.get(), texture)
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             optionalTag(ItemTags.BUTTONS)
@@ -115,8 +116,7 @@ fun DyedRegistrate.createButtons(
                 p.buttonInventory(c.name, texture)
             }
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }
 
 fun DyedRegistrate.createPressurePlates(
@@ -132,7 +132,8 @@ fun DyedRegistrate.createPressurePlates(
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.pressurePlateBlock(c.get(), texture)
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             recipe { c, p ->
@@ -148,6 +149,5 @@ fun DyedRegistrate.createPressurePlates(
                 p.pressurePlate(c.name, texture)
             }
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }

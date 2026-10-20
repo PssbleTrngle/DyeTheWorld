@@ -5,16 +5,18 @@ import com.blackgear.vanillabackport.common.registries.blocks.ModBlocks
 import com.blackgear.vanillabackport.core.data.tags.ModBlockTags
 import com.blackgear.vanillabackport.core.data.tags.ModItemTags
 import com.possible_triangle.dye_the_world.*
+import com.possible_triangle.dye_the_world.Constants.Mods.MORE_CONCRETE
 import com.possible_triangle.dye_the_world.Constants.Mods.VANILLA_BACKPORT
 import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
+import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
-import net.minecraft.data.recipes.ShapedRecipeBuilder
+import net.minecraft.data.recipes.ShapedRecipeBuilder.shaped
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BundleItem
@@ -46,8 +48,7 @@ object DyedVanillaBackport {
                 .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
                 .optionalTag(ModItemTags.HARNESSES)
                 .recipe { context, provider ->
-                    ShapedRecipeBuilder
-                        .shaped(RecipeCategory.MISC, context.get())
+                    shaped(RecipeCategory.MISC, context.get())
                         .pattern("LLL")
                         .pattern("G#G")
                         .define('#', dye.blockOf("wool"))
@@ -112,6 +113,28 @@ object DyedVanillaBackport {
             stone = false,
         )
 
+    private val CONCRETE = dyedBlockMap(MORE_CONCRETE, "concrete")
+
+    val CONCRETE_SLABS =
+        REGISTRATE.createSlabs(
+            CONCRETE,
+            MORE_CONCRETE.createId("concrete"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
+                noMigrate()
+            },
+        )
+
+    val CONCRETE_STAIRS =
+        REGISTRATE.createStairs(
+            CONCRETE,
+            MORE_CONCRETE.createId("concrete"),
+            modifyBlock = { dye ->
+                germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
+                noMigrate()
+            },
+        )
+
     val CUSHIONS =
         DYES.associateWith { dye ->
             REGISTRATE
@@ -124,7 +147,17 @@ object DyedVanillaBackport {
                 .model { c, p ->
                     p.generated(c, VANILLA_BACKPORT.createId("item/cushion/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
-                .tab(TAB)
+                .recipe { c, p ->
+                    p.dyeingRecipe(dye, ModItemTags.CUSHIONS, c) {
+                        group("cushion_dye")
+                    }
+
+                    shaped(RecipeCategory.BUILDING_BLOCKS, c.get())
+                        .pattern("###")
+                        .defineUnlocking('#', WOOL_SLABS[dye]!!)
+                        .group("cushion")
+                        .save(p)
+                }.tab(TAB)
                 .register()
         }
 

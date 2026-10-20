@@ -35,7 +35,8 @@ fun DyedRegistrate.createFences(
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.fenceBlock(c.get(), texture)
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.FENCES)
@@ -52,8 +53,7 @@ fun DyedRegistrate.createFences(
                 p.fenceInventory(c.name, texture)
             }
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }
 
 fun DyedRegistrate.createFenceGates(
@@ -69,7 +69,8 @@ fun DyedRegistrate.createFenceGates(
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.fenceGateBlock(c.get(), texture)
-        }.withItem {
+        }.apply { modifyBlock(dye) }
+        .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             optionalTag(ItemTags.FENCE_GATES)
@@ -86,6 +87,5 @@ fun DyedRegistrate.createFenceGates(
                 p.fenceGate(c.name, texture)
             }
             modifyItem(dye)
-        }.apply { modifyBlock(dye) }
-        .register()
+        }.register()
 }
