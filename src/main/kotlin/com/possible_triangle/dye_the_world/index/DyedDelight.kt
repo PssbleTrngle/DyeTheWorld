@@ -36,7 +36,7 @@ object DyedDelight {
         dyesFor(FARMERS_DELIGHT).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_canvas_wall_sign")
-                .dyedBlock(dye, FARMERS_DELIGHT) { DyedWallCanvasSignBlock(it, dye) }
+                .dyedBlock(dye) { DyedWallCanvasSignBlock(it, dye) }
                 .initialProperties { ModBlocks.RED_CANVAS_WALL_SIGN.get() }
                 .lang { it.descriptionId + ".wall" }
                 .canvasSignBlockstate()
@@ -48,7 +48,7 @@ object DyedDelight {
         dyesFor(FARMERS_DELIGHT).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_canvas_sign")
-                .dyedBlock(dye, FARMERS_DELIGHT) { DyedStandingCanvasSignBlock(dye) }
+                .dyedBlock(dye) { DyedStandingCanvasSignBlock(dye) }
                 .initialProperties { ModBlocks.RED_CANVAS_SIGN.get() }
                 .lang("${dye.translation} Canvas Sign")
                 .germanLang("${dye.germanTranslation(Genus.I)} Canvas Schild")
@@ -66,7 +66,7 @@ object DyedDelight {
         dyesFor(FARMERS_DELIGHT).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_wall_hanging_canvas_sign")
-                .dyedBlock(dye, FARMERS_DELIGHT) { DyedWallHangingCanvasSignBlock(it, dye) }
+                .dyedBlock(dye) { DyedWallHangingCanvasSignBlock(it, dye) }
                 .initialProperties { ModBlocks.RED_HANGING_CANVAS_WALL_SIGN.get() }
                 .lang { it.descriptionId + ".wall" }
                 .canvasSignBlockstate()
@@ -78,7 +78,7 @@ object DyedDelight {
         dyesFor(FARMERS_DELIGHT).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_hanging_canvas_sign")
-                .dyedBlock(dye, FARMERS_DELIGHT) { DyedCeilingHangingCanvasSignBlock(dye) }
+                .dyedBlock(dye) { DyedCeilingHangingCanvasSignBlock(dye) }
                 .initialProperties { ModBlocks.RED_HANGING_CANVAS_SIGN.get() }
                 .lang("${dye.translation} Hanging Canvas Sign")
                 .canvasSignBlockstate()

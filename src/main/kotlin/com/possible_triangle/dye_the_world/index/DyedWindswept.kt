@@ -24,7 +24,7 @@ object DyedWindswept {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_pinecone_shingles")
-                .dyedBlock(dye, WINDSWEPT)
+                .dyedBlock(dye)
                 .optionalTag(BlockTags.MINEABLE_WITH_AXE)
                 .optionalTag(WindsweptBlockTags.PINECONE_NOTE_BLOCKS)
                 .withItem {

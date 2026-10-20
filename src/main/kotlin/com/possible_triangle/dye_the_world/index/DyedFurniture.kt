@@ -25,7 +25,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_sofa")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::SofaBlock)
+                .dyedBlock(dye, ::SofaBlock)
                 .initialProperties { AFBlocks.RED_SOFA.get() }
                 .optionalTag(AFBlockTags.SOFAS)
                 .sofaBlockstate()
@@ -40,7 +40,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_stool")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::StoolBlock)
+                .dyedBlock(dye, ::StoolBlock)
                 .initialProperties { AFBlocks.RED_STOOL.get() }
                 .optionalTag(AFBlockTags.STOOLS)
                 .stoolBlockstate()
@@ -55,7 +55,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_tall_stool")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::TallStoolBlock)
+                .dyedBlock(dye, ::TallStoolBlock)
                 .initialProperties { AFBlocks.RED_TALL_STOOL.get() }
                 .optionalTag(AFBlockTags.TALL_STOOLS)
                 .tallStoolBlockstate()
@@ -70,7 +70,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_curtain")
-                .dyedBlock(dye, ANOTHER_FURNITURE, ::CurtainBlock)
+                .dyedBlock(dye, ::CurtainBlock)
                 .initialProperties { AFBlocks.RED_CURTAIN.get() }
                 .optionalTag(AFBlockTags.CURTAINS)
                 .curtainBlockstate()
@@ -88,7 +88,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_lamp")
-                .dyedBlock(dye, ANOTHER_FURNITURE) { LampBlock(dye, it) }
+                .dyedBlock(dye) { LampBlock(dye, it) }
                 .initialProperties { AFBlocks.RED_LAMP.get() }
                 .optionalTag(AFBlockTags.LAMPS)
                 .lampBlockstate()
@@ -104,7 +104,7 @@ object DyedFurniture {
         dyesFor(ANOTHER_FURNITURE).associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_lamp_connector")
-                .dyedBlock(dye, ANOTHER_FURNITURE) { LampConnectorBlock(dye, it) }
+                .dyedBlock(dye) { LampConnectorBlock(dye, it) }
                 .noLang()
                 .loot { t, b -> t.dropOther(b, LAMPS[dye]!!.get()) }
                 .initialProperties { AFBlocks.RED_LAMP_CONNECTOR.get() }

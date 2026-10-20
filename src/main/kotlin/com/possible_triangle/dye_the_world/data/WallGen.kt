@@ -22,7 +22,7 @@ fun DyedRegistrate.createWalls(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<WallBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_wall")
-        .dyedBlock(dye, name.namespace, ::WallBlock)
+        .dyedBlock(dye, ::WallBlock)
         .initialProperties(base)
         .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
         .optionalTag(BlockTags.WALLS)

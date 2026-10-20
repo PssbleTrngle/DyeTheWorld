@@ -17,16 +17,18 @@ import net.minecraft.world.level.block.state.BlockBehaviour
 import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 
 class DyedRegistrate private constructor(
-    modId: String,
+    namespace: String,
+    val mod: String,
     private val autoMigrate: Boolean,
-) : AbstractRegistrate<DyedRegistrate>(modId) {
+) : AbstractRegistrate<DyedRegistrate>(namespace) {
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 
         fun create(
-            modId: String,
+            namespace: String,
+            mod: String = namespace,
             migrate: Boolean = false,
-        ) = REGISTRATES.getOrPut(modId) { DyedRegistrate(modId, migrate) }
+        ) = REGISTRATES.getOrPut(namespace) { DyedRegistrate(namespace, mod, migrate) }
     }
 
     private var isRegistered = false
@@ -57,21 +59,10 @@ class DyedRegistrate private constructor(
         }
     }
 
-    fun dyedBlock(color: DyeColor) = dyedBlock(color, modid, ::Block)
+    fun dyedBlock(color: DyeColor) = dyedBlock(color, ::Block)
 
     fun <T : Block> dyedBlock(
         color: DyeColor,
-        factory: NonNullFunction<BlockBehaviour.Properties, T>,
-    ) = dyedBlock(color, modid, factory)
-
-    fun dyedBlock(
-        color: DyeColor,
-        mod: String,
-    ) = dyedBlock(color, mod, ::Block)
-
-    fun <T : Block> dyedBlock(
-        color: DyeColor,
-        mod: String,
         factory: NonNullFunction<BlockBehaviour.Properties, T>,
     ): BlockBuilder<T, DyedRegistrate> {
         val name = currentName()
@@ -80,7 +71,6 @@ class DyedRegistrate private constructor(
                 this,
                 this,
                 color,
-                mod,
                 name,
                 callback,
                 factory,
@@ -98,7 +88,6 @@ class DyedRegistrate private constructor(
 
     fun <T : Item> dyedItem(
         color: DyeColor,
-        mod: String,
         factory: NonNullFunction<Item.Properties, T>,
     ): ItemBuilder<T, DyedRegistrate> {
         val name = currentName()
@@ -107,7 +96,6 @@ class DyedRegistrate private constructor(
                 this,
                 this,
                 color,
-                mod,
                 name,
                 callback,
                 factory,
@@ -120,9 +108,4 @@ class DyedRegistrate private constructor(
             if (autoMigrate) it.migrate()
         }
     }
-
-    fun <T : Item> dyedItem(
-        color: DyeColor,
-        factory: NonNullFunction<Item.Properties, T>,
-    ) = dyedItem(color, modid, factory)
 }

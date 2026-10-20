@@ -23,7 +23,7 @@ fun DyedRegistrate.createStairs(
     stone: Boolean = true,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_stairs")
-        .dyedBlock(dye, name.namespace) { StairBlock(base.get().defaultBlockState(), it) }
+        .dyedBlock(dye) { StairBlock(base.get().defaultBlockState(), it) }
         .initialProperties(base)
         .also { if (stone) it.optionalTag(BlockTags.MINEABLE_WITH_PICKAXE) }
         .optionalTag(BlockTags.STAIRS)

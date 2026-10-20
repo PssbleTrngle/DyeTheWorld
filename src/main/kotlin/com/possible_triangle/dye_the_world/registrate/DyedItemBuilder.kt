@@ -19,7 +19,6 @@ class DyedItemBuilder<T : Item, P : Any> internal constructor(
     owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,
-    override val mod: String,
     name: String,
     callback: BuilderCallback,
     factory: NonNullFunction<Properties, T>,
@@ -28,7 +27,6 @@ class DyedItemBuilder<T : Item, P : Any> internal constructor(
     override var migrateFrom: ResourceLocation? = null
 
     init {
-        mod.validateMod()
         doMigration()
     }
 

@@ -27,7 +27,7 @@ object DyedCaves {
         dyesFor(ALEXS_CAVES).associateWith { dye ->
             REGISTRATE
                 .`object`("radon_lamp_$dye")
-                .dyedBlock(dye, ALEXS_CAVES)
+                .dyedBlock(dye)
                 .properties { it.strength(2.0f, 11.0f) }
                 .properties { it.requiresCorrectToolForDrops() }
                 .properties { it.lightLevel { 15 } }

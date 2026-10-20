@@ -41,7 +41,7 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_terracotta_bricks")
-                .dyedBlock(dye, CLAYWORKS)
+                .dyedBlock(dye)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("${dye.translation} Terracotta Bricks")
@@ -112,7 +112,7 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("chiseled_${dye}_terracotta_bricks")
-                .dyedBlock(dye, CLAYWORKS)
+                .dyedBlock(dye)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("Chiseled ${dye.translation} Terracotta Bricks")
@@ -156,7 +156,7 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_decorated_pot")
-                .dyedBlock(dye, CLAYWORKS, ::DecoratedPotBlock)
+                .dyedBlock(dye, ::DecoratedPotBlock)
                 .initialProperties { Blocks.DECORATED_POT }
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Decorated Pot")
@@ -187,7 +187,7 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_stained_glass_door")
-                .dyedBlock(dye, CLAYWORKS) { GlassDoorBlock(dye) }
+                .dyedBlock(dye) { GlassDoorBlock(dye) }
                 .lang("${dye.translation} Stained Glass Door")
                 .glassDoorBlockstate()
                 .glassDoorLoot()
@@ -206,7 +206,7 @@ object DyedClayworks {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_stained_glass_trapdoor")
-                .dyedBlock(dye, CLAYWORKS) { GlassTrapDoorBlock(dye) }
+                .dyedBlock(dye) { GlassTrapDoorBlock(dye) }
                 .lang("${dye.translation} Stained Glass Trapdoor")
                 .glassTrapdoorBlockstate()
                 .glassTrapdoorLoot()

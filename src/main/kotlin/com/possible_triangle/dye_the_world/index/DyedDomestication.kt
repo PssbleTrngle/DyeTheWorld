@@ -26,7 +26,7 @@ object DyedDomestication {
         dyesFor(DOMESTICATION_INNOVATION).associateWith { dye ->
             REGISTRATE
                 .`object`("pet_bed_$dye")
-                .dyedBlock(dye, DOMESTICATION_INNOVATION) { PetBedBlock(dye.serializedName, dye) }
+                .dyedBlock(dye) { PetBedBlock(dye.serializedName, dye) }
                 .properties { it.strength(0.8F) }
                 .properties { it.pushReaction(PushReaction.BLOCK) }
                 .properties { it.noOcclusion() }

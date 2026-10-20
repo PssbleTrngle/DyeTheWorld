@@ -29,7 +29,7 @@ fun DyedRegistrate.createFences(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<FenceBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_fence")
-        .dyedBlock(dye, name.namespace, ::FenceBlock)
+        .dyedBlock(dye, ::FenceBlock)
         .initialProperties(base)
         .optionalTag(BlockTags.FENCES)
         .blockstate { c, p ->
@@ -63,7 +63,7 @@ fun DyedRegistrate.createFenceGates(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<FenceGateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_fence_gate")
-        .dyedBlock(dye, name.namespace) { FenceGateBlock(it, SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) }
+        .dyedBlock(dye) { FenceGateBlock(it, SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) }
         .initialProperties(base)
         .optionalTag(BlockTags.FENCE_GATES)
         .blockstate { c, p ->

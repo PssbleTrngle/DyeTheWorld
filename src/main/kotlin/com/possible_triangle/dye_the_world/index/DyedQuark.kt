@@ -61,7 +61,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_shard")
-                .dyedItem(dye, QUARK, ::Item)
+                .dyedItem(dye, ::Item)
                 .optionalTab(CreativeModeTabs.INGREDIENTS) {
                     flagEnabled("glass_shard")
                 }.optionalTag(DyedTags.Items.GLASS_SHARDS)
@@ -86,7 +86,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_stool")
-                .dyedBlock(dye, QUARK) { StoolBlock(null, dye) }
+                .dyedBlock(dye) { StoolBlock(null, dye) }
                 .migrate(name = "${dye}_quark_stool")
                 .optionalTag(DyedTags.Blocks.QUARK_STOOLS)
                 .quarkStoolBlockstate()
@@ -103,7 +103,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_shingles")
-                .dyedBlock(dye, QUARK, ::Block)
+                .dyedBlock(dye, ::Block)
                 .initialProperties { dye.blockOf("terracotta") }
                 .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("${dye.translation} Terracotta Shingles")
@@ -160,7 +160,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_framed_glass")
-                .dyedBlock(dye, QUARK) { ZetaGlassBlock(null, null, true, it) }
+                .dyedBlock(dye) { ZetaGlassBlock(null, null, true, it) }
                 .initialProperties { Blocks.GLASS }
                 .properties { it.strength(3F, 10F) }
                 .optionalTag(DyedTags.Blocks.FRAMED_GLASSES)
@@ -192,7 +192,7 @@ object DyedQuark {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_framed_glass_pane")
-                .dyedBlock(dye, QUARK) {
+                .dyedBlock(dye) {
                     val parent = FRAMED_GLASS[dye]!!.get()
                     ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.ofFullCopy(parent))
                 }.optionalTag(DyedTags.Blocks.FRAMED_GLASS_PANES)

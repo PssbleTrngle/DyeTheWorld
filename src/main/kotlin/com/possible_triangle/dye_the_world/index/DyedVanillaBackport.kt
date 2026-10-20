@@ -25,7 +25,12 @@ import net.minecraft.world.item.component.BundleContents
 import net.minecraft.world.level.block.Blocks
 
 object DyedVanillaBackport {
-    private val REGISTRATE = DyedRegistrate.create(ResourceLocation.DEFAULT_NAMESPACE, migrate = true)
+    private val REGISTRATE =
+        DyedRegistrate.create(
+            ResourceLocation.DEFAULT_NAMESPACE,
+            mod = VANILLA_BACKPORT,
+            migrate = true,
+        )
 
     private val DYES = dyesFor(VANILLA_BACKPORT)
 
@@ -35,7 +40,7 @@ object DyedVanillaBackport {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_harness")
-                .dyedItem(dye, VANILLA_BACKPORT, ::Item)
+                .dyedItem(dye, ::Item)
                 .properties { it.stacksTo(1) }
                 .lang("${dye.translation} Harness")
                 .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
@@ -62,7 +67,7 @@ object DyedVanillaBackport {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_bundle")
-                .dyedItem(dye, VANILLA_BACKPORT, ::BundleItem)
+                .dyedItem(dye, ::BundleItem)
                 .properties { it.stacksTo(1) }
                 .properties { it.component(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY) }
                 .lang("${dye.translation} Bundle")
@@ -111,7 +116,7 @@ object DyedVanillaBackport {
         DYES.associateWith { dye ->
             REGISTRATE
                 .`object`("${dye}_cushion")
-                .dyedItem(dye, VANILLA_BACKPORT) { CushionItem(it, dye) }
+                .dyedItem(dye) { CushionItem(it, dye) }
                 .properties { it.stacksTo(16) }
                 .lang("${dye.translation} Cushion")
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")

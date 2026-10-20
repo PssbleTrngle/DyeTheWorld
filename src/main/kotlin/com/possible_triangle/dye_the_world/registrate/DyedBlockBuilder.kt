@@ -25,7 +25,6 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     private val owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,
-    override val mod: String,
     name: String,
     callback: BuilderCallback,
     factory: NonNullFunction<Properties, T>,
@@ -35,7 +34,6 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     override var migrateFrom: ResourceLocation? = null
 
     init {
-        mod.validateMod()
         doMigration()
     }
 
@@ -59,7 +57,7 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
 
     override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> =
         owner.entry(name) { callback ->
-            DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, mod, name, callback) { properties ->
+            DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, name, callback) { properties ->
                 factory.apply(entry, properties)
             }.apply {
                 setData(ProviderType.LANG, NonNullBiConsumer.noop())

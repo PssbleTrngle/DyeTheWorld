@@ -25,7 +25,7 @@ fun DyedRegistrate.createSlabs(
     stone: Boolean = true,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_slab")
-        .dyedBlock(dye, name.namespace, ::SlabBlock)
+        .dyedBlock(dye, ::SlabBlock)
         .initialProperties(base)
         .also { if (stone) it.optionalTag(BlockTags.MINEABLE_WITH_PICKAXE) }
         .optionalTag(BlockTags.SLABS)
