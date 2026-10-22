@@ -5,7 +5,9 @@ import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
 import com.possible_triangle.dye_the_world.extensions.textureAndParticle
+import com.possible_triangle.dye_the_world.index.DyedTags
 import com.possible_triangle.dye_the_world.registrate.dye
+import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe
 import com.simibubi.create.content.kinetics.deployer.ItemApplicationRecipe
 import com.simibubi.create.foundation.data.BlockStateGen
@@ -49,8 +51,11 @@ fun <T : Item, P> ItemBuilder<T, P>.envelopeShaftItemModel() =
 
 fun <T : Item, P> ItemBuilder<T, P>.envelopeRecipe() =
     recipe { context, provider ->
+        val group = "aeronautics:envelope"
+
         ShapedRecipeBuilder
             .shaped(RecipeCategory.BUILDING_BLOCKS, context.get(), 4)
+            .group(group)
             .pattern("WS")
             .pattern("SW")
             .defineUnlocking('W', dye.blockOf("wool"))
@@ -63,4 +68,8 @@ fun <T : Item, P> ItemBuilder<T, P>.envelopeRecipe() =
             .require(dye.blockOf("wool"))
             .require(Items.STICK)
             .build(provider)
+
+        provider.dyeingRecipe(dye, DyedTags.Items.SHAFTLESS_ENVELOPES, context) {
+            group(group)
+        }
     }
