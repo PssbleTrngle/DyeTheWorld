@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "NeoForge Client",
+      "presentation": {
+        "group": "Mod Development - DyeTheWorld",
+        "order": 0
+      },
+      "projectName": "DyeTheWorld",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003ddye_the_world%%C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "NeoForge Data",
+      "presentation": {
+        "group": "Mod Development - DyeTheWorld",
+        "order": 1
+      },
+      "projectName": "DyeTheWorld",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003ddye_the_world%%C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\data",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "NeoForge Server",
+      "presentation": {
+        "group": "Mod Development - DyeTheWorld",
+        "order": 2
+      },
+      "projectName": "DyeTheWorld",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003ddye_the_world%%C:\\Users\\RJames\\Documents\\github\\DyeTheWorld\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run\\server",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
