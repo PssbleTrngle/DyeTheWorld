@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:aqua_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_cushion",
+      "id": "redomesticate:pet_bed_aqua",
       "required": false
     }
   ]

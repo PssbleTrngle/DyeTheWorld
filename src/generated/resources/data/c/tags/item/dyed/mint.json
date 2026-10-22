@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:mint_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_cushion",
+      "id": "redomesticate:pet_bed_mint",
       "required": false
     }
   ]

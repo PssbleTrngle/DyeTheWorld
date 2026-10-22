@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:tan_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_cushion",
+      "id": "redomesticate:pet_bed_tan",
       "required": false
     }
   ]

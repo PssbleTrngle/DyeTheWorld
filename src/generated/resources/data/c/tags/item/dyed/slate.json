@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:slate_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:slate_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:slate_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:slate_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:slate_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:slate_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:slate_cushion",
+      "id": "redomesticate:pet_bed_slate",
       "required": false
     }
   ]

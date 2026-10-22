@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:coral_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_cushion",
+      "id": "redomesticate:pet_bed_coral",
       "required": false
     }
   ]

@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:beige_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_cushion",
+      "id": "redomesticate:pet_bed_beige",
       "required": false
     }
   ]

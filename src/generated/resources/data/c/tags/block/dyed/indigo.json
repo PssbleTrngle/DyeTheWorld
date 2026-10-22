@@ -1,19 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:indigo_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_stairs",
+      "id": "redomesticate:pet_bed_indigo",
       "required": false
     }
   ]

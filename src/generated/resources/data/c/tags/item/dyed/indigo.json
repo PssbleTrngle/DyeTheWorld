@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:indigo_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_cushion",
+      "id": "redomesticate:pet_bed_indigo",
       "required": false
     }
   ]

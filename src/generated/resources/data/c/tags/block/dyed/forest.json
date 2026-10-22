@@ -1,19 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:forest_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_concrete_stairs",
+      "id": "redomesticate:pet_bed_forest",
       "required": false
     }
   ]

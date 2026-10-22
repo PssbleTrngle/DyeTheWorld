@@ -1,31 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:amber_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:amber_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:amber_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:amber_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:amber_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:amber_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:amber_cushion",
+      "id": "redomesticate:pet_bed_amber",
       "required": false
     }
   ]

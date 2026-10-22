@@ -1,19 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:maroon_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:maroon_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:maroon_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:maroon_concrete_stairs",
+      "id": "redomesticate:pet_bed_maroon",
       "required": false
     }
   ]

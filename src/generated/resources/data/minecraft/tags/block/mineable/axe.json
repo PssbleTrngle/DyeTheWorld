@@ -1,67 +1,67 @@
 {
   "values": [
     {
-      "id": "bits_n_bobs:amber_chair",
+      "id": "redomesticate:pet_bed_amber",
       "required": false
     },
     {
-      "id": "bits_n_bobs:aqua_chair",
+      "id": "redomesticate:pet_bed_aqua",
       "required": false
     },
     {
-      "id": "bits_n_bobs:beige_chair",
+      "id": "redomesticate:pet_bed_beige",
       "required": false
     },
     {
-      "id": "bits_n_bobs:coral_chair",
+      "id": "redomesticate:pet_bed_coral",
       "required": false
     },
     {
-      "id": "bits_n_bobs:forest_chair",
+      "id": "redomesticate:pet_bed_forest",
       "required": false
     },
     {
-      "id": "bits_n_bobs:ginger_chair",
+      "id": "redomesticate:pet_bed_ginger",
       "required": false
     },
     {
-      "id": "bits_n_bobs:indigo_chair",
+      "id": "redomesticate:pet_bed_indigo",
       "required": false
     },
     {
-      "id": "bits_n_bobs:maroon_chair",
+      "id": "redomesticate:pet_bed_maroon",
       "required": false
     },
     {
-      "id": "bits_n_bobs:mint_chair",
+      "id": "redomesticate:pet_bed_mint",
       "required": false
     },
     {
-      "id": "bits_n_bobs:navy_chair",
+      "id": "redomesticate:pet_bed_navy",
       "required": false
     },
     {
-      "id": "bits_n_bobs:olive_chair",
+      "id": "redomesticate:pet_bed_olive",
       "required": false
     },
     {
-      "id": "bits_n_bobs:rose_chair",
+      "id": "redomesticate:pet_bed_rose",
       "required": false
     },
     {
-      "id": "bits_n_bobs:slate_chair",
+      "id": "redomesticate:pet_bed_slate",
       "required": false
     },
     {
-      "id": "bits_n_bobs:tan_chair",
+      "id": "redomesticate:pet_bed_tan",
       "required": false
     },
     {
-      "id": "bits_n_bobs:teal_chair",
+      "id": "redomesticate:pet_bed_teal",
       "required": false
     },
     {
-      "id": "bits_n_bobs:verdant_chair",
+      "id": "redomesticate:pet_bed_verdant",
       "required": false
     }
   ]

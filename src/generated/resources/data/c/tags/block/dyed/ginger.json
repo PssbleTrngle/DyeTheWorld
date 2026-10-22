@@ -1,19 +1,7 @@
 {
   "values": [
     {
-      "id": "minecraft:ginger_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:ginger_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:ginger_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:ginger_concrete_stairs",
+      "id": "redomesticate:pet_bed_ginger",
       "required": false
     }
   ]
