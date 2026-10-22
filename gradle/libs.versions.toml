@@ -16,8 +16,8 @@ sable = { group = "dev.ryanhcode.sable", name = "sable-neoforge-1.21.1", version
 create-simulated = { group = "dev.simulated_team.simulated", name = "simulated-neoforge-1.21.1", version.ref = "create-simulated" }
 create-aeronautics = { group = "dev.eriksonn.aeronautics", name = "aeronautics-neoforge-1.21.1", version.ref = "create-simulated" }
 
-jei = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version = "19.21.0.247" }
+jei = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version = "19.64.0.455" }
 
-dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot-neoforge", version = "1.21.1-2.1.1" }
+dye-depot = { group = "com.possible-triangle", name = "dye_depot-1.21.1-neoforge", version = "2.1.2" }
 
 windswept = { group = "com.rosemods", name = "windswept-1.21.1", version = "4.0.0-SNAPSHOT" }

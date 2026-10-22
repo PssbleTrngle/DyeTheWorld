@@ -39,7 +39,6 @@ repositories {
     nexus {
         content {
             includeGroup("com.possible-triangle")
-            includeGroup("com.ninni.dye_depot")
             includeGroup("com.rosemods")
         }
     }
@@ -48,6 +47,7 @@ repositories {
         url = uri("https://maven.blamejared.com/")
         content {
             includeGroup("mezz.jei")
+            includeGroupAndSubgroups("net.mezzdev")
             includeGroup("foundry.veil")
             includeGroup("gg.moonflower")
             includeGroup("io.github.ocelot")
