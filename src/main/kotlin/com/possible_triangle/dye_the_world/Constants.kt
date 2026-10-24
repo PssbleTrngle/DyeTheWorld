@@ -44,5 +44,6 @@ object Constants {
         const val BITS_N_BOBS = "bits_n_bobs"
         const val NATURALIST = "naturalist"
         const val LABELS = "labels"
+        const val JADENS_NETHER_EXPANSION = "netherexp"
     }
 }

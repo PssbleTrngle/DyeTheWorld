@@ -1,0 +1,13 @@
+name = "Jaden's Nether Expansion"
+filename = "Jadens-Nether-Expansion-2.4.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/v3UlehfS/versions/NactTrv2/Jadens-Nether-Expansion-2.4.1.jar"
+hash-format = "sha512"
+hash = "61a88089177a957999c244decd07683559f1d452552c4fc4fd61cafb721bb85c4752558d57777b2cb0e82719b079178c3c6bd67c509b870c7bb279dce9dfb675"
+
+[update]
+[update.modrinth]
+mod-id = "v3UlehfS"
+version = "NactTrv2"

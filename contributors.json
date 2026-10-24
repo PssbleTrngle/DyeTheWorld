@@ -65,6 +65,11 @@
       "name": "bllryy",
       "description": "storage labels compatibility",
       "github": true
+    },
+    {
+      "name": "maedickens",
+      "description": "stained redstone lamps textures",
+      "github": true
     }
   ]
 }

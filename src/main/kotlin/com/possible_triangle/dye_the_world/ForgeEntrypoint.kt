@@ -79,6 +79,10 @@ object ForgeEntrypoint {
             MOD_BUS.addListener(ChalkCompat::addCreativeTabEntries)
         }
 
+        ifLoaded(Constants.Mods.JADENS_NETHER_EXPANSION) {
+            DyedJaden.register()
+        }
+
         if (DatagenModLoader.isRunningDataGen()) {
             Constants.LOGGER.debug("registering datagen")
 

@@ -96,6 +96,11 @@ hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
 
 [[files]]
+file = "mods/elysium-api.pw.toml"
+hash = "320e38a0bb24767b93473c7d6c969c8ed4e3bf014d7db36a74ad646504ed16ce"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4"
 metafile = true
@@ -131,8 +136,18 @@ hash = "4de3e4a1a49e332c1ad313283e0403c4273b628d634c17a9ff0c9da3d6b67f9a"
 metafile = true
 
 [[files]]
+file = "mods/jadens-nether-expansion.pw.toml"
+hash = "158d6b6f19d486d49b989eca3797078e24c093fc75004c13a4c71e3dbdf9d7f2"
+metafile = true
+
+[[files]]
 file = "mods/labels.pw.toml"
 hash = "457684159486fddf4466a106290ebe2c4a3d32023535312a25f09bfa7f9a8994"
+metafile = true
+
+[[files]]
+file = "mods/lodestonelib.pw.toml"
+hash = "f5d0701055478e980b50849f199f266e6ab1940277a17ad2e5060df0d978be83"
 metafile = true
 
 [[files]]
@@ -237,7 +252,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanillabackport.pw.toml"
-hash = "de7be78e812626e68aa358bdfb7c4fe58ae9768c524cd273c611df0f56020724"
+hash = "0b790184f0eb28fe6592f4b513be31f05a3029304aa8ae9eec9d21a74f7c3259"
 metafile = true
 
 [[files]]
