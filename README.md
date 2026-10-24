@@ -127,7 +127,11 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <sub><small>artist of dye depot</small></sub>
       </td>
       <td align="center" valign="top" width="200">
-        <img src="https://placehold.net/avatar-4.svg" width="100" alt="Lev" />
+        <img
+          src="https://workflows.somethingcatchy.net/avatar.svg"
+          width="100"
+          alt="Lev"
+        />
         <br />
         <a href="https://modrinth.com/user/Lev">
           <img
@@ -172,7 +176,7 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
       </td>
       <td align="center" valign="top" width="200">
         <img
-          src="https://placehold.net/avatar-4.svg"
+          src="https://workflows.somethingcatchy.net/avatar.svg"
           width="100"
           alt="nonbatnary"
         />
