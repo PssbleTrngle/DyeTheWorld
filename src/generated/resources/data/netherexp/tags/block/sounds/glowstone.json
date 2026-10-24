@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "netherexp:amber_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:aqua_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:beige_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:coral_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:forest_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:ginger_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:indigo_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:maroon_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:mint_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:navy_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:olive_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:rose_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:slate_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:tan_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:teal_stained_redstone_lamp",
+      "required": false
+    },
+    {
+      "id": "netherexp:verdant_stained_redstone_lamp",
+      "required": false
+    }
+  ]
+}

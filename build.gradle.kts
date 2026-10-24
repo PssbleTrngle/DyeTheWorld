@@ -158,6 +158,10 @@ dependencies {
     modRuntimeOnly(pack.modrinth.strut.your.stuff)
     modImplementation(pack.modrinth.naturalist)
     modImplementation(pack.modrinth.labels)
+
+    modRuntimeOnly(pack.modrinth.jadens.nether.expansion)
+    modRuntimeOnly(pack.modrinth.elysium.api)
+    modRuntimeOnly(pack.modrinth.lodestonelib)
 }
 
 sourceSets.main {
