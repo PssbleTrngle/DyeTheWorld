@@ -1,0 +1,51 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "https://github.com/${repository}/blob/HEAD/LICENSE.md"
+issueTrackerURL = "https://github.com/${repository}/issues/"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+description = "{mod_description}"
+authors = "${mod_author}"
+
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+versionRange = "[1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId="kotlinforforge"
+versionRange="[5.8.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="dye_depot"
+versionRange="[2.0.0-neoforge,)"
+ordering="AFTER"
+side="BOTH"
+
+{% for compatMod in compatMods %}
+[[dependencies.${mod_id}]]
+modId = "{{ compatMod.id }}"
+type = "optional"
+versionRange = "{{ compatMod.versionRange }}"
+ordering="AFTER"
+side = "BOTH"
+
+{% endfor %}
+
+{% for mixinConfig in mixinConfigs %}
+[[mixins]]
+config = "{{ mixinConfig }}"
+
+{% endfor %}

@@ -10,7 +10,7 @@ import com.possible_triangle.dye_the_world.data.nameplateBlockstate
 import com.possible_triangle.dye_the_world.data.nameplateItemModel
 import com.possible_triangle.dye_the_world.data.portableEngineBlockstate
 import com.possible_triangle.dye_the_world.data.portableEngineItemModel
-import com.possible_triangle.dye_the_world.data.symmetricSailBlockstate
+import com.possible_triangle.dye_the_world.create.data.symmetricSailBlockstate
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.germanLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag

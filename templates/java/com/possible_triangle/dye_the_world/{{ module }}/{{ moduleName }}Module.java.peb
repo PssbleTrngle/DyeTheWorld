@@ -1,0 +1,16 @@
+package com.possible_triangle.dye_the_world.{{ module }};
+
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate;
+
+public class {{ moduleName }}Module {
+
+    public static final String MODULE_ID = "{{ module }}";
+
+    public static final String MOD_ID = "{{ modId }}";
+{% for compatMod in compatMods %}
+
+    public static final String {{ compatMod.id | upper }} = "{{ compatMod.id }}";
+    public static final DyedRegistrate {{ compatMod.registrate }} = DyedRegistrate.create({{ compatMod.id | upper }});
+{% endfor %}
+
+}

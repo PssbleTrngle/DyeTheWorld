@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "create:beige_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:beige_seat",
+      "required": false
+    },
+    {
+      "id": "create:beige_valve_handle",
+      "required": false
+    },
+    {
+      "id": "create:beige_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:beige_postbox",
+      "required": false
+    }
+  ]
+}

@@ -20,7 +20,7 @@ object ForgeEntrypoint {
 
     init {
         Constants.LOGGER.debug("setup")
-        REGISTRATE.register()
+        REGISTRATE.register(MOD_BUS)
 
         ifLoaded(Constants.Mods.ANOTHER_FURNITURE) {
             DyedFurniture.register()

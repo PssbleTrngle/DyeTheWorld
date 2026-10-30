@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create:mint_valve_handle_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_valve_handles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#create:valve_handles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_valve_handles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create:mint_valve_handle_dyeing"
+    ]
+  }
+}

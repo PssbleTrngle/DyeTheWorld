@@ -18,3 +18,5 @@ file("modules").listFiles().forEach {
     include(":${it.name}")
     project(":${it.name}").projectDir = it
 }
+
+include("data")

@@ -27,7 +27,6 @@ sourceSets.main {
         templateSets.configureEach {
             property("module", project.name)
             property("moduleName", project.name.capitalized())
-            property("slug", rootProject.mod.id.map { "$it-${project.name}" })
         }
     }
 }

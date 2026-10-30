@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "create:block/teal_toolbox",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "create:block/teal_toolbox"
+    },
+    "facing=south": {
+      "model": "create:block/teal_toolbox",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "create:block/teal_toolbox",
+      "y": 270
+    }
+  }
+}

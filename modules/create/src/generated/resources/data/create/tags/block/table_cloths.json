@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "create:amber_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:aqua_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:beige_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:coral_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:forest_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:ginger_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:indigo_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:maroon_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:mint_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:navy_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:olive_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:rose_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:slate_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:tan_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:teal_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:verdant_table_cloth",
+      "required": false
+    }
+  ]
+}

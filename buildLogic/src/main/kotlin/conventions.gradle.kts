@@ -1,3 +1,5 @@
+import net.kyori.blossom.BlossomExtension
+
 plugins {
     id("com.possible-triangle.core")
     id("net.kyori.blossom")
@@ -54,4 +56,28 @@ repositories {
 upload.maven {
     nexus()
     githubPackages()
+}
+
+sourceSets.main {
+    configure<BlossomExtension> {
+        resources {
+            templates(rootProject.file("templates/resources"))
+        }
+
+        templateSets.configureEach {
+            property("baseModId", rootProject.mod.id)
+            property("baseModName", rootProject.mod.name)
+            property("modId", mod.id)
+            property("modName", mod.name)
+            properties.put("moduleDependencies", emptyList<String>())
+            properties.put("compatMods", emptyList<String>())
+            properties.put("mixinConfigs", provider {
+                listOfNotNull(
+                    "${rootProject.mod.id.get()}.${project.name}.mixins.json".takeIf {
+                        file("src/main/resources/${it}").exists()
+                    }
+                )
+            })
+        }
+    }
 }
