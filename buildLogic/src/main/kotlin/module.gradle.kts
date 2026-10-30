@@ -1,7 +1,10 @@
+import com.possible_triangle.gradle.CompatModsExtension
+import com.possible_triangle.gradle.modProperties
 import com.possible_triangle.gradle.modifyReleaseMetadata
 import com.possible_triangle.gradle.neoforge.NeoforgeExtension
-import org.gradle.internal.extensions.stdlib.capitalized
+import com.possible_triangle.gradle.camelCase
 import net.kyori.blossom.BlossomExtension
+import net.neoforged.moddevgradle.dsl.NeoForgeExtension
 import org.gradle.kotlin.dsl.configure
 
 plugins {
@@ -18,15 +21,41 @@ configure<NeoforgeExtension> {
     }
 }
 
+val compat = extensions.create<CompatModsExtension>("compat")
+
+if (project.name != "core") {
+    dependencies {
+        add("api", project(":core"))
+        add("runtimeOnly", project(":data"))
+    }
+}
+
 sourceSets.main {
+    resources.srcDir(file("src/dyed/resources"))
+
     configure<BlossomExtension> {
         javaSources {
             templates(rootProject.file("templates/java"))
         }
 
+        kotlinSources {
+            templates(rootProject.file("templates/kotlin"))
+        }
+
         templateSets.configureEach {
             property("module", project.name)
-            property("moduleName", project.name.capitalized())
+            property("moduleName", project.name.camelCase())
+            properties.put("compatMods", provider {
+                compat.modProperties()
+            })
         }
+    }
+}
+
+configure<NeoForgeExtension> {
+    runs.named("data") {
+        programArguments.addAll(provider {
+            compat.mods.flatMap { listOf("--existing-mod", it.id.getOrElse(it.name)) }
+        })
     }
 }

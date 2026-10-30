@@ -1,7 +1,7 @@
 package com.possible_triangle.dye_the_world.create
 
 import com.possible_triangle.dye_the_world.Genus
-import com.possible_triangle.dye_the_world.create.CreateModule.REGISTRATE
+import com.possible_triangle.dye_the_world.create.data.createDyeRecipes
 import com.possible_triangle.dye_the_world.create.data.nixieTubeBlockstate
 import com.possible_triangle.dye_the_world.create.data.postboxBlockstate
 import com.possible_triangle.dye_the_world.create.data.postboxItemModel
@@ -134,4 +134,10 @@ object DyedCreate {
                     postboxRecipe()
                 }.register()
         }
+
+    init {
+        REGISTRATE.createDyeRecipes()
+        // TODO need this to happen during non-data too
+        registerDyes()
+    }
 }

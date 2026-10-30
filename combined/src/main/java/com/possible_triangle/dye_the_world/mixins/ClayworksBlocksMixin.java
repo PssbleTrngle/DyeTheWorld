@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.mixins;
 
-import com.possible_triangle.dye_the_world.index.DyedClayworks;
+import com.possible_triangle.dye_the_world.clayworks.DyedClayworks;
 import com.teamabnormals.clayworks.core.registry.ClayworksBlocks;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;

@@ -4,9 +4,10 @@ plugins {
 }
 
 dependencies {
-    modInclude(libs.registrate)
+    apiInclude(libs.registrate)
 
-    modApi(libs.dye.depot)
+    api(libs.dye.depot)
+    api(pack.modrinth.moonlight)
     // TODO re-check
     // accessTransformers(libs.dye.depot)
 }

@@ -1,0 +1,17 @@
+@file:JvmName("{{ moduleName }}Module")
+
+package com.possible_triangle.dye_the_world.{{ module }}
+
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
+
+const val MODULE_ID = "{{ module }}"
+
+const val MOD_ID = "{{ modId }}"
+{% for compatMod in compatMods %}
+
+const val {{ compatMod.name | upper }} = "{{ compatMod.id }}"
+
+@JvmField
+val {{ compatMod.registrate }} = DyedRegistrate.create({{ compatMod.name | upper }})
+{% endfor %}
+

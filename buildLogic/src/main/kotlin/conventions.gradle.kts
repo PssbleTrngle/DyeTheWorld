@@ -69,7 +69,6 @@ sourceSets.main {
             property("baseModName", rootProject.mod.name)
             property("modId", mod.id)
             property("modName", mod.name)
-            properties.put("moduleDependencies", emptyList<String>())
             properties.put("compatMods", emptyList<String>())
             properties.put("mixinConfigs", provider {
                 listOfNotNull(

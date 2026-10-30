@@ -3,7 +3,7 @@ package com.possible_triangle.dye_the_world.mixins;
 import com.google.common.collect.HashBiMap;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import com.possible_triangle.dye_the_world.compat.ChalkCompat;
+import com.possible_triangle.dye_the_world.chalk.DyedChalk;
 import io.github.mortuusars.chalk.Config;
 import net.minecraft.world.item.DyeColor;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +19,7 @@ public class ChalkConfigMixin {
     )
     private static HashBiMap<DyeColor, Integer> getPotFromDyeColor(int expectedSize, Operation<HashBiMap<DyeColor, Integer>> original) {
         var map = original.call(expectedSize);
-        ChalkCompat.registerColors(map);
+        DyedChalk.registerColors(map);
         return map;
     }
 

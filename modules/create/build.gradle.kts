@@ -1,11 +1,14 @@
-import com.possible_triangle.gradle.setupModule
-
 plugins {
     id("com.possible-triangle.neoforge")
     id("module")
 }
 
-setupModule("create")
+compat.mods {
+    create("create") {
+        versionRange = "[6.0.0,6.1.0)"
+        dataOnly()
+    }
+}
 
 dependencies {
     api(libs.ponder)

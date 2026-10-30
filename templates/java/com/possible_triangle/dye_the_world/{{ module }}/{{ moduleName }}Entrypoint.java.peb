@@ -3,23 +3,26 @@ package com.possible_triangle.dye_the_world.{{ module }};
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModList;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.data.loading.DatagenModLoader;
 
 @Mod({{ moduleName }}Module.MOD_ID)
 public class {{ moduleName }}Entrypoint {
-
-    @SuppressWarnings("unused")
-    private void load(Object module) {
-        // will just load the class
-    }
 
     public {{ moduleName }}Entrypoint(IEventBus modBus) {
         var mods = ModList.get();
 
 {% for compatMod in compatMods %}
-        if (mods.isLoaded({{ moduleName }}Module.{{ compatMod.id | upper }})) {
-            load(Dyed{{ compatMod.id | capitalize }}.INSTANCE);
+        if (mods.isLoaded({{ moduleName }}Module.{{ compatMod.name | upper }})) {
+            modBus.register(Dyed{{ compatMod.file }}.INSTANCE);
+{% if not compatMod.dataOnly %}
+            {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
+{% endif %}
+        }
+{% if compatMod.dataOnly %}
+        if (DatagenModLoader.isRunningDataGen()) {
             {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
         }
+{% endif %}
 {% endfor %}
     }
 

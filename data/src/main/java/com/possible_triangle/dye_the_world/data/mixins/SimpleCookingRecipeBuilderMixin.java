@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.data.mixins;
 
-import com.possible_triangle.dye_the_world.Constants;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
@@ -18,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class SimpleCookingRecipeBuilderMixin {
 
     @Unique
-    private static final ResourceLocation BAKING_ID = ResourceLocation.fromNamespaceAndPath(Constants.Mods.CLAYWORKS, "baking");
+    private static final ResourceLocation BAKING_ID = ResourceLocation.fromNamespaceAndPath("clayworks", "baking");
 
     @Inject(
             method = "determineRecipeCategory(Lnet/minecraft/world/item/crafting/RecipeSerializer;Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/CookingBookCategory;",
