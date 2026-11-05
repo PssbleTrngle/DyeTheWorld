@@ -31,7 +31,7 @@ object DyedAlexsCaves {
                 .germanLang("${dye.germanTranslation(Genus.F)} Radonlampe")
                 .withItem {
                     tab(TOXIC_TAB)
-                    tag(Tags.Items.RADON_LAMPS)
+                    tag(AlexsCavesTags.Items.RADON_LAMPS)
                     recipe { context, provider ->
                         val radonBottle = BuiltInRegistries.ITEM.getOrThrow(ALEXS_CAVES.createId("radon_bottle"))
 
@@ -47,7 +47,7 @@ object DyedAlexsCaves {
                             .unlockedBy("has_glowstone", RegistrateRecipeProvider.has(Blocks.GLOWSTONE))
                             .save(provider)
 
-                        provider.shapedDyeingRecipe(dye, Tags.Items.RADON_LAMPS, context)
+                        provider.shapedDyeingRecipe(dye, AlexsCavesTags.Items.RADON_LAMPS, context)
                     }
                 }.register()
         }

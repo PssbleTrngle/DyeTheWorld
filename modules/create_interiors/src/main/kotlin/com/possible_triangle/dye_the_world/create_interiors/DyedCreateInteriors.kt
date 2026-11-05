@@ -19,11 +19,11 @@ object DyedCreateInteriors {
                 .dyedBlock(dye, ::DummyChairBlock)
                 .lang("${dye.translation} Chair")
                 .germanLang("${dye.germanTranslation(Genus.M)} Stuhl")
-                .tag(Tags.Blocks.CHAIRS)
+                .tag(CreateInteriorsTags.Blocks.CHAIRS)
                 .tag(BlockTags.MINEABLE_WITH_AXE)
                 .chairBlockstate()
                 .withItem {
-                    tag(Tags.Items.CHAIRS)
+                    tag(CreateInteriorsTags.Items.CHAIRS)
                     chairItemModel()
                     chairRecipe()
                 }.register()
@@ -34,11 +34,11 @@ object DyedCreateInteriors {
             `object`("${dye}_floor_chair")
                 .dyedBlock(dye, ::DummyChairBlock)
                 .lang("${dye.translation} Floor Chair")
-                .tag(Tags.Blocks.FLOOR_CHAIRS)
+                .tag(CreateInteriorsTags.Blocks.FLOOR_CHAIRS)
                 .tag(BlockTags.MINEABLE_WITH_AXE)
                 .chairBlockstate()
                 .withItem {
-                    tag(Tags.Items.FLOOR_CHAIRS)
+                    tag(CreateInteriorsTags.Items.FLOOR_CHAIRS)
                     chairItemModel()
                     chairRecipe()
                 }.register()
@@ -52,8 +52,6 @@ object DyedCreateInteriors {
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
                 .tag(BlockTags.WOOL)
                 .tag(BlockTags.MINEABLE_WITH_AXE)
-                // TODO should not be needed
-                // .tag(Tags.Blocks.MINEABLE_KNIFE)
                 .blockstate { c, p ->
                     val texture = CREATE.createId("block/seat/top_$dye")
                     p.simpleBlock(c.get(), p.models().cubeAll(c.name, texture))

@@ -99,8 +99,3 @@ private fun <T : Block> DyeColor.signItem(wallSigns: Map<DyeColor, NonNullSuppli
             wallSigns[this]!!.get(),
         )
     }
-
-// TODO move to core module
-private val DARK_BACKGROUNDS = listOf("indigo", "ginger", "maroon", "navy", "rose", "teal", "verdant")
-
-val DyeColor.isDarkBackground get() = DARK_BACKGROUNDS.contains(serializedName)

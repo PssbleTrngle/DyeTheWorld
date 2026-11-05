@@ -3,7 +3,7 @@ package com.possible_triangle.dye_the_world.create_interiors.data
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.create.CREATE
 import com.possible_triangle.dye_the_world.create_interiors.CREATE_INTERIORS
-import com.possible_triangle.dye_the_world.create_interiors.Tags
+import com.possible_triangle.dye_the_world.create_interiors.CreateInteriorsTags
 import com.possible_triangle.dye_the_world.create_interiors.world.block.DummyChairBlock
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.dye
@@ -64,7 +64,7 @@ fun <T : Item, P> ItemBuilder<T, P>.chairRecipe() =
             .save(provider)
 
         if (floor) {
-            provider.dyeingRecipe(dye, Tags.Items.FLOOR_CHAIRS, context)
+            provider.dyeingRecipe(dye, CreateInteriorsTags.Items.FLOOR_CHAIRS, context)
         } else {
             val floor = BuiltInRegistries.BLOCK.getOrThrow(context.id.withPath { it.replace("_chair", "_floor_chair") })
 
@@ -75,7 +75,7 @@ fun <T : Item, P> ItemBuilder<T, P>.chairRecipe() =
                 .unlockedBy(dye.blockOf("wool"))
                 .save(provider, provider.safeId(context.get()).withSuffix("_from_floor_chair"))
 
-            provider.dyeingRecipe(dye, Tags.Items.CHAIRS, context)
+            provider.dyeingRecipe(dye, CreateInteriorsTags.Items.CHAIRS, context)
         }
     }
 

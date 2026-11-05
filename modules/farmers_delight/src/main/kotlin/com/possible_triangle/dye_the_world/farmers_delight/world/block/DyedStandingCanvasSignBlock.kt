@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.farmers_delight.world.block
 
-import com.possible_triangle.dye_the_world.farmers_delight.isDarkBackground
+import com.possible_triangle.dye_the_world.isDarkBackground
 import net.minecraft.world.item.DyeColor
 import vectorwing.farmersdelight.common.block.StandingCanvasSignBlock
 

@@ -21,7 +21,7 @@ object DyedSimulated {
                 .dyedBlock(dye, ::RotatedPillarBlock)
                 .lang("${dye.translation} Symmetric Sail")
                 .germanLang("${dye.germanTranslation(Genus.I)} Symmetrisches Segel")
-                .tag(Tags.Blocks.SYMMETRIC_SAILS)
+                .tag(AeronauticsTags.Blocks.SYMMETRIC_SAILS)
                 .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
                 .symmetricSailBlockstate()
                 .register()
@@ -46,11 +46,11 @@ object DyedSimulated {
                 .dyedBlock(dye, DummyBlock.of(AXIS_ALONG_FIRST_COORDINATE, BlockStateProperties.FACING))
                 .lang("${dye.translation} Handle")
                 .germanLang("${dye.germanTranslation(Genus.M)} Griff")
-                .tag(Tags.Blocks.HANDLES)
+                .tag(AeronauticsTags.Blocks.HANDLES)
                 .handleBlockstate()
                 .withItem {
                     handleItemModel()
-                    tag(Tags.Items.HANDLES)
+                    tag(AeronauticsTags.Items.HANDLES)
                     recipe { context, provider ->
                         provider.dyeingRecipe(dye, SimBlocks.IRON_HANDLE, context)
                     }
@@ -63,14 +63,14 @@ object DyedSimulated {
                 .dyedBlock(dye, DummyBlock.of(NAMEPLATE_POSITION, BlockStateProperties.HORIZONTAL_FACING))
                 .lang("${dye.translation} Nameplate")
                 .germanLang("${dye.germanTranslation(Genus.I)} Namensschild")
-                .tag(Tags.Blocks.NAMEPLATES)
+                .tag(AeronauticsTags.Blocks.NAMEPLATES)
                 .tag(BlockTags.MINEABLE_WITH_AXE)
                 .nameplateBlockstate()
                 .withItem {
                     nameplateItemModel()
-                    tag(Tags.Items.NAMEPLATES)
+                    tag(AeronauticsTags.Items.NAMEPLATES)
                     recipe { context, provider ->
-                        provider.dyeingRecipe(dye, Tags.Items.NAMEPLATES, context)
+                        provider.dyeingRecipe(dye, AeronauticsTags.Items.NAMEPLATES, context)
                     }
                 }.register()
         }

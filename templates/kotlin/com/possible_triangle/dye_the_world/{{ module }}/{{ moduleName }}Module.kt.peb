@@ -16,7 +16,7 @@ const val {{ compatMod.name | upper }} = "{{ compatMod.id }}"
 val {{ compatMod.registrate }} = DyedRegistrate.create(
     namespace = "{{ compatMod.namespace }}",
     mod = {{ compatMod.name | upper }},
-    migrate = false,
+    migrate = true,
 )
 {% endif %}
 {% endfor %}

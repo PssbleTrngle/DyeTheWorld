@@ -25,8 +25,6 @@ enum class CompatType {
     RESOURCES_ONLY,
 }
 
-// TODO migrate?
-
 interface CompatMod : Named {
     val versionRange: Property<String>
     val type: Property<CompatType>

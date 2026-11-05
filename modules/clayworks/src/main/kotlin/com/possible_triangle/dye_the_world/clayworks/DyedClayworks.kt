@@ -191,8 +191,6 @@ object DyedClayworks {
                 .lang("${dye.translation} Stained Glass Door")
                 .glassDoorBlockstate()
                 .glassDoorLoot()
-                // TODO should not be needed because of #doors tag??
-                // .tag(DyedTags.Blocks.BRITTLE)
                 .tag(BlockTags.DOORS)
                 .withItem {
                     glassDoorRecipes()

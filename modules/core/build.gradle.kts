@@ -8,6 +8,4 @@ dependencies {
 
     api(libs.dye.depot)
     api(pack.modrinth.moonlight)
-    // TODO re-check
-    // accessTransformers(libs.dye.depot)
 }

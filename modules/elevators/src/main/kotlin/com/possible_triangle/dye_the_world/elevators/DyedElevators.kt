@@ -18,11 +18,11 @@ object DyedElevators {
         REGISTRATE.dyed { dye ->
             `object`("elevator_$dye")
                 .dyedBlock(dye, ::Block)
-                .tag(Tags.BLOCK)
+                .tag(ElevatorsTags.BLOCK)
                 .lang("${dye.translation} Elevator")
                 .germanLang("${dye.germanTranslation(Genus.M)} Aufzug")
                 .withItem {
-                    tag(Tags.ITEM)
+                    tag(ElevatorsTags.ITEM)
                     recipe { context, provider ->
                         ShapedRecipeBuilder
                             .shaped(RecipeCategory.MISC, context.get())
@@ -33,7 +33,7 @@ object DyedElevators {
                             .defineUnlocking('E', Items.ENDER_PEARL)
                             .save(provider)
 
-                        provider.dyeingRecipe(dye, Tags.ITEM, context)
+                        provider.dyeingRecipe(dye, ElevatorsTags.ITEM, context)
                     }
                 }.register()
         }

@@ -90,4 +90,8 @@ val DyeColor?.isVanilla get() = this == null || id < 16
 
 private val dyes = DyeColor.entries.associateWith { NonNullSupplier.lazy { it.itemOf("dye") } }
 
-val DyeColor.item get() = dyes.getValue(this).get()
+val DyeColor.item: Item get() = dyes.getValue(this).get()
+
+private val DARK_BACKGROUNDS = listOf("indigo", "ginger", "maroon", "navy", "rose", "teal", "verdant")
+
+val DyeColor.isDarkBackground get() = DARK_BACKGROUNDS.contains(serializedName)

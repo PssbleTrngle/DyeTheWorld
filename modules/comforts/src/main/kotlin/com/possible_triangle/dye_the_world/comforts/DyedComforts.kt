@@ -29,7 +29,9 @@ object DyedComforts {
                 .dyedBlock(dye) { SleepingBagBlock(dye) }
                 .lang("${dye.translation} Sleeping Bag")
                 .germanLang("${dye.germanTranslation(Genus.M)} Schlafsack")
+                .tag(ComfortsTags.Blocks.SLEEPING_BAGS)
                 .withItem {
+                    tag(ComfortsTags.Items.SLEEPING_BAGS)
                     sleepingBagRecipe()
                 }.clothTransforms()
                 .register()
@@ -41,7 +43,9 @@ object DyedComforts {
                 .dyedBlock(dye) { HammockBlock(dye) }
                 .lang("${dye.translation} Hammock")
                 .germanLang("${dye.germanTranslation(Genus.M)} Hängemattenstoff")
+                .tag(ComfortsTags.Blocks.HAMMOCKS)
                 .withItem {
+                    tag(ComfortsTags.Items.HAMMOCKS)
                     hammockRecipe()
                 }.clothTransforms()
                 .register()
@@ -87,8 +91,7 @@ private fun <T : Item, P> ItemBuilder<T, P>.hammockRecipe() =
             .group("comforts:sleeping_bags")
             .save(provider)
 
-        // TODO I don't think these are actually tagged?
-        provider.dyeingRecipe(dye, DyedTags.ITEMS.create(COMFORTS, "hammocks"), context) {
+        provider.dyeingRecipe(dye, ComfortsTags.Items.HAMMOCKS, context) {
             group("comforts:hammock_dyed")
         }
     }
@@ -104,7 +107,7 @@ private fun <T : Item, P> ItemBuilder<T, P>.sleepingBagRecipe() =
             .group("comforts:hammocks")
             .save(provider)
 
-        provider.dyeingRecipe(dye, DyedTags.ITEMS.create(COMFORTS, "sleeping_bags"), context) {
+        provider.dyeingRecipe(dye, ComfortsTags.Items.SLEEPING_BAGS, context) {
             group("comforts:sleeping_bags_dyed")
         }
     }
