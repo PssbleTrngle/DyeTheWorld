@@ -23,11 +23,11 @@ object DyedConnectedGlass {
     ) = REGISTRATE.dyed { dye ->
         `object`("${type}_glass_${dye}_pane")
             .dyedBlock(dye) { IronBarsBlock(it) }
-            .optionalTag(Tags.Blocks.GLASS_PANES)
+            .tag(Tags.Blocks.GLASS_PANES)
             .connectedPaneBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }
             .withItem {
-                optionalTag(Tags.Items.GLASS_PANES)
+                tag(Tags.Items.GLASS_PANES)
                 connectedPaneItemModel(type)
                 recipe { context, provider ->
                     ShapedRecipeBuilder
@@ -47,11 +47,11 @@ object DyedConnectedGlass {
     ) = REGISTRATE.dyed { dye ->
         `object`("${type}_glass_$dye")
             .dyedBlock(dye)
-            .optionalTag(Tags.Blocks.GLASS_BLOCKS)
+            .tag(Tags.Blocks.GLASS_BLOCKS)
             .connectedGlassBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }
             .withItem {
-                optionalTag(Tags.Items.GLASS_BLOCKS)
+                tag(Tags.Items.GLASS_BLOCKS)
             }.apply(block)
             .register()
     }

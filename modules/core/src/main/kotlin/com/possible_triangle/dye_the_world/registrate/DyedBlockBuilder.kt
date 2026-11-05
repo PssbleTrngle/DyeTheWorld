@@ -2,15 +2,10 @@ package com.possible_triangle.dye_the_world.registrate
 
 import com.possible_triangle.dye_the_world.DyedTags
 import com.possible_triangle.dye_the_world.extensions.doMigration
-import com.possible_triangle.dye_the_world.extensions.optionalTag
-import com.possible_triangle.dye_the_world.withNamespace
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.BuilderCallback
 import com.tterrag.registrate.builders.ItemBuilder
-import com.tterrag.registrate.providers.DataGenContext
 import com.tterrag.registrate.providers.ProviderType
-import com.tterrag.registrate.providers.RegistrateRecipeProvider
-import com.tterrag.registrate.providers.loot.RegistrateBlockLootTables
 import com.tterrag.registrate.util.nullness.NonNullBiConsumer
 import com.tterrag.registrate.util.nullness.NonNullBiFunction
 import com.tterrag.registrate.util.nullness.NonNullFunction
@@ -37,24 +32,6 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
         doMigration()
     }
 
-    override fun recipe(cons: NonNullBiConsumer<DataGenContext<Block, T>, RegistrateRecipeProvider>) =
-        apply {
-            super.recipe { context, provider ->
-                provider.withNamespace(mod) {
-                    cons.accept(context, provider)
-                }
-            }
-        }
-
-    override fun loot(cons: NonNullBiConsumer<RegistrateBlockLootTables, T>) =
-        apply {
-            super.loot { provider, value ->
-                provider.withNamespace(mod) {
-                    cons.accept(provider, value)
-                }
-            }
-        }
-
     override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> =
         owner.entry(name) { callback ->
             DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, name, callback) { properties ->
@@ -70,6 +47,6 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
         }
 
     fun tagDyed() {
-        optionalTag(DyedTags.BLOCKS.loader("dyed/$dye"))
+        tag(DyedTags.BLOCKS.loader("dyed/$dye"))
     }
 }

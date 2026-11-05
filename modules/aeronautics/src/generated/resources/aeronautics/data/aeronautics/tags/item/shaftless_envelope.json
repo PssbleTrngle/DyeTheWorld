@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "aeronautics:amber_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:aqua_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:beige_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:coral_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:forest_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:ginger_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:indigo_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:maroon_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:mint_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:navy_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:olive_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:rose_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:slate_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:tan_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:teal_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:verdant_envelope",
-      "required": false
-    }
+    "aeronautics:amber_envelope",
+    "aeronautics:aqua_envelope",
+    "aeronautics:beige_envelope",
+    "aeronautics:coral_envelope",
+    "aeronautics:forest_envelope",
+    "aeronautics:ginger_envelope",
+    "aeronautics:indigo_envelope",
+    "aeronautics:maroon_envelope",
+    "aeronautics:mint_envelope",
+    "aeronautics:navy_envelope",
+    "aeronautics:olive_envelope",
+    "aeronautics:rose_envelope",
+    "aeronautics:slate_envelope",
+    "aeronautics:tan_envelope",
+    "aeronautics:teal_envelope",
+    "aeronautics:verdant_envelope"
   ]
 }

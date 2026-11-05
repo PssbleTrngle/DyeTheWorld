@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "minecraft:beige_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_concrete_stairs",
-      "required": false
-    }
+    "minecraft:beige_wool_stairs",
+    "minecraft:beige_wool_slab",
+    "minecraft:beige_concrete_slab",
+    "minecraft:beige_concrete_stairs"
   ]
 }

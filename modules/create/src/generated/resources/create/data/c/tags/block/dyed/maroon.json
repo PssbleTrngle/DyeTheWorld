@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "create:maroon_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:maroon_toolbox",
-      "required": false
-    },
-    {
-      "id": "create:maroon_seat",
-      "required": false
-    },
-    {
-      "id": "create:maroon_sail",
-      "required": false
-    },
-    {
-      "id": "create:maroon_valve_handle",
-      "required": false
-    },
-    {
-      "id": "create:maroon_table_cloth",
-      "required": false
-    },
-    {
-      "id": "create:maroon_postbox",
-      "required": false
-    }
+    "create:maroon_nixie_tube",
+    "create:maroon_toolbox",
+    "create:maroon_seat",
+    "create:maroon_sail",
+    "create:maroon_valve_handle",
+    "create:maroon_table_cloth",
+    "create:maroon_postbox"
   ]
 }

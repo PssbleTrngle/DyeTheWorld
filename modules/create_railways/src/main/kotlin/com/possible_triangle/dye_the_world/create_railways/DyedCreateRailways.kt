@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world.create_railways
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.data.registerExistingFile
 import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.namespace
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.translation
@@ -33,7 +32,7 @@ object DyedCreateRailways {
             `object`("${dye}_conductor_cap")
                 .dyedItem(dye, ::Item)
                 .lang("${dye.translation} Conductor's Cap")
-                .optionalTag(RailwaysTags.Items.CONDUCTOR_CAPS)
+                .tag(RailwaysTags.Items.CONDUCTOR_CAPS)
                 .model { context, provider ->
                     provider
                         .withExistingParent(context.name, CREATE_RAILWAYS.createId("item/conductor_cap"))

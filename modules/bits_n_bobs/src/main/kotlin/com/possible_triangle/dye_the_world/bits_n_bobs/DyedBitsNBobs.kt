@@ -13,7 +13,6 @@ import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.germanTranslation
@@ -31,11 +30,11 @@ object DyedBitsNBobs {
                 .dyedBlock(dye) { ChairBlock(it, dye) }
                 .lang("${dye.translation} Chair")
                 .germanLang("${dye.germanTranslation(Genus.M)} Stuhl")
-                .optionalTag(BnbBlockTags.CHAIRS.tag)
-                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .tag(BnbBlockTags.CHAIRS.tag)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
                 .blockstate(ChairBlockStateGen.dyedChair(dye.serializedName))
                 .withItem {
-                    optionalTag(BnbTags.BnbItemTags.CHAIRS.tag)
+                    tag(BnbTags.BnbItemTags.CHAIRS.tag)
                     model { c, p ->
                         p
                             .withExistingParent(c.name, BITS_N_BOBS.createId("block/chair/item"))
@@ -58,8 +57,8 @@ object DyedBitsNBobs {
                 .dyedBlock(dye) { NixieBoardBlockNixie(it, dye) }
                 .lang("${dye.translation} Nixie Board")
                 .germanLang("${dye.germanTranslation(Genus.I)} Nixie-Board")
-                .optionalTag(BnbBlockTags.NIXIE_BOARDS.tag)
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BnbBlockTags.NIXIE_BOARDS.tag)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .blockstate(NixieBoardBlockStateGen::nixieBoard)
                 .loot { p, b -> p.dropOther(b, BnbTrinketBlocks.NIXIE_BOARD) }
                 .register()
@@ -71,8 +70,8 @@ object DyedBitsNBobs {
                 .dyedBlock(dye) { LargeNixieTubeBlockNixie(it, dye) }
                 .lang("${dye.translation} Large Nixie Tube")
                 .germanLang("${dye.germanTranslation(Genus.F)} große Nixie-Röhre")
-                .optionalTag(BnbBlockTags.NIXIE_BOARDS.tag)
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BnbBlockTags.NIXIE_BOARDS.tag)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .blockstate(LargeNixieTubeBlockStateGen::nixieTube)
                 .loot { p, b -> p.dropOther(b, BnbTrinketBlocks.LARGE_NIXIE_TUBE) }
                 .register()

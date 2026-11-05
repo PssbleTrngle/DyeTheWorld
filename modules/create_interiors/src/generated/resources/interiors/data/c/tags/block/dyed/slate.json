@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:slate_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:slate_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:slate_cushion",
-      "required": false
-    }
+    "interiors:slate_chair",
+    "interiors:slate_floor_chair",
+    "interiors:slate_cushion"
   ]
 }

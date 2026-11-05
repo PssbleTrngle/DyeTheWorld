@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_amber",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_amber",
-      "required": false
-    }
+    "supplementaries:bunting_amber",
+    "supplementaries:awning_amber"
   ]
 }

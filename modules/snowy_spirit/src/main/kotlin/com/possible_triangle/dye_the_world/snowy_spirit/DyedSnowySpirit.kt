@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.snowy_spirit
 
 import com.possible_triangle.dye_the_world.extensions.noLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.snowy_spirit.data.glowLightsBlockstate
 import com.possible_triangle.dye_the_world.snowy_spirit.data.glowLightsRecipe
@@ -20,7 +19,7 @@ object DyedSnowySpirit {
             `object`("glow_lights_$dye")
                 .dyedBlock(dye) { GlowLightsBlock(dye) }
                 .glowLightsBlockstate()
-                .optionalTag(SnowySpiritTags.Blocks.GLOW_LIGHTS)
+                .tag(SnowySpiritTags.Blocks.GLOW_LIGHTS)
                 .lang("${dye.translation} Glow Lights")
                 .register()
         }
@@ -33,7 +32,7 @@ object DyedSnowySpirit {
                 .tab(CreativeModeTabs.COLORED_BLOCKS)
                 .tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
                 .glowLightsRecipe()
-                .optionalTag(SnowySpiritTags.Items.GLOW_LIGHTS)
+                .tag(SnowySpiritTags.Items.GLOW_LIGHTS)
                 .register()
         }
 
@@ -43,11 +42,11 @@ object DyedSnowySpirit {
                 .dyedBlock(dye) { GumdropButton(it, dye) }
                 .lang("${dye.translation} Gumdrop")
                 .gumdropBlockstate()
-                .optionalTag(SnowySpiritTags.Blocks.GUMDROPS)
+                .tag(SnowySpiritTags.Blocks.GUMDROPS)
                 .withItem {
                     tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
-                    optionalTag(SnowySpiritTags.Items.GUMDROPS)
+                    tag(SnowySpiritTags.Items.GUMDROPS)
                     gumdropModel()
                     gumdropRecipe()
                 }.register()

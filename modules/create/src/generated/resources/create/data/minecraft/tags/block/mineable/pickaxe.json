@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "create:amber_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:aqua_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:beige_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:coral_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:forest_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:ginger_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:indigo_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:maroon_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:mint_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:navy_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:olive_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:rose_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:slate_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:tan_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:teal_nixie_tube",
-      "required": false
-    },
-    {
-      "id": "create:verdant_nixie_tube",
-      "required": false
-    }
+    "create:amber_nixie_tube",
+    "create:aqua_nixie_tube",
+    "create:beige_nixie_tube",
+    "create:coral_nixie_tube",
+    "create:forest_nixie_tube",
+    "create:ginger_nixie_tube",
+    "create:indigo_nixie_tube",
+    "create:maroon_nixie_tube",
+    "create:mint_nixie_tube",
+    "create:navy_nixie_tube",
+    "create:olive_nixie_tube",
+    "create:rose_nixie_tube",
+    "create:slate_nixie_tube",
+    "create:tan_nixie_tube",
+    "create:teal_nixie_tube",
+    "create:verdant_nixie_tube"
   ]
 }

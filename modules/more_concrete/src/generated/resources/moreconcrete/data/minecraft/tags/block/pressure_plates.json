@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "moreconcrete:amber_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:aqua_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:beige_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:coral_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:forest_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:ginger_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:mint_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:navy_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:olive_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:rose_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:slate_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:tan_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:teal_concrete_pressure_plate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:verdant_concrete_pressure_plate",
-      "required": false
-    }
+    "moreconcrete:amber_concrete_pressure_plate",
+    "moreconcrete:aqua_concrete_pressure_plate",
+    "moreconcrete:beige_concrete_pressure_plate",
+    "moreconcrete:coral_concrete_pressure_plate",
+    "moreconcrete:forest_concrete_pressure_plate",
+    "moreconcrete:ginger_concrete_pressure_plate",
+    "moreconcrete:indigo_concrete_pressure_plate",
+    "moreconcrete:maroon_concrete_pressure_plate",
+    "moreconcrete:mint_concrete_pressure_plate",
+    "moreconcrete:navy_concrete_pressure_plate",
+    "moreconcrete:olive_concrete_pressure_plate",
+    "moreconcrete:rose_concrete_pressure_plate",
+    "moreconcrete:slate_concrete_pressure_plate",
+    "moreconcrete:tan_concrete_pressure_plate",
+    "moreconcrete:teal_concrete_pressure_plate",
+    "moreconcrete:verdant_concrete_pressure_plate"
   ]
 }

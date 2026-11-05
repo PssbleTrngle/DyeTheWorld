@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_olive",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_olive",
-      "required": false
-    }
+    "supplementaries:bunting_olive",
+    "supplementaries:awning_olive"
   ]
 }

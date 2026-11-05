@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:rose_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:rose_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:rose_cushion",
-      "required": false
-    }
+    "interiors:rose_chair",
+    "interiors:rose_floor_chair",
+    "interiors:rose_cushion"
   ]
 }

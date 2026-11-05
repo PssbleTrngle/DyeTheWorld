@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "minecraft:tan_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_concrete_stairs",
-      "required": false
-    }
+    "minecraft:tan_wool_stairs",
+    "minecraft:tan_wool_slab",
+    "minecraft:tan_concrete_slab",
+    "minecraft:tan_concrete_stairs"
   ]
 }

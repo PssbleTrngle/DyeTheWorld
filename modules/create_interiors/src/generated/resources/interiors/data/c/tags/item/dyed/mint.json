@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:mint_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:mint_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:mint_cushion",
-      "required": false
-    }
+    "interiors:mint_chair",
+    "interiors:mint_floor_chair",
+    "interiors:mint_cushion"
   ]
 }

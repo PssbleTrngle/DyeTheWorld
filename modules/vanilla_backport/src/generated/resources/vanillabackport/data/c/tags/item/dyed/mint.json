@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "minecraft:mint_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_cushion",
-      "required": false
-    }
+    "minecraft:mint_harness",
+    "minecraft:mint_bundle",
+    "minecraft:mint_wool_stairs",
+    "minecraft:mint_wool_slab",
+    "minecraft:mint_concrete_slab",
+    "minecraft:mint_concrete_stairs",
+    "minecraft:mint_cushion"
   ]
 }

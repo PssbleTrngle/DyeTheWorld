@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:maroon_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:maroon_hanging_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:maroon_canvas_sign",
+    "farmersdelight:maroon_hanging_canvas_sign"
   ]
 }

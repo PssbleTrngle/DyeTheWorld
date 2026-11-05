@@ -32,7 +32,7 @@ object DyedQuark {
                 .dyedItem(dye, ::Item)
                 .optionalTab(CreativeModeTabs.INGREDIENTS) {
                     flagEnabled("glass_shard")
-                }.optionalTag(QuarkTags.Items.GLASS_SHARDS)
+                }.tag(QuarkTags.Items.GLASS_SHARDS)
                 .recipe { context, provider ->
                     val glass = dye.itemOf("stained_glass")
                     provider.withConditions(flagCondition("glass_shard")) {
@@ -55,7 +55,7 @@ object DyedQuark {
             `object`("${dye}_stool")
                 .dyedBlock(dye) { StoolBlock(null, dye) }
                 .migrate(name = "${dye}_quark_stool")
-                .optionalTag(QuarkTags.Blocks.QUARK_STOOLS)
+                .tag(QuarkTags.Blocks.QUARK_STOOLS)
                 .stoolBlockstate()
                 .lang("${dye.translation} Stool")
                 .withItem {
@@ -71,7 +71,7 @@ object DyedQuark {
             `object`("${dye}_shingles")
                 .dyedBlock(dye, ::Block)
                 .initialProperties { dye.blockOf("terracotta") }
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("${dye.translation} Terracotta Shingles")
                 .germanLang("${dye.germanTranslation(Genus.F)} Schindeln")
                 .withItem {
@@ -128,11 +128,11 @@ object DyedQuark {
                 .dyedBlock(dye) { ZetaGlassBlock(null, null, true, it) }
                 .initialProperties { Blocks.GLASS }
                 .properties { it.strength(3F, 10F) }
-                .optionalTag(QuarkTags.Blocks.FRAMED_GLASSES)
-                .optionalTag(BlockTags.IMPERMEABLE)
-                .optionalTag(BlockTags.NEEDS_STONE_TOOL)
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .optionalTag(Tags.Blocks.GLASS_BLOCKS)
+                .tag(QuarkTags.Blocks.FRAMED_GLASSES)
+                .tag(BlockTags.IMPERMEABLE)
+                .tag(BlockTags.NEEDS_STONE_TOOL)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(Tags.Blocks.GLASS_BLOCKS)
                 .blockstate { c, p ->
                     p.simpleBlock(
                         c.get(),
@@ -147,7 +147,7 @@ object DyedQuark {
                     optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
                         flagEnabled("framed_glass")
                     }
-                    optionalTag(Tags.Items.GLASS_BLOCKS)
+                    tag(Tags.Items.GLASS_BLOCKS)
                     model { c, p -> p.blockItem(c).translucent() }
                     framedGlassRecipes()
                 }.register()
@@ -159,10 +159,10 @@ object DyedQuark {
                 .dyedBlock(dye) {
                     val parent = FRAMED_GLASS[dye]!!.get()
                     ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.ofFullCopy(parent))
-                }.optionalTag(QuarkTags.Blocks.FRAMED_GLASS_PANES)
-                .optionalTag(BlockTags.NEEDS_STONE_TOOL)
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .optionalTag(Tags.Blocks.GLASS_PANES)
+                }.tag(QuarkTags.Blocks.FRAMED_GLASS_PANES)
+                .tag(BlockTags.NEEDS_STONE_TOOL)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(Tags.Blocks.GLASS_PANES)
                 .blockstate { c, p ->
                     val full = FRAMED_GLASS[dye]!!.get()
                     p.paneBlockWithRenderType(
@@ -178,7 +178,7 @@ object DyedQuark {
                         val full = FRAMED_GLASS[dye]!!.get()
                         p.generated(c, full.texture).translucent()
                     }
-                    optionalTag(Tags.Items.GLASS_PANES)
+                    tag(Tags.Items.GLASS_PANES)
                     optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
                         flagEnabled("framed_glass")
                     }

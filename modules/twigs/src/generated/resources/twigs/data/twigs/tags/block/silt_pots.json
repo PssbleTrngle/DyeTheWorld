@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "twigs:amber_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:aqua_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:beige_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:coral_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:forest_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:ginger_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:indigo_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:maroon_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:mint_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:navy_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:olive_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:rose_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:slate_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:tan_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:teal_silt_pot",
-      "required": false
-    },
-    {
-      "id": "twigs:verdant_silt_pot",
-      "required": false
-    }
+    "twigs:amber_silt_pot",
+    "twigs:aqua_silt_pot",
+    "twigs:beige_silt_pot",
+    "twigs:coral_silt_pot",
+    "twigs:forest_silt_pot",
+    "twigs:ginger_silt_pot",
+    "twigs:indigo_silt_pot",
+    "twigs:maroon_silt_pot",
+    "twigs:mint_silt_pot",
+    "twigs:navy_silt_pot",
+    "twigs:olive_silt_pot",
+    "twigs:rose_silt_pot",
+    "twigs:slate_silt_pot",
+    "twigs:tan_silt_pot",
+    "twigs:teal_silt_pot",
+    "twigs:verdant_silt_pot"
   ]
 }

@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:navy_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:navy_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:navy_cushion",
-      "required": false
-    }
+    "interiors:navy_chair",
+    "interiors:navy_floor_chair",
+    "interiors:navy_cushion"
   ]
 }

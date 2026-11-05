@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "alexscaves:radon_lamp_aqua",
-      "required": false
-    }
+    "alexscaves:radon_lamp_aqua"
   ]
 }

@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "redomesticate:pet_bed_aqua",
-      "required": false
-    }
+    "redomesticate:pet_bed_aqua"
   ]
 }

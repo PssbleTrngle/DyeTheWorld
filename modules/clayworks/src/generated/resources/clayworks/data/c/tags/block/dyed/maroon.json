@@ -1,48 +1,15 @@
 {
   "values": [
-    {
-      "id": "clayworks:maroon_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_brick_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_brick_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:chiseled_maroon_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_decorated_pot",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_stained_glass_trapdoor",
-      "required": false
-    }
+    "clayworks:maroon_terracotta_bricks",
+    "clayworks:maroon_terracotta_brick_slab",
+    "clayworks:maroon_terracotta_brick_stairs",
+    "clayworks:maroon_terracotta_brick_wall",
+    "clayworks:chiseled_maroon_terracotta_bricks",
+    "clayworks:maroon_terracotta_slab",
+    "clayworks:maroon_terracotta_stairs",
+    "clayworks:maroon_terracotta_wall",
+    "clayworks:maroon_decorated_pot",
+    "clayworks:maroon_stained_glass_door",
+    "clayworks:maroon_stained_glass_trapdoor"
   ]
 }

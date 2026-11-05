@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:navy_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:navy_hanging_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:navy_canvas_sign",
+    "farmersdelight:navy_hanging_canvas_sign"
   ]
 }

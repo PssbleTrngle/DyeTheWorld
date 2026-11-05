@@ -27,9 +27,9 @@ object DyedWaystones {
                 .dyedBlock(dye) { PortstoneBlock(dye, it) }
                 .lang("${dye.translation} Portstone")
                 .germanLang("${dye.germanTranslation(Genus.M)} Portstein")
-                .optionalTag(ModBlockTags.PORTSTONES)
-                .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(ModBlockTags.PORTSTONES)
+                .tag(ModBlockTags.IS_TELEPORT_TARGET)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .blockstate { context, provider ->
                     val upper = provider.models().getExistingFile(WAYSTONES.createId("block/portstone_top"))
                     val bottom = provider.models().getExistingFile(WAYSTONES.createId("block/portstone_bottom"))
@@ -82,13 +82,13 @@ object DyedWaystones {
                         "tooltip.$WAYSTONES.${dye}_sharestone",
                         "Teleportiere zu jedem anderen ${dye.germanTranslation(Genus.M)} Teilstein",
                     )
-                }.optionalTag(ModBlockTags.SHARESTONES)
-                .optionalTag(ModBlockTags.IS_TELEPORT_TARGET)
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                }.tag(ModBlockTags.SHARESTONES)
+                .tag(ModBlockTags.IS_TELEPORT_TARGET)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .waystoneLoot()
                 .waystoneBlockstate("sharestone")
                 .withItem {
-                    optionalTag(ModItemTags.SHARESTONES)
+                    tag(ModItemTags.SHARESTONES)
                     recipe { c, p ->
                         ShapedRecipeBuilder
                             .shaped(RecipeCategory.MISC, c.get())

@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "another_furniture:indigo_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_lamp_connector",
-      "required": false
-    }
+    "another_furniture:indigo_sofa",
+    "another_furniture:indigo_stool",
+    "another_furniture:indigo_tall_stool",
+    "another_furniture:indigo_curtain",
+    "another_furniture:indigo_lamp",
+    "another_furniture:indigo_lamp_connector"
   ]
 }

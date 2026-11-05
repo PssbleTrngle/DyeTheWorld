@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "simulated:olive_symmetric_sail",
-      "required": false
-    },
-    {
-      "id": "simulated:olive_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:olive_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:olive_nameplate",
-      "required": false
-    }
+    "simulated:olive_symmetric_sail",
+    "simulated:olive_portable_engine",
+    "simulated:olive_handle",
+    "simulated:olive_nameplate"
   ]
 }

@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "minecraft:coral_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_cushion",
-      "required": false
-    }
+    "minecraft:coral_harness",
+    "minecraft:coral_bundle",
+    "minecraft:coral_wool_stairs",
+    "minecraft:coral_wool_slab",
+    "minecraft:coral_concrete_slab",
+    "minecraft:coral_concrete_stairs",
+    "minecraft:coral_cushion"
   ]
 }

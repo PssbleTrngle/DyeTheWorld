@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "createdeco:maroon_shipping_container",
-      "required": false
-    },
-    {
-      "id": "createdeco:maroon_placard",
-      "required": false
-    }
+    "createdeco:maroon_shipping_container",
+    "createdeco:maroon_placard"
   ]
 }

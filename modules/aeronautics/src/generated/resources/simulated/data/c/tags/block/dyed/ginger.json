@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "simulated:ginger_symmetric_sail",
-      "required": false
-    },
-    {
-      "id": "simulated:ginger_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:ginger_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:ginger_nameplate",
-      "required": false
-    }
+    "simulated:ginger_symmetric_sail",
+    "simulated:ginger_portable_engine",
+    "simulated:ginger_handle",
+    "simulated:ginger_nameplate"
   ]
 }

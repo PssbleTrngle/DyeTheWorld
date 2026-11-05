@@ -41,7 +41,7 @@ object DyedVanillaBackport {
                 .properties { it.stacksTo(1) }
                 .lang("${dye.translation} Harness")
                 .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
-                .optionalTag(ModItemTags.HARNESSES)
+                .tag(ModItemTags.HARNESSES)
                 .recipe { context, provider ->
                     provider.dyeingRecipe(dye, ModItemTags.HARNESSES, context) {
                         group("harness_dye")
@@ -71,7 +71,7 @@ object DyedVanillaBackport {
                 .properties { it.component(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY) }
                 .lang("${dye.translation} Bundle")
                 .germanLang("${dye.germanTranslation(Genus.I)} Bündel")
-                .optionalTag(ModItemTags.BUNDLES)
+                .tag(ModItemTags.BUNDLES)
                 .model { c, p ->
                     p.generated(c, VANILLA_BACKPORT.createId("item/bundle/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
@@ -87,11 +87,11 @@ object DyedVanillaBackport {
             VANILLA_BACKPORT.createId("wool"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Wolltreppe")
-                optionalTag(ModBlockTags.WOOL_STAIRS)
+                tag(ModBlockTags.WOOL_STAIRS)
             },
             modifyItem = {
                 tab(TAB)
-                optionalTag(ModItemTags.WOOL_STAIRS)
+                tag(ModItemTags.WOOL_STAIRS)
                 addMiscData(ProviderType.RECIPE) { provider ->
                     provider.dyeingRecipe(dye, ModItemTags.WOOL_STAIRS, ::getEntry) {
                         group("wool_stairs")
@@ -107,11 +107,11 @@ object DyedVanillaBackport {
             VANILLA_BACKPORT.createId("wool"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Wollestufe")
-                optionalTag(ModBlockTags.WOOL_SLABS)
+                tag(ModBlockTags.WOOL_SLABS)
             },
             modifyItem = {
                 tab(TAB)
-                optionalTag(ModItemTags.WOOL_SLABS)
+                tag(ModItemTags.WOOL_SLABS)
                 addMiscData(ProviderType.RECIPE) { provider ->
                     provider.dyeingRecipe(dye, ModItemTags.WOOL_SLABS, ::getEntry) {
                         group("wool_slabs")
@@ -129,11 +129,11 @@ object DyedVanillaBackport {
             DEFAULT_NAMESPACE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
-                optionalTag(VanillaTags.Blocks.CONCRETE_SLABS)
+                tag(VanillaTags.Blocks.CONCRETE_SLABS)
                 noMigrate()
             },
             modifyItem = {
-                optionalTag(VanillaTags.Items.CONCRETE_SLABS)
+                tag(VanillaTags.Items.CONCRETE_SLABS)
                 tab(TAB)
             },
         )
@@ -144,11 +144,11 @@ object DyedVanillaBackport {
             DEFAULT_NAMESPACE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
-                optionalTag(VanillaTags.Blocks.CONCRETE_STAIRS)
+                tag(VanillaTags.Blocks.CONCRETE_STAIRS)
                 noMigrate()
             },
             modifyItem = {
-                optionalTag(VanillaTags.Items.CONCRETE_STAIRS)
+                tag(VanillaTags.Items.CONCRETE_STAIRS)
                 tab(TAB)
             },
         )
@@ -160,7 +160,7 @@ object DyedVanillaBackport {
                 .properties { it.stacksTo(16) }
                 .lang("${dye.translation} Cushion")
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
-                .optionalTag(ModItemTags.CUSHIONS)
+                .tag(ModItemTags.CUSHIONS)
                 .model { context, provider ->
                     provider.generated(context, VANILLA_BACKPORT.createId("item/cushion/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)

@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "minecraft:ginger_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:ginger_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:ginger_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:ginger_concrete_stairs",
-      "required": false
-    }
+    "minecraft:ginger_wool_stairs",
+    "minecraft:ginger_wool_slab",
+    "minecraft:ginger_concrete_slab",
+    "minecraft:ginger_concrete_stairs"
   ]
 }

@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "snowyspirit:glow_lights_indigo",
-      "required": false
-    },
-    {
-      "id": "snowyspirit:gumdrop_indigo",
-      "required": false
-    }
+    "snowyspirit:glow_lights_indigo",
+    "snowyspirit:gumdrop_indigo"
   ]
 }

@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "spelunkery:verdant_glowstick",
-      "required": false
-    }
+    "spelunkery:verdant_glowstick"
   ]
 }

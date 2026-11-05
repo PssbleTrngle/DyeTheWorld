@@ -32,7 +32,7 @@ object DyedSleepTight {
                 .lang("${dye.translation} Hammock")
                 .germanLang("${dye.germanTranslation(Genus.F)} Hängematte")
                 .particleOnly()
-                .optionalTag(SleepTightTags.Blocks.HAMMOCKS)
+                .tag(SleepTightTags.Blocks.HAMMOCKS)
                 .loot { provider, block ->
                     val table =
                         LootTable
@@ -53,7 +53,7 @@ object DyedSleepTight {
                     provider.add(block, table)
                 }.withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
-                    optionalTag(SleepTightTags.Items.HAMMOCKS)
+                    tag(SleepTightTags.Items.HAMMOCKS)
                     recipe { c, p ->
                         p.dyeingRecipe(
                             dye,

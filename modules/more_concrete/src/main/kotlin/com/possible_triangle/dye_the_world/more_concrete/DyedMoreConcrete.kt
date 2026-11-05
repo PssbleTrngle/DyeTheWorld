@@ -5,7 +5,6 @@ import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.dyedBlockMap
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.more_concrete.data.createButtons
 import com.possible_triangle.dye_the_world.more_concrete.data.createLevers
@@ -20,7 +19,7 @@ object DyedMoreConcrete {
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
             },
         )
@@ -30,7 +29,7 @@ object DyedMoreConcrete {
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
             },
         )
@@ -40,7 +39,7 @@ object DyedMoreConcrete {
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 germanLang("${dye.germanTranslation(Genus.F)} Betonmauer")
             },
         )
@@ -51,7 +50,7 @@ object DyedMoreConcrete {
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.M)} Betonzaun")
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
         )
 
@@ -61,7 +60,7 @@ object DyedMoreConcrete {
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.M)} Betonzauntor")
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
         )
 
@@ -71,7 +70,7 @@ object DyedMoreConcrete {
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.M)} Betonknopf")
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
         )
 
@@ -81,7 +80,7 @@ object DyedMoreConcrete {
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.M)} Betonhebel")
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
         )
 
@@ -91,7 +90,7 @@ object DyedMoreConcrete {
             MORE_CONCRETE.createId("concrete"),
             modifyBlock = { dye ->
                 germanLang("${dye.germanTranslation(Genus.M)} Betondruckplatte")
-                optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
         )
 }

@@ -1,20 +1,6 @@
 {
   "values": [
-    {
-      "id": "comforts:sleeping_bag_aqua",
-      "required": false
-    },
-    {
-      "id": "comforts:sleeping_bag_aqua",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_aqua",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_aqua",
-      "required": false
-    }
+    "comforts:sleeping_bag_aqua",
+    "comforts:hammock_aqua"
   ]
 }

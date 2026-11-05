@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:olive_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:olive_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:olive_cushion",
-      "required": false
-    }
+    "interiors:olive_chair",
+    "interiors:olive_floor_chair",
+    "interiors:olive_cushion"
   ]
 }

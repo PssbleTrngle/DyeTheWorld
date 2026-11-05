@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "minecraft:aqua_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_concrete_stairs",
-      "required": false
-    }
+    "minecraft:aqua_wool_stairs",
+    "minecraft:aqua_wool_slab",
+    "minecraft:aqua_concrete_slab",
+    "minecraft:aqua_concrete_stairs"
   ]
 }

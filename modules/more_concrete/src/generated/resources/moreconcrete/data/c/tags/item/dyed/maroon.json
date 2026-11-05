@@ -1,36 +1,12 @@
 {
   "values": [
-    {
-      "id": "moreconcrete:maroon_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_fence",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_fence_gate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_button",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_lever",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:maroon_concrete_pressure_plate",
-      "required": false
-    }
+    "moreconcrete:maroon_concrete_slab",
+    "moreconcrete:maroon_concrete_stairs",
+    "moreconcrete:maroon_concrete_wall",
+    "moreconcrete:maroon_concrete_fence",
+    "moreconcrete:maroon_concrete_fence_gate",
+    "moreconcrete:maroon_concrete_button",
+    "moreconcrete:maroon_concrete_lever",
+    "moreconcrete:maroon_concrete_pressure_plate"
   ]
 }

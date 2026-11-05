@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:tan_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:tan_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:tan_cushion",
-      "required": false
-    }
+    "interiors:tan_chair",
+    "interiors:tan_floor_chair",
+    "interiors:tan_cushion"
   ]
 }

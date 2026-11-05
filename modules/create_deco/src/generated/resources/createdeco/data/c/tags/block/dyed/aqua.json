@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "createdeco:aqua_shipping_container",
-      "required": false
-    },
-    {
-      "id": "createdeco:aqua_placard",
-      "required": false
-    }
+    "createdeco:aqua_shipping_container",
+    "createdeco:aqua_placard"
   ]
 }

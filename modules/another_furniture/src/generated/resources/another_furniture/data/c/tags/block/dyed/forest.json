@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "another_furniture:forest_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_lamp_connector",
-      "required": false
-    }
+    "another_furniture:forest_sofa",
+    "another_furniture:forest_stool",
+    "another_furniture:forest_tall_stool",
+    "another_furniture:forest_curtain",
+    "another_furniture:forest_lamp",
+    "another_furniture:forest_lamp_connector"
   ]
 }

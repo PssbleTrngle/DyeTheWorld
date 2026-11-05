@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "simulated:mint_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:mint_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:mint_nameplate",
-      "required": false
-    }
+    "simulated:mint_portable_engine",
+    "simulated:mint_handle",
+    "simulated:mint_nameplate"
   ]
 }

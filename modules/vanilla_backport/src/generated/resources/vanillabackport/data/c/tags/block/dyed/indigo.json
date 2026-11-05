@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "minecraft:indigo_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_stairs",
-      "required": false
-    }
+    "minecraft:indigo_wool_stairs",
+    "minecraft:indigo_wool_slab",
+    "minecraft:indigo_concrete_slab",
+    "minecraft:indigo_concrete_stairs"
   ]
 }

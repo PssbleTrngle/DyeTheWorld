@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "suppsquared:sack_maroon",
-      "required": false
-    }
+    "suppsquared:sack_maroon"
   ]
 }

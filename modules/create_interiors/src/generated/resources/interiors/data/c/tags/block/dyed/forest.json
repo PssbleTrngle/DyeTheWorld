@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:forest_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:forest_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:forest_cushion",
-      "required": false
-    }
+    "interiors:forest_chair",
+    "interiors:forest_floor_chair",
+    "interiors:forest_cushion"
   ]
 }

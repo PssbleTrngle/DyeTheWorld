@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "another_furniture:slate_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_lamp_connector",
-      "required": false
-    }
+    "another_furniture:slate_sofa",
+    "another_furniture:slate_stool",
+    "another_furniture:slate_tall_stool",
+    "another_furniture:slate_curtain",
+    "another_furniture:slate_lamp",
+    "another_furniture:slate_lamp_connector"
   ]
 }

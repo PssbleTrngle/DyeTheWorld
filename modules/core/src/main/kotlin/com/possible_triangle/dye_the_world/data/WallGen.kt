@@ -24,8 +24,8 @@ fun DyedRegistrate.createWalls(
     `object`("${dye}_${name.path}_wall")
         .dyedBlock(dye, ::WallBlock)
         .initialProperties(base)
-        .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-        .optionalTag(BlockTags.WALLS)
+        .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        .tag(BlockTags.WALLS)
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.wallBlock(c.get(), texture)
@@ -34,7 +34,7 @@ fun DyedRegistrate.createWalls(
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
-            optionalTag(ItemTags.WALLS)
+            tag(ItemTags.WALLS)
             recipe { c, p -> p.wall(base.asIngredient(), RecipeCategory.BUILDING_BLOCKS, c) }
             noModel()
             modifyItem(dye)

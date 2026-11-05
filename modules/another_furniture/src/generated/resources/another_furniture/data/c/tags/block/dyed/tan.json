@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "another_furniture:tan_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_lamp_connector",
-      "required": false
-    }
+    "another_furniture:tan_sofa",
+    "another_furniture:tan_stool",
+    "another_furniture:tan_tall_stool",
+    "another_furniture:tan_curtain",
+    "another_furniture:tan_lamp",
+    "another_furniture:tan_lamp_connector"
   ]
 }

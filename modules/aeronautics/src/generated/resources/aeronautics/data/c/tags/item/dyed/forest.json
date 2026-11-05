@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "aeronautics:forest_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:forest_envelope_encased_shaft",
-      "required": false
-    }
+    "aeronautics:forest_envelope",
+    "aeronautics:forest_envelope_encased_shaft"
   ]
 }

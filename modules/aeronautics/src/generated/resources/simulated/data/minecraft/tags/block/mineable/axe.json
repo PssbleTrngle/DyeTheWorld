@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "simulated:amber_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:aqua_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:beige_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:coral_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:forest_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:ginger_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:indigo_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:maroon_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:mint_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:navy_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:olive_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:rose_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:slate_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:tan_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:teal_nameplate",
-      "required": false
-    },
-    {
-      "id": "simulated:verdant_nameplate",
-      "required": false
-    }
+    "simulated:amber_nameplate",
+    "simulated:aqua_nameplate",
+    "simulated:beige_nameplate",
+    "simulated:coral_nameplate",
+    "simulated:forest_nameplate",
+    "simulated:ginger_nameplate",
+    "simulated:indigo_nameplate",
+    "simulated:maroon_nameplate",
+    "simulated:mint_nameplate",
+    "simulated:navy_nameplate",
+    "simulated:olive_nameplate",
+    "simulated:rose_nameplate",
+    "simulated:slate_nameplate",
+    "simulated:tan_nameplate",
+    "simulated:teal_nameplate",
+    "simulated:verdant_nameplate"
   ]
 }

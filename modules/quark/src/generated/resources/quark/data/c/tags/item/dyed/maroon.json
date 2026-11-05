@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:maroon_shard",
-      "required": false
-    },
-    {
-      "id": "quark:maroon_stool",
-      "required": false
-    },
-    {
-      "id": "quark:maroon_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:maroon_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:maroon_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:maroon_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:maroon_framed_glass_pane",
-      "required": false
-    }
+    "quark:maroon_shard",
+    "quark:maroon_stool",
+    "quark:maroon_shingles",
+    "quark:maroon_shingles_slab",
+    "quark:maroon_shingles_stairs",
+    "quark:maroon_framed_glass",
+    "quark:maroon_framed_glass_pane"
   ]
 }

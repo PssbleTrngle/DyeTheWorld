@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_beige",
-      "required": false
-    },
-    {
-      "id": "supplementaries:bunting_wall_beige",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_beige",
-      "required": false
-    }
+    "supplementaries:bunting_beige",
+    "supplementaries:bunting_wall_beige",
+    "supplementaries:awning_beige"
   ]
 }

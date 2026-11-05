@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:olive_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:olive_hanging_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:olive_canvas_sign",
+    "farmersdelight:olive_hanging_canvas_sign"
   ]
 }

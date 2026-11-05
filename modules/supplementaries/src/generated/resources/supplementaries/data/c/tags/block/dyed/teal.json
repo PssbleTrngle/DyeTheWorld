@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_teal",
-      "required": false
-    },
-    {
-      "id": "supplementaries:bunting_wall_teal",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_teal",
-      "required": false
-    }
+    "supplementaries:bunting_teal",
+    "supplementaries:bunting_wall_teal",
+    "supplementaries:awning_teal"
   ]
 }

@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "simulated:beige_symmetric_sail",
-      "required": false
-    },
-    {
-      "id": "simulated:beige_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:beige_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:beige_nameplate",
-      "required": false
-    }
+    "simulated:beige_symmetric_sail",
+    "simulated:beige_portable_engine",
+    "simulated:beige_handle",
+    "simulated:beige_nameplate"
   ]
 }

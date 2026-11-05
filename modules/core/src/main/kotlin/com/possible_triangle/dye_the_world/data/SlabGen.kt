@@ -27,8 +27,8 @@ fun DyedRegistrate.createSlabs(
     `object`("${dye}_${name.path}_slab")
         .dyedBlock(dye, ::SlabBlock)
         .initialProperties(base)
-        .also { if (stone) it.optionalTag(BlockTags.MINEABLE_WITH_PICKAXE) }
-        .optionalTag(BlockTags.SLABS)
+        .also { if (stone) it.tag(BlockTags.MINEABLE_WITH_PICKAXE) }
+        .tag(BlockTags.SLABS)
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             val doubleModel = BuiltInRegistries.BLOCK.getKey(base.get()).withPrefix("block/")
@@ -39,7 +39,7 @@ fun DyedRegistrate.createSlabs(
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
-            optionalTag(ItemTags.SLABS)
+            tag(ItemTags.SLABS)
             recipe { c, p -> p.slab(base.asIngredient(), BUILDING_BLOCKS, c, null, stone) }
             modifyItem(dye)
         }.register()

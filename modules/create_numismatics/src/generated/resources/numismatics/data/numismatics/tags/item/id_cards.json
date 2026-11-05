@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "numismatics:amber_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:aqua_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:beige_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:coral_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:forest_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:ginger_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:indigo_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:maroon_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:mint_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:navy_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:olive_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:rose_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:slate_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:tan_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:teal_id_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:verdant_id_card",
-      "required": false
-    }
+    "numismatics:amber_id_card",
+    "numismatics:aqua_id_card",
+    "numismatics:beige_id_card",
+    "numismatics:coral_id_card",
+    "numismatics:forest_id_card",
+    "numismatics:ginger_id_card",
+    "numismatics:indigo_id_card",
+    "numismatics:maroon_id_card",
+    "numismatics:mint_id_card",
+    "numismatics:navy_id_card",
+    "numismatics:olive_id_card",
+    "numismatics:rose_id_card",
+    "numismatics:slate_id_card",
+    "numismatics:tan_id_card",
+    "numismatics:teal_id_card",
+    "numismatics:verdant_id_card"
   ]
 }

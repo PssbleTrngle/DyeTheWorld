@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:slate_shard",
-      "required": false
-    },
-    {
-      "id": "quark:slate_stool",
-      "required": false
-    },
-    {
-      "id": "quark:slate_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:slate_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:slate_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:slate_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:slate_framed_glass_pane",
-      "required": false
-    }
+    "quark:slate_shard",
+    "quark:slate_stool",
+    "quark:slate_shingles",
+    "quark:slate_shingles_slab",
+    "quark:slate_shingles_stairs",
+    "quark:slate_framed_glass",
+    "quark:slate_framed_glass_pane"
   ]
 }

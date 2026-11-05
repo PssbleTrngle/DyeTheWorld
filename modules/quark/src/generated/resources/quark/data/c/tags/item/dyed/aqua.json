@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:aqua_shard",
-      "required": false
-    },
-    {
-      "id": "quark:aqua_stool",
-      "required": false
-    },
-    {
-      "id": "quark:aqua_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:aqua_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:aqua_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:aqua_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:aqua_framed_glass_pane",
-      "required": false
-    }
+    "quark:aqua_shard",
+    "quark:aqua_stool",
+    "quark:aqua_shingles",
+    "quark:aqua_shingles_slab",
+    "quark:aqua_shingles_stairs",
+    "quark:aqua_framed_glass",
+    "quark:aqua_framed_glass_pane"
   ]
 }

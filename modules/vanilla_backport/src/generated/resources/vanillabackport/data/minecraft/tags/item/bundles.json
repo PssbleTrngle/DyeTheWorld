@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "minecraft:amber_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:aqua_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:beige_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:coral_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:ginger_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:maroon_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:mint_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:navy_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:olive_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:rose_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:slate_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:teal_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:verdant_bundle",
-      "required": false
-    }
+    "minecraft:amber_bundle",
+    "minecraft:aqua_bundle",
+    "minecraft:beige_bundle",
+    "minecraft:coral_bundle",
+    "minecraft:forest_bundle",
+    "minecraft:ginger_bundle",
+    "minecraft:indigo_bundle",
+    "minecraft:maroon_bundle",
+    "minecraft:mint_bundle",
+    "minecraft:navy_bundle",
+    "minecraft:olive_bundle",
+    "minecraft:rose_bundle",
+    "minecraft:slate_bundle",
+    "minecraft:tan_bundle",
+    "minecraft:teal_bundle",
+    "minecraft:verdant_bundle"
   ]
 }

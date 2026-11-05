@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "spelunkery:teal_glowstick",
-      "required": false
-    }
+    "spelunkery:teal_glowstick"
   ]
 }

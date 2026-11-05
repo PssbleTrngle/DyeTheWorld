@@ -11,7 +11,6 @@ import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.data.createWalls
 import com.possible_triangle.dye_the_world.existingBlockEntity
 import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
@@ -28,10 +27,10 @@ object DyedTwigs {
                 .initialProperties(NonNullSupplier(TwigsBlocks.SILT_SHINGLES::get))
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Silt Shingles")
-                .optionalTag(TwigsTags.PACKED_SILT_BLOCK)
+                .tag(TwigsTags.PACKED_SILT_BLOCK)
                 .withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
-                    optionalTag(TwigsTags.PACKED_SILT_ITEM)
+                    tag(TwigsTags.PACKED_SILT_ITEM)
                     recipe { c, p ->
                         p.shapedDyeingRecipe(dye, TwigsItems.SILT_SHINGLES.get(), c)
                     }
@@ -42,24 +41,24 @@ object DyedTwigs {
         REGISTRATE.createSlabs(
             SILT_SHINGLES,
             TWIGS.createId("silt_shingle"),
-            modifyBlock = { optionalTag(TwigsTags.PACKED_SILT_BLOCK) },
-            modifyItem = { optionalTag(TwigsTags.PACKED_SILT_ITEM) },
+            modifyBlock = { tag(TwigsTags.PACKED_SILT_BLOCK) },
+            modifyItem = { tag(TwigsTags.PACKED_SILT_ITEM) },
         )
 
     val SILT_SHINGLES_STAIRS =
         REGISTRATE.createStairs(
             SILT_SHINGLES,
             TWIGS.createId("silt_shingle"),
-            modifyBlock = { optionalTag(TwigsTags.PACKED_SILT_BLOCK) },
-            modifyItem = { optionalTag(TwigsTags.PACKED_SILT_ITEM) },
+            modifyBlock = { tag(TwigsTags.PACKED_SILT_BLOCK) },
+            modifyItem = { tag(TwigsTags.PACKED_SILT_ITEM) },
         )
 
     val SILT_SHINGLES_WALL =
         REGISTRATE.createWalls(
             SILT_SHINGLES,
             TWIGS.createId("silt_shingle"),
-            modifyBlock = { optionalTag(TwigsTags.PACKED_SILT_BLOCK) },
-            modifyItem = { optionalTag(TwigsTags.PACKED_SILT_ITEM) },
+            modifyBlock = { tag(TwigsTags.PACKED_SILT_BLOCK) },
+            modifyItem = { tag(TwigsTags.PACKED_SILT_ITEM) },
         )
 
     val PACKED_SILT =
@@ -69,10 +68,10 @@ object DyedTwigs {
                 .initialProperties(NonNullSupplier(TwigsBlocks.PACKED_SILT::get))
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Packed Silt")
-                .optionalTag(TwigsTags.PACKED_SILT_BLOCK)
+                .tag(TwigsTags.PACKED_SILT_BLOCK)
                 .withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
-                    optionalTag(TwigsTags.PACKED_SILT_ITEM)
+                    tag(TwigsTags.PACKED_SILT_ITEM)
                     recipe { c, p ->
                         p.shapedDyeingRecipe(dye, TwigsBlocks.PACKED_SILT.get(), c)
                     }
@@ -87,11 +86,11 @@ object DyedTwigs {
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Silt Pot")
                 .siltPotBlockstate()
-                .optionalTag(TwigsTags.SILT_POTS_BLOCK)
+                .tag(TwigsTags.SILT_POTS_BLOCK)
                 .existingBlockEntity { TwigsBlockEntityType.SILT_POT.get() }
                 .withItem {
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
-                    optionalTag(TwigsTags.SILT_POTS_ITEM)
+                    tag(TwigsTags.SILT_POTS_ITEM)
                     recipe { c, p ->
                         p.dyeingRecipe(dye, TwigsBlocks.SILT_POT.get(), c)
                     }

@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "createdeco:olive_shipping_container",
-      "required": false
-    },
-    {
-      "id": "createdeco:olive_placard",
-      "required": false
-    }
+    "createdeco:olive_shipping_container",
+    "createdeco:olive_placard"
   ]
 }

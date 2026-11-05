@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "waystones:forest_portstone",
-      "required": false
-    },
-    {
-      "id": "waystones:forest_sharestone",
-      "required": false
-    }
+    "waystones:forest_portstone",
+    "waystones:forest_sharestone"
   ]
 }

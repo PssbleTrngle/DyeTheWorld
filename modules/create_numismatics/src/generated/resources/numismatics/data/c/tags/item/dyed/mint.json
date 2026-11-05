@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "numismatics:mint_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:mint_id_card",
-      "required": false
-    }
+    "numismatics:mint_card",
+    "numismatics:mint_id_card"
   ]
 }

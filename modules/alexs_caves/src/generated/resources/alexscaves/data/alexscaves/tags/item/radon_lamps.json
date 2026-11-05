@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "alexscaves:radon_lamp_amber",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_aqua",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_beige",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_coral",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_forest",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_ginger",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_indigo",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_maroon",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_mint",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_navy",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_olive",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_rose",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_slate",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_tan",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_teal",
-      "required": false
-    },
-    {
-      "id": "alexscaves:radon_lamp_verdant",
-      "required": false
-    }
+    "alexscaves:radon_lamp_amber",
+    "alexscaves:radon_lamp_aqua",
+    "alexscaves:radon_lamp_beige",
+    "alexscaves:radon_lamp_coral",
+    "alexscaves:radon_lamp_forest",
+    "alexscaves:radon_lamp_ginger",
+    "alexscaves:radon_lamp_indigo",
+    "alexscaves:radon_lamp_maroon",
+    "alexscaves:radon_lamp_mint",
+    "alexscaves:radon_lamp_navy",
+    "alexscaves:radon_lamp_olive",
+    "alexscaves:radon_lamp_rose",
+    "alexscaves:radon_lamp_slate",
+    "alexscaves:radon_lamp_tan",
+    "alexscaves:radon_lamp_teal",
+    "alexscaves:radon_lamp_verdant"
   ]
 }

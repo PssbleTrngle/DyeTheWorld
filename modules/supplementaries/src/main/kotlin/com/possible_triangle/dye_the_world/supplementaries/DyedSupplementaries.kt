@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.supplementaries
 
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.supplementaries.data.*
 import com.possible_triangle.dye_the_world.translation
@@ -17,9 +16,9 @@ object DyedSupplementaries {
                 .dyedBlock(dye) { BuntingCeilingBlock(dye, it) }
                 .lang("${dye.translation} Bunting")
                 .buntingBlockState()
-                .optionalTag(SupplementariesTags.Blocks.BUNTINGS)
+                .tag(SupplementariesTags.Blocks.BUNTINGS)
                 .withItem {
-                    optionalTag(SupplementariesTags.Items.BUNTINGS)
+                    tag(SupplementariesTags.Items.BUNTINGS)
                     dyedBuntingItemModel()
                     dyedBuntingRecipe()
                 }.register()
@@ -31,7 +30,7 @@ object DyedSupplementaries {
                 .dyedBlock(dye) { BuntingWallBlock(dye, it) }
                 .lang("${dye.translation} Bunting")
                 .wallBuntingBlockState()
-                .optionalTag(SupplementariesTags.Blocks.BUNTINGS)
+                .tag(SupplementariesTags.Blocks.BUNTINGS)
                 .register()
         }
 
@@ -40,11 +39,11 @@ object DyedSupplementaries {
             `object`("awning_$dye")
                 .dyedBlock(dye) { AwningBlock(dye, it) }
                 .lang("${dye.translation} Awning")
-                .optionalTag(SupplementariesTags.Blocks.BOUNCY_BLOCKS)
-                .optionalTag(SupplementariesTags.Blocks.AWNINGS)
+                .tag(SupplementariesTags.Blocks.BOUNCY_BLOCKS)
+                .tag(SupplementariesTags.Blocks.AWNINGS)
                 .awningBlockstate()
                 .withItem {
-                    optionalTag(SupplementariesTags.Items.AWNINGS)
+                    tag(SupplementariesTags.Items.AWNINGS)
                     awningItemModel()
                     awningRecipe()
                 }.register()

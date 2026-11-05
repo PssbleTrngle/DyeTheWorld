@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_forest",
-      "required": false
-    },
-    {
-      "id": "supplementaries:bunting_wall_forest",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_forest",
-      "required": false
-    }
+    "supplementaries:bunting_forest",
+    "supplementaries:bunting_wall_forest",
+    "supplementaries:awning_forest"
   ]
 }

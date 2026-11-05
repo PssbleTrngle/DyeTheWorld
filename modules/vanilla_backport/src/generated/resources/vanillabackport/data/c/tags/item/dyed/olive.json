@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "minecraft:olive_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:olive_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:olive_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:olive_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:olive_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:olive_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:olive_cushion",
-      "required": false
-    }
+    "minecraft:olive_harness",
+    "minecraft:olive_bundle",
+    "minecraft:olive_wool_stairs",
+    "minecraft:olive_wool_slab",
+    "minecraft:olive_concrete_slab",
+    "minecraft:olive_concrete_stairs",
+    "minecraft:olive_cushion"
   ]
 }

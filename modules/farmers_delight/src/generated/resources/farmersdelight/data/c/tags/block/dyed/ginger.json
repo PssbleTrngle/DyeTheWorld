@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:ginger_canvas_wall_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:ginger_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:ginger_wall_hanging_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:ginger_hanging_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:ginger_canvas_wall_sign",
+    "farmersdelight:ginger_canvas_sign",
+    "farmersdelight:ginger_wall_hanging_canvas_sign",
+    "farmersdelight:ginger_hanging_canvas_sign"
   ]
 }

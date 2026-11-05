@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "suppsquared:sack_forest",
-      "required": false
-    }
+    "suppsquared:sack_forest"
   ]
 }

@@ -6,7 +6,6 @@ import com.possible_triangle.dye_the_world.aeronautics.data.envelopeRecipe
 import com.possible_triangle.dye_the_world.aeronautics.data.envelopeShaftBlockstate
 import com.possible_triangle.dye_the_world.aeronautics.data.envelopeShaftItemModel
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.translation
@@ -20,13 +19,13 @@ object DyedAeronautics {
                 .dyedBlock(dye)
                 .lang("${dye.translation} Hot Air Envelope")
                 .germanLang("${dye.germanTranslation(Genus.F)} Heißluftballonhülle")
-                .optionalTag(Tags.Blocks.ENVELOPES)
-                .optionalTag(Tags.Blocks.AIRTIGHT)
-                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .tag(Tags.Blocks.ENVELOPES)
+                .tag(Tags.Blocks.AIRTIGHT)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
                 .envelopeBlockstate()
                 .withItem {
-                    optionalTag(Tags.Items.ENVELOPES)
-                    optionalTag(Tags.Items.SHAFTLESS_ENVELOPES)
+                    tag(Tags.Items.ENVELOPES)
+                    tag(Tags.Items.SHAFTLESS_ENVELOPES)
                     envelopeRecipe()
                 }.register()
         }
@@ -37,14 +36,14 @@ object DyedAeronautics {
                 .dyedBlock(dye, ::RotatedPillarBlock)
                 .lang("${dye.translation} Envelope Encased Shaft")
                 .germanLang("${dye.germanTranslation(Genus.F)} Ballonummantelte Welle")
-                .optionalTag(Tags.Blocks.ENVELOPES)
-                .optionalTag(Tags.Blocks.AIRTIGHT)
-                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .tag(Tags.Blocks.ENVELOPES)
+                .tag(Tags.Blocks.AIRTIGHT)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
                 .envelopeShaftBlockstate()
                 .loot { tables, block ->
                     tables.dropOther(block, ENVELOPES[dye]!!.get())
                 }.withItem {
-                    optionalTag(Tags.Items.ENVELOPES)
+                    tag(Tags.Items.ENVELOPES)
                     envelopeShaftItemModel()
                 }.register()
         }

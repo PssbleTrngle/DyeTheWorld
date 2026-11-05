@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "twigs:ginger_silt_shingles",
-      "required": false
-    },
-    {
-      "id": "twigs:ginger_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:ginger_silt_shingle_stairs",
-      "required": false
-    },
-    {
-      "id": "twigs:ginger_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "twigs:ginger_packed_silt",
-      "required": false
-    },
-    {
-      "id": "twigs:ginger_silt_pot",
-      "required": false
-    }
+    "twigs:ginger_silt_shingles",
+    "twigs:ginger_silt_shingle_slab",
+    "twigs:ginger_silt_shingle_stairs",
+    "twigs:ginger_silt_shingle_wall",
+    "twigs:ginger_packed_silt",
+    "twigs:ginger_silt_pot"
   ]
 }

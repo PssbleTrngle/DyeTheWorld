@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "spelunkery:ginger_glowstick",
-      "required": false
-    }
+    "spelunkery:ginger_glowstick"
   ]
 }

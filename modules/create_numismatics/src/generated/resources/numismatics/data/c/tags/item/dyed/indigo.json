@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "numismatics:indigo_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:indigo_id_card",
-      "required": false
-    }
+    "numismatics:indigo_card",
+    "numismatics:indigo_id_card"
   ]
 }

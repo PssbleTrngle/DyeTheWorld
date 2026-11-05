@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "waystones:amber_portstone",
-      "required": false
-    },
-    {
-      "id": "waystones:amber_sharestone",
-      "required": false
-    }
+    "waystones:amber_portstone",
+    "waystones:amber_sharestone"
   ]
 }

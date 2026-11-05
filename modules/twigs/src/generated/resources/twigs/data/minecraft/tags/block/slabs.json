@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "twigs:amber_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:aqua_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:beige_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:coral_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:forest_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:ginger_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:indigo_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:maroon_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:mint_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:navy_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:olive_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:rose_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:slate_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:tan_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:teal_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:verdant_silt_shingle_slab",
-      "required": false
-    }
+    "twigs:amber_silt_shingle_slab",
+    "twigs:aqua_silt_shingle_slab",
+    "twigs:beige_silt_shingle_slab",
+    "twigs:coral_silt_shingle_slab",
+    "twigs:forest_silt_shingle_slab",
+    "twigs:ginger_silt_shingle_slab",
+    "twigs:indigo_silt_shingle_slab",
+    "twigs:maroon_silt_shingle_slab",
+    "twigs:mint_silt_shingle_slab",
+    "twigs:navy_silt_shingle_slab",
+    "twigs:olive_silt_shingle_slab",
+    "twigs:rose_silt_shingle_slab",
+    "twigs:slate_silt_shingle_slab",
+    "twigs:tan_silt_shingle_slab",
+    "twigs:teal_silt_shingle_slab",
+    "twigs:verdant_silt_shingle_slab"
   ]
 }

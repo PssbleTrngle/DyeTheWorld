@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "naturalist:snail_shell_maroon",
-      "required": false
-    },
-    {
-      "id": "naturalist:snail_maroon",
-      "required": false
-    }
+    "naturalist:snail_shell_maroon",
+    "naturalist:snail_maroon"
   ]
 }

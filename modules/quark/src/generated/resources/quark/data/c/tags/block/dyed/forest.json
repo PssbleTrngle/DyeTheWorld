@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "quark:forest_stool",
-      "required": false
-    },
-    {
-      "id": "quark:forest_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:forest_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:forest_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:forest_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:forest_framed_glass_pane",
-      "required": false
-    }
+    "quark:forest_stool",
+    "quark:forest_shingles",
+    "quark:forest_shingles_slab",
+    "quark:forest_shingles_stairs",
+    "quark:forest_framed_glass",
+    "quark:forest_framed_glass_pane"
   ]
 }

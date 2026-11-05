@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:slate_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:slate_hanging_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:slate_canvas_sign",
+    "farmersdelight:slate_hanging_canvas_sign"
   ]
 }

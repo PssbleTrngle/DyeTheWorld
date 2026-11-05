@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "another_furniture:amber_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:aqua_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:beige_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:coral_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:ginger_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:navy_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:olive_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:rose_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:teal_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:verdant_lamp",
-      "required": false
-    }
+    "another_furniture:amber_lamp",
+    "another_furniture:aqua_lamp",
+    "another_furniture:beige_lamp",
+    "another_furniture:coral_lamp",
+    "another_furniture:forest_lamp",
+    "another_furniture:ginger_lamp",
+    "another_furniture:indigo_lamp",
+    "another_furniture:maroon_lamp",
+    "another_furniture:mint_lamp",
+    "another_furniture:navy_lamp",
+    "another_furniture:olive_lamp",
+    "another_furniture:rose_lamp",
+    "another_furniture:slate_lamp",
+    "another_furniture:tan_lamp",
+    "another_furniture:teal_lamp",
+    "another_furniture:verdant_lamp"
   ]
 }

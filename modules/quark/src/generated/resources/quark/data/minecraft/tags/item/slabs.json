@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "quark:amber_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:aqua_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:beige_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:coral_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:forest_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:ginger_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:indigo_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:maroon_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:mint_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:navy_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:olive_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:rose_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:slate_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:tan_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:teal_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:verdant_shingles_slab",
-      "required": false
-    }
+    "quark:amber_shingles_slab",
+    "quark:aqua_shingles_slab",
+    "quark:beige_shingles_slab",
+    "quark:coral_shingles_slab",
+    "quark:forest_shingles_slab",
+    "quark:ginger_shingles_slab",
+    "quark:indigo_shingles_slab",
+    "quark:maroon_shingles_slab",
+    "quark:mint_shingles_slab",
+    "quark:navy_shingles_slab",
+    "quark:olive_shingles_slab",
+    "quark:rose_shingles_slab",
+    "quark:slate_shingles_slab",
+    "quark:tan_shingles_slab",
+    "quark:teal_shingles_slab",
+    "quark:verdant_shingles_slab"
   ]
 }

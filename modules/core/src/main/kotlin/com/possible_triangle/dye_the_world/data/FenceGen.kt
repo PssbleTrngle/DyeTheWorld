@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.data
 
 import com.possible_triangle.dye_the_world.extensions.asIngredient
 import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.texture
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.namespace
@@ -31,7 +30,7 @@ fun DyedRegistrate.createFences(
     `object`("${dye}_${name.path}_fence")
         .dyedBlock(dye, ::FenceBlock)
         .initialProperties(base)
-        .optionalTag(BlockTags.FENCES)
+        .tag(BlockTags.FENCES)
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.fenceBlock(c.get(), texture)
@@ -39,7 +38,7 @@ fun DyedRegistrate.createFences(
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
-            optionalTag(ItemTags.FENCES)
+            tag(ItemTags.FENCES)
             recipe { c, p ->
                 p.fence(
                     base.asIngredient(),
@@ -65,7 +64,7 @@ fun DyedRegistrate.createFenceGates(
     `object`("${dye}_${name.path}_fence_gate")
         .dyedBlock(dye) { FenceGateBlock(it, SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) }
         .initialProperties(base)
-        .optionalTag(BlockTags.FENCE_GATES)
+        .tag(BlockTags.FENCE_GATES)
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.fenceGateBlock(c.get(), texture)
@@ -73,7 +72,7 @@ fun DyedRegistrate.createFenceGates(
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
-            optionalTag(ItemTags.FENCE_GATES)
+            tag(ItemTags.FENCE_GATES)
             recipe { c, p ->
                 p.fenceGate(
                     base.asIngredient(),

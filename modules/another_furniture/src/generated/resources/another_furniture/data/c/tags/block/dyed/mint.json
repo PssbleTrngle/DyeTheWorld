@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "another_furniture:mint_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_lamp_connector",
-      "required": false
-    }
+    "another_furniture:mint_sofa",
+    "another_furniture:mint_stool",
+    "another_furniture:mint_tall_stool",
+    "another_furniture:mint_curtain",
+    "another_furniture:mint_lamp",
+    "another_furniture:mint_lamp_connector"
   ]
 }

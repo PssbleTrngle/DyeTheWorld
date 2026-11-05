@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world.aeronautics
 import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.aeronautics.data.*
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -22,8 +21,8 @@ object DyedSimulated {
                 .dyedBlock(dye, ::RotatedPillarBlock)
                 .lang("${dye.translation} Symmetric Sail")
                 .germanLang("${dye.germanTranslation(Genus.I)} Symmetrisches Segel")
-                .optionalTag(Tags.Blocks.SYMMETRIC_SAILS)
-                .optionalTag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
+                .tag(Tags.Blocks.SYMMETRIC_SAILS)
+                .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
                 .symmetricSailBlockstate()
                 .register()
         }
@@ -34,7 +33,7 @@ object DyedSimulated {
                 .dyedBlock(dye, DummyBlock.of(BlockStateProperties.HORIZONTAL_FACING))
                 .lang("${dye.translation} Portable Engine")
                 .germanLang("${dye.germanTranslation(Genus.F)} Tragbarer Antrieb")
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .portableEngineBlockstate()
                 .withItem {
                     portableEngineItemModel()
@@ -47,11 +46,11 @@ object DyedSimulated {
                 .dyedBlock(dye, DummyBlock.of(AXIS_ALONG_FIRST_COORDINATE, BlockStateProperties.FACING))
                 .lang("${dye.translation} Handle")
                 .germanLang("${dye.germanTranslation(Genus.M)} Griff")
-                .optionalTag(Tags.Blocks.HANDLES)
+                .tag(Tags.Blocks.HANDLES)
                 .handleBlockstate()
                 .withItem {
                     handleItemModel()
-                    optionalTag(Tags.Items.HANDLES)
+                    tag(Tags.Items.HANDLES)
                     recipe { context, provider ->
                         provider.dyeingRecipe(dye, SimBlocks.IRON_HANDLE, context)
                     }
@@ -64,12 +63,12 @@ object DyedSimulated {
                 .dyedBlock(dye, DummyBlock.of(NAMEPLATE_POSITION, BlockStateProperties.HORIZONTAL_FACING))
                 .lang("${dye.translation} Nameplate")
                 .germanLang("${dye.germanTranslation(Genus.I)} Namensschild")
-                .optionalTag(Tags.Blocks.NAMEPLATES)
-                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .tag(Tags.Blocks.NAMEPLATES)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
                 .nameplateBlockstate()
                 .withItem {
                     nameplateItemModel()
-                    optionalTag(Tags.Items.NAMEPLATES)
+                    tag(Tags.Items.NAMEPLATES)
                     recipe { context, provider ->
                         provider.dyeingRecipe(dye, Tags.Items.NAMEPLATES, context)
                     }

@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "another_furniture:maroon_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_lamp",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_lamp_connector",
-      "required": false
-    }
+    "another_furniture:maroon_sofa",
+    "another_furniture:maroon_stool",
+    "another_furniture:maroon_tall_stool",
+    "another_furniture:maroon_curtain",
+    "another_furniture:maroon_lamp",
+    "another_furniture:maroon_lamp_connector"
   ]
 }

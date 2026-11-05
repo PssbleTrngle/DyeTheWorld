@@ -5,7 +5,6 @@ import com.possible_triangle.dye_the_world.botany_pots.data.hopperPotRecipe
 import com.possible_triangle.dye_the_world.botany_pots.data.potBlockstate
 import com.possible_triangle.dye_the_world.botany_pots.data.waxedPotRecipe
 import com.possible_triangle.dye_the_world.dyedBlockMap
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.translation
@@ -21,9 +20,9 @@ object DyedBotanyPots {
     ) = REGISTRATE.dyed { dye ->
         `object`("${dye}_${type}_botany_pot")
             .dyedBlock(dye)
-            .optionalTag(Tags.BLOCK)
+            .tag(Tags.BLOCK)
             .withItem {
-                optionalTag(Tags.ITEM)
+                tag(Tags.ITEM)
             }.apply(block)
             .register()
     }

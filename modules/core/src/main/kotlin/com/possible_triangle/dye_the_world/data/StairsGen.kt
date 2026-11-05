@@ -25,8 +25,8 @@ fun DyedRegistrate.createStairs(
     `object`("${dye}_${name.path}_stairs")
         .dyedBlock(dye) { StairBlock(base.get().defaultBlockState(), it) }
         .initialProperties(base)
-        .also { if (stone) it.optionalTag(BlockTags.MINEABLE_WITH_PICKAXE) }
-        .optionalTag(BlockTags.STAIRS)
+        .also { if (stone) it.tag(BlockTags.MINEABLE_WITH_PICKAXE) }
+        .tag(BlockTags.STAIRS)
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.stairsBlock(c.get(), texture)
@@ -34,7 +34,7 @@ fun DyedRegistrate.createStairs(
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
-            optionalTag(ItemTags.STAIRS)
+            tag(ItemTags.STAIRS)
             recipe { c, p -> p.stairs(base.asIngredient(), RecipeCategory.BUILDING_BLOCKS, c, null, stone) }
             modifyItem(dye)
         }.register()

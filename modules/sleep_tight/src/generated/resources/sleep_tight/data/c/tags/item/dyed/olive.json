@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "sleep_tight:hammock_olive",
-      "required": false
-    }
+    "sleep_tight:hammock_olive"
   ]
 }

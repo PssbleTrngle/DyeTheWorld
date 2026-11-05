@@ -1,40 +1,13 @@
 {
   "values": [
-    {
-      "id": "botanypots:slate_terracotta_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_terracotta_hopper_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_terracotta_waxed_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_concrete_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_concrete_hopper_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_concrete_waxed_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_glazed_terracotta_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_glazed_terracotta_hopper_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:slate_glazed_terracotta_waxed_botany_pot",
-      "required": false
-    }
+    "botanypots:slate_terracotta_botany_pot",
+    "botanypots:slate_terracotta_hopper_botany_pot",
+    "botanypots:slate_terracotta_waxed_botany_pot",
+    "botanypots:slate_concrete_botany_pot",
+    "botanypots:slate_concrete_hopper_botany_pot",
+    "botanypots:slate_concrete_waxed_botany_pot",
+    "botanypots:slate_glazed_terracotta_botany_pot",
+    "botanypots:slate_glazed_terracotta_hopper_botany_pot",
+    "botanypots:slate_glazed_terracotta_waxed_botany_pot"
   ]
 }

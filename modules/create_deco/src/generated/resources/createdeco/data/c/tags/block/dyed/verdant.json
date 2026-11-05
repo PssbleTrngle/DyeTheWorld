@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "createdeco:verdant_shipping_container",
-      "required": false
-    },
-    {
-      "id": "createdeco:verdant_placard",
-      "required": false
-    }
+    "createdeco:verdant_shipping_container",
+    "createdeco:verdant_placard"
   ]
 }

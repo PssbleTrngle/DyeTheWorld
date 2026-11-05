@@ -1,24 +1,9 @@
 {
   "values": [
-    {
-      "id": "another_furniture:rose_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:rose_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:rose_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:rose_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:rose_lamp",
-      "required": false
-    }
+    "another_furniture:rose_sofa",
+    "another_furniture:rose_stool",
+    "another_furniture:rose_tall_stool",
+    "another_furniture:rose_curtain",
+    "another_furniture:rose_lamp"
   ]
 }

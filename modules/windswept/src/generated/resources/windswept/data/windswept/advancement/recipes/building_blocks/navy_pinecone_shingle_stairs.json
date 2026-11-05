@@ -1,10 +1,4 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "windswept"
-    }
-  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_navy_pinecone_shingles": {

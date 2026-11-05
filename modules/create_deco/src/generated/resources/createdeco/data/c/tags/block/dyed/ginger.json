@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "createdeco:ginger_shipping_container",
-      "required": false
-    },
-    {
-      "id": "createdeco:ginger_placard",
-      "required": false
-    }
+    "createdeco:ginger_shipping_container",
+    "createdeco:ginger_placard"
   ]
 }

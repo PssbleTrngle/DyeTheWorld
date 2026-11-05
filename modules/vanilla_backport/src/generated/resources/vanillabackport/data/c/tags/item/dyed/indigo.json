@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "minecraft:indigo_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:indigo_cushion",
-      "required": false
-    }
+    "minecraft:indigo_harness",
+    "minecraft:indigo_bundle",
+    "minecraft:indigo_wool_stairs",
+    "minecraft:indigo_wool_slab",
+    "minecraft:indigo_concrete_slab",
+    "minecraft:indigo_concrete_stairs",
+    "minecraft:indigo_cushion"
   ]
 }

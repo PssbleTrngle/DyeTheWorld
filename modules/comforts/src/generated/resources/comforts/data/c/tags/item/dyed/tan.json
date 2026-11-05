@@ -1,20 +1,6 @@
 {
   "values": [
-    {
-      "id": "comforts:sleeping_bag_tan",
-      "required": false
-    },
-    {
-      "id": "comforts:sleeping_bag_tan",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_tan",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_tan",
-      "required": false
-    }
+    "comforts:sleeping_bag_tan",
+    "comforts:hammock_tan"
   ]
 }

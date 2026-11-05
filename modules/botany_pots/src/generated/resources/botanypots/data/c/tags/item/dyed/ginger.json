@@ -1,40 +1,13 @@
 {
   "values": [
-    {
-      "id": "botanypots:ginger_terracotta_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_terracotta_hopper_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_terracotta_waxed_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_concrete_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_concrete_hopper_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_concrete_waxed_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_glazed_terracotta_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_glazed_terracotta_hopper_botany_pot",
-      "required": false
-    },
-    {
-      "id": "botanypots:ginger_glazed_terracotta_waxed_botany_pot",
-      "required": false
-    }
+    "botanypots:ginger_terracotta_botany_pot",
+    "botanypots:ginger_terracotta_hopper_botany_pot",
+    "botanypots:ginger_terracotta_waxed_botany_pot",
+    "botanypots:ginger_concrete_botany_pot",
+    "botanypots:ginger_concrete_hopper_botany_pot",
+    "botanypots:ginger_concrete_waxed_botany_pot",
+    "botanypots:ginger_glazed_terracotta_botany_pot",
+    "botanypots:ginger_glazed_terracotta_hopper_botany_pot",
+    "botanypots:ginger_glazed_terracotta_waxed_botany_pot"
   ]
 }

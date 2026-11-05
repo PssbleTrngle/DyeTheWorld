@@ -5,7 +5,6 @@ import com.ordana.spelunkery.entities.ThrownGlowstickEntity
 import com.ordana.spelunkery.items.GlowstickItem
 import com.ordana.spelunkery.reg.ModBlocks
 import com.ordana.spelunkery.reg.ModTags
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.dye_the_world.spelunkery.data.glowstickBlockState
@@ -24,7 +23,7 @@ object DyedSpelunkery {
                 .glowstickBlockState()
                 .withItem({ block, it -> GlowstickItem(dye, block, it) }) {
                     tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
-                    optionalTag(ModTags.GLOWSTICKS)
+                    tag(ModTags.GLOWSTICKS)
                     glowstickItemModel()
                     recipe { c, p ->
                         p.shapedDyeingRecipe(dye, ModTags.GLOWSTICKS, c) {

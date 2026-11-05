@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "minecraft:teal_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:teal_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:teal_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:teal_concrete_stairs",
-      "required": false
-    }
+    "minecraft:teal_wool_stairs",
+    "minecraft:teal_wool_slab",
+    "minecraft:teal_concrete_slab",
+    "minecraft:teal_concrete_stairs"
   ]
 }

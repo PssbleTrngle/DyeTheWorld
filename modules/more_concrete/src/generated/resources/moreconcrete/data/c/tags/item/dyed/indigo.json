@@ -1,36 +1,12 @@
 {
   "values": [
-    {
-      "id": "moreconcrete:indigo_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_wall",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_fence",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_fence_gate",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_button",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_lever",
-      "required": false
-    },
-    {
-      "id": "moreconcrete:indigo_concrete_pressure_plate",
-      "required": false
-    }
+    "moreconcrete:indigo_concrete_slab",
+    "moreconcrete:indigo_concrete_stairs",
+    "moreconcrete:indigo_concrete_wall",
+    "moreconcrete:indigo_concrete_fence",
+    "moreconcrete:indigo_concrete_fence_gate",
+    "moreconcrete:indigo_concrete_button",
+    "moreconcrete:indigo_concrete_lever",
+    "moreconcrete:indigo_concrete_pressure_plate"
   ]
 }

@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "createdeco:amber_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:aqua_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:beige_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:coral_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:forest_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:ginger_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:indigo_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:maroon_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:mint_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:navy_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:olive_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:rose_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:slate_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:tan_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:teal_placard",
-      "required": false
-    },
-    {
-      "id": "createdeco:verdant_placard",
-      "required": false
-    }
+    "createdeco:amber_placard",
+    "createdeco:aqua_placard",
+    "createdeco:beige_placard",
+    "createdeco:coral_placard",
+    "createdeco:forest_placard",
+    "createdeco:ginger_placard",
+    "createdeco:indigo_placard",
+    "createdeco:maroon_placard",
+    "createdeco:mint_placard",
+    "createdeco:navy_placard",
+    "createdeco:olive_placard",
+    "createdeco:rose_placard",
+    "createdeco:slate_placard",
+    "createdeco:tan_placard",
+    "createdeco:teal_placard",
+    "createdeco:verdant_placard"
   ]
 }

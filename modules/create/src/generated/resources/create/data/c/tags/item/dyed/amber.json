@@ -1,24 +1,9 @@
 {
   "values": [
-    {
-      "id": "create:amber_toolbox",
-      "required": false
-    },
-    {
-      "id": "create:amber_seat",
-      "required": false
-    },
-    {
-      "id": "create:amber_valve_handle",
-      "required": false
-    },
-    {
-      "id": "create:amber_table_cloth",
-      "required": false
-    },
-    {
-      "id": "create:amber_postbox",
-      "required": false
-    }
+    "create:amber_toolbox",
+    "create:amber_seat",
+    "create:amber_valve_handle",
+    "create:amber_table_cloth",
+    "create:amber_postbox"
   ]
 }

@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "numismatics:coral_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:coral_id_card",
-      "required": false
-    }
+    "numismatics:coral_card",
+    "numismatics:coral_id_card"
   ]
 }

@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:verdant_shard",
-      "required": false
-    },
-    {
-      "id": "quark:verdant_stool",
-      "required": false
-    },
-    {
-      "id": "quark:verdant_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:verdant_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:verdant_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:verdant_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:verdant_framed_glass_pane",
-      "required": false
-    }
+    "quark:verdant_shard",
+    "quark:verdant_stool",
+    "quark:verdant_shingles",
+    "quark:verdant_shingles_slab",
+    "quark:verdant_shingles_stairs",
+    "quark:verdant_framed_glass",
+    "quark:verdant_framed_glass_pane"
   ]
 }

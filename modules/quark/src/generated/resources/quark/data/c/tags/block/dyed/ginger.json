@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "quark:ginger_stool",
-      "required": false
-    },
-    {
-      "id": "quark:ginger_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:ginger_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:ginger_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:ginger_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:ginger_framed_glass_pane",
-      "required": false
-    }
+    "quark:ginger_stool",
+    "quark:ginger_shingles",
+    "quark:ginger_shingles_slab",
+    "quark:ginger_shingles_stairs",
+    "quark:ginger_framed_glass",
+    "quark:ginger_framed_glass_pane"
   ]
 }

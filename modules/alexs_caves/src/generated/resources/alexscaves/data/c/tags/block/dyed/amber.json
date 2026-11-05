@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "alexscaves:radon_lamp_amber",
-      "required": false
-    }
+    "alexscaves:radon_lamp_amber"
   ]
 }

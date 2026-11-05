@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "another_furniture:amber_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:aqua_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:beige_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:coral_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:ginger_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:navy_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:olive_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:rose_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:teal_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:verdant_sofa",
-      "required": false
-    }
+    "another_furniture:amber_sofa",
+    "another_furniture:aqua_sofa",
+    "another_furniture:beige_sofa",
+    "another_furniture:coral_sofa",
+    "another_furniture:forest_sofa",
+    "another_furniture:ginger_sofa",
+    "another_furniture:indigo_sofa",
+    "another_furniture:maroon_sofa",
+    "another_furniture:mint_sofa",
+    "another_furniture:navy_sofa",
+    "another_furniture:olive_sofa",
+    "another_furniture:rose_sofa",
+    "another_furniture:slate_sofa",
+    "another_furniture:tan_sofa",
+    "another_furniture:teal_sofa",
+    "another_furniture:verdant_sofa"
   ]
 }

@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "simulated:amber_symmetric_sail",
-      "required": false
-    },
-    {
-      "id": "simulated:amber_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:amber_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:amber_nameplate",
-      "required": false
-    }
+    "simulated:amber_symmetric_sail",
+    "simulated:amber_portable_engine",
+    "simulated:amber_handle",
+    "simulated:amber_nameplate"
   ]
 }

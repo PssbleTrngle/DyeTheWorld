@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "bits_n_bobs:mint_chair",
-      "required": false
-    },
-    {
-      "id": "bits_n_bobs:mint_nixie_board",
-      "required": false
-    },
-    {
-      "id": "bits_n_bobs:mint_large_nixie_tube",
-      "required": false
-    }
+    "bits_n_bobs:mint_chair",
+    "bits_n_bobs:mint_nixie_board",
+    "bits_n_bobs:mint_large_nixie_tube"
   ]
 }

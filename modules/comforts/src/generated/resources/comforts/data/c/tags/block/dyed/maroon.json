@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "comforts:sleeping_bag_maroon",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_maroon",
-      "required": false
-    }
+    "comforts:sleeping_bag_maroon",
+    "comforts:hammock_maroon"
   ]
 }

@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "simulated:aqua_symmetric_sail",
-      "required": false
-    },
-    {
-      "id": "simulated:aqua_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:aqua_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:aqua_nameplate",
-      "required": false
-    }
+    "simulated:aqua_symmetric_sail",
+    "simulated:aqua_portable_engine",
+    "simulated:aqua_handle",
+    "simulated:aqua_nameplate"
   ]
 }

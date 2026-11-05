@@ -6,25 +6,10 @@ import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.ProviderType
 import net.minecraft.resources.ResourceKey
-import net.minecraft.tags.TagKey
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
-
-fun <T : Item, P> ItemBuilder<T, P>.optionalTag(tag: TagKey<Item>) =
-    apply {
-        owner.addDataGenerator(ProviderType.ITEM_TAGS) {
-            it.addTag(tag).addOptional(owner.modid.createId(name))
-        }
-    }
-
-fun <T : Block, P> BlockBuilder<T, P>.optionalTag(tag: TagKey<Block>) =
-    apply {
-        owner.addDataGenerator(ProviderType.BLOCK_TAGS) {
-            it.addTag(tag).addOptional(owner.modid.createId(name))
-        }
-    }
 
 fun <T : Block, P> BlockBuilder<T, P>.withItem(
     factory: (T, Item.Properties) -> BlockItem = ::BlockItem,

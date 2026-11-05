@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:coral_shard",
-      "required": false
-    },
-    {
-      "id": "quark:coral_stool",
-      "required": false
-    },
-    {
-      "id": "quark:coral_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:coral_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:coral_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:coral_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:coral_framed_glass_pane",
-      "required": false
-    }
+    "quark:coral_shard",
+    "quark:coral_stool",
+    "quark:coral_shingles",
+    "quark:coral_shingles_slab",
+    "quark:coral_shingles_stairs",
+    "quark:coral_framed_glass",
+    "quark:coral_framed_glass_pane"
   ]
 }

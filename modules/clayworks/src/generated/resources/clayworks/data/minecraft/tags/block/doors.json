@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "clayworks:amber_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:aqua_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:beige_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:coral_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:indigo_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:mint_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:navy_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:olive_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:tan_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:teal_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:verdant_stained_glass_door",
-      "required": false
-    }
+    "clayworks:amber_stained_glass_door",
+    "clayworks:aqua_stained_glass_door",
+    "clayworks:beige_stained_glass_door",
+    "clayworks:coral_stained_glass_door",
+    "clayworks:forest_stained_glass_door",
+    "clayworks:ginger_stained_glass_door",
+    "clayworks:indigo_stained_glass_door",
+    "clayworks:maroon_stained_glass_door",
+    "clayworks:mint_stained_glass_door",
+    "clayworks:navy_stained_glass_door",
+    "clayworks:olive_stained_glass_door",
+    "clayworks:rose_stained_glass_door",
+    "clayworks:slate_stained_glass_door",
+    "clayworks:tan_stained_glass_door",
+    "clayworks:teal_stained_glass_door",
+    "clayworks:verdant_stained_glass_door"
   ]
 }

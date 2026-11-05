@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:rose_shard",
-      "required": false
-    },
-    {
-      "id": "quark:rose_stool",
-      "required": false
-    },
-    {
-      "id": "quark:rose_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:rose_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:rose_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:rose_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:rose_framed_glass_pane",
-      "required": false
-    }
+    "quark:rose_shard",
+    "quark:rose_stool",
+    "quark:rose_shingles",
+    "quark:rose_shingles_slab",
+    "quark:rose_shingles_stairs",
+    "quark:rose_framed_glass",
+    "quark:rose_framed_glass_pane"
   ]
 }

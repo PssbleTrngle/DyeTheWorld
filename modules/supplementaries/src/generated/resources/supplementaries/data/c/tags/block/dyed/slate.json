@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_slate",
-      "required": false
-    },
-    {
-      "id": "supplementaries:bunting_wall_slate",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_slate",
-      "required": false
-    }
+    "supplementaries:bunting_slate",
+    "supplementaries:bunting_wall_slate",
+    "supplementaries:awning_slate"
   ]
 }

@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_rose",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_rose",
-      "required": false
-    }
+    "supplementaries:bunting_rose",
+    "supplementaries:awning_rose"
   ]
 }

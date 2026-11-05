@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:amber_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:aqua_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:beige_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:coral_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:forest_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:ginger_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:indigo_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:maroon_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:mint_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:navy_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:olive_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:rose_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:slate_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:tan_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:teal_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:verdant_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:amber_canvas_sign",
+    "farmersdelight:aqua_canvas_sign",
+    "farmersdelight:beige_canvas_sign",
+    "farmersdelight:coral_canvas_sign",
+    "farmersdelight:forest_canvas_sign",
+    "farmersdelight:ginger_canvas_sign",
+    "farmersdelight:indigo_canvas_sign",
+    "farmersdelight:maroon_canvas_sign",
+    "farmersdelight:mint_canvas_sign",
+    "farmersdelight:navy_canvas_sign",
+    "farmersdelight:olive_canvas_sign",
+    "farmersdelight:rose_canvas_sign",
+    "farmersdelight:slate_canvas_sign",
+    "farmersdelight:tan_canvas_sign",
+    "farmersdelight:teal_canvas_sign",
+    "farmersdelight:verdant_canvas_sign"
   ]
 }

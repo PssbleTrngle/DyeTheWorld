@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "numismatics:amber_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:amber_id_card",
-      "required": false
-    }
+    "numismatics:amber_card",
+    "numismatics:amber_id_card"
   ]
 }

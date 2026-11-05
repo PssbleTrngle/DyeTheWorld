@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "supplementaries:awning_amber",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_aqua",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_beige",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_coral",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_forest",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_ginger",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_indigo",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_maroon",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_mint",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_navy",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_olive",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_rose",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_slate",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_tan",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_teal",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_verdant",
-      "required": false
-    }
+    "supplementaries:awning_amber",
+    "supplementaries:awning_aqua",
+    "supplementaries:awning_beige",
+    "supplementaries:awning_coral",
+    "supplementaries:awning_forest",
+    "supplementaries:awning_ginger",
+    "supplementaries:awning_indigo",
+    "supplementaries:awning_maroon",
+    "supplementaries:awning_mint",
+    "supplementaries:awning_navy",
+    "supplementaries:awning_olive",
+    "supplementaries:awning_rose",
+    "supplementaries:awning_slate",
+    "supplementaries:awning_tan",
+    "supplementaries:awning_teal",
+    "supplementaries:awning_verdant"
   ]
 }

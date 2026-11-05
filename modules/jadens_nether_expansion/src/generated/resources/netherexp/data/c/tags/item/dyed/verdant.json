@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "netherexp:verdant_stained_redstone_lamp",
-      "required": false
-    }
+    "netherexp:verdant_stained_redstone_lamp"
   ]
 }

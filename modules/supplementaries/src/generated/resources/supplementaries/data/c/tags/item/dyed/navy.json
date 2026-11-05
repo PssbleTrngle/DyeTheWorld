@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_navy",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_navy",
-      "required": false
-    }
+    "supplementaries:bunting_navy",
+    "supplementaries:awning_navy"
   ]
 }

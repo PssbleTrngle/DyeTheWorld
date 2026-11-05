@@ -5,7 +5,6 @@ import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.unlockedBy
 import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.translation
@@ -36,7 +35,7 @@ object DyedCreateNumismatics {
                         .define('S', DyedTags.Materials.IRON.plate)
                         .define('D', dye.tag)
                         .save(provider)
-                }.optionalTag(NumismaticsTags.AllItemTags.CARDS.tag)
+                }.tag(NumismaticsTags.AllItemTags.CARDS.tag)
                 .register()
         }
 
@@ -58,7 +57,7 @@ object DyedCreateNumismatics {
                         .define('D', dye.tag)
                         .define('B', DyedTags.Materials.BRASS.nugget)
                         .save(provider)
-                }.optionalTag(NumismaticsTags.AllItemTags.ID_CARDS.tag)
+                }.tag(NumismaticsTags.AllItemTags.ID_CARDS.tag)
                 .register()
         }
 }

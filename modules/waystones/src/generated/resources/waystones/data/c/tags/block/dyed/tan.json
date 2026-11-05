@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "waystones:tan_portstone",
-      "required": false
-    },
-    {
-      "id": "waystones:tan_sharestone",
-      "required": false
-    }
+    "waystones:tan_portstone",
+    "waystones:tan_sharestone"
   ]
 }

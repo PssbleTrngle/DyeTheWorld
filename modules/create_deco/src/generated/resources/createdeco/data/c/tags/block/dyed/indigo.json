@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "createdeco:indigo_shipping_container",
-      "required": false
-    },
-    {
-      "id": "createdeco:indigo_placard",
-      "required": false
-    }
+    "createdeco:indigo_shipping_container",
+    "createdeco:indigo_placard"
   ]
 }

@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "spelunkery:mint_glowstick",
-      "required": false
-    }
+    "spelunkery:mint_glowstick"
   ]
 }

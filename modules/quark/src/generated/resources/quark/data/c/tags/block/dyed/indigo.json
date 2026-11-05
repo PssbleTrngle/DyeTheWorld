@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "quark:indigo_stool",
-      "required": false
-    },
-    {
-      "id": "quark:indigo_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:indigo_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:indigo_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:indigo_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:indigo_framed_glass_pane",
-      "required": false
-    }
+    "quark:indigo_stool",
+    "quark:indigo_shingles",
+    "quark:indigo_shingles_slab",
+    "quark:indigo_shingles_stairs",
+    "quark:indigo_framed_glass",
+    "quark:indigo_framed_glass_pane"
   ]
 }

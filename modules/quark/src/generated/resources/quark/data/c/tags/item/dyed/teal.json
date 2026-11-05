@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:teal_shard",
-      "required": false
-    },
-    {
-      "id": "quark:teal_stool",
-      "required": false
-    },
-    {
-      "id": "quark:teal_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:teal_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:teal_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:teal_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:teal_framed_glass_pane",
-      "required": false
-    }
+    "quark:teal_shard",
+    "quark:teal_stool",
+    "quark:teal_shingles",
+    "quark:teal_shingles_slab",
+    "quark:teal_shingles_stairs",
+    "quark:teal_framed_glass",
+    "quark:teal_framed_glass_pane"
   ]
 }

@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.jadens_nether_expansion
 
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
@@ -23,8 +22,8 @@ object DyedJadensNetherExpansion {
                 .initialProperties { Blocks.REDSTONE_LAMP }
                 .properties { it.mapColor(dye) }
                 .stainedRedstoneLamp()
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .optionalTag(BlockTags.create(JADENS_NETHER_EXPANSION.createId("sounds/glowstone")))
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BlockTags.create(JADENS_NETHER_EXPANSION.createId("sounds/glowstone")))
                 .withItem {
                     tab(CreativeModeTabs.COLORED_BLOCKS)
                     recipe { context, provider ->

@@ -1,24 +1,9 @@
 {
   "values": [
-    {
-      "id": "another_furniture:ginger_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:ginger_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:ginger_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:ginger_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:ginger_lamp",
-      "required": false
-    }
+    "another_furniture:ginger_sofa",
+    "another_furniture:ginger_stool",
+    "another_furniture:ginger_tall_stool",
+    "another_furniture:ginger_curtain",
+    "another_furniture:ginger_lamp"
   ]
 }

@@ -1,48 +1,15 @@
 {
   "values": [
-    {
-      "id": "clayworks:forest_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_brick_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_brick_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:chiseled_forest_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_decorated_pot",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_stained_glass_trapdoor",
-      "required": false
-    }
+    "clayworks:forest_terracotta_bricks",
+    "clayworks:forest_terracotta_brick_slab",
+    "clayworks:forest_terracotta_brick_stairs",
+    "clayworks:forest_terracotta_brick_wall",
+    "clayworks:chiseled_forest_terracotta_bricks",
+    "clayworks:forest_terracotta_slab",
+    "clayworks:forest_terracotta_stairs",
+    "clayworks:forest_terracotta_wall",
+    "clayworks:forest_decorated_pot",
+    "clayworks:forest_stained_glass_door",
+    "clayworks:forest_stained_glass_trapdoor"
   ]
 }

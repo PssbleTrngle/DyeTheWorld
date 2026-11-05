@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "minecraft:tan_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:tan_cushion",
-      "required": false
-    }
+    "minecraft:tan_harness",
+    "minecraft:tan_bundle",
+    "minecraft:tan_wool_stairs",
+    "minecraft:tan_wool_slab",
+    "minecraft:tan_concrete_slab",
+    "minecraft:tan_concrete_stairs",
+    "minecraft:tan_cushion"
   ]
 }

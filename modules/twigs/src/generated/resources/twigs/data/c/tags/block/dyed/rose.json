@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "twigs:rose_silt_shingles",
-      "required": false
-    },
-    {
-      "id": "twigs:rose_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:rose_silt_shingle_stairs",
-      "required": false
-    },
-    {
-      "id": "twigs:rose_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "twigs:rose_packed_silt",
-      "required": false
-    },
-    {
-      "id": "twigs:rose_silt_pot",
-      "required": false
-    }
+    "twigs:rose_silt_shingles",
+    "twigs:rose_silt_shingle_slab",
+    "twigs:rose_silt_shingle_stairs",
+    "twigs:rose_silt_shingle_wall",
+    "twigs:rose_packed_silt",
+    "twigs:rose_silt_pot"
   ]
 }

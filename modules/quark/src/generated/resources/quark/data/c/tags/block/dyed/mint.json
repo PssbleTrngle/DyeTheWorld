@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "quark:mint_stool",
-      "required": false
-    },
-    {
-      "id": "quark:mint_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:mint_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:mint_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:mint_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:mint_framed_glass_pane",
-      "required": false
-    }
+    "quark:mint_stool",
+    "quark:mint_shingles",
+    "quark:mint_shingles_slab",
+    "quark:mint_shingles_stairs",
+    "quark:mint_framed_glass",
+    "quark:mint_framed_glass_pane"
   ]
 }

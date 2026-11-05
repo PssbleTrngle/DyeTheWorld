@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "simulated:maroon_symmetric_sail",
-      "required": false
-    },
-    {
-      "id": "simulated:maroon_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:maroon_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:maroon_nameplate",
-      "required": false
-    }
+    "simulated:maroon_symmetric_sail",
+    "simulated:maroon_portable_engine",
+    "simulated:maroon_handle",
+    "simulated:maroon_nameplate"
   ]
 }

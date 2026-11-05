@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "interiors:verdant_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:verdant_floor_chair",
-      "required": false
-    },
-    {
-      "id": "interiors:verdant_cushion",
-      "required": false
-    }
+    "interiors:verdant_chair",
+    "interiors:verdant_floor_chair",
+    "interiors:verdant_cushion"
   ]
 }

@@ -1,20 +1,6 @@
 {
   "values": [
-    {
-      "id": "comforts:sleeping_bag_slate",
-      "required": false
-    },
-    {
-      "id": "comforts:sleeping_bag_slate",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_slate",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_slate",
-      "required": false
-    }
+    "comforts:sleeping_bag_slate",
+    "comforts:hammock_slate"
   ]
 }

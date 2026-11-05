@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "spelunkery:maroon_glowstick",
-      "required": false
-    }
+    "spelunkery:maroon_glowstick"
   ]
 }

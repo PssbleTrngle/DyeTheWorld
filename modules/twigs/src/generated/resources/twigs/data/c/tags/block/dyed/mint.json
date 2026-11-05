@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "twigs:mint_silt_shingles",
-      "required": false
-    },
-    {
-      "id": "twigs:mint_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:mint_silt_shingle_stairs",
-      "required": false
-    },
-    {
-      "id": "twigs:mint_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "twigs:mint_packed_silt",
-      "required": false
-    },
-    {
-      "id": "twigs:mint_silt_pot",
-      "required": false
-    }
+    "twigs:mint_silt_shingles",
+    "twigs:mint_silt_shingle_slab",
+    "twigs:mint_silt_shingle_stairs",
+    "twigs:mint_silt_shingle_wall",
+    "twigs:mint_packed_silt",
+    "twigs:mint_silt_pot"
   ]
 }

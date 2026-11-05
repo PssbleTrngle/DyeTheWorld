@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "minecraft:verdant_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:verdant_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:verdant_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:verdant_concrete_stairs",
-      "required": false
-    }
+    "minecraft:verdant_wool_stairs",
+    "minecraft:verdant_wool_slab",
+    "minecraft:verdant_concrete_slab",
+    "minecraft:verdant_concrete_stairs"
   ]
 }

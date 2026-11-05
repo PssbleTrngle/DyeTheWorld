@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:tan_shard",
-      "required": false
-    },
-    {
-      "id": "quark:tan_stool",
-      "required": false
-    },
-    {
-      "id": "quark:tan_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:tan_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:tan_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:tan_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:tan_framed_glass_pane",
-      "required": false
-    }
+    "quark:tan_shard",
+    "quark:tan_stool",
+    "quark:tan_shingles",
+    "quark:tan_shingles_slab",
+    "quark:tan_shingles_stairs",
+    "quark:tan_framed_glass",
+    "quark:tan_framed_glass_pane"
   ]
 }

@@ -1,48 +1,15 @@
 {
   "values": [
-    {
-      "id": "clayworks:ginger_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_brick_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_brick_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:chiseled_ginger_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_decorated_pot",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_stained_glass_trapdoor",
-      "required": false
-    }
+    "clayworks:ginger_terracotta_bricks",
+    "clayworks:ginger_terracotta_brick_slab",
+    "clayworks:ginger_terracotta_brick_stairs",
+    "clayworks:ginger_terracotta_brick_wall",
+    "clayworks:chiseled_ginger_terracotta_bricks",
+    "clayworks:ginger_terracotta_slab",
+    "clayworks:ginger_terracotta_stairs",
+    "clayworks:ginger_terracotta_wall",
+    "clayworks:ginger_decorated_pot",
+    "clayworks:ginger_stained_glass_door",
+    "clayworks:ginger_stained_glass_trapdoor"
   ]
 }

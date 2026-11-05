@@ -1,20 +1,8 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:rose_canvas_wall_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:rose_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:rose_wall_hanging_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:rose_hanging_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:rose_canvas_wall_sign",
+    "farmersdelight:rose_canvas_sign",
+    "farmersdelight:rose_wall_hanging_canvas_sign",
+    "farmersdelight:rose_hanging_canvas_sign"
   ]
 }

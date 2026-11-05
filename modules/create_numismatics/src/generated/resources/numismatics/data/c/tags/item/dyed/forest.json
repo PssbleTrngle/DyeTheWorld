@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "numismatics:forest_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:forest_id_card",
-      "required": false
-    }
+    "numismatics:forest_card",
+    "numismatics:forest_id_card"
   ]
 }

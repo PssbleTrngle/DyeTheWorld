@@ -48,7 +48,7 @@ object DyedClayworks {
             `object`("${dye}_terracotta_bricks")
                 .dyedBlock(dye)
                 .initialProperties { dye.blockOf("terracotta") }
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("${dye.translation} Terracotta Bricks")
                 .germanLang("${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
@@ -118,7 +118,7 @@ object DyedClayworks {
             `object`("chiseled_${dye}_terracotta_bricks")
                 .dyedBlock(dye)
                 .initialProperties { dye.blockOf("terracotta") }
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("Chiseled ${dye.translation} Terracotta Bricks")
                 .germanLang("Gemeißelte ${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
@@ -194,12 +194,12 @@ object DyedClayworks {
                 .glassDoorBlockstate()
                 .glassDoorLoot()
                 // TODO should not be needed because of #doors tag??
-                // .optionalTag(DyedTags.Blocks.BRITTLE)
-                .optionalTag(BlockTags.DOORS)
+                // .tag(DyedTags.Blocks.BRITTLE)
+                .tag(BlockTags.DOORS)
                 .withItem {
                     glassDoorRecipes()
                     glassDoorItemModel()
-                    optionalTag(ItemTags.DOORS)
+                    tag(ItemTags.DOORS)
                     tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.REDSTONE_BLOCKS)
                 }.register()
@@ -212,11 +212,11 @@ object DyedClayworks {
                 .lang("${dye.translation} Stained Glass Trapdoor")
                 .glassTrapdoorBlockstate()
                 .glassTrapdoorLoot()
-                .optionalTag(BlockTags.TRAPDOORS)
+                .tag(BlockTags.TRAPDOORS)
                 .withItem {
                     glassTrapdoorRecipes()
                     glassTrapdoorItemModel()
-                    optionalTag(ItemTags.TRAPDOORS)
+                    tag(ItemTags.TRAPDOORS)
                     tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.REDSTONE_BLOCKS)
                 }.register()

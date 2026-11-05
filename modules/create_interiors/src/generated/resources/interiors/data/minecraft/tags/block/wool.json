@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "interiors:amber_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:aqua_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:beige_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:coral_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:forest_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:ginger_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:indigo_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:maroon_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:mint_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:navy_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:olive_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:rose_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:slate_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:tan_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:teal_cushion",
-      "required": false
-    },
-    {
-      "id": "interiors:verdant_cushion",
-      "required": false
-    }
+    "interiors:amber_cushion",
+    "interiors:aqua_cushion",
+    "interiors:beige_cushion",
+    "interiors:coral_cushion",
+    "interiors:forest_cushion",
+    "interiors:ginger_cushion",
+    "interiors:indigo_cushion",
+    "interiors:maroon_cushion",
+    "interiors:mint_cushion",
+    "interiors:navy_cushion",
+    "interiors:olive_cushion",
+    "interiors:rose_cushion",
+    "interiors:slate_cushion",
+    "interiors:tan_cushion",
+    "interiors:teal_cushion",
+    "interiors:verdant_cushion"
   ]
 }

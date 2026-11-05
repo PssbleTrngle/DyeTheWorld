@@ -32,15 +32,15 @@ private class ColorSetProvider(
     private val type: ProviderType<ColorSetProvider>,
     existingFileHelper: ExistingFileHelper,
 ) : JsonCodecProvider<ColorSetModification>(
-        output,
-        PackOutput.Target.DATA_PACK,
-        "color_sets",
-        PackType.SERVER_DATA,
-        ColorSetModification.CODEC,
-        lookupProvider,
-        owner.modid,
-        existingFileHelper,
-    ),
+    output,
+    PackOutput.Target.DATA_PACK,
+    "color_sets",
+    PackType.SERVER_DATA,
+    ColorSetModification.CODEC,
+    lookupProvider,
+    owner.modid,
+    existingFileHelper,
+),
     RegistrateProvider {
     override fun gather() {
         owner.genData(type, this)
@@ -56,20 +56,17 @@ fun AbstractRegistrate<*>.colorSet(
     addDataGenerator(PROVIDER_TYPE) { provider ->
         val dyes = dyesFor(modId)
 
-        provider.conditionally(Constants.MOD_ID.createId("${id.path}s")) { builder ->
-            builder
-                .addCondition(ModLoadedCondition(modId))
-                .withCarrier(
-                    ColorSetModification(
-                        dyes
-                            .associateWith { id.withPrefix("${it.serializedName}_") }
-                            .mapValues { BuiltInRegistries.ITEM.getOrThrow(it.value) }
-                            .mapValues { BlockAndItem(null, it.value) }
-                            .mapKeys { it.key.serializedName },
-                        false,
-                        id,
-                    ),
-                )
-        }
+        provider.unconditional(
+            Constants.MOD_ID.createId("${id.path}s"),
+            ColorSetModification(
+                dyes
+                    .associateWith { id.withPrefix("${it.serializedName}_") }
+                    .mapValues { BuiltInRegistries.ITEM.getOrThrow(it.value) }
+                    .mapValues { BlockAndItem(null, it.value) }
+                    .mapKeys { it.key.serializedName },
+                false,
+                id,
+            ),
+        )
     }
 }

@@ -4,7 +4,6 @@ import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.data.translateBannerPattern
 import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.rosemods.windswept.core.other.tags.WindsweptBlockTags
@@ -17,8 +16,8 @@ object DyedWindswept {
         REGISTRATE.dyed { dye ->
             `object`("${dye}_pinecone_shingles")
                 .dyedBlock(dye)
-                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
-                .optionalTag(WindsweptBlockTags.PINECONE_NOTE_BLOCKS)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
+                .tag(WindsweptBlockTags.PINECONE_NOTE_BLOCKS)
                 .withItem {
                     tab(CreativeModeTabs.COLORED_BLOCKS)
                     recipe { context, provider ->
@@ -29,12 +28,12 @@ object DyedWindswept {
 
     private val PINECONE_SHINGLE_STAIRS =
         REGISTRATE.createStairs(PINECONE_SHINGLES, WINDSWEPT.createId("pinecone_shingle"), modifyBlock = {
-            optionalTag(BlockTags.MINEABLE_WITH_AXE)
+            tag(BlockTags.MINEABLE_WITH_AXE)
         }, stone = false)
 
     private val PINECONE_SHINGLE_SLABS =
         REGISTRATE.createSlabs(PINECONE_SHINGLES, WINDSWEPT.createId("pinecone_shingle"), modifyBlock = {
-            optionalTag(BlockTags.MINEABLE_WITH_AXE)
+            tag(BlockTags.MINEABLE_WITH_AXE)
         }, stone = false)
 
     init {

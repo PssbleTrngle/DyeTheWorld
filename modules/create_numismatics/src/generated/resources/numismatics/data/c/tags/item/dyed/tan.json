@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "numismatics:tan_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:tan_id_card",
-      "required": false
-    }
+    "numismatics:tan_card",
+    "numismatics:tan_id_card"
   ]
 }

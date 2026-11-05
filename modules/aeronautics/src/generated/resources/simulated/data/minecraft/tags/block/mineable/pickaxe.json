@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "simulated:amber_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:aqua_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:beige_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:coral_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:forest_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:ginger_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:indigo_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:maroon_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:mint_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:navy_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:olive_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:rose_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:slate_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:tan_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:teal_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:verdant_portable_engine",
-      "required": false
-    }
+    "simulated:amber_portable_engine",
+    "simulated:aqua_portable_engine",
+    "simulated:beige_portable_engine",
+    "simulated:coral_portable_engine",
+    "simulated:forest_portable_engine",
+    "simulated:ginger_portable_engine",
+    "simulated:indigo_portable_engine",
+    "simulated:maroon_portable_engine",
+    "simulated:mint_portable_engine",
+    "simulated:navy_portable_engine",
+    "simulated:olive_portable_engine",
+    "simulated:rose_portable_engine",
+    "simulated:slate_portable_engine",
+    "simulated:tan_portable_engine",
+    "simulated:teal_portable_engine",
+    "simulated:verdant_portable_engine"
   ]
 }

@@ -1,48 +1,15 @@
 {
   "values": [
-    {
-      "id": "clayworks:slate_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_brick_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_brick_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:chiseled_slate_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_decorated_pot",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_stained_glass_trapdoor",
-      "required": false
-    }
+    "clayworks:slate_terracotta_bricks",
+    "clayworks:slate_terracotta_brick_slab",
+    "clayworks:slate_terracotta_brick_stairs",
+    "clayworks:slate_terracotta_brick_wall",
+    "clayworks:chiseled_slate_terracotta_bricks",
+    "clayworks:slate_terracotta_slab",
+    "clayworks:slate_terracotta_stairs",
+    "clayworks:slate_terracotta_wall",
+    "clayworks:slate_decorated_pot",
+    "clayworks:slate_stained_glass_door",
+    "clayworks:slate_stained_glass_trapdoor"
   ]
 }

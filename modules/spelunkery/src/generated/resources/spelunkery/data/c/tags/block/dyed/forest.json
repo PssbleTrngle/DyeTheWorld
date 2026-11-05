@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "spelunkery:forest_glowstick",
-      "required": false
-    }
+    "spelunkery:forest_glowstick"
   ]
 }

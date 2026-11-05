@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "simulated:slate_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:slate_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:slate_nameplate",
-      "required": false
-    }
+    "simulated:slate_portable_engine",
+    "simulated:slate_handle",
+    "simulated:slate_nameplate"
   ]
 }

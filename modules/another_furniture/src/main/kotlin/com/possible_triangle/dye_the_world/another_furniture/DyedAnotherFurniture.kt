@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world.another_furniture
 import com.possible_triangle.dye_the_world.another_furniture.data.*
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.noLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.starfish_studios.another_furniture.block.*
 import com.starfish_studios.another_furniture.registry.AFBlockTags
@@ -21,11 +20,11 @@ object DyedAnotherFurniture {
             `object`("${dye}_sofa")
                 .dyedBlock(dye, ::SofaBlock)
                 .initialProperties { AFBlocks.RED_SOFA.get() }
-                .optionalTag(AFBlockTags.SOFAS)
+                .tag(AFBlockTags.SOFAS)
                 .sofaBlockstate()
                 .withItem {
                     sofaRecipes()
-                    optionalTag(AFItemTags.SOFAS)
+                    tag(AFItemTags.SOFAS)
                     tab(TAB)
                 }.register()
         }
@@ -35,11 +34,11 @@ object DyedAnotherFurniture {
             `object`("${dye}_stool")
                 .dyedBlock(dye, ::StoolBlock)
                 .initialProperties { AFBlocks.RED_STOOL.get() }
-                .optionalTag(AFBlockTags.STOOLS)
+                .tag(AFBlockTags.STOOLS)
                 .stoolBlockstate()
                 .withItem {
                     stoolRecipes()
-                    optionalTag(AFItemTags.STOOLS)
+                    tag(AFItemTags.STOOLS)
                     tab(TAB)
                 }.register()
         }
@@ -49,11 +48,11 @@ object DyedAnotherFurniture {
             `object`("${dye}_tall_stool")
                 .dyedBlock(dye, ::TallStoolBlock)
                 .initialProperties { AFBlocks.RED_TALL_STOOL.get() }
-                .optionalTag(AFBlockTags.TALL_STOOLS)
+                .tag(AFBlockTags.TALL_STOOLS)
                 .tallStoolBlockstate()
                 .withItem {
                     tallStoolRecipes()
-                    optionalTag(AFItemTags.TALL_STOOLS)
+                    tag(AFItemTags.TALL_STOOLS)
                     tab(TAB)
                 }.register()
         }
@@ -63,13 +62,13 @@ object DyedAnotherFurniture {
             `object`("${dye}_curtain")
                 .dyedBlock(dye, ::CurtainBlock)
                 .initialProperties { AFBlocks.RED_CURTAIN.get() }
-                .optionalTag(AFBlockTags.CURTAINS)
+                .tag(AFBlockTags.CURTAINS)
                 .curtainBlockstate()
                 .curtainLoot()
                 .withItem {
                     curtainRecipes()
                     curtainItemModel()
-                    optionalTag(AFItemTags.CURTAINS)
+                    tag(AFItemTags.CURTAINS)
                     tab(TAB)
                 }.register()
         }
@@ -80,11 +79,11 @@ object DyedAnotherFurniture {
             `object`("${dye}_lamp")
                 .dyedBlock(dye) { LampBlock(dye, it) }
                 .initialProperties { AFBlocks.RED_LAMP.get() }
-                .optionalTag(AFBlockTags.LAMPS)
+                .tag(AFBlockTags.LAMPS)
                 .lampBlockstate()
                 .withItem {
                     lampRecipes()
-                    optionalTag(AFItemTags.LAMPS)
+                    tag(AFItemTags.LAMPS)
                     tab(TAB)
                 }.register()
         }

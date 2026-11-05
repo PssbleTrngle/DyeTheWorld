@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "bits_n_bobs:aqua_chair",
-      "required": false
-    },
-    {
-      "id": "bits_n_bobs:aqua_nixie_board",
-      "required": false
-    },
-    {
-      "id": "bits_n_bobs:aqua_large_nixie_tube",
-      "required": false
-    }
+    "bits_n_bobs:aqua_chair",
+    "bits_n_bobs:aqua_nixie_board",
+    "bits_n_bobs:aqua_large_nixie_tube"
   ]
 }

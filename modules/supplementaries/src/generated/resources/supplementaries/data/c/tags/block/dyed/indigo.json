@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_indigo",
-      "required": false
-    },
-    {
-      "id": "supplementaries:bunting_wall_indigo",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_indigo",
-      "required": false
-    }
+    "supplementaries:bunting_indigo",
+    "supplementaries:bunting_wall_indigo",
+    "supplementaries:awning_indigo"
   ]
 }

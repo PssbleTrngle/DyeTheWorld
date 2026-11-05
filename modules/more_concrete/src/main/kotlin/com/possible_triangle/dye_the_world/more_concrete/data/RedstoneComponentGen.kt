@@ -96,7 +96,7 @@ fun DyedRegistrate.createButtons(
     `object`("${dye}_${name.path}_button")
         .dyedBlock(dye) { ButtonBlock(BlockSetType.STONE, 20, it) }
         .initialProperties(base)
-        .optionalTag(BlockTags.BUTTONS)
+        .tag(BlockTags.BUTTONS)
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.buttonBlock(c.get(), texture)
@@ -104,7 +104,7 @@ fun DyedRegistrate.createButtons(
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
-            optionalTag(ItemTags.BUTTONS)
+            tag(ItemTags.BUTTONS)
             recipe { c, p ->
                 p
                     .singleItemUnfinished(base.asIngredient(), RecipeCategory.REDSTONE, c, 1, 1)
@@ -128,7 +128,7 @@ fun DyedRegistrate.createPressurePlates(
     `object`("${dye}_${name.path}_pressure_plate")
         .dyedBlock(dye) { PressurePlateBlock(BlockSetType.STONE, it) }
         .initialProperties(base)
-        .optionalTag(BlockTags.PRESSURE_PLATES)
+        .tag(BlockTags.PRESSURE_PLATES)
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.pressurePlateBlock(c.get(), texture)

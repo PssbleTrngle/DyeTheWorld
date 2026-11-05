@@ -1,48 +1,15 @@
 {
   "values": [
-    {
-      "id": "clayworks:rose_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_brick_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_brick_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:chiseled_rose_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_decorated_pot",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_stained_glass_trapdoor",
-      "required": false
-    }
+    "clayworks:rose_terracotta_bricks",
+    "clayworks:rose_terracotta_brick_slab",
+    "clayworks:rose_terracotta_brick_stairs",
+    "clayworks:rose_terracotta_brick_wall",
+    "clayworks:chiseled_rose_terracotta_bricks",
+    "clayworks:rose_terracotta_slab",
+    "clayworks:rose_terracotta_stairs",
+    "clayworks:rose_terracotta_wall",
+    "clayworks:rose_decorated_pot",
+    "clayworks:rose_stained_glass_door",
+    "clayworks:rose_stained_glass_trapdoor"
   ]
 }

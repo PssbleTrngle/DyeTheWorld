@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "minecraft:forest_harness",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_bundle",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_wool_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_wool_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_concrete_slab",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_concrete_stairs",
-      "required": false
-    },
-    {
-      "id": "minecraft:forest_cushion",
-      "required": false
-    }
+    "minecraft:forest_harness",
+    "minecraft:forest_bundle",
+    "minecraft:forest_wool_stairs",
+    "minecraft:forest_wool_slab",
+    "minecraft:forest_concrete_slab",
+    "minecraft:forest_concrete_stairs",
+    "minecraft:forest_cushion"
   ]
 }

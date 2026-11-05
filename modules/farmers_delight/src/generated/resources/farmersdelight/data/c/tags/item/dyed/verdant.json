@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "farmersdelight:verdant_canvas_sign",
-      "required": false
-    },
-    {
-      "id": "farmersdelight:verdant_hanging_canvas_sign",
-      "required": false
-    }
+    "farmersdelight:verdant_canvas_sign",
+    "farmersdelight:verdant_hanging_canvas_sign"
   ]
 }

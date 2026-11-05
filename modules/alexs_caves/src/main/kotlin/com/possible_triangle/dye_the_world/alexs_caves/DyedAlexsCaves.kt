@@ -31,7 +31,7 @@ object DyedAlexsCaves {
                 .germanLang("${dye.germanTranslation(Genus.F)} Radonlampe")
                 .withItem {
                     tab(TOXIC_TAB)
-                    optionalTag(Tags.Items.RADON_LAMPS)
+                    tag(Tags.Items.RADON_LAMPS)
                     recipe { context, provider ->
                         val radonBottle = BuiltInRegistries.ITEM.getOrThrow(ALEXS_CAVES.createId("radon_bottle"))
 

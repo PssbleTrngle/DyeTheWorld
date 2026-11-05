@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "twigs:verdant_silt_shingles",
-      "required": false
-    },
-    {
-      "id": "twigs:verdant_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:verdant_silt_shingle_stairs",
-      "required": false
-    },
-    {
-      "id": "twigs:verdant_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "twigs:verdant_packed_silt",
-      "required": false
-    },
-    {
-      "id": "twigs:verdant_silt_pot",
-      "required": false
-    }
+    "twigs:verdant_silt_shingles",
+    "twigs:verdant_silt_shingle_slab",
+    "twigs:verdant_silt_shingle_stairs",
+    "twigs:verdant_silt_shingle_wall",
+    "twigs:verdant_packed_silt",
+    "twigs:verdant_silt_pot"
   ]
 }

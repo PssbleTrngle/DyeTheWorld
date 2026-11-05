@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world.farmers_delight
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.farmers_delight.data.canvasSignBlockstate
 import com.possible_triangle.dye_the_world.farmers_delight.data.canvasSignItemModel
@@ -50,7 +49,7 @@ object DyedFarmersDelight {
                 .canvasSignBlockstate()
                 .existingBlockEntity { ModBlockEntityTypes.CANVAS_SIGN.get() }
                 .withItem(dye.signItem(CANVAS_WALL_SIGNS)) {
-                    optionalTag(ModTags.Items.CANVAS_SIGNS)
+                    tag(ModTags.Items.CANVAS_SIGNS)
                     canvasSignRecipes()
                     canvasSignItemModel()
                     tab(TAB)
@@ -77,7 +76,7 @@ object DyedFarmersDelight {
                 .canvasSignBlockstate()
                 .existingBlockEntity { ModBlockEntityTypes.HANGING_CANVAS_SIGN.get() }
                 .withItem(dye.signItem(HANGING_CANVAS_WALL_SIGNS)) {
-                    optionalTag(ModTags.Items.HANGING_CANVAS_SIGNS)
+                    tag(ModTags.Items.HANGING_CANVAS_SIGNS)
                     hangingCanvasSignRecipes()
                     canvasSignItemModel()
                     tab(TAB)

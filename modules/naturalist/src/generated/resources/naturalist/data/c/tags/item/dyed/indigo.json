@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "naturalist:snail_shell_indigo",
-      "required": false
-    },
-    {
-      "id": "naturalist:snail_indigo",
-      "required": false
-    }
+    "naturalist:snail_shell_indigo",
+    "naturalist:snail_indigo"
   ]
 }

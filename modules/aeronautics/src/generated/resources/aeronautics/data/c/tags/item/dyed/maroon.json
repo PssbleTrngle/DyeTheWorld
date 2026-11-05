@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "aeronautics:maroon_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:maroon_envelope_encased_shaft",
-      "required": false
-    }
+    "aeronautics:maroon_envelope",
+    "aeronautics:maroon_envelope_encased_shaft"
   ]
 }

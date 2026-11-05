@@ -1,24 +1,9 @@
 {
   "values": [
-    {
-      "id": "create:rose_toolbox",
-      "required": false
-    },
-    {
-      "id": "create:rose_seat",
-      "required": false
-    },
-    {
-      "id": "create:rose_valve_handle",
-      "required": false
-    },
-    {
-      "id": "create:rose_table_cloth",
-      "required": false
-    },
-    {
-      "id": "create:rose_postbox",
-      "required": false
-    }
+    "create:rose_toolbox",
+    "create:rose_seat",
+    "create:rose_valve_handle",
+    "create:rose_table_cloth",
+    "create:rose_postbox"
   ]
 }

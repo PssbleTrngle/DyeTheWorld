@@ -18,7 +18,6 @@ import com.possible_triangle.dye_the_world.create.data.toolboxLoot
 import com.possible_triangle.dye_the_world.create.data.valveBlockstate
 import com.possible_triangle.dye_the_world.create.data.valveRecipe
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.translation
@@ -41,7 +40,7 @@ object DyedCreate {
                 .initialProperties { AllBlocks.ORANGE_NIXIE_TUBE.get() }
                 .lang("${dye.translation} Nixie Tube")
                 .germanLang("${dye.germanTranslation(Genus.F)} Nixie-Röhre")
-                .optionalTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .nixieTubeBlockstate()
                 .loot { t, b -> t.dropOther(b, AllBlocks.ORANGE_NIXIE_TUBE) }
                 .register()
@@ -53,11 +52,11 @@ object DyedCreate {
                 .dyedBlock(dye) { ToolboxBlock(it, dye) }
                 .lang("${dye.translation} Toolbox")
                 .germanLang("${dye.germanTranslation(Genus.M)} Werkzeugkasten")
-                .optionalTag(AllTags.AllBlockTags.TOOLBOXES.tag)
+                .tag(AllTags.AllBlockTags.TOOLBOXES.tag)
                 .toolboxLoot()
                 .toolboxBlockstate()
                 .withItem {
-                    optionalTag(AllTags.AllItemTags.TOOLBOXES.tag)
+                    tag(AllTags.AllItemTags.TOOLBOXES.tag)
                     toolboxItemModel()
                 }.register()
         }
@@ -68,10 +67,10 @@ object DyedCreate {
                 .dyedBlock(dye) { SeatBlock(it, dye) }
                 .lang("${dye.translation} Seat")
                 .germanLang("${dye.germanTranslation(Genus.M)} Sitz")
-                .optionalTag(AllTags.AllBlockTags.SEATS.tag)
+                .tag(AllTags.AllBlockTags.SEATS.tag)
                 .seatBlockstate()
                 .withItem {
-                    optionalTag(AllTags.AllItemTags.SEATS.tag)
+                    tag(AllTags.AllItemTags.SEATS.tag)
                     seatRecipe()
                 }.register()
         }
@@ -82,7 +81,7 @@ object DyedCreate {
                 .dyedBlock(dye) { SailBlock.withCanvas(it, dye) }
                 .lang("${dye.translation} Sail")
                 .germanLang("${dye.germanTranslation(Genus.I)} Segel")
-                .optionalTag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
+                .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
                 .sailBlockstate()
                 .register()
         }
@@ -94,10 +93,10 @@ object DyedCreate {
                 .dyedBlock(dye) { ValveHandleBlock.dyed(it, dye) }
                 .lang("${dye.translation} Valve Handle")
                 .germanLang("${dye.germanTranslation(Genus.M)} Ventilgriff")
-                .optionalTag(AllTags.AllBlockTags.VALVE_HANDLES.tag)
+                .tag(AllTags.AllBlockTags.VALVE_HANDLES.tag)
                 .valveBlockstate()
                 .withItem {
-                    optionalTag(AllTags.AllItemTags.VALVE_HANDLES.tag)
+                    tag(AllTags.AllItemTags.VALVE_HANDLES.tag)
                     valveRecipe()
                 }.register()
         }
@@ -108,12 +107,12 @@ object DyedCreate {
                 .dyedBlock(dye) { TableClothBlock(it, dye) }
                 .lang("${dye.translation} Table Cloth")
                 .germanLang("${dye.germanTranslation(Genus.F)} Tischdecke")
-                .optionalTag(AllTags.AllBlockTags.TABLE_CLOTHS.tag)
-                .optionalTag(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)
+                .tag(AllTags.AllBlockTags.TABLE_CLOTHS.tag)
+                .tag(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)
                 .tableClothBlockstate()
                 .withItem {
-                    optionalTag(AllTags.AllItemTags.TABLE_CLOTHS.tag)
-                    optionalTag(AllTags.AllItemTags.DYED_TABLE_CLOTHS.tag)
+                    tag(AllTags.AllItemTags.TABLE_CLOTHS.tag)
+                    tag(AllTags.AllItemTags.DYED_TABLE_CLOTHS.tag)
                     tableClothItemModel()
                     tableClothRecipe()
                 }.register()
@@ -125,11 +124,11 @@ object DyedCreate {
                 .dyedBlock(dye) { PostboxBlock(it, dye) }
                 .lang("${dye.translation} Postbox")
                 .germanLang("${dye.germanTranslation(Genus.M)} Briefkasten")
-                .optionalTag(AllTags.AllBlockTags.POSTBOXES.tag)
-                .optionalTag(BlockTags.MINEABLE_WITH_AXE)
+                .tag(AllTags.AllBlockTags.POSTBOXES.tag)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
                 .postboxBlockstate()
                 .withItem {
-                    optionalTag(AllTags.AllItemTags.POSTBOXES.tag)
+                    tag(AllTags.AllItemTags.POSTBOXES.tag)
                     postboxItemModel()
                     postboxRecipe()
                 }.register()

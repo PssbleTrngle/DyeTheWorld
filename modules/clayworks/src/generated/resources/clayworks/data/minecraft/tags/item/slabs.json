@@ -1,132 +1,36 @@
 {
   "values": [
-    {
-      "id": "clayworks:amber_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:aqua_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:beige_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:coral_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:indigo_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:mint_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:navy_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:olive_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:tan_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:teal_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:verdant_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:aqua_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:beige_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:coral_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:forest_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:ginger_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:indigo_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:maroon_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:mint_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:navy_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:olive_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:rose_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:slate_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:tan_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:teal_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:verdant_terracotta_slab",
-      "required": false
-    }
+    "clayworks:amber_terracotta_brick_slab",
+    "clayworks:aqua_terracotta_brick_slab",
+    "clayworks:beige_terracotta_brick_slab",
+    "clayworks:coral_terracotta_brick_slab",
+    "clayworks:forest_terracotta_brick_slab",
+    "clayworks:ginger_terracotta_brick_slab",
+    "clayworks:indigo_terracotta_brick_slab",
+    "clayworks:maroon_terracotta_brick_slab",
+    "clayworks:mint_terracotta_brick_slab",
+    "clayworks:navy_terracotta_brick_slab",
+    "clayworks:olive_terracotta_brick_slab",
+    "clayworks:rose_terracotta_brick_slab",
+    "clayworks:slate_terracotta_brick_slab",
+    "clayworks:tan_terracotta_brick_slab",
+    "clayworks:teal_terracotta_brick_slab",
+    "clayworks:verdant_terracotta_brick_slab",
+    "clayworks:amber_terracotta_slab",
+    "clayworks:aqua_terracotta_slab",
+    "clayworks:beige_terracotta_slab",
+    "clayworks:coral_terracotta_slab",
+    "clayworks:forest_terracotta_slab",
+    "clayworks:ginger_terracotta_slab",
+    "clayworks:indigo_terracotta_slab",
+    "clayworks:maroon_terracotta_slab",
+    "clayworks:mint_terracotta_slab",
+    "clayworks:navy_terracotta_slab",
+    "clayworks:olive_terracotta_slab",
+    "clayworks:rose_terracotta_slab",
+    "clayworks:slate_terracotta_slab",
+    "clayworks:tan_terracotta_slab",
+    "clayworks:teal_terracotta_slab",
+    "clayworks:verdant_terracotta_slab"
   ]
 }

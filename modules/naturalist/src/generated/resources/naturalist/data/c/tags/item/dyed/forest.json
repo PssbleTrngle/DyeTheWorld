@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "naturalist:snail_shell_forest",
-      "required": false
-    },
-    {
-      "id": "naturalist:snail_forest",
-      "required": false
-    }
+    "naturalist:snail_shell_forest",
+    "naturalist:snail_forest"
   ]
 }

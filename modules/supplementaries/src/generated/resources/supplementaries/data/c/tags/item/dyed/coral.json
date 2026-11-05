@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "supplementaries:bunting_coral",
-      "required": false
-    },
-    {
-      "id": "supplementaries:awning_coral",
-      "required": false
-    }
+    "supplementaries:bunting_coral",
+    "supplementaries:awning_coral"
   ]
 }

@@ -1,24 +1,9 @@
 {
   "values": [
-    {
-      "id": "another_furniture:olive_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:olive_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:olive_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:olive_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:olive_lamp",
-      "required": false
-    }
+    "another_furniture:olive_sofa",
+    "another_furniture:olive_stool",
+    "another_furniture:olive_tall_stool",
+    "another_furniture:olive_curtain",
+    "another_furniture:olive_lamp"
   ]
 }

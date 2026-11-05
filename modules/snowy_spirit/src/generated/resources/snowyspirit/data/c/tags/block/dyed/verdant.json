@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "snowyspirit:glow_lights_verdant",
-      "required": false
-    },
-    {
-      "id": "snowyspirit:gumdrop_verdant",
-      "required": false
-    }
+    "snowyspirit:glow_lights_verdant",
+    "snowyspirit:gumdrop_verdant"
   ]
 }

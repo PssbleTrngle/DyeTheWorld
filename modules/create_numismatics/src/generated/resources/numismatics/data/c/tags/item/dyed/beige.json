@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "numismatics:beige_card",
-      "required": false
-    },
-    {
-      "id": "numismatics:beige_id_card",
-      "required": false
-    }
+    "numismatics:beige_card",
+    "numismatics:beige_id_card"
   ]
 }

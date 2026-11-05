@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "naturalist:snail_shell_slate",
-      "required": false
-    },
-    {
-      "id": "naturalist:snail_slate",
-      "required": false
-    }
+    "naturalist:snail_shell_slate",
+    "naturalist:snail_slate"
   ]
 }

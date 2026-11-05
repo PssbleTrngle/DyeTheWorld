@@ -9,7 +9,6 @@ import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateTagsProvider
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import net.minecraft.core.registries.Registries
-import net.minecraft.resources.ResourceLocation
 import net.minecraft.tags.TagKey
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
@@ -48,18 +47,6 @@ class DyedRegistrate private constructor(
             Registries.ITEM -> ProviderType.ITEM_TAGS
             else -> throw IllegalArgumentException("no tag provider known for registry ${registry.location()}")
         } as ProviderType<out RegistrateTagsProvider<T>>
-
-    fun <T : Any> TagKey<T>.addOptional(id: ResourceLocation) {
-        addDataGenerator(provider()) {
-            it.addTag(this).addOptional(id)
-        }
-    }
-
-    fun <T : Any> TagKey<T>.addOptional(tag: TagKey<T>) {
-        addDataGenerator(provider()) {
-            it.addTag(this).addOptionalTag(tag)
-        }
-    }
 
     fun dyedBlock(color: DyeColor) = dyedBlock(color, ::Block)
 

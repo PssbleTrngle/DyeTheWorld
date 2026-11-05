@@ -1,68 +1,20 @@
 {
   "values": [
-    {
-      "id": "another_furniture:amber_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:aqua_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:beige_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:coral_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:forest_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:ginger_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:indigo_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:maroon_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:mint_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:navy_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:olive_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:rose_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:slate_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:tan_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:teal_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:verdant_curtain",
-      "required": false
-    }
+    "another_furniture:amber_curtain",
+    "another_furniture:aqua_curtain",
+    "another_furniture:beige_curtain",
+    "another_furniture:coral_curtain",
+    "another_furniture:forest_curtain",
+    "another_furniture:ginger_curtain",
+    "another_furniture:indigo_curtain",
+    "another_furniture:maroon_curtain",
+    "another_furniture:mint_curtain",
+    "another_furniture:navy_curtain",
+    "another_furniture:olive_curtain",
+    "another_furniture:rose_curtain",
+    "another_furniture:slate_curtain",
+    "another_furniture:tan_curtain",
+    "another_furniture:teal_curtain",
+    "another_furniture:verdant_curtain"
   ]
 }

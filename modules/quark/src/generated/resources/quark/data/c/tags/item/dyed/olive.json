@@ -1,32 +1,11 @@
 {
   "values": [
-    {
-      "id": "quark:olive_shard",
-      "required": false
-    },
-    {
-      "id": "quark:olive_stool",
-      "required": false
-    },
-    {
-      "id": "quark:olive_shingles",
-      "required": false
-    },
-    {
-      "id": "quark:olive_shingles_slab",
-      "required": false
-    },
-    {
-      "id": "quark:olive_shingles_stairs",
-      "required": false
-    },
-    {
-      "id": "quark:olive_framed_glass",
-      "required": false
-    },
-    {
-      "id": "quark:olive_framed_glass_pane",
-      "required": false
-    }
+    "quark:olive_shard",
+    "quark:olive_stool",
+    "quark:olive_shingles",
+    "quark:olive_shingles_slab",
+    "quark:olive_shingles_stairs",
+    "quark:olive_framed_glass",
+    "quark:olive_framed_glass_pane"
   ]
 }

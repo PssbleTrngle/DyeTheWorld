@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "createdeco:coral_shipping_container",
-      "required": false
-    },
-    {
-      "id": "createdeco:coral_placard",
-      "required": false
-    }
+    "createdeco:coral_shipping_container",
+    "createdeco:coral_placard"
   ]
 }

@@ -1,48 +1,15 @@
 {
   "values": [
-    {
-      "id": "clayworks:amber_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_terracotta_brick_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_terracotta_brick_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_terracotta_brick_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:chiseled_amber_terracotta_bricks",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_terracotta_slab",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_terracotta_stairs",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_terracotta_wall",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_decorated_pot",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_stained_glass_door",
-      "required": false
-    },
-    {
-      "id": "clayworks:amber_stained_glass_trapdoor",
-      "required": false
-    }
+    "clayworks:amber_terracotta_bricks",
+    "clayworks:amber_terracotta_brick_slab",
+    "clayworks:amber_terracotta_brick_stairs",
+    "clayworks:amber_terracotta_brick_wall",
+    "clayworks:chiseled_amber_terracotta_bricks",
+    "clayworks:amber_terracotta_slab",
+    "clayworks:amber_terracotta_stairs",
+    "clayworks:amber_terracotta_wall",
+    "clayworks:amber_decorated_pot",
+    "clayworks:amber_stained_glass_door",
+    "clayworks:amber_stained_glass_trapdoor"
   ]
 }

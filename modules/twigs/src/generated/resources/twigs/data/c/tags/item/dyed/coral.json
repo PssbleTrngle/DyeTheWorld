@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "twigs:coral_silt_shingles",
-      "required": false
-    },
-    {
-      "id": "twigs:coral_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:coral_silt_shingle_stairs",
-      "required": false
-    },
-    {
-      "id": "twigs:coral_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "twigs:coral_packed_silt",
-      "required": false
-    },
-    {
-      "id": "twigs:coral_silt_pot",
-      "required": false
-    }
+    "twigs:coral_silt_shingles",
+    "twigs:coral_silt_shingle_slab",
+    "twigs:coral_silt_shingle_stairs",
+    "twigs:coral_silt_shingle_wall",
+    "twigs:coral_packed_silt",
+    "twigs:coral_silt_pot"
   ]
 }

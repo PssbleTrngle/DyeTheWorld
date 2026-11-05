@@ -3,7 +3,6 @@ package com.possible_triangle.dye_the_world.redomesticate
 import com.evandev.redomesticate.content.block.PetBedBlock
 import com.possible_triangle.dye_the_world.DyedTags
 import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.redomesticate.data.petBedBlockstate
 import com.possible_triangle.dye_the_world.redomesticate.data.petBedRecipe
@@ -23,7 +22,7 @@ object DyedRedomesticate {
                 .petBedBlockstate()
                 .withItem {
                     tab(TAB)
-                    optionalTag(DyedTags.ITEMS.create(REDOMESTICATE, "pet_beds"))
+                    tag(DyedTags.ITEMS.create(REDOMESTICATE, "pet_beds"))
                     petBedRecipe()
                 }.register()
         }

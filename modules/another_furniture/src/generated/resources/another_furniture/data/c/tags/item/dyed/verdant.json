@@ -1,24 +1,9 @@
 {
   "values": [
-    {
-      "id": "another_furniture:verdant_sofa",
-      "required": false
-    },
-    {
-      "id": "another_furniture:verdant_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:verdant_tall_stool",
-      "required": false
-    },
-    {
-      "id": "another_furniture:verdant_curtain",
-      "required": false
-    },
-    {
-      "id": "another_furniture:verdant_lamp",
-      "required": false
-    }
+    "another_furniture:verdant_sofa",
+    "another_furniture:verdant_stool",
+    "another_furniture:verdant_tall_stool",
+    "another_furniture:verdant_curtain",
+    "another_furniture:verdant_lamp"
   ]
 }

@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "amendments:ceiling_banner_amber",
-      "required": false
-    }
+    "amendments:ceiling_banner_amber"
   ]
 }

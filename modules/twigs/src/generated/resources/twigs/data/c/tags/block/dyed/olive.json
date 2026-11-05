@@ -1,28 +1,10 @@
 {
   "values": [
-    {
-      "id": "twigs:olive_silt_shingles",
-      "required": false
-    },
-    {
-      "id": "twigs:olive_silt_shingle_slab",
-      "required": false
-    },
-    {
-      "id": "twigs:olive_silt_shingle_stairs",
-      "required": false
-    },
-    {
-      "id": "twigs:olive_silt_shingle_wall",
-      "required": false
-    },
-    {
-      "id": "twigs:olive_packed_silt",
-      "required": false
-    },
-    {
-      "id": "twigs:olive_silt_pot",
-      "required": false
-    }
+    "twigs:olive_silt_shingles",
+    "twigs:olive_silt_shingle_slab",
+    "twigs:olive_silt_shingle_stairs",
+    "twigs:olive_silt_shingle_wall",
+    "twigs:olive_packed_silt",
+    "twigs:olive_silt_pot"
   ]
 }

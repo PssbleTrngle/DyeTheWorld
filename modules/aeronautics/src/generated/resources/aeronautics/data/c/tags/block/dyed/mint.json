@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "aeronautics:mint_envelope",
-      "required": false
-    },
-    {
-      "id": "aeronautics:mint_envelope_encased_shaft",
-      "required": false
-    }
+    "aeronautics:mint_envelope",
+    "aeronautics:mint_envelope_encased_shaft"
   ]
 }

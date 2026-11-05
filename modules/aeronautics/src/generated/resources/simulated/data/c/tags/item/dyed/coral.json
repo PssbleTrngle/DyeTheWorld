@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "simulated:coral_portable_engine",
-      "required": false
-    },
-    {
-      "id": "simulated:coral_handle",
-      "required": false
-    },
-    {
-      "id": "simulated:coral_nameplate",
-      "required": false
-    }
+    "simulated:coral_portable_engine",
+    "simulated:coral_handle",
+    "simulated:coral_nameplate"
   ]
 }

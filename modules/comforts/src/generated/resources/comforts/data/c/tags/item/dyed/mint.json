@@ -1,20 +1,6 @@
 {
   "values": [
-    {
-      "id": "comforts:sleeping_bag_mint",
-      "required": false
-    },
-    {
-      "id": "comforts:sleeping_bag_mint",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_mint",
-      "required": false
-    },
-    {
-      "id": "comforts:hammock_mint",
-      "required": false
-    }
+    "comforts:sleeping_bag_mint",
+    "comforts:hammock_mint"
   ]
 }

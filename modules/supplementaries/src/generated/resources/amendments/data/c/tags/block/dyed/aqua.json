@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "amendments:ceiling_banner_aqua",
-      "required": false
-    }
+    "amendments:ceiling_banner_aqua"
   ]
 }

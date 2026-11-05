@@ -1,16 +1,7 @@
 {
   "values": [
-    {
-      "id": "windswept:mint_pinecone_shingles",
-      "required": false
-    },
-    {
-      "id": "windswept:mint_pinecone_shingle_stairs",
-      "required": false
-    },
-    {
-      "id": "windswept:mint_pinecone_shingle_slab",
-      "required": false
-    }
+    "windswept:mint_pinecone_shingles",
+    "windswept:mint_pinecone_shingle_stairs",
+    "windswept:mint_pinecone_shingle_slab"
   ]
 }

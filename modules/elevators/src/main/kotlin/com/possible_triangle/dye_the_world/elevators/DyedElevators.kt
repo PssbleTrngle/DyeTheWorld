@@ -4,7 +4,6 @@ import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
 import com.possible_triangle.dye_the_world.extensions.germanLang
-import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -19,11 +18,11 @@ object DyedElevators {
         REGISTRATE.dyed { dye ->
             `object`("elevator_$dye")
                 .dyedBlock(dye, ::Block)
-                .optionalTag(Tags.BLOCK)
+                .tag(Tags.BLOCK)
                 .lang("${dye.translation} Elevator")
                 .germanLang("${dye.germanTranslation(Genus.M)} Aufzug")
                 .withItem {
-                    optionalTag(Tags.ITEM)
+                    tag(Tags.ITEM)
                     recipe { context, provider ->
                         ShapedRecipeBuilder
                             .shaped(RecipeCategory.MISC, context.get())

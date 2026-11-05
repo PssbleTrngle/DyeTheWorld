@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "suppsquared:sack_aqua",
-      "required": false
-    }
+    "suppsquared:sack_aqua"
   ]
 }
