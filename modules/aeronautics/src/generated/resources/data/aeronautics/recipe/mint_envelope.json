@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aeronautics"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "aeronautics"
+      ]
+    }
+  ],
+  "group": "aeronautics:envelope",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "dye_depot:mint_wool"
+    }
+  },
+  "pattern": [
+    "WS",
+    "SW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "aeronautics:mint_envelope"
+  }
+}

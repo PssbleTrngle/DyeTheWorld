@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "createdeco:tan_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:tan_placard",
+      "required": false
+    }
+  ]
+}

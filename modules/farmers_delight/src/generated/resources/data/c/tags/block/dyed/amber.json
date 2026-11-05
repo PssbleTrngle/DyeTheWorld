@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:amber_canvas_wall_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:amber_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:amber_wall_hanging_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:amber_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

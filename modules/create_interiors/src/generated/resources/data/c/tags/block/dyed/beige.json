@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "interiors:beige_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:beige_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:beige_cushion",
+      "required": false
+    }
+  ]
+}

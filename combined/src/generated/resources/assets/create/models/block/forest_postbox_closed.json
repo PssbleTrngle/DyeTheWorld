@@ -1,7 +1,0 @@
-{
-  "parent": "create:block/package_postbox/block_closed",
-  "textures": {
-    "0": "create:block/postbox/forest",
-    "1": "create:block/postbox/forest_closed"
-  }
-}

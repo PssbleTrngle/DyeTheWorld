@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "comforts"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "comforts"
+      ]
+    }
+  ],
+  "group": "comforts:sleeping_bags",
+  "key": {
+    "#": {
+      "item": "dye_depot:tan_wool"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "S/S",
+    "S#S",
+    "S/S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:hammock_tan"
+  }
+}

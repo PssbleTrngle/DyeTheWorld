@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "botanypots:verdant_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_terracotta_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_concrete_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_concrete_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_concrete_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_glazed_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_glazed_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:verdant_glazed_terracotta_waxed_botany_pot",
+      "required": false
+    }
+  ]
+}

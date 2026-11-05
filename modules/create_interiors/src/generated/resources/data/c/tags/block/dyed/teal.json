@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "interiors:teal_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:teal_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:teal_cushion",
+      "required": false
+    }
+  ]
+}

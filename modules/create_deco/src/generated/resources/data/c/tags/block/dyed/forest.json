@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "createdeco:forest_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:forest_placard",
+      "required": false
+    }
+  ]
+}

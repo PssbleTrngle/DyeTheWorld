@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "simulated:verdant_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:verdant_nameplate",
+      "required": false
+    }
+  ]
+}

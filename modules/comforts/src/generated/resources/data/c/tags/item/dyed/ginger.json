@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "comforts:sleeping_bag_ginger",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_ginger",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_ginger",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_ginger",
+      "required": false
+    }
+  ]
+}

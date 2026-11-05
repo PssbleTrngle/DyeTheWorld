@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "dye_depot:block/slate_wool",
-    "side": "dye_depot:block/slate_wool",
-    "top": "dye_depot:block/slate_wool"
-  }
-}

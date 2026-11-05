@@ -1,8 +1,0 @@
-{
-  "parent": "supplementaries:block/awnings/top_slanted",
-  "textures": {
-    "1": "supplementaries:block/awnings/awning_teal",
-    "particle": "supplementaries:block/awnings/awning_teal",
-    "up": "supplementaries:block/awnings/awning_teal_side"
-  }
-}

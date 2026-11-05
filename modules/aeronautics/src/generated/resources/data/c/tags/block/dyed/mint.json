@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "simulated:mint_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:mint_nameplate",
+      "required": false
+    }
+  ]
+}

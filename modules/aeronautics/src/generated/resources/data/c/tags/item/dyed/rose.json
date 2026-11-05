@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "simulated:rose_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:rose_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:rose_nameplate",
+      "required": false
+    }
+  ]
+}

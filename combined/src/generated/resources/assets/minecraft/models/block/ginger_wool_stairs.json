@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "dye_depot:block/ginger_wool",
-    "side": "dye_depot:block/ginger_wool",
-    "top": "dye_depot:block/ginger_wool"
-  }
-}

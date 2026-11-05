@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "naturalist:snail_shell_navy",
+      "required": false
+    },
+    {
+      "id": "naturalist:snail_navy",
+      "required": false
+    }
+  ]
+}

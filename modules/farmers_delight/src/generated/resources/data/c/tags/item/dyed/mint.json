@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:mint_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:mint_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

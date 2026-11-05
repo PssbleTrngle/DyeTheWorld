@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "comforts:sleeping_bag_coral",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_coral",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_coral",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_coral",
+      "required": false
+    }
+  ]
+}

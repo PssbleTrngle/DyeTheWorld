@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "simulated:navy_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:navy_nameplate",
+      "required": false
+    }
+  ]
+}

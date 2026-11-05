@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "clayworks:navy_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:chiseled_navy_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_decorated_pot",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_stained_glass_door",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_stained_glass_trapdoor",
+      "required": false
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.translation
+import com.possible_triangle.multikulti.platform.LOGGER
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.world.item.DyeColor

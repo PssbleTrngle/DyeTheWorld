@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:verdant_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:verdant_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

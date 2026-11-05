@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "another_furniture:aqua_sofa",
+      "required": false
+    },
+    {
+      "id": "another_furniture:aqua_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:aqua_tall_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:aqua_curtain",
+      "required": false
+    },
+    {
+      "id": "another_furniture:aqua_lamp",
+      "required": false
+    },
+    {
+      "id": "another_furniture:aqua_lamp_connector",
+      "required": false
+    }
+  ]
+}

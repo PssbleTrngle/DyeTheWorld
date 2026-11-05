@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "simulated:teal_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:teal_nameplate",
+      "required": false
+    }
+  ]
+}

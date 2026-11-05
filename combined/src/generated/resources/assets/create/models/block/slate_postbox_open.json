@@ -1,7 +1,0 @@
-{
-  "parent": "create:block/package_postbox/block_open",
-  "textures": {
-    "0": "create:block/postbox/slate",
-    "1": "create:block/postbox/slate_open"
-  }
-}

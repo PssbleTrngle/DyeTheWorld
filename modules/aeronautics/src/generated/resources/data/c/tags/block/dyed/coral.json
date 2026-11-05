@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "simulated:coral_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:coral_nameplate",
+      "required": false
+    }
+  ]
+}

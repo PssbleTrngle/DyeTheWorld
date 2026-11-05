@@ -1,7 +1,0 @@
-{
-  "parent": "spelunkery:block/glowstick",
-  "textures": {
-    "1": "spelunkery:block/ginger_glowstick",
-    "particle": "spelunkery:block/ginger_glowstick"
-  }
-}

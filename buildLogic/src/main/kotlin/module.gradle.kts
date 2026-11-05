@@ -55,7 +55,8 @@ sourceSets.main {
 configure<NeoForgeExtension> {
     runs.named("data") {
         programArguments.addAll(provider {
-            compat.mods.flatMap { listOf("--existing-mod", it.id.getOrElse(it.name)) }
+            val existing = compat.mods.map { it.id.getOrElse(it.name) } + "dye_depot"
+            existing.flatMap { listOf("--existing-mod", it) }
         })
     }
 }

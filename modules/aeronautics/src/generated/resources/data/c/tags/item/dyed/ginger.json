@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "simulated:ginger_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:ginger_nameplate",
+      "required": false
+    }
+  ]
+}

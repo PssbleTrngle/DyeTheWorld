@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "interiors"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "interiors"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "dye_depot:slate_wool"
+    },
+    {
+      "tag": "minecraft:planks"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "interiors:slate_cushion"
+  }
+}

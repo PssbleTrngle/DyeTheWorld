@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "clayworks:verdant_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_brick_slab",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:chiseled_verdant_terracotta_bricks",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_slab",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_stairs",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_decorated_pot",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_stained_glass_door",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_stained_glass_trapdoor",
+      "required": false
+    }
+  ]
+}

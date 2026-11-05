@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "createdeco:mint_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:mint_placard",
+      "required": false
+    }
+  ]
+}

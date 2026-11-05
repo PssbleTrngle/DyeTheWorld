@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "interiors:indigo_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:indigo_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:indigo_cushion",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "botanypots:amber_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_terracotta_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_concrete_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_concrete_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_concrete_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_glazed_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_glazed_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:amber_glazed_terracotta_waxed_botany_pot",
+      "required": false
+    }
+  ]
+}

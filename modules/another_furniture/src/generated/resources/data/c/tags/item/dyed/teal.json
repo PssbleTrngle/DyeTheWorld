@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "another_furniture:teal_sofa",
+      "required": false
+    },
+    {
+      "id": "another_furniture:teal_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:teal_tall_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:teal_curtain",
+      "required": false
+    },
+    {
+      "id": "another_furniture:teal_lamp",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "createdeco:amber_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:amber_placard",
+      "required": false
+    }
+  ]
+}

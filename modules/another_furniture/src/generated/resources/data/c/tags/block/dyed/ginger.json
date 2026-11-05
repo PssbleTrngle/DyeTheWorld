@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "another_furniture:ginger_sofa",
+      "required": false
+    },
+    {
+      "id": "another_furniture:ginger_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:ginger_tall_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:ginger_curtain",
+      "required": false
+    },
+    {
+      "id": "another_furniture:ginger_lamp",
+      "required": false
+    },
+    {
+      "id": "another_furniture:ginger_lamp_connector",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "simulated:tan_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:tan_nameplate",
+      "required": false
+    }
+  ]
+}

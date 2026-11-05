@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:slate_canvas_wall_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:slate_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:slate_wall_hanging_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:slate_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

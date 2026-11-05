@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "dye_depot:block/indigo_wool",
-    "side": "dye_depot:block/indigo_wool",
-    "top": "dye_depot:block/indigo_wool"
-  }
-}

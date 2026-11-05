@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "dye_depot:block/forest_wool",
-    "side": "dye_depot:block/forest_wool",
-    "top": "dye_depot:block/forest_wool"
-  }
-}

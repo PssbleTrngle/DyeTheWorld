@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alexscaves"
+    }
+  ],
+  "type": "minecraft:block",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "alexscaves"
+      ]
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alexscaves:radon_lamp_tan"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "alexscaves:blocks/radon_lamp_tan"
+}

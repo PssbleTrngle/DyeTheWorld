@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "comforts"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "comforts"
+      ]
+    }
+  ],
+  "group": "comforts:sleeping_bags_dyed",
+  "ingredients": [
+    {
+      "tag": "c:dyes/olive"
+    },
+    {
+      "tag": "comforts:sleeping_bags"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:sleeping_bag_olive"
+  }
+}

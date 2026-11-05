@@ -1,0 +1,132 @@
+{
+  "values": [
+    {
+      "id": "clayworks:amber_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:aqua_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:beige_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:coral_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:forest_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:ginger_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:indigo_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:maroon_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:mint_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:olive_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:rose_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:slate_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:tan_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:teal_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_brick_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:amber_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:aqua_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:beige_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:coral_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:forest_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:ginger_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:indigo_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:maroon_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:mint_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:navy_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:olive_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:rose_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:slate_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:tan_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:teal_terracotta_wall",
+      "required": false
+    },
+    {
+      "id": "clayworks:verdant_terracotta_wall",
+      "required": false
+    }
+  ]
+}

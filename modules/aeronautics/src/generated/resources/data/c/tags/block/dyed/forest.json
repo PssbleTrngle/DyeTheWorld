@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "simulated:forest_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:forest_nameplate",
+      "required": false
+    }
+  ]
+}

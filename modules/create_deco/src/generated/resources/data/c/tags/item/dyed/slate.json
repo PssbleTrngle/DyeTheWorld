@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "createdeco:slate_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:slate_placard",
+      "required": false
+    }
+  ]
+}

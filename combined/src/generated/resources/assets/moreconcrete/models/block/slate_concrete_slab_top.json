@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "dye_depot:block/slate_concrete",
-    "side": "dye_depot:block/slate_concrete",
-    "top": "dye_depot:block/slate_concrete"
-  }
-}

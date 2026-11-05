@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "simulated:indigo_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:indigo_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:indigo_nameplate",
+      "required": false
+    }
+  ]
+}

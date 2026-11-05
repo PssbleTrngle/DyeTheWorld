@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "createdeco:navy_shipping_container",
+      "required": false
+    },
+    {
+      "id": "createdeco:navy_placard",
+      "required": false
+    }
+  ]
+}

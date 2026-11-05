@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "interiors:aqua_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:aqua_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:aqua_cushion",
+      "required": false
+    }
+  ]
+}

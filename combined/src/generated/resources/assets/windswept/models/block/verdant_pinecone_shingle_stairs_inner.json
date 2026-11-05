@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "windswept:block/verdant_pinecone_shingles",
-    "side": "windswept:block/verdant_pinecone_shingles",
-    "top": "windswept:block/verdant_pinecone_shingles"
-  }
-}

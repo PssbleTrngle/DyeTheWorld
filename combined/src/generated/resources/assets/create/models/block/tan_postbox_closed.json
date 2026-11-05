@@ -1,7 +1,0 @@
-{
-  "parent": "create:block/package_postbox/block_closed",
-  "textures": {
-    "0": "create:block/postbox/tan",
-    "1": "create:block/postbox/tan_closed"
-  }
-}

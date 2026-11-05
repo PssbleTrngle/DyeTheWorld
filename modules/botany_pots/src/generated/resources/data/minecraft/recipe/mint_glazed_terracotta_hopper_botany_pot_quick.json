@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "botanypots"
+      ]
+    }
+  ],
+  "group": "botanypots:hopper_pot",
+  "ingredients": [
+    {
+      "item": "minecraft:hopper"
+    },
+    {
+      "item": "botanypots:mint_glazed_terracotta_botany_pot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "botanypots:mint_glazed_terracotta_hopper_botany_pot"
+  }
+}

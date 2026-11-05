@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "another_furniture:coral_sofa",
+      "required": false
+    },
+    {
+      "id": "another_furniture:coral_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:coral_tall_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:coral_curtain",
+      "required": false
+    },
+    {
+      "id": "another_furniture:coral_lamp",
+      "required": false
+    },
+    {
+      "id": "another_furniture:coral_lamp_connector",
+      "required": false
+    }
+  ]
+}

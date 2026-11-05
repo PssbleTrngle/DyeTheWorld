@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "bits_n_bobs:amber_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:aqua_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:beige_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:coral_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:forest_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:ginger_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:indigo_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:maroon_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:mint_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:navy_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:olive_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:rose_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:slate_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:tan_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:teal_chair",
+      "required": false
+    },
+    {
+      "id": "bits_n_bobs:verdant_chair",
+      "required": false
+    }
+  ]
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "dye_depot:block/aqua_concrete",
-    "side": "dye_depot:block/aqua_concrete",
-    "top": "dye_depot:block/aqua_concrete"
-  }
-}

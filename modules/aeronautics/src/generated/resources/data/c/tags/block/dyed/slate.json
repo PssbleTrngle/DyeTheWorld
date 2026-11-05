@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "simulated:slate_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:slate_nameplate",
+      "required": false
+    }
+  ]
+}

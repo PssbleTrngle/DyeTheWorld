@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "quark:block/verdant_shingles",
-    "side": "quark:block/verdant_shingles",
-    "top": "quark:block/verdant_shingles"
-  }
-}

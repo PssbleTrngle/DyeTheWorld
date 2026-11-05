@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "twigs:block/indigo_silt_shingles",
-    "side": "twigs:block/indigo_silt_shingles",
-    "top": "twigs:block/indigo_silt_shingles"
-  }
-}

@@ -8,6 +8,11 @@ compat.default {
     dataOnly()
 }
 
+neoforge.dataGen {
+    existing("create")
+    existing(project(":create"))
+}
+
 dependencies {
     api(project(":create"))
     api(pack.modrinth.interiors)

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "simulated:beige_portable_engine",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_handle",
+      "required": false
+    },
+    {
+      "id": "simulated:beige_nameplate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:indigo_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:indigo_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

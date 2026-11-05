@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:coral_canvas_wall_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:coral_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:coral_wall_hanging_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:coral_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

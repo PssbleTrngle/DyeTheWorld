@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "moreconcrete"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "moreconcrete"
+      ]
+    }
+  ],
+  "ingredient": {
+    "item": "dye_depot:forest_concrete"
+  },
+  "result": {
+    "count": 2,
+    "id": "moreconcrete:forest_concrete_slab"
+  }
+}

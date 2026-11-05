@@ -12,6 +12,11 @@ compat.mods {
     }
 }
 
+neoforge.dataGen {
+    existing("create")
+    existing(project(":create"))
+}
+
 dependencies {
     api(project(":create"))
     runtimeOnly(libs.sable) { isTransitive = false }

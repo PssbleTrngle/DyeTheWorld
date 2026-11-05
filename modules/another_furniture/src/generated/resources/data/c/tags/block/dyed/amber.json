@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "another_furniture:amber_sofa",
+      "required": false
+    },
+    {
+      "id": "another_furniture:amber_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:amber_tall_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:amber_curtain",
+      "required": false
+    },
+    {
+      "id": "another_furniture:amber_lamp",
+      "required": false
+    },
+    {
+      "id": "another_furniture:amber_lamp_connector",
+      "required": false
+    }
+  ]
+}

@@ -9,7 +9,10 @@ compat.default {
 }
 
 dependencies {
-    api(libs.ponder)
+    api(libs.ponder) {
+        isTransitive = false
+    }
+    api(libs.flywheel)
     compileOnlyApi(libs.flywheel.api)
     api(
         variantOf(libs.create) {

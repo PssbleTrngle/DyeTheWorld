@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "comforts:sleeping_bag_forest",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_forest",
+      "required": false
+    }
+  ]
+}

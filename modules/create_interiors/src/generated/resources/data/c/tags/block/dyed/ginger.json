@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "interiors:ginger_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:ginger_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:ginger_cushion",
+      "required": false
+    }
+  ]
+}

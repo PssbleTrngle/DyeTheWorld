@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "interiors:amber_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:amber_floor_chair",
+      "required": false
+    },
+    {
+      "id": "interiors:amber_cushion",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:aqua_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:aqua_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

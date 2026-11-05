@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "another_furniture:forest_sofa",
+      "required": false
+    },
+    {
+      "id": "another_furniture:forest_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:forest_tall_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:forest_curtain",
+      "required": false
+    },
+    {
+      "id": "another_furniture:forest_lamp",
+      "required": false
+    }
+  ]
+}

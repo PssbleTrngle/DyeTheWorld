@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "quark:block/forest_shingles",
-    "side": "quark:block/forest_shingles",
-    "top": "quark:block/forest_shingles"
-  }
-}

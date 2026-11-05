@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "comforts:sleeping_bag_amber",
+      "required": false
+    },
+    {
+      "id": "comforts:sleeping_bag_amber",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_amber",
+      "required": false
+    },
+    {
+      "id": "comforts:hammock_amber",
+      "required": false
+    }
+  ]
+}

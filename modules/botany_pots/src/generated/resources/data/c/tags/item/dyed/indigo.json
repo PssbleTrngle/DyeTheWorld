@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "botanypots:indigo_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_terracotta_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_concrete_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_concrete_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_concrete_waxed_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_glazed_terracotta_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_glazed_terracotta_hopper_botany_pot",
+      "required": false
+    },
+    {
+      "id": "botanypots:indigo_glazed_terracotta_waxed_botany_pot",
+      "required": false
+    }
+  ]
+}

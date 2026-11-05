@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:olive_canvas_wall_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:olive_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:olive_wall_hanging_canvas_sign",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:olive_hanging_canvas_sign",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "another_furniture:beige_sofa",
+      "required": false
+    },
+    {
+      "id": "another_furniture:beige_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:beige_tall_stool",
+      "required": false
+    },
+    {
+      "id": "another_furniture:beige_curtain",
+      "required": false
+    },
+    {
+      "id": "another_furniture:beige_lamp",
+      "required": false
+    }
+  ]
+}
