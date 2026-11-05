@@ -3,39 +3,6 @@ import com.possible_triangle.gradle.modModules
 plugins {
     id("com.possible-triangle.neoforge")
     id("conventions")
-    idea
-}
-
-neoforge {
-    /*
-    dataGen {
-        existing("dye_depot")
-        existing("another_furniture")
-        existing("supplementaries")
-        existing("create")
-        existing("comforts")
-        existing("quark")
-        existing("suppsquared")
-        existing("farmersdelight")
-        existing("redomesticate")
-        existing("createdeco")
-        existing("railways")
-        existing("chalk")
-        existing("waystones")
-        existing("moreconcrete")
-        existing("interiors")
-        existing("snowyspirit")
-        existing("connectedglass")
-        existing("botanypots")
-        existing("simulated")
-        existing("aeronautics")
-        existing("spelunkery")
-        existing("twigs")
-        existing("sleep_tight")
-        existing("windswept")
-        existing("bits_n_bobs")
-    }
-     */
 }
 
 modModules.forEach { module ->
@@ -47,6 +14,12 @@ modModules.forEach { module ->
     }
 }
 
+dependencies {
+    runtimeOnly(libs.jei)
+    runtimeOnly(pack.modrinth.jade)
+}
+
+/*
 dependencies {
     modImplementation(
         variantOf(libs.create) {
@@ -122,10 +95,7 @@ dependencies {
     modRuntimeOnly(pack.modrinth.elysium.api)
     modRuntimeOnly(pack.modrinth.lodestonelib)
 }
-
-sourceSets.main {
-    resources.srcDir(file("src/dyed/resources"))
-}
+*/
 
 upload {
     curseforge {
