@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "base=false,powered=false": {
+      "model": "another_furniture:block/mint_lamp_connectormiddle"
+    },
+    "base=false,powered=true": {
+      "model": "another_furniture:block/mint_lamp_connectormiddle"
+    },
+    "base=true,powered=false": {
+      "model": "another_furniture:block/mint_lamp_connectorbase"
+    },
+    "base=true,powered=true": {
+      "model": "another_furniture:block/mint_lamp_connectorbase"
+    }
+  }
+}

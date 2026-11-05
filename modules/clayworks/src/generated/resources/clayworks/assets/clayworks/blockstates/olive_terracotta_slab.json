@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "clayworks:block/olive_terracotta_slab"
+    },
+    "type=double": {
+      "model": "dye_depot:block/olive_terracotta"
+    },
+    "type=top": {
+      "model": "clayworks:block/olive_terracotta_slab_top"
+    }
+  }
+}

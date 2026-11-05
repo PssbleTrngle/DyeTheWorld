@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "low=false": {
+      "model": "another_furniture:block/maroon_stool"
+    },
+    "low=true": {
+      "model": "another_furniture:block/maroon_stool_low"
+    }
+  }
+}

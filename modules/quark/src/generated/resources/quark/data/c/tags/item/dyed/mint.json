@@ -1,0 +1,11 @@
+{
+  "values": [
+    "quark:mint_shard",
+    "quark:mint_stool",
+    "quark:mint_shingles",
+    "quark:mint_shingles_slab",
+    "quark:mint_shingles_stairs",
+    "quark:mint_framed_glass",
+    "quark:mint_framed_glass_pane"
+  ]
+}

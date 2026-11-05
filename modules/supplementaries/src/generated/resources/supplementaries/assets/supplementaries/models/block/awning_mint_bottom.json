@@ -1,0 +1,8 @@
+{
+  "parent": "supplementaries:block/awnings/bottom",
+  "textures": {
+    "1": "supplementaries:block/awnings/awning_mint",
+    "particle": "supplementaries:block/awnings/awning_mint",
+    "up": "supplementaries:block/awnings/awning_mint_side"
+  }
+}

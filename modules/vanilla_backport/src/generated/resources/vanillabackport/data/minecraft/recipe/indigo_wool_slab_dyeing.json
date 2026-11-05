@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool_slabs",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "tag": "minecraft:wool_slabs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:indigo_wool_slab"
+  }
+}

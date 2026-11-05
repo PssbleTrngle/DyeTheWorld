@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:coral_nixie_tube",
+    "create:coral_toolbox",
+    "create:coral_seat",
+    "create:coral_sail",
+    "create:coral_valve_handle",
+    "create:coral_table_cloth",
+    "create:coral_postbox"
+  ]
+}

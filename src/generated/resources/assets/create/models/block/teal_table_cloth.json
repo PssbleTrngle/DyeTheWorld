@@ -1,6 +1,0 @@
-{
-  "parent": "create:block/table_cloth/block",
-  "textures": {
-    "0": "dye_the_world:block/create/table_cloth/teal"
-  }
-}

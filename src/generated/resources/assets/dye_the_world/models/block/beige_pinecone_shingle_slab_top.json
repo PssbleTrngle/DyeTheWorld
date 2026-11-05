@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "dye_the_world:block/windswept/pinecone_shingle/beige",
-    "side": "dye_the_world:block/windswept/pinecone_shingle/beige",
-    "top": "dye_the_world:block/windswept/pinecone_shingle/beige"
-  }
-}

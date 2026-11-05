@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "dye_depot:block/verdant_wool",
+    "side": "dye_depot:block/verdant_wool",
+    "top": "dye_depot:block/verdant_wool"
+  }
+}

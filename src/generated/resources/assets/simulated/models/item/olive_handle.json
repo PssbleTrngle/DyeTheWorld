@@ -1,6 +1,0 @@
-{
-  "parent": "simulated:block/handle/item",
-  "textures": {
-    "0": "dye_the_world:block/simulated/handle/olive"
-  }
-}

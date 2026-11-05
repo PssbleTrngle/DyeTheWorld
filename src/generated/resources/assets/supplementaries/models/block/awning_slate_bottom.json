@@ -1,8 +1,0 @@
-{
-  "parent": "supplementaries:block/awnings/bottom",
-  "textures": {
-    "1": "dye_the_world:block/supplementaries/awnings/awning_slate",
-    "particle": "dye_the_world:block/supplementaries/awnings/awning_slate",
-    "up": "dye_the_world:block/supplementaries/awnings/awning_slate_side"
-  }
-}

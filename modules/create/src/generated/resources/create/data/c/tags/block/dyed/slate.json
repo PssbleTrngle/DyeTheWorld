@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:slate_nixie_tube",
+    "create:slate_toolbox",
+    "create:slate_seat",
+    "create:slate_sail",
+    "create:slate_valve_handle",
+    "create:slate_table_cloth",
+    "create:slate_postbox"
+  ]
+}

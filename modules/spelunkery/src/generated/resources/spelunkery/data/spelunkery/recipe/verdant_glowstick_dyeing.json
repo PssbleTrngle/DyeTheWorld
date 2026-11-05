@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "glowsticks",
+  "key": {
+    "#": {
+      "tag": "spelunkery:glowsticks"
+    },
+    "D": {
+      "tag": "c:dyes/verdant"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "spelunkery:verdant_glowstick"
+  }
+}

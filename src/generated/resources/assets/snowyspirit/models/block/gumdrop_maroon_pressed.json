@@ -1,6 +1,0 @@
-{
-  "parent": "snowyspirit:block/gumdrop_pressed",
-  "textures": {
-    "particle": "dye_the_world:block/snowyspirit/gumdrop/maroon"
-  }
-}

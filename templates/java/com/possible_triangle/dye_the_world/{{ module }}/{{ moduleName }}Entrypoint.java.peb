@@ -1,0 +1,45 @@
+package com.possible_triangle.dye_the_world.{{ module }};
+
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.ModList;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.data.loading.DatagenModLoader;
+
+@Mod({{ moduleName }}Module.MOD_ID)
+public class {{ moduleName }}Entrypoint {
+
+    private void registerEvents(IEventBus modBus, Object target) {
+        var shouldRegister = false;
+        for (var method : target.getClass().getDeclaredMethods()) {
+            if (method.isAnnotationPresent(SubscribeEvent.class)) {
+                shouldRegister = true;
+                break;
+            }
+        }
+        if (shouldRegister) {
+            modBus.register(target);
+        }
+    }
+
+    public {{ moduleName }}Entrypoint(IEventBus modBus) {
+        var mods = ModList.get();
+
+{% for compatMod in compatMods %}
+{% if compatMod.type != "resources_only" %}
+        if (mods.isLoaded({{ moduleName }}Module.{{ compatMod.name | upper }})) {
+            registerEvents(modBus, Dyed{{ compatMod.file }}.INSTANCE);
+{% if compatMod.type == "full" %}
+            {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
+{% endif %}
+        }
+{% if compatMod.type == "data_only" %}
+        if (DatagenModLoader.isRunningDataGen()) {
+            {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
+        }
+{% endif %}
+{% endif %}
+{% endfor %}
+    }
+
+}

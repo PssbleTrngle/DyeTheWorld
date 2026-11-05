@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "dye_the_world:block/twigs/silt_shingle/rose",
-    "side": "dye_the_world:block/twigs/silt_shingle/rose",
-    "top": "dye_the_world:block/twigs/silt_shingle/rose"
-  }
-}

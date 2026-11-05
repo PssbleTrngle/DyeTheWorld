@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:maroon_concrete"
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:maroon_concrete_slab"
+  }
+}

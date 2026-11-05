@@ -1,8 +1,0 @@
-{
-  "parent": "botanypots:block/template/hopper_pot",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "material": "dye_depot:block/maroon_terracotta",
-    "material_top": "dye_the_world:block/botanypots/maroon_terracotta"
-  }
-}

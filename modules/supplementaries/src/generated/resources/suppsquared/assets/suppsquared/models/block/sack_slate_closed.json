@@ -1,0 +1,10 @@
+{
+  "parent": "supplementaries:block/sack_closed",
+  "textures": {
+    "1": "suppsquared:block/sack_slate_front",
+    "2": "suppsquared:block/sack_slate_top",
+    "3": "suppsquared:block/sack_slate_bottom",
+    "4": "suppsquared:block/sack_slate_closed",
+    "particle": "suppsquared:block/sack_slate_front"
+  }
+}

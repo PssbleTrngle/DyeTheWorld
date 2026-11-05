@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "quark:block/tan_shingles_slab"
+    },
+    "type=double": {
+      "model": "quark:block/tan_shingles"
+    },
+    "type=top": {
+      "model": "quark:block/tan_shingles_slab_top"
+    }
+  }
+}

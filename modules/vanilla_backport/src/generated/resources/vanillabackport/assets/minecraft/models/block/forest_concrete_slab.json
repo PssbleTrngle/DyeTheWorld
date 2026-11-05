@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "dye_depot:block/forest_concrete",
+    "side": "dye_depot:block/forest_concrete",
+    "top": "dye_depot:block/forest_concrete"
+  }
+}

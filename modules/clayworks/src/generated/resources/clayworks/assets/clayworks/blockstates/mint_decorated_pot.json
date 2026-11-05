@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "clayworks:block/mint_decorated_pot"
+    }
+  }
+}

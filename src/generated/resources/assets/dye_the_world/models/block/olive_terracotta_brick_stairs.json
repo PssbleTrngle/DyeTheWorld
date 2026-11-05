@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "dye_the_world:block/clayworks/terracotta_brick/olive",
-    "side": "dye_the_world:block/clayworks/terracotta_brick/olive",
-    "top": "dye_the_world:block/clayworks/terracotta_brick/olive"
-  }
-}

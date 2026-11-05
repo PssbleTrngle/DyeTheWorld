@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "clayworks:block/verdant_terracotta_slab"
+    },
+    "type=double": {
+      "model": "dye_depot:block/verdant_terracotta"
+    },
+    "type=top": {
+      "model": "clayworks:block/verdant_terracotta_slab_top"
+    }
+  }
+}

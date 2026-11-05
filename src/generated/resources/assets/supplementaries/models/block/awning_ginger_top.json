@@ -1,8 +1,0 @@
-{
-  "parent": "supplementaries:block/awnings/top",
-  "textures": {
-    "1": "dye_the_world:block/supplementaries/awnings/awning_ginger",
-    "particle": "dye_the_world:block/supplementaries/awnings/awning_ginger",
-    "up": "dye_the_world:block/supplementaries/awnings/awning_ginger_side"
-  }
-}

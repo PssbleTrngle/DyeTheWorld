@@ -1,0 +1,8 @@
+{
+  "parent": "supplementaries:block/awnings/bottom_slanted",
+  "textures": {
+    "1": "supplementaries:block/awnings/awning_navy",
+    "particle": "supplementaries:block/awnings/awning_navy",
+    "up": "supplementaries:block/awnings/awning_navy_side"
+  }
+}

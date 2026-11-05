@@ -1,0 +1,238 @@
+{
+  "variants": {
+    "facing=east,horizontal=left,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 90
+    },
+    "facing=east,horizontal=left,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 90
+    },
+    "facing=east,horizontal=left,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_left_bottom",
+      "y": 90
+    },
+    "facing=east,horizontal=left,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_left_top",
+      "y": 90
+    },
+    "facing=east,horizontal=middle,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 90
+    },
+    "facing=east,horizontal=middle,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 90
+    },
+    "facing=east,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=east,horizontal=middle,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle",
+      "y": 90
+    },
+    "facing=east,horizontal=right,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 90
+    },
+    "facing=east,horizontal=right,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 90
+    },
+    "facing=east,horizontal=right,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_right_bottom",
+      "y": 90
+    },
+    "facing=east,horizontal=right,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_right_top",
+      "y": 90
+    },
+    "facing=east,horizontal=single,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 90
+    },
+    "facing=east,horizontal=single,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 90
+    },
+    "facing=east,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=east,horizontal=single,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle",
+      "y": 90
+    },
+    "facing=north,horizontal=left,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom"
+    },
+    "facing=north,horizontal=left,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top"
+    },
+    "facing=north,horizontal=left,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_left_bottom"
+    },
+    "facing=north,horizontal=left,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_left_top"
+    },
+    "facing=north,horizontal=middle,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom"
+    },
+    "facing=north,horizontal=middle,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top"
+    },
+    "facing=north,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=north,horizontal=middle,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle"
+    },
+    "facing=north,horizontal=right,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom"
+    },
+    "facing=north,horizontal=right,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top"
+    },
+    "facing=north,horizontal=right,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_right_bottom"
+    },
+    "facing=north,horizontal=right,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_right_top"
+    },
+    "facing=north,horizontal=single,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom"
+    },
+    "facing=north,horizontal=single,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top"
+    },
+    "facing=north,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=north,horizontal=single,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle"
+    },
+    "facing=south,horizontal=left,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=left,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=left,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_left_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=left,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_left_top",
+      "y": 180
+    },
+    "facing=south,horizontal=middle,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=middle,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=south,horizontal=middle,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_right_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_right_top",
+      "y": 180
+    },
+    "facing=south,horizontal=single,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=single,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=south,horizontal=single,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle",
+      "y": 180
+    },
+    "facing=west,horizontal=left,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=left,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=left,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_left_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=left,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_left_top",
+      "y": 270
+    },
+    "facing=west,horizontal=middle,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=middle,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=west,horizontal=middle,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=true,vertical=down": {
+      "model": "another_furniture:block/verdant_curtain_right_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_right_top",
+      "y": 270
+    },
+    "facing=west,horizontal=single,open=false,vertical=down": {
+      "model": "another_furniture:block/verdant_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=single,open=false,vertical=up": {
+      "model": "another_furniture:block/verdant_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=west,horizontal=single,open=true,vertical=up": {
+      "model": "another_furniture:block/verdant_curtain_middle",
+      "y": 270
+    }
+  }
+}

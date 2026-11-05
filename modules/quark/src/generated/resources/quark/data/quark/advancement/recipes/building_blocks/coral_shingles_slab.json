@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "zeta:flag",
+      "flag": "shingles"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coral_shingles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "quark:coral_shingles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "quark:coral_shingles_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coral_shingles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "quark:coral_shingles_slab"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "clayworks:block/maroon_terracotta_bricks"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "comforts:hammocks",
+  "key": {
+    "#": {
+      "item": "dye_depot:beige_wool"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:sleeping_bag_beige"
+  }
+}

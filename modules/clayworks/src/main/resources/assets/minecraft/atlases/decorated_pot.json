@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "type": "blueprint:paletted_permutations",
+      "sources": [
+        {
+          "type": "minecraft:directory",
+          "prefix": "entity/decorated_pot/",
+          "source": "entity/decorated_pot"
+        }
+      ],
+      "palette_key": "clayworks:entity/decorated_pot_color_palettes/decorated_pot_palette",
+      "permutations": {
+        "amber": "clayworks:entity/decorated_pot_color_palettes/amber",
+        "aqua": "clayworks:entity/decorated_pot_color_palettes/aqua",
+        "beige": "clayworks:entity/decorated_pot_color_palettes/beige",
+        "coral": "clayworks:entity/decorated_pot_color_palettes/coral",
+        "forest": "clayworks:entity/decorated_pot_color_palettes/forest",
+        "ginger": "clayworks:entity/decorated_pot_color_palettes/ginger",
+        "indigo": "clayworks:entity/decorated_pot_color_palettes/indigo",
+        "maroon": "clayworks:entity/decorated_pot_color_palettes/maroon",
+        "mint": "clayworks:entity/decorated_pot_color_palettes/mint",
+        "navy": "clayworks:entity/decorated_pot_color_palettes/navy",
+        "olive": "clayworks:entity/decorated_pot_color_palettes/olive",
+        "rose": "clayworks:entity/decorated_pot_color_palettes/rose",
+        "slate": "clayworks:entity/decorated_pot_color_palettes/slate",
+        "tan": "clayworks:entity/decorated_pot_color_palettes/tan",
+        "teal": "clayworks:entity/decorated_pot_color_palettes/teal",
+        "verdant": "clayworks:entity/decorated_pot_color_palettes/verdant"
+      }
+    }
+  ]
+}

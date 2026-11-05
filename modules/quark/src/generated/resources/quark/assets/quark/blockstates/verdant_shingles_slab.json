@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "quark:block/verdant_shingles_slab"
+    },
+    "type=double": {
+      "model": "quark:block/verdant_shingles"
+    },
+    "type=top": {
+      "model": "quark:block/verdant_shingles_slab_top"
+    }
+  }
+}

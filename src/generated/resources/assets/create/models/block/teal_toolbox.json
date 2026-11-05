@@ -1,6 +1,0 @@
-{
-  "parent": "create:block/toolbox/block",
-  "textures": {
-    "0": "dye_the_world:block/create/toolbox/teal"
-  }
-}

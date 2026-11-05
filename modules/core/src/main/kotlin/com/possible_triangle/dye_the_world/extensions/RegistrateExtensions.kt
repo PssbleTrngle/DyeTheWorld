@@ -1,0 +1,49 @@
+package com.possible_triangle.dye_the_world.extensions
+
+import com.possible_triangle.dye_the_world.data.CustomRegistrateLangProvider
+import com.tterrag.registrate.builders.AbstractBuilder
+import com.tterrag.registrate.builders.BlockBuilder
+import com.tterrag.registrate.builders.ItemBuilder
+import com.tterrag.registrate.providers.ProviderType
+import net.minecraft.resources.ResourceKey
+import net.minecraft.world.item.BlockItem
+import net.minecraft.world.item.CreativeModeTab
+import net.minecraft.world.item.Item
+import net.minecraft.world.level.block.Block
+
+fun <T : Block, P> BlockBuilder<T, P>.withItem(
+    factory: (T, Item.Properties) -> BlockItem = ::BlockItem,
+    block: ItemBuilder<BlockItem, BlockBuilder<T, P>>.() -> Unit = {},
+): BlockBuilder<T, P> =
+    item(factory)
+        .apply(block)
+        .build()
+
+val DE_LANG = CustomRegistrateLangProvider.providerType("de_de")
+
+fun <T : Item, P> ItemBuilder<T, P>.germanLang(translation: String) =
+    setData(DE_LANG) { context, provider ->
+        provider.add(context.get(), translation)
+    }
+
+fun <T : Block, P> BlockBuilder<T, P>.germanLang(translation: String) =
+    setData(DE_LANG) { context, provider ->
+        provider.add(context.get(), translation)
+    }
+
+fun <T : Item, P> ItemBuilder<T, P>.optionalTab(
+    vararg keys: ResourceKey<CreativeModeTab>,
+    condition: () -> Boolean,
+) = apply {
+    keys.forEach { key ->
+        tab(key) { item, it ->
+            if (condition()) it.accept(item)
+        }
+    }
+}
+
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.no(type: ProviderType<*>) = setData(type) { _, _ -> }
+
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noLang() = no(ProviderType.LANG)
+
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noModel() = no(ProviderType.ITEM_MODEL)

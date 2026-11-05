@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "clayworks:block/indigo_terracotta_bricks",
+    "side": "clayworks:block/indigo_terracotta_bricks",
+    "top": "clayworks:block/indigo_terracotta_bricks"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "zeta:flag",
+      "flag": "shingles"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:olive_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "quark:olive_shingles_stairs"
+  }
+}

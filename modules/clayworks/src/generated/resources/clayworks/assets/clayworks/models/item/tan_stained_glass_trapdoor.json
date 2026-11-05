@@ -1,0 +1,4 @@
+{
+  "parent": "clayworks:block/tan_stained_glass_trapdoor_bottom",
+  "render_type": "minecraft:translucent"
+}

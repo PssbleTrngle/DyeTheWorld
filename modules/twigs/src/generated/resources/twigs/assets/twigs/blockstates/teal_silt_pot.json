@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "filled=false": {
+      "model": "twigs:block/teal_silt_pot"
+    },
+    "filled=true": {
+      "model": "twigs:block/teal_silt_pot"
+    }
+  }
+}

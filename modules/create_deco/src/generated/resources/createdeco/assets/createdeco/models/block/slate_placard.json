@@ -1,0 +1,7 @@
+{
+  "parent": "createdeco:block/dyed_placard",
+  "textures": {
+    "0": "createdeco:block/placard/slate",
+    "particle": "createdeco:block/placard/slate"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "supplementaries:item/awning",
+  "textures": {
+    "1": "supplementaries:block/awnings/awning_teal",
+    "up": "supplementaries:block/awnings/awning_teal_side"
+  }
+}

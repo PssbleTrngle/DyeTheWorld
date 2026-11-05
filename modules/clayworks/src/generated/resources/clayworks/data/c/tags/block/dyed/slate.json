@@ -1,0 +1,15 @@
+{
+  "values": [
+    "clayworks:slate_terracotta_bricks",
+    "clayworks:slate_terracotta_brick_slab",
+    "clayworks:slate_terracotta_brick_stairs",
+    "clayworks:slate_terracotta_brick_wall",
+    "clayworks:chiseled_slate_terracotta_bricks",
+    "clayworks:slate_terracotta_slab",
+    "clayworks:slate_terracotta_stairs",
+    "clayworks:slate_terracotta_wall",
+    "clayworks:slate_decorated_pot",
+    "clayworks:slate_stained_glass_door",
+    "clayworks:slate_stained_glass_trapdoor"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "twigs:forest_silt_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "twigs:forest_silt_shingle_wall"
+  }
+}

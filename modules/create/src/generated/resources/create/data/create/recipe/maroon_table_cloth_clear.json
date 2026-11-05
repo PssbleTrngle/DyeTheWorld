@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "create:maroon_table_cloth"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:maroon_table_cloth"
+  }
+}

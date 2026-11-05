@@ -1,0 +1,15 @@
+{
+  "values": [
+    "clayworks:forest_terracotta_bricks",
+    "clayworks:forest_terracotta_brick_slab",
+    "clayworks:forest_terracotta_brick_stairs",
+    "clayworks:forest_terracotta_brick_wall",
+    "clayworks:chiseled_forest_terracotta_bricks",
+    "clayworks:forest_terracotta_slab",
+    "clayworks:forest_terracotta_stairs",
+    "clayworks:forest_terracotta_wall",
+    "clayworks:forest_decorated_pot",
+    "clayworks:forest_stained_glass_door",
+    "clayworks:forest_stained_glass_trapdoor"
+  ]
+}

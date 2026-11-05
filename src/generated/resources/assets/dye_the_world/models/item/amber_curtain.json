@@ -1,6 +1,0 @@
-{
-  "parent": "another_furniture:item/template/curtain",
-  "textures": {
-    "all": "dye_the_world:block/another_furniture/curtain/amber"
-  }
-}

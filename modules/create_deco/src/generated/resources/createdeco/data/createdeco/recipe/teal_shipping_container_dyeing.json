@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/teal"
+    },
+    {
+      "item": "create:item_vault"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:teal_shipping_container"
+  }
+}

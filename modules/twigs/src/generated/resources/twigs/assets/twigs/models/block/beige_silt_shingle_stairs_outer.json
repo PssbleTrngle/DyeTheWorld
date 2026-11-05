@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "twigs:block/beige_silt_shingles",
+    "side": "twigs:block/beige_silt_shingles",
+    "top": "twigs:block/beige_silt_shingles"
+  }
+}

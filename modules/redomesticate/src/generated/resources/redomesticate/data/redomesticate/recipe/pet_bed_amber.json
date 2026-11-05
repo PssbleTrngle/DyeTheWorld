@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "dye_depot:amber_wool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "redomesticate:pet_bed_amber"
+  }
+}

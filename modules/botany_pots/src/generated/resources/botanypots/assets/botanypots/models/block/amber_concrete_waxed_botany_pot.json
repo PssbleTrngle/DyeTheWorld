@@ -1,0 +1,8 @@
+{
+  "parent": "botanypots:block/template/pot",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "material": "dye_depot:block/amber_concrete",
+    "material_top": "botanypots:block/amber_concrete_pot_top"
+  }
+}

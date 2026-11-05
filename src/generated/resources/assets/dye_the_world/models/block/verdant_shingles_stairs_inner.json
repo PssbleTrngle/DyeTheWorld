@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "dye_the_world:block/quark/shingles/verdant",
-    "side": "dye_the_world:block/quark/shingles/verdant",
-    "top": "dye_the_world:block/quark/shingles/verdant"
-  }
-}

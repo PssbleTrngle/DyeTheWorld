@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "twigs:block/beige_silt_shingles",
+    "side": "twigs:block/beige_silt_shingles",
+    "top": "twigs:block/beige_silt_shingles"
+  }
+}

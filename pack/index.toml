@@ -26,6 +26,11 @@ hash = "8a857077b98b950607b66b0c4fec557f214190dd6657d5fc49cc3b8540126b5b"
 metafile = true
 
 [[files]]
+file = "mods/artsandcrafts.pw.toml"
+hash = "9a23844ade250fbab5156335da02da6184e3256394ef7d8a146fbcd488111093"
+metafile = true
+
+[[files]]
 file = "mods/azimuth-api.pw.toml"
 hash = "f10e1dfe7b0df6c00ce1ddad9d6fcf1d1654a022d71f40389d8e553f6970c27b"
 metafile = true
@@ -96,6 +101,11 @@ hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
 
 [[files]]
+file = "mods/elysium-api.pw.toml"
+hash = "320e38a0bb24767b93473c7d6c969c8ed4e3bf014d7db36a74ad646504ed16ce"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4"
 metafile = true
@@ -131,8 +141,23 @@ hash = "4de3e4a1a49e332c1ad313283e0403c4273b628d634c17a9ff0c9da3d6b67f9a"
 metafile = true
 
 [[files]]
+file = "mods/jadens-nether-expansion.pw.toml"
+hash = "158d6b6f19d486d49b989eca3797078e24c093fc75004c13a4c71e3dbdf9d7f2"
+metafile = true
+
+[[files]]
+file = "mods/jinxedlib.pw.toml"
+hash = "3e554dc66addcfd71cb63622490742566a640ff0ed45366814aa901945bb4ebc"
+metafile = true
+
+[[files]]
 file = "mods/labels.pw.toml"
 hash = "457684159486fddf4466a106290ebe2c4a3d32023535312a25f09bfa7f9a8994"
+metafile = true
+
+[[files]]
+file = "mods/lodestonelib.pw.toml"
+hash = "f5d0701055478e980b50849f199f266e6ab1940277a17ad2e5060df0d978be83"
 metafile = true
 
 [[files]]
@@ -162,7 +187,7 @@ metafile = true
 
 [[files]]
 file = "mods/platform.pw.toml"
-hash = "00887452f4c902a5f98fc42875d522e59948b60c20d887855a183c0f7235c641"
+hash = "3c65a8f21aaef8027725c78919c9df619487cff48e9a3b46c05bf301ad451ca7"
 metafile = true
 
 [[files]]
@@ -182,7 +207,7 @@ metafile = true
 
 [[files]]
 file = "mods/redomesticate.pw.toml"
-hash = "1c174ffd15f259bc88344367003ab609d0cd8e2849df7b6faceb3088effd51ff"
+hash = "a171e4464fe8da5b988d64f73a25ac2579d1437f85182bdaf49d6a3fa4ecd45b"
 metafile = true
 
 [[files]]
@@ -237,7 +262,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanillabackport.pw.toml"
-hash = "5fb112fda6e4350579e4bc922884d1673297f317d2bc0fd2dae99e510f7f1297"
+hash = "0b790184f0eb28fe6592f4b513be31f05a3029304aa8ae9eec9d21a74f7c3259"
 metafile = true
 
 [[files]]

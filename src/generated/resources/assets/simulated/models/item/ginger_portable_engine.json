@@ -1,7 +1,0 @@
-{
-  "parent": "simulated:block/portable_engine/item",
-  "textures": {
-    "0": "dye_the_world:block/simulated/portable_engine/ginger",
-    "particle": "dye_the_world:block/simulated/portable_engine/ginger"
-  }
-}

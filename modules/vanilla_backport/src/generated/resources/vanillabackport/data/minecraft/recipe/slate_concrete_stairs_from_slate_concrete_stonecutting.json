@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:slate_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:slate_concrete_stairs"
+  }
+}

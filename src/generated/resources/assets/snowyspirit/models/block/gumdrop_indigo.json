@@ -1,6 +1,0 @@
-{
-  "parent": "snowyspirit:block/gumdrop",
-  "textures": {
-    "particle": "dye_the_world:block/snowyspirit/gumdrop/indigo"
-  }
-}

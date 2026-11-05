@@ -1,0 +1,12 @@
+{
+  "values": [
+    "moreconcrete:coral_concrete_slab",
+    "moreconcrete:coral_concrete_stairs",
+    "moreconcrete:coral_concrete_wall",
+    "moreconcrete:coral_concrete_fence",
+    "moreconcrete:coral_concrete_fence_gate",
+    "moreconcrete:coral_concrete_button",
+    "moreconcrete:coral_concrete_lever",
+    "moreconcrete:coral_concrete_pressure_plate"
+  ]
+}

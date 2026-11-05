@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "naturalist:snail_shell"
+    },
+    {
+      "tag": "c:dyes/aqua"
+    }
+  ],
+  "result": {
+    "components": {
+      "minecraft:custom_data": {
+        "Color": 27
+      }
+    },
+    "count": 1,
+    "id": "naturalist:snail_shell"
+  }
+}

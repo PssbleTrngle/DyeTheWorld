@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:teal_nixie_tube",
+    "create:teal_toolbox",
+    "create:teal_seat",
+    "create:teal_sail",
+    "create:teal_valve_handle",
+    "create:teal_table_cloth",
+    "create:teal_postbox"
+  ]
+}

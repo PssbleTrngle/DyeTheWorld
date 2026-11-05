@@ -1,7 +1,0 @@
-{
-  "parent": "supplementaries:item/awning",
-  "textures": {
-    "1": "dye_the_world:block/supplementaries/awnings/awning_amber",
-    "up": "dye_the_world:block/supplementaries/awnings/awning_amber_side"
-  }
-}

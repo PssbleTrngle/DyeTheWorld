@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "quark:block/ginger_shingles_slab"
+    },
+    "type=double": {
+      "model": "quark:block/ginger_shingles"
+    },
+    "type=top": {
+      "model": "quark:block/ginger_shingles_slab_top"
+    }
+  }
+}

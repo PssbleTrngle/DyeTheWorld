@@ -50,7 +50,7 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic) (Bedrolls)
 - [Waystones](https://modrinth.com/mod/waystones) (Sharestones, Portstones)
 - [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) (Glowlights, Gumdrops)
-- [Vanilla Backport](https://modrinth.com/mod/vanillabackport) (Happy Ghast Harnesses, Dyed Bundles)
+- [Vanilla Backport](https://modrinth.com/mod/vanillabackport) (Happy Ghast Harnesses, Dyed Bundles, ...)
 - [Botany Pots](https://modrinth.com/mod/botany-pots)
 - [Connected Glass](https://modrinth.com/mod/connected-glass)
 - [Elevator Mod](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator)
@@ -58,9 +58,9 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Spelunkery](https://modrinth.com/mod/spelunkery) (Glow Sticks)
 - [Twigs](https://modrinth.com/mod/twigs) (Glow Sticks)
 
+<!-- modrinth_exclude.start -->
 ### Contributors
 
-<!-- modrinth_exclude.start -->
 <!-- contributors.start -->
 <table>
   <tbody>
@@ -130,7 +130,11 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <sub><small>artist of dye depot</small></sub>
       </td>
       <td align="center" valign="top" width="200">
-        <img src="https://placehold.net/avatar-4.svg" width="100" alt="Lev" />
+        <img
+          src="https://workflows.somethingcatchy.net/avatar.svg"
+          width="100"
+          alt="Lev"
+        />
         <br />
         <a href="https://modrinth.com/user/Lev">
           <img
@@ -175,7 +179,7 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
       </td>
       <td align="center" valign="top" width="200">
         <img
-          src="https://placehold.net/avatar-4.svg"
+          src="https://workflows.somethingcatchy.net/avatar.svg"
           width="100"
           alt="nonbatnary"
         />
@@ -324,6 +328,46 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <sub><b>NeonNxiaa</b></sub>
         <br />
         <sub><small>bits n&#x27; bobs chair textures</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/83239039?v=4"
+          width="100"
+          alt="bllryy"
+        />
+        <br />
+        <a href="https://github.com/bllryy">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>bllryy</b></sub>
+        <br />
+        <sub><small>storage labels compatibility</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/251834374?v=4"
+          width="100"
+          alt="maedickens"
+        />
+        <br />
+        <a href="https://github.com/maedickens">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>maedickens</b></sub>
+        <br />
+        <sub><small>stained redstone lamps textures</small></sub>
       </td>
     </tr>
   </tbody>

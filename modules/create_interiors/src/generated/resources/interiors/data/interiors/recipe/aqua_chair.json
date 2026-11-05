@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "minecraft:wooden_slabs"
+    },
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "dye_depot:aqua_wool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interiors:aqua_chair"
+  }
+}

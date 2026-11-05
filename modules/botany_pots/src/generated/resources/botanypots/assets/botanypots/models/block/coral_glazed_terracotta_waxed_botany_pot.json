@@ -1,0 +1,8 @@
+{
+  "parent": "botanypots:block/template/pot",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "material": "dye_depot:block/coral_glazed_terracotta",
+    "material_top": "botanypots:block/coral_glazed_terracotta_pot_top"
+  }
+}

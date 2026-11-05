@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "clayworks:block/forest_terracotta_bricks",
+    "side": "clayworks:block/forest_terracotta_bricks",
+    "top": "clayworks:block/forest_terracotta_bricks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "windswept:block/navy_pinecone_shingles"
+  }
+}

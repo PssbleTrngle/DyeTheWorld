@@ -1,7 +1,0 @@
-{
-  "parent": "another_furniture:block/template/stool_low",
-  "textures": {
-    "side": "dye_the_world:block/another_furniture/stool/beige_side",
-    "top": "dye_the_world:block/another_furniture/stool/beige_top"
-  }
-}

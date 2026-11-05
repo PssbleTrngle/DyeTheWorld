@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:ginger_nixie_tube",
+    "create:ginger_toolbox",
+    "create:ginger_seat",
+    "create:ginger_sail",
+    "create:ginger_valve_handle",
+    "create:ginger_table_cloth",
+    "create:ginger_postbox"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "colors": {
+    "amber": "twigs:amber_silt_pot",
+    "aqua": "twigs:aqua_silt_pot",
+    "beige": "twigs:beige_silt_pot",
+    "coral": "twigs:coral_silt_pot",
+    "forest": "twigs:forest_silt_pot",
+    "ginger": "twigs:ginger_silt_pot",
+    "indigo": "twigs:indigo_silt_pot",
+    "maroon": "twigs:maroon_silt_pot",
+    "mint": "twigs:mint_silt_pot",
+    "navy": "twigs:navy_silt_pot",
+    "olive": "twigs:olive_silt_pot",
+    "rose": "twigs:rose_silt_pot",
+    "slate": "twigs:slate_silt_pot",
+    "tan": "twigs:tan_silt_pot",
+    "teal": "twigs:teal_silt_pot",
+    "verdant": "twigs:verdant_silt_pot"
+  },
+  "id": "twigs:silt_pot"
+}
