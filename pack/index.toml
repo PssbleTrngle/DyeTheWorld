@@ -26,6 +26,11 @@ hash = "8a857077b98b950607b66b0c4fec557f214190dd6657d5fc49cc3b8540126b5b"
 metafile = true
 
 [[files]]
+file = "mods/artsandcrafts.pw.toml"
+hash = "9a23844ade250fbab5156335da02da6184e3256394ef7d8a146fbcd488111093"
+metafile = true
+
+[[files]]
 file = "mods/azimuth-api.pw.toml"
 hash = "f10e1dfe7b0df6c00ce1ddad9d6fcf1d1654a022d71f40389d8e553f6970c27b"
 metafile = true
@@ -138,6 +143,11 @@ metafile = true
 [[files]]
 file = "mods/jadens-nether-expansion.pw.toml"
 hash = "158d6b6f19d486d49b989eca3797078e24c093fc75004c13a4c71e3dbdf9d7f2"
+metafile = true
+
+[[files]]
+file = "mods/jinxedlib.pw.toml"
+hash = "3e554dc66addcfd71cb63622490742566a640ff0ed45366814aa901945bb4ebc"
 metafile = true
 
 [[files]]

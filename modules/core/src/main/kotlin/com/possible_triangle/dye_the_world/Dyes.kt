@@ -45,10 +45,12 @@ fun dyesFor(modid: String): List<DyeColor> {
     // return DYES[modid]?.mapNotNull { DyeColor.byName(it, null) } ?: emptyList()
 }
 
+const val DYE_DEPOT = "dye_depot"
+
 val DyeColor.namespace: String
     get() {
         return if (DEPOT_DYES.contains(serializedName)) {
-            "dye_depot"
+            DYE_DEPOT
         } else {
             "minecraft"
         }

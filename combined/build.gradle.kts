@@ -14,11 +14,6 @@ modModules.forEach { module ->
     }
 }
 
-dependencies {
-    runtimeOnly(libs.jei)
-    runtimeOnly(pack.modrinth.jade)
-}
-
 tasks.processResources {
     filesMatching("META-INF/neoforge.mods.toml") {
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
