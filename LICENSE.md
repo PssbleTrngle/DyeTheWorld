@@ -1,9 +1,9 @@
 <!---
 <meta>
    <source>@pssbletrngle/github-meta-generator</source>
-   <version>1.0.124</version>
-   <timestamp>2026-10-16T13:33:56.248Z</timestamp>
-   <hash>28aa4289178475c5</hash>
+   <version>1.0.127</version>
+   <timestamp>2026-11-05T17:33:49.836Z</timestamp>
+   <hash>1a937148b2a892f8</hash>
 </meta>
 -->
 
@@ -17,7 +17,37 @@ Copyright (c) 2026 PssbleTrngle
 
 This license applies to any files under the following directories:
 
-- ./src/main/resources/assets/
+- ./combined/src/main/resources/assets/
+- ./modules/aeronautics/src/main/resources/assets/
+- ./modules/alexs_caves/src/main/resources/assets/
+- ./modules/alexs_mobs/src/main/resources/assets/
+- ./modules/another_furniture/src/main/resources/assets/
+- ./modules/ars_nouveau/src/main/resources/assets/
+- ./modules/bits_n_bobs/src/main/resources/assets/
+- ./modules/botany_pots/src/main/resources/assets/
+- ./modules/chalk/src/main/resources/assets/
+- ./modules/clayworks/src/main/resources/assets/
+- ./modules/comforts/src/main/resources/assets/
+- ./modules/connected_glass/src/main/resources/assets/
+- ./modules/create/src/main/resources/assets/
+- ./modules/create_deco/src/main/resources/assets/
+- ./modules/create_interiors/src/main/resources/assets/
+- ./modules/create_numismatics/src/main/resources/assets/
+- ./modules/create_railways/src/main/resources/assets/
+- ./modules/elevators/src/main/resources/assets/
+- ./modules/farmers_delight/src/main/resources/assets/
+- ./modules/jadens_nether_expansion/src/main/resources/assets/
+- ./modules/naturalist/src/main/resources/assets/
+- ./modules/quark/src/main/resources/assets/
+- ./modules/redomesticate/src/main/resources/assets/
+- ./modules/sleep_tight/src/main/resources/assets/
+- ./modules/snowy_spirit/src/main/resources/assets/
+- ./modules/spelunkery/src/main/resources/assets/
+- ./modules/supplementaries/src/main/resources/assets/
+- ./modules/twigs/src/main/resources/assets/
+- ./modules/vanilla_backport/src/main/resources/assets/
+- ./modules/waystones/src/main/resources/assets/
+- ./modules/windswept/src/main/resources/assets/
 
 ---
 
