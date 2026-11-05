@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "zeta:flag",
+      "flag": "stools"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stools",
+  "ingredients": [
+    {
+      "tag": "c:dyes/teal"
+    },
+    {
+      "item": "quark:white_stool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "quark:teal_stool"
+  }
+}

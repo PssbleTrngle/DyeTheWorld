@@ -1,0 +1,9 @@
+{
+  "values": [
+    "create:slate_toolbox",
+    "create:slate_seat",
+    "create:slate_valve_handle",
+    "create:slate_table_cloth",
+    "create:slate_postbox"
+  ]
+}

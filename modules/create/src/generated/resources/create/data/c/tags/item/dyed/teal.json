@@ -1,0 +1,9 @@
+{
+  "values": [
+    "create:teal_toolbox",
+    "create:teal_seat",
+    "create:teal_valve_handle",
+    "create:teal_table_cloth",
+    "create:teal_postbox"
+  ]
+}

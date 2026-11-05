@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:amber_nixie_tube",
+    "create:amber_toolbox",
+    "create:amber_seat",
+    "create:amber_sail",
+    "create:amber_valve_handle",
+    "create:amber_table_cloth",
+    "create:amber_postbox"
+  ]
+}

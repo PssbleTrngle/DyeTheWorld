@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cushion_dye",
+  "ingredients": [
+    {
+      "tag": "c:dyes/beige"
+    },
+    {
+      "tag": "minecraft:cushions"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:beige_cushion"
+  }
+}

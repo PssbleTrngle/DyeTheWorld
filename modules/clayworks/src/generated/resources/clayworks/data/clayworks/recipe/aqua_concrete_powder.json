@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete_powder",
+  "key": {
+    "#": {
+      "item": "clayworks:concrete_powder"
+    },
+    "X": {
+      "tag": "c:dyes/aqua"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "dye_depot:aqua_concrete_powder"
+  }
+}

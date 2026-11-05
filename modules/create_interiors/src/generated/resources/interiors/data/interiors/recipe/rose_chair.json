@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "minecraft:wooden_slabs"
+    },
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "dye_depot:rose_wool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interiors:rose_chair"
+  }
+}

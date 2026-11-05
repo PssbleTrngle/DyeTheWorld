@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:indigo_nixie_tube",
+    "create:indigo_toolbox",
+    "create:indigo_seat",
+    "create:indigo_sail",
+    "create:indigo_valve_handle",
+    "create:indigo_table_cloth",
+    "create:indigo_postbox"
+  ]
+}

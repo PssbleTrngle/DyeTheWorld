@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "item": "twigs:silt_pot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "twigs:indigo_silt_pot"
+  }
+}

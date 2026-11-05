@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:olive_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "clayworks:olive_terracotta_bricks"
+  }
+}

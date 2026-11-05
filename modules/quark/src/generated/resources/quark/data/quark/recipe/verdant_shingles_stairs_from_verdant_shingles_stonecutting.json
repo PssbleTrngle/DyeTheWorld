@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "zeta:flag",
+      "flag": "shingles"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "quark:verdant_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "quark:verdant_shingles_stairs"
+  }
+}

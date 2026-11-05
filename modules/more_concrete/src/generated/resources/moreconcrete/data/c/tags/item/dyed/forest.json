@@ -1,0 +1,12 @@
+{
+  "values": [
+    "moreconcrete:forest_concrete_slab",
+    "moreconcrete:forest_concrete_stairs",
+    "moreconcrete:forest_concrete_wall",
+    "moreconcrete:forest_concrete_fence",
+    "moreconcrete:forest_concrete_fence_gate",
+    "moreconcrete:forest_concrete_button",
+    "moreconcrete:forest_concrete_lever",
+    "moreconcrete:forest_concrete_pressure_plate"
+  ]
+}

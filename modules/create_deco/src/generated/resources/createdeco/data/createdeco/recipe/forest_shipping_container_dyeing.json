@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/forest"
+    },
+    {
+      "item": "create:item_vault"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:forest_shipping_container"
+  }
+}

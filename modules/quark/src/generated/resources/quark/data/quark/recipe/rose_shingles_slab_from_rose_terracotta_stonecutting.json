@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "zeta:flag",
+      "flag": "shingles"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:rose_terracotta"
+  },
+  "result": {
+    "count": 2,
+    "id": "quark:rose_shingles_slab"
+  }
+}

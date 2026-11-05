@@ -1,0 +1,23 @@
+@file:JvmName("{{ moduleName }}Module")
+
+package com.possible_triangle.dye_the_world.{{ module }}
+
+import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
+
+const val MODULE_ID = "{{ module }}"
+
+const val MOD_ID = "{{ modId }}"
+{% for compatMod in compatMods %}
+
+const val {{ compatMod.name | upper }} = "{{ compatMod.id }}"
+
+{% if compatMod.type != "resources_only" %}
+@JvmField
+val {{ compatMod.registrate }} = DyedRegistrate.create(
+    namespace = "{{ compatMod.namespace }}",
+    mod = {{ compatMod.name | upper }},
+    migrate = false,
+)
+{% endif %}
+{% endfor %}
+

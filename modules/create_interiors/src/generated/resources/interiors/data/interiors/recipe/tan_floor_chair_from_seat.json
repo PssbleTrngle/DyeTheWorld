@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "minecraft:wooden_slabs"
+    },
+    {
+      "item": "create:tan_seat"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interiors:tan_floor_chair"
+  }
+}

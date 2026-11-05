@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "naturalist:snail_shell"
+    },
+    {
+      "tag": "c:dyes/forest"
+    }
+  ],
+  "result": {
+    "components": {
+      "minecraft:custom_data": {
+        "Color": 29
+      }
+    },
+    "count": 1,
+    "id": "naturalist:snail_shell"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:indigo_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "moreconcrete:indigo_concrete_stairs"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:teal_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "moreconcrete:teal_concrete_stairs"
+  }
+}

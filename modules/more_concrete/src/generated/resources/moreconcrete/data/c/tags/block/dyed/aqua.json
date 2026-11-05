@@ -1,0 +1,12 @@
+{
+  "values": [
+    "moreconcrete:aqua_concrete_slab",
+    "moreconcrete:aqua_concrete_stairs",
+    "moreconcrete:aqua_concrete_wall",
+    "moreconcrete:aqua_concrete_fence",
+    "moreconcrete:aqua_concrete_fence_gate",
+    "moreconcrete:aqua_concrete_button",
+    "moreconcrete:aqua_concrete_lever",
+    "moreconcrete:aqua_concrete_pressure_plate"
+  ]
+}

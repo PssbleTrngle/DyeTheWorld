@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_maroon_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dye_depot:maroon_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create:maroon_seat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_maroon_wool"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create:maroon_seat"
+    ]
+  }
+}

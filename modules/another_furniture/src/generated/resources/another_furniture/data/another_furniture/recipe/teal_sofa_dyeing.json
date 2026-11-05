@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "sofas",
+  "ingredients": [
+    {
+      "tag": "c:dyes/teal"
+    },
+    {
+      "item": "another_furniture:white_sofa"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "another_furniture:teal_sofa"
+  }
+}

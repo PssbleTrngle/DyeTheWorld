@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/rose"
+    },
+    {
+      "tag": "create:dyed_table_cloths"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:rose_table_cloth"
+  }
+}

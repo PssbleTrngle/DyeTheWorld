@@ -1,0 +1,142 @@
+package com.possible_triangle.dye_the_world.create
+
+import com.possible_triangle.dye_the_world.Genus
+import com.possible_triangle.dye_the_world.create.data.createDyeRecipes
+import com.possible_triangle.dye_the_world.create.data.nixieTubeBlockstate
+import com.possible_triangle.dye_the_world.create.data.postboxBlockstate
+import com.possible_triangle.dye_the_world.create.data.postboxItemModel
+import com.possible_triangle.dye_the_world.create.data.postboxRecipe
+import com.possible_triangle.dye_the_world.create.data.sailBlockstate
+import com.possible_triangle.dye_the_world.create.data.seatBlockstate
+import com.possible_triangle.dye_the_world.create.data.seatRecipe
+import com.possible_triangle.dye_the_world.create.data.tableClothBlockstate
+import com.possible_triangle.dye_the_world.create.data.tableClothItemModel
+import com.possible_triangle.dye_the_world.create.data.tableClothRecipe
+import com.possible_triangle.dye_the_world.create.data.toolboxBlockstate
+import com.possible_triangle.dye_the_world.create.data.toolboxItemModel
+import com.possible_triangle.dye_the_world.create.data.toolboxLoot
+import com.possible_triangle.dye_the_world.create.data.valveBlockstate
+import com.possible_triangle.dye_the_world.create.data.valveRecipe
+import com.possible_triangle.dye_the_world.extensions.germanLang
+import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.germanTranslation
+import com.possible_triangle.dye_the_world.translation
+import com.simibubi.create.AllBlocks
+import com.simibubi.create.AllTags
+import com.simibubi.create.content.contraptions.actors.seat.SeatBlock
+import com.simibubi.create.content.contraptions.bearing.SailBlock
+import com.simibubi.create.content.equipment.toolbox.ToolboxBlock
+import com.simibubi.create.content.kinetics.crank.ValveHandleBlock
+import com.simibubi.create.content.logistics.packagePort.postbox.PostboxBlock
+import com.simibubi.create.content.logistics.tableCloth.TableClothBlock
+import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlock
+import net.minecraft.tags.BlockTags
+
+object DyedCreate {
+    val NIXIE_TUBES =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_nixie_tube")
+                .dyedBlock(dye) { NixieTubeBlock(it, dye) }
+                .initialProperties { AllBlocks.ORANGE_NIXIE_TUBE.get() }
+                .lang("${dye.translation} Nixie Tube")
+                .germanLang("${dye.germanTranslation(Genus.F)} Nixie-Röhre")
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .nixieTubeBlockstate()
+                .loot { t, b -> t.dropOther(b, AllBlocks.ORANGE_NIXIE_TUBE) }
+                .register()
+        }
+
+    val TOOLBOXES =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_toolbox")
+                .dyedBlock(dye) { ToolboxBlock(it, dye) }
+                .lang("${dye.translation} Toolbox")
+                .germanLang("${dye.germanTranslation(Genus.M)} Werkzeugkasten")
+                .tag(AllTags.AllBlockTags.TOOLBOXES.tag)
+                .toolboxLoot()
+                .toolboxBlockstate()
+                .withItem {
+                    tag(AllTags.AllItemTags.TOOLBOXES.tag)
+                    toolboxItemModel()
+                }.register()
+        }
+
+    val SEATS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_seat")
+                .dyedBlock(dye) { SeatBlock(it, dye) }
+                .lang("${dye.translation} Seat")
+                .germanLang("${dye.germanTranslation(Genus.M)} Sitz")
+                .tag(AllTags.AllBlockTags.SEATS.tag)
+                .seatBlockstate()
+                .withItem {
+                    tag(AllTags.AllItemTags.SEATS.tag)
+                    seatRecipe()
+                }.register()
+        }
+
+    val SAILS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_sail")
+                .dyedBlock(dye) { SailBlock.withCanvas(it, dye) }
+                .lang("${dye.translation} Sail")
+                .germanLang("${dye.germanTranslation(Genus.I)} Segel")
+                .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
+                .sailBlockstate()
+                .register()
+        }
+
+    val VALVE_HANDLES =
+        REGISTRATE.dyed { dye ->
+            REGISTRATE
+                .`object`("${dye}_valve_handle")
+                .dyedBlock(dye) { ValveHandleBlock.dyed(it, dye) }
+                .lang("${dye.translation} Valve Handle")
+                .germanLang("${dye.germanTranslation(Genus.M)} Ventilgriff")
+                .tag(AllTags.AllBlockTags.VALVE_HANDLES.tag)
+                .valveBlockstate()
+                .withItem {
+                    tag(AllTags.AllItemTags.VALVE_HANDLES.tag)
+                    valveRecipe()
+                }.register()
+        }
+
+    val TABLE_CLOTHS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_table_cloth")
+                .dyedBlock(dye) { TableClothBlock(it, dye) }
+                .lang("${dye.translation} Table Cloth")
+                .germanLang("${dye.germanTranslation(Genus.F)} Tischdecke")
+                .tag(AllTags.AllBlockTags.TABLE_CLOTHS.tag)
+                .tag(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)
+                .tableClothBlockstate()
+                .withItem {
+                    tag(AllTags.AllItemTags.TABLE_CLOTHS.tag)
+                    tag(AllTags.AllItemTags.DYED_TABLE_CLOTHS.tag)
+                    tableClothItemModel()
+                    tableClothRecipe()
+                }.register()
+        }
+
+    val POST_BOXES =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_postbox")
+                .dyedBlock(dye) { PostboxBlock(it, dye) }
+                .lang("${dye.translation} Postbox")
+                .germanLang("${dye.germanTranslation(Genus.M)} Briefkasten")
+                .tag(AllTags.AllBlockTags.POSTBOXES.tag)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
+                .postboxBlockstate()
+                .withItem {
+                    tag(AllTags.AllItemTags.POSTBOXES.tag)
+                    postboxItemModel()
+                    postboxRecipe()
+                }.register()
+        }
+
+    init {
+        REGISTRATE.createDyeRecipes()
+        // TODO need this to happen during non-data too
+        registerDyes()
+    }
+}

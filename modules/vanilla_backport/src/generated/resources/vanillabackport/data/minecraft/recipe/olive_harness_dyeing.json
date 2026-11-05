@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "harness_dye",
+  "ingredients": [
+    {
+      "tag": "c:dyes/olive"
+    },
+    {
+      "tag": "minecraft:harnesses"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:olive_harness"
+  }
+}

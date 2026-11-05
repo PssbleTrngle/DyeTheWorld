@@ -1,0 +1,20 @@
+{
+  "values": [
+    "quark:amber_framed_glass_pane",
+    "quark:aqua_framed_glass_pane",
+    "quark:beige_framed_glass_pane",
+    "quark:coral_framed_glass_pane",
+    "quark:forest_framed_glass_pane",
+    "quark:ginger_framed_glass_pane",
+    "quark:indigo_framed_glass_pane",
+    "quark:maroon_framed_glass_pane",
+    "quark:mint_framed_glass_pane",
+    "quark:navy_framed_glass_pane",
+    "quark:olive_framed_glass_pane",
+    "quark:rose_framed_glass_pane",
+    "quark:slate_framed_glass_pane",
+    "quark:tan_framed_glass_pane",
+    "quark:teal_framed_glass_pane",
+    "quark:verdant_framed_glass_pane"
+  ]
+}

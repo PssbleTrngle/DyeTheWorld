@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:beige_nixie_tube",
+    "create:beige_toolbox",
+    "create:beige_seat",
+    "create:beige_sail",
+    "create:beige_valve_handle",
+    "create:beige_table_cloth",
+    "create:beige_postbox"
+  ]
+}

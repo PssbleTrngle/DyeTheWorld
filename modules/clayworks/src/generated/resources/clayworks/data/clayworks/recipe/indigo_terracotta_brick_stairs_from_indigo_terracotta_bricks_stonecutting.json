@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "clayworks:indigo_terracotta_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "clayworks:indigo_terracotta_brick_stairs"
+  }
+}

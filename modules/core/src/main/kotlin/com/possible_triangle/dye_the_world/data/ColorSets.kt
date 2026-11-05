@@ -1,0 +1,71 @@
+package com.possible_triangle.dye_the_world.data
+
+import com.possible_triangle.dye_the_world.Constants
+import com.possible_triangle.dye_the_world.dyesFor
+import com.possible_triangle.dye_the_world.extensions.createId
+import com.possible_triangle.dye_the_world.extensions.getOrThrow
+import com.tterrag.registrate.AbstractRegistrate
+import com.tterrag.registrate.providers.ProviderType
+import com.tterrag.registrate.providers.RegistrateProvider
+import net.mehvahdjukaar.moonlight.api.misc.BlockAndItem
+import net.mehvahdjukaar.moonlight.core.set.ColorSetModification
+import net.minecraft.core.HolderLookup
+import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.data.PackOutput
+import net.minecraft.resources.ResourceLocation
+import net.minecraft.server.packs.PackType
+import net.neoforged.fml.LogicalSide
+import net.neoforged.neoforge.common.data.ExistingFileHelper
+import net.neoforged.neoforge.common.data.JsonCodecProvider
+import java.util.concurrent.CompletableFuture
+
+private val PROVIDER_TYPE =
+    ProviderType.registerProvider("color sets") { context ->
+        ColorSetProvider(context.output, context.provider, context.parent, context.type, context.fileHelper)
+    }
+
+private class ColorSetProvider(
+    output: PackOutput,
+    lookupProvider: CompletableFuture<HolderLookup.Provider>,
+    private val owner: AbstractRegistrate<*>,
+    private val type: ProviderType<ColorSetProvider>,
+    existingFileHelper: ExistingFileHelper,
+) : JsonCodecProvider<ColorSetModification>(
+        output,
+        PackOutput.Target.DATA_PACK,
+        "color_sets",
+        PackType.SERVER_DATA,
+        ColorSetModification.CODEC,
+        lookupProvider,
+        owner.modid,
+        existingFileHelper,
+    ),
+    RegistrateProvider {
+    override fun gather() {
+        owner.genData(type, this)
+    }
+
+    override fun getSide() = LogicalSide.SERVER
+}
+
+fun AbstractRegistrate<*>.colorSet(
+    id: ResourceLocation,
+    modId: String = id.namespace,
+) {
+    addDataGenerator(PROVIDER_TYPE) { provider ->
+        val dyes = dyesFor(modId)
+
+        provider.unconditional(
+            Constants.MOD_ID.createId("${id.path}s"),
+            ColorSetModification(
+                dyes
+                    .associateWith { id.withPrefix("${it.serializedName}_") }
+                    .mapValues { BuiltInRegistries.ITEM.getOrThrow(it.value) }
+                    .mapValues { BlockAndItem(null, it.value) }
+                    .mapKeys { it.key.serializedName },
+                false,
+                id,
+            ),
+        )
+    }
+}

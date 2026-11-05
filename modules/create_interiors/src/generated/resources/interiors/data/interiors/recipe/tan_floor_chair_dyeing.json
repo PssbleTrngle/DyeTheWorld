@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/tan"
+    },
+    {
+      "tag": "interiors:floor_chairs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interiors:tan_floor_chair"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    "moreconcrete:indigo_concrete_slab",
+    "moreconcrete:indigo_concrete_stairs",
+    "moreconcrete:indigo_concrete_wall",
+    "moreconcrete:indigo_concrete_fence",
+    "moreconcrete:indigo_concrete_fence_gate",
+    "moreconcrete:indigo_concrete_button",
+    "moreconcrete:indigo_concrete_lever",
+    "moreconcrete:indigo_concrete_pressure_plate"
+  ]
+}

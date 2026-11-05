@@ -1,7 +1,0 @@
-{
-  "parent": "connectedglass:pane_item_template",
-  "textures": {
-    "all": "connectedglass:block/scratched/olive",
-    "edge": "dye_depot:block/olive_stained_glass_pane_top"
-  }
-}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "alexscaves:radon_lamps"
+    },
+    "D": {
+      "tag": "c:dyes/forest"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "alexscaves:radon_lamp_forest"
+  }
+}
