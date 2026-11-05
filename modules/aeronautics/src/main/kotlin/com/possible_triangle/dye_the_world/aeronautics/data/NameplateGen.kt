@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.aeronautics.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_SIMULATED
+import com.possible_triangle.dye_the_world.aeronautics.SIMULATED
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.textureAndParticle
@@ -29,14 +29,14 @@ internal enum class Position : StringRepresentable {
 internal val NAMEPLATE_POSITION: EnumProperty<Position> = EnumProperty.create("position", Position::class.java)
 
 private val AbstractBuilder<*, *, *, *>.texture
-    get() = CREATE_SIMULATED.createId("block/nameplate/${dye}_nameplate")
+    get() = SIMULATED.createId("block/nameplate/${dye}_nameplate")
 
 fun <T : Block, P> BlockBuilder<T, P>.nameplateBlockstate() =
     blockstate { context, provider ->
         val models =
             Position.entries.associateWith {
                 val type = it.serializedName
-                val parent = CREATE_SIMULATED.createId("block/nameplate/block_$type")
+                val parent = SIMULATED.createId("block/nameplate/block_$type")
                 provider
                     .models()
                     .withExistingParent("${context.name}_$type", parent)
@@ -56,7 +56,7 @@ fun <T : Block, P> BlockBuilder<T, P>.nameplateBlockstate() =
 
 fun <T : Item, P> ItemBuilder<T, P>.nameplateItemModel() =
     model { context, provider ->
-        val parent = CREATE_SIMULATED.createId("block/nameplate/item")
+        val parent = SIMULATED.createId("block/nameplate/item")
         provider
             .withExistingParent(context.name, parent)
             .texture("0", texture)

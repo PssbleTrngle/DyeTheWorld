@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.quark
 
 import com.possible_triangle.dye_the_world.*
-import com.possible_triangle.dye_the_world.Constants.Mods.QUARK
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.quark.data.framedGlassPaneRecipes

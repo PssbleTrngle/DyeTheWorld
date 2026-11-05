@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.redomesticate
 
 import com.evandev.redomesticate.content.block.PetBedBlock
-import com.possible_triangle.dye_the_world.Constants.Mods.REDOMESTICATE
 import com.possible_triangle.dye_the_world.DyedTags
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag

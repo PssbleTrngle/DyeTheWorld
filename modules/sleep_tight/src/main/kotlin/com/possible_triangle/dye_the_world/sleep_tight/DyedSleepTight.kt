@@ -1,7 +1,6 @@
 package com.possible_triangle.dye_the_world.sleep_tight
 
 import com.possible_triangle.dye_the_world.*
-import com.possible_triangle.dye_the_world.Constants.Mods.SLEEP_TIGHT
 import com.possible_triangle.dye_the_world.data.translateBannerPattern
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.extensions.particleOnly

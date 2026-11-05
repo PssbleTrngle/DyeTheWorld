@@ -1,11 +1,11 @@
 package com.possible_triangle.dye_the_world.aeronautics.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_AERONAUTICS
+import com.possible_triangle.dye_the_world.aeronautics.AERONAUTICS
+import com.possible_triangle.dye_the_world.aeronautics.Tags
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
 import com.possible_triangle.dye_the_world.extensions.textureAndParticle
-import com.possible_triangle.dye_the_world.index.DyedTags
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe
@@ -22,11 +22,11 @@ import net.minecraft.world.level.block.Block
 
 private val AbstractBuilder<*, *, *, *>.texture
     get() =
-        CREATE_AERONAUTICS.createId("block/${dye}_envelope")
+        AERONAUTICS.createId("block/${dye}_envelope")
 
 fun <T : Block, P> BlockBuilder<T, P>.envelopeShaftBlockstate() =
     blockstate { context, provider ->
-        val parent = CREATE_AERONAUTICS.createId("block/envelope_encased_shaft/block")
+        val parent = AERONAUTICS.createId("block/envelope_encased_shaft/block")
         val model =
             provider
                 .models()
@@ -43,7 +43,7 @@ fun <T : Block, P> BlockBuilder<T, P>.envelopeBlockstate() =
 
 fun <T : Item, P> ItemBuilder<T, P>.envelopeShaftItemModel() =
     model { context, provider ->
-        val parent = CREATE_AERONAUTICS.createId("block/envelope_encased_shaft/item")
+        val parent = AERONAUTICS.createId("block/envelope_encased_shaft/item")
         provider
             .withExistingParent(context.name, parent)
             .texture("0", texture)
@@ -69,7 +69,7 @@ fun <T : Item, P> ItemBuilder<T, P>.envelopeRecipe() =
             .require(Items.STICK)
             .build(provider)
 
-        provider.dyeingRecipe(dye, DyedTags.Items.SHAFTLESS_ENVELOPES, context) {
+        provider.dyeingRecipe(dye, Tags.Items.SHAFTLESS_ENVELOPES, context) {
             group(group)
         }
     }

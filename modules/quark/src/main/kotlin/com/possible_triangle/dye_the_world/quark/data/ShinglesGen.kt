@@ -1,9 +1,9 @@
 package com.possible_triangle.dye_the_world.quark.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.QUARK
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.getOrThrow
+import com.possible_triangle.dye_the_world.quark.QUARK
 import com.possible_triangle.dye_the_world.quark.flagCondition
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe

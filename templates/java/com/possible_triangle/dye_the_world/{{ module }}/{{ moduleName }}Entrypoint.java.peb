@@ -12,16 +12,18 @@ public class {{ moduleName }}Entrypoint {
         var mods = ModList.get();
 
 {% for compatMod in compatMods %}
+{% if compatMod.type != "resources_only" %}
         if (mods.isLoaded({{ moduleName }}Module.{{ compatMod.name | upper }})) {
             modBus.register(Dyed{{ compatMod.file }}.INSTANCE);
-{% if not compatMod.dataOnly %}
+{% if compatMod.type == "full" %}
             {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
 {% endif %}
         }
-{% if compatMod.dataOnly %}
+{% if compatMod.type == "data_only" %}
         if (DatagenModLoader.isRunningDataGen()) {
             {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
         }
+{% endif %}
 {% endif %}
 {% endfor %}
     }

@@ -16,3 +16,11 @@ modModules.forEach {
         implementation(libs.multikulti.datagen)
     }
 }
+
+val runModuleData =
+    tasks.register("runModuleData") {
+        description = "run data generators for all modules"
+        modModules.forEach {
+            dependsOn(it.tasks.getByName("runData"))
+        }
+    }

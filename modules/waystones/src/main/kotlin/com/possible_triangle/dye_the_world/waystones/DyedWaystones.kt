@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.waystones
 
-import com.possible_triangle.dye_the_world.Constants.Mods.WAYSTONES
 import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.germanTranslation

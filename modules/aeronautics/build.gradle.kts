@@ -13,16 +13,7 @@ compat.mods {
 }
 
 dependencies {
-    api(libs.ponder)
-    compileOnlyApi(libs.flywheel.api)
-    api(
-        variantOf(libs.create) {
-            classifier("slim")
-        },
-    ) {
-        isTransitive = false
-    }
-
+    api(project(":create"))
     runtimeOnly(libs.sable) { isTransitive = false }
     api(libs.create.simulated) { isTransitive = false }
     api(libs.create.aeronautics) { isTransitive = false }

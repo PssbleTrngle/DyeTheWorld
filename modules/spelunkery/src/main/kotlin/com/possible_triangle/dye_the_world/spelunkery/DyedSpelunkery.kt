@@ -5,11 +5,11 @@ import com.ordana.spelunkery.entities.ThrownGlowstickEntity
 import com.ordana.spelunkery.items.GlowstickItem
 import com.ordana.spelunkery.reg.ModBlocks
 import com.ordana.spelunkery.reg.ModTags
-import com.possible_triangle.dye_the_world.data.glowstickBlockState
-import com.possible_triangle.dye_the_world.data.glowstickItemModel
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
+import com.possible_triangle.dye_the_world.spelunkery.data.glowstickBlockState
+import com.possible_triangle.dye_the_world.spelunkery.data.glowstickItemModel
 import com.possible_triangle.dye_the_world.translation
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.world.item.CreativeModeTabs

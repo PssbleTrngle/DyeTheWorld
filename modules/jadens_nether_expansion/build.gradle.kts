@@ -3,10 +3,8 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("jadens_nether_extension") {
-        id = "netherexp"
-    }
+compat.default {
+    id = "netherexp"
 }
 
 dependencies {

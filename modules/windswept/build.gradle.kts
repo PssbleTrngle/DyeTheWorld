@@ -3,9 +3,7 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("windswept")
-}
+compat.default()
 
 dependencies {
     api(libs.windswept) { isTransitive = false }

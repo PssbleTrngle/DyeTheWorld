@@ -3,9 +3,7 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("spelunkery")
-}
+compat.default()
 
 dependencies {
     api(pack.modrinth.moonlight)

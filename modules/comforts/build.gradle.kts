@@ -3,10 +3,8 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("comforts") {
-        dataOnly()
-    }
+compat.default {
+    dataOnly()
 }
 
 dependencies {

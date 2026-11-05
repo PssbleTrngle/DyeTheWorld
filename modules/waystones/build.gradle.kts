@@ -3,10 +3,8 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("waystones") {
-        dataOnly()
-    }
+compat.default {
+    dataOnly()
 }
 
 dependencies {

@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.another_furniture.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.ANOTHER_FURNITURE
+import com.possible_triangle.dye_the_world.another_furniture.ANOTHER_FURNITURE
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant

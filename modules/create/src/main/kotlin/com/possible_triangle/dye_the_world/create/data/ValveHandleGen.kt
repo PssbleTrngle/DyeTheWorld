@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.create.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
+import com.possible_triangle.dye_the_world.create.CREATE
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.yRot

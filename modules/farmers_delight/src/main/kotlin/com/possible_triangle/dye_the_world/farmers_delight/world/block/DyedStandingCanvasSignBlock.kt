@@ -1,0 +1,11 @@
+package com.possible_triangle.dye_the_world.farmers_delight.world.block
+
+import com.possible_triangle.dye_the_world.farmers_delight.isDarkBackground
+import net.minecraft.world.item.DyeColor
+import vectorwing.farmersdelight.common.block.StandingCanvasSignBlock
+
+class DyedStandingCanvasSignBlock(
+    dye: DyeColor,
+) : StandingCanvasSignBlock(dye) {
+    override fun isDarkBackground() = backgroundColor!!.isDarkBackground
+}

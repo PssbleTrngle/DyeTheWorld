@@ -1,11 +1,11 @@
 package com.possible_triangle.dye_the_world.waystones.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.WAYSTONES
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.hasEnchantment
 import com.possible_triangle.dye_the_world.extensions.matchesState
 import com.possible_triangle.dye_the_world.extensions.yRot
+import com.possible_triangle.dye_the_world.waystones.WAYSTONES
 import com.tterrag.registrate.builders.BlockBuilder
 import net.blay09.mods.waystones.block.SharestoneBlock
 import net.minecraft.advancements.critereon.EnchantmentPredicate

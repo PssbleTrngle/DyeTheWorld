@@ -3,10 +3,8 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("sleep_tight") {
-        dataOnly()
-    }
+compat.default {
+    dataOnly()
 }
 
 dependencies {

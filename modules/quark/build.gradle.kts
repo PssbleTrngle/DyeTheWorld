@@ -3,9 +3,7 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("quark")
-}
+compat.default()
 
 dependencies {
     api(pack.modrinth.quark)

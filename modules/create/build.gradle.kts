@@ -3,11 +3,9 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("create") {
-        versionRange = "[6.0.0,6.1.0)"
-        dataOnly()
-    }
+compat.default {
+    versionRange = "[6.0.0,6.1.0)"
+    dataOnly()
 }
 
 dependencies {

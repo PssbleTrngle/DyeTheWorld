@@ -3,8 +3,8 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("labels")
+compat.default {
+    noCode()
 }
 
 dependencies {

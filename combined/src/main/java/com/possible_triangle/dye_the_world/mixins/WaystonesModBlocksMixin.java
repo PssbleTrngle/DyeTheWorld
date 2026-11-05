@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.mixins;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import com.possible_triangle.dye_the_world.Constants;
 import com.possible_triangle.dye_the_world.Dyes;
 import java.util.Arrays;
 import java.util.stream.Stream;
@@ -20,7 +19,7 @@ public class WaystonesModBlocksMixin {
     private static DyeColor[] extendColors(DyeColor[] original) {
         return Stream.concat(
                 Arrays.stream(original),
-                Dyes.dyesFor(Constants.Mods.WAYSTONES).stream()
+                Dyes.dyesFor(WAYSTONES).stream()
         ).toArray(DyeColor[]::new);
     }
 

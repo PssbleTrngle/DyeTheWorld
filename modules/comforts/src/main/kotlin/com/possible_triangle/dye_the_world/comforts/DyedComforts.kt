@@ -4,7 +4,6 @@ import com.illusivesoulworks.comforts.common.block.BaseComfortsBlock
 import com.illusivesoulworks.comforts.common.block.HammockBlock
 import com.illusivesoulworks.comforts.common.block.SleepingBagBlock
 import com.possible_triangle.dye_the_world.*
-import com.possible_triangle.dye_the_world.Constants.Mods.COMFORTS
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.extensions.particleOnly
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate

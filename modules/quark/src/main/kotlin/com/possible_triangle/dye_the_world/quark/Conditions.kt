@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.quark
 
 import com.google.gson.JsonObject
 import com.possible_triangle.dye_the_world.Constants
-import com.possible_triangle.dye_the_world.Constants.Mods.QUARK
 import com.possible_triangle.multikulti.datagen.conditions.Condition
 import org.violetmoon.zeta.config.ConfigFlagManager
 import org.violetmoon.zeta.util.zetalist.ZetaList

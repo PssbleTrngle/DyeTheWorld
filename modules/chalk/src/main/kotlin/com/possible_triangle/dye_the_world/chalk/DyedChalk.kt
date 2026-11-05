@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.chalk
 
-import com.possible_triangle.dye_the_world.Constants.Mods.CHALK
 import com.possible_triangle.dye_the_world.Genus
 import com.possible_triangle.dye_the_world.extensions.DE_LANG
 import com.possible_triangle.dye_the_world.extensions.createId

@@ -3,9 +3,7 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("redomesticate")
-}
+compat.default()
 
 dependencies {
     api(pack.modrinth.redomesticate)

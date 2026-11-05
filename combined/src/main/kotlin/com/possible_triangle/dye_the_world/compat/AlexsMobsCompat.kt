@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.compat
 
-import com.possible_triangle.dye_the_world.Constants.Mods.ALEXS_MOBS
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
@@ -11,7 +10,7 @@ object AlexsMobsCompat {
     fun getCarpet(dye: DyeColor) = dye.blockOf("carpet").asItem()
 
     private val DECORS =
-        dyesFor(ALEXS_MOBS).associateWith {
+        dyesFor(AlexsMobsModule.ALEXS_MOBS).associateWith {
             ALEXS_MOBS.createId("textures/entity/elephant_decor/$it.png")
         }
 

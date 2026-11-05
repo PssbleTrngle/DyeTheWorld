@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.windswept
 
-import com.possible_triangle.dye_the_world.Constants.Mods.WINDSWEPT
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.data.translateBannerPattern

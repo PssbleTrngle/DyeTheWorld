@@ -1,12 +1,12 @@
 package com.possible_triangle.dye_the_world.redomesticate.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.REDOMESTICATE
+import com.possible_triangle.dye_the_world.DyedTags
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.requiresUnlocking
 import com.possible_triangle.dye_the_world.extensions.yRot
-import com.possible_triangle.dye_the_world.index.DyedTags
+import com.possible_triangle.dye_the_world.redomesticate.REDOMESTICATE
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.tterrag.registrate.builders.BlockBuilder
@@ -48,5 +48,5 @@ fun <T : Item, P> ItemBuilder<T, P>.petBedRecipe() =
             .requires(wool)
             .save(provider)
 
-        provider.dyeingRecipe(dye, DyedTags.Items.PET_BEDS, context)
+        provider.dyeingRecipe(dye, DyedTags.ITEMS.create(REDOMESTICATE, "pet_beds"), context)
     }

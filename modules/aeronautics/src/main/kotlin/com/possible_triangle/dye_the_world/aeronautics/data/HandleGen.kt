@@ -60,8 +60,8 @@ fun <T : Block, P> BlockBuilder<T, P>.handleBlockstate() =
 
 fun <T : Item, P> ItemBuilder<T, P>.handleItemModel() =
     model { context, provider ->
-        val parent = CREATE_SIMULATED.createId("block/handle/item")
+        val parent = SIMULATED.createId("block/handle/item")
         provider
             .withExistingParent(context.name, parent)
-            .texture("0", CREATE_SIMULATED.createId("block/handle/$dye"))
+            .texture("0", SIMULATED.createId("block/handle/$dye"))
     }

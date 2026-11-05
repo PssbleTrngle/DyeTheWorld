@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.create
 
-import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
 import com.possible_triangle.dye_the_world.dyedBlockMap
 import com.possible_triangle.dye_the_world.dyesFor
 import com.simibubi.create.foundation.utility.DyeHelper

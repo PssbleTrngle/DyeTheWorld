@@ -3,9 +3,7 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("another_furniture")
-}
+compat.default()
 
 dependencies {
     api(pack.modrinth.another.furniture)

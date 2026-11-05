@@ -3,9 +3,7 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("twigs")
-}
+compat.default()
 
 dependencies {
     api(pack.modrinth.twigs)

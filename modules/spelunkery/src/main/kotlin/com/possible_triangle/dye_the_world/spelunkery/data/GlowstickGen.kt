@@ -1,8 +1,8 @@
-package com.possible_triangle.dye_the_world.data
+package com.possible_triangle.dye_the_world.spelunkery.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.SPELUNKERY
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.texture
+import com.possible_triangle.dye_the_world.spelunkery.SPELUNKERY
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import net.minecraft.world.item.Item

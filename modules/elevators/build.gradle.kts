@@ -3,11 +3,9 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("elevators") {
-        id = "elevatorid"
-        dataOnly()
-    }
+compat.default {
+    id = "elevatorid"
+    dataOnly()
 }
 
 dependencies {

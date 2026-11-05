@@ -9,7 +9,7 @@ neoForge.runs.removeAll { true }
 
 dependencies {
     compileOnly(project(":core"))
-    implementation(pack.modrinth.interiors)
+    compileOnly(pack.modrinth.interiors)
 }
 
 modifyReleaseMetadata {

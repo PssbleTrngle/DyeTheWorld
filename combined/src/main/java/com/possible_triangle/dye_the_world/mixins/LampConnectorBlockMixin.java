@@ -1,6 +1,6 @@
 package com.possible_triangle.dye_the_world.mixins;
 
-import com.possible_triangle.dye_the_world.another_furniture.DyedFurniture;
+import com.possible_triangle.dye_the_world.another_furniture.DyedAnotherFurniture;
 import com.starfish_studios.another_furniture.block.LampConnectorBlock;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -19,7 +19,7 @@ public class LampConnectorBlockMixin {
             require = 0
     )
     private static void getLampByColor(DyeColor dye, CallbackInfoReturnable<Block> cir) {
-        var instance = DyedFurniture.LAMPS.get(dye);
+        var instance = DyedAnotherFurniture.LAMPS.get(dye);
         if (instance != null) {
             cir.setReturnValue(instance.get());
         }

@@ -1,16 +1,13 @@
 package com.possible_triangle.dye_the_world.create.data
 
-import com.possible_triangle.dye_the_world.Constants.Mods.CREATE
-import com.possible_triangle.dye_the_world.Constants.Mods.CREATE_SIMULATED
+import com.possible_triangle.dye_the_world.create.CREATE
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
-import com.possible_triangle.dye_the_world.extensions.textureAndParticle
 import com.possible_triangle.dye_the_world.extensions.yRot
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.simibubi.create.content.contraptions.bearing.SailBlock
 import com.tterrag.registrate.builders.BlockBuilder
 import net.minecraft.core.Direction
-import net.minecraft.world.level.block.RotatedPillarBlock
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 
@@ -37,41 +34,6 @@ fun <T : SailBlock, P> BlockBuilder<T, P>.sailBlockstate() =
                 .builder()
                 .modelFile(model)
                 .rotationY(facing.yRot)
-                .rotationX(xRot)
-        }
-    }
-
-fun <T : RotatedPillarBlock, P> BlockBuilder<T, P>.symmetricSailBlockstate() =
-    blockstate { context, provider ->
-        val parent = CREATE_SIMULATED.createId("block/symmetric_sail/block")
-        val model =
-            provider
-                .models()
-                .withExistingParent(context.name, parent)
-                .textureAndParticle("0", CREATE.createId("block/sail/$dye"))
-                .texture("1", CREATE_SIMULATED.createId("block/symmetric_sail/side_$dye"))
-
-        provider.createVariant(context) { state ->
-            val axis = state.getValue(BlockStateProperties.AXIS)
-
-            val xRot =
-                if (axis.isHorizontal) {
-                    90
-                } else {
-                    0
-                }
-
-            val yRot =
-                when (axis) {
-                    Direction.Axis.X -> 90
-                    Direction.Axis.Z -> 180
-                    else -> 0
-                }
-
-            ConfiguredModel
-                .builder()
-                .modelFile(model)
-                .rotationY(yRot)
                 .rotationX(xRot)
         }
     }

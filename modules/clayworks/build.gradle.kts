@@ -3,9 +3,7 @@ plugins {
     id("module")
 }
 
-compat.mods {
-    create("clayworks")
-}
+compat.default()
 
 dependencies {
     api(pack.modrinth.blueprint)

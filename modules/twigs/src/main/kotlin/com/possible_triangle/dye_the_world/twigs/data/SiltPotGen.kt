@@ -1,10 +1,10 @@
 package com.possible_triangle.dye_the_world.twigs.data
 
 import com.ninni.twigs.block.enums.SiltPotBlock
-import com.possible_triangle.dye_the_world.Constants.Mods.TWIGS
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.createVariant
 import com.possible_triangle.dye_the_world.extensions.texture
+import com.possible_triangle.dye_the_world.twigs.TWIGS
 import com.tterrag.registrate.builders.BlockBuilder
 import net.minecraft.world.level.block.Block
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel
