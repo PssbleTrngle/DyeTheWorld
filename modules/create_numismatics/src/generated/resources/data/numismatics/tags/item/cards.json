@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "numismatics:amber_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:aqua_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:beige_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:coral_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:forest_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:ginger_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:indigo_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:maroon_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:mint_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:navy_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:olive_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:rose_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:slate_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:tan_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:teal_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:verdant_card",
+      "required": false
+    }
+  ]
+}

@@ -1,15 +1,12 @@
 package com.possible_triangle.dye_the_world.create_railways
 
 import com.possible_triangle.dye_the_world.dyedItemMap
-import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.translation
 
 object RailwaysCompat {
-    private val DYES = dyesFor(CREATE_RAILWAYS)
-
     @JvmField
     val TRANSLATIONS =
-        DYES
+        REGISTRATE.dyes
             .associateWith { it.translation }
             .mapKeys { it.key.serializedName }
 

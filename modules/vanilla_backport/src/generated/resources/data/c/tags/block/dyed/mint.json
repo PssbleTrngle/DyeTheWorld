@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "minecraft:mint_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_concrete_stairs",
+      "required": false
+    }
+  ]
+}

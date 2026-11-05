@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "bottom=false,facing=east,slanted=false": {
+      "model": "supplementaries:block/awning_beige_top",
+      "y": 90
+    },
+    "bottom=false,facing=east,slanted=true": {
+      "model": "supplementaries:block/awning_beige_top_slanted",
+      "y": 90
+    },
+    "bottom=false,facing=north,slanted=false": {
+      "model": "supplementaries:block/awning_beige_top"
+    },
+    "bottom=false,facing=north,slanted=true": {
+      "model": "supplementaries:block/awning_beige_top_slanted"
+    },
+    "bottom=false,facing=south,slanted=false": {
+      "model": "supplementaries:block/awning_beige_top",
+      "y": 180
+    },
+    "bottom=false,facing=south,slanted=true": {
+      "model": "supplementaries:block/awning_beige_top_slanted",
+      "y": 180
+    },
+    "bottom=false,facing=west,slanted=false": {
+      "model": "supplementaries:block/awning_beige_top",
+      "y": 270
+    },
+    "bottom=false,facing=west,slanted=true": {
+      "model": "supplementaries:block/awning_beige_top_slanted",
+      "y": 270
+    },
+    "bottom=true,facing=east,slanted=false": {
+      "model": "supplementaries:block/awning_beige_bottom",
+      "y": 90
+    },
+    "bottom=true,facing=east,slanted=true": {
+      "model": "supplementaries:block/awning_beige_bottom_slanted",
+      "y": 90
+    },
+    "bottom=true,facing=north,slanted=false": {
+      "model": "supplementaries:block/awning_beige_bottom"
+    },
+    "bottom=true,facing=north,slanted=true": {
+      "model": "supplementaries:block/awning_beige_bottom_slanted"
+    },
+    "bottom=true,facing=south,slanted=false": {
+      "model": "supplementaries:block/awning_beige_bottom",
+      "y": 180
+    },
+    "bottom=true,facing=south,slanted=true": {
+      "model": "supplementaries:block/awning_beige_bottom_slanted",
+      "y": 180
+    },
+    "bottom=true,facing=west,slanted=false": {
+      "model": "supplementaries:block/awning_beige_bottom",
+      "y": 270
+    },
+    "bottom=true,facing=west,slanted=true": {
+      "model": "supplementaries:block/awning_beige_bottom_slanted",
+      "y": 270
+    }
+  }
+}

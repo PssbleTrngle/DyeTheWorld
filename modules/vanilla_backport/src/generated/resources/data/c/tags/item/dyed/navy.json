@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "minecraft:navy_harness",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_cushion",
+      "required": false
+    }
+  ]
+}

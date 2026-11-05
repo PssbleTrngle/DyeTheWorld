@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "quark:block/olive_shingles",
+    "side": "quark:block/olive_shingles",
+    "top": "quark:block/olive_shingles"
+  }
+}

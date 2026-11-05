@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "waystones:navy_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:navy_sharestone",
+      "required": false
+    }
+  ]
+}

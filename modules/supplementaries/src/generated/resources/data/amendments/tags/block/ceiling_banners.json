@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "amendments:ceiling_banner_amber",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_aqua",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_beige",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_coral",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_forest",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_ginger",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_indigo",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_maroon",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_mint",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_navy",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_olive",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_rose",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_slate",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_tan",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_teal",
+      "required": false
+    },
+    {
+      "id": "amendments:ceiling_banner_verdant",
+      "required": false
+    }
+  ]
+}

@@ -2,11 +2,9 @@ package com.possible_triangle.dye_the_world.create_railways
 
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.data.registerExistingFile
-import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.namespace
-import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.translation
 import com.simibubi.create.AllItems
@@ -18,10 +16,6 @@ import net.minecraft.world.item.Item
 import net.neoforged.neoforge.common.Tags
 
 object DyedCreateRailways {
-    private val REGISTRATE = DyedRegistrate.create(CREATE_RAILWAYS)
-
-    private val DYES = dyesFor(CREATE_RAILWAYS)
-
     val INCOMPLETE_CONDUCTOR_CAPS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_incomplete_conductor_cap")
@@ -61,7 +55,7 @@ object DyedCreateRailways {
 
     init {
         REGISTRATE.addDataGenerator(ProviderType.BLOCKSTATE) { provider ->
-            DYES.forEach { dye ->
+            REGISTRATE.dyes.forEach { dye ->
                 provider
                     .models()
                     .withExistingParent(

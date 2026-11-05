@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supplementaries"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "supplementaries"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "item": "supplementaries:awning"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "supplementaries:awning_indigo"
+  }
+}

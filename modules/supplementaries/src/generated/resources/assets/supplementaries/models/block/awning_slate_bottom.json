@@ -1,0 +1,8 @@
+{
+  "parent": "supplementaries:block/awnings/bottom",
+  "textures": {
+    "1": "supplementaries:block/awnings/awning_slate",
+    "particle": "supplementaries:block/awnings/awning_slate",
+    "up": "supplementaries:block/awnings/awning_slate_side"
+  }
+}

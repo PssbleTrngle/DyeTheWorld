@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:indigo_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:indigo_id_card",
+      "required": false
+    }
+  ]
+}

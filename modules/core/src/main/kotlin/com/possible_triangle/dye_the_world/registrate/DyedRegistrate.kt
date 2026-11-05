@@ -26,12 +26,10 @@ class DyedRegistrate private constructor(
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 
-        @JvmStatic
-        @JvmOverloads
         fun create(
             namespace: String,
-            mod: String = namespace,
-            migrate: Boolean = false,
+            mod: String,
+            migrate: Boolean,
         ) = REGISTRATES.getOrPut(namespace) { DyedRegistrate(namespace, mod, migrate) }
     }
 
@@ -43,7 +41,6 @@ class DyedRegistrate private constructor(
     }
 
     fun register(modBus: IEventBus) {
-        // TODO no double registration
         if (isRegistered) return
         registerEventListeners(modBus)
         isRegistered = true

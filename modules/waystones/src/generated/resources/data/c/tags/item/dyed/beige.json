@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "waystones:beige_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:beige_sharestone",
+      "required": false
+    }
+  ]
+}

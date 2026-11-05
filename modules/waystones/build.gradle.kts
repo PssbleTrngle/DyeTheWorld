@@ -8,5 +8,6 @@ compat.default {
 }
 
 dependencies {
+    runtimeOnly(pack.modrinth.balm)
     api(pack.modrinth.waystones)
 }

@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "quark:navy_stool",
+      "required": false
+    },
+    {
+      "id": "quark:navy_shingles",
+      "required": false
+    },
+    {
+      "id": "quark:navy_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "quark:navy_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:navy_framed_glass",
+      "required": false
+    },
+    {
+      "id": "quark:navy_framed_glass_pane",
+      "required": false
+    }
+  ]
+}

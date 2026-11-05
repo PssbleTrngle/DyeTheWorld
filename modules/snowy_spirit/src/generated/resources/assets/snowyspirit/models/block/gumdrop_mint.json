@@ -1,0 +1,6 @@
+{
+  "parent": "snowyspirit:block/gumdrop",
+  "textures": {
+    "particle": "snowyspirit:block/gumdrop_mint"
+  }
+}

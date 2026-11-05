@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "snowyspirit:glow_lights_olive",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_olive",
+      "required": false
+    }
+  ]
+}

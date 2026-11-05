@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "snowyspirit:gumdrop_amber",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_aqua",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_beige",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_coral",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_forest",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_ginger",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_indigo",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_maroon",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_mint",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_navy",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_olive",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_rose",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_slate",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_tan",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_teal",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_verdant",
+      "required": false
+    }
+  ]
+}

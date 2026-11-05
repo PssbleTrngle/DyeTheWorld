@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:aqua_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:aqua_id_card",
+      "required": false
+    }
+  ]
+}

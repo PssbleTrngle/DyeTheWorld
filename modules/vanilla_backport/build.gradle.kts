@@ -5,6 +5,7 @@ plugins {
 
 compat.default {
     id = "vanillabackport"
+    namespace = "minecraft"
 }
 
 dependencies {

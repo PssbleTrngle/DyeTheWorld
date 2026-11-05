@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "minecraft:rose_harness",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_cushion",
+      "required": false
+    }
+  ]
+}

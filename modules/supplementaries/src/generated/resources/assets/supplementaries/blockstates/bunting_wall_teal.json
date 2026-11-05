@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "supplementaries:block/bunting_wall_teal_wall",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "supplementaries:block/bunting_wall_teal_wall"
+    },
+    "facing=south": {
+      "model": "supplementaries:block/bunting_wall_teal_wall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "supplementaries:block/bunting_wall_teal_wall",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:teal_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:teal_id_card",
+      "required": false
+    }
+  ]
+}

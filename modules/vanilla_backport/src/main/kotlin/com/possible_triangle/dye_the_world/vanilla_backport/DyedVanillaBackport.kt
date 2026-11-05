@@ -12,7 +12,6 @@ import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.extensions.*
-import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.tterrag.registrate.providers.ProviderType
@@ -33,15 +32,6 @@ import net.neoforged.bus.api.SubscribeEvent
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent
 
 object DyedVanillaBackport {
-    private val REGISTRATE =
-        DyedRegistrate.create(
-            DEFAULT_NAMESPACE,
-            mod = VANILLA_BACKPORT,
-            migrate = true,
-        )
-
-    private val DYES = dyesFor(VANILLA_BACKPORT)
-
     private val TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, VANILLA_BACKPORT.createId("vanilla_backport"))
 
     val HARNESSES =
@@ -193,18 +183,19 @@ object DyedVanillaBackport {
     }
 
     @SubscribeEvent
-    private fun registerTextures(event: FMLClientSetupEvent) {
-        HARNESSES.forEach { (color, item) ->
-            val texture = VANILLA_BACKPORT.createId("textures/entity/harness/$color.png")
-            GhastEquipmentManager.register(item, texture)
-        }
+    private fun registerTextures(event: FMLClientSetupEvent) =
+        event.enqueueWork {
+            HARNESSES.forEach { (color, item) ->
+                val texture = VANILLA_BACKPORT.createId("textures/entity/harness/$color.png")
+                GhastEquipmentManager.register(item, texture)
+            }
 
-        BUNDLES.forEach { (color, item) ->
-            BundleFeatures.register(color, item.get())
-        }
+            BUNDLES.forEach { (color, item) ->
+                BundleFeatures.register(color, item.get())
+            }
 
-        CUSHIONS.forEach { (color, item) ->
-            Cushion.register(color, color.blockOf("wool"), item.get())
+            CUSHIONS.forEach { (color, item) ->
+                Cushion.register(color, color.blockOf("wool"), item.get())
+            }
         }
-    }
 }

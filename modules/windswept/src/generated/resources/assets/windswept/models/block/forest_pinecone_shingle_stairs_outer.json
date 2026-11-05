@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "windswept:block/forest_pinecone_shingles",
+    "side": "windswept:block/forest_pinecone_shingles",
+    "top": "windswept:block/forest_pinecone_shingles"
+  }
+}

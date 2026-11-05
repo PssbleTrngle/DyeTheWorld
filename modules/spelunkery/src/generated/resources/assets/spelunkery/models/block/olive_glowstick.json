@@ -1,0 +1,7 @@
+{
+  "parent": "spelunkery:block/glowstick",
+  "textures": {
+    "1": "spelunkery:block/olive_glowstick",
+    "particle": "spelunkery:block/olive_glowstick"
+  }
+}

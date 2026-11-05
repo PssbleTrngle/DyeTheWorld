@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:slate_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:slate_id_card",
+      "required": false
+    }
+  ]
+}

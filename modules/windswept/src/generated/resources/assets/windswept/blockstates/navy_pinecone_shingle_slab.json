@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "windswept:block/navy_pinecone_shingle_slab"
+    },
+    "type=double": {
+      "model": "windswept:block/navy_pinecone_shingles"
+    },
+    "type=top": {
+      "model": "windswept:block/navy_pinecone_shingle_slab_top"
+    }
+  }
+}

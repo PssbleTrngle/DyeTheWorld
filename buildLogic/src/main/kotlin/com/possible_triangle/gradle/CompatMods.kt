@@ -11,6 +11,7 @@ import java.io.Serializable
 
 internal data class CompatModProperties(
     val id: String,
+    val namespace: String,
     val name: String,
     val file: String,
     val registrate: String,
@@ -24,10 +25,13 @@ enum class CompatType {
     RESOURCES_ONLY,
 }
 
+// TODO migrate?
+
 interface CompatMod : Named {
     val versionRange: Property<String>
     val type: Property<CompatType>
     val id: Property<String>
+    val namespace: Property<String>
 
     fun dataOnly() = type.set(CompatType.DATA_ONLY)
     fun noCode() = type.set(CompatType.RESOURCES_ONLY)
@@ -43,8 +47,10 @@ abstract class CompatModsExtension(private val project: Project) {
 fun String.camelCase() = split("_").joinToString("") { it.capitalized() }
 
 internal fun CompatModsExtension.modProperties() = mods.map {
+    val id = it.id.getOrElse(it.name)
     CompatModProperties(
-        id = it.id.getOrElse(it.name),
+        id = id,
+        namespace = it.namespace.getOrElse(id),
         name = it.name,
         file = it.name.camelCase(),
         registrate = "REGISTRATE" + if (mods.size == 1) "" else "_${it.name.uppercase()}",

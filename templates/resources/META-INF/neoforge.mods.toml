@@ -23,12 +23,6 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
-modId="kotlinforforge"
-versionRange="[5.8.0,)"
-ordering="NONE"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="dye_depot"
 versionRange="[2.0.0-neoforge,)"
 ordering="AFTER"

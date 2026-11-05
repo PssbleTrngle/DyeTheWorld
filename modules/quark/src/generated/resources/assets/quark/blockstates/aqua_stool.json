@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "big=false,sat_in=false": {
+      "model": "quark:block/aqua_stool"
+    },
+    "big=false,sat_in=true": {
+      "model": "quark:block/aqua_stool"
+    },
+    "big=true,sat_in=false": {
+      "model": "quark:block/big_aqua_stool"
+    },
+    "big=true,sat_in=true": {
+      "model": "quark:block/big_aqua_stool"
+    }
+  }
+}

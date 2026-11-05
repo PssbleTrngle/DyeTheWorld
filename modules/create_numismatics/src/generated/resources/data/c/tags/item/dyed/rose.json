@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:rose_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:rose_id_card",
+      "required": false
+    }
+  ]
+}

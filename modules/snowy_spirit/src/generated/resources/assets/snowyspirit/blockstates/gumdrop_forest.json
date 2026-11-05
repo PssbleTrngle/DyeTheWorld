@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "facing=down,powered=false": {
+      "model": "snowyspirit:block/gumdrop_forest",
+      "x": 180
+    },
+    "facing=down,powered=true": {
+      "model": "snowyspirit:block/gumdrop_forest_pressed",
+      "x": 180
+    },
+    "facing=east,powered=false": {
+      "model": "snowyspirit:block/gumdrop_forest",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,powered=true": {
+      "model": "snowyspirit:block/gumdrop_forest_pressed",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,powered=false": {
+      "model": "snowyspirit:block/gumdrop_forest",
+      "x": 90
+    },
+    "facing=north,powered=true": {
+      "model": "snowyspirit:block/gumdrop_forest_pressed",
+      "x": 90
+    },
+    "facing=south,powered=false": {
+      "model": "snowyspirit:block/gumdrop_forest",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,powered=true": {
+      "model": "snowyspirit:block/gumdrop_forest_pressed",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,powered=false": {
+      "model": "snowyspirit:block/gumdrop_forest"
+    },
+    "facing=up,powered=true": {
+      "model": "snowyspirit:block/gumdrop_forest_pressed"
+    },
+    "facing=west,powered=false": {
+      "model": "snowyspirit:block/gumdrop_forest",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,powered=true": {
+      "model": "snowyspirit:block/gumdrop_forest_pressed",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

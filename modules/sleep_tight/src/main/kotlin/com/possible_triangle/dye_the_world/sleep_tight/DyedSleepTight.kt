@@ -22,6 +22,7 @@ import net.minecraft.world.level.storage.loot.entries.AlternativesEntry
 import net.minecraft.world.level.storage.loot.entries.LootItem
 import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer
 import net.neoforged.bus.api.SubscribeEvent
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent
 
 object DyedSleepTight {
     val HAMMOCKS =
@@ -88,9 +89,10 @@ object DyedSleepTight {
     }
 
     @SubscribeEvent
-    private fun registerClientResources() {
-        RegHelper.registerDynamicResourceProvider(SleepThighDynamicResources())
-    }
+    private fun registerClientResources(event: FMLClientSetupEvent) =
+        event.enqueueWork {
+            RegHelper.registerDynamicResourceProvider(SleepThighDynamicResources())
+        }
 }
 
 private fun <T : LootPoolSingletonContainer.Builder<out T>> T.whenPart(

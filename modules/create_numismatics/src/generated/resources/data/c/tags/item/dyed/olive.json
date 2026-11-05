@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:olive_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:olive_id_card",
+      "required": false
+    }
+  ]
+}

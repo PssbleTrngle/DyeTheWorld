@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "sleep_tight:hammock_amber",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_aqua",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_beige",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_coral",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_forest",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_ginger",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_indigo",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_maroon",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_mint",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_navy",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_olive",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_rose",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_slate",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_tan",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_teal",
+      "required": false
+    },
+    {
+      "id": "sleep_tight:hammock_verdant",
+      "required": false
+    }
+  ]
+}

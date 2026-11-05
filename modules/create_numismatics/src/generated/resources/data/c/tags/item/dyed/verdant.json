@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:verdant_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:verdant_id_card",
+      "required": false
+    }
+  ]
+}

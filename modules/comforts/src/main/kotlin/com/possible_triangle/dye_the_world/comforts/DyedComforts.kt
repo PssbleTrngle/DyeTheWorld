@@ -6,7 +6,6 @@ import com.illusivesoulworks.comforts.common.block.SleepingBagBlock
 import com.possible_triangle.dye_the_world.*
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.extensions.particleOnly
-import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.tterrag.registrate.builders.BlockBuilder
@@ -24,8 +23,6 @@ import net.minecraft.world.level.storage.loot.entries.LootItem
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue
 
 object DyedComforts {
-    private val REGISTRATE = DyedRegistrate.create(COMFORTS)
-
     val SLEEPING_BAGS =
         REGISTRATE.dyed { dye ->
             `object`("sleeping_bag_$dye")

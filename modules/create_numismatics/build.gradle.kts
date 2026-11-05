@@ -4,6 +4,7 @@ plugins {
 }
 
 compat.default {
+    id = "numismatics"
     dataOnly()
 }
 

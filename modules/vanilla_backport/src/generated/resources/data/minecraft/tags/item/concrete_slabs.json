@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "minecraft:amber_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:aqua_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:beige_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:forest_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:ginger_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:indigo_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:maroon_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:mint_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:navy_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:olive_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:rose_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:slate_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:tan_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:teal_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_concrete_slab",
+      "required": false
+    }
+  ]
+}

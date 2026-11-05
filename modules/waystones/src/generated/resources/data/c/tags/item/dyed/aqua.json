@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "waystones:aqua_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:aqua_sharestone",
+      "required": false
+    }
+  ]
+}

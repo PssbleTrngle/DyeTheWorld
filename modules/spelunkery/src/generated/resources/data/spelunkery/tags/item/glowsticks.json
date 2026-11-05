@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "spelunkery:amber_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:aqua_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:beige_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:coral_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:forest_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:ginger_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:indigo_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:maroon_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:mint_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:navy_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:olive_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:rose_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:slate_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:tan_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:teal_glowstick",
+      "required": false
+    },
+    {
+      "id": "spelunkery:verdant_glowstick",
+      "required": false
+    }
+  ]
+}

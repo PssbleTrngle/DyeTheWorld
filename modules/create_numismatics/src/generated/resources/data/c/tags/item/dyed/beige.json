@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:beige_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:beige_id_card",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "quark:amber_shard",
+      "required": false
+    },
+    {
+      "id": "quark:amber_stool",
+      "required": false
+    },
+    {
+      "id": "quark:amber_shingles",
+      "required": false
+    },
+    {
+      "id": "quark:amber_shingles_slab",
+      "required": false
+    },
+    {
+      "id": "quark:amber_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:amber_framed_glass",
+      "required": false
+    },
+    {
+      "id": "quark:amber_framed_glass_pane",
+      "required": false
+    }
+  ]
+}

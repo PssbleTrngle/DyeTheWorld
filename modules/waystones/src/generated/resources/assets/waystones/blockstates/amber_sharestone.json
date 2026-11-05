@@ -1,0 +1,154 @@
+{
+  "variants": {
+    "facing=east,half=lower,origin=dungeon": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 90
+    },
+    "facing=east,half=lower,origin=player": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 90
+    },
+    "facing=east,half=lower,origin=unknown": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 90
+    },
+    "facing=east,half=lower,origin=village": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 90
+    },
+    "facing=east,half=lower,origin=wilderness": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 90
+    },
+    "facing=east,half=upper,origin=dungeon": {
+      "model": "waystones:block/sharestone_top",
+      "y": 90
+    },
+    "facing=east,half=upper,origin=player": {
+      "model": "waystones:block/sharestone_top",
+      "y": 90
+    },
+    "facing=east,half=upper,origin=unknown": {
+      "model": "waystones:block/sharestone_top",
+      "y": 90
+    },
+    "facing=east,half=upper,origin=village": {
+      "model": "waystones:block/sharestone_top",
+      "y": 90
+    },
+    "facing=east,half=upper,origin=wilderness": {
+      "model": "waystones:block/sharestone_top",
+      "y": 90
+    },
+    "facing=north,half=lower,origin=dungeon": {
+      "model": "waystones:block/sharestone_bottom"
+    },
+    "facing=north,half=lower,origin=player": {
+      "model": "waystones:block/sharestone_bottom"
+    },
+    "facing=north,half=lower,origin=unknown": {
+      "model": "waystones:block/sharestone_bottom"
+    },
+    "facing=north,half=lower,origin=village": {
+      "model": "waystones:block/sharestone_bottom"
+    },
+    "facing=north,half=lower,origin=wilderness": {
+      "model": "waystones:block/sharestone_bottom"
+    },
+    "facing=north,half=upper,origin=dungeon": {
+      "model": "waystones:block/sharestone_top"
+    },
+    "facing=north,half=upper,origin=player": {
+      "model": "waystones:block/sharestone_top"
+    },
+    "facing=north,half=upper,origin=unknown": {
+      "model": "waystones:block/sharestone_top"
+    },
+    "facing=north,half=upper,origin=village": {
+      "model": "waystones:block/sharestone_top"
+    },
+    "facing=north,half=upper,origin=wilderness": {
+      "model": "waystones:block/sharestone_top"
+    },
+    "facing=south,half=lower,origin=dungeon": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 180
+    },
+    "facing=south,half=lower,origin=player": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 180
+    },
+    "facing=south,half=lower,origin=unknown": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 180
+    },
+    "facing=south,half=lower,origin=village": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 180
+    },
+    "facing=south,half=lower,origin=wilderness": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 180
+    },
+    "facing=south,half=upper,origin=dungeon": {
+      "model": "waystones:block/sharestone_top",
+      "y": 180
+    },
+    "facing=south,half=upper,origin=player": {
+      "model": "waystones:block/sharestone_top",
+      "y": 180
+    },
+    "facing=south,half=upper,origin=unknown": {
+      "model": "waystones:block/sharestone_top",
+      "y": 180
+    },
+    "facing=south,half=upper,origin=village": {
+      "model": "waystones:block/sharestone_top",
+      "y": 180
+    },
+    "facing=south,half=upper,origin=wilderness": {
+      "model": "waystones:block/sharestone_top",
+      "y": 180
+    },
+    "facing=west,half=lower,origin=dungeon": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 270
+    },
+    "facing=west,half=lower,origin=player": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 270
+    },
+    "facing=west,half=lower,origin=unknown": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 270
+    },
+    "facing=west,half=lower,origin=village": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 270
+    },
+    "facing=west,half=lower,origin=wilderness": {
+      "model": "waystones:block/sharestone_bottom",
+      "y": 270
+    },
+    "facing=west,half=upper,origin=dungeon": {
+      "model": "waystones:block/sharestone_top",
+      "y": 270
+    },
+    "facing=west,half=upper,origin=player": {
+      "model": "waystones:block/sharestone_top",
+      "y": 270
+    },
+    "facing=west,half=upper,origin=unknown": {
+      "model": "waystones:block/sharestone_top",
+      "y": 270
+    },
+    "facing=west,half=upper,origin=village": {
+      "model": "waystones:block/sharestone_top",
+      "y": 270
+    },
+    "facing=west,half=upper,origin=wilderness": {
+      "model": "waystones:block/sharestone_top",
+      "y": 270
+    }
+  }
+}

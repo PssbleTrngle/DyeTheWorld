@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "waystones:amber_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:aqua_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:beige_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:coral_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:forest_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:ginger_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:indigo_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:maroon_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:mint_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:navy_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:olive_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:rose_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:slate_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:tan_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:teal_sharestone",
+      "required": false
+    },
+    {
+      "id": "waystones:verdant_sharestone",
+      "required": false
+    }
+  ]
+}

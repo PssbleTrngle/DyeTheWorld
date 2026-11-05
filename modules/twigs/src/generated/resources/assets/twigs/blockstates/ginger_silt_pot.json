@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "filled=false": {
+      "model": "twigs:block/ginger_silt_pot"
+    },
+    "filled=true": {
+      "model": "twigs:block/ginger_silt_pot"
+    }
+  }
+}

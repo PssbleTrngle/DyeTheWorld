@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:maroon_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:maroon_id_card",
+      "required": false
+    }
+  ]
+}

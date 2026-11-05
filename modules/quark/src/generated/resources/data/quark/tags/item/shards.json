@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "quark:amber_shard",
+      "required": false
+    },
+    {
+      "id": "quark:aqua_shard",
+      "required": false
+    },
+    {
+      "id": "quark:beige_shard",
+      "required": false
+    },
+    {
+      "id": "quark:coral_shard",
+      "required": false
+    },
+    {
+      "id": "quark:forest_shard",
+      "required": false
+    },
+    {
+      "id": "quark:ginger_shard",
+      "required": false
+    },
+    {
+      "id": "quark:indigo_shard",
+      "required": false
+    },
+    {
+      "id": "quark:maroon_shard",
+      "required": false
+    },
+    {
+      "id": "quark:mint_shard",
+      "required": false
+    },
+    {
+      "id": "quark:navy_shard",
+      "required": false
+    },
+    {
+      "id": "quark:olive_shard",
+      "required": false
+    },
+    {
+      "id": "quark:rose_shard",
+      "required": false
+    },
+    {
+      "id": "quark:slate_shard",
+      "required": false
+    },
+    {
+      "id": "quark:tan_shard",
+      "required": false
+    },
+    {
+      "id": "quark:teal_shard",
+      "required": false
+    },
+    {
+      "id": "quark:verdant_shard",
+      "required": false
+    }
+  ]
+}

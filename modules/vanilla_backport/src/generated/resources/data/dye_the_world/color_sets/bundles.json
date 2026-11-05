@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "colors": {
+    "amber": "minecraft:amber_bundle",
+    "aqua": "minecraft:aqua_bundle",
+    "beige": "minecraft:beige_bundle",
+    "coral": "minecraft:coral_bundle",
+    "forest": "minecraft:forest_bundle",
+    "ginger": "minecraft:ginger_bundle",
+    "indigo": "minecraft:indigo_bundle",
+    "maroon": "minecraft:maroon_bundle",
+    "mint": "minecraft:mint_bundle",
+    "navy": "minecraft:navy_bundle",
+    "olive": "minecraft:olive_bundle",
+    "rose": "minecraft:rose_bundle",
+    "slate": "minecraft:slate_bundle",
+    "tan": "minecraft:tan_bundle",
+    "teal": "minecraft:teal_bundle",
+    "verdant": "minecraft:verdant_bundle"
+  },
+  "id": "minecraft:bundle"
+}

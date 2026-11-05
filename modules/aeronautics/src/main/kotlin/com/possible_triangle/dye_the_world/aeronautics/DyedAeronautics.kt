@@ -5,23 +5,17 @@ import com.possible_triangle.dye_the_world.aeronautics.data.envelopeBlockstate
 import com.possible_triangle.dye_the_world.aeronautics.data.envelopeRecipe
 import com.possible_triangle.dye_the_world.aeronautics.data.envelopeShaftBlockstate
 import com.possible_triangle.dye_the_world.aeronautics.data.envelopeShaftItemModel
-import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.germanLang
 import com.possible_triangle.dye_the_world.extensions.optionalTag
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.germanTranslation
-import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.possible_triangle.dye_the_world.translation
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.level.block.RotatedPillarBlock
 
 object DyedAeronautics {
-    private val SYMMETRIC_SAILS = DyedRegistrate.create(AERONAUTICS)
-
-    private val DYES = dyesFor(AERONAUTICS)
-
     val ENVELOPES =
-        SYMMETRIC_SAILS.dyed { dye ->
+        REGISTRATE_AERONAUTICS.dyed { dye ->
             `object`("${dye}_envelope")
                 .dyedBlock(dye)
                 .lang("${dye.translation} Hot Air Envelope")
@@ -38,7 +32,7 @@ object DyedAeronautics {
         }
 
     val ENVELOPES_SHAFTS =
-        SYMMETRIC_SAILS.dyed { dye ->
+        REGISTRATE_AERONAUTICS.dyed { dye ->
             `object`("${dye}_envelope_encased_shaft")
                 .dyedBlock(dye, ::RotatedPillarBlock)
                 .lang("${dye.translation} Envelope Encased Shaft")

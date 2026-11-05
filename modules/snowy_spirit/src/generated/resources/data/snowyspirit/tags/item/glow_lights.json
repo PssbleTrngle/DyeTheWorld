@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "snowyspirit:glow_lights_amber",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_aqua",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_beige",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_coral",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_forest",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_ginger",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_indigo",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_maroon",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_mint",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_navy",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_olive",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_rose",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_slate",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_tan",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_teal",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:glow_lights_verdant",
+      "required": false
+    }
+  ]
+}

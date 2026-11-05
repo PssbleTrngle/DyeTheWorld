@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "twigs:block/aqua_silt_shingles",
+    "side": "twigs:block/aqua_silt_shingles",
+    "top": "twigs:block/aqua_silt_shingles"
+  }
+}

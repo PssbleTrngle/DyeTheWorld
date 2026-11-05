@@ -10,5 +10,5 @@ compat.default {
 
 dependencies {
     api(pack.modrinth.citadel)
-    api(pack.modrinth.alexs.mobs)
+    compileOnlyApi(pack.modrinth.alexs.mobs)
 }

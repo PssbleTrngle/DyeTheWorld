@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "snowyspirit:glow_lights_maroon",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gumdrop_maroon",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "suppsquared:block/sack_olive_closed"
+    },
+    "open=true": {
+      "model": "suppsquared:block/sack_olive_open"
+    }
+  }
+}

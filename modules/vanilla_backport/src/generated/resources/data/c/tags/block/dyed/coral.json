@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "minecraft:coral_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:coral_concrete_stairs",
+      "required": false
+    }
+  ]
+}

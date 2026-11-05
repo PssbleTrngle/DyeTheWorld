@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "numismatics:ginger_card",
+      "required": false
+    },
+    {
+      "id": "numismatics:ginger_id_card",
+      "required": false
+    }
+  ]
+}

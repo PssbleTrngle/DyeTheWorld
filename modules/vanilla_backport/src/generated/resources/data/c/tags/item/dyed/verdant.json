@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "minecraft:verdant_harness",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_bundle",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_wool_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_wool_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_concrete_slab",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_concrete_stairs",
+      "required": false
+    },
+    {
+      "id": "minecraft:verdant_cushion",
+      "required": false
+    }
+  ]
+}

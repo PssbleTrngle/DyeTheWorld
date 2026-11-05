@@ -6,5 +6,7 @@ plugins {
 compat.default()
 
 dependencies {
+    api(pack.modrinth.blueprint)
+    api(pack.modrinth.gallery)
     api(libs.windswept) { isTransitive = false }
 }
