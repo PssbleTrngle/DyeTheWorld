@@ -17,8 +17,6 @@ import com.possible_triangle.dye_the_world.clayworks.data.potLoot
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
-import com.possible_triangle.multikulti.datagen.conditions.ModLoaded
-import com.possible_triangle.multikulti.datagen.conditions.withConditions
 import com.teamabnormals.clayworks.common.block.GlassDoorBlock
 import com.teamabnormals.clayworks.common.block.GlassTrapDoorBlock
 import com.teamabnormals.clayworks.common.item.crafting.BakingRecipe
@@ -222,36 +220,32 @@ object DyedClayworks {
                 }.register()
         }
 
-    fun register() {
+    init {
         REGISTRATE.addDataGenerator(ProviderType.RECIPE) { provider ->
-            provider.withConditions(ModLoaded(CLAYWORKS)) {
-                TERRACOTTA.forEach { (dye, terracotta) ->
-                    val glazed = GLAZED_TERRACOTTA.getValue(dye)
-                    provider.cooking(
-                        terracotta.asIngredient(),
-                        BUILDING_BLOCKS,
-                        glazed,
-                        0.1F,
-                        100,
-                        "baking",
-                        ClayworksRecipeSerializers.BAKING_RECIPE.get(),
-                        ::BakingRecipe,
-                    )
-                }
+            TERRACOTTA.forEach { (dye, terracotta) ->
+                val glazed = GLAZED_TERRACOTTA.getValue(dye)
+                provider.cooking(
+                    terracotta.asIngredient(),
+                    BUILDING_BLOCKS,
+                    glazed,
+                    0.1F,
+                    100,
+                    "baking",
+                    ClayworksRecipeSerializers.BAKING_RECIPE.get(),
+                    ::BakingRecipe,
+                )
             }
 
-            provider.withConditions(ModLoaded(CLAYWORKS)) {
-                CONCRETE_POWDER.forEach { (dye, powder) ->
-                    ShapedRecipeBuilder
-                        .shaped(BUILDING_BLOCKS, powder.get(), 8)
-                        .pattern("###")
-                        .pattern("#X#")
-                        .pattern("###")
-                        .define('X', dye.tag)
-                        .defineUnlocking('#', ClayworksBlocks.CONCRETE_POWDER.get())
-                        .group("concrete_powder")
-                        .save(provider, CLAYWORKS.createId(provider.safeName(powder.get())))
-                }
+            CONCRETE_POWDER.forEach { (dye, powder) ->
+                ShapedRecipeBuilder
+                    .shaped(BUILDING_BLOCKS, powder.get(), 8)
+                    .pattern("###")
+                    .pattern("#X#")
+                    .pattern("###")
+                    .define('X', dye.tag)
+                    .defineUnlocking('#', ClayworksBlocks.CONCRETE_POWDER.get())
+                    .group("concrete_powder")
+                    .save(provider, CLAYWORKS.createId(provider.safeName(powder.get())))
             }
         }
     }

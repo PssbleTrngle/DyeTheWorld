@@ -15,7 +15,6 @@ import net.minecraft.data.PackOutput
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.packs.PackType
 import net.neoforged.fml.LogicalSide
-import net.neoforged.neoforge.common.conditions.ModLoadedCondition
 import net.neoforged.neoforge.common.data.ExistingFileHelper
 import net.neoforged.neoforge.common.data.JsonCodecProvider
 import java.util.concurrent.CompletableFuture
@@ -32,15 +31,15 @@ private class ColorSetProvider(
     private val type: ProviderType<ColorSetProvider>,
     existingFileHelper: ExistingFileHelper,
 ) : JsonCodecProvider<ColorSetModification>(
-    output,
-    PackOutput.Target.DATA_PACK,
-    "color_sets",
-    PackType.SERVER_DATA,
-    ColorSetModification.CODEC,
-    lookupProvider,
-    owner.modid,
-    existingFileHelper,
-),
+        output,
+        PackOutput.Target.DATA_PACK,
+        "color_sets",
+        PackType.SERVER_DATA,
+        ColorSetModification.CODEC,
+        lookupProvider,
+        owner.modid,
+        existingFileHelper,
+    ),
     RegistrateProvider {
     override fun gather() {
         owner.genData(type, this)
