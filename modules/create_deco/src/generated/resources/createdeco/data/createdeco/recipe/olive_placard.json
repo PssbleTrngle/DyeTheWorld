@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdeco"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:item_frame"
+    },
+    {
+      "item": "create:brass_sheet"
+    },
+    {
+      "tag": "c:dyes/olive"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:olive_placard"
+  }
+}

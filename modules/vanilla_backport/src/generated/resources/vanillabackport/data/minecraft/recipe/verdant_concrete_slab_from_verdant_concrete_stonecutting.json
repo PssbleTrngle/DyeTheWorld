@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:verdant_concrete"
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:verdant_concrete_slab"
+  }
+}

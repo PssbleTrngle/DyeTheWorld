@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "aeronautics:teal_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:teal_envelope_encased_shaft",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_forest",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_forest",
+      "required": false
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 package com.possible_triangle.dye_the_world.registrate
 
-import com.possible_triangle.dye_the_world.data.generatePackMetadata
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.migrate
 import com.tterrag.registrate.AbstractRegistrate
@@ -35,10 +34,6 @@ class DyedRegistrate private constructor(
 
     val dyes = dyesFor(mod)
     private var isRegistered = false
-
-    init {
-        generatePackMetadata()
-    }
 
     fun register(modBus: IEventBus) {
         if (isRegistered) return

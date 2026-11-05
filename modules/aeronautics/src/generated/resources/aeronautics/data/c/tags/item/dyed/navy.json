@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "aeronautics:navy_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:navy_envelope_encased_shaft",
+      "required": false
+    }
+  ]
+}

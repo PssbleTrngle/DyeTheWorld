@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_navy",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_navy",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_navy",
+      "required": false
+    }
+  ]
+}

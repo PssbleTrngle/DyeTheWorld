@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sleep_tight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "dye_depot:rose_carpet"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sleep_tight:hammock_rose"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:navy_concrete"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:navy_concrete_stairs"
+  }
+}

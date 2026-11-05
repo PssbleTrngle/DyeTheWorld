@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "tag": "create:dyed_table_cloths"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:indigo_table_cloth"
+  }
+}

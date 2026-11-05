@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "hanging_canvas_sign",
+  "ingredients": [
+    {
+      "tag": "c:dyes/slate"
+    },
+    {
+      "tag": "farmersdelight:hanging_canvas_signs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:slate_hanging_canvas_sign"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twigs"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "twigs:rose_silt_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "twigs:rose_silt_shingle_stairs"
+  }
+}

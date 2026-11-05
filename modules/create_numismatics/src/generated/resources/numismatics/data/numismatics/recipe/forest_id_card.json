@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "numismatics"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:nuggets/brass"
+    },
+    "D": {
+      "tag": "c:dyes/forest"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    " D ",
+    "SPB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "numismatics:forest_id_card"
+  }
+}

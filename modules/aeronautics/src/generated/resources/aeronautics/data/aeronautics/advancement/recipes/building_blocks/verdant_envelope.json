@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aeronautics"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aeronautics:verdant_envelope"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dye_depot:verdant_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdant_wool",
+      "has_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aeronautics:verdant_envelope"
+    ]
+  }
+}

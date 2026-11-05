@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_olive",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_olive",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_olive",
+      "required": false
+    }
+  ]
+}

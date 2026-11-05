@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aeronautics"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "aeronautics:envelope",
+  "ingredients": [
+    {
+      "tag": "c:dyes/maroon"
+    },
+    {
+      "tag": "aeronautics:shaftless_envelope"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "aeronautics:maroon_envelope"
+  }
+}

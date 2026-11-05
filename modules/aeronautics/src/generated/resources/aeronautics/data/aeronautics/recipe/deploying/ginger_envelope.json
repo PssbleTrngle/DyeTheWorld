@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aeronautics"
+    }
+  ],
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "dye_depot:ginger_wool"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "aeronautics:ginger_envelope"
+    }
+  ]
+}

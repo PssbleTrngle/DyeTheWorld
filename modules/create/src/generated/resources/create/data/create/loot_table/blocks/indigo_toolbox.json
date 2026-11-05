@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "create:indigo_toolbox"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:explosion_decay"
+        },
+        {
+          "function": "minecraft:copy_name",
+          "source": "block_entity"
+        },
+        {
+          "function": "minecraft:copy_name",
+          "source": "block_entity"
+        },
+        {
+          "function": "minecraft:copy_components",
+          "include": [
+            "create:toolbox_uuid",
+            "create:toolbox_inventory"
+          ],
+          "source": "block_entity"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "create:blocks/indigo_toolbox"
+}

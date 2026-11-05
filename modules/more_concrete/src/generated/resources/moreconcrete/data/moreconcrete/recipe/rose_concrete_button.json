@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "moreconcrete"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "concrete_button",
+  "ingredients": [
+    {
+      "item": "dye_depot:rose_concrete"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moreconcrete:rose_concrete_button"
+  }
+}

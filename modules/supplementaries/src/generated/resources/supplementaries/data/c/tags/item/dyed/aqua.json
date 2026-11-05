@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_aqua",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_aqua",
+      "required": false
+    }
+  ]
+}

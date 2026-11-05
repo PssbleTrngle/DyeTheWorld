@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "comforts"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "comforts:hammock_dyed",
+  "ingredients": [
+    {
+      "tag": "c:dyes/verdant"
+    },
+    {
+      "tag": "comforts:hammocks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:hammock_verdant"
+  }
+}

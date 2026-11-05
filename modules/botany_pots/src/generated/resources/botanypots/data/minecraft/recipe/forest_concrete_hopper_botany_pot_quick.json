@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "botanypots:hopper_pot",
+  "ingredients": [
+    {
+      "item": "minecraft:hopper"
+    },
+    {
+      "item": "botanypots:forest_concrete_botany_pot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "botanypots:forest_concrete_hopper_botany_pot"
+  }
+}

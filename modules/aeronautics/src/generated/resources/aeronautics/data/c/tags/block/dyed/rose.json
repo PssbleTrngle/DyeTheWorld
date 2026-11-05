@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "aeronautics:rose_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:rose_envelope_encased_shaft",
+      "required": false
+    }
+  ]
+}

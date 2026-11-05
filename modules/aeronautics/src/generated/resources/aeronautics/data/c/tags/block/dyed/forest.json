@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "aeronautics:forest_envelope",
+      "required": false
+    },
+    {
+      "id": "aeronautics:forest_envelope_encased_shaft",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdeco"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_placards": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#createdeco:placards"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createdeco:indigo_placard_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_placards"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createdeco:indigo_placard_dyeing"
+    ]
+  }
+}

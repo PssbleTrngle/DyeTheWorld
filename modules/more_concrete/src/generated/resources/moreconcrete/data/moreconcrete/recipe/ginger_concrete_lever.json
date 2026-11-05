@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "moreconcrete"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "concrete_lever",
+  "key": {
+    "#": {
+      "item": "dye_depot:ginger_concrete"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "|",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moreconcrete:ginger_concrete_lever"
+  }
+}

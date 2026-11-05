@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_mint",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_mint",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createdeco"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:barrel"
+    },
+    "C": {
+      "tag": "c:dyes/indigo"
+    },
+    "S": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    "CS",
+    "SB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:indigo_shipping_container"
+  }
+}

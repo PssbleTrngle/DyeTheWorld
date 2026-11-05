@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_verdant",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_verdant",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_verdant",
+      "required": false
+    }
+  ]
+}

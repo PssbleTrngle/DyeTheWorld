@@ -1,0 +1,57 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "waystones"
+    }
+  ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "waystones:slate_portstone",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "half": "lower"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "waystones:slate_portstone"
+        }
+      ],
+      "functions": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "minecraft:silk_touch",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "function": "minecraft:copy_components",
+          "source": "block_entity"
+        },
+        {
+          "function": "minecraft:explosion_decay"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "waystones:blocks/slate_portstone"
+}

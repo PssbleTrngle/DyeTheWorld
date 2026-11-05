@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_tan",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_tan",
+      "required": false
+    }
+  ]
+}

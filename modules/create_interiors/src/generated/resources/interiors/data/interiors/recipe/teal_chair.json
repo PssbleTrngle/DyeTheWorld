@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "interiors"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "minecraft:wooden_slabs"
+    },
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "dye_depot:teal_wool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "interiors:teal_chair"
+  }
+}

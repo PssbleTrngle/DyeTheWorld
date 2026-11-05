@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_ginger",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_ginger",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_ginger",
+      "required": false
+    }
+  ]
+}

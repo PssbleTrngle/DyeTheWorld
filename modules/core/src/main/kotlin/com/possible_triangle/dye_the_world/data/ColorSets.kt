@@ -32,15 +32,15 @@ private class ColorSetProvider(
     private val type: ProviderType<ColorSetProvider>,
     existingFileHelper: ExistingFileHelper,
 ) : JsonCodecProvider<ColorSetModification>(
-    output,
-    PackOutput.Target.DATA_PACK,
-    "color_sets",
-    PackType.SERVER_DATA,
-    ColorSetModification.CODEC,
-    lookupProvider,
-    owner.modid,
-    existingFileHelper,
-),
+        output,
+        PackOutput.Target.DATA_PACK,
+        "color_sets",
+        PackType.SERVER_DATA,
+        ColorSetModification.CODEC,
+        lookupProvider,
+        owner.modid,
+        existingFileHelper,
+    ),
     RegistrateProvider {
     override fun gather() {
         owner.genData(type, this)

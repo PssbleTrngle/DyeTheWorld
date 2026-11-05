@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supplementaries"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "bunting",
+  "ingredients": [
+    {
+      "tag": "c:dyes/rose"
+    },
+    {
+      "item": "supplementaries:bunting_white"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "supplementaries:bunting_rose"
+  }
+}

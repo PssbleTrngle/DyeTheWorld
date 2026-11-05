@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "zeta:flag",
+      "flag": "shingles"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:beige_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "quark:beige_shingles_stairs"
+  }
+}

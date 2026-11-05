@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "clayworks"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dyes/olive"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_terracotta_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "clayworks:terracotta_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "clayworks:olive_terracotta_bricks_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dye",
+      "has_terracotta_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "clayworks:olive_terracotta_bricks_dyeing"
+    ]
+  }
+}

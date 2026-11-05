@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "bits_n_bobs"
+    }
+  ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bits_n_bobs:large_nixie_tube"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "bits_n_bobs:blocks/forest_large_nixie_tube"
+}

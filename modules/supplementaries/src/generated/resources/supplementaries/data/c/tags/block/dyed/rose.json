@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:bunting_rose",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bunting_wall_rose",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_rose",
+      "required": false
+    }
+  ]
+}
