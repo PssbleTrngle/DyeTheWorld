@@ -7,7 +7,7 @@
 
 <!-- modrinth_exclude.start -->
 
-# Dye The World! <img src="src/main/resources/assets/dye_the_world/icon_transparent.png" align="right" height="128" />
+# Dye The World! <img src="combined/src/main/resources/assets/dye_the_world/icon_transparent.png" align="right" height="128" />
 
 ---
 
@@ -19,7 +19,7 @@
 
 <!-- modrinth_exclude.end -->
 
-![](src/main/resources/assets/dye_the_world/logo.png)
+![](combined/src/main/resources/assets/dye_the_world/logo.png)
 
 [![](https://img.shields.io/badge/🎨-ADDON%20FOR%20DYE%20DEPOT-tan?labelColor=gray&style=for-the-badge)][DYE_DEPOT]
 [![](https://img.shields.io/badge/REQUIRES%20KOTLIN%20FOR%20FORGE-7f52ff?logo=kotlin&labelColor=gray&style=for-the-badge)][KOTLIN_FORGE_FORGE]
