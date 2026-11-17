@@ -2,6 +2,7 @@ package com.possible_triangle.dye_the_world.registrate
 
 import com.possible_triangle.dye_the_world.DyedTags
 import com.possible_triangle.dye_the_world.extensions.doMigration
+import com.possible_triangle.dye_the_world.extensions.noLang
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.BuilderCallback
 import com.tterrag.registrate.builders.ItemBuilder
@@ -33,11 +34,11 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     }
 
     override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> =
-        owner.entry(name) { callback ->
+        owner.dyedItem(dye, this, name) { callback ->
             DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, name, callback) { properties ->
                 factory.apply(entry, properties)
             }.apply {
-                setData(ProviderType.LANG, NonNullBiConsumer.noop())
+                noLang()
                 model { _, provider ->
                     provider.blockItem(asSupplier())
                 }

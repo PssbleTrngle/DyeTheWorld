@@ -123,7 +123,7 @@ object PaintPalettes {
         val mappings = LinkedHashMap<Holder<Item>, Holder<Block>>()
         val missing = mutableListOf<String>()
 
-        DyedArtsAndCrafts.allPaintbrushes().forEach { (colour, brush) ->
+        DyedArtsAndCraftsOld.allPaintbrushes().forEach { (colour, brush) ->
             val original = findOriginal(family, colour)
             if (original != null) members += original
 

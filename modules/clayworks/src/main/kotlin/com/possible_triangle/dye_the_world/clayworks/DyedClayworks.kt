@@ -53,14 +53,7 @@ object DyedClayworks {
                     tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
                     recipe { c, p ->
-                        val terracotta = TERRACOTTA[dye]!!
-                        p.stonecutting(terracotta.asIngredient(), BUILDING_BLOCKS, c)
-                        ShapedRecipeBuilder
-                            .shaped(BUILDING_BLOCKS, c.get(), 4)
-                            .pattern("XX")
-                            .pattern("XX")
-                            .defineUnlocking('X', terracotta.get())
-                            .save(p)
+                        p.quadTransform(TERRACOTTA[dye]!!.get(), c)
                         p.shapedDyeingRecipe(dye, ClayworksBlocks.TERRACOTTA_BRICKS.get(), c)
                     }
                 }.register()
@@ -74,9 +67,8 @@ object DyedClayworks {
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelstufe")
             },
             modifyItem = { dye ->
-                recipe { context, provider ->
-                    provider.slab(TERRACOTTA_BRICKS[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context, 2)
+                addMiscData(ProviderType.RECIPE) { provider ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, ::getEntry, 2)
                 }
             },
         )
@@ -89,9 +81,8 @@ object DyedClayworks {
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegeltreppe")
             },
             modifyItem = { dye ->
-                recipe { context, provider ->
-                    provider.stairs(TERRACOTTA_BRICKS[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
+                addMiscData(ProviderType.RECIPE) { provider ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, ::getEntry)
                 }
             },
         )
@@ -104,9 +95,8 @@ object DyedClayworks {
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelmauer")
             },
             modifyItem = { dye ->
-                recipe { context, provider ->
-                    provider.wall(TERRACOTTA_BRICKS[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
+                addMiscData(ProviderType.RECIPE) { provider ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, ::getEntry)
                 }
             },
         )

@@ -9,7 +9,9 @@ import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateTagsProvider
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import net.minecraft.core.registries.Registries
+import net.minecraft.resources.ResourceKey
 import net.minecraft.tags.TagKey
+import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -29,6 +31,11 @@ class DyedRegistrate private constructor(
             mod: String,
             migrate: Boolean,
         ) = REGISTRATES.getOrPut(namespace) { DyedRegistrate(namespace, mod, migrate) }
+    }
+
+    init {
+        @Suppress("TYPE_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
+        defaultCreativeTab(null as ResourceKey<CreativeModeTab>?)
     }
 
     val dyes = dyesFor(mod)
@@ -78,12 +85,19 @@ class DyedRegistrate private constructor(
     fun <T : Item> dyedItem(
         color: DyeColor,
         factory: NonNullFunction<Item.Properties, T>,
-    ): ItemBuilder<T, DyedRegistrate> {
+    ): ItemBuilder<T, DyedRegistrate> =
+        dyedItem(color, this, factory)
+
+    fun <T : Item, P : Any> dyedItem(
+        color: DyeColor,
+        parent: P,
+        factory: NonNullFunction<Item.Properties, T>,
+    ): ItemBuilder<T, P> {
         val name = currentName()
         return entry(name) { callback ->
             DyedItemBuilder(
                 this,
-                this,
+                parent,
                 color,
                 name,
                 callback,
