@@ -12,9 +12,9 @@ import com.possible_triangle.dye_the_world.data.colorSet
 import com.possible_triangle.dye_the_world.data.createSlabs
 import com.possible_triangle.dye_the_world.data.createStairs
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.additionalRecipe
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
-import com.tterrag.registrate.providers.ProviderType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
@@ -32,7 +32,14 @@ import net.neoforged.bus.api.SubscribeEvent
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent
 
 object DyedVanillaBackport {
-    private val TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, VANILLA_BACKPORT.createId("vanilla_backport"))
+    init {
+        REGISTRATE.defaultCreativeTab(
+            ResourceKey.create(
+                Registries.CREATIVE_MODE_TAB,
+                VANILLA_BACKPORT.createId("vanilla_backport"),
+            ),
+        )
+    }
 
     val HARNESSES =
         REGISTRATE.dyed { dye ->
@@ -59,7 +66,6 @@ object DyedVanillaBackport {
                 }.model { c, p ->
                     p.generated(c, VANILLA_BACKPORT.createId("item/harness/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
-                .tab(TAB)
                 .register()
         }
 
@@ -75,7 +81,6 @@ object DyedVanillaBackport {
                 .model { c, p ->
                     p.generated(c, VANILLA_BACKPORT.createId("item/bundle/$dye"))
                 }.tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
-                .tab(TAB)
                 .register()
         }
 
@@ -85,15 +90,14 @@ object DyedVanillaBackport {
         REGISTRATE.createStairs(
             WOOL,
             VANILLA_BACKPORT.createId("wool"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Wolltreppe")
                 tag(ModBlockTags.WOOL_STAIRS)
             },
             modifyItem = {
-                tab(TAB)
                 tag(ModItemTags.WOOL_STAIRS)
-                addMiscData(ProviderType.RECIPE) { provider ->
-                    provider.dyeingRecipe(dye, ModItemTags.WOOL_STAIRS, ::getEntry) {
+                additionalRecipe { provider, context ->
+                    provider.dyeingRecipe(dye, ModItemTags.WOOL_STAIRS, context) {
                         group("wool_stairs")
                     }
                 }
@@ -105,15 +109,14 @@ object DyedVanillaBackport {
         REGISTRATE.createSlabs(
             WOOL,
             VANILLA_BACKPORT.createId("wool"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Wollestufe")
                 tag(ModBlockTags.WOOL_SLABS)
             },
             modifyItem = {
-                tab(TAB)
                 tag(ModItemTags.WOOL_SLABS)
-                addMiscData(ProviderType.RECIPE) { provider ->
-                    provider.dyeingRecipe(dye, ModItemTags.WOOL_SLABS, ::getEntry) {
+                additionalRecipe { provider, context ->
+                    provider.dyeingRecipe(dye, ModItemTags.WOOL_SLABS, context) {
                         group("wool_slabs")
                     }
                 }
@@ -127,14 +130,13 @@ object DyedVanillaBackport {
         REGISTRATE.createSlabs(
             CONCRETE,
             DEFAULT_NAMESPACE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
                 tag(VanillaTags.Blocks.CONCRETE_SLABS)
                 noMigrate()
             },
             modifyItem = {
                 tag(VanillaTags.Items.CONCRETE_SLABS)
-                tab(TAB)
             },
         )
 
@@ -142,14 +144,13 @@ object DyedVanillaBackport {
         REGISTRATE.createStairs(
             CONCRETE,
             DEFAULT_NAMESPACE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
                 tag(VanillaTags.Blocks.CONCRETE_STAIRS)
                 noMigrate()
             },
             modifyItem = {
                 tag(VanillaTags.Items.CONCRETE_STAIRS)
-                tab(TAB)
             },
         )
 
@@ -174,8 +175,7 @@ object DyedVanillaBackport {
                         .defineUnlocking('#', WOOL_SLABS[dye]!!)
                         .group("cushion")
                         .save(provider)
-                }.tab(TAB)
-                .register()
+                }.register()
         }
 
     init {

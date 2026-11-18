@@ -16,6 +16,8 @@ import com.possible_triangle.dye_the_world.clayworks.data.potItemModel
 import com.possible_triangle.dye_the_world.clayworks.data.potLoot
 import com.possible_triangle.dye_the_world.data.*
 import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.additionalRecipe
+import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.teamabnormals.clayworks.common.block.GlassDoorBlock
 import com.teamabnormals.clayworks.common.block.GlassTrapDoorBlock
@@ -63,12 +65,12 @@ object DyedClayworks {
         REGISTRATE.createSlabs(
             TERRACOTTA_BRICKS,
             CLAYWORKS.createId("terracotta_brick"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelstufe")
             },
-            modifyItem = { dye ->
-                addMiscData(ProviderType.RECIPE) { provider ->
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, ::getEntry, 2)
+            modifyItem = {
+                additionalRecipe { provider, context ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context, 2)
                 }
             },
         )
@@ -77,12 +79,12 @@ object DyedClayworks {
         REGISTRATE.createStairs(
             TERRACOTTA_BRICKS,
             CLAYWORKS.createId("terracotta_brick"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegeltreppe")
             },
-            modifyItem = { dye ->
-                addMiscData(ProviderType.RECIPE) { provider ->
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, ::getEntry)
+            modifyItem = {
+                additionalRecipe { provider, context ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
                 }
             },
         )
@@ -91,12 +93,12 @@ object DyedClayworks {
         REGISTRATE.createWalls(
             TERRACOTTA_BRICKS,
             CLAYWORKS.createId("terracotta_brick"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelmauer")
             },
-            modifyItem = { dye ->
-                addMiscData(ProviderType.RECIPE) { provider ->
-                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, ::getEntry)
+            modifyItem = {
+                additionalRecipe { provider, context ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
                 }
             },
         )
@@ -129,17 +131,17 @@ object DyedClayworks {
         }
 
     val TERRACOTTA_SLABS =
-        REGISTRATE.createSlabs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
+        REGISTRATE.createSlabs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = {
             germanLang("${dye.germanTranslation(Genus.F)} Keramikstufe")
         })
 
     val TERRACOTTA_STAIRS =
-        REGISTRATE.createStairs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
+        REGISTRATE.createStairs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = {
             germanLang("${dye.germanTranslation(Genus.F)} Keramiktreppe")
         })
 
     val TERRACOTTA_WALLS =
-        REGISTRATE.createWalls(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = { dye ->
+        REGISTRATE.createWalls(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = {
             germanLang("${dye.germanTranslation(Genus.F)} Keramikmauer")
         })
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arts_and_crafts:block/rose_polished_soapstone_slab"
+    },
+    "type=double": {
+      "model": "arts_and_crafts:block/rose_polished_soapstone"
+    },
+    "type=top": {
+      "model": "arts_and_crafts:block/rose_polished_soapstone_slab_top"
+    }
+  }
+}

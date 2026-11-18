@@ -2,11 +2,14 @@ package com.possible_triangle.dye_the_world.registrate
 
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.migrate
+import com.possible_triangle.multikulti.registrate.defaultCreativeModeTab
 import com.tterrag.registrate.AbstractRegistrate
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateTagsProvider
+import com.tterrag.registrate.util.entry.BlockEntry
+import com.tterrag.registrate.util.entry.ItemEntry
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
@@ -85,16 +88,15 @@ class DyedRegistrate private constructor(
     fun <T : Item> dyedItem(
         color: DyeColor,
         factory: NonNullFunction<Item.Properties, T>,
-    ): ItemBuilder<T, DyedRegistrate> =
-        dyedItem(color, this, factory)
+    ): ItemBuilder<T, DyedRegistrate> = dyedItem(color, this, factory)
 
     fun <T : Item, P : Any> dyedItem(
         color: DyeColor,
         parent: P,
         factory: NonNullFunction<Item.Properties, T>,
-    ): ItemBuilder<T, P> {
-        val name = currentName()
-        return entry(name) { callback ->
+        name: String = currentName(),
+    ): ItemBuilder<T, P> =
+        entry(name) { callback ->
             DyedItemBuilder(
                 this,
                 parent,
@@ -106,14 +108,26 @@ class DyedRegistrate private constructor(
                 defaultModel()
                 defaultLang()
                 tagDyed()
+                defaultCreativeModeTab?.let(::tab)
             }
         }.also {
             if (autoMigrate) it.migrate()
         }
-    }
 
     fun <T : Any> dyed(factory: DyedRegistrate.(dye: DyeColor) -> T): Map<DyeColor, T> =
         dyes.associateWith {
             factory(it)
+        }
+
+    fun <T : Block> dyedBlocks(factory: BlockFactory<T>): Map<DyeColor, BlockEntry<T>> =
+        dyes.associateWith {
+            factory(it)
+                .register()
+        }
+
+    fun <T : Item> dyedItems(factory: ItemFactory<T>): Map<DyeColor, ItemEntry<T>> =
+        dyes.associateWith {
+            factory(it)
+                .register()
         }
 }

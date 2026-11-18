@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brush": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:brush"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dyes/rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dyes/rose"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:rose_paintbrush"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dyes/rose",
+      "has_brush"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:rose_paintbrush"
+    ]
+  }
+}

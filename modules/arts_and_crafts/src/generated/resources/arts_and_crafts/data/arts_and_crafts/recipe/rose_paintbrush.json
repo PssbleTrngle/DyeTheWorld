@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:brush"
+    },
+    "D": {
+      "tag": "c:dyes/rose"
+    }
+  },
+  "pattern": [
+    "DD",
+    "DB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "arts_and_crafts:rose_paintbrush"
+  }
+}

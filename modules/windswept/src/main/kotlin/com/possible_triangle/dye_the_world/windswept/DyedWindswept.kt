@@ -27,14 +27,24 @@ object DyedWindswept {
         }
 
     private val PINECONE_SHINGLE_STAIRS =
-        REGISTRATE.createStairs(PINECONE_SHINGLES, WINDSWEPT.createId("pinecone_shingle"), modifyBlock = {
-            tag(BlockTags.MINEABLE_WITH_AXE)
-        }, stone = false)
+        REGISTRATE.createStairs(
+            PINECONE_SHINGLES,
+            WINDSWEPT.createId("pinecone_shingle"),
+            modifyBlock = {
+                tag(BlockTags.MINEABLE_WITH_AXE)
+            },
+            stone = false,
+        )
 
     private val PINECONE_SHINGLE_SLABS =
-        REGISTRATE.createSlabs(PINECONE_SHINGLES, WINDSWEPT.createId("pinecone_shingle"), modifyBlock = {
-            tag(BlockTags.MINEABLE_WITH_AXE)
-        }, stone = false)
+        REGISTRATE.createSlabs(
+            PINECONE_SHINGLES,
+            WINDSWEPT.createId("pinecone_shingle"),
+            modifyBlock = {
+                tag(BlockTags.MINEABLE_WITH_AXE)
+            },
+            stone = false,
+        )
 
     init {
         REGISTRATE.translateBannerPattern(WINDSWEPT.createId("snow_charge"), "Snow Charge")

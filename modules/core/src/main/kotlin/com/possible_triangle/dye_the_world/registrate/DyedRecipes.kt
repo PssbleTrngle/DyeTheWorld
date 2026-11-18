@@ -1,6 +1,8 @@
 package com.possible_triangle.dye_the_world.registrate
 
+import com.tterrag.registrate.builders.Builder
 import com.tterrag.registrate.providers.DataGenContext
+import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.data.recipes.RecipeCategory
@@ -58,7 +60,7 @@ fun RegistrateRecipeProvider.dyeingRecipe(
 fun RegistrateRecipeProvider.shapedDyeingRecipe(
     dye: DyeColor,
     from: Ingredient,
-    to: DataGenContext<*, out ItemLike>,
+    to: NonNullSupplier<out ItemLike>,
     build: ShapedRecipeBuilder.() -> Unit = { },
 ) {
     ShapedRecipeBuilder
@@ -76,7 +78,7 @@ fun RegistrateRecipeProvider.shapedDyeingRecipe(
 fun RegistrateRecipeProvider.shapedDyeingRecipe(
     dye: DyeColor,
     from: ItemLike,
-    to: DataGenContext<*, out ItemLike>,
+    to: NonNullSupplier<out ItemLike>,
     build: ShapedRecipeBuilder.() -> Unit = { },
 ) {
     val name = safeId(from).path
@@ -89,7 +91,7 @@ fun RegistrateRecipeProvider.shapedDyeingRecipe(
 fun RegistrateRecipeProvider.shapedDyeingRecipe(
     dye: DyeColor,
     from: TagKey<Item>,
-    to: DataGenContext<*, out ItemLike>,
+    to: NonNullSupplier<out ItemLike>,
     build: ShapedRecipeBuilder.() -> Unit = { },
 ) {
     shapedDyeingRecipe(dye, Ingredient.of(from), to) {
@@ -97,3 +99,6 @@ fun RegistrateRecipeProvider.shapedDyeingRecipe(
         build()
     }
 }
+
+fun <R : ItemLike, T : R, B : Builder<R, T, *, *>> B.additionalRecipe(factory: (RegistrateRecipeProvider, DataGenContext<R, T>) -> Unit) =
+    addMiscData(ProviderType.RECIPE) { factory(it, DataGenContext.from(this)) }

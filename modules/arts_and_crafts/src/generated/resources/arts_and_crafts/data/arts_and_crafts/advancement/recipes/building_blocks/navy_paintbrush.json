@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brush": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:brush"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dyes/navy": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dyes/navy"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:navy_paintbrush"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dyes/navy",
+      "has_brush"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:navy_paintbrush"
+    ]
+  }
+}

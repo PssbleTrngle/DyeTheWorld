@@ -22,10 +22,22 @@ import net.minecraft.world.level.block.FenceBlock
 import net.minecraft.world.level.block.FenceGateBlock
 
 fun DyedRegistrate.createFences(
-    from: Map<DyeColor, NonNullSupplier<Block>>,
+    params: ShapeParameters,
+    modifyBlock: BlockModifier<FenceBlock> = {},
+    modifyItem: BlockItemModifier<FenceBlock> = {},
+) = createFences(
+    params.cubes,
+    params.name,
+    modifyBlock,
+    modifyItem,
+)
+
+@Deprecated("use ShapeParameters instead")
+fun DyedRegistrate.createFences(
+    from: Map<DyeColor, NonNullSupplier<out Block>>,
     name: ResourceLocation,
-    modifyBlock: BlockBuilder<FenceBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
-    modifyItem: ItemBuilder<BlockItem, BlockBuilder<FenceBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
+    modifyBlock: BlockModifier<FenceBlock> = {},
+    modifyItem: BlockItemModifier<FenceBlock> = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_fence")
         .dyedBlock(dye, ::FenceBlock)
@@ -34,7 +46,7 @@ fun DyedRegistrate.createFences(
         .blockstate { c, p ->
             val texture = from[dye]!!.get().texture
             p.fenceBlock(c.get(), texture)
-        }.apply { modifyBlock(dye) }
+        }.apply(modifyBlock)
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
@@ -51,7 +63,7 @@ fun DyedRegistrate.createFences(
                 val texture = dye.namespace.createId("block/${dye}_${name.path}")
                 p.fenceInventory(c.name, texture)
             }
-            modifyItem(dye)
+            modifyItem()
         }.register()
 }
 

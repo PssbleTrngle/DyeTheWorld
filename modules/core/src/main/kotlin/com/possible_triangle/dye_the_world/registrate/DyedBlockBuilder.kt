@@ -6,8 +6,6 @@ import com.possible_triangle.dye_the_world.extensions.noLang
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.BuilderCallback
 import com.tterrag.registrate.builders.ItemBuilder
-import com.tterrag.registrate.providers.ProviderType
-import com.tterrag.registrate.util.nullness.NonNullBiConsumer
 import com.tterrag.registrate.util.nullness.NonNullBiFunction
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import com.tterrag.registrate.util.nullness.NonNullSupplier
@@ -33,19 +31,24 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
         doMigration()
     }
 
-    override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> =
-        owner.dyedItem(dye, this, name) { callback ->
-            DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, name, callback) { properties ->
-                factory.apply(entry, properties)
-            }.apply {
-                noLang()
-                model { _, provider ->
-                    provider.blockItem(asSupplier())
-                }
-                tagDyed()
-                this.migrateFrom = this@DyedBlockBuilder.migrateFrom
+    override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> {
+        @Suppress("UNCHECKED_CAST")
+        val item =
+            owner.dyedItem(dye, this, name = name, factory = {
+                factory.apply(entry, it)
+            }) as DyedItemBuilder<I, BlockBuilder<T, P>>
+
+        item.apply {
+            noLang()
+            model { _, provider ->
+                provider.blockItem(asSupplier())
             }
+            tagDyed()
+            this.migrateFrom = this@DyedBlockBuilder.migrateFrom
         }
+
+        return item
+    }
 
     fun tagDyed() {
         tag(DyedTags.BLOCKS.loader("dyed/$dye"))

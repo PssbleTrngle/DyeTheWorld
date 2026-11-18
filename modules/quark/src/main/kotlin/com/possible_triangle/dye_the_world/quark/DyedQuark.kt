@@ -9,6 +9,7 @@ import com.possible_triangle.dye_the_world.quark.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.quark.data.shinglesRecipes
 import com.possible_triangle.dye_the_world.quark.data.stoolBlockstate
 import com.possible_triangle.dye_the_world.quark.data.stoolRecipe
+import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.data.recipes.ShapedRecipeBuilder
@@ -86,10 +87,10 @@ object DyedQuark {
         REGISTRATE.createSlabs(
             SHINGLES,
             QUARK.createId("shingles"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Schindelstufe")
             },
-            modifyItem = { dye ->
+            modifyItem = {
                 recipe { context, provider ->
                     provider.withConditions(flagCondition("shingles")) {
                         provider.slab(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
@@ -106,10 +107,10 @@ object DyedQuark {
         REGISTRATE.createStairs(
             SHINGLES,
             QUARK.createId("shingles"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Schindeltreppe")
             },
-            modifyItem = { dye ->
+            modifyItem = {
                 recipe { context, provider ->
                     provider.withConditions(flagCondition("shingles")) {
                         provider.stairs(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)

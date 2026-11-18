@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "arts_and_crafts:maroon_soapstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "arts_and_crafts:maroon_soapstone_stairs"
+  }
+}

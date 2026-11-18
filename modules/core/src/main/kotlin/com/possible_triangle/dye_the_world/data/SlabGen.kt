@@ -2,15 +2,12 @@ package com.possible_triangle.dye_the_world.data
 
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
-import com.tterrag.registrate.builders.BlockBuilder
-import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.tags.BlockTags
 import net.minecraft.tags.ItemTags
-import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
@@ -18,10 +15,23 @@ import net.minecraft.world.level.block.SlabBlock
 import kotlin.collections.component2
 
 fun DyedRegistrate.createSlabs(
-    from: Map<DyeColor, NonNullSupplier<Block>>,
+    params: ShapeParameters,
+    modifyBlock: BlockModifier<SlabBlock> = {},
+    modifyItem: BlockItemModifier<SlabBlock> = {},
+) = createSlabs(
+    params.cubes,
+    params.name,
+    modifyBlock,
+    modifyItem,
+    params.stone,
+)
+
+@Deprecated("use ShapeParameters instead")
+fun DyedRegistrate.createSlabs(
+    from: Map<DyeColor, NonNullSupplier<out Block>>,
     name: ResourceLocation,
-    modifyBlock: BlockBuilder<SlabBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
-    modifyItem: ItemBuilder<BlockItem, BlockBuilder<SlabBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
+    modifyBlock: BlockModifier<SlabBlock> = {},
+    modifyItem: BlockItemModifier<SlabBlock> = {},
     stone: Boolean = true,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_slab")
@@ -35,12 +45,12 @@ fun DyedRegistrate.createSlabs(
             p.slabBlock(c.get(), doubleModel, texture)
         }.loot { c, p ->
             c.add(p, c.createSlabItemTable(p))
-        }.apply { modifyBlock(dye) }
+        }.apply(modifyBlock)
         .withItem {
             tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             tag(ItemTags.SLABS)
             recipe { c, p -> p.slab(base.asIngredient(), BUILDING_BLOCKS, c, null, stone) }
-            modifyItem(dye)
+            modifyItem()
         }.register()
 }

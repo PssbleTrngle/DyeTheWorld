@@ -3,10 +3,12 @@ plugins {
     id("module")
 }
 
-compat.default()
+compat.default {
+    dataOnly()
+}
 
 dependencies {
-    runtimeOnly(pack.modrinth.jinxedlib)
+    api(pack.modrinth.jinxedlib)
     api(pack.modrinth.artsandcrafts)
 
     implementation(project(":bits_n_bobs"))

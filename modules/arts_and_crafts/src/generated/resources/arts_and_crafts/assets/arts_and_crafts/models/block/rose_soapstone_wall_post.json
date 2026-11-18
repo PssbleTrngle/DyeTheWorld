@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "arts_and_crafts:block/rose_soapstone"
+  }
+}

@@ -1,21 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "key": {
-    "#": {
-      "item": "arts_and_crafts:white_chalk"
-    },
-    "D": {
+  "ingredients": [
+    {
       "tag": "c:dyes/slate"
+    },
+    {
+      "item": "arts_and_crafts:white_chalk"
     }
-  },
-  "pattern": [
-    "###",
-    "#D#",
-    "###"
   ],
   "result": {
-    "count": 8,
+    "count": 1,
     "id": "arts_and_crafts:slate_chalk"
   }
 }

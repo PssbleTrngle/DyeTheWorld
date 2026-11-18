@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arts_and_crafts:block/amber_chalk_slab"
+    },
+    "type=double": {
+      "model": "arts_and_crafts:block/amber_chalk"
+    },
+    "type=top": {
+      "model": "arts_and_crafts:block/amber_chalk_slab_top"
+    }
+  }
+}
