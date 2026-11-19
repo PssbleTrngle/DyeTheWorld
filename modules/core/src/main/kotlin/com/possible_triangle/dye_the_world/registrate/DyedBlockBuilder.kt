@@ -10,6 +10,7 @@ import com.tterrag.registrate.util.nullness.NonNullBiFunction
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.resources.ResourceLocation
+import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -44,6 +45,7 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
                 provider.blockItem(asSupplier())
             }
             tagDyed()
+            tab(CreativeModeTabs.COLORED_BLOCKS)
             this.migrateFrom = this@DyedBlockBuilder.migrateFrom
         }
 

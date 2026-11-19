@@ -1,5 +1,6 @@
 package com.possible_triangle.dye_the_world.arts_and_crafts
 
+import com.possible_triangle.dye_the_world.DyedMap
 import com.possible_triangle.dye_the_world.aeronautics.AERONAUTICS
 import com.possible_triangle.dye_the_world.aeronautics.DyedAeronautics
 import com.possible_triangle.dye_the_world.alexs_caves.ALEXS_CAVES
@@ -25,14 +26,13 @@ import com.possible_triangle.dye_the_world.farmers_delight.DyedFarmersDelight
 import com.possible_triangle.dye_the_world.farmers_delight.FARMERS_DELIGHT
 import com.possible_triangle.dye_the_world.more_concrete.DyedMoreConcrete
 import com.possible_triangle.dye_the_world.more_concrete.MORE_CONCRETE
-import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.ItemLike
 
 object ArtsPalettes {
     private fun fam(
         mod: String,
         suffix: String,
-        blocks: Map<DyeColor, ItemLike>,
+        blocks: DyedMap<out ItemLike>,
         base: String? = null,
     ) = PaintPalettes.add("${mod}_$suffix", blocks, suffix, mod, base)
 

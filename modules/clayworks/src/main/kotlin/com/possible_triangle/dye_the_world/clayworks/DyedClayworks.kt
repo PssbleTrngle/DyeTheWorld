@@ -52,10 +52,9 @@ object DyedClayworks {
                 .lang("${dye.translation} Terracotta Bricks")
                 .germanLang("${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
-                    tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
                     recipe { c, p ->
-                        p.quadTransform(TERRACOTTA[dye]!!.get(), c)
+                        p.quadTransform(TERRACOTTA[dye]!!.value(), c)
                         p.shapedDyeingRecipe(dye, ClayworksBlocks.TERRACOTTA_BRICKS.get(), c)
                     }
                 }.register()
@@ -112,7 +111,6 @@ object DyedClayworks {
                 .lang("Chiseled ${dye.translation} Terracotta Bricks")
                 .germanLang("Gemeißelte ${dye.germanTranslation(Genus.F)} Keramikziegel")
                 .withItem {
-                    tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.BUILDING_BLOCKS)
                     recipe { c, p ->
                         p.stonecutting(TERRACOTTA_BRICKS[dye]!!.asIngredient(), BUILDING_BLOCKS, c)
@@ -163,7 +161,6 @@ object DyedClayworks {
                             Supplier(::createPotClientExtensions)
                         },
                     )
-                    tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
                 }.register()
         }
@@ -190,7 +187,6 @@ object DyedClayworks {
                     glassDoorRecipes()
                     glassDoorItemModel()
                     tag(ItemTags.DOORS)
-                    tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.REDSTONE_BLOCKS)
                 }.register()
         }
@@ -207,7 +203,6 @@ object DyedClayworks {
                     glassTrapdoorRecipes()
                     glassTrapdoorItemModel()
                     tag(ItemTags.TRAPDOORS)
-                    tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.REDSTONE_BLOCKS)
                 }.register()
         }
@@ -219,7 +214,7 @@ object DyedClayworks {
                 provider.cooking(
                     terracotta.asIngredient(),
                     BUILDING_BLOCKS,
-                    glazed,
+                    glazed::value,
                     0.1F,
                     100,
                     "baking",
@@ -230,14 +225,14 @@ object DyedClayworks {
 
             CONCRETE_POWDER.forEach { (dye, powder) ->
                 ShapedRecipeBuilder
-                    .shaped(BUILDING_BLOCKS, powder.get(), 8)
+                    .shaped(BUILDING_BLOCKS, powder.value(), 8)
                     .pattern("###")
                     .pattern("#X#")
                     .pattern("###")
                     .define('X', dye.tag)
                     .defineUnlocking('#', ClayworksBlocks.CONCRETE_POWDER.get())
                     .group("concrete_powder")
-                    .save(provider, CLAYWORKS.createId(provider.safeName(powder.get())))
+                    .save(provider, CLAYWORKS.createId(provider.safeName(powder.value())))
             }
         }
     }

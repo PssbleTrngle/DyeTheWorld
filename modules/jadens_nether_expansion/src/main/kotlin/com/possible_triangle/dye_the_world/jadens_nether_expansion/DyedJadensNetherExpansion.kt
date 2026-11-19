@@ -25,7 +25,6 @@ object DyedJadensNetherExpansion {
                 .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .tag(BlockTags.create(JADENS_NETHER_EXPANSION.createId("sounds/glowstone")))
                 .withItem {
-                    tab(CreativeModeTabs.COLORED_BLOCKS)
                     recipe { context, provider ->
                         provider.shapedDyeingRecipe(dye, Blocks.REDSTONE_LAMP, context)
                     }

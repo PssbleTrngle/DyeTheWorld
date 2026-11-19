@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "arts_and_crafts"
+    }
+  ],
+  "blocks": "#arts_and_crafts:paintable/soapstone_bricks_stairs",
+  "mappings": {
+    "arts_and_crafts:amber_paintbrush": "arts_and_crafts:amber_soapstone_brick_stairs",
+    "arts_and_crafts:aqua_paintbrush": "arts_and_crafts:aqua_soapstone_brick_stairs",
+    "arts_and_crafts:beige_paintbrush": "arts_and_crafts:beige_soapstone_brick_stairs",
+    "arts_and_crafts:coral_paintbrush": "arts_and_crafts:coral_soapstone_brick_stairs",
+    "arts_and_crafts:forest_paintbrush": "arts_and_crafts:forest_soapstone_brick_stairs",
+    "arts_and_crafts:ginger_paintbrush": "arts_and_crafts:ginger_soapstone_brick_stairs",
+    "arts_and_crafts:indigo_paintbrush": "arts_and_crafts:indigo_soapstone_brick_stairs",
+    "arts_and_crafts:maroon_paintbrush": "arts_and_crafts:maroon_soapstone_brick_stairs",
+    "arts_and_crafts:mint_paintbrush": "arts_and_crafts:mint_soapstone_brick_stairs",
+    "arts_and_crafts:navy_paintbrush": "arts_and_crafts:navy_soapstone_brick_stairs",
+    "arts_and_crafts:olive_paintbrush": "arts_and_crafts:olive_soapstone_brick_stairs",
+    "arts_and_crafts:rose_paintbrush": "arts_and_crafts:rose_soapstone_brick_stairs",
+    "arts_and_crafts:slate_paintbrush": "arts_and_crafts:slate_soapstone_brick_stairs",
+    "arts_and_crafts:tan_paintbrush": "arts_and_crafts:tan_soapstone_brick_stairs",
+    "arts_and_crafts:teal_paintbrush": "arts_and_crafts:teal_soapstone_brick_stairs",
+    "arts_and_crafts:verdant_paintbrush": "arts_and_crafts:verdant_soapstone_brick_stairs"
+  }
+}

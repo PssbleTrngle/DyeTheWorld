@@ -2,9 +2,11 @@ package com.possible_triangle.dye_the_world.arts_and_crafts
 
 import com.kekecreations.arts_and_crafts.core.init.ACTags
 import com.kekecreations.arts_and_crafts.core.registry.ACBlocks
+import com.possible_triangle.dye_the_world.arts_and_crafts.data.paintableTag
 import com.possible_triangle.dye_the_world.arts_and_crafts.data.shapedDyeing
 import com.possible_triangle.dye_the_world.arts_and_crafts.data.shapelessDyeing
 import com.possible_triangle.dye_the_world.blockOf
+import com.possible_triangle.dye_the_world.extensions.asIngredient
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
 import com.possible_triangle.dye_the_world.extensions.quadTransform
@@ -16,6 +18,7 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder.shaped
 import net.minecraft.resources.ResourceKey
+import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Blocks
@@ -35,7 +38,6 @@ object DyedArtsAndCrafts {
             "soapstone",
             modifyCubes = {
                 initialProperties { dye.blockOf("terracotta") }
-                // TODO paintable tags
                 recipe { c, p ->
                     p.shapedDyeingRecipe(dye, ACBlocks.SOAPSTONE.get(), c)
                 }
@@ -49,10 +51,9 @@ object DyedArtsAndCrafts {
         REGISTRATE.stoneSet(
             "polished_soapstone",
             modifyCubes = {
-                initialProperties { SOAPSTONE.cubes[dye]!!.get() }
-                // TODO paintable tags
+                initialProperties { SOAPSTONE.cubes[dye]!!.value() }
                 recipe { c, p ->
-                    p.quadTransform(SOAPSTONE.cubes[dye]!!.get(), c)
+                    p.quadTransform(SOAPSTONE.cubes[dye]!!.value(), c)
                     p.shapedDyeingRecipe(dye, ACBlocks.POLISHED_SOAPSTONE.get(), c)
                 }
             },
@@ -65,10 +66,9 @@ object DyedArtsAndCrafts {
         REGISTRATE.stoneSet(
             "soapstone_bricks",
             modifyCubes = {
-                initialProperties { SOAPSTONE.cubes[dye]!!.get() }
-                // TODO paintable tags
+                initialProperties { SOAPSTONE.cubes[dye]!!.value() }
                 recipe { c, p ->
-                    p.quadTransform(POLISHED_SOAPSTONE.cubes[dye]!!.get(), c)
+                    p.quadTransform(POLISHED_SOAPSTONE.cubes[dye]!!.value(), c)
                     p.shapedDyeingRecipe(dye, ACBlocks.SOAPSTONE_BRICKS.get(), c)
                 }
             },
@@ -83,7 +83,6 @@ object DyedArtsAndCrafts {
             modifyCubes = {
                 initialProperties { Blocks.MUD }
                 properties { it.mapColor(dye) }
-                // TODO paintable tags
                 recipe { c, p ->
                     p.shapedDyeingRecipe(dye, Blocks.MUD_BRICKS, c)
                 }
@@ -99,7 +98,6 @@ object DyedArtsAndCrafts {
             modifyCubes = {
                 initialProperties { ACBlocks.CHALK[0]!!.get() }
                 properties { it.mapColor(dye) }
-                // TODO paintable tags
                 recipe { c, p ->
                     p.dyeingRecipe(dye, ACBlocks.CHALK[0]!!.get(), c)
                 }
@@ -115,7 +113,6 @@ object DyedArtsAndCrafts {
             modifyCubes = {
                 initialProperties { ACBlocks.TERRACOTTA_SHINGLES.get() }
                 properties { it.mapColor(dye) }
-                // TODO paintable tags
                 recipe { c, p ->
                     p.quadTransform(ACBlocks.TERRACOTTA_SHINGLES.get(), c)
                     p.shapedDyeingRecipe(dye, ACBlocks.TERRACOTTA_SHINGLES.get(), c)
@@ -132,6 +129,7 @@ object DyedArtsAndCrafts {
             `object`("${dye}_paintbrush")
                 .dyedItem(dye, ::Item)
                 .tag(ACTags.ItemTags.PAINTBRUSHES)
+                .tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .recipe { context, provider ->
                     shaped(RecipeCategory.BUILDING_BLOCKS, context.get())
                         .pattern("DD")
@@ -139,6 +137,18 @@ object DyedArtsAndCrafts {
                         .defineUnlocking('D', dye.tag)
                         .defineUnlocking('B', Items.BRUSH)
                         .save(provider)
+                }
+        }
+
+    val CHALK_STICK =
+        REGISTRATE.dyedItems { dye ->
+            `object`("${dye}_chalk_stick")
+                .dyedItem(dye, ::Item)
+                .tag(ACTags.ItemTags.CHALK_STICKS)
+                .tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                .recipe { context, provider ->
+                    provider.dyeingRecipe(dye, ACTags.ItemTags.CHALK_STICKS, context)
+                    provider.stonecutting(CHALK.cubes[dye]!!.asIngredient(), RecipeCategory.MISC, context)
                 }
         }
 }

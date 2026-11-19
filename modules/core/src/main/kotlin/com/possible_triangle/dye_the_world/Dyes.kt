@@ -66,22 +66,6 @@ fun DyeColor.blockOf(type: String): Block {
     return BuiltInRegistries.BLOCK.getOrThrow(id)
 }
 
-fun dyedBlockMap(
-    modid: String,
-    type: String,
-): Map<DyeColor, NonNullSupplier<Block>> =
-    dyesFor(modid).associateWith {
-        NonNullSupplier.lazy { it.blockOf(type) }
-    }
-
-fun dyedItemMap(
-    modid: String,
-    type: String,
-): Map<DyeColor, NonNullSupplier<Item>> =
-    dyesFor(modid).associateWith {
-        NonNullSupplier.lazy { it.itemOf(type) }
-    }
-
 val DyeColor.translation
     get() =
         serializedName.split("_").joinToString(" ") { part ->

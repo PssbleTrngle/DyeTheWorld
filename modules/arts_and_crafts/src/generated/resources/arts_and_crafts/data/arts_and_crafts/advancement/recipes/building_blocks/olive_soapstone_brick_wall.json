@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_olive_soapstone_brick": {
+    "has_olive_soapstone_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "arts_and_crafts:olive_soapstone_brick"
+            "items": "arts_and_crafts:olive_soapstone_bricks"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_olive_soapstone_brick"
+      "has_olive_soapstone_bricks"
     ]
   ],
   "rewards": {

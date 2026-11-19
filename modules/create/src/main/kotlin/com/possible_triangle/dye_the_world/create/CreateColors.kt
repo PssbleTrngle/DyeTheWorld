@@ -29,7 +29,7 @@ internal fun registerDyes() {
     dyesFor(CREATE).forEach { dye ->
         val (brightColor, darkColor) = TUBE_COLORS[dye.serializedName] ?: return@forEach
         DyeHelper.addDye(dye, brightColor, darkColor) {
-            WOOL[dye]!!.get()
+            WOOL[dye]!!.value()
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.possible_triangle.dye_the_world.connected_glass
 
+import com.possible_triangle.dye_the_world.DyedMap
 import com.possible_triangle.dye_the_world.connected_glass.data.connectedGlassBlockState
 import com.possible_triangle.dye_the_world.connected_glass.data.connectedPaneBlockState
 import com.possible_triangle.dye_the_world.connected_glass.data.connectedPaneItemModel
@@ -7,10 +8,8 @@ import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.translation
 import com.tterrag.registrate.builders.BlockBuilder
-import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
-import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.IronBarsBlock
 import net.neoforged.neoforge.common.Tags
@@ -18,7 +17,7 @@ import net.neoforged.neoforge.common.Tags
 object DyedConnectedGlass {
     private fun createPanes(
         type: String,
-        fullBlocks: Map<DyeColor, NonNullSupplier<out Block>>,
+        fullBlocks: DyedMap<Block>,
         block: BlockBuilder<*, *>.() -> Unit,
     ) = REGISTRATE.dyed { dye ->
         `object`("${type}_glass_${dye}_pane")
@@ -34,7 +33,7 @@ object DyedConnectedGlass {
                         .shaped(RecipeCategory.MISC, context.get())
                         .pattern("###")
                         .pattern("###")
-                        .defineUnlocking('#', fullBlocks[dye]!!.get())
+                        .defineUnlocking('#', fullBlocks[dye]!!.value())
                         .save(provider)
                 }
             }.apply(block)

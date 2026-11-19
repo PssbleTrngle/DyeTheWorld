@@ -1,5 +1,6 @@
 package com.possible_triangle.dye_the_world.data
 
+import com.possible_triangle.dye_the_world.DyedMap
 import com.possible_triangle.dye_the_world.extensions.asIngredient
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.texture
@@ -8,7 +9,6 @@ import com.possible_triangle.dye_the_world.namespace
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
-import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.sounds.SoundEvents
@@ -34,21 +34,20 @@ fun DyedRegistrate.createFences(
 
 @Deprecated("use ShapeParameters instead")
 fun DyedRegistrate.createFences(
-    from: Map<DyeColor, NonNullSupplier<out Block>>,
+    from: DyedMap<Block>,
     name: ResourceLocation,
     modifyBlock: BlockModifier<FenceBlock> = {},
     modifyItem: BlockItemModifier<FenceBlock> = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_fence")
         .dyedBlock(dye, ::FenceBlock)
-        .initialProperties(base)
+        .initialProperties(base::value)
         .tag(BlockTags.FENCES)
         .blockstate { c, p ->
-            val texture = from[dye]!!.get().texture
+            val texture = from[dye]!!.value().texture
             p.fenceBlock(c.get(), texture)
         }.apply(modifyBlock)
         .withItem {
-            tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             tag(ItemTags.FENCES)
             recipe { c, p ->
@@ -68,21 +67,20 @@ fun DyedRegistrate.createFences(
 }
 
 fun DyedRegistrate.createFenceGates(
-    from: Map<DyeColor, NonNullSupplier<Block>>,
+    from: DyedMap<Block>,
     name: ResourceLocation,
     modifyBlock: BlockBuilder<FenceGateBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<FenceGateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_fence_gate")
         .dyedBlock(dye) { FenceGateBlock(it, SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) }
-        .initialProperties(base)
+        .initialProperties(base::value)
         .tag(BlockTags.FENCE_GATES)
         .blockstate { c, p ->
-            val texture = from[dye]!!.get().texture
+            val texture = from[dye]!!.value().texture
             p.fenceGateBlock(c.get(), texture)
         }.apply { modifyBlock(dye) }
         .withItem {
-            tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             tag(ItemTags.FENCE_GATES)
             recipe { c, p ->

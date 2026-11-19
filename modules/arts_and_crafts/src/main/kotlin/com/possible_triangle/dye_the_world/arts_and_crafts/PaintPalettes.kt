@@ -7,6 +7,7 @@ import com.kekecreations.arts_and_crafts.core.registry.ACRegistries
 import com.mojang.serialization.JsonOps
 import com.possible_triangle.dye_the_world.Constants
 import com.possible_triangle.dye_the_world.DYE_DEPOT
+import com.possible_triangle.dye_the_world.DyedMap
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.core.Holder
 import net.minecraft.core.HolderLookup
@@ -40,12 +41,12 @@ object PaintPalettes {
 
     fun add(
         name: String,
-        blocks: Map<DyeColor, ItemLike>,
+        blocks: DyedMap<out ItemLike>,
         suffix: String,
         namespace: String,
         base: String? = null,
     ) {
-        FAMILIES += Family(name, blocks, suffix, listOf(namespace), base, listOf(namespace))
+        // FAMILIES += Family(name, blocks, suffix, listOf(namespace), base, listOf(namespace))
     }
 
     fun addVanilla(

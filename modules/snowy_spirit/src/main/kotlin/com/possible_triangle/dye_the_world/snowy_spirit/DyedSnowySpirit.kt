@@ -29,7 +29,6 @@ object DyedSnowySpirit {
             `object`("glow_lights_$dye")
                 .dyedItem(dye) { GlowLightsItem(GLOW_LIGHTS[dye]!!.get()) }
                 .noLang()
-                .tab(CreativeModeTabs.COLORED_BLOCKS)
                 .tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
                 .glowLightsRecipe()
                 .tag(SnowySpiritTags.Items.GLOW_LIGHTS)
@@ -44,7 +43,6 @@ object DyedSnowySpirit {
                 .gumdropBlockstate()
                 .tag(SnowySpiritTags.Blocks.GUMDROPS)
                 .withItem {
-                    tab(CreativeModeTabs.COLORED_BLOCKS)
                     tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
                     tag(SnowySpiritTags.Items.GUMDROPS)
                     gumdropModel()
