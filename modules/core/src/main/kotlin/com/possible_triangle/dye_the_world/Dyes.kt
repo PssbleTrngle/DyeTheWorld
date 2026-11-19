@@ -2,6 +2,7 @@
 
 package com.possible_triangle.dye_the_world
 
+import com.ninni.dye_depot.registry.DDDyes
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.getOrThrow
 import com.tterrag.registrate.util.nullness.NonNullSupplier
@@ -12,44 +13,19 @@ import net.minecraft.world.level.block.Block
 import java.util.*
 
 @JvmField
-val DEPOT_DYES =
-    listOf(
-        "amber",
-        "aqua",
-        "beige",
-        "coral",
-        "forest",
-        "ginger",
-        "indigo",
-        "maroon",
-        "mint",
-        "navy",
-        "olive",
-        "rose",
-        "slate",
-        "tan",
-        "teal",
-        "verdant",
-    )
+val DEPOT_DYES = DDDyes.entries.map { it.get() }
 
 @JvmField
 val VANILLA_DYES = DyeColor.entries.subList(0, 16)
 
-// private val DYES = mapOf(
-//    Constants.Mods.ANOTHER_FURNITURE to DEPOT_DYES,
-// )
-
 @Suppress("UNUSED_PARAMETER")
-fun dyesFor(modid: String): List<DyeColor> {
-    return DEPOT_DYES.mapNotNull { DyeColor.byName(it, null) }
-    // return DYES[modid]?.mapNotNull { DyeColor.byName(it, null) } ?: emptyList()
-}
+fun dyesFor(modid: String): List<DyeColor> = DEPOT_DYES
 
 const val DYE_DEPOT = "dye_depot"
 
 val DyeColor.namespace: String
     get() {
-        return if (DEPOT_DYES.contains(serializedName)) {
+        return if (DDDyes.isModDye(this)) {
             DYE_DEPOT
         } else {
             "minecraft"
@@ -72,8 +48,32 @@ val DyeColor.translation
             part.replaceFirstChar { it.uppercase(Locale.ROOT) }
         }
 
-val DyeColor?.isVanilla get() = this == null || id < 16
+val DyeColor?.isVanilla get() = this == null || !DDDyes.isModDye(this)
 
-private val dyes = DyeColor.entries.associateWith { NonNullSupplier.lazy { it.itemOf("dye") } }
+private val DYE_ITEMS = DyeColor.entries.associateWith { NonNullSupplier.lazy { it.itemOf("dye") } }
 
-val DyeColor.item get() = dyes.getValue(this).get()
+val DyeColor.item: Item get() = DYE_ITEMS.getValue(this).get()
+
+private val ORDERED_DYES =
+    listOf(
+        DyeColor.BROWN to DDDyes.MAROON.get(),
+        DyeColor.BROWN to DDDyes.ROSE.get(),
+        DyeColor.RED to DDDyes.CORAL.get(),
+        DyeColor.RED to DDDyes.GINGER.get(),
+        DyeColor.ORANGE to DDDyes.TAN.get(),
+        DyeColor.ORANGE to DDDyes.BEIGE.get(),
+        DyeColor.YELLOW to DDDyes.AMBER.get(),
+        DyeColor.YELLOW to DDDyes.OLIVE.get(),
+        DyeColor.LIME to DDDyes.FOREST.get(),
+        DyeColor.GREEN to DDDyes.VERDANT.get(),
+        DyeColor.GREEN to DDDyes.TEAL.get(),
+        DyeColor.CYAN to DDDyes.MINT.get(),
+        DyeColor.CYAN to DDDyes.AQUA.get(),
+        DyeColor.BLUE to DDDyes.SLATE.get(),
+        DyeColor.BLUE to DDDyes.NAVY.get(),
+        DyeColor.BLUE to DDDyes.INDIGO.get(),
+    )
+
+fun dyeOrder(block: (DyeColor, DyeColor) -> Unit) {
+    ORDERED_DYES.forEach { (origin, dye) -> block(origin, dye) }
+}

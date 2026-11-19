@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "arts_and_crafts:block/aqua_plaster",
+      "x": 270
+    },
+    "facing=east": {
+      "model": "arts_and_crafts:block/aqua_plaster",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "arts_and_crafts:block/aqua_plaster",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "arts_and_crafts:block/aqua_plaster"
+    },
+    "facing=up": {
+      "model": "arts_and_crafts:block/aqua_plaster",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "arts_and_crafts:block/aqua_plaster",
+      "y": 90
+    }
+  }
+}

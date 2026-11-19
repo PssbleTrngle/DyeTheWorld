@@ -8,7 +8,6 @@ import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.possible_triangle.dye_the_world.translation
 import com.tterrag.registrate.builders.BlockBuilder
 import net.minecraft.tags.BlockTags
-import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.RedstoneLampBlock
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel

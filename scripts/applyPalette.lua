@@ -9,6 +9,7 @@ for i=0, palette.width do
 end
 
 local sprite = Sprite{ fromFile=app.params["from"], oneFrame=true }
+app.command.ChangePixelFormat{ ui=false, format="rgb", dithering="none" }
 
 for i, replacement in pairs(replacements) do
    app.command.ReplaceColor {

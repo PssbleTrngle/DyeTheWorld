@@ -3,8 +3,14 @@ plugins {
     id("module")
 }
 
-compat.default {
-    dataOnly()
+compat {
+    default {
+        dataOnly()
+    }
+    mods.create("jinxed_lib") {
+        id = "jinxedlib"
+        registrate = false
+    }
 }
 
 dependencies {

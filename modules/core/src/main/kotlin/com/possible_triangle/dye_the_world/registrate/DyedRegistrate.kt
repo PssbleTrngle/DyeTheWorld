@@ -2,8 +2,8 @@ package com.possible_triangle.dye_the_world.registrate
 
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.migrate
+import com.possible_triangle.multikulti.registrate.MultikultiRegistrate
 import com.possible_triangle.multikulti.registrate.defaultCreativeModeTab
-import com.tterrag.registrate.AbstractRegistrate
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.ProviderType
@@ -25,7 +25,7 @@ class DyedRegistrate private constructor(
     namespace: String,
     val mod: String,
     private val autoMigrate: Boolean,
-) : AbstractRegistrate<DyedRegistrate>(namespace) {
+) : MultikultiRegistrate<DyedRegistrate>(namespace) {
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 

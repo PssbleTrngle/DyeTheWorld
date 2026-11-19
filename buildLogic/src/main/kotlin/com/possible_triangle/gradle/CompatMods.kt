@@ -14,7 +14,7 @@ internal data class CompatModProperties(
     val namespace: String,
     val name: String,
     val file: String,
-    val registrate: String,
+    val registrate: String?,
     val versionRange: String,
     val type: String,
 ) : Serializable
@@ -32,6 +32,7 @@ interface CompatMod : Named {
     val type: Property<CompatType>
     val id: Property<String>
     val namespace: Property<String>
+    val registrate: Property<Boolean>
 
     fun dataOnly() = type.set(CompatType.DATA_ONLY)
     fun noCode() = type.set(CompatType.RESOURCES_ONLY)
@@ -46,15 +47,16 @@ abstract class CompatModsExtension(private val project: Project) {
 
 fun String.camelCase() = split("_").joinToString("") { it.capitalized() }
 
-internal fun CompatModsExtension.modProperties() = mods.map {
-    val id = it.id.getOrElse(it.name)
+internal fun CompatModsExtension.modProperties() = mods.map { properties ->
+    val id = properties.id.getOrElse(properties.name)
     CompatModProperties(
         id = id,
-        namespace = it.namespace.getOrElse(id),
-        name = it.name,
-        file = it.name.camelCase(),
-        registrate = "REGISTRATE" + if (mods.size == 1) "" else "_${it.name.uppercase()}",
-        versionRange = it.versionRange.getOrElse("*"),
-        type = it.type.getOrElse(CompatType.FULL).name.lowercase()
+        namespace = properties.namespace.getOrElse(id),
+        name = properties.name,
+        file = properties.name.camelCase(),
+        registrate = ("REGISTRATE" + if (mods.count { it.registrate.getOrElse(true) } == 1) "" else "_${properties.name.uppercase()}")
+            .takeIf { properties.registrate.getOrElse(true) },
+        versionRange = properties.versionRange.getOrElse("*"),
+        type = properties.type.getOrElse(CompatType.FULL).name.lowercase()
     )
 }

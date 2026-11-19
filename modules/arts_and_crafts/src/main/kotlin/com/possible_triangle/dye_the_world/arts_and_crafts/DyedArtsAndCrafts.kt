@@ -1,38 +1,32 @@
 package com.possible_triangle.dye_the_world.arts_and_crafts
 
+import com.kekecreations.arts_and_crafts.common.block.ChalkDustBlock
+import com.kekecreations.arts_and_crafts.common.block.PlasterBlock
 import com.kekecreations.arts_and_crafts.core.init.ACTags
 import com.kekecreations.arts_and_crafts.core.registry.ACBlocks
-import com.possible_triangle.dye_the_world.arts_and_crafts.data.paintableTag
+import com.possible_triangle.dye_the_world.arts_and_crafts.data.chalkDustBlockstate
+import com.possible_triangle.dye_the_world.arts_and_crafts.data.plasterBlockstate
 import com.possible_triangle.dye_the_world.arts_and_crafts.data.shapedDyeing
 import com.possible_triangle.dye_the_world.arts_and_crafts.data.shapelessDyeing
+import com.possible_triangle.dye_the_world.arts_and_crafts.data.tagPaintable
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.asIngredient
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
+import com.possible_triangle.dye_the_world.extensions.noModel
 import com.possible_triangle.dye_the_world.extensions.quadTransform
 import com.possible_triangle.dye_the_world.extensions.withItem
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
-import net.minecraft.core.registries.Registries
+import net.minecraft.data.loot.BlockLootSubProvider.noDrop
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder.shaped
-import net.minecraft.resources.ResourceKey
-import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Blocks
 
 object DyedArtsAndCrafts {
-    init {
-        REGISTRATE.defaultCreativeTab(
-            ResourceKey.create(
-                Registries.CREATIVE_MODE_TAB,
-                ARTS_AND_CRAFTS.createId("configurable_tab"),
-            ),
-        )
-    }
-
     val SOAPSTONE =
         REGISTRATE.stoneSet(
             "soapstone",
@@ -129,7 +123,6 @@ object DyedArtsAndCrafts {
             `object`("${dye}_paintbrush")
                 .dyedItem(dye, ::Item)
                 .tag(ACTags.ItemTags.PAINTBRUSHES)
-                .tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .recipe { context, provider ->
                     shaped(RecipeCategory.BUILDING_BLOCKS, context.get())
                         .pattern("DD")
@@ -145,10 +138,42 @@ object DyedArtsAndCrafts {
             `object`("${dye}_chalk_stick")
                 .dyedItem(dye, ::Item)
                 .tag(ACTags.ItemTags.CHALK_STICKS)
-                .tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .recipe { context, provider ->
                     provider.dyeingRecipe(dye, ACTags.ItemTags.CHALK_STICKS, context)
                     provider.stonecutting(CHALK.cubes[dye]!!.asIngredient(), RecipeCategory.MISC, context)
+                }
+        }
+
+    val CHALK_DUST =
+        REGISTRATE.dyedBlocks { dye ->
+            `object`("${dye}_chalk_dust")
+                .dyedBlock(dye) { ChalkDustBlock(dye.id, it) }
+                .tag(ACTags.BlockTags.CHALK_DUST)
+                .chalkDustBlockstate()
+                .loot { tables, block ->
+                    tables.add(block, noDrop())
+                }
+        }
+
+    val CHALK_DRAW_PARTICLES =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_chalk_draw")
+                .particle()
+                .sprites(ARTS_AND_CRAFTS.createId("chalk_draw/$dye/frame"), 5)
+                .register()
+        }
+
+    val PLASTERS =
+        REGISTRATE.dyedBlocks { dye ->
+            `object`("${dye}_plaster")
+                .dyedBlock(dye) { PlasterBlock(dye, it) }
+                .tagPaintable("plaster")
+                .plasterBlockstate()
+                .withItem {
+                    noModel()
+                    recipe { context, provider ->
+                        provider.shapedDyeingRecipe(dye, ACBlocks.PLASTER.get(), context)
+                    }
                 }
         }
 }

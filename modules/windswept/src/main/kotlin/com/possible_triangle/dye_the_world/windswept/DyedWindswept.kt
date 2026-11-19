@@ -9,7 +9,6 @@ import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import com.rosemods.windswept.core.other.tags.WindsweptBlockTags
 import com.rosemods.windswept.core.registry.WindsweptBlocks
 import net.minecraft.tags.BlockTags
-import net.minecraft.world.item.CreativeModeTabs
 
 object DyedWindswept {
     private val PINECONE_SHINGLES =
