@@ -2,8 +2,7 @@ package com.possible_triangle.dye_the_world.create_interiors
 
 import com.possible_triangle.dye_the_world.DyedTags
 
-// TODO rename
-object Tags {
+object CreateInteriorsTags {
     object Blocks {
         val CHAIRS = DyedTags.BLOCKS.create(CREATE_INTERIORS, "chairs")
         val FLOOR_CHAIRS = DyedTags.BLOCKS.create(CREATE_INTERIORS, "floor_chairs")

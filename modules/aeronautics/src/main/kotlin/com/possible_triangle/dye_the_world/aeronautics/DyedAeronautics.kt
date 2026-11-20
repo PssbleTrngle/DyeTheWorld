@@ -19,13 +19,13 @@ object DyedAeronautics {
                 .dyedBlock(dye)
                 .lang("${dye.translation} Hot Air Envelope")
                 .germanLang("${dye.germanTranslation(Genus.F)} Heißluftballonhülle")
-                .tag(Tags.Blocks.ENVELOPES)
-                .tag(Tags.Blocks.AIRTIGHT)
+                .tag(AeronauticsTags.Blocks.ENVELOPES)
+                .tag(AeronauticsTags.Blocks.AIRTIGHT)
                 .tag(BlockTags.MINEABLE_WITH_AXE)
                 .envelopeBlockstate()
                 .withItem {
-                    tag(Tags.Items.ENVELOPES)
-                    tag(Tags.Items.SHAFTLESS_ENVELOPES)
+                    tag(AeronauticsTags.Items.ENVELOPES)
+                    tag(AeronauticsTags.Items.SHAFTLESS_ENVELOPES)
                     envelopeRecipe()
                 }.register()
         }
@@ -36,14 +36,14 @@ object DyedAeronautics {
                 .dyedBlock(dye, ::RotatedPillarBlock)
                 .lang("${dye.translation} Envelope Encased Shaft")
                 .germanLang("${dye.germanTranslation(Genus.F)} Ballonummantelte Welle")
-                .tag(Tags.Blocks.ENVELOPES)
-                .tag(Tags.Blocks.AIRTIGHT)
+                .tag(AeronauticsTags.Blocks.ENVELOPES)
+                .tag(AeronauticsTags.Blocks.AIRTIGHT)
                 .tag(BlockTags.MINEABLE_WITH_AXE)
                 .envelopeShaftBlockstate()
                 .loot { tables, block ->
                     tables.dropOther(block, ENVELOPES[dye]!!.get())
                 }.withItem {
-                    tag(Tags.Items.ENVELOPES)
+                    tag(AeronauticsTags.Items.ENVELOPES)
                     envelopeShaftItemModel()
                 }.register()
         }

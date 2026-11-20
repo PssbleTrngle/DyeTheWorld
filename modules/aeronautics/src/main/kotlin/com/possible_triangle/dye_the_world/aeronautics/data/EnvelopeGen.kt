@@ -1,7 +1,7 @@
 package com.possible_triangle.dye_the_world.aeronautics.data
 
 import com.possible_triangle.dye_the_world.aeronautics.AERONAUTICS
-import com.possible_triangle.dye_the_world.aeronautics.Tags
+import com.possible_triangle.dye_the_world.aeronautics.AeronauticsTags
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.extensions.createId
 import com.possible_triangle.dye_the_world.extensions.defineUnlocking
@@ -69,7 +69,7 @@ fun <T : Item, P> ItemBuilder<T, P>.envelopeRecipe() =
             .require(Items.STICK)
             .build(provider)
 
-        provider.dyeingRecipe(dye, Tags.Items.SHAFTLESS_ENVELOPES, context) {
+        provider.dyeingRecipe(dye, AeronauticsTags.Items.SHAFTLESS_ENVELOPES, context) {
             group(group)
         }
     }

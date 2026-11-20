@@ -20,9 +20,9 @@ object DyedBotanyPots {
     ) = REGISTRATE.dyed { dye ->
         `object`("${dye}_${type}_botany_pot")
             .dyedBlock(dye)
-            .tag(Tags.BLOCK)
+            .tag(BotanyPotsTags.BLOCK)
             .withItem {
-                tag(Tags.ITEM)
+                tag(BotanyPotsTags.ITEM)
             }.apply(block)
             .register()
     }

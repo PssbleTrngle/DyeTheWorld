@@ -136,7 +136,6 @@ object DyedCreate {
 
     init {
         REGISTRATE.createDyeRecipes()
-        // TODO need this to happen during non-data too
         registerDyes()
     }
 }

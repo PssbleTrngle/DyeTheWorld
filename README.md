@@ -7,7 +7,7 @@
 
 <!-- modrinth_exclude.start -->
 
-# Dye The World! <img src="src/main/resources/assets/dye_the_world/icon_transparent.png" align="right" height="128" />
+# Dye The World! <img src="combined/src/main/resources/assets/dye_the_world/icon_transparent.png" align="right" height="128" />
 
 ---
 
@@ -19,7 +19,7 @@
 
 <!-- modrinth_exclude.end -->
 
-![](src/main/resources/assets/dye_the_world/logo.png)
+![](combined/src/main/resources/assets/dye_the_world/logo.png)
 
 [![](https://img.shields.io/badge/🎨-ADDON%20FOR%20DYE%20DEPOT-tan?labelColor=gray&style=for-the-badge)][DYE_DEPOT]
 [![](https://img.shields.io/badge/REQUIRES%20KOTLIN%20FOR%20FORGE-7f52ff?logo=kotlin&labelColor=gray&style=for-the-badge)][KOTLIN_FORGE_FORGE]
@@ -59,6 +59,23 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Twigs](https://modrinth.com/mod/twigs) (Glow Sticks)
 
 <!-- modrinth_exclude.start -->
+## Development Information
+
+This project is structured into separate modules, each being their own mod.
+They are bundled using [Jar-in-Jar](https://docs.neoforged.net/toolchain/docs/dependencies/jarinjar/) into the file that gets published.
+This is the `combined` module.
+
+The `data` module contains some mixins that are only required during data generation and is not bundled into the published file.
+
+The `core` module contains some common code that is used by the other modules.
+
+The `modules/*` projects usually add compatibility for one specific mods, rarely multiple at the same time if they make sense together.
+Some files are generated from templates and handle some of the boilerplate stuff for the modules. These files contain:
+- the `neoforge.mods.toml`
+- a `{moduleName}Module.kt` contains some constants like the mod ids & registrate
+- a `{moduleName}Entrypoint.java` which loads the respective `Dyes{moduleName}.kt` class if the mod is loaded
+- the `pack.mcmeta` file including the conditional overlays.
+
 ### Contributors
 
 <!-- contributors.start -->
