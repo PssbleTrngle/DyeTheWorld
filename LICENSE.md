@@ -2,8 +2,8 @@
 <meta>
    <source>@pssbletrngle/github-meta-generator</source>
    <version>1.0.127</version>
-   <timestamp>2026-11-05T17:33:49.836Z</timestamp>
-   <hash>1a937148b2a892f8</hash>
+   <timestamp>2026-11-20T09:50:55.341Z</timestamp>
+   <hash>8bf51975899ffee5</hash>
 </meta>
 -->
 
@@ -23,6 +23,7 @@ This license applies to any files under the following directories:
 - ./modules/alexs_mobs/src/main/resources/assets/
 - ./modules/another_furniture/src/main/resources/assets/
 - ./modules/ars_nouveau/src/main/resources/assets/
+- ./modules/arts_and_crafts/src/main/resources/assets/
 - ./modules/bits_n_bobs/src/main/resources/assets/
 - ./modules/botany_pots/src/main/resources/assets/
 - ./modules/chalk/src/main/resources/assets/
