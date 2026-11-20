@@ -16,7 +16,7 @@ object DyedCreateDeco {
     val SHIPPING_CONTAINERS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_shipping_container")
-                .dyedBlock(dye) { ShippingContainerBlock(it, dye) }
+                .block { ShippingContainerBlock(it, dye) }
                 .lang("${dye.translation} Shipping Container")
                 .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .shippingContainerBlockstate()
@@ -28,7 +28,7 @@ object DyedCreateDeco {
     val PLACARDS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_placard")
-                .dyedBlock(dye, ::PlacardBlock)
+                .block(::PlacardBlock)
                 .lang("${dye.translation} Placard")
                 .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .tag(AllBlockTags.SAFE_NBT.tag)

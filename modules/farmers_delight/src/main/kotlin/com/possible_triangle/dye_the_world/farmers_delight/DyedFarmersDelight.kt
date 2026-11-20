@@ -30,7 +30,7 @@ object DyedFarmersDelight {
     val CANVAS_WALL_SIGNS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_canvas_wall_sign")
-                .dyedBlock(dye) { DyedWallCanvasSignBlock(it, dye) }
+                .block { DyedWallCanvasSignBlock(it, dye) }
                 .initialProperties { ModBlocks.RED_CANVAS_WALL_SIGN.get() }
                 .lang { it.descriptionId + ".wall" }
                 .canvasSignBlockstate()
@@ -41,7 +41,7 @@ object DyedFarmersDelight {
     val CANVAS_SIGNS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_canvas_sign")
-                .dyedBlock(dye) { DyedStandingCanvasSignBlock(dye) }
+                .block { DyedStandingCanvasSignBlock(dye) }
                 .initialProperties { ModBlocks.RED_CANVAS_SIGN.get() }
                 .lang("${dye.translation} Canvas Sign")
                 .germanLang("${dye.germanTranslation(Genus.I)} Canvas Schild")
@@ -58,7 +58,7 @@ object DyedFarmersDelight {
     val HANGING_CANVAS_WALL_SIGNS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_wall_hanging_canvas_sign")
-                .dyedBlock(dye) { DyedWallHangingCanvasSignBlock(it, dye) }
+                .block { DyedWallHangingCanvasSignBlock(it, dye) }
                 .initialProperties { ModBlocks.RED_HANGING_CANVAS_WALL_SIGN.get() }
                 .lang { it.descriptionId + ".wall" }
                 .canvasSignBlockstate()
@@ -69,7 +69,7 @@ object DyedFarmersDelight {
     val HANGING_CANVAS_SIGNS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_hanging_canvas_sign")
-                .dyedBlock(dye) { DyedCeilingHangingCanvasSignBlock(dye) }
+                .block { DyedCeilingHangingCanvasSignBlock(dye) }
                 .initialProperties { ModBlocks.RED_HANGING_CANVAS_SIGN.get() }
                 .lang("${dye.translation} Hanging Canvas Sign")
                 .canvasSignBlockstate()

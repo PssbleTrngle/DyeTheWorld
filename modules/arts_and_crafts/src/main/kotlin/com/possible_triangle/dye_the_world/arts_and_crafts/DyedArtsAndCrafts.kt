@@ -22,7 +22,6 @@ import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import net.minecraft.data.loot.BlockLootSubProvider.noDrop
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder.shaped
-import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Blocks
 
@@ -119,9 +118,9 @@ object DyedArtsAndCrafts {
         )
 
     val BRUSHES =
-        REGISTRATE.dyedItems { dye ->
+        REGISTRATE.dyed { dye ->
             `object`("${dye}_paintbrush")
-                .dyedItem(dye, ::Item)
+                .item()
                 .tag(ACTags.ItemTags.PAINTBRUSHES)
                 .recipe { context, provider ->
                     shaped(RecipeCategory.BUILDING_BLOCKS, context.get())
@@ -131,28 +130,31 @@ object DyedArtsAndCrafts {
                         .defineUnlocking('B', Items.BRUSH)
                         .save(provider)
                 }
+                .register()
         }
 
     val CHALK_STICK =
-        REGISTRATE.dyedItems { dye ->
+        REGISTRATE.dyed { dye ->
             `object`("${dye}_chalk_stick")
-                .dyedItem(dye, ::Item)
+                .item()
                 .tag(ACTags.ItemTags.CHALK_STICKS)
                 .recipe { context, provider ->
                     provider.dyeingRecipe(dye, ACTags.ItemTags.CHALK_STICKS, context)
                     provider.stonecutting(CHALK.cubes[dye]!!.asIngredient(), RecipeCategory.MISC, context)
                 }
+                .register()
         }
 
     val CHALK_DUST =
-        REGISTRATE.dyedBlocks { dye ->
+        REGISTRATE.dyed { dye ->
             `object`("${dye}_chalk_dust")
-                .dyedBlock(dye) { ChalkDustBlock(dye.id, it) }
+                .block { ChalkDustBlock(dye.id, it) }
                 .tag(ACTags.BlockTags.CHALK_DUST)
                 .chalkDustBlockstate()
                 .loot { tables, block ->
                     tables.add(block, noDrop())
                 }
+                .register()
         }
 
     val CHALK_DRAW_PARTICLES =
@@ -164,9 +166,9 @@ object DyedArtsAndCrafts {
         }
 
     val PLASTERS =
-        REGISTRATE.dyedBlocks { dye ->
+        REGISTRATE.dyed { dye ->
             `object`("${dye}_plaster")
-                .dyedBlock(dye) { PlasterBlock(dye, it) }
+                .block { PlasterBlock(dye, it) }
                 .tagPaintable("plaster")
                 .plasterBlockstate()
                 .withItem {
@@ -175,5 +177,6 @@ object DyedArtsAndCrafts {
                         provider.shapedDyeingRecipe(dye, ACBlocks.PLASTER.get(), context)
                     }
                 }
+                .register()
         }
 }

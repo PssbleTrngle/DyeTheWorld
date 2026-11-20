@@ -28,7 +28,7 @@ object DyedSleepTight {
     val HAMMOCKS =
         REGISTRATE.dyed { dye ->
             `object`("hammock_$dye")
-                .dyedBlock(dye) { HammockBlock(dye) }
+                .block { HammockBlock(dye) }
                 .lang("${dye.translation} Hammock")
                 .germanLang("${dye.germanTranslation(Genus.F)} Hängematte")
                 .particleOnly()

@@ -8,8 +8,6 @@ import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateTagsProvider
-import com.tterrag.registrate.util.entry.BlockEntry
-import com.tterrag.registrate.util.entry.ItemEntry
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
@@ -21,11 +19,15 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockBehaviour
 import net.neoforged.bus.api.IEventBus
 
+private typealias DyedFactory<P, T> = (properties: P, dye: DyeColor) -> T
+
 class DyedRegistrate private constructor(
     namespace: String,
     val mod: String,
     private val autoMigrate: Boolean,
 ) : MultikultiRegistrate<DyedRegistrate>(namespace) {
+    private var currentDye: DyeColor? = null
+
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 
@@ -58,18 +60,18 @@ class DyedRegistrate private constructor(
             else -> throw IllegalArgumentException("no tag provider known for registry ${registry.location()}")
         } as ProviderType<out RegistrateTagsProvider<T>>
 
-    fun dyedBlock(color: DyeColor) = dyedBlock(color, ::Block)
-
-    fun <T : Block> dyedBlock(
-        color: DyeColor,
+    override fun <T : Block, P : Any> block(
+        parent: P,
+        name: String,
         factory: NonNullFunction<BlockBehaviour.Properties, T>,
-    ): BlockBuilder<T, DyedRegistrate> {
-        val name = currentName()
+    ): BlockBuilder<T, P> {
+        val dye = currentDye ?: return super.block(parent, name, factory)
+
         return entry(name) { callback ->
             DyedBlockBuilder(
                 this,
-                this,
-                color,
+                parent,
+                dye,
                 name,
                 callback,
                 factory,
@@ -85,22 +87,24 @@ class DyedRegistrate private constructor(
         }
     }
 
-    fun <T : Item> dyedItem(
-        color: DyeColor,
-        factory: NonNullFunction<Item.Properties, T>,
-    ): ItemBuilder<T, DyedRegistrate> = dyedItem(color, this, factory)
+    // TODO move to MultikultiRegistrate
+    fun item(): ItemBuilder<Item, DyedRegistrate> = item(::Item)
 
-    fun <T : Item, P : Any> dyedItem(
-        color: DyeColor,
+    // TODO move to MultikultiRegistrate
+    fun block(): BlockBuilder<Block, DyedRegistrate> = block(::Block)
+
+    override fun <T : Item, P : Any> item(
         parent: P,
+        name: String,
         factory: NonNullFunction<Item.Properties, T>,
-        name: String = currentName(),
-    ): ItemBuilder<T, P> =
-        entry(name) { callback ->
+    ): ItemBuilder<T, P> {
+        val dye = currentDye ?: return super.item(parent, name, factory)
+
+        return entry(name) { callback ->
             DyedItemBuilder(
                 this,
                 parent,
-                color,
+                dye,
                 name,
                 callback,
                 factory,
@@ -113,21 +117,15 @@ class DyedRegistrate private constructor(
         }.also {
             if (autoMigrate) it.migrate()
         }
+    }
 
-    fun <T : Any> dyed(factory: DyedRegistrate.(dye: DyeColor) -> T): Map<DyeColor, T> =
-        dyes.associateWith {
-            factory(it)
-        }
-
-    fun <T : Block> dyedBlocks(factory: BlockFactory<T>): Map<DyeColor, BlockEntry<T>> =
-        dyes.associateWith {
-            factory(it)
-                .register()
-        }
-
-    fun <T : Item> dyedItems(factory: ItemFactory<T>): Map<DyeColor, ItemEntry<T>> =
-        dyes.associateWith {
-            factory(it)
-                .register()
-        }
+    fun <T : Any> dyed(factory: DyedRegistrate.(dye: DyeColor) -> T): Map<DyeColor, T> {
+        val map =
+            dyes.associateWith {
+                currentDye = it
+                factory(it)
+            }
+        currentDye = null
+        return map
+    }
 }

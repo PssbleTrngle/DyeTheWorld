@@ -36,7 +36,7 @@ object DyedCreate {
     val NIXIE_TUBES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_nixie_tube")
-                .dyedBlock(dye) { NixieTubeBlock(it, dye) }
+                .block { NixieTubeBlock(it, dye) }
                 .initialProperties { AllBlocks.ORANGE_NIXIE_TUBE.get() }
                 .lang("${dye.translation} Nixie Tube")
                 .germanLang("${dye.germanTranslation(Genus.F)} Nixie-Röhre")
@@ -49,7 +49,7 @@ object DyedCreate {
     val TOOLBOXES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_toolbox")
-                .dyedBlock(dye) { ToolboxBlock(it, dye) }
+                .block { ToolboxBlock(it, dye) }
                 .lang("${dye.translation} Toolbox")
                 .germanLang("${dye.germanTranslation(Genus.M)} Werkzeugkasten")
                 .tag(AllTags.AllBlockTags.TOOLBOXES.tag)
@@ -64,7 +64,7 @@ object DyedCreate {
     val SEATS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_seat")
-                .dyedBlock(dye) { SeatBlock(it, dye) }
+                .block { SeatBlock(it, dye) }
                 .lang("${dye.translation} Seat")
                 .germanLang("${dye.germanTranslation(Genus.M)} Sitz")
                 .tag(AllTags.AllBlockTags.SEATS.tag)
@@ -78,7 +78,7 @@ object DyedCreate {
     val SAILS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_sail")
-                .dyedBlock(dye) { SailBlock.withCanvas(it, dye) }
+                .block { SailBlock.withCanvas(it, dye) }
                 .lang("${dye.translation} Sail")
                 .germanLang("${dye.germanTranslation(Genus.I)} Segel")
                 .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
@@ -90,7 +90,7 @@ object DyedCreate {
         REGISTRATE.dyed { dye ->
             REGISTRATE
                 .`object`("${dye}_valve_handle")
-                .dyedBlock(dye) { ValveHandleBlock.dyed(it, dye) }
+                .block { ValveHandleBlock.dyed(it, dye) }
                 .lang("${dye.translation} Valve Handle")
                 .germanLang("${dye.germanTranslation(Genus.M)} Ventilgriff")
                 .tag(AllTags.AllBlockTags.VALVE_HANDLES.tag)
@@ -104,7 +104,7 @@ object DyedCreate {
     val TABLE_CLOTHS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_table_cloth")
-                .dyedBlock(dye) { TableClothBlock(it, dye) }
+                .block { TableClothBlock(it, dye) }
                 .lang("${dye.translation} Table Cloth")
                 .germanLang("${dye.germanTranslation(Genus.F)} Tischdecke")
                 .tag(AllTags.AllBlockTags.TABLE_CLOTHS.tag)
@@ -121,7 +121,7 @@ object DyedCreate {
     val POST_BOXES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_postbox")
-                .dyedBlock(dye) { PostboxBlock(it, dye) }
+                .block { PostboxBlock(it, dye) }
                 .lang("${dye.translation} Postbox")
                 .germanLang("${dye.germanTranslation(Genus.M)} Briefkasten")
                 .tag(AllTags.AllBlockTags.POSTBOXES.tag)

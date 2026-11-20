@@ -17,7 +17,7 @@ object DyedSnowySpirit {
     val GLOW_LIGHTS =
         REGISTRATE.dyed { dye ->
             `object`("glow_lights_$dye")
-                .dyedBlock(dye) { GlowLightsBlock(dye) }
+                .block { GlowLightsBlock(dye) }
                 .glowLightsBlockstate()
                 .tag(SnowySpiritTags.Blocks.GLOW_LIGHTS)
                 .lang("${dye.translation} Glow Lights")
@@ -27,7 +27,7 @@ object DyedSnowySpirit {
     val GLOW_LIGHTS_ITEMS =
         REGISTRATE.dyed { dye ->
             `object`("glow_lights_$dye")
-                .dyedItem(dye) { GlowLightsItem(GLOW_LIGHTS[dye]!!.get()) }
+                .item { GlowLightsItem(GLOW_LIGHTS[dye]!!.get()) }
                 .noLang()
                 .tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
                 .glowLightsRecipe()
@@ -38,7 +38,7 @@ object DyedSnowySpirit {
     val GUMDROPS =
         REGISTRATE.dyed { dye ->
             `object`("gumdrop_$dye")
-                .dyedBlock(dye) { GumdropButton(it, dye) }
+                .block { GumdropButton(it, dye) }
                 .lang("${dye.translation} Gumdrop")
                 .gumdropBlockstate()
                 .tag(SnowySpiritTags.Blocks.GUMDROPS)

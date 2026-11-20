@@ -76,6 +76,7 @@ private val ORDERED_DYES =
 
 fun dyeOrder(block: (DyeColor, DyeColor) -> Unit) {
     ORDERED_DYES.forEach { (origin, dye) -> block(origin, dye) }
+}
 
 private val DARK_BACKGROUNDS = listOf("indigo", "ginger", "maroon", "navy", "rose", "teal", "verdant")
 

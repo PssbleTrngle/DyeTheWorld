@@ -11,14 +11,13 @@ import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe
 import com.simibubi.create.content.kinetics.saw.CuttingRecipe
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipeBuilder
 import com.tterrag.registrate.providers.ProviderType
-import net.minecraft.world.item.Item
 import net.neoforged.neoforge.common.Tags
 
 object DyedCreateRailways {
     val INCOMPLETE_CONDUCTOR_CAPS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_incomplete_conductor_cap")
-                .dyedItem(dye, ::Item)
+                .item()
                 .lang("${dye.translation} Incomplete Conductor's Cap")
                 .model { context, provider ->
                     provider
@@ -30,7 +29,7 @@ object DyedCreateRailways {
     val CONDUCTOR_CAPS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_conductor_cap")
-                .dyedItem(dye, ::Item)
+                .item()
                 .lang("${dye.translation} Conductor's Cap")
                 .tag(RailwaysTags.Items.CONDUCTOR_CAPS)
                 .model { context, provider ->

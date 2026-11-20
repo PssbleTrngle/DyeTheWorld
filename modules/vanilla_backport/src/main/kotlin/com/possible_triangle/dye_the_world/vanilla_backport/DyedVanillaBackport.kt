@@ -24,7 +24,6 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.resources.ResourceLocation.DEFAULT_NAMESPACE
 import net.minecraft.world.item.BundleItem
 import net.minecraft.world.item.CreativeModeTabs
-import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.BundleContents
 import net.minecraft.world.level.block.Blocks
@@ -44,7 +43,7 @@ object DyedVanillaBackport {
     val HARNESSES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_harness")
-                .dyedItem(dye, ::Item)
+                .item()
                 .properties { it.stacksTo(1) }
                 .lang("${dye.translation} Harness")
                 .germanLang("${dye.germanTranslation(Genus.I)} Geschirr")
@@ -72,7 +71,7 @@ object DyedVanillaBackport {
     val BUNDLES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_bundle")
-                .dyedItem(dye, ::BundleItem)
+                .item(::BundleItem)
                 .properties { it.stacksTo(1) }
                 .properties { it.component(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY) }
                 .lang("${dye.translation} Bundle")
@@ -157,7 +156,7 @@ object DyedVanillaBackport {
     val CUSHIONS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_cushion")
-                .dyedItem(dye) { CushionItem(it, dye) }
+                .item { CushionItem(it, dye) }
                 .properties { it.stacksTo(16) }
                 .lang("${dye.translation} Cushion")
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")

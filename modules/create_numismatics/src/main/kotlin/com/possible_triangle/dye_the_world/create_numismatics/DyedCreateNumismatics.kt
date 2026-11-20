@@ -14,7 +14,6 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.resources.ResourceKey
-import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 
 object DyedCreateNumismatics {
@@ -23,7 +22,7 @@ object DyedCreateNumismatics {
     val CARDS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_card")
-                .dyedItem(dye, ::Item)
+                .item()
                 .lang("${dye.translation} Card")
                 .germanLang("${dye.germanTranslation(Genus.F)} Karte")
                 .tab(TAB)
@@ -42,7 +41,7 @@ object DyedCreateNumismatics {
     val ID_CARDS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_id_card")
-                .dyedItem(dye, ::Item)
+                .item()
                 .lang("${dye.translation} ID Card")
                 .germanLang("${dye.germanTranslation(Genus.M)} Ausweis")
                 .tab(TAB)

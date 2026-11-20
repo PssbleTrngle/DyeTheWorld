@@ -8,7 +8,7 @@ object DyedAmendments {
     val CEILING_BANNERS =
         REGISTRATE_AMENDMENTS.dyed { dye ->
             `object`("ceiling_banner_$dye")
-                .dyedBlock(dye)
+                .block()
                 .lang("${dye.translation} Banner")
                 .tag(SupplementariesTags.Blocks.CEILING_BANNERS)
                 .blockstate { context, provider ->

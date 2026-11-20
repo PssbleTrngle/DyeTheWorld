@@ -31,7 +31,7 @@ fun DyedRegistrate.createLevers(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<LeverBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_lever")
-        .dyedBlock(dye, ::LeverBlock)
+        .block(::LeverBlock)
         .initialProperties(base::value)
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture
@@ -93,7 +93,7 @@ fun DyedRegistrate.createButtons(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<ButtonBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_button")
-        .dyedBlock(dye) { ButtonBlock(BlockSetType.STONE, 20, it) }
+        .block { ButtonBlock(BlockSetType.STONE, 20, it) }
         .initialProperties(base::value)
         .tag(BlockTags.BUTTONS)
         .blockstate { c, p ->
@@ -124,7 +124,7 @@ fun DyedRegistrate.createPressurePlates(
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<PressurePlateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_pressure_plate")
-        .dyedBlock(dye) { PressurePlateBlock(BlockSetType.STONE, it) }
+        .block { PressurePlateBlock(BlockSetType.STONE, it) }
         .initialProperties(base::value)
         .tag(BlockTags.PRESSURE_PLATES)
         .blockstate { c, p ->

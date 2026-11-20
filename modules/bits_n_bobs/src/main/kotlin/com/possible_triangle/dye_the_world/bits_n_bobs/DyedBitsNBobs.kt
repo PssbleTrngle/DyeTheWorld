@@ -27,7 +27,7 @@ object DyedBitsNBobs {
     val CHAIRS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_chair")
-                .dyedBlock(dye) { ChairBlock(it, dye) }
+                .block { ChairBlock(it, dye) }
                 .lang("${dye.translation} Chair")
                 .germanLang("${dye.germanTranslation(Genus.M)} Stuhl")
                 .tag(BnbBlockTags.CHAIRS.tag)
@@ -54,7 +54,7 @@ object DyedBitsNBobs {
     val NIXIE_BOARDS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_nixie_board")
-                .dyedBlock(dye) { NixieBoardBlockNixie(it, dye) }
+                .block { NixieBoardBlockNixie(it, dye) }
                 .lang("${dye.translation} Nixie Board")
                 .germanLang("${dye.germanTranslation(Genus.I)} Nixie-Board")
                 .tag(BnbBlockTags.NIXIE_BOARDS.tag)
@@ -67,7 +67,7 @@ object DyedBitsNBobs {
     val LARGE_NIXIE_TUBES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_large_nixie_tube")
-                .dyedBlock(dye) { LargeNixieTubeBlockNixie(it, dye) }
+                .block { LargeNixieTubeBlockNixie(it, dye) }
                 .lang("${dye.translation} Large Nixie Tube")
                 .germanLang("${dye.germanTranslation(Genus.F)} große Nixie-Röhre")
                 .tag(BnbBlockTags.NIXIE_BOARDS.tag)

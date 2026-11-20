@@ -26,7 +26,7 @@ object DyedComforts {
     val SLEEPING_BAGS =
         REGISTRATE.dyed { dye ->
             `object`("sleeping_bag_$dye")
-                .dyedBlock(dye) { SleepingBagBlock(dye) }
+                .block { SleepingBagBlock(dye) }
                 .lang("${dye.translation} Sleeping Bag")
                 .germanLang("${dye.germanTranslation(Genus.M)} Schlafsack")
                 .tag(ComfortsTags.Blocks.SLEEPING_BAGS)
@@ -40,7 +40,7 @@ object DyedComforts {
     val HAMMOCKS =
         REGISTRATE.dyed { dye ->
             `object`("hammock_$dye")
-                .dyedBlock(dye) { HammockBlock(dye) }
+                .block { HammockBlock(dye) }
                 .lang("${dye.translation} Hammock")
                 .germanLang("${dye.germanTranslation(Genus.M)} Hängemattenstoff")
                 .tag(ComfortsTags.Blocks.HAMMOCKS)

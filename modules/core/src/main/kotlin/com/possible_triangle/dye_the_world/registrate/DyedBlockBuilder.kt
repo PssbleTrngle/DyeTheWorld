@@ -16,7 +16,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties
 
-class DyedBlockBuilder<T : Block, P : Any> internal constructor(
+internal class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     private val owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,
@@ -35,7 +35,7 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> {
         @Suppress("UNCHECKED_CAST")
         val item =
-            owner.dyedItem(dye, this, name = name, factory = {
+            owner.item(this, name = name, factory = {
                 factory.apply(entry, it)
             }) as DyedItemBuilder<I, BlockBuilder<T, P>>
 

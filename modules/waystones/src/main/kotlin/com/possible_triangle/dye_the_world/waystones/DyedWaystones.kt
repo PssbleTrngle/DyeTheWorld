@@ -24,7 +24,7 @@ object DyedWaystones {
     val PORTSTONES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_portstone")
-                .dyedBlock(dye) { PortstoneBlock(dye, it) }
+                .block { PortstoneBlock(dye, it) }
                 .lang("${dye.translation} Portstone")
                 .germanLang("${dye.germanTranslation(Genus.M)} Portstein")
                 .tag(ModBlockTags.PORTSTONES)
@@ -69,7 +69,7 @@ object DyedWaystones {
     val SHARESTONES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_sharestone")
-                .dyedBlock(dye) { SharestoneBlock(dye, it) }
+                .block { SharestoneBlock(dye, it) }
                 .lang("${dye.translation} Sharestone")
                 .germanLang("${dye.germanTranslation(Genus.M)} Teilstein")
                 .addMiscData(ProviderType.LANG) {

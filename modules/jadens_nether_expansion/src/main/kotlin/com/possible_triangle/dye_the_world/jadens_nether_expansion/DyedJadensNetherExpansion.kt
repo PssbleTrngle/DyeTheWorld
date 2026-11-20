@@ -16,7 +16,7 @@ object DyedJadensNetherExpansion {
     val STAINED_REDSTONE_LAMPS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_stained_redstone_lamp")
-                .dyedBlock(dye, ::RedstoneLampBlock)
+                .block(::RedstoneLampBlock)
                 .lang("${dye.translation} Stained Redstone Lamp")
                 .initialProperties { Blocks.REDSTONE_LAMP }
                 .properties { it.mapColor(dye) }

@@ -13,7 +13,7 @@ object DyedSupplementaries {
     val BUNTINGS =
         REGISTRATE_SUPPLEMENTARIES.dyed { dye ->
             `object`("bunting_$dye")
-                .dyedBlock(dye) { BuntingCeilingBlock(dye, it) }
+                .block { BuntingCeilingBlock(dye, it) }
                 .lang("${dye.translation} Bunting")
                 .buntingBlockState()
                 .tag(SupplementariesTags.Blocks.BUNTINGS)
@@ -27,7 +27,7 @@ object DyedSupplementaries {
     val WALL_BUNTINGS =
         REGISTRATE_SUPPLEMENTARIES.dyed { dye ->
             `object`("bunting_wall_$dye")
-                .dyedBlock(dye) { BuntingWallBlock(dye, it) }
+                .block { BuntingWallBlock(dye, it) }
                 .lang("${dye.translation} Bunting")
                 .wallBuntingBlockState()
                 .tag(SupplementariesTags.Blocks.BUNTINGS)
@@ -37,7 +37,7 @@ object DyedSupplementaries {
     val AWNINGS =
         REGISTRATE_SUPPLEMENTARIES.dyed { dye ->
             `object`("awning_$dye")
-                .dyedBlock(dye) { AwningBlock(dye, it) }
+                .block { AwningBlock(dye, it) }
                 .lang("${dye.translation} Awning")
                 .tag(SupplementariesTags.Blocks.BOUNCY_BLOCKS)
                 .tag(SupplementariesTags.Blocks.AWNINGS)

@@ -17,7 +17,7 @@ object DyedElevators {
     val ELEVATOR_BLOCKS =
         REGISTRATE.dyed { dye ->
             `object`("elevator_$dye")
-                .dyedBlock(dye, ::Block)
+                .block(::Block)
                 .tag(ElevatorsTags.BLOCK)
                 .lang("${dye.translation} Elevator")
                 .germanLang("${dye.germanTranslation(Genus.M)} Aufzug")

@@ -30,7 +30,7 @@ fun DyedRegistrate.createWalls(
     modifyItem: BlockItemModifier<WallBlock> = {},
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_wall")
-        .dyedBlock(dye, ::WallBlock)
+        .block(::WallBlock)
         .initialProperties(base::value)
         .tag(BlockTags.MINEABLE_WITH_PICKAXE)
         .tag(BlockTags.WALLS)

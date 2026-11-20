@@ -17,7 +17,7 @@ object DyedSpelunkery {
     val GLOW_STICKS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_glowstick")
-                .dyedBlock(dye, ::GlowstickBlock)
+                .block(::GlowstickBlock)
                 .initialProperties(NonNullSupplier(ModBlocks.GLOWSTICK::get))
                 .lang("${dye.translation} Glowstick")
                 .glowstickBlockState()

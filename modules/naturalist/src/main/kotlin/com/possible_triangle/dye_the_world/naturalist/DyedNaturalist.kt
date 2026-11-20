@@ -7,7 +7,6 @@ import net.minecraft.core.component.DataComponents
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapelessRecipeBuilder
 import net.minecraft.nbt.CompoundTag
-import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.component.CustomData
 
@@ -15,7 +14,7 @@ object DyedNaturalist {
     val SNAIL_SHELLS =
         REGISTRATE.dyed { dye ->
             `object`("snail_shell_$dye")
-                .dyedItem(dye, ::Item)
+                .item()
                 .lang("${dye.translation} Snail Shell")
                 .recipe { context, provider ->
                     val nbt =
@@ -37,7 +36,7 @@ object DyedNaturalist {
     val SNAILS =
         REGISTRATE.dyed { dye ->
             `object`("snail_$dye")
-                .dyedItem(dye, ::Item)
+                .item()
                 .lang("${dye.translation} Snail")
                 .register()
         }

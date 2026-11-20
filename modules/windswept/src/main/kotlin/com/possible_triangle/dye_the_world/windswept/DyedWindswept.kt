@@ -14,7 +14,7 @@ object DyedWindswept {
     private val PINECONE_SHINGLES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_pinecone_shingles")
-                .dyedBlock(dye)
+                .block()
                 .tag(BlockTags.MINEABLE_WITH_AXE)
                 .tag(WindsweptBlockTags.PINECONE_NOTE_BLOCKS)
                 .withItem {

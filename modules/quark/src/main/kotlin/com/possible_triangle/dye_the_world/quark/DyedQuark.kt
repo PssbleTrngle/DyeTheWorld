@@ -15,7 +15,6 @@ import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.CreativeModeTabs
-import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.state.BlockBehaviour
@@ -30,7 +29,7 @@ object DyedQuark {
     val GLASS_SHARDS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_shard")
-                .dyedItem(dye, ::Item)
+                .item()
                 .optionalTab(CreativeModeTabs.INGREDIENTS) {
                     flagEnabled("glass_shard")
                 }.tag(QuarkTags.Items.GLASS_SHARDS)
@@ -54,7 +53,7 @@ object DyedQuark {
     val STOOLS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_stool")
-                .dyedBlock(dye) { StoolBlock(null, dye) }
+                .block { StoolBlock(null, dye) }
                 .migrate(name = "${dye}_quark_stool")
                 .tag(QuarkTags.Blocks.QUARK_STOOLS)
                 .stoolBlockstate()
@@ -70,7 +69,7 @@ object DyedQuark {
     val SHINGLES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_shingles")
-                .dyedBlock(dye, ::Block)
+                .block(::Block)
                 .initialProperties { dye.blockOf("terracotta") }
                 .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("${dye.translation} Terracotta Shingles")
@@ -126,7 +125,7 @@ object DyedQuark {
     val FRAMED_GLASS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_framed_glass")
-                .dyedBlock(dye) { ZetaGlassBlock(null, null, true, it) }
+                .block { ZetaGlassBlock(null, null, true, it) }
                 .initialProperties { Blocks.GLASS }
                 .properties { it.strength(3F, 10F) }
                 .tag(QuarkTags.Blocks.FRAMED_GLASSES)
@@ -157,7 +156,7 @@ object DyedQuark {
     val FRAMED_GLASS_PANES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_framed_glass_pane")
-                .dyedBlock(dye) {
+                .block {
                     val parent = FRAMED_GLASS[dye]!!.get()
                     ZetaInheritedPaneBlock(parent, null, BlockBehaviour.Properties.ofFullCopy(parent))
                 }.tag(QuarkTags.Blocks.FRAMED_GLASS_PANES)

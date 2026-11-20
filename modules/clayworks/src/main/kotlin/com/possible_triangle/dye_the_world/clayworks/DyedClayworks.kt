@@ -46,7 +46,7 @@ object DyedClayworks {
     val TERRACOTTA_BRICKS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_terracotta_bricks")
-                .dyedBlock(dye)
+                .block()
                 .initialProperties { dye.blockOf("terracotta") }
                 .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("${dye.translation} Terracotta Bricks")
@@ -105,7 +105,7 @@ object DyedClayworks {
     val CHISELED_TERRACOTTA_BRICKS =
         REGISTRATE.dyed { dye ->
             `object`("chiseled_${dye}_terracotta_bricks")
-                .dyedBlock(dye)
+                .block()
                 .initialProperties { dye.blockOf("terracotta") }
                 .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .lang("Chiseled ${dye.translation} Terracotta Bricks")
@@ -147,7 +147,7 @@ object DyedClayworks {
     val DECORATED_POTS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_decorated_pot")
-                .dyedBlock(dye, ::DecoratedPotBlock)
+                .block(::DecoratedPotBlock)
                 .initialProperties { Blocks.DECORATED_POT }
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Decorated Pot")
@@ -176,7 +176,7 @@ object DyedClayworks {
     val STAINED_GLASS_DOORS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_stained_glass_door")
-                .dyedBlock(dye) { GlassDoorBlock(dye) }
+                .block { GlassDoorBlock(dye) }
                 .lang("${dye.translation} Stained Glass Door")
                 .glassDoorBlockstate()
                 .glassDoorLoot()
@@ -192,7 +192,7 @@ object DyedClayworks {
     val STAINED_GLASS_TRAPDOORS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_stained_glass_trapdoor")
-                .dyedBlock(dye) { GlassTrapDoorBlock(dye) }
+                .block { GlassTrapDoorBlock(dye) }
                 .lang("${dye.translation} Stained Glass Trapdoor")
                 .glassTrapdoorBlockstate()
                 .glassTrapdoorLoot()

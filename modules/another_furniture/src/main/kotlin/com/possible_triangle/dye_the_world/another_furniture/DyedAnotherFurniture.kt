@@ -18,7 +18,7 @@ object DyedAnotherFurniture {
     val SOFAS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_sofa")
-                .dyedBlock(dye, ::SofaBlock)
+                .block(::SofaBlock)
                 .initialProperties { AFBlocks.RED_SOFA.get() }
                 .tag(AFBlockTags.SOFAS)
                 .sofaBlockstate()
@@ -32,7 +32,7 @@ object DyedAnotherFurniture {
     val STOOLS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_stool")
-                .dyedBlock(dye, ::StoolBlock)
+                .block(::StoolBlock)
                 .initialProperties { AFBlocks.RED_STOOL.get() }
                 .tag(AFBlockTags.STOOLS)
                 .stoolBlockstate()
@@ -46,7 +46,7 @@ object DyedAnotherFurniture {
     val TALL_STOOLS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_tall_stool")
-                .dyedBlock(dye, ::TallStoolBlock)
+                .block(::TallStoolBlock)
                 .initialProperties { AFBlocks.RED_TALL_STOOL.get() }
                 .tag(AFBlockTags.TALL_STOOLS)
                 .tallStoolBlockstate()
@@ -60,7 +60,7 @@ object DyedAnotherFurniture {
     val CURTAINS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_curtain")
-                .dyedBlock(dye, ::CurtainBlock)
+                .block(::CurtainBlock)
                 .initialProperties { AFBlocks.RED_CURTAIN.get() }
                 .tag(AFBlockTags.CURTAINS)
                 .curtainBlockstate()
@@ -77,7 +77,7 @@ object DyedAnotherFurniture {
     val LAMPS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_lamp")
-                .dyedBlock(dye) { LampBlock(dye, it) }
+                .block { LampBlock(dye, it) }
                 .initialProperties { AFBlocks.RED_LAMP.get() }
                 .tag(AFBlockTags.LAMPS)
                 .lampBlockstate()
@@ -92,7 +92,7 @@ object DyedAnotherFurniture {
     val LAMPS_CONNECTORS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_lamp_connector")
-                .dyedBlock(dye) { LampConnectorBlock(dye, it) }
+                .block { LampConnectorBlock(dye, it) }
                 .noLang()
                 .loot { t, b -> t.dropOther(b, LAMPS[dye]!!.get()) }
                 .initialProperties { AFBlocks.RED_LAMP_CONNECTOR.get() }

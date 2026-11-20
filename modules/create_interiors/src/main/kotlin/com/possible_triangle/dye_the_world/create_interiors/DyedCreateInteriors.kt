@@ -16,7 +16,7 @@ object DyedCreateInteriors {
     val CHAIRS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_chair")
-                .dyedBlock(dye, ::DummyChairBlock)
+                .block(::DummyChairBlock)
                 .lang("${dye.translation} Chair")
                 .germanLang("${dye.germanTranslation(Genus.M)} Stuhl")
                 .tag(CreateInteriorsTags.Blocks.CHAIRS)
@@ -32,7 +32,7 @@ object DyedCreateInteriors {
     val FLOOR_CHAIRS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_floor_chair")
-                .dyedBlock(dye, ::DummyChairBlock)
+                .block(::DummyChairBlock)
                 .lang("${dye.translation} Floor Chair")
                 .tag(CreateInteriorsTags.Blocks.FLOOR_CHAIRS)
                 .tag(BlockTags.MINEABLE_WITH_AXE)
@@ -47,7 +47,7 @@ object DyedCreateInteriors {
     val CUSHIONS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_cushion")
-                .dyedBlock(dye)
+                .block()
                 .lang("${dye.translation} Cushion")
                 .germanLang("${dye.germanTranslation(Genus.I)} Kissen")
                 .tag(BlockTags.WOOL)

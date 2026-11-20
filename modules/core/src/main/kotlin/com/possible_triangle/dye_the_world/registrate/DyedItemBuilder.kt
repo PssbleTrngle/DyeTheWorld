@@ -10,7 +10,7 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Item.Properties
 
-class DyedItemBuilder<T : Item, P : Any> internal constructor(
+internal class DyedItemBuilder<T : Item, P : Any> internal constructor(
     owner: DyedRegistrate,
     parent: P,
     override val dye: DyeColor,

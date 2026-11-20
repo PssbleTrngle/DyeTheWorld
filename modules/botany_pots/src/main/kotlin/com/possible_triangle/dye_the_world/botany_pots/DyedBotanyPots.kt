@@ -19,7 +19,7 @@ object DyedBotanyPots {
         block: BlockBuilder<*, *>.() -> Unit = {},
     ) = REGISTRATE.dyed { dye ->
         `object`("${dye}_${type}_botany_pot")
-            .dyedBlock(dye)
+            .block()
             .tag(BotanyPotsTags.BLOCK)
             .withItem {
                 tag(BotanyPotsTags.ITEM)

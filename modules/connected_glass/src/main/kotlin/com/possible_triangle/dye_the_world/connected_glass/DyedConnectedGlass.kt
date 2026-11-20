@@ -21,7 +21,7 @@ object DyedConnectedGlass {
         block: BlockBuilder<*, *>.() -> Unit,
     ) = REGISTRATE.dyed { dye ->
         `object`("${type}_glass_${dye}_pane")
-            .dyedBlock(dye) { IronBarsBlock(it) }
+            .block { IronBarsBlock(it) }
             .tag(Tags.Blocks.GLASS_PANES)
             .connectedPaneBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }
@@ -45,7 +45,7 @@ object DyedConnectedGlass {
         block: BlockBuilder<*, *>.() -> Unit,
     ) = REGISTRATE.dyed { dye ->
         `object`("${type}_glass_$dye")
-            .dyedBlock(dye)
+            .block()
             .tag(Tags.Blocks.GLASS_BLOCKS)
             .connectedGlassBlockState(type)
             .loot { provider, block -> provider.dropWhenSilkTouch(block) }

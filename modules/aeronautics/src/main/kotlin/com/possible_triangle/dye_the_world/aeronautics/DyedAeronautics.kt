@@ -16,7 +16,7 @@ object DyedAeronautics {
     val ENVELOPES =
         REGISTRATE_AERONAUTICS.dyed { dye ->
             `object`("${dye}_envelope")
-                .dyedBlock(dye)
+                .block()
                 .lang("${dye.translation} Hot Air Envelope")
                 .germanLang("${dye.germanTranslation(Genus.F)} Heißluftballonhülle")
                 .tag(AeronauticsTags.Blocks.ENVELOPES)
@@ -33,7 +33,7 @@ object DyedAeronautics {
     val ENVELOPES_SHAFTS =
         REGISTRATE_AERONAUTICS.dyed { dye ->
             `object`("${dye}_envelope_encased_shaft")
-                .dyedBlock(dye, ::RotatedPillarBlock)
+                .block(::RotatedPillarBlock)
                 .lang("${dye.translation} Envelope Encased Shaft")
                 .germanLang("${dye.germanTranslation(Genus.F)} Ballonummantelte Welle")
                 .tag(AeronauticsTags.Blocks.ENVELOPES)

@@ -43,13 +43,14 @@ internal fun DyedRegistrate.stoneSet(
     stone: Boolean = true,
 ): StoneSet {
     val cubes =
-        dyedBlocks { dye ->
+        dyed { dye ->
             `object`("${dye}_$name")
-                .dyedBlock(dye)
+                .block()
                 .apply(modifyCubes)
                 .also { if (stone) it.tag(BlockTags.MINEABLE_WITH_PICKAXE) }
                 .tagPaintable(name)
                 .withItem()
+                .register()
         }
 
     val params =

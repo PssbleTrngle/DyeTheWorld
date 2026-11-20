@@ -21,7 +21,7 @@ object DyedAlexsCaves {
     val RADON_LAMPS =
         REGISTRATE.dyed { dye ->
             `object`("radon_lamp_$dye")
-                .dyedBlock(dye)
+                .block()
                 .properties { it.strength(2.0f, 11.0f) }
                 .properties { it.requiresCorrectToolForDrops() }
                 .properties { it.lightLevel { 15 } }

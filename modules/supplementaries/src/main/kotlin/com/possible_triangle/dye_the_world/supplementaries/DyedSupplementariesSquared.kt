@@ -14,7 +14,7 @@ object DyedSupplementariesSquared {
     val SACKS =
         REGISTRATE_SUPPLEMENTARIES_SQUARED.dyed { dye ->
             `object`("sack_$dye")
-                .dyedBlock(dye) { SackBlock(dye.rgba, it) }
+                .block { SackBlock(dye.rgba, it) }
                 .lang("${dye.translation} Sack")
                 .sackBlockstate()
                 .loot { t, b -> t.add(b, t.createShulkerBoxDrop(b)) }

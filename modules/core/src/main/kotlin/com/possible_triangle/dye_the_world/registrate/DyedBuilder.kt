@@ -4,7 +4,7 @@ import com.tterrag.registrate.builders.Builder
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.DyeColor
 
-interface DyedBuilder {
+internal interface DyedBuilder {
     val dye: DyeColor
     var migrateFrom: ResourceLocation?
 }

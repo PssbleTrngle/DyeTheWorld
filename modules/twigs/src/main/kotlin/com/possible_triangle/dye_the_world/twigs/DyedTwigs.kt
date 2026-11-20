@@ -23,7 +23,7 @@ object DyedTwigs {
     val SILT_SHINGLES =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_silt_shingles")
-                .dyedBlock(dye)
+                .block()
                 .initialProperties(NonNullSupplier(TwigsBlocks.SILT_SHINGLES::get))
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Silt Shingles")
@@ -64,7 +64,7 @@ object DyedTwigs {
     val PACKED_SILT =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_packed_silt")
-                .dyedBlock(dye)
+                .block()
                 .initialProperties(NonNullSupplier(TwigsBlocks.PACKED_SILT::get))
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Packed Silt")
@@ -81,7 +81,7 @@ object DyedTwigs {
     val SILT_POTS =
         REGISTRATE.dyed { dye ->
             `object`("${dye}_silt_pot")
-                .dyedBlock(dye, ::SiltPotBlock)
+                .block(::SiltPotBlock)
                 .initialProperties(NonNullSupplier(TwigsBlocks.SILT_POT::get))
                 .properties { it.mapColor(dye) }
                 .lang("${dye.translation} Silt Pot")

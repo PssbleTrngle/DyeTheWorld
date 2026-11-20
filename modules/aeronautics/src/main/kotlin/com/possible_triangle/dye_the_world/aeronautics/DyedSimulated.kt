@@ -18,7 +18,7 @@ object DyedSimulated {
     val SYMMETRIC_SAILS =
         REGISTRATE_SIMULATED.dyed { dye ->
             `object`("${dye}_symmetric_sail")
-                .dyedBlock(dye, ::RotatedPillarBlock)
+                .block(::RotatedPillarBlock)
                 .lang("${dye.translation} Symmetric Sail")
                 .germanLang("${dye.germanTranslation(Genus.I)} Symmetrisches Segel")
                 .tag(AeronauticsTags.Blocks.SYMMETRIC_SAILS)
@@ -30,7 +30,7 @@ object DyedSimulated {
     val PORTABLE_ENGINES =
         REGISTRATE_SIMULATED.dyed { dye ->
             `object`("${dye}_portable_engine")
-                .dyedBlock(dye, DummyBlock.of(BlockStateProperties.HORIZONTAL_FACING))
+                .block(DummyBlock.of(BlockStateProperties.HORIZONTAL_FACING))
                 .lang("${dye.translation} Portable Engine")
                 .germanLang("${dye.germanTranslation(Genus.F)} Tragbarer Antrieb")
                 .tag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -43,7 +43,7 @@ object DyedSimulated {
     val HANDLES =
         REGISTRATE_SIMULATED.dyed { dye ->
             `object`("${dye}_handle")
-                .dyedBlock(dye, DummyBlock.of(AXIS_ALONG_FIRST_COORDINATE, BlockStateProperties.FACING))
+                .block(DummyBlock.of(AXIS_ALONG_FIRST_COORDINATE, BlockStateProperties.FACING))
                 .lang("${dye.translation} Handle")
                 .germanLang("${dye.germanTranslation(Genus.M)} Griff")
                 .tag(AeronauticsTags.Blocks.HANDLES)
@@ -60,7 +60,7 @@ object DyedSimulated {
     val NAMEPLATES =
         REGISTRATE_SIMULATED.dyed { dye ->
             `object`("${dye}_nameplate")
-                .dyedBlock(dye, DummyBlock.of(NAMEPLATE_POSITION, BlockStateProperties.HORIZONTAL_FACING))
+                .block(DummyBlock.of(NAMEPLATE_POSITION, BlockStateProperties.HORIZONTAL_FACING))
                 .lang("${dye.translation} Nameplate")
                 .germanLang("${dye.germanTranslation(Genus.I)} Namensschild")
                 .tag(AeronauticsTags.Blocks.NAMEPLATES)
