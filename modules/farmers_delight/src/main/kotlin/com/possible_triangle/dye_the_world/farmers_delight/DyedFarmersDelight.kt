@@ -13,7 +13,6 @@ import com.possible_triangle.dye_the_world.farmers_delight.world.block.DyedCeili
 import com.possible_triangle.dye_the_world.farmers_delight.world.block.DyedStandingCanvasSignBlock
 import com.possible_triangle.dye_the_world.farmers_delight.world.block.DyedWallCanvasSignBlock
 import com.possible_triangle.dye_the_world.farmers_delight.world.block.DyedWallHangingCanvasSignBlock
-import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 import net.minecraft.world.item.DyeColor
@@ -91,11 +90,11 @@ object DyedFarmersDelight {
     }
 }
 
-private fun <T : Block> DyeColor.signItem(wallSigns: Map<DyeColor, NonNullSupplier<out Block>>) =
+private fun <T : Block> DyeColor.signItem(wallSigns: DyedMap<Block>) =
     { block: T, properties: Item.Properties ->
         SignItem(
             properties,
             block,
-            wallSigns[this]!!.get(),
+            wallSigns[this]!!.value(),
         )
     }

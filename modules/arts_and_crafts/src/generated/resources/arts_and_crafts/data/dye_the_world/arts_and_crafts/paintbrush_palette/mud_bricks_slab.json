@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "arts_and_crafts"
+    }
+  ],
+  "blocks": "#arts_and_crafts:paintable/mud_bricks_slab",
+  "mappings": {
+    "arts_and_crafts:amber_paintbrush": "arts_and_crafts:amber_mud_brick_slab",
+    "arts_and_crafts:aqua_paintbrush": "arts_and_crafts:aqua_mud_brick_slab",
+    "arts_and_crafts:beige_paintbrush": "arts_and_crafts:beige_mud_brick_slab",
+    "arts_and_crafts:coral_paintbrush": "arts_and_crafts:coral_mud_brick_slab",
+    "arts_and_crafts:forest_paintbrush": "arts_and_crafts:forest_mud_brick_slab",
+    "arts_and_crafts:ginger_paintbrush": "arts_and_crafts:ginger_mud_brick_slab",
+    "arts_and_crafts:indigo_paintbrush": "arts_and_crafts:indigo_mud_brick_slab",
+    "arts_and_crafts:maroon_paintbrush": "arts_and_crafts:maroon_mud_brick_slab",
+    "arts_and_crafts:mint_paintbrush": "arts_and_crafts:mint_mud_brick_slab",
+    "arts_and_crafts:navy_paintbrush": "arts_and_crafts:navy_mud_brick_slab",
+    "arts_and_crafts:olive_paintbrush": "arts_and_crafts:olive_mud_brick_slab",
+    "arts_and_crafts:rose_paintbrush": "arts_and_crafts:rose_mud_brick_slab",
+    "arts_and_crafts:slate_paintbrush": "arts_and_crafts:slate_mud_brick_slab",
+    "arts_and_crafts:tan_paintbrush": "arts_and_crafts:tan_mud_brick_slab",
+    "arts_and_crafts:teal_paintbrush": "arts_and_crafts:teal_mud_brick_slab",
+    "arts_and_crafts:verdant_paintbrush": "arts_and_crafts:verdant_mud_brick_slab"
+  }
+}

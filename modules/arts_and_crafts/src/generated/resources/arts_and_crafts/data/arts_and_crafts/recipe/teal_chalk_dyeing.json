@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/teal"
+    },
+    {
+      "item": "arts_and_crafts:white_chalk"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "arts_and_crafts:teal_chalk"
+  }
+}

@@ -7,6 +7,7 @@ import com.tterrag.registrate.util.DataIngredient
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.advancements.critereon.StatePropertiesPredicate
 import net.minecraft.core.Direction
+import net.minecraft.core.Holder
 import net.minecraft.core.Registry
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.data.recipes.RecipeBuilder
@@ -73,7 +74,7 @@ fun BlockStateProvider.createVariant(
     )
 }
 
-fun NonNullSupplier<out ItemLike>.asIngredient() = DataIngredient.items(this)
+fun Holder<out ItemLike>.asIngredient() = DataIngredient.items(this.value())
 
 fun <K, V> Map<V, K>.inverse() = map { it.value to it.key }.toMap()
 

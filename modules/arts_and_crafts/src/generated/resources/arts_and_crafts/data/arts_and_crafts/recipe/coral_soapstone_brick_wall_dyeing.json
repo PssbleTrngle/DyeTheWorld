@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arts_and_crafts:soapstone_brick_wall"
+    },
+    "D": {
+      "tag": "c:dyes/coral"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "arts_and_crafts:coral_soapstone_brick_wall"
+  }
+}

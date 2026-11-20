@@ -2,14 +2,19 @@ package com.possible_triangle.dye_the_world.registrate
 
 import com.possible_triangle.dye_the_world.dyesFor
 import com.possible_triangle.dye_the_world.extensions.migrate
-import com.tterrag.registrate.AbstractRegistrate
+import com.possible_triangle.multikulti.registrate.MultikultiRegistrate
+import com.possible_triangle.multikulti.registrate.defaultCreativeModeTab
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateTagsProvider
+import com.tterrag.registrate.util.entry.BlockEntry
+import com.tterrag.registrate.util.entry.ItemEntry
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import net.minecraft.core.registries.Registries
+import net.minecraft.resources.ResourceKey
 import net.minecraft.tags.TagKey
+import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -20,7 +25,7 @@ class DyedRegistrate private constructor(
     namespace: String,
     val mod: String,
     private val autoMigrate: Boolean,
-) : AbstractRegistrate<DyedRegistrate>(namespace) {
+) : MultikultiRegistrate<DyedRegistrate>(namespace) {
     companion object {
         private val REGISTRATES = hashMapOf<String, DyedRegistrate>()
 
@@ -29,6 +34,11 @@ class DyedRegistrate private constructor(
             mod: String,
             migrate: Boolean,
         ) = REGISTRATES.getOrPut(namespace) { DyedRegistrate(namespace, mod, migrate) }
+    }
+
+    init {
+        @Suppress("TYPE_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
+        defaultCreativeTab(null as ResourceKey<CreativeModeTab>?)
     }
 
     val dyes = dyesFor(mod)
@@ -78,12 +88,18 @@ class DyedRegistrate private constructor(
     fun <T : Item> dyedItem(
         color: DyeColor,
         factory: NonNullFunction<Item.Properties, T>,
-    ): ItemBuilder<T, DyedRegistrate> {
-        val name = currentName()
-        return entry(name) { callback ->
+    ): ItemBuilder<T, DyedRegistrate> = dyedItem(color, this, factory)
+
+    fun <T : Item, P : Any> dyedItem(
+        color: DyeColor,
+        parent: P,
+        factory: NonNullFunction<Item.Properties, T>,
+        name: String = currentName(),
+    ): ItemBuilder<T, P> =
+        entry(name) { callback ->
             DyedItemBuilder(
                 this,
-                this,
+                parent,
                 color,
                 name,
                 callback,
@@ -92,14 +108,26 @@ class DyedRegistrate private constructor(
                 defaultModel()
                 defaultLang()
                 tagDyed()
+                defaultCreativeModeTab?.let(::tab)
             }
         }.also {
             if (autoMigrate) it.migrate()
         }
-    }
 
     fun <T : Any> dyed(factory: DyedRegistrate.(dye: DyeColor) -> T): Map<DyeColor, T> =
         dyes.associateWith {
             factory(it)
+        }
+
+    fun <T : Block> dyedBlocks(factory: BlockFactory<T>): Map<DyeColor, BlockEntry<T>> =
+        dyes.associateWith {
+            factory(it)
+                .register()
+        }
+
+    fun <T : Item> dyedItems(factory: ItemFactory<T>): Map<DyeColor, ItemEntry<T>> =
+        dyes.associateWith {
+            factory(it)
+                .register()
         }
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arts_and_crafts:block/tan_mud_brick_slab"
+    },
+    "type=double": {
+      "model": "arts_and_crafts:block/tan_mud_bricks"
+    },
+    "type=top": {
+      "model": "arts_and_crafts:block/tan_mud_brick_slab_top"
+    }
+  }
+}

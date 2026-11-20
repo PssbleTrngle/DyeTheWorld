@@ -1,6 +1,7 @@
 import { exists, glob } from "node:fs/promises";
 import { parse, resolve } from "node:path";
 import { aseprite } from "./aseprite";
+import { CACHE, joinCache, type CacheTarget } from "./cache";
 import { DYE_DEPOT_COLORS } from "./colors";
 import { ensureParentDir, notNull } from "./util";
 
@@ -24,7 +25,7 @@ function createNamer(strategy: NamingStrategy | Namer = "prefix"): Namer {
 export type Dyed = {
     palette: string;
     from: string;
-    to: string;
+    to: CacheTarget;
     include?: string[];
     exclude?: string[];
     naming?: NamingStrategy | Namer;
@@ -33,7 +34,7 @@ export type Dyed = {
 export async function createDyedTextures({
     palette,
     from,
-    to,
+    to: target,
     exclude = [],
     include = [],
     naming = "prefix",
@@ -78,21 +79,27 @@ export async function createDyedTextures({
 
             const renamed = namer(name, color);
 
-            const toFile = resolve(to, dir, renamed + ext);
-            await ensureParentDir(toFile);
-            await aseprite("applyPalette", {
-                from: fromFile,
-                to: toFile,
-                palette: paletteFile,
-            });
+            const to = joinCache(target, dir, renamed + ext);
 
-            if (!(await exists(toFile))) {
-                throw new Error(
-                    `something went wrong generating ${match} for color ${color} (${renamed})`,
-                );
+            if (await CACHE.outdated(to, fromFile, paletteFile)) {
+                const toFile = CACHE.file(to);
+                await ensureParentDir(toFile);
+                await aseprite("applyPalette", {
+                    from: fromFile,
+                    to: toFile,
+                    palette: paletteFile,
+                });
+
+                if (!(await exists(toFile))) {
+                    throw new Error(
+                        `something went wrong generating ${match} for color ${color} (${renamed})`,
+                    );
+                }
+
+                console.log(`  saved to ${toFile}`);
+            } else {
+                console.log(`  using cached version of ${to.path}`);
             }
-
-            console.log(`  saved to ${toFile}`);
         }
     }
 }

@@ -1,11 +1,12 @@
 [versions]
-multikulti = "2.1.34"
+multikulti = "2.1.37"
 flywheel = "1.0.6"
 create-simulated = "1.3.2"
 
 [libraries]
 registrate = { group = "com.tterrag.registrate", name = "Registrate", version = "MC1.21-1.3.0+67" }
 multikulti-datagen = { group = "com.possible-triangle", name = "multikulti-1.21.1-datagen-neoforge", version.ref = "multikulti" }
+multikulti-registrate = { group = "com.possible-triangle", name = "multikulti-1.21.1-registrate-neoforge", version.ref = "multikulti" }
 
 create = { group = "com.simibubi.create", name = "create-1.21.1", version = "6.0.10-281" }
 ponder = { group = "net.createmod.ponder", name = "ponder-neoforge", version = "1.0.85+mc1.21.1" }

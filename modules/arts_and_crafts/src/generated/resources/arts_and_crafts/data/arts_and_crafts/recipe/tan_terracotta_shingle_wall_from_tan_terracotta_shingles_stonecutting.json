@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "arts_and_crafts:tan_terracotta_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "arts_and_crafts:tan_terracotta_shingle_wall"
+  }
+}

@@ -8,6 +8,7 @@ import com.tterrag.registrate.providers.ProviderType
 import net.minecraft.resources.ResourceKey
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTab
+import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 
@@ -35,7 +36,8 @@ fun <T : Item, P> ItemBuilder<T, P>.optionalTab(
     vararg keys: ResourceKey<CreativeModeTab>,
     condition: () -> Boolean,
 ) = apply {
-    keys.forEach { key ->
+    removeTab(CreativeModeTabs.COLORED_BLOCKS)
+    listOf(CreativeModeTabs.COLORED_BLOCKS, *keys).forEach { key ->
         tab(key) { item, it ->
             if (condition()) it.accept(item)
         }
@@ -47,3 +49,5 @@ fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.n
 fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noLang() = no(ProviderType.LANG)
 
 fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noModel() = no(ProviderType.ITEM_MODEL)
+
+fun <R, T : R, P, S : AbstractBuilder<R, T, P, S>> AbstractBuilder<R, T, P, S>.noBlockState() = no(ProviderType.BLOCKSTATE)

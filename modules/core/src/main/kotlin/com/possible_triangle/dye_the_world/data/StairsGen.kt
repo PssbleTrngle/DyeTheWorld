@@ -1,41 +1,49 @@
 package com.possible_triangle.dye_the_world.data
 
+import com.possible_triangle.dye_the_world.DyedMap
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
-import com.tterrag.registrate.builders.BlockBuilder
-import com.tterrag.registrate.builders.ItemBuilder
-import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.tags.BlockTags
 import net.minecraft.tags.ItemTags
-import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTabs
-import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.StairBlock
 
 fun DyedRegistrate.createStairs(
-    from: Map<DyeColor, NonNullSupplier<Block>>,
+    params: ShapeParameters,
+    modifyBlock: BlockModifier<StairBlock> = {},
+    modifyItem: BlockItemModifier<StairBlock> = {},
+) = createStairs(
+    params.cubes,
+    params.name,
+    modifyBlock,
+    modifyItem,
+    params.stone,
+)
+
+@Deprecated("use ShapeParameters instead")
+fun DyedRegistrate.createStairs(
+    from: DyedMap<Block>,
     name: ResourceLocation,
-    modifyBlock: BlockBuilder<StairBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
-    modifyItem: ItemBuilder<BlockItem, BlockBuilder<StairBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
+    modifyBlock: BlockModifier<StairBlock> = {},
+    modifyItem: BlockItemModifier<StairBlock> = {},
     stone: Boolean = true,
 ) = from.mapValues { (dye, base) ->
     `object`("${dye}_${name.path}_stairs")
-        .dyedBlock(dye) { StairBlock(base.get().defaultBlockState(), it) }
-        .initialProperties(base)
+        .dyedBlock(dye) { StairBlock(base.value().defaultBlockState(), it) }
+        .initialProperties(base::value)
         .also { if (stone) it.tag(BlockTags.MINEABLE_WITH_PICKAXE) }
         .tag(BlockTags.STAIRS)
         .blockstate { c, p ->
-            val texture = from[dye]!!.get().texture
+            val texture = from[dye]!!.value().texture
             p.stairsBlock(c.get(), texture)
-        }.apply { modifyBlock(dye) }
+        }.apply(modifyBlock)
         .withItem {
-            tab(CreativeModeTabs.COLORED_BLOCKS)
             tab(CreativeModeTabs.BUILDING_BLOCKS)
             tag(ItemTags.STAIRS)
             recipe { c, p -> p.stairs(base.asIngredient(), RecipeCategory.BUILDING_BLOCKS, c, null, stone) }
-            modifyItem(dye)
+            modifyItem()
         }.register()
 }

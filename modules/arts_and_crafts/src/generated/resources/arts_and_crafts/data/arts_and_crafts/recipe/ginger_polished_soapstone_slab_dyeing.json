@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arts_and_crafts:polished_soapstone_slab"
+    },
+    "D": {
+      "tag": "c:dyes/ginger"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "arts_and_crafts:ginger_polished_soapstone_slab"
+  }
+}

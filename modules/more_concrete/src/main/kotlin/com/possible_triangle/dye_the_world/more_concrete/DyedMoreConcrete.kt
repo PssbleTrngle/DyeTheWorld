@@ -9,6 +9,7 @@ import com.possible_triangle.dye_the_world.germanTranslation
 import com.possible_triangle.dye_the_world.more_concrete.data.createButtons
 import com.possible_triangle.dye_the_world.more_concrete.data.createLevers
 import com.possible_triangle.dye_the_world.more_concrete.data.createPressurePlates
+import com.possible_triangle.dye_the_world.registrate.dye
 import net.minecraft.tags.BlockTags
 
 object DyedMoreConcrete {
@@ -18,7 +19,7 @@ object DyedMoreConcrete {
         REGISTRATE.createSlabs(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 germanLang("${dye.germanTranslation(Genus.F)} Betonstufe")
             },
@@ -28,7 +29,7 @@ object DyedMoreConcrete {
         REGISTRATE.createStairs(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 germanLang("${dye.germanTranslation(Genus.F)} Betontreppe")
             },
@@ -38,7 +39,7 @@ object DyedMoreConcrete {
         REGISTRATE.createWalls(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 germanLang("${dye.germanTranslation(Genus.F)} Betonmauer")
             },
@@ -48,7 +49,7 @@ object DyedMoreConcrete {
         REGISTRATE.createFences(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.M)} Betonzaun")
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
@@ -58,7 +59,7 @@ object DyedMoreConcrete {
         REGISTRATE.createFenceGates(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.M)} Betonzauntor")
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
@@ -68,7 +69,7 @@ object DyedMoreConcrete {
         REGISTRATE.createButtons(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.M)} Betonknopf")
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
@@ -78,7 +79,7 @@ object DyedMoreConcrete {
         REGISTRATE.createLevers(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.M)} Betonhebel")
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },
@@ -88,7 +89,7 @@ object DyedMoreConcrete {
         REGISTRATE.createPressurePlates(
             CONCRETE,
             MORE_CONCRETE.createId("concrete"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.M)} Betondruckplatte")
                 tag(BlockTags.MINEABLE_WITH_PICKAXE)
             },

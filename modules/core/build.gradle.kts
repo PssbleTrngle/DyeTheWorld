@@ -5,7 +5,11 @@ plugins {
 
 dependencies {
     apiInclude(libs.registrate)
+    apiInclude(libs.multikulti.registrate)
 
     api(libs.dye.depot)
     api(pack.modrinth.moonlight)
+
+    runtimeOnly(libs.jei)
+    runtimeOnly(pack.modrinth.jade)
 }

@@ -9,6 +9,7 @@ import com.possible_triangle.dye_the_world.quark.data.generateGlassShardLoot
 import com.possible_triangle.dye_the_world.quark.data.shinglesRecipes
 import com.possible_triangle.dye_the_world.quark.data.stoolBlockstate
 import com.possible_triangle.dye_the_world.quark.data.stoolRecipe
+import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.multikulti.datagen.conditions.withConditions
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.data.recipes.ShapedRecipeBuilder
@@ -60,7 +61,7 @@ object DyedQuark {
                 .lang("${dye.translation} Stool")
                 .withItem {
                     stoolRecipe()
-                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS) {
                         flagEnabled("stools")
                     }
                 }.register()
@@ -76,7 +77,7 @@ object DyedQuark {
                 .germanLang("${dye.germanTranslation(Genus.F)} Schindeln")
                 .withItem {
                     shinglesRecipes()
-                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS) {
                         flagEnabled("shingles")
                     }
                 }.register()
@@ -86,17 +87,17 @@ object DyedQuark {
         REGISTRATE.createSlabs(
             SHINGLES,
             QUARK.createId("shingles"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Schindelstufe")
             },
-            modifyItem = { dye ->
+            modifyItem = {
                 recipe { context, provider ->
                     provider.withConditions(flagCondition("shingles")) {
                         provider.slab(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
                         provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context, 2)
                     }
                 }
-                optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS) {
                     flagEnabled("shingles")
                 }
             },
@@ -106,17 +107,17 @@ object DyedQuark {
         REGISTRATE.createStairs(
             SHINGLES,
             QUARK.createId("shingles"),
-            modifyBlock = { dye ->
+            modifyBlock = {
                 germanLang("${dye.germanTranslation(Genus.F)} Schindeltreppe")
             },
-            modifyItem = { dye ->
+            modifyItem = {
                 recipe { context, provider ->
                     provider.withConditions(flagCondition("shingles")) {
                         provider.stairs(SHINGLES[dye]!!.asIngredient(), BUILDING_BLOCKS, context, null, true)
                         provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
                     }
                 }
-                optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS) {
                     flagEnabled("shingles")
                 }
             },
@@ -144,7 +145,7 @@ object DyedQuark {
                 }.lang("${dye.translation} Framed Glass")
                 .germanLang("${dye.germanTranslation(Genus.I)} gerahmtes Glas")
                 .withItem {
-                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS) {
                         flagEnabled("framed_glass")
                     }
                     tag(Tags.Items.GLASS_BLOCKS)
@@ -179,7 +180,7 @@ object DyedQuark {
                         p.generated(c, full.texture).translucent()
                     }
                     tag(Tags.Items.GLASS_PANES)
-                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS, CreativeModeTabs.COLORED_BLOCKS) {
+                    optionalTab(CreativeModeTabs.FUNCTIONAL_BLOCKS) {
                         flagEnabled("framed_glass")
                     }
                     framedGlassPaneRecipes()

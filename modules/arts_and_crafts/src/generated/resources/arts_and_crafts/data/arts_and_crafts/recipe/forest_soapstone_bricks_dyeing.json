@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arts_and_crafts:soapstone_bricks"
+    },
+    "D": {
+      "tag": "c:dyes/forest"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "arts_and_crafts:forest_soapstone_bricks"
+  }
+}

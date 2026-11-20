@@ -2,15 +2,15 @@ package com.possible_triangle.dye_the_world.registrate
 
 import com.possible_triangle.dye_the_world.DyedTags
 import com.possible_triangle.dye_the_world.extensions.doMigration
+import com.possible_triangle.dye_the_world.extensions.noLang
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.BuilderCallback
 import com.tterrag.registrate.builders.ItemBuilder
-import com.tterrag.registrate.providers.ProviderType
-import com.tterrag.registrate.util.nullness.NonNullBiConsumer
 import com.tterrag.registrate.util.nullness.NonNullBiFunction
 import com.tterrag.registrate.util.nullness.NonNullFunction
 import com.tterrag.registrate.util.nullness.NonNullSupplier
 import net.minecraft.resources.ResourceLocation
+import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -32,19 +32,25 @@ class DyedBlockBuilder<T : Block, P : Any> internal constructor(
         doMigration()
     }
 
-    override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> =
-        owner.entry(name) { callback ->
-            DyedItemBuilder(owner, this as BlockBuilder<T, P>, dye, name, callback) { properties ->
-                factory.apply(entry, properties)
-            }.apply {
-                setData(ProviderType.LANG, NonNullBiConsumer.noop())
-                model { _, provider ->
-                    provider.blockItem(asSupplier())
-                }
-                tagDyed()
-                this.migrateFrom = this@DyedBlockBuilder.migrateFrom
+    override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> {
+        @Suppress("UNCHECKED_CAST")
+        val item =
+            owner.dyedItem(dye, this, name = name, factory = {
+                factory.apply(entry, it)
+            }) as DyedItemBuilder<I, BlockBuilder<T, P>>
+
+        item.apply {
+            noLang()
+            model { _, provider ->
+                provider.blockItem(asSupplier())
             }
+            tagDyed()
+            tab(CreativeModeTabs.COLORED_BLOCKS)
+            this.migrateFrom = this@DyedBlockBuilder.migrateFrom
         }
+
+        return item
+    }
 
     fun tagDyed() {
         tag(DyedTags.BLOCKS.loader("dyed/$dye"))

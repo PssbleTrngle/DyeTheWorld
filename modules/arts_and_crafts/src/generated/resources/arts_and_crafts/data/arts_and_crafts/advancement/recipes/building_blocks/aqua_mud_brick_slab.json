@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aqua_mud_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:aqua_mud_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:aqua_mud_brick_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aqua_mud_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:aqua_mud_brick_slab"
+    ]
+  }
+}

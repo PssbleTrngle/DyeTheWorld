@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arts_and_crafts:block/olive_terracotta_shingle_slab"
+    },
+    "type=double": {
+      "model": "arts_and_crafts:block/olive_terracotta_shingles"
+    },
+    "type=top": {
+      "model": "arts_and_crafts:block/olive_terracotta_shingle_slab_top"
+    }
+  }
+}

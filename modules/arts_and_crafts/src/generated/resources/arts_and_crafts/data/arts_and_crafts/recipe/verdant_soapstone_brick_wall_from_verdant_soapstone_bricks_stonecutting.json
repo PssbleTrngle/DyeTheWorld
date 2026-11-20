@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "arts_and_crafts:verdant_soapstone_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "arts_and_crafts:verdant_soapstone_brick_wall"
+  }
+}

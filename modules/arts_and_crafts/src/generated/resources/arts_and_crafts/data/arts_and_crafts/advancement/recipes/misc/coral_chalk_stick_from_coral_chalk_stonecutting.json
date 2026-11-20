@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coral_chalk": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:coral_chalk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:coral_chalk_stick_from_coral_chalk_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coral_chalk"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:coral_chalk_stick_from_coral_chalk_stonecutting"
+    ]
+  }
+}

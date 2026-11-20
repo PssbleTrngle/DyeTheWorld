@@ -33,7 +33,7 @@ public class ColorUtilsMixin {
     )
     private static void getDyeColorDyeItem(DyeColor dye, CallbackInfoReturnable<Item> cir) {
         if (Dyes.isVanilla(dye)) return;
-        cir.setReturnValue(RailwaysCompat.DYE_ITEMS.get(dye).get());
+        cir.setReturnValue(RailwaysCompat.DYE_ITEMS.get(dye).value());
     }
 
     @Inject(
