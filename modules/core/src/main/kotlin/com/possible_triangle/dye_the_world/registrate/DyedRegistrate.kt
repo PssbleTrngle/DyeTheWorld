@@ -6,12 +6,8 @@ import com.possible_triangle.multikulti.registrate.MultikultiRegistrate
 import com.possible_triangle.multikulti.registrate.defaultCreativeModeTab
 import com.tterrag.registrate.builders.BlockBuilder
 import com.tterrag.registrate.builders.ItemBuilder
-import com.tterrag.registrate.providers.ProviderType
-import com.tterrag.registrate.providers.RegistrateTagsProvider
 import com.tterrag.registrate.util.nullness.NonNullFunction
-import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
-import net.minecraft.tags.TagKey
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
@@ -44,21 +40,11 @@ class DyedRegistrate private constructor(
     }
 
     val dyes = dyesFor(mod)
-    private var isRegistered = false
 
+    // TODO remove
     fun register(modBus: IEventBus) {
-        if (isRegistered) return
         registerEventListeners(modBus)
-        isRegistered = true
     }
-
-    @Suppress("UNCHECKED_CAST")
-    private fun <T : Any> TagKey<T>.provider(): ProviderType<out RegistrateTagsProvider<T>> =
-        when (registry) {
-            Registries.BLOCK -> ProviderType.BLOCK_TAGS
-            Registries.ITEM -> ProviderType.ITEM_TAGS
-            else -> throw IllegalArgumentException("no tag provider known for registry ${registry.location()}")
-        } as ProviderType<out RegistrateTagsProvider<T>>
 
     override fun <T : Block, P : Any> block(
         parent: P,
@@ -119,13 +105,24 @@ class DyedRegistrate private constructor(
         }
     }
 
+    private fun dyed(dye: DyeColor?) =
+        apply {
+            currentDye = dye
+        }
+
     fun <T : Any> dyed(factory: DyedRegistrate.(dye: DyeColor) -> T): Map<DyeColor, T> {
         val map =
             dyes.associateWith {
-                currentDye = it
+                dyed(it)
                 factory(it)
             }
-        currentDye = null
+        dyed(null)
         return map
     }
+
+    fun <I, O> Map<DyeColor, I>.mapDyed(mapper: DyedRegistrate.(DyeColor, I) -> O): Map<DyeColor, O> =
+        mapValues {
+            dyed(it.key)
+            mapper(it.key, it.value)
+        }
 }

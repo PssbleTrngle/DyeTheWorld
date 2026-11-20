@@ -1,20 +1,18 @@
 package com.possible_triangle.dye_the_world.more_concrete.data
 
 import com.possible_triangle.dye_the_world.DyedMap
+import com.possible_triangle.dye_the_world.data.BlockItemModifier
+import com.possible_triangle.dye_the_world.data.BlockModifier
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.more_concrete.MORE_CONCRETE
 import com.possible_triangle.dye_the_world.namespace
 import com.possible_triangle.dye_the_world.registrate.DyedRegistrate
-import com.tterrag.registrate.builders.BlockBuilder
-import com.tterrag.registrate.builders.ItemBuilder
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.tags.BlockTags
 import net.minecraft.tags.ItemTags
-import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTabs
-import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.ButtonBlock
@@ -27,9 +25,9 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel
 fun DyedRegistrate.createLevers(
     from: DyedMap<Block>,
     name: ResourceLocation,
-    modifyBlock: BlockBuilder<LeverBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
-    modifyItem: ItemBuilder<BlockItem, BlockBuilder<LeverBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-) = from.mapValues { (dye, base) ->
+    modifyBlock: BlockModifier<LeverBlock> = {},
+    modifyItem: BlockItemModifier<LeverBlock> = {},
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_lever")
         .block(::LeverBlock)
         .initialProperties(base::value)
@@ -68,7 +66,7 @@ fun DyedRegistrate.createLevers(
                     .rotationX(rotX)
                     .rotationY((if (face == AttachFace.CEILING) facing.opposite else facing).yRot)
             }
-        }.apply { modifyBlock(dye) }
+        }.apply(modifyBlock)
         .withItem {
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             recipe { c, p ->
@@ -82,16 +80,16 @@ fun DyedRegistrate.createLevers(
                     .save(p)
             }
             model { c, p -> p.blockItem(c) }
-            modifyItem(dye)
+            modifyItem()
         }.register()
 }
 
 fun DyedRegistrate.createButtons(
     from: DyedMap<Block>,
     name: ResourceLocation,
-    modifyBlock: BlockBuilder<ButtonBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
-    modifyItem: ItemBuilder<BlockItem, BlockBuilder<ButtonBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-) = from.mapValues { (dye, base) ->
+    modifyBlock: BlockModifier<ButtonBlock> = {},
+    modifyItem: BlockItemModifier<ButtonBlock> = {},
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_button")
         .block { ButtonBlock(BlockSetType.STONE, 20, it) }
         .initialProperties(base::value)
@@ -99,7 +97,7 @@ fun DyedRegistrate.createButtons(
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture
             p.buttonBlock(c.get(), texture)
-        }.apply { modifyBlock(dye) }
+        }.apply(modifyBlock)
         .withItem {
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             tag(ItemTags.BUTTONS)
@@ -113,16 +111,16 @@ fun DyedRegistrate.createButtons(
                 val texture = dye.namespace.createId("block/${dye}_${name.path}")
                 p.buttonInventory(c.name, texture)
             }
-            modifyItem(dye)
+            modifyItem()
         }.register()
 }
 
 fun DyedRegistrate.createPressurePlates(
     from: DyedMap<Block>,
     name: ResourceLocation,
-    modifyBlock: BlockBuilder<PressurePlateBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
-    modifyItem: ItemBuilder<BlockItem, BlockBuilder<PressurePlateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-) = from.mapValues { (dye, base) ->
+    modifyBlock: BlockModifier<PressurePlateBlock> = {},
+    modifyItem: BlockItemModifier<PressurePlateBlock> = {},
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_pressure_plate")
         .block { PressurePlateBlock(BlockSetType.STONE, it) }
         .initialProperties(base::value)
@@ -130,7 +128,7 @@ fun DyedRegistrate.createPressurePlates(
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture
             p.pressurePlateBlock(c.get(), texture)
-        }.apply { modifyBlock(dye) }
+        }.apply(modifyBlock)
         .withItem {
             tab(CreativeModeTabs.REDSTONE_BLOCKS)
             recipe { c, p ->
@@ -145,6 +143,6 @@ fun DyedRegistrate.createPressurePlates(
                 val texture = dye.namespace.createId("block/${dye}_${name.path}")
                 p.pressurePlate(c.name, texture)
             }
-            modifyItem(dye)
+            modifyItem()
         }.register()
 }

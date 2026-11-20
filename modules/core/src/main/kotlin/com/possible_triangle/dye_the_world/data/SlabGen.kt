@@ -32,7 +32,7 @@ fun DyedRegistrate.createSlabs(
     modifyBlock: BlockModifier<SlabBlock> = {},
     modifyItem: BlockItemModifier<SlabBlock> = {},
     stone: Boolean = true,
-) = from.mapValues { (dye, base) ->
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_slab")
         .block(::SlabBlock)
         .initialProperties(base::value)

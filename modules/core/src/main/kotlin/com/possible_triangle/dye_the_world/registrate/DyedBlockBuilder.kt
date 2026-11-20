@@ -35,9 +35,9 @@ internal class DyedBlockBuilder<T : Block, P : Any> internal constructor(
     override fun <I : Item> item(factory: NonNullBiFunction<in T, Item.Properties, out I>): ItemBuilder<I, BlockBuilder<T, P>> {
         @Suppress("UNCHECKED_CAST")
         val item =
-            owner.item(this, name = name, factory = {
+            owner.item(this, name) {
                 factory.apply(entry, it)
-            }) as DyedItemBuilder<I, BlockBuilder<T, P>>
+            } as DyedItemBuilder<I, BlockBuilder<T, P>>
 
         item.apply {
             noLang()

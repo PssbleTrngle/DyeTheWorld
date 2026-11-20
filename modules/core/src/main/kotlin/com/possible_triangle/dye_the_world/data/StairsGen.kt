@@ -30,7 +30,7 @@ fun DyedRegistrate.createStairs(
     modifyBlock: BlockModifier<StairBlock> = {},
     modifyItem: BlockItemModifier<StairBlock> = {},
     stone: Boolean = true,
-) = from.mapValues { (dye, base) ->
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_stairs")
         .block { StairBlock(base.value().defaultBlockState(), it) }
         .initialProperties(base::value)

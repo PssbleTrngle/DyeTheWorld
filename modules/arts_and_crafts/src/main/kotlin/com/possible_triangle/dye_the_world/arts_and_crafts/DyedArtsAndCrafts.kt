@@ -129,8 +129,7 @@ object DyedArtsAndCrafts {
                         .defineUnlocking('D', dye.tag)
                         .defineUnlocking('B', Items.BRUSH)
                         .save(provider)
-                }
-                .register()
+                }.register()
         }
 
     val CHALK_STICK =
@@ -141,8 +140,7 @@ object DyedArtsAndCrafts {
                 .recipe { context, provider ->
                     provider.dyeingRecipe(dye, ACTags.ItemTags.CHALK_STICKS, context)
                     provider.stonecutting(CHALK.cubes[dye]!!.asIngredient(), RecipeCategory.MISC, context)
-                }
-                .register()
+                }.register()
         }
 
     val CHALK_DUST =
@@ -153,8 +151,7 @@ object DyedArtsAndCrafts {
                 .chalkDustBlockstate()
                 .loot { tables, block ->
                     tables.add(block, noDrop())
-                }
-                .register()
+                }.register()
         }
 
     val CHALK_DRAW_PARTICLES =
@@ -176,7 +173,6 @@ object DyedArtsAndCrafts {
                     recipe { context, provider ->
                         provider.shapedDyeingRecipe(dye, ACBlocks.PLASTER.get(), context)
                     }
-                }
-                .register()
+                }.register()
         }
 }

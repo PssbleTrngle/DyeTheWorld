@@ -28,7 +28,7 @@ fun DyedRegistrate.createWalls(
     name: ResourceLocation,
     modifyBlock: BlockModifier<WallBlock> = {},
     modifyItem: BlockItemModifier<WallBlock> = {},
-) = from.mapValues { (dye, base) ->
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_wall")
         .block(::WallBlock)
         .initialProperties(base::value)

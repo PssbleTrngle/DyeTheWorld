@@ -11,12 +11,12 @@ const val MOD_ID = "{{ modId }}"
 
 const val {{ compatMod.name | upper }} = "{{ compatMod.id }}"
 
-{% if compatMod.type != "resources_only" and compatMod.registrate is not null %}
+{% if compatMod.type != "resources_only" and compatMod.registrate != null %}
 @JvmField
 val {{ compatMod.registrate }} = DyedRegistrate.create(
     namespace = "{{ compatMod.namespace }}",
     mod = {{ compatMod.name | upper }},
-    migrate = true,
+    migrate = {{ compatMod.type != "data_only" }},
 )
 {% endif %}
 {% endfor %}

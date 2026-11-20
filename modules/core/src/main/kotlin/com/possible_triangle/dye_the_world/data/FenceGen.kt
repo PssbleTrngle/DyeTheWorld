@@ -38,7 +38,7 @@ fun DyedRegistrate.createFences(
     name: ResourceLocation,
     modifyBlock: BlockModifier<FenceBlock> = {},
     modifyItem: BlockItemModifier<FenceBlock> = {},
-) = from.mapValues { (dye, base) ->
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_fence")
         .block(::FenceBlock)
         .initialProperties(base::value)
@@ -71,7 +71,7 @@ fun DyedRegistrate.createFenceGates(
     name: ResourceLocation,
     modifyBlock: BlockBuilder<FenceGateBlock, DyedRegistrate>.(DyeColor) -> Unit = {},
     modifyItem: ItemBuilder<BlockItem, BlockBuilder<FenceGateBlock, DyedRegistrate>>.(DyeColor) -> Unit = {},
-) = from.mapValues { (dye, base) ->
+) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_fence_gate")
         .block { FenceGateBlock(it, SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) }
         .initialProperties(base::value)
