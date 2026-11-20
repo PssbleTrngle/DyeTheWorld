@@ -1,21 +1,18 @@
 package com.possible_triangle.dye_the_world.arts_and_crafts
 
 import com.kekecreations.arts_and_crafts.common.block.ChalkDustBlock
+import com.kekecreations.arts_and_crafts.common.block.DyedFlowerPotBlock
 import com.kekecreations.arts_and_crafts.common.block.PlasterBlock
 import com.kekecreations.arts_and_crafts.core.init.ACTags
 import com.kekecreations.arts_and_crafts.core.registry.ACBlocks
-import com.possible_triangle.dye_the_world.arts_and_crafts.data.chalkDustBlockstate
-import com.possible_triangle.dye_the_world.arts_and_crafts.data.plasterBlockstate
-import com.possible_triangle.dye_the_world.arts_and_crafts.data.shapedDyeing
-import com.possible_triangle.dye_the_world.arts_and_crafts.data.shapelessDyeing
-import com.possible_triangle.dye_the_world.arts_and_crafts.data.tagPaintable
+import com.kekecreations.arts_and_crafts.core.registry.ACEntityTypes
+import com.possible_triangle.dye_the_world.arts_and_crafts.data.*
 import com.possible_triangle.dye_the_world.blockOf
-import com.possible_triangle.dye_the_world.extensions.asIngredient
-import com.possible_triangle.dye_the_world.extensions.createId
-import com.possible_triangle.dye_the_world.extensions.defineUnlocking
-import com.possible_triangle.dye_the_world.extensions.noModel
-import com.possible_triangle.dye_the_world.extensions.quadTransform
-import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.clayworks.data.potBlockstate
+import com.possible_triangle.dye_the_world.clayworks.data.potItemModel
+import com.possible_triangle.dye_the_world.clayworks.data.potLoot
+import com.possible_triangle.dye_the_world.existingBlockEntity
+import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
@@ -24,6 +21,7 @@ import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder.shaped
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Blocks
+import net.minecraft.world.level.block.DecoratedPotBlock
 
 object DyedArtsAndCrafts {
     val SOAPSTONE =
@@ -173,6 +171,29 @@ object DyedArtsAndCrafts {
                     recipe { context, provider ->
                         provider.shapedDyeingRecipe(dye, ACBlocks.PLASTER.get(), context)
                     }
+                }.register()
+        }
+
+    val DECORATED_POTS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_decorated_pot")
+                .block(::DecoratedPotBlock)
+                .potBlockstate()
+                .potLoot()
+                .existingBlockEntity { ACEntityTypes.CUSTOM_DECORATED_POT_BLOCK_ENTITY.get() }
+                .withItem {
+                    potItemModel()
+                }.register()
+        }
+
+    val FLOWER_POTS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_flower_pot")
+                .block(::DyedFlowerPotBlock)
+                .flowerPotBlockstate()
+                .existingBlockEntity { ACEntityTypes.CUSTOM_FLOWER_POT_BLOCK_ENTITY.get() }
+                .withItem {
+                    potItemModel()
                 }.register()
         }
 }

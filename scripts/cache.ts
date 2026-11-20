@@ -16,6 +16,8 @@ const CACHE_FILE = Bun.file(join(import.meta.dir, ".cache"));
 async function createCache(): Promise<Cache> {
     const previous = new Map<string, string>();
     const next = new Map<string, string>();
+    let hits = 0;
+    let written = 0;
 
     if (await CACHE_FILE.exists()) {
         const raw = await CACHE_FILE.text();
@@ -49,11 +51,17 @@ async function createCache(): Promise<Cache> {
             );
             const hash = hashes.join(":");
             next.set(key(target), hash);
-            return previous.get(key(target)) !== hash;
+            const hit = previous.get(key(target)) === hash;
+            if (hit) hits++;
+            else written++;
+            return !hit;
         },
         save: async () => {
             await CACHE_FILE.write(
                 [...next.entries()].map((it) => it.join(" ")).join("\n"),
+            );
+            console.info(
+                `saved cache with ${written} new files, ${hits} cache hits`,
             );
         },
     };

@@ -150,7 +150,6 @@ object DyedClayworks {
                 .block(::DecoratedPotBlock)
                 .initialProperties { Blocks.DECORATED_POT }
                 .properties { it.mapColor(dye) }
-                .lang("${dye.translation} Decorated Pot")
                 .potBlockstate()
                 .potLoot()
                 .withItem {

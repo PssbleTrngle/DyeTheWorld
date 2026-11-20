@@ -65,6 +65,16 @@ async function createDyedChalkParticles(from: string) {
     });
 }
 
+async function createDyedFlowerPots(from: string) {
+    await createDyedTextures({
+        from: join(artsAndCraftsTextures, "block"),
+        to: textureFolder("arts_and_crafts", "block"),
+        include: [`${from}_flower_pot`],
+        palette: "flower_pot",
+        naming: (name, color) => name.replace(`${from}_`, `${color}_`),
+    });
+}
+
 // if (await exists(generatedAssets)) {
 //     await rm(generatedAssets, { recursive: true });
 // }
@@ -78,5 +88,6 @@ await createDyedPipes("dyed_steam_engine", ["engine"]);
 
 await createDyedChalkMarks("red");
 await createDyedChalkParticles("red");
+await createDyedFlowerPots("red");
 
 await CACHE.save();

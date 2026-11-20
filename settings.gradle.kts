@@ -10,6 +10,10 @@ plugins {
     id("com.possible-triangle.packwiz") version ("1.4.+")
 }
 
+helper {
+    versionStrategy = com.possible_triangle.gradle.settings.ResolutionStrategy.WILDCARD
+}
+
 includeBuild("buildLogic")
 
 include("combined")
