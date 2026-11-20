@@ -30,12 +30,12 @@ public class {{ moduleName }}Entrypoint {
         if (mods.isLoaded({{ moduleName }}Module.{{ compatMod.name | upper }})) {
             registerEvents(modBus, Dyed{{ compatMod.file }}.INSTANCE);
 {% if compatMod.type == "full" and compatMod.registrate != null %}
-            {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
+            {{ moduleName }}Module.{{ compatMod.registrate }}.registerEventListeners(modBus);
 {% endif %}
         }
 {% if compatMod.type == "data_only" and compatMod.registrate != null %}
         if (DatagenModLoader.isRunningDataGen()) {
-            {{ moduleName }}Module.{{ compatMod.registrate }}.register(modBus);
+            {{ moduleName }}Module.{{ compatMod.registrate }}.registerEventListeners(modBus);
         }
 {% endif %}
 {% endif %}

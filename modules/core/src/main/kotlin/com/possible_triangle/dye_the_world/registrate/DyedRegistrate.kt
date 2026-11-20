@@ -13,7 +13,6 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockBehaviour
-import net.neoforged.bus.api.IEventBus
 
 private typealias DyedFactory<P, T> = (properties: P, dye: DyeColor) -> T
 
@@ -40,11 +39,6 @@ class DyedRegistrate private constructor(
     }
 
     val dyes = dyesFor(mod)
-
-    // TODO remove
-    fun register(modBus: IEventBus) {
-        registerEventListeners(modBus)
-    }
 
     override fun <T : Block, P : Any> block(
         parent: P,
