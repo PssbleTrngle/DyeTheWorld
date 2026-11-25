@@ -19,6 +19,7 @@ configure<NeoforgeExtension> {
     dataGen {
         owner = project
         existing(file("src/dyed/resources"))
+        splitSourceSet()
     }
 }
 

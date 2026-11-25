@@ -9,5 +9,8 @@
   },
   "mixins": [
     "PotsMixin"
+  ],
+  "client": [
+    "ArtsAndCraftsBEWLRMixin"
   ]
 }

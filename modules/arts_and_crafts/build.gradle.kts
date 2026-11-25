@@ -17,5 +17,8 @@ dependencies {
     api(pack.modrinth.jinxedlib)
     api(pack.modrinth.artsandcrafts)
 
-    implementation(project(":clayworks"))
+    implementation(project(":clayworks")) {
+        isTransitive = false
+    }
+    dataRuntimeOnly(project(":clayworks"))
 }

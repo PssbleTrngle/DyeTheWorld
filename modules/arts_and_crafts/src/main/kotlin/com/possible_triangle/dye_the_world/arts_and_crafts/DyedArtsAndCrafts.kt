@@ -1,17 +1,19 @@
 package com.possible_triangle.dye_the_world.arts_and_crafts
 
+import com.kekecreations.arts_and_crafts.client.renderer.bewlr.ArtsAndCraftsBEWLR
 import com.kekecreations.arts_and_crafts.common.block.ChalkDustBlock
 import com.kekecreations.arts_and_crafts.common.block.DyedFlowerPotBlock
 import com.kekecreations.arts_and_crafts.common.block.PlasterBlock
 import com.kekecreations.arts_and_crafts.core.init.ACTags
 import com.kekecreations.arts_and_crafts.core.registry.ACBlocks
 import com.kekecreations.arts_and_crafts.core.registry.ACEntityTypes
+import com.kekecreations.arts_and_crafts.core.registry.ACItems
+import com.possible_triangle.dye_the_world.allowBlock
 import com.possible_triangle.dye_the_world.arts_and_crafts.data.*
 import com.possible_triangle.dye_the_world.blockOf
 import com.possible_triangle.dye_the_world.clayworks.data.potBlockstate
 import com.possible_triangle.dye_the_world.clayworks.data.potItemModel
 import com.possible_triangle.dye_the_world.clayworks.data.potLoot
-import com.possible_triangle.dye_the_world.existingBlockEntity
 import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
@@ -19,9 +21,16 @@ import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
 import net.minecraft.data.loot.BlockLootSubProvider.noDrop
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder.shaped
+import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DecoratedPotBlock
+import net.neoforged.api.distmarker.Dist
+import net.neoforged.api.distmarker.OnlyIn
+import net.neoforged.bus.api.SubscribeEvent
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent
 
 object DyedArtsAndCrafts {
     val SOAPSTONE =
@@ -180,9 +189,13 @@ object DyedArtsAndCrafts {
                 .block(::DecoratedPotBlock)
                 .potBlockstate()
                 .potLoot()
-                .existingBlockEntity { ACEntityTypes.CUSTOM_DECORATED_POT_BLOCK_ENTITY.get() }
+                .tagPaintable("decorated_pot")
                 .withItem {
+                    tag(ACTags.ItemTags.DECORATED_POTS)
                     potItemModel()
+                    recipe { context, provider ->
+                        provider.dyeingRecipe(dye, Items.FLOWER_POT, context)
+                    }
                 }.register()
         }
 
@@ -191,9 +204,35 @@ object DyedArtsAndCrafts {
             `object`("${dye}_flower_pot")
                 .block(::DyedFlowerPotBlock)
                 .flowerPotBlockstate()
-                .existingBlockEntity { ACEntityTypes.CUSTOM_FLOWER_POT_BLOCK_ENTITY.get() }
+                .tagPaintable("flower_pot")
+                .tag(BlockTags.FLOWER_POTS)
                 .withItem {
-                    potItemModel()
+                    defaultModel()
+                    recipe { context, provider ->
+                        provider.dyeingRecipe(dye, Items.FLOWER_POT, context)
+                    }
                 }.register()
         }
+
+    @SubscribeEvent
+    private fun extendBlockEntities(event: FMLCommonSetupEvent) =
+        event.enqueueWork {
+            REGISTRATE.dyes.forEach { dye ->
+                ACEntityTypes.CUSTOM_FLOWER_POT_BLOCK_ENTITY.get().allowBlock(ACBlocks.getDyedFlowerPot(dye.id))
+                ACEntityTypes.CUSTOM_DECORATED_POT_BLOCK_ENTITY.get().allowBlock(ACBlocks.getDyedDecoratedPot(dye.id))
+            }
+        }
+
+    @SubscribeEvent
+    @OnlyIn(Dist.CLIENT)
+    private fun clientExtensions(event: RegisterClientExtensionsEvent) {
+        val extensions =
+            object : IClientItemExtensions {
+                override fun getCustomRenderer() = ArtsAndCraftsBEWLR()
+            }
+
+        REGISTRATE.dyes.forEach { dye ->
+            event.registerItem(extensions, ACItems.getDyedDecoratedPotBlockItem(dye))
+        }
+    }
 }

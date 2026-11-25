@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:jinxedlib_paletted_permutations",
+      "sources": [
+        {
+          "type": "minecraft:directory",
+          "prefix": "entity/decorated_pot/",
+          "source": "entity/decorated_pot"
+        }
+      ],
+      "palette_key": "arts_and_crafts:color_palettes/decorated_pot/decorated_pot_palette",
+      "permutations": {
+        "amber": "arts_and_crafts:entity/decorated_pot_color_palettes/amber",
+        "aqua": "arts_and_crafts:entity/decorated_pot_color_palettes/aqua",
+        "beige": "arts_and_crafts:entity/decorated_pot_color_palettes/beige",
+        "coral": "arts_and_crafts:entity/decorated_pot_color_palettes/coral",
+        "forest": "arts_and_crafts:entity/decorated_pot_color_palettes/forest",
+        "ginger": "arts_and_crafts:entity/decorated_pot_color_palettes/ginger",
+        "indigo": "arts_and_crafts:entity/decorated_pot_color_palettes/indigo",
+        "maroon": "arts_and_crafts:entity/decorated_pot_color_palettes/maroon",
+        "mint": "arts_and_crafts:entity/decorated_pot_color_palettes/mint",
+        "navy": "arts_and_crafts:entity/decorated_pot_color_palettes/navy",
+        "olive": "arts_and_crafts:entity/decorated_pot_color_palettes/olive",
+        "rose": "arts_and_crafts:entity/decorated_pot_color_palettes/rose",
+        "slate": "arts_and_crafts:entity/decorated_pot_color_palettes/slate",
+        "tan": "arts_and_crafts:entity/decorated_pot_color_palettes/tan",
+        "teal": "arts_and_crafts:entity/decorated_pot_color_palettes/teal",
+        "verdant": "arts_and_crafts:entity/decorated_pot_color_palettes/verdant"
+      }
+    }
+  ]
+}

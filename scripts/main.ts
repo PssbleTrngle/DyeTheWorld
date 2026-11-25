@@ -67,9 +67,9 @@ async function createDyedChalkParticles(from: string) {
 
 async function createDyedFlowerPots(from: string) {
     await createDyedTextures({
-        from: join(artsAndCraftsTextures, "block"),
-        to: textureFolder("arts_and_crafts", "block"),
-        include: [`${from}_flower_pot`],
+        from: join(artsAndCraftsTextures),
+        to: textureFolder("arts_and_crafts"),
+        include: [`*/${from}_flower_pot`],
         palette: "flower_pot",
         naming: (name, color) => name.replace(`${from}_`, `${color}_`),
     });
