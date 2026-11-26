@@ -5,6 +5,7 @@ plugins {
 
 dependencies {
     apiInclude(libs.registrate)
+    apiInclude(libs.multikulti.core)
     apiInclude(libs.multikulti.registrate)
 
     api(libs.dye.depot)

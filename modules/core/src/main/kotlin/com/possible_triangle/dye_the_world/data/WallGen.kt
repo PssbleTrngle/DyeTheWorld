@@ -31,7 +31,7 @@ fun DyedRegistrate.createWalls(
 ) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_wall")
         .block(::WallBlock)
-        .initialProperties(base::value)
+        .initialProperties(base)
         .tag(BlockTags.MINEABLE_WITH_PICKAXE)
         .tag(BlockTags.WALLS)
         .blockstate { c, p ->

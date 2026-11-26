@@ -30,7 +30,7 @@ fun DyedRegistrate.createLevers(
 ) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_lever")
         .block(::LeverBlock)
-        .initialProperties(base::value)
+        .initialProperties(base)
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture
 
@@ -92,7 +92,7 @@ fun DyedRegistrate.createButtons(
 ) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_button")
         .block { ButtonBlock(BlockSetType.STONE, 20, it) }
-        .initialProperties(base::value)
+        .initialProperties(base)
         .tag(BlockTags.BUTTONS)
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture
@@ -123,7 +123,7 @@ fun DyedRegistrate.createPressurePlates(
 ) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_pressure_plate")
         .block { PressurePlateBlock(BlockSetType.STONE, it) }
-        .initialProperties(base::value)
+        .initialProperties(base)
         .tag(BlockTags.PRESSURE_PLATES)
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture

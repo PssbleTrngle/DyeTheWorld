@@ -67,12 +67,6 @@ class DyedRegistrate private constructor(
         }
     }
 
-    // TODO move to MultikultiRegistrate
-    fun item(): ItemBuilder<Item, DyedRegistrate> = item(::Item)
-
-    // TODO move to MultikultiRegistrate
-    fun block(): BlockBuilder<Block, DyedRegistrate> = block(::Block)
-
     override fun <T : Item, P : Any> item(
         parent: P,
         name: String,

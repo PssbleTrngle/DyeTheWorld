@@ -41,7 +41,7 @@ fun DyedRegistrate.createFences(
 ) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_fence")
         .block(::FenceBlock)
-        .initialProperties(base::value)
+        .initialProperties(base)
         .tag(BlockTags.FENCES)
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture
@@ -74,7 +74,7 @@ fun DyedRegistrate.createFenceGates(
 ) = from.mapDyed { dye, base ->
     `object`("${dye}_${name.path}_fence_gate")
         .block { FenceGateBlock(it, SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE) }
-        .initialProperties(base::value)
+        .initialProperties(base)
         .tag(BlockTags.FENCE_GATES)
         .blockstate { c, p ->
             val texture = from[dye]!!.value().texture

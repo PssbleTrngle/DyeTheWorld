@@ -25,11 +25,13 @@ configure<NeoforgeExtension> {
 
 val compat = extensions.create<CompatModsExtension>("compat")
 
-if (project.name != "core") {
-    dependencies {
+dependencies {
+    if (project.name != "core") {
         add("api", project(":core"))
         add("runtimeOnly", project(":data"))
     }
+
+    "interfaceInjectionData"(project.extra["multikulti_interfaces"] as Any)
 }
 
 sourceSets.main {

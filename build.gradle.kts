@@ -11,6 +11,7 @@ withKotlin()
 modModules.forEach {
     it.extra.set("mod_id", "${mod.id.get()}_${it.name}")
     it.extra.set("mod_name", "${mod.name.get()} ${it.name.capitalized()}")
+    it.extra.set("multikulti_interfaces", libs.multikulti.registrate)
 
     it.dependencies {
         implementation(libs.multikulti.datagen)

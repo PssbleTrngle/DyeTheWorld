@@ -211,7 +211,7 @@ object DyedClayworks {
                 provider.cooking(
                     terracotta.asIngredient(),
                     BUILDING_BLOCKS,
-                    glazed::value,
+                    glazed,
                     0.1F,
                     100,
                     "baking",
