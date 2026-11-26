@@ -186,7 +186,7 @@ object DyedVanillaBackport {
         event.enqueueWork {
             HARNESSES.forEach { (color, item) ->
                 val texture = VANILLA_BACKPORT.createId("textures/entity/harness/$color.png")
-                GhastEquipmentManager.register(item, texture)
+                GhastEquipmentManager.register(item.value(), texture)
             }
 
             BUNDLES.forEach { (color, item) ->
