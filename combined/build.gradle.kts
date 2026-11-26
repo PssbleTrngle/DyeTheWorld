@@ -5,6 +5,10 @@ plugins {
     id("conventions")
 }
 
+mod {
+    module.unsetConvention()
+}
+
 modModules.forEach { module ->
     evaluationDependsOn(module.path)
 
