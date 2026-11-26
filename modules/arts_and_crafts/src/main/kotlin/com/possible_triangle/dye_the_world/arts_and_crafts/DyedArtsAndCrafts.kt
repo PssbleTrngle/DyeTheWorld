@@ -193,9 +193,6 @@ object DyedArtsAndCrafts {
                 .withItem {
                     tag(ACTags.ItemTags.DECORATED_POTS)
                     potItemModel()
-                    recipe { context, provider ->
-                        provider.dyeingRecipe(dye, Items.FLOWER_POT, context)
-                    }
                 }.register()
         }
 
