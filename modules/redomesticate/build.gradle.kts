@@ -3,7 +3,9 @@ plugins {
     id("module")
 }
 
-compat.default()
+compat.default {
+    versionRange = "[2.1.0,)"
+}
 
 dependencies {
     api(pack.modrinth.redomesticate)

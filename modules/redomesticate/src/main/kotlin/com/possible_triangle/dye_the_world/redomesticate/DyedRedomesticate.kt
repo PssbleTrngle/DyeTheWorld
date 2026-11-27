@@ -17,7 +17,7 @@ object DyedRedomesticate {
     val PET_BEDS =
         REGISTRATE.dyed { dye ->
             `object`("pet_bed_$dye")
-                .block { PetBedBlock(dye.serializedName, dye) }
+                .block { PetBedBlock(it, dye) }
                 .lang("${dye.translation} Pet Bed")
                 .petBedBlockstate()
                 .withItem {
