@@ -76,6 +76,8 @@ upload {
             optional("labels")
             optional("jadens-nether-expansion")
             optional("artsandcrafts")
+            optional("vista_tv")
+            optional("create-dyeable-chains")
         }
     }
 }
