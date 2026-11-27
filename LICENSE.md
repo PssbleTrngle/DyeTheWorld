@@ -2,8 +2,8 @@
 <meta>
    <source>@pssbletrngle/github-meta-generator</source>
    <version>1.0.127</version>
-   <timestamp>2026-11-20T09:50:55.341Z</timestamp>
-   <hash>8bf51975899ffee5</hash>
+   <timestamp>2026-11-27T15:03:41.768Z</timestamp>
+   <hash>821579842d835995</hash>
 </meta>
 -->
 
@@ -32,6 +32,7 @@ This license applies to any files under the following directories:
 - ./modules/connected_glass/src/main/resources/assets/
 - ./modules/create/src/main/resources/assets/
 - ./modules/create_deco/src/main/resources/assets/
+- ./modules/create_dyeable_chains/src/main/resources/assets/
 - ./modules/create_interiors/src/main/resources/assets/
 - ./modules/create_numismatics/src/main/resources/assets/
 - ./modules/create_railways/src/main/resources/assets/
@@ -47,6 +48,7 @@ This license applies to any files under the following directories:
 - ./modules/supplementaries/src/main/resources/assets/
 - ./modules/twigs/src/main/resources/assets/
 - ./modules/vanilla_backport/src/main/resources/assets/
+- ./modules/vista/src/main/resources/assets/
 - ./modules/waystones/src/main/resources/assets/
 - ./modules/windswept/src/main/resources/assets/
 
