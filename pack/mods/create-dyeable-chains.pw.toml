@@ -1,0 +1,13 @@
+name = "Create: Dyeable Chains"
+filename = "create_dyeable_chains-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7sS4ZdU9/versions/kEqxX0zp/create_dyeable_chains-1.0.1.jar"
+hash-format = "sha512"
+hash = "ecea5686096f1dfcadb95465382d60ea7800b6c6f25fa5732192f5c536f33fff78a972b6359fd783daf044b67fe1ac987ef742089f31d3d3c860f590d8672cfe"
+
+[update]
+[update.modrinth]
+mod-id = "7sS4ZdU9"
+version = "kEqxX0zp"
