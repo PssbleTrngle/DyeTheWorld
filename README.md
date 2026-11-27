@@ -57,6 +57,12 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Create Aeronautics](https://modrinth.com/mod/create-aeronautics)
 - [Spelunkery](https://modrinth.com/mod/spelunkery) (Glow Sticks)
 - [Twigs](https://modrinth.com/mod/twigs) (Glow Sticks)
+- [Create Numismatics](https://modrinth.com/mod/numismatics) (ID  & Key Cards)
+- [Sleep Tight](https://modrinth.com/mod/sleep-tight) (Hammocks)
+- [Create Bits & Bobs](https://modrinth.com/mod/create-bits-n-bobs) (Chairs, Dyed Pipes, Dyed Tanks, ...)
+- [Labels](https://modrinth.com/mod/labels)
+- [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) (Stained Redstone Lamps)
+- [Arts & Crafts](https://modrinth.com/mod/artsandcrafts) (Chalk, Soapstone, Dyed Flower Pots, ...)
 
 <!-- modrinth_exclude.start -->
 ## Development Information

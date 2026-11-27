@@ -70,6 +70,11 @@
       "name": "maedickens",
       "description": "stained redstone lamps textures",
       "github": true
+    },
+    {
+      "name": "DOOMvenom",
+      "description": "arts & crafts textures & implementation",
+      "github": true
     }
   ]
 }
