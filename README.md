@@ -392,6 +392,28 @@ Some files are generated from templates and handle some of the boilerplate stuff
         <br />
         <sub><small>stained redstone lamps textures</small></sub>
       </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/219531720?v=4"
+          width="100"
+          alt="DOOMvenom"
+        />
+        <br />
+        <a href="https://github.com/DOOMvenom">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>DOOMvenom</b></sub>
+        <br />
+        <sub
+          ><small>arts &amp; crafts textures &amp; implementation</small></sub
+        >
+      </td>
     </tr>
   </tbody>
 
