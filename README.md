@@ -63,6 +63,8 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Labels](https://modrinth.com/mod/labels)
 - [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) (Stained Redstone Lamps)
 - [Arts & Crafts](https://modrinth.com/mod/artsandcrafts) (Chalk, Soapstone, Dyed Flower Pots, ...)
+- [Vista](https://modrinth.com/mod/vista) (Lenses)
+- [Create Dyeable Chains](https://modrinth.com/mod/create-dyeable-chains)
 
 <!-- modrinth_exclude.start -->
 ## Development Information

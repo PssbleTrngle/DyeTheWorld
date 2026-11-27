@@ -91,6 +91,11 @@ hash = "67a405e6307f900d168deaa954a4309c3b44a6025e4efd7b8e774b6f9d3a69cd"
 metafile = true
 
 [[files]]
+file = "mods/create-dyeable-chains.pw.toml"
+hash = "597b6e5b629bfc1b277edb44f16f95131c9a0a4d0cf43e38d901a170383331a2"
+metafile = true
+
+[[files]]
 file = "mods/create-steam-n-rails-1.21.1.pw.toml"
 hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
 metafile = true
@@ -162,7 +167,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "b91cb844a09b8a4accd27d3d2882f37aec5cef58e7b43b315da65ee8caf9e957"
+hash = "f1bfac09f701fe8ac07b10bfc3c811e951611c770cd62b4d8b60eb4ead939ef6"
 metafile = true
 
 [[files]]
@@ -263,6 +268,11 @@ metafile = true
 [[files]]
 file = "mods/vanillabackport.pw.toml"
 hash = "0b790184f0eb28fe6592f4b513be31f05a3029304aa8ae9eec9d21a74f7c3259"
+metafile = true
+
+[[files]]
+file = "mods/vista_tv.pw.toml"
+hash = "05cdd0d0911ddbc8607db7a9bd1260d5ff5e55df46d8e943a9f1de53806e479c"
 metafile = true
 
 [[files]]

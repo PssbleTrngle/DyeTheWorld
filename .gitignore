@@ -19,6 +19,9 @@ build
 .gradle
 .kotlin
 
+# vscode
+.vscode
+
 # other
 eclipse
 run

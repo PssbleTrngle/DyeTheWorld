@@ -75,6 +75,11 @@
       "name": "DOOMvenom",
       "description": "arts & crafts textures & implementation",
       "github": true
+    },
+    {
+      "name": "rjames0820",
+      "description": "textures for vista & create dyeable chains",
+      "github": true
     }
   ]
 }
