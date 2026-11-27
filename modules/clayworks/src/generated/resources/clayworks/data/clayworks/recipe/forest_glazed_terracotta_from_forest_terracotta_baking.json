@@ -1,0 +1,13 @@
+{
+  "type": "clayworks:baking",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "dye_depot:forest_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_depot:forest_glazed_terracotta"
+  }
+}

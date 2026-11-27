@@ -1,0 +1,12 @@
+{
+  "values": [
+    "moreconcrete:tan_concrete_slab",
+    "moreconcrete:tan_concrete_stairs",
+    "moreconcrete:tan_concrete_wall",
+    "moreconcrete:tan_concrete_fence",
+    "moreconcrete:tan_concrete_fence_gate",
+    "moreconcrete:tan_concrete_button",
+    "moreconcrete:tan_concrete_lever",
+    "moreconcrete:tan_concrete_pressure_plate"
+  ]
+}

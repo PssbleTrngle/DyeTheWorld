@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:verdant_nixie_tube",
+    "create:verdant_toolbox",
+    "create:verdant_seat",
+    "create:verdant_sail",
+    "create:verdant_valve_handle",
+    "create:verdant_table_cloth",
+    "create:verdant_postbox"
+  ]
+}

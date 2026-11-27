@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete_powder",
+  "key": {
+    "#": {
+      "item": "clayworks:concrete_powder"
+    },
+    "X": {
+      "tag": "c:dyes/mint"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "dye_depot:mint_concrete_powder"
+  }
+}

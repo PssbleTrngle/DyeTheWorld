@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "stained_glass_door",
+  "key": {
+    "X": {
+      "item": "dye_depot:navy_stained_glass"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XX",
+    "XX"
+  ],
+  "result": {
+    "count": 3,
+    "id": "clayworks:navy_stained_glass_door"
+  }
+}

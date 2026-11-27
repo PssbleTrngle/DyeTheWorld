@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/navy"
+    },
+    {
+      "tag": "arts_and_crafts:chalk_sticks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "arts_and_crafts:navy_chalk_stick"
+  }
+}

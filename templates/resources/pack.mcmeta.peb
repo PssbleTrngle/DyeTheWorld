@@ -1,0 +1,24 @@
+{
+    "pack": {
+        "description": "dye the world resources",
+        "pack_format": 34
+    },
+    "overlays": {
+        "entries": [
+{% for compatMod in compatMods %}
+{% if loop.index > 0 %},
+{% endif %}
+            {
+                "neoforge:conditions": [
+                    {
+                        "type": "neoforge:mod_loaded",
+                        "modid": "{{ compatMod.id }}"
+                    }
+                ],
+                "directory": "{{ compatMod.id }}",
+                "formats": [0, 999]
+            }{% endfor %}
+
+        ]
+    }
+}

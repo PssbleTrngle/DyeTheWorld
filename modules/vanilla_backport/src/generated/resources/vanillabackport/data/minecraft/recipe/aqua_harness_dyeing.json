@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "harness_dye",
+  "ingredients": [
+    {
+      "tag": "c:dyes/aqua"
+    },
+    {
+      "tag": "minecraft:harnesses"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:aqua_harness"
+  }
+}

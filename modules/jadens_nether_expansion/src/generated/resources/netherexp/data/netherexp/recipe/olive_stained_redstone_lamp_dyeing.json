@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "D": {
+      "tag": "c:dyes/olive"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "netherexp:olive_stained_redstone_lamp"
+  }
+}

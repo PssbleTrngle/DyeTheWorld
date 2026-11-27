@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:aqua_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "clayworks:aqua_terracotta_brick_stairs"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arts_and_crafts:maroon_polished_soapstone_wall"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "arts_and_crafts:blocks/maroon_polished_soapstone_wall"
+}

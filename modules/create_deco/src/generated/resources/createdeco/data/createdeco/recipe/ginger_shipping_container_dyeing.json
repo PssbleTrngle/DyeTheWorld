@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/ginger"
+    },
+    {
+      "item": "create:item_vault"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:ginger_shipping_container"
+  }
+}

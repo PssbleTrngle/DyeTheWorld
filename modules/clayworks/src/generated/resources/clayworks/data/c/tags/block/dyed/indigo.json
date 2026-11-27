@@ -1,0 +1,15 @@
+{
+  "values": [
+    "clayworks:indigo_terracotta_bricks",
+    "clayworks:indigo_terracotta_brick_slab",
+    "clayworks:indigo_terracotta_brick_stairs",
+    "clayworks:indigo_terracotta_brick_wall",
+    "clayworks:chiseled_indigo_terracotta_bricks",
+    "clayworks:indigo_terracotta_slab",
+    "clayworks:indigo_terracotta_stairs",
+    "clayworks:indigo_terracotta_wall",
+    "clayworks:indigo_decorated_pot",
+    "clayworks:indigo_stained_glass_door",
+    "clayworks:indigo_stained_glass_trapdoor"
+  ]
+}

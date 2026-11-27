@@ -1,8 +1,0 @@
-{
-  "type": "fusion:connecting",
-  "parent": "minecraft:block/cube_all",
-  "loader": "fusion:model",
-  "textures": {
-    "all": "connectedglass:block/tinted_borderless/amber"
-  }
-}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:barrel"
+    },
+    "C": {
+      "tag": "c:dyes/verdant"
+    },
+    "S": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    "CS",
+    "SB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:verdant_shipping_container"
+  }
+}

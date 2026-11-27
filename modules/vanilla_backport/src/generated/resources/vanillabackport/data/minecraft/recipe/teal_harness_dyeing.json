@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "harness_dye",
+  "ingredients": [
+    {
+      "tag": "c:dyes/teal"
+    },
+    {
+      "tag": "minecraft:harnesses"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:teal_harness"
+  }
+}

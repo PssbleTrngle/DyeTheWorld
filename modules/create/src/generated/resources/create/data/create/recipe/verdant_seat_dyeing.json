@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/verdant"
+    },
+    {
+      "tag": "create:seats"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:verdant_seat"
+  }
+}

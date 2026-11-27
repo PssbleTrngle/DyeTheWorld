@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dye_depot:aqua_wool"
+    },
+    {
+      "tag": "minecraft:wooden_stairs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bits_n_bobs:aqua_chair"
+  }
+}

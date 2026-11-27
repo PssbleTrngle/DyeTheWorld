@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "harness_dye",
+  "ingredients": [
+    {
+      "tag": "c:dyes/indigo"
+    },
+    {
+      "tag": "minecraft:harnesses"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:indigo_harness"
+  }
+}

@@ -1,11 +1,13 @@
 [versions]
-multikulti = "2.0.5"
+multikulti = "2.1.40"
 flywheel = "1.0.6"
-create-simulated = "1.3.1"
+create-simulated = "1.3.2"
 
 [libraries]
 registrate = { group = "com.tterrag.registrate", name = "Registrate", version = "MC1.21-1.3.0+67" }
 multikulti-datagen = { group = "com.possible-triangle", name = "multikulti-1.21.1-datagen-neoforge", version.ref = "multikulti" }
+multikulti-core = { group = "com.possible-triangle", name = "multikulti-1.21.1-core-neoforge", version.ref = "multikulti" }
+multikulti-registrate = { group = "com.possible-triangle", name = "multikulti-1.21.1-registrate-neoforge", version.ref = "multikulti" }
 
 create = { group = "com.simibubi.create", name = "create-1.21.1", version = "6.0.10-281" }
 ponder = { group = "net.createmod.ponder", name = "ponder-neoforge", version = "1.0.85+mc1.21.1" }
@@ -16,8 +18,10 @@ sable = { group = "dev.ryanhcode.sable", name = "sable-neoforge-1.21.1", version
 create-simulated = { group = "dev.simulated_team.simulated", name = "simulated-neoforge-1.21.1", version.ref = "create-simulated" }
 create-aeronautics = { group = "dev.eriksonn.aeronautics", name = "aeronautics-neoforge-1.21.1", version.ref = "create-simulated" }
 
-jei = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version = "19.21.0.247" }
+jei = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version = "19.64.0.455" }
 
-dye-depot = { group = "com.ninni.dye_depot", name = "dye_depot-neoforge", version = "1.21.1-2.1.1" }
+dye-depot = { group = "com.possible-triangle", name = "dye_depot-1.21.1-neoforge", version = "2.1.2" }
 
 windswept = { group = "com.rosemods", name = "windswept-1.21.1", version = "4.0.0-SNAPSHOT" }
+
+blossom = { group = "net.kyori.blossom", name = "net.kyori.blossom.gradle.plugin", version = "2.2.0" }

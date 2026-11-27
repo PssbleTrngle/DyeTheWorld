@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "comforts:sleeping_bag_coral",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "part": "head"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "comforts:sleeping_bag_coral"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:explosion_decay"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "comforts:blocks/sleeping_bag_coral"
+}

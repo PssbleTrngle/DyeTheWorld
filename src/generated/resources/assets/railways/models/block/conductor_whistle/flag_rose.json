@@ -1,6 +1,0 @@
-{
-  "parent": "railways:block/conductor_whistle/flag",
-  "textures": {
-    "flag": "dye_depot:block/rose_wool"
-  }
-}

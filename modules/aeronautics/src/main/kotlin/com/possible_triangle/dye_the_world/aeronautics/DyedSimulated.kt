@@ -1,0 +1,77 @@
+package com.possible_triangle.dye_the_world.aeronautics
+
+import com.possible_triangle.dye_the_world.Genus
+import com.possible_triangle.dye_the_world.aeronautics.data.*
+import com.possible_triangle.dye_the_world.extensions.germanLang
+import com.possible_triangle.dye_the_world.extensions.withItem
+import com.possible_triangle.dye_the_world.germanTranslation
+import com.possible_triangle.dye_the_world.registrate.dyeingRecipe
+import com.possible_triangle.dye_the_world.translation
+import com.possible_triangle.dye_the_world.world.block.DummyBlock
+import com.simibubi.create.AllTags
+import dev.simulated_team.simulated.index.SimBlocks
+import net.minecraft.tags.BlockTags
+import net.minecraft.world.level.block.RotatedPillarBlock
+import net.minecraft.world.level.block.state.properties.BlockStateProperties
+
+object DyedSimulated {
+    val SYMMETRIC_SAILS =
+        REGISTRATE_SIMULATED.dyed { dye ->
+            `object`("${dye}_symmetric_sail")
+                .block(::RotatedPillarBlock)
+                .lang("${dye.translation} Symmetric Sail")
+                .germanLang("${dye.germanTranslation(Genus.I)} Symmetrisches Segel")
+                .tag(AeronauticsTags.Blocks.SYMMETRIC_SAILS)
+                .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
+                .symmetricSailBlockstate()
+                .register()
+        }
+
+    val PORTABLE_ENGINES =
+        REGISTRATE_SIMULATED.dyed { dye ->
+            `object`("${dye}_portable_engine")
+                .block(DummyBlock.of(BlockStateProperties.HORIZONTAL_FACING))
+                .lang("${dye.translation} Portable Engine")
+                .germanLang("${dye.germanTranslation(Genus.F)} Tragbarer Antrieb")
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .portableEngineBlockstate()
+                .withItem {
+                    portableEngineItemModel()
+                }.register()
+        }
+
+    val HANDLES =
+        REGISTRATE_SIMULATED.dyed { dye ->
+            `object`("${dye}_handle")
+                .block(DummyBlock.of(AXIS_ALONG_FIRST_COORDINATE, BlockStateProperties.FACING))
+                .lang("${dye.translation} Handle")
+                .germanLang("${dye.germanTranslation(Genus.M)} Griff")
+                .tag(AeronauticsTags.Blocks.HANDLES)
+                .handleBlockstate()
+                .withItem {
+                    handleItemModel()
+                    tag(AeronauticsTags.Items.HANDLES)
+                    recipe { context, provider ->
+                        provider.dyeingRecipe(dye, SimBlocks.IRON_HANDLE, context)
+                    }
+                }.register()
+        }
+
+    val NAMEPLATES =
+        REGISTRATE_SIMULATED.dyed { dye ->
+            `object`("${dye}_nameplate")
+                .block(DummyBlock.of(NAMEPLATE_POSITION, BlockStateProperties.HORIZONTAL_FACING))
+                .lang("${dye.translation} Nameplate")
+                .germanLang("${dye.germanTranslation(Genus.I)} Namensschild")
+                .tag(AeronauticsTags.Blocks.NAMEPLATES)
+                .tag(BlockTags.MINEABLE_WITH_AXE)
+                .nameplateBlockstate()
+                .withItem {
+                    nameplateItemModel()
+                    tag(AeronauticsTags.Items.NAMEPLATES)
+                    recipe { context, provider ->
+                        provider.dyeingRecipe(dye, AeronauticsTags.Items.NAMEPLATES, context)
+                    }
+                }.register()
+        }
+}

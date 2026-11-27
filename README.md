@@ -7,7 +7,7 @@
 
 <!-- modrinth_exclude.start -->
 
-# Dye The World! <img src="src/main/resources/assets/dye_the_world/icon_transparent.png" align="right" height="128" />
+# Dye The World! <img src="combined/src/main/resources/assets/dye_the_world/icon_transparent.png" align="right" height="128" />
 
 ---
 
@@ -19,7 +19,7 @@
 
 <!-- modrinth_exclude.end -->
 
-![](src/main/resources/assets/dye_the_world/logo.png)
+![](combined/src/main/resources/assets/dye_the_world/logo.png)
 
 [![](https://img.shields.io/badge/🎨-ADDON%20FOR%20DYE%20DEPOT-tan?labelColor=gray&style=for-the-badge)][DYE_DEPOT]
 [![](https://img.shields.io/badge/REQUIRES%20KOTLIN%20FOR%20FORGE-7f52ff?logo=kotlin&labelColor=gray&style=for-the-badge)][KOTLIN_FORGE_FORGE]
@@ -57,8 +57,31 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
 - [Create Aeronautics](https://modrinth.com/mod/create-aeronautics)
 - [Spelunkery](https://modrinth.com/mod/spelunkery) (Glow Sticks)
 - [Twigs](https://modrinth.com/mod/twigs) (Glow Sticks)
+- [Create Numismatics](https://modrinth.com/mod/numismatics) (ID  & Key Cards)
+- [Sleep Tight](https://modrinth.com/mod/sleep-tight) (Hammocks)
+- [Create Bits & Bobs](https://modrinth.com/mod/create-bits-n-bobs) (Chairs, Dyed Pipes, Dyed Tanks, ...)
+- [Labels](https://modrinth.com/mod/labels)
+- [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) (Stained Redstone Lamps)
+- [Arts & Crafts](https://modrinth.com/mod/artsandcrafts) (Chalk, Soapstone, Dyed Flower Pots, ...)
 
 <!-- modrinth_exclude.start -->
+## Development Information
+
+This project is structured into separate modules, each being their own mod.
+They are bundled using [Jar-in-Jar](https://docs.neoforged.net/toolchain/docs/dependencies/jarinjar/) into the file that gets published.
+This is the `combined` module.
+
+The `data` module contains some mixins that are only required during data generation and is not bundled into the published file.
+
+The `core` module contains some common code that is used by the other modules.
+
+The `modules/*` projects usually add compatibility for one specific mods, rarely multiple at the same time if they make sense together.
+Some files are generated from templates and handle some of the boilerplate stuff for the modules. These files contain:
+- the `neoforge.mods.toml`
+- a `{moduleName}Module.kt` contains some constants like the mod ids & registrate
+- a `{moduleName}Entrypoint.java` which loads the respective `Dyes{moduleName}.kt` class if the mod is loaded
+- the `pack.mcmeta` file including the conditional overlays.
+
 ### Contributors
 
 <!-- contributors.start -->
@@ -130,7 +153,11 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <sub><small>artist of dye depot</small></sub>
       </td>
       <td align="center" valign="top" width="200">
-        <img src="https://placehold.net/avatar-4.svg" width="100" alt="Lev" />
+        <img
+          src="https://workflows.somethingcatchy.net/avatar.svg"
+          width="100"
+          alt="Lev"
+        />
         <br />
         <a href="https://modrinth.com/user/Lev">
           <img
@@ -175,7 +202,7 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
       </td>
       <td align="center" valign="top" width="200">
         <img
-          src="https://placehold.net/avatar-4.svg"
+          src="https://workflows.somethingcatchy.net/avatar.svg"
           width="100"
           alt="nonbatnary"
         />
@@ -344,6 +371,26 @@ Huge thanks to all the [people that have contributed](#contributors) to this mod
         <sub><b>bllryy</b></sub>
         <br />
         <sub><small>storage labels compatibility</small></sub>
+      </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/251834374?v=4"
+          width="100"
+          alt="maedickens"
+        />
+        <br />
+        <a href="https://github.com/maedickens">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>maedickens</b></sub>
+        <br />
+        <sub><small>stained redstone lamps textures</small></sub>
       </td>
     </tr>
   </tbody>

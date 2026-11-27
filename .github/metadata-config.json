@@ -4,6 +4,5 @@
   "type": "minecraft",
   "assignee": "@owner",
   "loaders": ["neoforge", "fabric", "forge"],
-  "upload": { "curseforge": true, "modrinth": true, "nexus": true },
-  "sonar": true
+  "upload": { "curseforge": true, "modrinth": true, "nexus": true }
 }

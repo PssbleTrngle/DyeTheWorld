@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "twigs:silt_shingles"
+    },
+    "D": {
+      "tag": "c:dyes/ginger"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "twigs:ginger_silt_shingles"
+  }
+}

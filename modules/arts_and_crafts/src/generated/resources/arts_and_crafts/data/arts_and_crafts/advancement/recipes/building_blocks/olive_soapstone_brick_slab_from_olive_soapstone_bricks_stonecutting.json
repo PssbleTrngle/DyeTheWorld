@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_olive_soapstone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:olive_soapstone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:olive_soapstone_brick_slab_from_olive_soapstone_bricks_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_olive_soapstone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:olive_soapstone_brick_slab_from_olive_soapstone_bricks_stonecutting"
+    ]
+  }
+}

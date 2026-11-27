@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_terracotta_shingles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:terracotta_shingles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:aqua_terracotta_shingles"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_terracotta_shingles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:aqua_terracotta_shingles"
+    ]
+  }
+}

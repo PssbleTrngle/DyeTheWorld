@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "arts_and_crafts:terracotta_shingle_wall"
+    },
+    "D": {
+      "tag": "c:dyes/forest"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "arts_and_crafts:forest_terracotta_shingle_wall"
+  }
+}

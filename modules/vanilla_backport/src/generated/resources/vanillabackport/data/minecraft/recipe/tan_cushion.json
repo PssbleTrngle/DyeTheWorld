@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cushion",
+  "key": {
+    "#": {
+      "item": "minecraft:tan_wool_slab"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:tan_cushion"
+  }
+}

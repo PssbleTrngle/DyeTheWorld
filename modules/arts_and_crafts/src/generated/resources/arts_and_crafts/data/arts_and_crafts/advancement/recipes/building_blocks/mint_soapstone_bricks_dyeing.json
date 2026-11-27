@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dyes/mint"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_soapstone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:soapstone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:mint_soapstone_bricks_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dye",
+      "has_soapstone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:mint_soapstone_bricks_dyeing"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create:amber_valve_handle_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_valve_handles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#create:valve_handles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_valve_handles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create:amber_valve_handle_dyeing"
+    ]
+  }
+}

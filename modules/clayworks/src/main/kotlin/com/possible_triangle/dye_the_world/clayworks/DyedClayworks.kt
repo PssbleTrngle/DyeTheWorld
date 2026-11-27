@@ -1,0 +1,236 @@
+package com.possible_triangle.dye_the_world.clayworks
+
+import com.google.common.base.Suppliers.memoize
+import com.possible_triangle.dye_the_world.*
+import com.possible_triangle.dye_the_world.clayworks.data.createPotClientExtensions
+import com.possible_triangle.dye_the_world.clayworks.data.glassDoorBlockstate
+import com.possible_triangle.dye_the_world.clayworks.data.glassDoorItemModel
+import com.possible_triangle.dye_the_world.clayworks.data.glassDoorLoot
+import com.possible_triangle.dye_the_world.clayworks.data.glassDoorRecipes
+import com.possible_triangle.dye_the_world.clayworks.data.glassTrapdoorBlockstate
+import com.possible_triangle.dye_the_world.clayworks.data.glassTrapdoorItemModel
+import com.possible_triangle.dye_the_world.clayworks.data.glassTrapdoorLoot
+import com.possible_triangle.dye_the_world.clayworks.data.glassTrapdoorRecipes
+import com.possible_triangle.dye_the_world.clayworks.data.potBlockstate
+import com.possible_triangle.dye_the_world.clayworks.data.potItemModel
+import com.possible_triangle.dye_the_world.clayworks.data.potLoot
+import com.possible_triangle.dye_the_world.data.*
+import com.possible_triangle.dye_the_world.extensions.*
+import com.possible_triangle.dye_the_world.registrate.additionalRecipe
+import com.possible_triangle.dye_the_world.registrate.dye
+import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
+import com.teamabnormals.clayworks.common.block.GlassDoorBlock
+import com.teamabnormals.clayworks.common.block.GlassTrapDoorBlock
+import com.teamabnormals.clayworks.common.item.crafting.BakingRecipe
+import com.teamabnormals.clayworks.core.registry.ClayworksBlocks
+import com.teamabnormals.clayworks.core.registry.ClayworksRecipes.ClayworksRecipeSerializers
+import com.tterrag.registrate.providers.ProviderType
+import com.tterrag.registrate.providers.RegistrateRecipeProvider
+import com.tterrag.registrate.util.nullness.NonNullSupplier
+import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
+import net.minecraft.data.recipes.ShapedRecipeBuilder
+import net.minecraft.tags.BlockTags
+import net.minecraft.tags.ItemTags
+import net.minecraft.world.item.CreativeModeTabs
+import net.minecraft.world.item.DyeColor
+import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.Blocks
+import net.minecraft.world.level.block.DecoratedPotBlock
+import java.util.function.Supplier
+
+object DyedClayworks {
+    private val TERRACOTTA = dyedBlockMap(CLAYWORKS, "terracotta")
+    private val GLAZED_TERRACOTTA = dyedBlockMap(CLAYWORKS, "glazed_terracotta")
+    private val CONCRETE_POWDER = dyedBlockMap(CLAYWORKS, "concrete_powder")
+
+    val TERRACOTTA_BRICKS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_terracotta_bricks")
+                .block()
+                .initialProperties { dye.blockOf("terracotta") }
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .lang("${dye.translation} Terracotta Bricks")
+                .germanLang("${dye.germanTranslation(Genus.F)} Keramikziegel")
+                .withItem {
+                    tab(CreativeModeTabs.BUILDING_BLOCKS)
+                    recipe { c, p ->
+                        p.quadTransform(TERRACOTTA[dye]!!.value(), c)
+                        p.shapedDyeingRecipe(dye, ClayworksBlocks.TERRACOTTA_BRICKS.get(), c)
+                    }
+                }.register()
+        }
+
+    val TERRACOTTA_BRICK_SLABS =
+        REGISTRATE.createSlabs(
+            TERRACOTTA_BRICKS,
+            CLAYWORKS.createId("terracotta_brick"),
+            modifyBlock = {
+                germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelstufe")
+            },
+            modifyItem = {
+                additionalRecipe { provider, context ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context, 2)
+                }
+            },
+        )
+
+    val TERRACOTTA_BRICK_STAIRS =
+        REGISTRATE.createStairs(
+            TERRACOTTA_BRICKS,
+            CLAYWORKS.createId("terracotta_brick"),
+            modifyBlock = {
+                germanLang("${dye.germanTranslation(Genus.F)} Keramikziegeltreppe")
+            },
+            modifyItem = {
+                additionalRecipe { provider, context ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
+                }
+            },
+        )
+
+    val TERRACOTTA_BRICK_WALLS =
+        REGISTRATE.createWalls(
+            TERRACOTTA_BRICKS,
+            CLAYWORKS.createId("terracotta_brick"),
+            modifyBlock = {
+                germanLang("${dye.germanTranslation(Genus.F)} Keramikziegelmauer")
+            },
+            modifyItem = {
+                additionalRecipe { provider, context ->
+                    provider.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, context)
+                }
+            },
+        )
+
+    val CHISELED_TERRACOTTA_BRICKS =
+        REGISTRATE.dyed { dye ->
+            `object`("chiseled_${dye}_terracotta_bricks")
+                .block()
+                .initialProperties { dye.blockOf("terracotta") }
+                .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .lang("Chiseled ${dye.translation} Terracotta Bricks")
+                .germanLang("Gemeißelte ${dye.germanTranslation(Genus.F)} Keramikziegel")
+                .withItem {
+                    tab(CreativeModeTabs.BUILDING_BLOCKS)
+                    recipe { c, p ->
+                        p.stonecutting(TERRACOTTA_BRICKS[dye]!!.asIngredient(), BUILDING_BLOCKS, c)
+                        p.stonecutting(TERRACOTTA[dye]!!.asIngredient(), BUILDING_BLOCKS, c)
+
+                        val slab = TERRACOTTA_BRICK_SLABS[dye]!!.get()
+                        ShapedRecipeBuilder
+                            .shaped(BUILDING_BLOCKS, c.get())
+                            .pattern("#")
+                            .pattern("#")
+                            .define('#', slab)
+                            .unlockedBy("has_slab", RegistrateRecipeProvider.has(slab))
+                            .save(p)
+                    }
+                }.register()
+        }
+
+    val TERRACOTTA_SLABS =
+        REGISTRATE.createSlabs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = {
+            germanLang("${dye.germanTranslation(Genus.F)} Keramikstufe")
+        })
+
+    val TERRACOTTA_STAIRS =
+        REGISTRATE.createStairs(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = {
+            germanLang("${dye.germanTranslation(Genus.F)} Keramiktreppe")
+        })
+
+    val TERRACOTTA_WALLS =
+        REGISTRATE.createWalls(TERRACOTTA, CLAYWORKS.createId("terracotta"), modifyBlock = {
+            germanLang("${dye.germanTranslation(Genus.F)} Keramikmauer")
+        })
+
+    @JvmField
+    val DECORATED_POTS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_decorated_pot")
+                .block(::DecoratedPotBlock)
+                .initialProperties { Blocks.DECORATED_POT }
+                .properties { it.mapColor(dye) }
+                .potBlockstate()
+                .potLoot()
+                .withItem {
+                    properties { it.stacksTo(1) }
+                    potItemModel()
+                    clientExtension(
+                        NonNullSupplier {
+                            Supplier(::createPotClientExtensions)
+                        },
+                    )
+                    tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
+                }.register()
+        }
+
+    private val DYE_BY_DECORATED_POT =
+        memoize {
+            DECORATED_POTS.mapValues { it.value.get() }.inverse()
+        }
+
+    @JvmStatic
+    fun dyeOf(block: Block): DyeColor? = DYE_BY_DECORATED_POT.get()[block]
+
+    val STAINED_GLASS_DOORS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_stained_glass_door")
+                .block { GlassDoorBlock(dye) }
+                .lang("${dye.translation} Stained Glass Door")
+                .glassDoorBlockstate()
+                .glassDoorLoot()
+                .tag(BlockTags.DOORS)
+                .withItem {
+                    glassDoorRecipes()
+                    glassDoorItemModel()
+                    tag(ItemTags.DOORS)
+                    tab(CreativeModeTabs.REDSTONE_BLOCKS)
+                }.register()
+        }
+
+    val STAINED_GLASS_TRAPDOORS =
+        REGISTRATE.dyed { dye ->
+            `object`("${dye}_stained_glass_trapdoor")
+                .block { GlassTrapDoorBlock(dye) }
+                .lang("${dye.translation} Stained Glass Trapdoor")
+                .glassTrapdoorBlockstate()
+                .glassTrapdoorLoot()
+                .tag(BlockTags.TRAPDOORS)
+                .withItem {
+                    glassTrapdoorRecipes()
+                    glassTrapdoorItemModel()
+                    tag(ItemTags.TRAPDOORS)
+                    tab(CreativeModeTabs.REDSTONE_BLOCKS)
+                }.register()
+        }
+
+    init {
+        REGISTRATE.addDataGenerator(ProviderType.RECIPE) { provider ->
+            TERRACOTTA.forEach { (dye, terracotta) ->
+                val glazed = GLAZED_TERRACOTTA.getValue(dye)
+                provider.cooking(
+                    terracotta.asIngredient(),
+                    BUILDING_BLOCKS,
+                    glazed,
+                    0.1F,
+                    100,
+                    "baking",
+                    ClayworksRecipeSerializers.BAKING_RECIPE.get(),
+                    ::BakingRecipe,
+                )
+            }
+
+            CONCRETE_POWDER.forEach { (dye, powder) ->
+                ShapedRecipeBuilder
+                    .shaped(BUILDING_BLOCKS, powder.value(), 8)
+                    .pattern("###")
+                    .pattern("#X#")
+                    .pattern("###")
+                    .define('X', dye.tag)
+                    .defineUnlocking('#', ClayworksBlocks.CONCRETE_POWDER.get())
+                    .group("concrete_powder")
+                    .save(provider, CLAYWORKS.createId(provider.safeName(powder.value())))
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/maroon"
+    },
+    {
+      "item": "arts_and_crafts:white_chalk_stairs"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "arts_and_crafts:maroon_chalk_stairs"
+  }
+}

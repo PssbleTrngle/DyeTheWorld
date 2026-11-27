@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "netherexp:block/stained_redstone_lamp/navy_on"
+  }
+}

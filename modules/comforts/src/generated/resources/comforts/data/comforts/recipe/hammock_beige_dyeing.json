@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "comforts:hammock_dyed",
+  "ingredients": [
+    {
+      "tag": "c:dyes/beige"
+    },
+    {
+      "tag": "comforts:hammocks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:hammock_beige"
+  }
+}

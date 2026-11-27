@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "botanypots:basic_pot",
+  "key": {
+    "M": {
+      "item": "dye_depot:navy_terracotta"
+    },
+    "P": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "pattern": [
+    "M M",
+    "MPM",
+    " M "
+  ],
+  "result": {
+    "count": 1,
+    "id": "botanypots:navy_terracotta_botany_pot"
+  }
+}

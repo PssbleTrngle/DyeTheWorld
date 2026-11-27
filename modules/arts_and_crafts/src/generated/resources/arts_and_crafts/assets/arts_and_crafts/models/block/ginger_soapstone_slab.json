@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "arts_and_crafts:block/ginger_soapstone",
+    "side": "arts_and_crafts:block/ginger_soapstone",
+    "top": "arts_and_crafts:block/ginger_soapstone"
+  }
+}

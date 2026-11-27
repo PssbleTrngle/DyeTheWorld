@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_terracotta_shingles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:rose_terracotta_shingles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:rose_terracotta_shingle_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rose_terracotta_shingles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:rose_terracotta_shingle_wall"
+    ]
+  }
+}

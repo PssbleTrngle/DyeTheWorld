@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "comforts:hammock_aqua",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "part": "head"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "comforts:hammock_aqua"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:explosion_decay"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "comforts:blocks/hammock_aqua"
+}

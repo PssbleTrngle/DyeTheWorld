@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "comforts:sleeping_bags",
+  "key": {
+    "#": {
+      "item": "dye_depot:coral_wool"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "S/S",
+    "S#S",
+    "S/S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:hammock_coral"
+  }
+}

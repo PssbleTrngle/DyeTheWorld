@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amber_polished_soapstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:amber_polished_soapstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:amber_polished_soapstone_slab_from_amber_polished_soapstone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_amber_polished_soapstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:amber_polished_soapstone_slab_from_amber_polished_soapstone_stonecutting"
+    ]
+  }
+}

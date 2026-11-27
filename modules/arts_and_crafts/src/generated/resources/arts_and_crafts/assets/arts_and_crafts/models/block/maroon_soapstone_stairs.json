@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "arts_and_crafts:block/maroon_soapstone",
+    "side": "arts_and_crafts:block/maroon_soapstone",
+    "top": "arts_and_crafts:block/maroon_soapstone"
+  }
+}

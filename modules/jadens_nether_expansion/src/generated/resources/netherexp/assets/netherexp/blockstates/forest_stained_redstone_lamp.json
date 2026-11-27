@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "netherexp:block/forest_stained_redstone_lamp"
+    },
+    "lit=true": {
+      "model": "netherexp:block/forest_stained_redstone_lamp_on"
+    }
+  }
+}

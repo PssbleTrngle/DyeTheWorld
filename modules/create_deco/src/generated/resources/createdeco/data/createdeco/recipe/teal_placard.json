@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:item_frame"
+    },
+    {
+      "item": "create:brass_sheet"
+    },
+    {
+      "tag": "c:dyes/teal"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:teal_placard"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "values": [
+    "create:olive_nixie_tube",
+    "create:olive_toolbox",
+    "create:olive_seat",
+    "create:olive_sail",
+    "create:olive_valve_handle",
+    "create:olive_table_cloth",
+    "create:olive_postbox"
+  ]
+}

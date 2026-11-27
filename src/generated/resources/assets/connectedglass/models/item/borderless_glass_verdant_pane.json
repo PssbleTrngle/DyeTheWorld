@@ -1,7 +1,0 @@
-{
-  "parent": "connectedglass:pane_item_template",
-  "textures": {
-    "all": "connectedglass:block/borderless/verdant",
-    "edge": "dye_depot:block/verdant_stained_glass_pane_top"
-  }
-}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:mud_brick_wall"
+    },
+    "D": {
+      "tag": "c:dyes/aqua"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "arts_and_crafts:aqua_mud_brick_wall"
+  }
+}

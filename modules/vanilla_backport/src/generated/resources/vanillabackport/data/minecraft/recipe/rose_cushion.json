@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cushion",
+  "key": {
+    "#": {
+      "item": "minecraft:rose_wool_slab"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:rose_cushion"
+  }
+}

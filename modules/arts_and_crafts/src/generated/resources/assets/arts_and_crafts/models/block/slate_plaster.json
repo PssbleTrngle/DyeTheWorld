@@ -1,0 +1,7 @@
+{
+  "parent": "arts_and_crafts:block/plaster_model",
+  "textures": {
+    "particle": "arts_and_crafts:block/slate_plaster",
+    "plaster": "arts_and_crafts:block/slate_plaster"
+  }
+}

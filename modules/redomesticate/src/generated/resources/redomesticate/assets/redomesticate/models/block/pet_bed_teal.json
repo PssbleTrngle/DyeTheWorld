@@ -1,0 +1,6 @@
+{
+  "parent": "redomesticate:block/pet_bed",
+  "textures": {
+    "bed": "redomesticate:block/pet_bed_teal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "dye_depot:navy_concrete"
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:navy_concrete_slab"
+  }
+}

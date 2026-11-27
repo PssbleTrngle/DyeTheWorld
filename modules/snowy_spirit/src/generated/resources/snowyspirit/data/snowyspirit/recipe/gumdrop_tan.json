@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gumdrop",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:dyes/tan"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "snowyspirit:gumdrop_tan"
+  }
+}

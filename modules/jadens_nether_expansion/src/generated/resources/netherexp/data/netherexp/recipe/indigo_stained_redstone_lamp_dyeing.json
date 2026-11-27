@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "D": {
+      "tag": "c:dyes/indigo"
+    }
+  },
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "netherexp:indigo_stained_redstone_lamp"
+  }
+}

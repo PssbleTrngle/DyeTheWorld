@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "botanypots:slate_concrete_hopper_botany_pot"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "botanypots:blocks/slate_concrete_hopper_botany_pot"
+}

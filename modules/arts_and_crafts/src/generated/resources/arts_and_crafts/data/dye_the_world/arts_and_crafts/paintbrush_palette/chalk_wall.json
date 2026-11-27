@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "arts_and_crafts"
+    }
+  ],
+  "blocks": "#arts_and_crafts:paintable/chalk_wall",
+  "mappings": {
+    "arts_and_crafts:amber_paintbrush": "arts_and_crafts:amber_chalk_wall",
+    "arts_and_crafts:aqua_paintbrush": "arts_and_crafts:aqua_chalk_wall",
+    "arts_and_crafts:beige_paintbrush": "arts_and_crafts:beige_chalk_wall",
+    "arts_and_crafts:coral_paintbrush": "arts_and_crafts:coral_chalk_wall",
+    "arts_and_crafts:forest_paintbrush": "arts_and_crafts:forest_chalk_wall",
+    "arts_and_crafts:ginger_paintbrush": "arts_and_crafts:ginger_chalk_wall",
+    "arts_and_crafts:indigo_paintbrush": "arts_and_crafts:indigo_chalk_wall",
+    "arts_and_crafts:maroon_paintbrush": "arts_and_crafts:maroon_chalk_wall",
+    "arts_and_crafts:mint_paintbrush": "arts_and_crafts:mint_chalk_wall",
+    "arts_and_crafts:navy_paintbrush": "arts_and_crafts:navy_chalk_wall",
+    "arts_and_crafts:olive_paintbrush": "arts_and_crafts:olive_chalk_wall",
+    "arts_and_crafts:rose_paintbrush": "arts_and_crafts:rose_chalk_wall",
+    "arts_and_crafts:slate_paintbrush": "arts_and_crafts:slate_chalk_wall",
+    "arts_and_crafts:tan_paintbrush": "arts_and_crafts:tan_chalk_wall",
+    "arts_and_crafts:teal_paintbrush": "arts_and_crafts:teal_chalk_wall",
+    "arts_and_crafts:verdant_paintbrush": "arts_and_crafts:verdant_chalk_wall"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arts_and_crafts:item/forest_flower_pot"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "naturalist:snail_shell"
+    },
+    {
+      "tag": "c:dyes/amber"
+    }
+  ],
+  "result": {
+    "components": {
+      "minecraft:custom_data": {
+        "Color": 23
+      }
+    },
+    "count": 1,
+    "id": "naturalist:snail_shell"
+  }
+}

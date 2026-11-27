@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "arts_and_crafts:block/teal_terracotta_shingles",
+    "side": "arts_and_crafts:block/teal_terracotta_shingles",
+    "top": "arts_and_crafts:block/teal_terracotta_shingles"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "arts_and_crafts:block/rose_soapstone_bricks"
+  }
+}

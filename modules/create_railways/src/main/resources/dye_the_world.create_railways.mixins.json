@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.possible_triangle.dye_the_world.create_railways.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "target": "@env(DEFAULT)",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "ChimneyPushParticleDataMixin",
+    "ColorUtilsMixin",
+    "PuffSmokeParticleDataMixin"
+  ]
+}

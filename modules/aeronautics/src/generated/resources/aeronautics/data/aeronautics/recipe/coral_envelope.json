@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "aeronautics:envelope",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "dye_depot:coral_wool"
+    }
+  },
+  "pattern": [
+    "WS",
+    "SW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "aeronautics:coral_envelope"
+  }
+}

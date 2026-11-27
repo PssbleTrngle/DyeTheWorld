@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/mint"
+    },
+    {
+      "item": "twigs:silt_pot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "twigs:mint_silt_pot"
+  }
+}

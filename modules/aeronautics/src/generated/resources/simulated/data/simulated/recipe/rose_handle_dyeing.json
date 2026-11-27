@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/rose"
+    },
+    {
+      "item": "simulated:iron_handle"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "simulated:rose_handle"
+  }
+}

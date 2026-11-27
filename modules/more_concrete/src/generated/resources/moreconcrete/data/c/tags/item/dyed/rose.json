@@ -1,0 +1,12 @@
+{
+  "values": [
+    "moreconcrete:rose_concrete_slab",
+    "moreconcrete:rose_concrete_stairs",
+    "moreconcrete:rose_concrete_wall",
+    "moreconcrete:rose_concrete_fence",
+    "moreconcrete:rose_concrete_fence_gate",
+    "moreconcrete:rose_concrete_button",
+    "moreconcrete:rose_concrete_lever",
+    "moreconcrete:rose_concrete_pressure_plate"
+  ]
+}

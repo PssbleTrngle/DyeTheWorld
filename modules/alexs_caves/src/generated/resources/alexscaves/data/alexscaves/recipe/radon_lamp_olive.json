@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "tag": "c:dyes/olive"
+    },
+    "G": {
+      "item": "minecraft:glowstone"
+    },
+    "R": {
+      "item": "alexscaves:radon_bottle"
+    }
+  },
+  "pattern": [
+    "DRD",
+    "RGR",
+    "DRD"
+  ],
+  "result": {
+    "count": 4,
+    "id": "alexscaves:radon_lamp_olive"
+  }
+}

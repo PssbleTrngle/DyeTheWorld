@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "hammock",
+  "ingredients": [
+    {
+      "tag": "c:dyes/slate"
+    },
+    {
+      "item": "sleep_tight:hammock_white"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sleep_tight:hammock_slate"
+  }
+}

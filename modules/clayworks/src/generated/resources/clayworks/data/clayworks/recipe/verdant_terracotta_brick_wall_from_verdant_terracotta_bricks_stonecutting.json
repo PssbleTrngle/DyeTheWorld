@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "clayworks:verdant_terracotta_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "clayworks:verdant_terracotta_brick_wall"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "twigs:verdant_silt_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "twigs:verdant_silt_shingle_stairs"
+  }
+}

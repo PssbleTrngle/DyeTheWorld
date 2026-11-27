@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arts_and_crafts:aqua_chalk_slab_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_chalk_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arts_and_crafts:white_chalk_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_chalk_slab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arts_and_crafts:aqua_chalk_slab_dyeing"
+    ]
+  }
+}

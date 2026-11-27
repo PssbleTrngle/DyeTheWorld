@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "c:dyes/tan"
+    },
+    {
+      "tag": "simulated:nameplate_blocks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "simulated:tan_nameplate"
+  }
+}
