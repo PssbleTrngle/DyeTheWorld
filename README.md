@@ -416,6 +416,26 @@ Some files are generated from templates and handle some of the boilerplate stuff
           ><small>arts &amp; crafts textures &amp; implementation</small></sub
         >
       </td>
+      <td align="center" valign="top" width="200">
+        <img
+          src="https://avatars.githubusercontent.com/u/126169992?v=4"
+          width="100"
+          alt="rjames0820"
+        />
+        <br />
+        <a href="https://github.com/rjames0820">
+          <img
+            src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/available/github_vector.svg"
+            width="20"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </a>
+        <br />
+        <sub><b>rjames0820</b></sub>
+        <br />
+        <sub><small>textures for vista &amp; create dyeable chains</small></sub>
+      </td>
     </tr>
   </tbody>
 
