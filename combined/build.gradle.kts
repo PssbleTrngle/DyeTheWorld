@@ -24,6 +24,7 @@ tasks.processResources {
     }
 }
 
+// TODO move these to modules?
 upload {
     curseforge {
         dependencies {
@@ -74,6 +75,7 @@ upload {
             optional("create-bits-n-bobs")
             optional("labels")
             optional("jadens-nether-expansion")
+            optional("artsandcrafts")
         }
     }
 }
