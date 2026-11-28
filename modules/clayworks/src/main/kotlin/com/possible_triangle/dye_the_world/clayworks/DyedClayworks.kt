@@ -2,7 +2,6 @@ package com.possible_triangle.dye_the_world.clayworks
 
 import com.google.common.base.Suppliers.memoize
 import com.possible_triangle.dye_the_world.*
-import com.possible_triangle.dye_the_world.clayworks.data.createPotClientExtensions
 import com.possible_triangle.dye_the_world.clayworks.data.glassDoorBlockstate
 import com.possible_triangle.dye_the_world.clayworks.data.glassDoorItemModel
 import com.possible_triangle.dye_the_world.clayworks.data.glassDoorLoot
@@ -19,6 +18,8 @@ import com.possible_triangle.dye_the_world.extensions.*
 import com.possible_triangle.dye_the_world.registrate.additionalRecipe
 import com.possible_triangle.dye_the_world.registrate.dye
 import com.possible_triangle.dye_the_world.registrate.shapedDyeingRecipe
+import com.teamabnormals.blueprint.client.MemoizedBEWLR
+import com.teamabnormals.clayworks.client.DecoratedPotBlockEntityWithoutLevelRenderer
 import com.teamabnormals.clayworks.common.block.GlassDoorBlock
 import com.teamabnormals.clayworks.common.block.GlassTrapDoorBlock
 import com.teamabnormals.clayworks.common.item.crafting.BakingRecipe
@@ -26,7 +27,7 @@ import com.teamabnormals.clayworks.core.registry.ClayworksBlocks
 import com.teamabnormals.clayworks.core.registry.ClayworksRecipes.ClayworksRecipeSerializers
 import com.tterrag.registrate.providers.ProviderType
 import com.tterrag.registrate.providers.RegistrateRecipeProvider
-import com.tterrag.registrate.util.nullness.NonNullSupplier
+import net.minecraft.core.BlockPos
 import net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS
 import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.tags.BlockTags
@@ -36,7 +37,11 @@ import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DecoratedPotBlock
-import java.util.function.Supplier
+import net.minecraft.world.level.block.entity.DecoratedPotBlockEntity
+import net.neoforged.api.distmarker.Dist
+import net.neoforged.api.distmarker.OnlyIn
+import net.neoforged.bus.api.SubscribeEvent
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent
 
 object DyedClayworks {
     private val TERRACOTTA = dyedBlockMap(CLAYWORKS, "terracotta")
@@ -155,11 +160,6 @@ object DyedClayworks {
                 .withItem {
                     properties { it.stacksTo(1) }
                     potItemModel()
-                    clientExtension(
-                        NonNullSupplier {
-                            Supplier(::createPotClientExtensions)
-                        },
-                    )
                     tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)
                 }.register()
         }
@@ -231,6 +231,23 @@ object DyedClayworks {
                     .group("concrete_powder")
                     .save(provider, CLAYWORKS.createId(provider.safeName(powder.value())))
             }
+        }
+    }
+
+    @SubscribeEvent
+    @OnlyIn(Dist.CLIENT)
+    private fun clientExtensions(event: RegisterClientExtensionsEvent) {
+        DECORATED_POTS.forEach { (_, block) ->
+            event.registerItem(
+                MemoizedBEWLR.asCustomItemRenderer { dispatcher, entityModelSet ->
+                    DecoratedPotBlockEntityWithoutLevelRenderer(
+                        dispatcher,
+                        entityModelSet,
+                        DecoratedPotBlockEntity(BlockPos.ZERO, block.value().defaultBlockState()),
+                    )
+                },
+                block.value().asItem(),
+            )
         }
     }
 }
