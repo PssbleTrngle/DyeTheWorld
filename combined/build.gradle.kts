@@ -18,12 +18,6 @@ modModules.forEach { module ->
     }
 }
 
-tasks.processResources {
-    filesMatching("META-INF/neoforge.mods.toml") {
-        duplicatesStrategy = DuplicatesStrategy.INCLUDE
-    }
-}
-
 // TODO move these to modules?
 upload {
     curseforge {

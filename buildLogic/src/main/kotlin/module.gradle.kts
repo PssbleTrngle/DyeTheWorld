@@ -9,6 +9,7 @@ import org.gradle.kotlin.dsl.configure
 
 plugins {
     id("conventions")
+    id("templates")
 }
 
 modifyReleaseMetadata {

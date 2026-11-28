@@ -1,5 +1,4 @@
 import com.possible_triangle.gradle.modModules
-import org.gradle.internal.extensions.stdlib.capitalized
 
 plugins {
     id("root")
@@ -10,7 +9,7 @@ withKotlin()
 
 modModules.forEach {
     it.extra.set("mod_id", "${mod.id.get()}_${it.name}")
-    it.extra.set("mod_name", "${mod.name.get()} ${it.name.capitalized()}")
+    it.extra.set("mod_name", "${mod.name.get()} (${it.name})")
     it.extra.set("multikulti_interfaces", libs.multikulti.registrate)
 
     it.dependencies {

@@ -5,6 +5,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModList;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.data.loading.DatagenModLoader;
+import com.possible_triangle.dye_the_world.Constants;
 
 @Mod({{ moduleName }}Module.MOD_ID)
 public class {{ moduleName }}Entrypoint {
@@ -28,6 +29,7 @@ public class {{ moduleName }}Entrypoint {
 {% for compatMod in compatMods %}
 {% if compatMod.type != "resources_only" %}
         if (mods.isLoaded({{ moduleName }}Module.{{ compatMod.name | upper }})) {
+            Constants.LOGGER.debug("loaded module for {{ compatMod.name }}");
             registerEvents(modBus, Dyed{{ compatMod.file }}.INSTANCE);
 {% if compatMod.type == "full" and compatMod.registrate != null %}
             {{ moduleName }}Module.{{ compatMod.registrate }}.registerEventListeners(modBus);
